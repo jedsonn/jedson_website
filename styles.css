@@ -143,3 +143,18 @@
 .note{margin:.4rem 0 .2rem 1.1rem;font-size:.8rem;color:var(--text);background:#f6f9fc;border-left:2.5px solid #b5d4f4;padding:.4rem .65rem;border-radius:4px;}
 .note a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
 @media(max-width:640px){.yrow{grid-template-columns:46px 1fr;gap:.6rem;}}
+
+/* ---------- Useful Links page ---------- */
+.links-intro{font-size:.9rem;color:var(--secondary);padding:1.2rem 0 .2rem;}
+.links-intro a{color:var(--accent);text-decoration:none;font-weight:600;border-bottom:1px dotted var(--accent);}
+.lcat{padding:1rem 0 .3rem;border-top:1px solid var(--border);margin-top:.5rem;}
+.lcat-h{font-family:var(--serif);font-size:.96rem;font-weight:700;color:var(--text);margin-bottom:.55rem;display:flex;gap:.45rem;align-items:baseline;}
+.lcat-h .num{color:var(--accent);font-weight:700;}
+.lcat-h .note{display:inline;background:none;border:none;padding:0;margin:0;font-weight:400;font-style:italic;font-size:.8rem;color:var(--muted);}
+.lgrid{display:grid;grid-template-columns:1fr 1fr;gap:.35rem 1.4rem;}
+@media(max-width:640px){.lgrid{grid-template-columns:1fr;}}
+.llink{font-size:.85rem;color:var(--accent);text-decoration:none;border-bottom:1px dotted transparent;padding:.1rem 0;width:fit-content;}
+.llink:hover{border-bottom-color:var(--accent);}
+.pending{font-size:.85rem;color:var(--muted);border-bottom:1px dotted var(--muted);padding:.1rem 0;cursor:default;width:fit-content;}
+.legendline{font-size:.72rem;color:var(--muted);padding:.3rem 0 0;font-style:italic;}
+.tlist a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
