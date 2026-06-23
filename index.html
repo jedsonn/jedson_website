@@ -90,6 +90,7 @@
 
     /* sections */
     .sec-head{font-family:var(--serif);font-size:.84rem;font-weight:700;color:var(--text);margin:.9rem 0 .4rem;padding-bottom:.25rem;border-bottom:1.5px solid var(--border);display:flex;align-items:center;gap:.4rem;cursor:pointer;user-select:none;}
+    .sec-head:hover .sec-chev{stroke:#2c2a25;}
     .sec-head.static{cursor:default;}
     .sec-icon{font-size:.68rem;opacity:.5;}
     .sec-chev{margin-left:auto;width:14px;height:14px;transition:transform .25s;}
@@ -246,10 +247,11 @@
       </div>
 
       <div class="section" id="sec-other">
-        <div class="sec-head static">
+        <div class="sec-head" data-section="other">
           <span class="sec-icon" style="color:var(--muted)">○</span> Other Publications
+          <svg class="sec-chev" viewBox="0 0 24 24" fill="none" stroke="#6b6860" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="6 9 12 15 18 9"></polyline></svg>
         </div>
-        <div id="otherList"></div>
+        <div class="section-body"><div id="otherList"></div></div>
       </div>
 
       <div class="legend">
