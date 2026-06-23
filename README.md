@@ -1,96 +1,101 @@
-# Jedson Pinto — Personal Website (Handoff)
+# Jedson Pinto — Personal Website
 
-This package contains a finished personal/academic website and everything needed to **host it on GitHub Pages** and **keep editing it**.
+A single-page academic homepage for **Jedson Pinto** (Assistant Professor of Accounting, UT Dallas),
+hosted on **GitHub Pages**.
 
-## TL;DR for Claude Code
-1. `index.html` is the entire site in **one self-contained file** (fonts inlined, no build step, works offline). It is ready to deploy as-is.
-2. Help the user push it to a GitHub repo and enable **GitHub Pages**.
-3. For ongoing content edits (papers, bio, tags), see **"How to edit"** below. Recommended: reimplement as a clean static site so future edits are simple (the current `index.html` is a compiled bundle and is not meant to be hand-edited).
+**Live:** https://jedsonn.github.io/jedson_website/
 
 ---
 
-## What this is
-A single-page academic homepage for Jedson Pinto (Assistant Professor of Accounting, UT Dallas). Features:
-- Hero with centered name/title/links, photo placeholder, and bio.
-- Research-interests strip + a BridgePHD callout.
-- A research statement with **clickable themes** that filter the paper list.
-- Collapsible sections — **Working Papers, Work in Progress, Publications, Other Publications** — each paper card expands to show a TL;DR and clickable theme tags.
-- **Expand all / Collapse all** controls and a **theme filter bar** (3 themes: *Disclosure & Information Production*, *Capital Markets*, *ML/AI & Text*) with live counts.
-- Coauthor markers (`*`, `+`, `++`) and journal badges (`FT50`, `UTD24`, `FT50#`) with a footnote legend.
+## What's here
 
-## Files
-- `index.html` — **deployable** self-contained site. This is what goes live.
-- `src/Jedson Pinto.dc.html` — editable source (markup + a `class Component` logic block holding all paper data).
-- `src/PaperCard.dc.html` — the paper-card sub-template.
-- `src/support.js` — the runtime the source files depend on (do not edit).
+| File | Purpose |
+|------|---------|
+| `index.html` | The entire site — a clean, hand-editable static page (HTML + CSS + a little JS). **Edit this.** |
+| `photo.jpg` | The hero headshot (200×250 display, any portrait-ish image works). |
+| `.nojekyll` | Tells GitHub Pages to serve the files as-is (no Jekyll build). |
+| `src/` | The **original** authoring-tool source (`.dc.html` + `support.js`). Kept for reference only — not used by the live site. |
 
-> The `src/` files use a custom component runtime specific to the authoring tool they were built in. `index.html` is the compiled output of those files. **Outside that tool you cannot re-compile the source**, so for a maintainable long-term setup, prefer the rebuild option below.
-
----
-
-## Deploy to GitHub Pages
-```bash
-# in an empty folder
-git init
-cp /path/to/index.html ./index.html        # filename MUST be index.html
-git add index.html
-git commit -m "Add personal website"
-git branch -M main
-git remote add origin https://github.com/<user>/<repo>.git
-git push -u origin main
-```
-Then on GitHub: **Settings → Pages → Source: Deploy from a branch → `main` / `root` → Save.**
-Live at `https://<user>.github.io/<repo>/` within ~1 minute.
-
-### Custom domain (jedsonpinto.com)
-- **Settings → Pages → Custom domain** → enter `jedsonpinto.com`.
-- At the DNS registrar add GitHub Pages' four `A` records (`185.199.108–111.153`) and a `CNAME` for `www` → `<user>.github.io`. GitHub shows exact values.
+> Note: the site was originally delivered as a self-extracting "bundle" `index.html`. That version
+> rendered empty paper cards in the browser, so it was rebuilt as the plain static page you see now.
+> Everything (papers, links, badges, bio, the theme-filter behavior) is reproduced 1:1 and is now easy to edit.
 
 ---
 
 ## How to edit
 
-### Quick content tweaks (works on the bundle)
-All paper data lives in a JS object array inside the site. Search `index.html` (or `src/Jedson Pinto.dc.html`) for these arrays and edit the entries:
-- `wp = [ … ]` — Working Papers
-- `wip = [ … ]` — Work in Progress
-- `pub = [ … ]` — Publications
-- `other = [ … ]` — Other Publications
+Open `index.html`. Almost everything you'll want to change lives in two obvious places.
 
-Each entry looks like:
+### 1. Papers — edit the `DATA` object (near the bottom, inside `<script>`)
+
+There are four arrays: `wp` (Working Papers), `wip` (Work in Progress), `pub` (Publications),
+`other` (Other Publications). Each paper is one object:
+
 ```js
-{ title:"…", url:"https://…",
-  coauthors:[{ name:"…", url:"https://…", mark:"++" }],   // mark: "*", "+", "++", "+,*"
-  journal:"Accepted, Journal of Business Ethics",
-  status:"conditionally",      // optional → amber "Conditionally Accepted" styling
-  badges:["FT50","UTD24","FT50#"],   // FT50# renders FT50 with a superscript #
-  tldr:"One-line summary.",
+{ title:"Paper title",
+  url:"https://…",                          // optional — makes the title a link
+  coauthors:[
+    { name:"Coauthor Name", url:"https://…", mark:"++" }   // url & mark optional
+  ],
+  journal:"Accepted, Journal of …",          // optional (publications)
+  status:"conditionally",                    // optional → renders the journal in amber
+  badges:["FT50","UTD24","FT50#"],           // optional; FT50# = FT50 with a superscript #
+  tldr:"One-line summary shown when the card is expanded.",
   tags:["Disclosure & Information Production","Capital Markets","ML/AI & Text"],
-  link:{ url:"https://…", label:"data site" }   // optional extra link
+  link:{ url:"https://…", label:"data site" }  // optional extra link in the expanded card
 }
 ```
-The three filterable **themes** are exactly those three tag strings — a paper shows under a theme if that string is in its `tags`.
 
-To change the **photo**: replace the placeholder `<div>` (search `headshot.jpg`) with `<img src="photo.jpg" style="width:200px;height:250px;border-radius:6px;object-fit:cover;object-position:center top;">` and commit `photo.jpg` alongside `index.html`.
+- **Coauthor marks:** `"*"` (corresponding author), `"+"` (untenured at project start),
+  `"++"` (PhD student at project start), or combinations like `"+,*"`.
+- **Themes / filtering:** the three filterable themes are exactly these tag strings —
+  `"Disclosure & Information Production"`, `"Capital Markets"`, `"ML/AI & Text"`.
+  A paper appears under a theme if that string is in its `tags`. The theme counts in the filter
+  bar update automatically.
+- To add a paper, copy an existing object in the right array. To remove one, delete it. That's it.
 
-### Recommended: rebuild as a clean static site
-For a maintainable repo, recreate this as a plain `index.html` + `styles.css` + `script.js` (or a small framework). The current design is **high-fidelity** — match it exactly:
+### 2. Bio, name, nav, links
 
-**Design tokens**
-- Background `#fafaf8`, surface `#fff`, text `#2c2a25`, secondary `#6b6860`, tertiary/muted `#9a958c`, borders `#e8e6e1`.
-- Accent (links, active filter, primary pill) `#1a5276`; accent-light `#eaf2f8`.
-- Working-paper accent `#5b21b6` / light `#f3f0ff`; published journal text green `#2e7d32`; conditional/amber `#b45309`.
-- Tag chip (idle) bg `#f0eeea`, text `#5a5750`, border `#e8e6e1`; (active) accent.
-- Badges: FT50 `#fef3c7`/`#b45309`/`#fde68a`; UTD24 `#fee2e2`/`#7b341e`/`#fecaca`; FT50# same as FT50 with superscript `#`.
-- Radius 5px cards / 20px pills. Card shadow `0 1px 3px rgba(0,0,0,.04)`.
-- Fonts: headings/titles **Source Serif 4** (700/600); body **Source Sans 3** (300–600). Content column max-width **820px**.
+These are plain HTML near the top of `index.html` (the `<nav>`, `.hero`, `.strip`, and `.callout`
+sections). Edit the text directly.
 
-**Behavior to preserve**
-- Clicking a theme (filter bar, research statement, or a card's tag) filters all sections to papers containing that tag; clicking again or "Clear" resets. Non-active themes in the statement dim to ~0.32 opacity. A "Showing X of N…" line appears while filtered; paper numbers renumber from 1.
-- Each card toggles its detail (TL;DR + tags) open/closed. Section headers collapse their whole list. Expand-all / Collapse-all act on all cards.
-- Other Publications hide while a filter is active.
+### Change the photo
 
-All exact copy, paper data, coauthor links, badges, and the footnote legend are in `src/Jedson Pinto.dc.html` — lift them verbatim.
+Replace `photo.jpg` with your image (keep the same filename, or update the `<img class="photo" src="…">`).
+A portrait crop around 200×250 looks best; the CSS does `object-fit: cover` so other sizes still work.
 
-## Fidelity
-**High-fidelity.** Recreate pixel-for-pixel using the values above.
+---
+
+## Behavior (already implemented)
+
+- Clicking a **theme** — in the filter bar, the research statement, or any card's tag — filters every
+  section to papers with that tag, renumbers them, and shows a "Showing X of N…" line. Click again or
+  **Clear** to reset. Non-active statement themes dim.
+- Each **card** expands to show its TL;DR + tags. **Section headers** collapse their list.
+  **Expand all / Collapse all** act on every card.
+- **Other Publications** hide while a filter is active.
+- Journal **badges**: `FT50` / `UTD24` / `FT50#`. Coauthor marks and the footnote legend are at the bottom.
+
+---
+
+## Design tokens (if you restyle)
+
+- Background `#fafaf8`, surface `#fff`, text `#2c2a25`, secondary `#6b6860`, muted `#9a958c`, borders `#e8e6e1`.
+- Accent `#1a5276` (links / active filter) + light `#eaf2f8`. Working-paper accent `#5b21b6` / light `#f3f0ff`.
+- Published journal text green `#2e7d32`; conditional/amber `#b45309`.
+- Fonts: **Source Serif 4** (titles/headings), **Source Sans 3** (body). Content column max-width **820px**.
+
+All of these are CSS variables in `:root` at the top of `index.html`.
+
+---
+
+## Deploy / hosting
+
+The site is already live from the `main` branch via GitHub Pages
+(**Settings → Pages → Deploy from a branch → `main` / `root`**). Any push to `main` redeploys
+automatically within ~1 minute.
+
+### Custom domain (jedsonpinto.com)
+- **Settings → Pages → Custom domain** → enter `jedsonpinto.com`.
+- At your DNS registrar add GitHub Pages' four `A` records (`185.199.108–111.153`) and a `CNAME` for
+  `www` → `jedsonn.github.io`. GitHub shows the exact values.
