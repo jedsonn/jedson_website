@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Curriculum Vitae — Jedson Pinto</title>
+  <meta name="description" content="Curriculum vitae of Jedson Pinto, Assistant Professor of Accounting at UT Dallas — education, appointments, publications, working papers, presentations, service, and awards.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Crect width='100' height='100' fill='%231a5276'/%3E%3Ctext x='50' y='62' font-family='Georgia,serif' font-size='38' font-weight='700' fill='%23fafaf8' text-anchor='middle'%3EJP%3C/text%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:opsz,wght@8..60,300;8..60,400;8..60,600;8..60,700&family=Source+Sans+3:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .cv-contact{font-size:.86rem;color:var(--secondary);margin-top:.5rem;line-height:1.7;}
+    .cv-contact a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
+    .cv-actions{display:flex;gap:.5rem;flex-wrap:wrap;margin-top:.8rem;}
+    .cv-print{font-family:var(--sans);font-size:.72rem;font-weight:500;background:var(--accent);color:#fff;border:none;padding:.38rem .85rem;border-radius:20px;cursor:pointer;}
+    .cv-print.alt{background:var(--surface);color:var(--secondary);border:1px solid var(--border);}
+    .cv-row{display:grid;grid-template-columns:1fr auto;gap:.6rem 1.2rem;padding:.45rem 0;border-bottom:1px solid #f1efeb;align-items:baseline;}
+    .cv-row:last-child{border-bottom:none;}
+    .cv-row .what{font-size:.88rem;color:var(--text);}
+    .cv-row .what b{font-weight:600;}
+    .cv-row .what .org{color:var(--secondary);}
+    .cv-row .when{font-family:var(--serif);font-size:.82rem;color:var(--accent);font-weight:600;white-space:nowrap;}
+    .cvpub{list-style:none;counter-reset:cvp;margin:0;padding:0;display:flex;flex-direction:column;gap:.65rem;}
+    .cvpub li{font-size:.86rem;line-height:1.5;color:var(--text);padding-left:1.7rem;position:relative;}
+    .cvpub li::before{counter-increment:cvp;content:counter(cvp)".";position:absolute;left:0;top:0;color:var(--accent);font-weight:700;font-family:var(--serif);}
+    .cvpub .t{font-weight:600;color:var(--text);}
+    .cvpub a.t{text-decoration:none;border-bottom:1px dotted #c5c2bb;}
+    .cvpub .au{color:var(--secondary);}
+    .cvpub .au a{color:var(--secondary);text-decoration:none;border-bottom:1px dotted #c5c2bb;}
+    .cvpub .jr{color:var(--green);font-weight:500;}
+    .cvpub .jr.amber{color:var(--amber);}
+    .cvpub sup{font-size:.66em;color:var(--muted);font-weight:600;}
+    .cvbadge{display:inline-block;font-size:.58rem;font-weight:600;padding:.02rem .28rem;border-radius:3px;margin-left:.18rem;border:1px solid #fde68a;background:#fef3c7;color:#b45309;}
+    .cvbadge.utd{background:#fee2e2;color:#7b341e;border-color:#fecaca;}
+    .cvbadge sup{color:inherit;font-size:.78em;}
+    @media print{
+      nav,.cv-actions,footer{display:none !important;}
+      body{background:#fff;}
+      a{color:#000 !important;border:none !important;}
+      .tsec,.lcat{break-inside:avoid;}
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="nav-inner">
+      <a class="nav-brand" href="index.html">Jedson Pinto</a>
+      <div class="nav-links">
+        <a href="index.html">Home</a>
+        <a class="active" href="cv.html">CV</a>
+        <a href="presentations-service.html">Talks &amp; Service</a>
+        <a href="useful-links.html">Links</a>
+      </div>
+    </div>
+  </nav>
+
+  <main class="wrap">
+
+    <div class="page-head">
+      <h1>Jedson Pinto</h1>
+      <div class="sub">Assistant Professor of Accounting · Naveen Jindal School of Management, The University of Texas at Dallas</div>
+      <div class="cv-contact">
+        <a href="mailto:jedson.pinto@utdallas.edu">jedson.pinto@utdallas.edu</a> ·
+        <a href="https://jindal.utdallas.edu/faculty/jedson-pinto/" target="_blank" rel="noopener">UTD faculty page</a> ·
+        <a href="https://scholar.google.com/citations?user=fZJ0RxsAAAAJ&hl=en&oi=ao" target="_blank" rel="noopener">Google Scholar</a> ·
+        <a href="https://twitter.com/jedsonpinto" target="_blank" rel="noopener">Twitter/X</a>
+      </div>
+      <div class="cv-actions">
+        <button class="cv-print" onclick="window.print()">⤓ Print / Save as PDF</button>
+        <a class="cv-print alt" href="presentations-service.html">Full talks &amp; service →</a>
+      </div>
+    </div>
+
+    <!-- EDUCATION -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Education</h2>
+      <div class="cv-row"><div class="what"><b>Ph.D., Accounting</b> <span class="org">— University of North Carolina at Chapel Hill, Kenan-Flagler Business School</span></div><div class="when">2020</div></div>
+      <div class="cv-row"><div class="what"><b>M.Sc., Accounting</b> <span class="org">— FUCAPE Business School, Brazil</span></div><div class="when">2015</div></div>
+    </section>
+
+    <!-- APPOINTMENTS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Appointments</h2>
+      <div class="cv-row"><div class="what"><b>Assistant Professor of Accounting</b> <span class="org">— The University of Texas at Dallas</span></div><div class="when">2020 – present</div></div>
+      <div class="cv-row"><div class="what"><b>Visiting AI Research Fellow</b> <span class="org">— Bradesco Asset Management</span></div><div class="when">Summer 2026</div></div>
+      <div class="cv-row"><div class="what"><b>Research &amp; Teaching Assistant</b> <span class="org">— University of North Carolina at Chapel Hill</span></div><div class="when">pre-2020</div></div>
+      <div class="cv-row"><div class="what"><b>Research Assistant</b> <span class="org">— FUCAPE Business School, Brazil</span></div><div class="when">4 years</div></div>
+    </section>
+
+    <!-- RESEARCH INTERESTS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Research Interests</h2>
+      <p class="sub" style="margin:0;">Disclosure &amp; Information Production · Capital Markets · ML/AI &amp; NLP. Research on how information is produced, regulated, and consumed in financial markets, increasingly using NLP and large language models.</p>
+    </section>
+
+    <!-- PUBLICATIONS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Publications</h2>
+      <ol class="cvpub">
+        <li><a class="t" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4265987" target="_blank" rel="noopener">Judge Financial Holdings and Case Outcomes: Evidence from Judge Financial Disclosures</a>. <span class="au">with Tuhin Harit<sup>++</sup>, Sunil Parupati<sup>++</sup>, and Gil Sadka.</span> <span class="jr amber">Conditionally Accepted, Journal of Accounting and Economics.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+        <li><a class="t" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4405292" target="_blank" rel="noopener">On the Usefulness of Guidance Reports</a>. <span class="au">with William Mayew and Xiaoxi Wu<sup>+</sup>.</span> <span class="jr">Accepted, Review of Accounting Studies.</span> <span class="cvbadge">FT50</span></li>
+        <li><span class="t">Impartial Intelligence? Country Bias in GenAI Financial Analysis.</span> <span class="au">with Fabio Motoki<sup>*,+</sup>.</span> <span class="jr">Accepted, Journal of Business Ethics.</span> <span class="cvbadge">FT50<sup>#</sup></span></li>
+        <li><span class="t">Employee Non-Disclosure Agreements and Corporate News.</span> <span class="au">with Cameron Holstead<sup>++</sup> and June Huang<sup>+,*</sup>.</span> <span class="jr">Accepted, Contemporary Accounting Research.</span> <span class="cvbadge">FT50</span></li>
+        <li><a class="t" href="https://link.springer.com/article/10.1057/s41267-025-00798-8" target="_blank" rel="noopener">Beyond Words: The Challenge of Interpreting Financial Text Across Cultures</a>. <span class="au">with Federico Siano<sup>+,*</sup>.</span> <span class="jr">Journal of International Business Studies, 2025.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+        <li><a class="t" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5336765" target="_blank" rel="noopener">The Impact of SEC Reporting Changes on Information Acquisition and Market Dynamics: Evidence from Foreign Cross-Listed Firms</a>. <span class="au">with Yongtae Kim and Edward Sul<sup>+</sup>.</span> <span class="jr">Contemporary Accounting Research, 2025.</span> <span class="cvbadge">FT50</span></li>
+        <li><a class="t" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=5477446" target="_blank" rel="noopener">How Does Going Public Affect Employees? Evidence from Glassdoor Reviews</a>. <span class="au">with Meng Li<sup>+,*</sup>.</span> <span class="jr">Management Science, 2025.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+        <li><a class="t" href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3408198" target="_blank" rel="noopener">MiFID II Unbundling and Sell-Side Analyst Research</a>. <span class="au">with Mark Lang and Edward Sul<sup>++</sup>.</span> <span class="jr">Journal of Accounting and Economics, 2024.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+        <li><a class="t" href="https://www.sciencedirect.com/science/article/abs/pii/S0165410122000519" target="_blank" rel="noopener">Mandatory Disclosure and Learning from External Market Participants: Evidence from the JOBS Act</a>. <span class="au">Solo-authored.</span> <span class="jr">Journal of Accounting and Economics, 2023.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+        <li><a class="t" href="https://pubsonline.informs.org/doi/abs/10.1287/mnsc.2023.4783" target="_blank" rel="noopener">The Influence of Short Selling on the Production and Market Consequences of Negative Press Coverage</a>. <span class="au">with Robert Bushman.</span> <span class="jr">Management Science, 2023.</span> <span class="cvbadge">FT50</span><span class="cvbadge utd">UTD24</span></li>
+      </ol>
+    </section>
+
+    <!-- WORKING PAPERS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--wp)">◇</span> Working Papers</h2>
+      <ol class="cvpub">
+        <li><span class="t">AI Adoption and the Loss of Learning.</span> <span class="au">with Suresh Radhakrishnan and Josiah Weber<sup>++</sup>.</span></li>
+        <li><a class="t" href="http://ssrn.com/abstract=4692457" target="_blank" rel="noopener">Toxic Social Media Opinions and Capital Markets</a>. <span class="au">with Elizabeth Blankespoor and Kirti Sinha<sup>+</sup>.</span></li>
+        <li><span class="t">Deleting Information: Content Moderation Regulation and Strategic Information Removal.</span> <span class="au">with Ham Christensen and Mark Lang.</span></li>
+      </ol>
+    </section>
+
+    <!-- WORK IN PROGRESS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--wp)">◇</span> Work in Progress</h2>
+      <ol class="cvpub">
+        <li><span class="t">Unmasking the Exchange Rate Exposure Puzzle: How Segment Reporting Quality Reveals Hidden Risks.</span> <span class="au">Solo-authored.</span></li>
+        <li><span class="t">Earnings Calls and Echo Chambers: Evidence from the Introduction of Livestreaming on StockTwits.</span> <span class="au">with <a href="https://goizueta.emory.edu/faculty/profiles/t-clifton-green" target="_blank" rel="noopener">Clifton Green</a>, <a href="https://jindal.utdallas.edu/faculty/stanimir-markov/" target="_blank" rel="noopener">Stanimir Markov</a>, and <a href="https://www.lse.ac.uk/people/jeroen-koenraadt" target="_blank" rel="noopener">Jeroen Koenraadt</a>.</span></li>
+      </ol>
+    </section>
+
+    <!-- OTHER PUBLICATIONS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--muted)">○</span> Other Publications</h2>
+      <ol class="cvpub">
+        <li><a class="t" href="https://onlinelibrary.wiley.com/doi/10.1111/jbfa.12820" target="_blank" rel="noopener">Regulating Data: Evidence from Corporate America</a>. <span class="au">with Fabio Motoki<sup>+,*</sup>.</span> <span class="jr">Journal of Business Finance and Accounting, 2024.</span></li>
+        <li><span class="t">Corporate Events' Performance and Corporate Governance: The Brazilian Evidence.</span> <span class="au">with Bruno Funchal.</span> <span class="jr">Corporate Governance, 2018.</span></li>
+        <li><span class="t">A Influência das Avaliações de Fornecedores na Rescisão de Contratos de Serviços de Exploração e Produção de Petróleo e Gás no Brasil.</span> <span class="au">with Danilo Monte-Mor and Cleison Pinto.</span> <span class="jr">REPeC, 2016.</span></li>
+      </ol>
+    </section>
+
+    <!-- PRESENTATIONS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Presentations</h2>
+      <div class="yrow"><div class="yr">2026</div><div class="items">Financial Accounting and Reporting Section, Prairie View A&amp;M University, VU Amsterdam, Erasmus University Rotterdam, Cambridge Accounting Research Camp, The Mediterranean Accounting Conference (TMAC), Bradesco Asset Management, University of Texas at Dallas, AAA Annual Meeting (2x), FUCAPE Business School, Brazil Accounting Research (BAR) Conference.</div></div>
+      <div class="yrow"><div class="yr">2025</div><div class="items">Financial Accounting and Reporting Section (3x), 2025 NC State University Risk Governance Research Symposium, EAA Annual Meeting, The Mediterranean Accounting Conference (TMAC 2025), AAA Annual Meeting (2x), Community University of the Region of Chapecó, FUCAPE Business School, V Business Tech Congress, University of Texas at Arlington, University of Texas at Dallas, e-COFIN / University of Santa Maria, University of Florida.</div></div>
+      <div class="yrow"><div class="yr">2024</div><div class="items">Hawaii Accounting Research Conference, Financial Accounting and Reporting Section (2x), Lone Star Conference, UFPB (Brazil), Berlin Junior Accounting Conference, Haskayne and Fox Accounting Conference, AAA Annual Meeting (3x), FUCAPE Business School, Brazil Accounting Research (BAR) Conference.</div></div>
+      <div class="yrow"><div class="yr">2023</div><div class="items">FUCAPE Business School, University of Texas at Dallas (2x), Hawaii Accounting Research Conference, Financial Accounting and Reporting Section, Southwest AAA Regional Meeting, European Accounting Association Annual Meeting, Colorado Accounting Conference, XVI Luso-Brazilian Finance Meeting, AAA Annual Meeting, UFRJ, University of Oregon.</div></div>
+      <div class="yrow"><div class="yr">2022</div><div class="items">ICMA/Congecont 2022, University of Texas at Dallas, Hawaii Accounting Research Conference, Financial Accounting and Reporting Section, AAA.</div></div>
+      <div class="yrow"><div class="yr">2021</div><div class="items">Hawaii Accounting Research Conference (Virtual), Financial Accounting and Reporting Section, AAA, FUCAPE Business School, University of Texas at Dallas (2x).</div></div>
+      <div class="yrow"><div class="yr">2020</div><div class="items">Dopuch Conference (Poster), LBS Transatlantic Doctoral Conference, University of North Carolina at Chapel Hill, University of British Columbia, Tulane University, Michigan State University, University of Texas at Dallas, University of Rochester, University of Utah, SMU-UTD Joint Accounting Workshop, Unisinos Business School.</div></div>
+    </section>
+
+    <!-- DISCUSSIONS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Discussions</h2>
+      <ul class="tlist">
+        <li><span class="meta">Jin, Kartapanis, Twedt (2026)</span> — <span class="title">Product Experience and Financial Analysis on Social Media</span></li>
+        <li><span class="meta">Levant and Sefsad (2026)</span> — <span class="title">The Effect of Cost Stickiness on the Marginal Value of Cash</span></li>
+        <li><span class="meta">Wang (2026)</span> — <span class="title">F(r)iction in Machines: Accounting Hallucinations of Large Language Models</span></li>
+        <li><span class="meta">Pawliczek, Skinner, and Wegner (2025)</span> — <span class="title">Beyond the Ballot: When Do Corporate Governance Disclosures Inform Trading Decisions?</span></li>
+        <li><span class="meta">Chen, Li, and Lu (2025)</span> — <span class="title">“We Are Big, Join Us!” An Examination of Companies' Size Advertisement in Job Listings</span></li>
+        <li><span class="meta">Brendel et al. (2025)</span> — <span class="title">Assessing the Impact of Cryptocurrency Analysts on Market Dynamics</span></li>
+        <li><span class="meta">Moore (2025)</span> — <span class="title">Blockchain Supply Chain Technology and Corporate Disclosure</span></li>
+        <li><span class="meta">Jayaraman, Pandey, and Wu (2024)</span> — <span class="title">Managerial Learning from Bond Prices: Evidence from Market Transparency Regulation</span></li>
+        <li><span class="meta">Bradshaw, Koo, and Zhao (2024)</span> — <span class="title">Financial YouTube Channels and Capital Markets</span></li>
+        <li><span class="meta">Xiao and Zang (2024)</span> — <span class="title">The Value of Vagueness in Language: Evidence from Analyst Reports</span></li>
+        <li><span class="meta">Cheng, Kang, Yang (2024)</span> — <span class="title">Do Firms Strategically Plan Consecutive Information Events?</span></li>
+        <li><span class="meta">Kang, Chen, Mohan (2024)</span> — <span class="title">Data-Driven Technologies and Local Information Advantages in Small Business Lending</span></li>
+        <li><span class="meta">Cen and Li (2024)</span> — <span class="title">Information Access and Asset Allocation: Evidence from Mobile Technology</span></li>
+        <li><span class="meta">Binz, Ferracuti, and Lind (2024)</span> — <span class="title">Monetary Policy Transparency and Managerial Learning</span></li>
+        <li><span class="meta">Drymiotes, Liu, and Sivaramakrishan (2023)</span> — <span class="title">Corporate Governance and Conservative Voluntary Disclosures</span></li>
+        <li><span class="meta">Tang and Huang (2023)</span> — <span class="title">KPI Information Acquisition by Analysts: Evidence from Conference Calls</span></li>
+        <li><span class="meta">Marshall, Wegner, and Zechman (2023)</span> — <span class="title">Are Investors Listening? An Examination of CEO Podcast Appearances</span></li>
+        <li><span class="meta">Baik and Shin (2022)</span> — <span class="title">Venture Capital's Influence on Startup Media Coverage</span></li>
+        <li><span class="meta">Kim, Pearson, and Twedt (2022)</span> — <span class="title">Mandatory Disclosure and Peer Firm Managers' Learning from Stock Prices</span></li>
+        <li><span class="meta">Lee and Zhong (2021)</span> — <span class="title">Shall We Talk? The Role of Interactive Investor Platforms in Corporate Communication</span></li>
+        <li><span class="meta">Hsueh (2019)</span> — <span class="title">Emerging Growth Companies and Investor Protection: Incidental Outcomes of the JOBS Act</span></li>
+        <li><span class="meta">He et al. (2018)</span> — <span class="title">The Real Effects of Financing on Corporate Social Responsibility</span></li>
+      </ul>
+    </section>
+
+    <!-- SERVICE -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--wp)">◇</span> Professional Service</h2>
+      <p class="sub" style="margin:0 0 .7rem;"><b>Ad Hoc Reviewer</b> for the <em>Review of Financial Studies, The Accounting Review, Journal of Accounting Economics, Journal of Accounting Research, Review of Accounting Studies, Contemporary Accounting Research, Management Science, European Accounting Review, Production and Operations Management (POM), Accounting Horizons, Journal of Business Finance &amp; Accounting, International Journal of Accounting, International Review of Financial Analysis, Journal of Banking &amp; Finance, Financial Research Letters,</em> and <em>Regulation &amp; Governance</em>.</p>
+      <ul class="tlist">
+        <li><span class="title">AI Accounting Lab</span> <span class="meta">(2025–Present) — Co-Founder</span></li>
+        <li><span class="title">BRA Online Workshops</span> <span class="meta">(2024–Present) — Founder</span></li>
+        <li><span class="title">SMU-UTD Inaugural Conference</span> <span class="meta">(2024–Present) — Founding Member</span></li>
+        <li><span class="title">Undergraduate Course Coordinator Committee</span> <span class="meta">(2025–Present)</span></li>
+        <li><span class="title">Mentoring Committee</span> <span class="meta">(2024–Present)</span></li>
+        <li><span class="title">Outside Examining Committee</span> <span class="meta">(2024–Present)</span></li>
+        <li><span class="title">HARC Track Chair</span> <span class="meta">— ESG and Disclosure (2025–Present)</span></li>
+        <li><span class="title">Conference on Financial Economics and Accounting</span> <span class="meta">— Program Committee (2025)</span></li>
+        <li><span class="title">AAA Track Chair</span> <span class="meta">— Current Issues in Accounting (2024)</span></li>
+        <li><span class="title">JSOM Database Committee</span> <span class="meta">(2021–2024)</span></li>
+        <li><span class="title">UTD Faculty Recruiting Committee</span> <span class="meta">(2021–2024)</span></li>
+        <li><span class="title">Faculty Advisory Committee</span> <span class="meta">(2024–2025)</span></li>
+        <li><span class="title">Organizer — Labor Accounting Group Conference</span> <span class="meta">(2023)</span></li>
+        <li><span class="title">Organizer — UTD Workshops</span> <span class="meta">(2023)</span></li>
+        <li><span class="title">Organizer — SMU-UTD Joint Workshop</span> <span class="meta">(2022)</span></li>
+        <li><span class="title">Moderator — Accounting Design Project</span> <span class="meta">(Columbia Business School)</span></li>
+      </ul>
+    </section>
+
+    <!-- PHD STUDENTS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--wp)">◇</span> PhD Committees</h2>
+      <ul class="tlist">
+        <li><span class="title">JongHa Kim</span> <span class="meta">(2026) — Committee</span></li>
+        <li><span class="title">Umit Kurucak</span> <span class="meta">(2025) — Finance — Committee</span></li>
+        <li><span class="title">Ruichao (Gavin) Liu</span> <span class="meta">(2025) — Committee</span></li>
+        <li><span class="title">JongHa Kim</span> <span class="meta">(2025–2026) — Independent Studies</span></li>
+        <li><span class="title">Sunil Parupati</span> <span class="meta">(2025) — Committee</span></li>
+        <li><span class="title">Laiz Rangel</span> <span class="meta">(2024–2025) — Visiting</span></li>
+        <li><span class="title">Leonardo Brioschi</span> <span class="meta">(2024) — Committee</span></li>
+        <li><span class="title">Arthur Mesquita</span> <span class="meta">(2024) — Committee</span></li>
+        <li><span class="title">Mikaeli Giordani</span> <span class="meta">(2023) — Committee</span></li>
+        <li><span class="title">Cameron Holstead</span> <span class="meta">(2022) — Committee</span></li>
+      </ul>
+    </section>
+
+    <!-- AWARDS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--amber)">★</span> Awards, Honors &amp; Recognition</h2>
+      <ul class="tlist">
+        <li><span class="yr">2026</span> FARS Outstanding Discussion Award</li>
+        <li><span class="yr">2026</span> FARS Outstanding Reviewer Award</li>
+        <li><span class="yr">2025</span> FARS Outstanding Discussion Award</li>
+        <li><span class="yr">2025</span> Finalist, President's Teaching Excellence Award [University-level]</li>
+        <li><span class="yr">2024</span> FARS Outstanding Discussion Award</li>
+        <li><span class="yr">2024</span> Finalist, Outstanding Worthy Leaders Involved Exceptionally (OWLIE) Awards</li>
+        <li><span class="yr">2023</span> Poets &amp; Quants Best 50 Undergraduate School Professors</li>
+        <li><span class="yr">2023</span> Finalist, President's Teaching Excellence Award [University-level]</li>
+        <li><span class="yr">2023</span> Finalist, Outstanding Worthy Leaders Involved Exceptionally (OWLIE) Awards</li>
+        <li><span class="yr">2022</span> Naveen Jindal School of Management Outstanding Undergraduate Teacher of the Year</li>
+        <li><span class="yr">2022</span> Finalist, President's Teaching Excellence Award [University-level]</li>
+        <li><span class="yr">2022</span> FARS Excellence in Reviewing Award</li>
+        <li><span class="yr">2022</span> FARS Outstanding Discussion Award</li>
+      </ul>
+    </section>
+
+    <!-- TEACHING -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Teaching</h2>
+      <ul class="tlist">
+        <li><span class="title">Fundamentals of Accounting Analytics</span> <span class="meta">— UT Dallas</span></li>
+        <li><span class="title">Financial Accounting and Analysis</span> <span class="meta">— UT Dallas (previously)</span></li>
+        <li><span class="title">Introductory Management Accounting</span> <span class="meta">— UT Dallas (previously)</span></li>
+      </ul>
+    </section>
+
+    <!-- CERTIFICATIONS -->
+    <section class="tsec">
+      <h2><span class="dot" style="color:var(--accent)">◆</span> Certifications</h2>
+      <ul class="tlist">
+        <li><span class="title">Certified Public Accountant (CPA)</span> <span class="meta">— Brazil (inactive)</span></li>
+      </ul>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="wrap">
+      <a href="https://jindal.utdallas.edu/faculty/jedson-pinto/">Naveen Jindal School of Management</a> · University of Texas at Dallas
+    </div>
+  </footer>
+</body>
+</html>
