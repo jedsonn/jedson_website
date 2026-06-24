@@ -1,0 +1,780 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Teaching Radar &middot; AI, thinking, and learning</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F5F2;--surface:#FFFFFF;--ink:#1A1C22;--muted:#586068;--faint:#8A9098;--line:#E4E6E2;
+    --erode:#B23A2E;--erode-soft:#F4E4E1;--build:#0F766E;--build-soft:#DCEDEA;--mid:#B98A4E;--signal:#283044;
+    --disp:"Fraunces",Georgia,serif;--body:"Inter",ui-sans-serif,system-ui,sans-serif;--mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  }
+  *{box-sizing:border-box;}
+  html{-webkit-text-size-adjust:100%;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);line-height:1.55;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:1060px;margin:0 auto;padding:46px 26px 80px;}
+  .mast{display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;}
+  .brand{font-family:var(--disp);font-weight:600;font-size:24px;letter-spacing:-.01em;display:flex;align-items:center;gap:10px;}
+  .brand .v{font-family:var(--mono);font-size:11px;letter-spacing:.1em;background:var(--signal);color:#fff;padding:3px 7px;border-radius:4px;font-weight:400;}
+  .tagline{font-family:var(--mono);font-size:12px;letter-spacing:.1em;text-transform:uppercase;color:var(--faint);}
+
+  .tabs{display:flex;gap:2px;flex-wrap:wrap;border-bottom:1px solid var(--line);margin-top:22px;}
+  .tab{font-family:var(--mono);font-size:12.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:none;border:none;padding:12px 15px;cursor:pointer;border-bottom:2px solid transparent;margin-bottom:-1px;}
+  .tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--build);}
+  .tab:hover{color:var(--ink);}
+
+  .toppanel{padding-top:30px;}
+  .toppanel:not([hidden]){animation:rise .4s ease;}
+  [hidden]{display:none !important;}
+  @keyframes rise{from{opacity:0;transform:translateY(8px);}to{opacity:1;transform:none;}}
+  @keyframes pop{from{opacity:0;transform:translateX(-50%) translateY(6px);}to{opacity:1;transform:translateX(-50%);}}
+
+  h1{font-family:var(--disp);font-weight:600;font-size:clamp(30px,5.2vw,50px);line-height:1.03;letter-spacing:-.01em;margin:0 0 16px;max-width:19ch;}
+  h1 em{font-style:italic;color:var(--build);}
+  .lede{font-size:clamp(16px,2.1vw,18px);color:var(--muted);max-width:60ch;margin:0;}
+  .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);}
+  h2{font-family:var(--disp);font-weight:600;font-size:clamp(23px,3.3vw,31px);letter-spacing:-.01em;margin:8px 0 6px;}
+  .sub{color:var(--muted);font-size:15px;margin:0 0 26px;max-width:66ch;}
+
+  .spectrum-note{font-size:14.5px;color:var(--ink);max-width:64ch;margin:30px 0 40px;}
+  .spectrum-note b{font-weight:600;}
+  .spectrum{position:relative;height:252px;margin:0 10px;}
+  .track{position:absolute;left:0;right:0;top:50%;height:8px;border-radius:8px;transform:translateY(-50%);background:linear-gradient(90deg,var(--erode) 0%,#C98C4A 34%,#7AA593 64%,var(--build) 100%);}
+  .end{position:absolute;top:calc(50% + 16px);font-family:var(--mono);font-size:11.5px;letter-spacing:.08em;text-transform:uppercase;}
+  .end.l{left:0;color:var(--erode);}
+  .end.r{right:0;color:var(--build);text-align:right;}
+  .marker{position:absolute;width:166px;transform:translateX(-50%);opacity:0;animation:pop .5s ease forwards;}
+  .marker .dot{width:14px;height:14px;border-radius:50%;border:3px solid var(--paper);position:absolute;top:50%;left:50%;margin:-7px 0 0 -7px;box-shadow:0 0 0 1px rgba(0,0,0,.06);}
+  .marker .card-lbl{position:absolute;left:50%;transform:translateX(-50%);width:166px;text-align:center;}
+  .marker.above .card-lbl{bottom:calc(50% + 22px);}
+  .marker.below .card-lbl{top:calc(50% + 22px);}
+  .marker .stem{position:absolute;left:50%;width:1px;background:var(--line);}
+  .marker.above .stem{bottom:50%;height:22px;}
+  .marker.below .stem{top:50%;height:22px;}
+  .marker .find{font-size:12.5px;line-height:1.3;color:var(--ink);font-weight:500;}
+  .marker .who{font-family:var(--mono);font-size:10px;color:var(--faint);margin-top:4px;}
+  .dot.e{background:var(--erode);}.dot.b{background:var(--build);}.dot.m{background:var(--mid);}
+  .m1{left:10%;}.m2{left:29%;}.m3{left:48%;}.m4{left:71%;}.m5{left:90%;}
+  .marker.m1{animation-delay:.15s;}.marker.m2{animation-delay:.30s;}.marker.m3{animation-delay:.45s;}.marker.m4{animation-delay:.60s;}.marker.m5{animation-delay:.75s;}
+
+  .about{display:flex;gap:22px;flex-wrap:wrap;margin-top:8px;}
+  .about .blk{flex:1 1 300px;background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;}
+  .about h3{font-family:var(--disp);font-weight:600;font-size:17px;margin:0 0 8px;}
+  .about p{font-size:13.5px;color:var(--muted);margin:0;}.about p b{color:var(--ink);font-weight:600;}
+  .about a{color:var(--build);text-decoration:none;border-bottom:1px solid var(--build-soft);}
+
+  .ecard{background:var(--surface);border:1px solid var(--line);border-radius:16px;padding:24px;margin-bottom:18px;display:flex;gap:28px;align-items:center;flex-wrap:wrap;transition:box-shadow .18s ease, transform .18s ease;}
+  .ecard:hover{box-shadow:0 12px 30px -18px rgba(20,24,30,.3);transform:translateY(-2px);}
+  .etext{flex:1 1 300px;}
+  .evis{flex:1 1 320px;min-width:270px;}
+  .tagp{display:inline-flex;align-items:center;gap:7px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;padding:4px 9px;border-radius:999px;margin-bottom:12px;}
+  .tagp.e{background:var(--erode-soft);color:#8A2A20;}.tagp.b{background:var(--build-soft);color:#0B5A53;}.tagp.s{background:#F0EBE2;color:#7A5A2A;}
+  .tagp .d{width:7px;height:7px;border-radius:50%;}
+  .tagp.e .d{background:var(--erode);}.tagp.b .d{background:var(--build);}.tagp.s .d{background:var(--mid);}
+  .ecard h3{font-family:var(--disp);font-weight:600;font-size:20px;line-height:1.18;margin:0 0 4px;}
+  .ecard .cite{font-family:var(--mono);font-size:11.5px;color:var(--faint);margin-bottom:12px;}
+  .ecard .finding{font-size:14px;margin:0 0 14px;}
+  .ecard .take{font-size:13.5px;color:var(--muted);border-top:1px solid var(--line);padding-top:12px;}
+  .ecard .take b{color:var(--ink);font-weight:600;}
+  .ecard .src{display:inline-block;margin-top:12px;font-family:var(--mono);font-size:11.5px;color:var(--build);text-decoration:none;border-bottom:1px solid var(--build-soft);}
+  .ecard .src:hover{border-color:var(--build);}
+  .pre{font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;color:var(--mid);border:1px solid var(--mid);border-radius:4px;padding:1px 5px;margin-left:8px;vertical-align:middle;}
+
+  .chart{width:100%;height:auto;display:block;}
+  .ch-val{font:600 12px var(--body);fill:var(--ink);}
+  .ch-cat{font:500 11px var(--mono);fill:var(--ink);}
+  .ch-sm{font:400 10px var(--mono);fill:var(--faint);}
+  .ch-zero{stroke:#C7CCC8;stroke-width:1;}
+  .ch-cap{font-size:12px;color:var(--muted);margin:10px 4px 0;line-height:1.45;}
+  .legend{display:flex;gap:16px;flex-wrap:wrap;margin:8px 4px 0;font-family:var(--mono);font-size:11px;color:var(--muted);}
+  .legend span{display:inline-flex;align-items:center;gap:6px;}
+  .legend i{width:10px;height:10px;border-radius:2px;display:inline-block;}
+  .concept{display:flex;flex-direction:column;gap:12px;}
+  .crow{display:flex;align-items:center;gap:12px;background:var(--paper);border:1px solid var(--line);border-radius:10px;padding:12px 14px;}
+  .crow .ar{font-size:20px;line-height:1;}
+  .crow.down{border-left:3px solid var(--erode);}.crow.up{border-left:3px solid var(--build);}
+  .crow .t{font-size:13px;}.crow .t b{font-weight:600;}
+  .crow.down .ar{color:var(--erode);}.crow.up .ar{color:var(--build);}
+  .cnote{font-size:12.5px;color:var(--muted);margin-top:4px;}
+  .callout{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:18px;}
+  .callout .big{font-family:var(--disp);font-size:28px;font-weight:600;color:var(--erode);line-height:1;}
+  .callout .t{font-size:13px;color:var(--ink);margin-top:8px;}.callout .t b{font-weight:600;}
+
+  .ev-sep{margin-top:48px;border-top:1px solid var(--line);padding-top:36px;}
+  .dim{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:16px;}
+  .dim .n{font-family:var(--mono);font-size:12px;color:var(--build);letter-spacing:.06em;}
+  .dim h3{font-family:var(--disp);font-weight:600;font-size:20px;margin:6px 0 8px;}
+  .dim p{font-size:14px;color:var(--muted);margin:0;}.dim p b{color:var(--ink);font-weight:600;}
+  .caveat{border-left:3px solid var(--mid);background:var(--paper);border-radius:0 10px 10px 0;padding:16px 18px;font-size:13.5px;color:var(--muted);margin-top:8px;}
+  .caveat b{color:var(--ink);}
+  .open{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;}
+  .open ul{margin:8px 0 0;padding-left:18px;}
+  .open li{font-size:14px;color:var(--muted);margin-bottom:9px;}.open li b{color:var(--ink);font-weight:600;}
+  .refs{margin-top:28px;}
+  .refs ol{margin:8px 0 0;padding-left:20px;}
+  .refs li{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-bottom:9px;line-height:1.5;}
+  .refs a{color:var(--build);text-decoration:none;border-bottom:1px solid var(--build-soft);}
+  .method{font-family:var(--mono);font-size:11.5px;color:var(--faint);line-height:1.7;margin-top:16px;}
+
+  /* research feed */
+  .feed{display:flex;flex-direction:column;gap:14px;}
+  .fitem{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px 22px;transition:box-shadow .18s ease, transform .18s ease;}
+  .fitem:hover{box-shadow:0 12px 30px -18px rgba(20,24,30,.3);transform:translateY(-2px);}
+  .fmeta{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-bottom:10px;}
+  .ftag{font-family:var(--mono);font-size:10.5px;letter-spacing:.06em;text-transform:uppercase;padding:3px 8px;border-radius:999px;}
+  .ftag.pub{background:var(--build-soft);color:#0B5A53;}
+  .ftag.wp{background:#EEF0F6;color:#3A4256;}
+  .ftag.pre{background:#F3EADD;color:#7A5A2A;}
+  .fdate{font-family:var(--mono);font-size:11px;color:var(--faint);}
+  .fitem h3{font-family:var(--disp);font-weight:600;font-size:19px;line-height:1.2;margin:0 0 8px;}
+  .ftake{font-size:14px;color:var(--ink);margin:0 0 12px;}
+  .frow{display:flex;gap:10px;font-size:13px;margin-bottom:7px;}
+  .frow .lab{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;flex:0 0 70px;padding-top:2px;}
+  .frow.matters .lab{color:var(--mid);}
+  .frow.action .lab{color:var(--build);}
+  .frow .txt{color:var(--muted);}
+  .frow .txt b{color:var(--ink);font-weight:600;}
+  .fitem .src{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:11.5px;color:var(--build);text-decoration:none;border-bottom:1px solid var(--build-soft);}
+  .fitem .src:hover{border-color:var(--build);}
+  .feednote{font-family:var(--mono);font-size:11.5px;color:var(--faint);line-height:1.7;margin-top:18px;}
+
+  /* sub tabs */
+  .subnav{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:26px;}
+  .subtab{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);background:var(--surface);border:1px solid var(--line);border-radius:999px;padding:8px 14px;cursor:pointer;}
+  .subtab[aria-selected="true"]{background:var(--signal);color:#fff;border-color:var(--signal);}
+  .subtab[aria-selected="false"]:hover{color:var(--ink);border-color:#cfd3ce;}
+  .subpanel:not([hidden]){animation:rise .35s ease;}
+
+  .tool{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:22px;margin-bottom:16px;transition:box-shadow .18s ease;}
+  .tool:hover{box-shadow:0 10px 26px -18px rgba(20,24,30,.25);}
+  .tool h3{font-family:var(--disp);font-weight:600;font-size:19px;margin:0 0 4px;}
+  .tool .why{font-size:13px;color:var(--muted);margin:0 0 14px;}
+  .tool .why .ref{font-family:var(--mono);font-size:11px;color:var(--faint);}
+  .tool ol{margin:8px 0 0;padding-left:20px;}
+  .tool ol li{font-size:14px;color:var(--muted);margin-bottom:8px;}.tool ol li b{color:var(--ink);font-weight:600;}
+  .box{position:relative;background:#FAFBFA;border:1px solid var(--line);border-radius:10px;padding:16px 16px 14px;font-size:13.5px;line-height:1.55;white-space:pre-wrap;color:var(--ink);}
+  .copy{position:absolute;top:10px;right:10px;font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;background:var(--signal);color:#fff;border:none;border-radius:6px;padding:6px 10px;cursor:pointer;}
+  .copy:hover{opacity:.9;}
+  .checks{list-style:none;margin:0;padding:0;}
+  .checks li{font-size:14px;padding:8px 0 8px 30px;position:relative;border-bottom:1px solid var(--line);}
+  .checks li:last-child{border-bottom:none;}
+  .checks li::before{content:"";position:absolute;left:0;top:11px;width:16px;height:16px;border:2px solid var(--build);border-radius:4px;}
+  .checks li b{font-weight:600;}
+  .reslist{list-style:none;margin:0;padding:0;}
+  .reslist li{font-size:14px;color:var(--muted);padding:10px 0;border-bottom:1px solid var(--line);}
+  .reslist li:last-child{border-bottom:none;}.reslist li b{color:var(--ink);font-weight:600;}
+  .ba{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .ba .b{background:var(--paper);border:1px solid var(--line);border-radius:12px;padding:16px 18px;}
+  .ba .b.before{border-top:3px solid var(--erode);}.ba .b.after{border-top:3px solid var(--build);}
+  .ba h5{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;margin:0 0 10px;}
+  .ba .before h5{color:var(--erode);}.ba .after h5{color:var(--build);}
+  .ba p{font-size:13.5px;color:var(--ink);margin:0;}
+  .ba ol{margin:0;padding-left:18px;}.ba li{font-size:13px;margin-bottom:6px;color:var(--muted);}
+  @media(max-width:640px){.ba{grid-template-columns:1fr;}}
+
+  .start{background:var(--build);color:#EAF5F2;border-radius:14px;padding:22px 24px;margin-bottom:16px;}
+  .start .kicker{color:#BFE0DA;}
+  .start h3{font-family:var(--disp);font-weight:600;font-size:20px;color:#fff;margin:6px 0 14px;}
+  .start ol{margin:0;padding-left:20px;}
+  .start li{font-size:14.5px;color:#EAF5F2;margin-bottom:8px;}.start li b{color:#fff;font-weight:600;}
+
+  table.rub{width:100%;border-collapse:collapse;font-size:13px;}
+  table.rub th,table.rub td{text-align:left;padding:9px 12px;border-bottom:1px solid var(--line);vertical-align:top;}
+  table.rub th{font-family:var(--mono);font-size:11px;letter-spacing:.05em;text-transform:uppercase;color:var(--muted);}
+  table.rub td.c{font-weight:600;color:var(--ink);width:22%;}
+  table.rub td.no{color:var(--muted);}table.rub td.yes{color:var(--ink);}
+  table.rub thead th.no{color:var(--erode);}table.rub thead th.yes{color:var(--build);}
+
+  .feature{background:var(--signal);color:#EDEFF3;border-radius:16px;padding:28px;margin-bottom:16px;}
+  .feature .kicker{color:#A9B0C2;}
+  .feature h3{font-family:var(--disp);font-weight:600;font-size:22px;color:#fff;margin:8px 0 6px;}
+  .feature .fsub{color:#B7BECE;font-size:14px;margin:0 0 22px;max-width:62ch;}
+  .dlg{background:var(--surface);border-radius:12px;overflow:hidden;margin-bottom:16px;}
+  .dlg .ctx{font-size:12.5px;color:var(--muted);padding:12px 16px;background:var(--paper);border-bottom:1px solid var(--line);}
+  .dlg .ctx b{color:var(--ink);}
+  .turn{padding:11px 16px;display:flex;gap:14px;border-bottom:1px solid var(--line);}
+  .turn:last-child{border-bottom:none;}
+  .turn.tut{background:#FAFBFA;}
+  .turn .who{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;flex:0 0 54px;padding-top:3px;}
+  .turn.stu .who{color:var(--faint);}
+  .turn.tut .who{color:var(--build);}
+  .turn .msg{font-size:14px;color:var(--ink);}
+  .turn .msg code{font-family:var(--mono);font-size:12.5px;background:#EEF1EE;padding:1px 5px;border-radius:4px;}
+  .turn .move{display:block;font-family:var(--mono);font-size:10.5px;color:var(--build);margin-top:5px;}
+  .dlg-note{font-size:12.5px;color:#B7BECE;padding:0 2px 4px;margin:0;}
+  .contrast{background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.14);border-radius:10px;padding:16px 18px;font-size:13.5px;color:#D7DBE4;}
+  .contrast b{color:#fff;}
+
+  .rely{display:grid;grid-template-columns:1fr 1fr;gap:16px;}
+  .rely .col{background:var(--surface);border:1px solid var(--line);border-radius:14px;padding:20px;}
+  .rely .col.no{border-top:3px solid var(--erode);}.rely .col.yes{border-top:3px solid var(--build);}
+  .rely h4{font-family:var(--mono);font-size:12px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 12px;}
+  .rely .no h4{color:var(--erode);}.rely .yes h4{color:var(--build);}
+  .rely ul{margin:0;padding-left:18px;}
+  .rely li{font-size:13.5px;color:var(--muted);margin-bottom:8px;}.rely li b{color:var(--ink);font-weight:600;}
+  .rule{margin-top:18px;font-family:var(--disp);font-style:italic;font-size:18px;color:var(--ink);}
+
+  .foot{margin-top:60px;border-top:1px solid var(--line);padding-top:24px;font-size:13.5px;color:var(--muted);}
+  .foot .how{font-family:var(--mono);font-size:12px;color:var(--faint);line-height:1.7;margin-bottom:14px;}
+  .foot a{color:var(--build);text-decoration:none;border-bottom:1px solid var(--build-soft);}
+  .foot a:hover{border-color:var(--build);}
+  .foot .sig{font-family:var(--disp);font-size:17px;color:var(--ink);font-weight:600;}
+
+  :focus-visible{outline:2px solid var(--build);outline-offset:3px;border-radius:4px;}
+  @media(max-width:640px){.rely{grid-template-columns:1fr;}.turn .who{flex-basis:46px;}table.rub td.c{width:auto;}}
+  @media(max-width:700px){
+    .wrap{padding:34px 18px 60px;}
+    .spectrum{height:auto;margin:0;}
+    .track,.end{display:none;}
+    .marker{position:static;width:auto;transform:none;opacity:1;animation:none;border:1px solid var(--line);border-left-width:4px;border-radius:12px;background:var(--surface);padding:14px 14px 14px 16px;margin-bottom:10px;}
+    .marker.e{border-left-color:var(--erode);}.marker.m{border-left-color:var(--mid);}.marker.b{border-left-color:var(--build);}
+    .marker .dot,.marker .stem{display:none;}
+    .marker .card-lbl{position:static;transform:none;width:auto;text-align:left;}
+    .marker .find{font-size:14px;}
+  }
+  @media(prefers-reduced-motion:reduce){*{animation:none !important;transition:none !important;}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="mast">
+    <div class="brand">Teaching Radar</div>
+    <div class="tagline">AI, thinking &amp; learning</div>
+  </div>
+
+  <div class="tabs" id="main-tabs" role="tablist" aria-label="Teaching Radar sections">
+    <button class="tab" role="tab" data-tab="overview" aria-selected="true" id="t-overview">Overview</button>
+    <button class="tab" role="tab" data-tab="evidence" aria-selected="false" id="t-evidence">Evidence</button>
+    <button class="tab" role="tab" data-tab="feed" aria-selected="false" id="t-feed">Research feed</button>
+    <button class="tab" role="tab" data-tab="tools" aria-selected="false" id="t-tools">For professors</button>
+  </div>
+
+  <!-- OVERVIEW -->
+  <section class="toppanel" role="tabpanel" id="overview" data-tab="overview" aria-labelledby="t-overview">
+    <h1>The same AI tool can erode thinking or <em>build</em> it. Design decides.</h1>
+    <p class="lede">A running scan of the research on how AI shapes the way students think and learn, with the classroom move each finding points to. Built for faculty teaching with AI, not around it.</p>
+    <p class="spectrum-note"><b>How to read the spectrum:</b> each marker is a selected research finding, placed by whether it erodes or builds thinking. The striking part is that the same technology shows up on both ends. What moves a finding left or right is not the model. It is the design, and how students use it.</p>
+    <div class="spectrum">
+      <div class="track"></div>
+      <span class="end l">Erodes thinking</span>
+      <span class="end r">Builds thinking</span>
+      <div class="marker above e m1"><div class="card-lbl"><div class="find">Habitual, unguarded AI use tracks with weaker critical thinking</div><div class="who">Gerlich 2025</div></div><div class="stem"></div><div class="dot e"></div></div>
+      <div class="marker below e m2"><div class="card-lbl"><div class="find">Take the unguarded tool away and scores fall below never having it</div><div class="who">Bastani 2025 &middot; GPT Base</div></div><div class="stem"></div><div class="dot e"></div></div>
+      <div class="marker above m m3"><div class="card-lbl"><div class="find">The more workers trusted AI, the less they thought critically</div><div class="who">Lee 2025 &middot; Microsoft + CMU</div></div><div class="stem"></div><div class="dot m"></div></div>
+      <div class="marker below b m4"><div class="card-lbl"><div class="find">A tutor with guardrails preserved learning instead of harming it</div><div class="who">Bastani 2025 &middot; GPT Tutor</div></div><div class="stem"></div><div class="dot b"></div></div>
+      <div class="marker above b m5"><div class="card-lbl"><div class="find">A pedagogically designed AI tutor doubled learning gains</div><div class="who">Kestin 2025 &middot; Harvard</div></div><div class="stem"></div><div class="dot b"></div></div>
+    </div>
+    <div class="about">
+      <div class="blk"><h3>Why this exists</h3><p>The goal is <b>responsible AI in teaching</b>: not banning the tools, not adopting them blindly, but designing courses so AI builds judgment instead of replacing it. This radar turns the evidence into decisions a professor can act on.</p></div>
+      <div class="blk"><h3>Who maintains it</h3><p>Built by <b>Jedson Pinto</b>, Assistant Professor of Accounting and co-founder of the AI Accounting Lab at UT Dallas, as part of ongoing work on AI in accounting education. <a href="https://www.jedsonpinto.com" target="_blank" rel="noopener">jedsonpinto.com</a></p></div>
+    </div>
+  </section>
+
+  <!-- EVIDENCE -->
+  <section class="toppanel" role="tabpanel" id="evidence" data-tab="evidence" aria-labelledby="t-evidence" hidden>
+    <div class="kicker">The evidence &middot; 5 studies</div>
+    <h2>The research, read for the classroom</h2>
+    <p class="sub">Each study is paired with the chart or visual that tells its story and the teaching move it implies. Figures are those reported in each paper. Preprints and correlational work are labeled.</p>
+
+    <article class="ecard">
+      <div class="etext">
+        <span class="tagp s"><span class="d"></span>Both ends</span>
+        <h3>The crutch effect, and its fix</h3>
+        <div class="cite">Bastani et al. 2025 &middot; PNAS &middot; field RCT, ~1,000 students</div>
+        <p class="finding">An unguarded GPT-4 raised performance during practice, but once it was removed those students scored 17% below peers who never used it. A version with guardrails kept the gains and removed the harm.</p>
+        <div class="take"><b>Classroom move:</b> block answer-on-demand. Require an attempt first, give hints not solutions, and use tutor-style guardrails.</div>
+        <a class="src" href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="evis">
+        <svg class="chart" viewBox="0 0 360 244" role="img" aria-label="Bar chart: practice gains versus performance after the tool is removed">
+          <line x1="34" y1="172" x2="344" y2="172" class="ch-zero"></line>
+          <text x="28" y="176" text-anchor="end" class="ch-sm">0</text>
+          <rect x="60" y="118" width="44" height="54" rx="3" fill="#0F766E"></rect>
+          <rect x="112" y="172" width="44" height="19" rx="3" fill="#B23A2E"></rect>
+          <rect x="222" y="29" width="44" height="143" rx="3" fill="#0F766E"></rect>
+          <rect x="274" y="168" width="44" height="4" rx="2" fill="#9AA0A6"></rect>
+          <text x="82" y="110" text-anchor="middle" class="ch-val">+48%</text>
+          <text x="134" y="206" text-anchor="middle" class="ch-val" fill="#B23A2E">&#8722;17%</text>
+          <text x="244" y="22" text-anchor="middle" class="ch-val">+127%</text>
+          <text x="296" y="162" text-anchor="middle" class="ch-sm">&#8776; 0</text>
+          <text x="108" y="226" text-anchor="middle" class="ch-cat">GPT Base</text>
+          <text x="108" y="239" text-anchor="middle" class="ch-sm">unguarded</text>
+          <text x="270" y="226" text-anchor="middle" class="ch-cat">GPT Tutor</text>
+          <text x="270" y="239" text-anchor="middle" class="ch-sm">guardrails</text>
+        </svg>
+        <div class="legend"><span><i style="background:#0F766E"></i>During practice (vs unaided)</span><span><i style="background:#B23A2E"></i>After tool removed (vs never had it)</span></div>
+        <p class="ch-cap">The unguarded tool's practice boost reverses into a deficit once it is taken away. The guardrailed tutor keeps the gain and the learning.</p>
+      </div>
+    </article>
+
+    <article class="ecard">
+      <div class="etext">
+        <span class="tagp b"><span class="d"></span>Builds</span>
+        <h3>Designed-well tutoring beats active learning</h3>
+        <div class="cite">Kestin et al. 2025 &middot; Scientific Reports &middot; RCT, n=194</div>
+        <p class="finding">A custom AI tutor built on teaching best practices, with scaffolds and guardrails, produced more than double the learning gain of a strong active-learning class, in less time, with students reporting higher engagement.</p>
+        <div class="take"><b>Classroom move:</b> use a well-scaffolded tutor to pre-teach basics, then spend class time on judgment and harder problems.</div>
+        <a class="src" href="https://doi.org/10.1038/s41598-025-97652-6" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="evis">
+        <svg class="chart" viewBox="0 0 240 210" role="img" aria-label="Bar chart: relative learning gain, AI tutor versus active learning">
+          <line x1="34" y1="176" x2="214" y2="176" class="ch-zero"></line>
+          <rect x="56" y="114" width="52" height="62" rx="3" fill="#9AA0A6"></rect>
+          <rect x="140" y="45" width="52" height="131" rx="3" fill="#0F766E"></rect>
+          <text x="82" y="106" text-anchor="middle" class="ch-val">1.0&#215;</text>
+          <text x="166" y="37" text-anchor="middle" class="ch-val">&gt; 2&#215;</text>
+          <text x="82" y="194" text-anchor="middle" class="ch-cat">Active</text>
+          <text x="82" y="206" text-anchor="middle" class="ch-sm">learning</text>
+          <text x="166" y="194" text-anchor="middle" class="ch-cat">AI tutor</text>
+          <text x="166" y="206" text-anchor="middle" class="ch-sm">designed</text>
+        </svg>
+        <p class="ch-cap">Relative learning gain, normalized to the active-learning class. Reported as more than double, in less time. The gain came from the pedagogy built into the tutor, not raw model power.</p>
+      </div>
+    </article>
+
+    <article class="ecard">
+      <div class="etext">
+        <span class="tagp s"><span class="d"></span>Depends on use</span>
+        <h3>Confidence shifts how much you think</h3>
+        <div class="cite">Lee et al. 2025 &middot; Microsoft + CMU, CHI &middot; n=319, 936 cases</div>
+        <p class="finding">Among knowledge workers, higher confidence in the AI predicted less critical thinking, while higher confidence in their own skill predicted more. Tools that asked people to reason before showing an answer pulled thinking back up.</p>
+        <div class="take"><b>Classroom move:</b> make students state their reasoning or a first attempt before the AI responds. Reason first, then check.</div>
+        <a class="src" href="https://doi.org/10.1145/3706598.3713778" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="evis">
+        <div class="concept">
+          <div class="crow down"><span class="ar">&#8595;</span><span class="t"><b>More confidence in the AI</b> goes with less critical thinking</span></div>
+          <div class="crow up"><span class="ar">&#8593;</span><span class="t"><b>More confidence in your own skill</b> goes with more critical thinking</span></div>
+        </div>
+        <p class="cnote">Direction of the reported relationships. Design that asks for reasoning first moves the dial toward more thinking.</p>
+      </div>
+    </article>
+
+    <article class="ecard">
+      <div class="etext">
+        <span class="tagp e"><span class="d"></span>Erodes</span>
+        <h3>Cognitive offloading and critical thinking</h3>
+        <div class="cite">Gerlich 2025 &middot; Societies &middot; survey and interviews</div>
+        <p class="finding">Frequent AI tool use was associated with weaker critical thinking, and cognitive offloading explained much of the link. The effect was strongest among younger users, who leaned on the tools the most.</p>
+        <div class="take"><b>Classroom move:</b> if the thinking is offloaded, the skill does not form. Keep the reasoning with the student and make offloading visible.</div>
+        <a class="src" href="https://doi.org/10.3390/soc15010006" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="evis">
+        <div class="callout">
+          <div class="big">Offloading</div>
+          <p class="t">More frequent AI use went with <b>lower critical thinking</b>, with <b>cognitive offloading</b> as the mechanism. The effect was strongest among younger, heavier users. This is a correlation, not a controlled trial, so read it as a warning sign, not a verdict.</p>
+        </div>
+      </div>
+    </article>
+
+    <article class="ecard">
+      <div class="etext">
+        <span class="tagp e"><span class="d"></span>Erodes<span class="pre">preprint</span></span>
+        <h3>Your brain on ChatGPT</h3>
+        <div class="cite">Kosmyna et al. 2025 &middot; MIT Media Lab &middot; EEG study, n=54 (18 in the switch session)</div>
+        <p class="finding">Writing essays with an LLM, a search engine, or no tools, the LLM group showed the weakest brain connectivity, reported the least ownership of their work, and had the most trouble quoting essays they had just written.</p>
+        <div class="take"><b>Classroom move:</b> treat heavy AI writing as a flag for shallow encoding. Build in recall and explanation so students still own the ideas.</div>
+        <a class="src" href="https://arxiv.org/abs/2506.08872" target="_blank" rel="noopener">Source</a>
+      </div>
+      <div class="evis">
+        <div class="callout">
+          <div class="big" style="color:var(--mid)">Read with care</div>
+          <p class="t">This is a <b>preprint</b> with a small sample, and a published comment (Stankovic et al. 2026) flags its EEG methods and reproducibility. The widely shared "55%" and "83%" figures came from <b>secondary commentary, not the paper</b>. Treat it as suggestive neural evidence, not proof.</p>
+        </div>
+      </div>
+    </article>
+
+    <div class="ev-sep">
+      <div class="kicker">Does it depend?</div>
+      <h2>Yes. The results are task, level, and design specific.</h2>
+      <p class="sub">A fair reading of these studies is not "AI helps" or "AI hurts." It is that the effect flips depending on four things. That is the most useful finding for a teacher.</p>
+      <div class="dim"><div class="n">01 &middot; Tool design</div><h3>The biggest lever</h3><p>The same model helped or harmed depending on guardrails. <b>Bastani</b> showed an unguarded tool produced a later deficit while a guardrailed tutor preserved learning. <b>Kestin</b> got more than double the gains because pedagogy was built into the tutor. Design is not a detail. It decides the sign of the effect.</p></div>
+      <div class="dim"><div class="n">02 &middot; Task and cognitive level</div><h3>Where on Bloom's taxonomy</h3><p>The strong tutoring gains in <b>Kestin</b> were measured on understanding, applying, and analyzing, the middle levels. The authors caution they cannot assume the same for tasks needing complex synthesis and higher-order critical thinking. <b>Bastani</b> studied math practice. Results travel within a task type, not across all of them.</p></div>
+      <div class="dim"><div class="n">03 &middot; Student level and habits</div><h3>Who is using it, and how often</h3><p><b>Bastani</b> studied high schoolers, <b>Kestin</b> studied Harvard undergraduates, and <b>Gerlich</b> found younger, more frequent users offloaded the most and scored lowest. Prior skill and habits change the outcome, so a result from one population is a hypothesis for another, not a guarantee.</p></div>
+      <div class="dim"><div class="n">04 &middot; What you measure</div><h3>Performance now, or learning that lasts</h3><p>This is the trap. <b>Bastani</b> found AI raised performance during practice but lowered it once removed. If you only measure output with the tool in hand, you conclude AI helps. If you measure the skill that remains, you may find the opposite. Decide which one your course is trying to produce.</p></div>
+      <div class="caveat"><b>Read with care.</b> Two of these are field experiments that support causal claims (Bastani, Kestin), two are surveys that show association, not cause (Gerlich, Lee), and one is a preprint (Kosmyna). All are recent and the field is moving fast. Treat the radar as a working map, not a settled verdict.</div>
+    </div>
+
+    <div class="ev-sep">
+      <div class="kicker">Honest gaps</div>
+      <h2>What we do not know yet</h2>
+      <p class="sub">The questions this radar is built to keep asking. Most of the evidence comes from math, physics, and general knowledge work, not from accounting and analytics.</p>
+      <div class="open"><ul>
+        <li><b>Does the crutch effect appear in accounting and data tasks,</b> or mainly in math and physics where it was measured?</li>
+        <li><b>Do guardrails that help novices slow down advanced students,</b> or help them too?</li>
+        <li><b>How much productive struggle is the right amount</b> before AI help, and does it change by skill level?</li>
+        <li><b>How do we assess durable skill at scale</b> without removing AI in a high-stakes exam?</li>
+        <li><b>Does AI assistance widen or narrow gaps</b> for non-native English speakers and first-generation students?</li>
+      </ul></div>
+    </div>
+
+    <div class="refs">
+      <div class="kicker">References</div>
+      <ol>
+        <li>Bastani, H., Bastani, O., Sungu, A., Ge, H., Kabakci, O., &amp; Mariman, R. (2025). Generative AI without guardrails can harm learning: Evidence from high school mathematics. PNAS, 122(26), e2422633122. <a href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener">doi.org/10.1073/pnas.2422633122</a></li>
+        <li>Kestin, G., Miller, K., Klales, A., Milbourne, T., &amp; Ponti, G. (2025). AI tutoring outperforms in-class active learning. Scientific Reports, 15, 17458. <a href="https://doi.org/10.1038/s41598-025-97652-6" target="_blank" rel="noopener">doi.org/10.1038/s41598-025-97652-6</a></li>
+        <li>Lee, H.-P., Sarkar, A., Tankelevitch, L., Drosos, I., Rintel, S., Banks, R., &amp; Wilson, N. (2025). The impact of generative AI on critical thinking. CHI 2025. <a href="https://doi.org/10.1145/3706598.3713778" target="_blank" rel="noopener">doi.org/10.1145/3706598.3713778</a></li>
+        <li>Gerlich, M. (2025). AI tools in society: Impacts on cognitive offloading and the future of critical thinking. Societies, 15(1), 6. <a href="https://doi.org/10.3390/soc15010006" target="_blank" rel="noopener">doi.org/10.3390/soc15010006</a></li>
+        <li>Kosmyna, N., et al. (2025). Your brain on ChatGPT: Accumulation of cognitive debt when using an AI assistant for essay writing task. arXiv:2506.08872 (preprint). <a href="https://arxiv.org/abs/2506.08872" target="_blank" rel="noopener">arxiv.org/abs/2506.08872</a></li>
+      </ol>
+      <p class="method">How this radar is built: studies are selected for direct relevance to how AI affects student thinking and learning, prioritizing field experiments and peer-reviewed work. Figures are taken from each paper; preprints and correlational studies are labeled. Last reviewed June 2026.</p>
+    </div>
+  </section>
+
+  <!-- RESEARCH FEED -->
+  <section class="toppanel" role="tabpanel" id="feed" data-tab="feed" aria-labelledby="t-feed" hidden>
+    <div class="kicker">Research feed</div>
+    <h2>What is landing in the research</h2>
+    <p class="sub">A running watchlist of studies and working papers on AI, thinking, and learning. Each entry has the takeaway, why it matters for teaching, and one action. Newest first.</p>
+
+    <div class="feed">
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag wp">Report</span><span class="fdate">HEPI &middot; 2026</span></div>
+        <h3>Student AI use is now near-universal</h3>
+        <p class="ftake">In the 2026 UK undergraduate survey, 95% of students used AI in some way and 94% used it for assessed work, while only 36% felt their institution encouraged them.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">You are not deciding whether students use AI. You are deciding whether they learn to use it well.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Assume AI is in every submission. Design and grade for that, and teach the skill openly.</span></div>
+        <a class="src" href="https://www.hepi.ac.uk/reports/student-generative-ai-survey-2026/" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag wp">Working paper</span><span class="fdate">World Bank &middot; 2025</span></div>
+        <h3>AI tutoring with a teacher in the loop produced large gains</h3>
+        <p class="ftake">In a six-week trial in Edo State, Nigeria, an after-school program using a generative AI tutor with teacher guidance raised learning by about 0.3 standard deviations, roughly 1.5 to 2 years of schooling, with the largest gains for girls.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">The win came from AI plus human guidance. Teachers kept students on task and caught hallucinations and over-reliance.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Do not hand students a raw chatbot. Pair AI with structure and supervision.</span></div>
+        <a class="src" href="https://blogs.worldbank.org/en/developmenttalk/addressing-the-learning-crisis-with-generative-ai--lessons-from-" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag pub">Published</span><span class="fdate">Scientific Reports &middot; 2025</span></div>
+        <h3>A well-designed AI tutor beat active learning</h3>
+        <p class="ftake">A custom tutor built on teaching best practices produced more than double the learning gain of a strong active-learning class, in less time, with higher engagement.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">Designed-well AI can lift learning. The pedagogy in the tool did the work, not the raw model.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Use a scaffolded tutor to pre-teach basics, then spend class time on judgment.</span></div>
+        <a class="src" href="https://doi.org/10.1038/s41598-025-97652-6" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag pub">Published</span><span class="fdate">PNAS &middot; 2025</span></div>
+        <h3>Unguarded AI helped in practice, then hurt</h3>
+        <p class="ftake">An unguarded GPT-4 raised practice performance but left students 17% below peers once it was removed. A guardrailed tutor kept the gains and removed the harm.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">Design decides the sign of the effect. The crutch pattern is the danger.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Require an attempt first, give hints not answers, and use guardrails.</span></div>
+        <a class="src" href="https://doi.org/10.1073/pnas.2422633122" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag pub">Published</span><span class="fdate">CHI &middot; 2025</span></div>
+        <h3>Trusting AI more, thinking critically less</h3>
+        <p class="ftake">Across knowledge workers, higher confidence in the AI predicted less critical thinking, while higher confidence in one's own skill predicted more.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">Over-trust quietly lowers scrutiny, and that habit forms early.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Make students reason first, then check the AI, not the reverse.</span></div>
+        <a class="src" href="https://doi.org/10.1145/3706598.3713778" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag pre">Preprint</span><span class="fdate">MIT Media Lab &middot; 2025</span></div>
+        <h3>Weaker brain engagement when writing with an LLM</h3>
+        <p class="ftake">In an EEG study, the LLM group showed the weakest brain connectivity, the least ownership of their work, and the most trouble quoting essays they had just written.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">Suggestive neural evidence that heavy AI writing means shallow encoding. It is a small preprint with a published critique, so read with care.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Add recall and explanation steps so students still own the ideas.</span></div>
+        <a class="src" href="https://arxiv.org/abs/2506.08872" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag wp">Working paper</span><span class="fdate">CHI workshop &middot; 2025</span></div>
+        <h3>A design agenda for protecting thinking</h3>
+        <p class="ftake">A cross-disciplinary synthesis maps how to build AI that protects and augments human thought, from metacognition to critical thinking, memory, and creativity.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">It reframes the goal from productivity to protecting cognition, which is the right target for teaching.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Treat protecting thinking as an explicit design goal in your assignments.</span></div>
+        <a class="src" href="https://arxiv.org/abs/2508.21036" target="_blank" rel="noopener">Source</a>
+      </article>
+
+      <article class="fitem">
+        <div class="fmeta"><span class="ftag pub">Published</span><span class="fdate">Societies &middot; 2025</span></div>
+        <h3>Heavy AI use linked to weaker critical thinking</h3>
+        <p class="ftake">A survey and interview study found more frequent AI use went with lower critical thinking, with cognitive offloading as the mechanism, strongest among younger users.</p>
+        <div class="frow matters"><span class="lab">Matters</span><span class="txt">Correlational, but a clear warning about habitual offloading.</span></div>
+        <div class="frow action"><span class="lab">Action</span><span class="txt">Keep the reasoning with the student and make offloading visible.</span></div>
+        <a class="src" href="https://doi.org/10.3390/soc15010006" target="_blank" rel="noopener">Source</a>
+      </article>
+
+    </div>
+    <p class="feednote">Curated and updated by hand for now. A live version, built on the same pipeline as the AI and Finance Radar, will add new published papers and working papers automatically. Last updated June 2026.</p>
+  </section>
+
+  <!-- TOOLS -->
+  <section class="toppanel" role="tabpanel" id="tools" data-tab="tools" aria-labelledby="t-tools" hidden>
+    <div class="kicker">For professors</div>
+    <h2>A toolkit you can use this week</h2>
+    <p class="sub">Everything here is built from a finding in the Evidence tab. Pick a section below.</p>
+
+    <div class="subnav" id="prof-subtabs" role="tablist" aria-label="Professor resources">
+      <button class="subtab" role="tab" data-sub="start" aria-selected="true">Start here</button>
+      <button class="subtab" role="tab" data-sub="prompts" aria-selected="false">Prompts &amp; policies</button>
+      <button class="subtab" role="tab" data-sub="tutoring" aria-selected="false">Tutoring in action</button>
+      <button class="subtab" role="tab" data-sub="assess" aria-selected="false">Assessment</button>
+      <button class="subtab" role="tab" data-sub="students" aria-selected="false">For students</button>
+    </div>
+
+    <!-- SUB: START -->
+    <div class="subpanel" data-sub="start" role="tabpanel" aria-label="Start here">
+      <div class="start">
+        <div class="kicker">Start here</div>
+        <h3>Three steps to make one assignment AI-resilient</h3>
+        <ol>
+          <li><b>Pick one assignment</b> where you want students to keep the thinking.</li>
+          <li><b>Add a guardrail:</b> the tutor prompt or the reason-first instructions in the next tab.</li>
+          <li><b>Grade the reasoning,</b> not just the output, using the rubric under Assessment.</li>
+        </ol>
+      </div>
+      <div class="tool">
+        <h3>Your first week</h3>
+        <p class="why">A simple rollout that sets expectations before habits form.</p>
+        <ol>
+          <li><b>Set the policy.</b> Put the AI-use statement in your syllabus and say it out loud in class.</li>
+          <li><b>Run a 15-minute calibration exercise.</b> Hand out an AI answer with a planted error and have students find and fix it.</li>
+          <li><b>Assign with reason-first.</b> On the first graded task, require an attempt and reasoning before any AI use.</li>
+          <li><b>Grade the reasoning.</b> Use the rubric so students see where the credit is.</li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- SUB: PROMPTS -->
+    <div class="subpanel" data-sub="prompts" role="tabpanel" aria-label="Prompts and policies" hidden>
+      <div class="tool">
+        <h3>Guardrail tutor prompt</h3>
+        <p class="why">Turns a general chatbot into a tutor that will not hand over answers. <span class="ref">Based on Bastani et al. 2025 (GPT Tutor).</span></p>
+        <div class="box" id="tool-tutor"><button class="copy" onclick="copyText(this,'tool-tutor')">Copy</button>You are a patient tutor for [course]. Never give the final answer or a full solution. First ask the student what they have tried. Give one small hint at a time. After each hint, ask the student to take the next step themselves. Ask them to explain their reasoning in their own words. Only confirm an answer after the student has produced it. If they ask for the answer outright, redirect them to the next step they can take on their own.</div>
+      </div>
+      <div class="tool">
+        <h3>Reason-first assignment instructions</h3>
+        <p class="why">Forces students to think before the AI answers, then to compare. <span class="ref">Based on Lee et al. 2025.</span></p>
+        <div class="box" id="tool-reason"><button class="copy" onclick="copyText(this,'tool-reason')">Copy</button>Before you use any AI tool on this assignment:
+1. Write your own first attempt and your reasoning.
+2. Then ask the AI and compare its response to yours.
+3. Submit both your original attempt and a short note on what you changed and why.
+You are graded on your reasoning and your judgment, not on the final output alone.</div>
+      </div>
+      <div class="tool">
+        <h3>Syllabus AI-use statement</h3>
+        <p class="why">A balanced policy that allows AI as an aid, not a substitute.</p>
+        <div class="box" id="tool-syllabus"><button class="copy" onclick="copyText(this,'tool-syllabus')">Copy</button>AI tools are allowed in this course as aids, not substitutes. Use them after you can do the core task yourself, not instead of learning it. You must be able to explain and defend any work you submit. Each assignment states its own AI rules. When in doubt, do the thinking first and use AI to check, not to produce.</div>
+      </div>
+      <div class="tool">
+        <h3>AI-use disclosure students attach</h3>
+        <p class="why">Makes AI use transparent without turning it into a guessing game. Lower stakes than a ban, and it teaches honest practice.</p>
+        <div class="box" id="tool-disclose"><button class="copy" onclick="copyText(this,'tool-disclose')">Copy</button>AI use disclosure
+Tool used: [name, or none]
+I used it to: [for example: check my code, draft an outline, explain a concept]
+I did not use it to: [whatever was off limits for this task]
+The reasoning and final decisions are my own, and I can explain any part on request.</div>
+      </div>
+      <div class="tool">
+        <h3>Verify-the-AI calibration exercise</h3>
+        <p class="why">Trains the one skill the evidence shows fades when trust in AI is high: checking whether the answer is actually right. <span class="ref">Addresses Lee et al. 2025.</span></p>
+        <div class="box" id="tool-verify"><button class="copy" onclick="copyText(this,'tool-verify')">Copy</button>Calibration exercise. Below is an AI-generated answer to [problem]. It contains at least one error. Find the error, explain why it is wrong, and correct it. You may not use AI for this step. Turn in the error you found and your fix, in your own words.</div>
+      </div>
+    </div>
+
+    <!-- SUB: TUTORING -->
+    <div class="subpanel" data-sub="tutoring" role="tabpanel" aria-label="Tutoring in action" hidden>
+      <div class="feature">
+        <div class="kicker">See it work</div>
+        <h3>AI tutoring without the answer</h3>
+        <p class="fsub">The guardrail prompt, running in three of your areas. Watch the tutor guide, ask for an attempt, give one hint at a time, and make the student produce and explain the answer. The annotations name the move.</p>
+
+        <p class="dlg-note">Example 1 &middot; Introductory financial accounting</p>
+        <div class="dlg">
+          <div class="ctx"><b>Goal:</b> record equipment bought for $10,000, paying $3,000 cash and signing a note for the rest. The student wants the entry handed over.</div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Just give me the journal entry for this.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Let's build it together. Which accounts does this transaction touch? Name them.<span class="move">asks for an attempt</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Equipment, Cash, and Notes Payable.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Good. For each one, is it going up or down? Start with Equipment.<span class="move">one hint, then back to them</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Equipment up, Cash down, Notes Payable up.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Right. Use the rule you know: an asset increases with a debit or a credit?<span class="move">prompts the rule, no answer</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">A debit. So debit Equipment 10,000, credit Cash 3,000, credit Notes Payable 7,000.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Now check it yourself: do the debits equal the credits?<span class="move">asks them to verify</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Yes, 10,000 equals 3,000 plus 7,000.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">It balances, and your reasoning holds. You built it yourself.<span class="move">confirms only after the student produces it</span></span></div>
+        </div>
+
+        <p class="dlg-note">Example 2 &middot; Accounting analytics, SQL</p>
+        <div class="dlg">
+          <div class="ctx"><b>Goal:</b> total revenue by region, not counting refunds. The student wants the query written.</div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Write the SQL to get total revenue by region, excluding refunds.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">You can get most of this yourself. Which table holds the sales, and which columns tell you the region, the amount, and whether a row is a refund?<span class="move">asks for an attempt</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">The Sales table. Region, Amount, and a Type column that says sale or refund.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Two steps: keep only the rows you want, then total by group. Which step removes the refunds, the filter or the grouping?<span class="move">one conceptual hint</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">The filter.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Good. Say the filter and the grouping in plain words first, then write the query.<span class="move">plan before code</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Keep rows where Type is sale. Group by Region. Sum the Amount. <code>SELECT Region, SUM(Amount) FROM Sales WHERE Type = 'sale' GROUP BY Region;</code></span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Walk me through it. What is in each row of the result?<span class="move">asks them to explain</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">One row per region with its total sale amount. Refunds are gone because of the filter.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Exactly, and you can defend every line. One more: what changes if refunds are stored as negative amounts instead of a separate type?<span class="move">stretches one step further</span></span></div>
+        </div>
+
+        <p class="dlg-note">Example 3 &middot; Financial statement analysis</p>
+        <div class="dlg">
+          <div class="ctx"><b>Goal:</b> judge whether a company has a short-term liquidity problem. The student wants a verdict.</div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Is this company about to run out of cash? Just tell me.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Let's reason it out. Which ratio speaks most directly to short-term liquidity, and what two numbers does it use?<span class="move">asks for an attempt</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">The current ratio. Current assets over current liabilities.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Good. Compute it from the balance sheet in front of you. What do you get?<span class="move">makes them compute</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">Current assets 600, current liabilities 400, so 1.5.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">What does 1.5 tell you, and is that healthy on its own, or does it depend on something?<span class="move">pushes interpretation, not a verdict</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">1.5 in current assets per 1 of current liabilities. Whether it is healthy depends on the industry and the trend.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">Right. What would you check next before calling it safe or risky?<span class="move">extends to judgment</span></span></div>
+          <div class="turn stu"><span class="who">Student</span><span class="msg">The trend over a few years, the industry norm, and how much of current assets is just inventory.</span></div>
+          <div class="turn tut"><span class="who">Tutor</span><span class="msg">That is the analyst's answer. The ratio is the start, not the verdict, and you got there yourself.<span class="move">confirms reasoning, withholds the verdict</span></span></div>
+        </div>
+
+        <div class="contrast"><b>The difference in one line.</b> An answer-dump says "Here is your query: SELECT ...". A tutor asks "Which step removes the refunds, the filter or the grouping?". The first produces output. The second produces a student who can do it next time, which is the side of the evidence you want to be on.</div>
+      </div>
+    </div>
+
+    <!-- SUB: ASSESS -->
+    <div class="subpanel" data-sub="assess" role="tabpanel" aria-label="Assessment" hidden>
+      <div class="tool">
+        <h3>Design checklist for an AI-resilient assignment</h3>
+        <p class="why">Five checks that move a task toward the building side of the spectrum.</p>
+        <ul class="checks">
+          <li><b>Attempt before assistance.</b> Students try the problem before AI is allowed to help.</li>
+          <li><b>Reason before the answer.</b> They articulate their thinking, then let AI respond to it.</li>
+          <li><b>Introduce, do not replace, the struggle.</b> AI gets them past basics, not past the learning.</li>
+          <li><b>Verification built in.</b> They must check AI output against a source or a method.</li>
+          <li><b>Grade the thinking, not the output.</b> Score the reasoning AI cannot hand over.</li>
+        </ul>
+      </div>
+      <div class="tool">
+        <h3>Reasoning rubric</h3>
+        <p class="why">Grade the parts AI cannot do for the student. Use these as the levels for each criterion.</p>
+        <table class="rub">
+          <thead><tr><th>Criterion</th><th class="no">Needs work</th><th class="yes">Strong</th></tr></thead>
+          <tbody>
+            <tr><td class="c">Framing</td><td class="no">Restates the prompt.</td><td class="yes">States what is asked and why it matters.</td></tr>
+            <tr><td class="c">Method</td><td class="no">Jumps straight to a tool.</td><td class="yes">Justifies the approach before computing.</td></tr>
+            <tr><td class="c">Verification</td><td class="no">Accepts the output as given.</td><td class="yes">Checks it against a source or recomputes.</td></tr>
+            <tr><td class="c">Judgment</td><td class="no">Reports the number.</td><td class="yes">Interprets it and flags assumptions and limits.</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="tool">
+        <h3>Assessment formats that resist answer-dumping</h3>
+        <p class="why">When the output is easy to generate, move the grade to what is hard to fake.</p>
+        <ul class="reslist">
+          <li><b>Oral or recorded defense.</b> Students explain their work in two minutes. AI cannot sit the viva.</li>
+          <li><b>In-class core-skill checks.</b> Short, unaided checks on the skill that must persist.</li>
+          <li><b>Process portfolios.</b> Grade the reasoning trail, the drafts, and the decisions, not just the final file.</li>
+          <li><b>Personalized data.</b> Give each student a unique dataset so a generic AI answer does not fit.</li>
+          <li><b>Explain-your-answer follow-ups.</b> Add one question that needs understanding the result, not producing it.</li>
+        </ul>
+      </div>
+      <div class="tool">
+        <h3>Assignment redesign: before and after</h3>
+        <p class="why">The same prompt, rebuilt to keep the thinking with the student.</p>
+        <div class="ba">
+          <div class="b before"><h5>Before, AI hands it over</h5><p>"Compute the company's current ratio and write a paragraph on its liquidity."</p></div>
+          <div class="b after"><h5>After, AI-resilient</h5><ol>
+            <li>Compute the current ratio by hand and show your work.</li>
+            <li>Write your own one-line read before using AI.</li>
+            <li>Ask AI for a second opinion. Note one thing you kept and one you rejected, with reasons.</li>
+            <li>In class, answer: what would change your read?</li>
+          </ol></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- SUB: STUDENTS -->
+    <div class="subpanel" data-sub="students" role="tabpanel" aria-label="For students" hidden>
+      <div class="tool">
+        <h3>Student card: when to rely on AI, and when not to</h3>
+        <p class="why">Hand this to students. The skill is telling the two apart.</p>
+        <div class="rely">
+          <div class="col no">
+            <h4>Do it yourself first</h4>
+            <ul>
+              <li><b>The core skill being learned.</b></li>
+              <li><b>The judgment call.</b> What matters and what to trust.</li>
+              <li><b>Framing the problem.</b> What is actually being asked.</li>
+              <li><b>Checking whether the answer is right.</b> Especially when it looks polished.</li>
+            </ul>
+          </div>
+          <div class="col yes">
+            <h4>Lean on AI</h4>
+            <ul>
+              <li><b>Routine syntax and boilerplate.</b></li>
+              <li><b>A first draft to react to.</b> Critique it, do not submit it.</li>
+              <li><b>Explanations to test your understanding.</b> Then verify.</li>
+              <li><b>Repetitive scaffolding.</b> So time goes to harder thinking.</li>
+            </ul>
+          </div>
+        </div>
+        <p class="rule">Use AI after you can do it, not instead of learning it.</p>
+      </div>
+      <div class="tool">
+        <h3>Prompt your AI as a tutor, not an answer machine</h3>
+        <p class="why">Paste this before you ask for help. It makes the AI build your understanding instead of doing the work for you.</p>
+        <div class="box" id="tool-studenttutor"><button class="copy" onclick="copyText(this,'tool-studenttutor')">Copy</button>Act as my tutor. Do not give me the answer. Ask me what I have tried first. Give me one hint at a time. After each hint, let me take the next step. Make me explain my reasoning in my own words. Only confirm the answer after I have produced it myself.</div>
+      </div>
+      <div class="tool">
+        <h3>Use AI to learn, not to skip learning</h3>
+        <p class="why">A short habit guide. The goal is to still be able to do it when the tool is gone.</p>
+        <ul class="reslist">
+          <li><b>Try first, then check.</b> Attempt the problem before you open AI. You learn in the attempt.</li>
+          <li><b>Ask for hints, not solutions.</b> A hint moves you forward. A solution skips the part that teaches you.</li>
+          <li><b>Never submit what you cannot explain.</b> If you cannot defend a line, you do not own it yet.</li>
+          <li><b>Assume it can be wrong.</b> Verify the result against a source or your own method.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p class="how">Teaching Radar. Curated from peer-reviewed studies and one labeled preprint; charts use figures reported in each paper; tutoring examples illustrate the guardrail design these studies support. A live version, built on the same pipeline as the AI and Finance Radar, will track new education research automatically. Last reviewed June 2026.</p>
+    <p>AI Accounting Lab, Naveen Jindal School of Management, UT Dallas &middot; <a href="https://www.jedsonpinto.com" target="_blank" rel="noopener">jedsonpinto.com</a></p>
+  </footer>
+
+</div>
+
+<script>
+  function wireTabs(tablistId, tabClass, panelClass, attr, def){
+    var list=document.getElementById(tablistId);
+    if(!list) return;
+    var tabs=[].slice.call(list.querySelectorAll('.'+tabClass));
+    var panels=[].slice.call(document.querySelectorAll('.'+panelClass));
+    function activate(id,focus){
+      tabs.forEach(function(t){var s=t.getAttribute('data-'+attr)===id;t.setAttribute('aria-selected',s?'true':'false');t.tabIndex=s?0:-1;if(s&&focus)t.focus();});
+      panels.forEach(function(p){p.hidden=p.getAttribute('data-'+attr)!==id;});
+    }
+    tabs.forEach(function(t){t.addEventListener('click',function(){activate(t.getAttribute('data-'+attr));});});
+    tabs.forEach(function(t,i){t.addEventListener('keydown',function(e){
+      var n=null;
+      if(e.key==='ArrowRight')n=(i+1)%tabs.length;
+      else if(e.key==='ArrowLeft')n=(i-1+tabs.length)%tabs.length;
+      else if(e.key==='Home')n=0;
+      else if(e.key==='End')n=tabs.length-1;
+      else return;
+      e.preventDefault();activate(tabs[n].getAttribute('data-'+attr),true);
+    });});
+    activate(def);
+  }
+  wireTabs('main-tabs','tab','toppanel','tab','overview');
+  wireTabs('prof-subtabs','subtab','subpanel','sub','start');
+
+  function copyText(btn,id){
+    var el=document.getElementById(id);
+    var clone=el.cloneNode(true);
+    var b=clone.querySelector('.copy'); if(b) b.remove();
+    navigator.clipboard.writeText(clone.innerText.trim()).then(function(){var o=btn.textContent;btn.textContent='Copied';setTimeout(function(){btn.textContent=o;},1400);}).catch(function(){btn.textContent='Press Ctrl+C';});
+  }
+</script>
+</body>
+</html>
