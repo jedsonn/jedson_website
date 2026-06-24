@@ -78,7 +78,7 @@
     <section class="research">
 
       <div class="controls">
-        <button class="ctrl-btn" data-action="toggle-details">Collapse details</button>
+        <button class="ctrl-btn" data-action="toggle-details">Expand details</button>
         <button class="ctrl-btn" data-action="toggle-sections">Collapse sections</button>
       </div>
 
@@ -291,7 +291,7 @@
         : "";
       const tags = p.tags.map(t => '<span class="tag" data-tag="' + esc(t) + '">' + esc(t) + '</span>').join("");
       return '' +
-        '<div class="card open ' + cls + '" data-title="' + esc(p.title) + '" data-tags="' + esc(p.tags.join(TAG_SEP)) + '">' +
+        '<div class="card ' + cls + '" data-title="' + esc(p.title) + '" data-tags="' + esc(p.tags.join(TAG_SEP)) + '">' +
           '<div class="card-head" data-card-toggle>' +
             '<div class="pnum">1</div>' +
             '<div class="card-main">' +
