@@ -158,3 +158,12 @@
 .pending{font-size:.85rem;color:var(--muted);border-bottom:1px dotted var(--muted);padding:.1rem 0;cursor:default;width:fit-content;}
 .legendline{font-size:.72rem;color:var(--muted);padding:.3rem 0 0;font-style:italic;}
 .tlist a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
+
+/* ---------- clearer collapsible section headers + bio meta-lines ---------- */
+.sec-chev{width:18px;height:18px;}
+.sec-head{transition:color .15s ease;}
+.sec-head:hover{color:var(--accent);}
+.sec-head:hover .sec-chev{stroke:var(--accent);}
+.bio .meta-line{margin-bottom:.3rem;}
+.bio .meta-line:last-child{margin-bottom:0;}
+.bio .meta-line strong{color:var(--text);font-weight:700;}
