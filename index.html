@@ -78,8 +78,7 @@
     <section class="research">
 
       <div class="controls">
-        <button class="ctrl-btn" data-action="expand-all">Expand details</button>
-        <button class="ctrl-btn" data-action="collapse-all">Collapse details</button>
+        <button class="ctrl-btn" data-action="toggle-details">Collapse details</button>
         <button class="ctrl-btn" data-action="toggle-sections">Collapse sections</button>
       </div>
 
@@ -150,6 +149,10 @@
       { title:"Toxic Social Media Opinions and Capital Markets", url:"http://ssrn.com/abstract=4692457",
         coauthors:[{name:"Elizabeth Blankespoor",url:"https://foster.uw.edu/faculty-research/directory/elizabeth-blankespoor/"},{name:"Kirti Sinha",url:"https://kirtisinha.com/",mark:"+"}],
         tldr:"Using AI, the first paper to study hate speech in capital markets.",
+        tags:["Disclosure & Information Production","Capital Markets","ML/AI & NLP"] },
+      { title:"Deleting Information: Content Moderation Regulation and Strategic Information Removal",
+        coauthors:[{name:"Ham Christensen",url:"https://www.linkedin.com/in/john-hanmer-christensen-3a36961a6/"},{name:"Mark Lang",url:"https://marklang.web.unc.edu/"}],
+        tldr:"How content-moderation regulation drives the strategic removal of information.",
         tags:["Disclosure & Information Production","Capital Markets","ML/AI & NLP"] }
     ],
 
@@ -159,12 +162,8 @@
         tldr:"Segment-reporting quality helps explain the exchange-rate exposure puzzle. Solo-authored.",
         tags:["Disclosure & Information Production","Capital Markets"] },
       { title:"Earnings Calls and Echo Chambers: Evidence from the Introduction of Livestreaming on StockTwits",
-        coauthors:[{name:"Clifton Green"},{name:"Stanimir Markov"},{name:"Jeroen Koenraadt"}],
+        coauthors:[{name:"Clifton Green",url:"https://goizueta.emory.edu/faculty/profiles/t-clifton-green"},{name:"Stanimir Markov",url:"https://jindal.utdallas.edu/faculty/stanimir-markov/"},{name:"Jeroen Koenraadt",url:"https://www.lse.ac.uk/people/jeroen-koenraadt"}],
         tldr:"How livestreaming on StockTwits shapes information echo chambers around earnings calls.",
-        tags:["Disclosure & Information Production","Capital Markets"] },
-      { title:"Deleting Information: Content Moderation Regulation and Strategic Information Removal",
-        coauthors:[{name:"Ham Christensen",url:"https://www.linkedin.com/in/john-hanmer-christensen-3a36961a6/"},{name:"Mark Lang",url:"https://marklang.web.unc.edu/"}],
-        tldr:"How content-moderation regulation drives the strategic removal of information.",
         tags:["Disclosure & Information Production","Capital Markets"] }
     ],
 
@@ -292,7 +291,7 @@
         : "";
       const tags = p.tags.map(t => '<span class="tag" data-tag="' + esc(t) + '">' + esc(t) + '</span>').join("");
       return '' +
-        '<div class="card ' + cls + '" data-title="' + esc(p.title) + '" data-tags="' + esc(p.tags.join(TAG_SEP)) + '">' +
+        '<div class="card open ' + cls + '" data-title="' + esc(p.title) + '" data-tags="' + esc(p.tags.join(TAG_SEP)) + '">' +
           '<div class="card-head" data-card-toggle>' +
             '<div class="pnum">1</div>' +
             '<div class="card-main">' +
@@ -407,8 +406,13 @@
       if (actionEl) {
         const a = actionEl.dataset.action;
         if (a === "clear") { state.activeTag = null; refresh(); return; }
-        if (a === "expand-all") { setAllOpen(true); return; }
-        if (a === "collapse-all") { setAllOpen(false); return; }
+        if (a === "toggle-details") {
+          const cards = document.querySelectorAll("#wpList .card,#wipList .card,#pubList .card");
+          const anyOpen = Array.prototype.some.call(cards, c => c.classList.contains("open"));
+          cards.forEach(c => c.classList.toggle("open", !anyOpen));
+          actionEl.textContent = anyOpen ? "Expand details" : "Collapse details";
+          return;
+        }
         if (a === "toggle-sections") {
           const secs = ["wp", "wip", "pub", "other"].map(k => document.getElementById("sec-" + k));
           const anyOpen = secs.some(s => !s.classList.contains("collapsed"));

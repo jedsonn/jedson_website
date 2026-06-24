@@ -32,10 +32,10 @@
   // ---- styles ----
   var css = document.createElement("style");
   css.textContent =
-  ".wr-bar{display:flex;align-items:center;gap:8px;margin-top:10px;padding-top:9px;border-top:1px solid rgba(255,255,255,.08);flex-wrap:wrap;}" +
-  ".wr-btn{font-family:inherit;font-size:11.5px;font-weight:500;line-height:1;display:inline-flex;align-items:center;gap:5px;background:transparent;border:1px solid rgba(255,255,255,.16);color:#9298ab;padding:5px 9px;border-radius:7px;cursor:pointer;transition:.15s;}" +
-  ".wr-btn:hover{color:#dfe1e8;border-color:rgba(255,255,255,.32);}" +
-  ".wr-like.on{color:#5b9bf5;border-color:#5b9bf5;background:rgba(91,155,245,.10);}" +
+  ".wr-bar{display:flex;align-items:center;gap:16px;margin-top:8px;padding-top:7px;border-top:1px solid rgba(255,255,255,.06);flex-wrap:wrap;}" +
+  ".wr-btn{font-family:inherit;font-size:11px;font-weight:500;line-height:1;display:inline-flex;align-items:center;gap:4px;background:none;border:none;color:#5a6075;padding:2px 0;cursor:pointer;transition:color .15s;}" +
+  ".wr-btn:hover{color:#9298ab;}" +
+  ".wr-like.on{color:#5b9bf5;}" +
   ".wr-cnt{font-variant-numeric:tabular-nums;}" +
   ".wr-msg{font-size:11px;color:#5bca7b;}" +
   ".wr-form{margin-top:8px;display:flex;flex-direction:column;gap:6px;}" +
