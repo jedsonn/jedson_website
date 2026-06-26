@@ -29,4 +29,27 @@
   window.gtag = gtag;
   gtag("js", new Date());
   gtag("config", GA_ID);
+
+  /* Rich click tracking — fires a "link_click" event with a readable label and a
+     type (outbound | pdf | cv_pdf | email), so you can see which papers, your CV,
+     and external profiles get clicked. Complements GA4's built-in measurement. */
+  document.addEventListener("click", function (e) {
+    var a = e.target && e.target.closest ? e.target.closest("a[href]") : null;
+    if (!a || typeof window.gtag !== "function") return;
+    var url;
+    try { url = new URL(a.href, location.href); } catch (_) { return; }
+    var type = null;
+    if (url.protocol === "mailto:") type = "email";
+    else if (url.protocol === "http:" || url.protocol === "https:") {
+      if (/\.pdf($|\?)/i.test(url.pathname)) type = /cv/i.test(url.pathname) ? "cv_pdf" : "pdf";
+      else if (url.host !== location.host) type = "outbound";
+    }
+    if (!type) return; // ignore internal page-to-page nav (page_view already covers it)
+    window.gtag("event", "link_click", {
+      link_type: type,
+      link_text: (a.textContent || "").trim().slice(0, 100),
+      link_url: url.href.slice(0, 300),
+      link_domain: url.host
+    });
+  }, true);
 })();
