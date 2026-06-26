@@ -13,7 +13,7 @@
 (function () {
   "use strict";
 
-  var GA_ID = ""; // <-- paste your GA4 Measurement ID here, e.g. "G-ABC1234XYZ"
+  var GA_ID = "G-TK1JTN1R3M"; // GA4 Measurement ID for www.jedsonpinto.com
 
   // Do nothing until a real ID is provided, or if the visitor asked not to be tracked.
   if (!GA_ID || GA_ID.indexOf("G-") !== 0) return;
