@@ -379,6 +379,7 @@
 <div class="subs-container" id="subs-markets">
   <div class="subtopics">
     <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Factor Zoo">Factor Zoo</button>
     <button class="sb" data-s="Return Prediction">Return Prediction</button>
     <button class="sb" data-s="Factor Models">Factor Models</button>
     <button class="sb" data-s="Bonds">Bonds</button>
@@ -1198,6 +1199,34 @@
 <div class="tab-content" id="tab-markets">
 <div class="dec">2010s</div>
 <div class="row">
+<div class="L"><div class="c a" data-sub="Factor Zoo">
+  <div class="tp">Analytical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">Presidential Address: Discount Rates</div>
+  <div class="au">Cochrane</div>
+  <div class="jo">Journal of Finance, 2011</div>
+  <div class="ex">The address that named the problem: a “ZOO of new factors” — hundreds of characteristics claimed to predict returns — with no discipline on which provide INDEPENDENT information. Cochrane reframed asset pricing around discount-rate variation and issued the challenge the next decade of research answered.<div class="lg">The origin of the term 'factor zoo' and the research agenda of taming it — the question every factor-selection paper cites in its first paragraph.</div></div>
+</div></div>
+<span class="yr">2011</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2016</span>
+<div class="R"><div class="c e" data-sub="Factor Zoo">
+  <div class="tp">Empirical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">… and the Cross-Section of Expected Returns</div>
+  <div class="au">Harvey, Liu &amp; Zhu</div>
+  <div class="jo">Review of Financial Studies, 2016</div>
+  <div class="ex">Catalogued 316 published factors and dropped the multiple-testing bomb: after adjusting for the sheer number of tests the profession has run, the usual t-statistic of 2.0 is worthless — new factors should clear a hurdle of roughly t &gt; 3.0. Most published factors are likely FALSE discoveries.<div class="lg">Changed empirical finance's evidentiary standards overnight. The reason referees now ask about data snooping by default.</div></div>
+</div><div class="c e" data-sub="Factor Zoo">
+  <div class="tp">Empirical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">Does Academic Research Destroy Stock Return Predictability?</div>
+  <div class="au">McLean &amp; Pontiff</div>
+  <div class="jo">Journal of Finance, 2016</div>
+  <div class="ex">Tracked 97 published predictors OUT of sample: returns decay ~26% after the sample ends and ~58% after PUBLICATION — with the decay concentrated in liquid, arbitrageable stocks. Investors read the journals and trade the anomalies away.<div class="lg">The elegant test separating statistical bias from real-but-arbitraged predictability: publication itself is the treatment.</div></div>
+</div></div>
+</div>
+<div class="row">
 <div class="L"></div>
 <span class="yr">2019</span>
 <div class="R"><div class="c e" data-sub="Factor Models">
@@ -1212,7 +1241,19 @@
 <div class="row">
 <div class="L"></div>
 <span class="yr">2020</span>
-<div class="R"><div class="c e" data-sub="Return Prediction">
+<div class="R"><div class="c e" data-sub="Factor Zoo">
+  <div class="tp">Empirical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">Taming the Factor Zoo: A Test of New Factors</div>
+  <div class="au">Feng, Giglio &amp; Xiu</div>
+  <div class="jo">Journal of Finance, 2020</div>
+  <div class="ex">THE selection machine: double-selection LASSO evaluates any NEW factor against the entire existing zoo, asking whether it adds pricing information beyond what hundreds of incumbents already span — with valid inference despite the high-dimensional controls. Verdict: most recent factors are redundant; only a handful earn their keep.<div class="lg">Exactly the protocol the field needed — a disciplined, ML-based answer to 'does your factor survive the zoo?' Now the standard hurdle for proposing one.</div></div>
+</div><div class="c e" data-sub="Factor Zoo">
+  <div class="tp">Empirical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">Replicating Anomalies</div>
+  <div class="au">Hou, Xue &amp; Zhang</div>
+  <div class="jo">Review of Financial Studies, 2020</div>
+  <div class="ex">The great replication purge: re-tested 452 published anomalies with standard controls — NYSE breakpoints, value-weighted returns, microcaps handled properly — and 65% FAIL at conventional significance. With the higher t-hurdle, ~82% fail. Much of the zoo was microcap noise and equal-weighting.<div class="lg">The empirical housecleaning of the cross-section. Read alongside Jensen-Kelly-Pedersen for the full debate.</div></div>
+</div><div class="c e" data-sub="Return Prediction">
   <div class="tp">Empirical<span class="sub">Return Prediction</span></div>
   <div class="ti">Empirical Asset Pricing via Machine Learning</div>
   <div class="au">Gu, Kelly &amp; Xiu</div>
@@ -1241,6 +1282,17 @@
   <div class="au">Bianchi, Büchner &amp; Tamoni</div>
   <div class="jo">Review of Financial Studies, 2021</div>
   <div class="ex">Extended the ML toolkit to Treasury markets: neural networks uncover bond-return predictability from macro and yield-curve information that spanning regressions miss, with economic gains for bond investors.<div class="lg">Evidence that the ML advantage generalizes beyond equities — nonlinearity is a feature of asset markets, not a quirk of stocks.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Factor Zoo">
+  <div class="tp">Empirical<span class="sub">Factor Zoo</span></div>
+  <div class="ti">Is There a Replication Crisis in Finance?</div>
+  <div class="au">Jensen, Kelly &amp; Pedersen</div>
+  <div class="jo">Journal of Finance, 2023</div>
+  <div class="ex">The rebuttal: a Bayesian hierarchical model that shares information ACROSS factors — plus a unified global dataset of 153 factors in 93 countries — finds most factors DO replicate, survive out-of-sample, and strengthen when modeled jointly. The zoo is more disciplined than the purge suggested.<div class="lg">The optimistic pole of the replication debate — and a masterclass in using hierarchical ML-style shrinkage to settle a meta-scientific fight.</div></div>
 </div></div>
 </div>
 <div class="row">
@@ -1557,7 +1609,7 @@ var subtitles={
   'econometrics':'Prediction versus causation, machine predictions versus human judgment, look-ahead bias, and inference when ML is inside the estimate.',
   'text':'How economics, accounting, and finance learned to read: sentiment, readability, deception, and measurement from text.',
   'prediction':'Machine learning applied to the core prediction tasks of accounting: misstatement, bankruptcy, earnings, credit, and governance.',
-  'markets':'The machine-learning revolution in empirical asset pricing: return prediction, factor models, and the virtue of complexity.',
+  'markets':'The machine-learning revolution in empirical asset pricing: the factor zoo and which factors survive, return prediction, and the virtue of complexity.',
   'econ':'Information economics, automation and labor, the data economy, and what AI does to growth.',
   'genai':'The ChatGPT era: experimental and market evidence on generative AI in work, disclosure, capital markets, simulation — and its biases.'
 };
