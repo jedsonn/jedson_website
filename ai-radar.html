@@ -307,7 +307,7 @@
 
 <header>
   <h1>Temporal Map of AI Research</h1>
-  <p id="subtitle">From Turing's question to transformers, BERT, and instruction-tuned LLMs: the ideas that built artificial intelligence, 1943–2023. Click any paper to expand.</p>
+  <p id="subtitle">From Turing's question to transformers, LLMs, agents, and the collapsing cost of intelligence, 1943–2025. Click any paper to expand.</p>
   <div class="series">
     <span data-tab="foundations" class="active">AI Foundations &amp; LLMs</span>
     <span data-tab="econometrics">ML &amp; Econometrics</span>
@@ -334,6 +334,8 @@
     <button class="sb" data-s="Text Methods">Text Methods</button>
     <button class="sb" data-s="Architectures">Architectures</button>
     <button class="sb" data-s="Scaling &amp; Alignment">Scaling &amp; Alignment</button>
+    <button class="sb" data-s="Efficiency &amp; Distillation">Efficiency &amp; Distillation</button>
+    <button class="sb" data-s="Agents">Agents</button>
     <button class="sb" data-s="Finance LLMs">Finance LLMs</button>
   </div>
 </div>
@@ -346,6 +348,7 @@
     <button class="sb" data-s="Inference with ML">Inference with ML</button>
     <button class="sb" data-s="Man vs Machine">Man vs Machine</button>
     <button class="sb" data-s="Bias &amp; Fairness">Bias &amp; Fairness</button>
+    <button class="sb" data-s="Look-Ahead &amp; Leakage">Look-Ahead &amp; Leakage</button>
   </div>
 </div>
 
@@ -400,6 +403,7 @@
     <button class="sb" data-s="Productivity">Productivity</button>
     <button class="sb" data-s="Capital Markets">Capital Markets</button>
     <button class="sb" data-s="Disclosure">Disclosure</button>
+    <button class="sb" data-s="Agents &amp; Simulation">Agents &amp; Simulation</button>
     <button class="sb" data-s="Bias &amp; Ethics">Bias &amp; Ethics</button>
     <button class="sb" data-s="Learning">Learning</button>
   </div>
@@ -559,6 +563,17 @@
 <div class="R"></div>
 </div>
 <div class="row">
+<div class="L"><div class="c a" data-sub="Efficiency &amp; Distillation">
+  <div class="tp">Analytical<span class="sub">Efficiency &amp; Distillation</span></div>
+  <div class="ti">Distilling the Knowledge in a Neural Network</div>
+  <div class="au">Hinton, Vinyals &amp; Dean</div>
+  <div class="jo">NIPS Deep Learning Workshop (arXiv), 2015</div>
+  <div class="ex">The original DISTILLATION paper: train a small, cheap “student” model to match the soft output probabilities of a large “teacher” — and keep most of the accuracy at a fraction of the cost. The teacher's uncertainty, not just its answers, carries the knowledge.<div class="lg">The intellectual basis of every cheap model that punches above its size — from DistilBERT to the small models now running on phones.</div></div>
+</div></div>
+<span class="yr">2015</span>
+<div class="R"></div>
+</div>
+<div class="row">
 <div class="L"><div class="c a" data-sub="Architectures">
   <div class="tp">Analytical<span class="sub">Architectures</span></div>
   <div class="ti">Attention Is All You Need</div>
@@ -599,7 +614,13 @@
 </div></div>
 </div>
 <div class="row">
-<div class="L"></div>
+<div class="L"><div class="c a" data-sub="Efficiency &amp; Distillation">
+  <div class="tp">Analytical<span class="sub">Efficiency &amp; Distillation</span></div>
+  <div class="ti">LoRA: Low-Rank Adaptation of Large Language Models</div>
+  <div class="au">Hu, Shen, Wallis, Allen-Zhu, Li, Wang, Wang &amp; Chen</div>
+  <div class="jo">ICLR, 2022</div>
+  <div class="ex">The fine-tuning hack that democratized LLM customization: freeze the giant model, train only tiny low-rank matrices injected into each layer — 10,000× fewer trainable parameters, no inference latency, and near-full fine-tuning quality.<div class="lg">Why anyone — including accounting researchers — can now adapt a frontier-class model on a single GPU.</div></div>
+</div></div>
 <span class="yr">2022</span>
 <div class="R"><div class="c e" data-sub="Scaling &amp; Alignment">
   <div class="tp">Empirical<span class="sub">Scaling &amp; Alignment</span></div>
@@ -613,6 +634,12 @@
   <div class="au">Ouyang et al. (OpenAI)</div>
   <div class="jo">NeurIPS, 2022</div>
   <div class="ex">Raw language models complete text; they don't HELP. InstructGPT used reinforcement learning from human feedback (RLHF) to make models follow instructions, refuse harm, and admit uncertainty — with a 1.3B model preferred by humans over a 175B raw one.<div class="lg">The alignment step that made ChatGPT possible. 'Helpful, honest, harmless' became an engineering objective.</div></div>
+</div><div class="c e" data-sub="Efficiency &amp; Distillation">
+  <div class="tp">Empirical<span class="sub">Efficiency &amp; Distillation</span></div>
+  <div class="ti">Training Compute-Optimal Large Language Models</div>
+  <div class="au">Hoffmann et al. (DeepMind)</div>
+  <div class="jo">NeurIPS, 2022</div>
+  <div class="ex">The “Chinchilla” paper: the field had been building models TOO BIG and training them on too little data. For a fixed compute budget, a 4× smaller model trained on 4× more tokens wins — Chinchilla (70B) beat Gopher (280B) across the board.<div class="lg">Rewrote the economics of training overnight: the cost-optimal frontier is about DATA, not just parameters.</div></div>
 </div></div>
 </div>
 <div class="row">
@@ -624,12 +651,41 @@
   <div class="au">Bubeck et al. (Microsoft Research)</div>
   <div class="jo">Working paper (arXiv), 2023</div>
   <div class="ex">A 155-page tour of GPT-4 solving problems across math, coding, medicine, law, and psychology — often with no task-specific training. Controversial title, careful documentation. Whatever it is, it is not a stochastic parrot.<div class="lg">The capabilities inventory that made 'general-purpose technology' the default frame for LLMs in economics.</div></div>
+</div><div class="c e" data-sub="Agents">
+  <div class="tp">Empirical<span class="sub">Agents</span></div>
+  <div class="ti">ReAct: Synergizing Reasoning and Acting in Language Models</div>
+  <div class="au">Yao, Zhao, Yu, Du, Shafran, Narasimhan &amp; Cao</div>
+  <div class="jo">ICLR, 2023</div>
+  <div class="ex">The recipe behind most LLM AGENTS: interleave chain-of-thought reasoning with actions (search, lookup, tool calls) and feed the observations back into the reasoning loop. Thought → act → observe → think again.<div class="lg">The canonical agent loop — the architecture underneath research assistants, coding agents, and autonomous workflows.</div></div>
+</div><div class="c e" data-sub="Agents">
+  <div class="tp">Empirical<span class="sub">Agents</span></div>
+  <div class="ti">Generative Agents: Interactive Simulacra of Human Behavior</div>
+  <div class="au">Park, O'Brien, Cai, Morris, Liang &amp; Bernstein</div>
+  <div class="jo">UIST, 2023</div>
+  <div class="ex">The “Smallville” paper: 25 LLM agents with memory, reflection, and planning living in a simulated town — they spread invitations, formed opinions of each other, and coordinated a Valentine's party nobody scripted. Believable emergent social behavior from language models.<div class="lg">Founded the agent-based-simulation agenda: societies of LLM agents as laboratories for social science.</div></div>
 </div><div class="c e" data-sub="Finance LLMs">
   <div class="tp">Empirical<span class="sub">Finance LLMs</span></div>
   <div class="ti">FinBERT: A Large Language Model for Extracting Information from Financial Text</div>
   <div class="au">Huang, Wang &amp; Yang</div>
   <div class="jo">Contemporary Accounting Research, 2023</div>
   <div class="ex">The accounting profession's FinBERT: pre-trained on 4.9 billion tokens of financial text — 10-Ks, earnings calls, analyst reports. Beats dictionaries and generic BERT at sentiment, ESG classification, and identifying forward-looking statements, especially where financial language diverges from everyday English.<div class="lg">The reference domain-LLM for accounting research, and the standard baseline in the text-analysis literature since.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2025</span>
+<div class="R"><div class="c e" data-sub="Efficiency &amp; Distillation">
+  <div class="tp">Empirical<span class="sub">Efficiency &amp; Distillation</span></div>
+  <div class="ti">DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning</div>
+  <div class="au">DeepSeek-AI</div>
+  <div class="jo">Technical report (arXiv), 2025</div>
+  <div class="ex">The cost shock of the LLM era. Reasoning ability trained with pure reinforcement learning on a mixture-of-experts base whose predecessor (V3) reported a headline training cost near $5.6 million — one to two orders of magnitude below Western frontier runs — with open weights and aggressive distillation into small models.<div class="lg">The week AI-infrastructure stocks repriced. Whatever the true all-in cost, it moved the debate from 'can we afford frontier AI?' to 'how cheap does this get?'</div></div>
+</div><div class="c e" data-sub="Efficiency &amp; Distillation">
+  <div class="tp">Empirical<span class="sub">Efficiency &amp; Distillation</span></div>
+  <div class="ti">DeepSeek-OCR: Contexts Optical Compression</div>
+  <div class="au">Wei, Sun &amp; Li (DeepSeek-AI)</div>
+  <div class="jo">Technical report (arXiv), 2025</div>
+  <div class="ex">The OCR hack, empirically tested: render long text as an IMAGE and let a vision encoder compress it — the report claims ~97% decoding precision at under 10× compression, meaning ten pages of tokens squeezed into one page's worth of vision tokens. Context windows priced like pictures instead of words.<div class="lg">A technical report, not peer-reviewed — but if the compression numbers hold up, a serious lever on the cost of long-document analysis (10-Ks included).</div></div>
 </div></div>
 </div>
 </div>
@@ -659,6 +715,17 @@
 <div class="R"></div>
 </div>
 <div class="row">
+<div class="L"></div>
+<span class="yr">2016</span>
+<div class="R"><div class="c e" data-sub="Bias &amp; Fairness">
+  <div class="tp">Empirical<span class="sub">Bias &amp; Fairness</span></div>
+  <div class="ti">Man is to Computer Programmer as Woman is to Homemaker? Debiasing Word Embeddings</div>
+  <div class="au">Bolukbasi, Chang, Zou, Saligrama &amp; Kalai</div>
+  <div class="jo">NeurIPS, 2016</div>
+  <div class="ex">Word embeddings trained on news text learn the analogies of our prejudices — literally completing 'man : programmer :: woman : homemaker.' The paper both DOCUMENTED the bias geometrically and proposed the first debiasing algorithms.<div class="lg">The paper that made 'AI inherits our biases' a measurable, fixable, and unavoidable research question.</div></div>
+</div></div>
+</div>
+<div class="row">
 <div class="L"><div class="c a" data-sub="Prediction vs Causation">
   <div class="tp">Analytical<span class="sub">Prediction vs Causation</span></div>
   <div class="ti">Machine Learning: An Applied Econometric Approach</div>
@@ -673,7 +740,13 @@
   <div class="ex">The roadmap for combining the two cultures: prediction models allocate attention and resources; causal models evaluate interventions; the interesting frontier is where they meet — heterogeneous treatment effects, policy targeting, and bandit-style learning.<div class="lg">The synthesis piece that framed the ML-meets-causal-inference agenda for the decade.</div></div>
 </div></div>
 <span class="yr">2017</span>
-<div class="R"></div>
+<div class="R"><div class="c e" data-sub="Bias &amp; Fairness">
+  <div class="tp">Empirical<span class="sub">Bias &amp; Fairness</span></div>
+  <div class="ti">Semantics Derived Automatically from Language Corpora Contain Human-Like Biases</div>
+  <div class="au">Caliskan, Bryson &amp; Narayanan</div>
+  <div class="jo">Science, 2017</div>
+  <div class="ex">Replicated the Implicit Association Test ON A MACHINE: embeddings reproduce the full catalogue of documented human implicit biases — flowers vs. insects, race and names, gender and careers — with effect sizes matching the psychology literature.<div class="lg">The cleanest demonstration that bias lives in the training corpus itself: any model trained on human text starts with human prejudice.</div></div>
+</div></div>
 </div>
 <div class="row">
 <div class="L"><div class="c a" data-sub="Inference with ML">
@@ -732,6 +805,39 @@
   <div class="jo">Quarterly Journal of Economics, 2022</div>
   <div class="ex">Compared physicians' heart-attack testing decisions against an ML benchmark of true risk: doctors OVER-test low-risk patients and UNDER-test high-risk ones — errors traced to simple heuristics and salient symptoms. The algorithm reveals the structure of expert misjudgment.<div class="lg">The mature version of man-versus-machine research: use the model not to replace the expert but to DIAGNOSE how the expert learns and errs.</div></div>
 </div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Look-Ahead &amp; Leakage">
+  <div class="tp">Empirical<span class="sub">Look-Ahead &amp; Leakage</span></div>
+  <div class="ti">Assessing Look-Ahead Bias in Stock Return Predictions Generated by GPT Sentiment Analysis</div>
+  <div class="au">Glasserman &amp; Lin</div>
+  <div class="jo">Working paper (Columbia), 2023</div>
+  <div class="ex">The uncomfortable question for every 'ChatGPT predicts returns' paper: the model may simply REMEMBER what happened. Using anonymized headlines and comparing periods inside versus outside the training window, they find look-ahead bias and distraction effects contaminating naive LLM return predictions.<div class="lg">The methodological cold shower for LLM-based asset pricing: if the future is in the training data, your alpha is memory.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Look-Ahead &amp; Leakage">
+  <div class="tp">Empirical<span class="sub">Look-Ahead &amp; Leakage</span></div>
+  <div class="ti">Lookahead Bias in Pretrained Language Models</div>
+  <div class="au">Sarkar &amp; Vafa</div>
+  <div class="jo">Working paper (SSRN), 2024</div>
+  <div class="ex">Shows that pretrained LLMs leak post-dated knowledge even when prompted to role-play an earlier date — models 'know' about events after the claimed forecast date — and proposes evaluation protocols and time-partitioned models for valid backtesting.<div class="lg">Why serious LLM finance research now trains or evaluates on time-sliced corpora. Leakage is the new p-hacking.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Look-Ahead &amp; Leakage">
+  <div class="tp">Analytical<span class="sub">Look-Ahead &amp; Leakage</span></div>
+  <div class="ti">Large Language Models: An Applied Econometric Framework</div>
+  <div class="au">Ludwig, Mullainathan &amp; Rambachan</div>
+  <div class="jo">NBER Working Paper No. 33344, 2025</div>
+  <div class="ex">The econometrics of using LLMs in research: when can LLM-generated data stand in for human responses, and when does training-data leakage invalidate the design? Provides conditions — no contamination between training corpus and estimation sample — under which LLM-based measurement supports valid inference.<div class="lg">The formal rulebook the field was missing: treat the LLM as a measurement instrument with an unknown training set, and design around it.</div></div>
+</div></div>
+<span class="yr">2025</span>
+<div class="R"></div>
 </div>
 </div>
 
@@ -1258,6 +1364,17 @@
 </div>
 <div class="row">
 <div class="L"></div>
+<span class="yr">2021</span>
+<div class="R"><div class="c e" data-sub="Policy">
+  <div class="tp">Empirical<span class="sub">Policy</span></div>
+  <div class="ti">The Short-Run Effects of the General Data Protection Regulation on Technology Venture Investment</div>
+  <div class="au">Jia, Jin &amp; Wagman</div>
+  <div class="jo">Marketing Science, 2021</div>
+  <div class="ex">The best early evidence on what DATA regulation does to innovation: after GDPR, venture investment in EU technology firms fell relative to the US — fewer deals and smaller amounts, concentrated in data-intensive and younger ventures.<div class="lg">The empirical benchmark in the AI-regulation debate: privacy rules have real, measurable costs on the startup margin — to be weighed against their benefits.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
 <span class="yr">2022</span>
 <div class="R"><div class="c e" data-sub="Automation &amp; Labor">
   <div class="tp">Empirical<span class="sub">Automation &amp; Labor</span></div>
@@ -1279,7 +1396,13 @@
 <div class="R"></div>
 </div>
 <div class="row">
-<div class="L"><div class="c a" data-sub="Data Economics">
+<div class="L"><div class="c a" data-sub="Policy">
+  <div class="tp">Analytical<span class="sub">Policy</span></div>
+  <div class="ti">Regulating Transformative Technologies</div>
+  <div class="au">Acemoglu &amp; Lensman</div>
+  <div class="jo">American Economic Review: Insights, 2024</div>
+  <div class="ex">A theory of OPTIMAL adoption speed for technologies that are transformative but carry hard-to-reverse risks: when damages are irreversible and learning happens with use, the optimal policy is gradual adoption that accelerates as uncertainty resolves — not bans, not laissez-faire.<div class="lg">The formal backbone for 'go slow, then fast' AI governance — regulation as sequencing, not prohibition.</div></div>
+</div><div class="c a" data-sub="Data Economics">
   <div class="tp">Analytical<span class="sub">Data Economics</span></div>
   <div class="ti">The Changing Economics of Knowledge Production</div>
   <div class="au">Abis &amp; Veldkamp</div>
@@ -1337,6 +1460,12 @@
   <div class="au">Hansen &amp; Kazinnik</div>
   <div class="jo">Working paper (Federal Reserve Bank of Richmond), 2023</div>
   <div class="ex">GPT models classify the hawkishness of Fed statements about as well as trained human readers — and better than dictionaries and smaller models — while explaining their reasoning. Central-bank communication, machine-read.<div class="lg">Evidence that LLMs match domain experts on nuanced institutional text — from inside the Federal Reserve System itself.</div></div>
+</div><div class="c e" data-sub="Agents &amp; Simulation">
+  <div class="tp">Empirical<span class="sub">Agents &amp; Simulation</span></div>
+  <div class="ti">Large Language Models as Simulated Economic Agents: What Can We Learn from Homo Silicus?</div>
+  <div class="au">Horton</div>
+  <div class="jo">NBER Working Paper No. 31122, 2023</div>
+  <div class="ex">Put LLMs INSIDE the experiments: GPT agents endowed with preferences replay classic behavioral economics studies — Kahneman-Knetsch-Thaler fairness, status quo bias, minimum-wage hiring — and broadly reproduce human results, cheaply and at scale.<div class="lg">Founded the 'homo silicus' agenda: LLM agents as wind tunnels for piloting experiments and simulating populations before spending on human subjects.</div></div>
 </div><div class="c e" data-sub="Disclosure">
   <div class="tp">Empirical<span class="sub">Disclosure</span></div>
   <div class="ti">Bloated Disclosures: Can ChatGPT Help Investors Process Information?</div>
@@ -1372,6 +1501,12 @@
   <div class="au">Jha, Qian, Weber &amp; Yang</div>
   <div class="jo">Working paper (NBER No. 32161), 2024</div>
   <div class="ex">Asked GPT to read earnings-call discussions and score firms' expected INVESTMENT policy. The resulting 'GPT investment score' predicts actual future capex and R&amp;D — and subsumes traditional text measures. LLMs extract managerial intentions, not just tone.<div class="lg">From sentiment to substance: LLMs recovering forward-looking corporate policy from the words executives choose.</div></div>
+</div><div class="c e" data-sub="Bias &amp; Ethics">
+  <div class="tp">Empirical<span class="sub">Bias &amp; Ethics</span></div>
+  <div class="ti">More Human than Human: Measuring ChatGPT Political Bias</div>
+  <div class="au">Motoki, Pinho Neto &amp; Rodrigues</div>
+  <div class="jo">Public Choice, 2024</div>
+  <div class="ex">A clean design for measuring ideology in a chatbot: ask ChatGPT to impersonate partisans, then compare its DEFAULT answers to the impersonations. The default sits systematically left of center across countries — a measurable political lean in a tool used by hundreds of millions.<div class="lg">One of the most-cited AI-bias papers in social science — and the methodological template of asking the model to reveal its own priors.</div></div>
 </div></div>
 </div>
 <div class="row">
@@ -1418,13 +1553,13 @@
 <script>
 var tf='all',sf='all',activeTab='foundations';
 var subtitles={
-  'foundations':'From Turing\'s question to transformers, BERT, and instruction-tuned LLMs: the ideas that built artificial intelligence, 1943–2023.',
-  'econometrics':'Prediction versus causation, machine predictions versus human judgment, and inference when ML is inside the estimate.',
+  'foundations':'From Turing\'s question to transformers, LLMs, agents, and the collapsing cost of intelligence, 1943–2025.',
+  'econometrics':'Prediction versus causation, machine predictions versus human judgment, look-ahead bias, and inference when ML is inside the estimate.',
   'text':'How economics, accounting, and finance learned to read: sentiment, readability, deception, and measurement from text.',
   'prediction':'Machine learning applied to the core prediction tasks of accounting: misstatement, bankruptcy, earnings, credit, and governance.',
   'markets':'The machine-learning revolution in empirical asset pricing: return prediction, factor models, and the virtue of complexity.',
   'econ':'Information economics, automation and labor, the data economy, and what AI does to growth.',
-  'genai':'The ChatGPT era: experimental and market evidence on generative AI in work, disclosure, and capital markets — and its biases.'
+  'genai':'The ChatGPT era: experimental and market evidence on generative AI in work, disclosure, capital markets, simulation — and its biases.'
 };
 function upd(){
   var container=document.getElementById('tab-'+activeTab);
