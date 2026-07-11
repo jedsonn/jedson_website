@@ -310,6 +310,7 @@
   <p id="subtitle">From Turing's question to transformers, LLMs, agents, and the collapsing cost of intelligence, 1943–2025. Click any paper to expand.</p>
   <div class="series">
     <span data-tab="foundations" class="active">AI Foundations &amp; LLMs</span>
+    <span data-tab="evals">Evals &amp; Benchmarks</span>
     <span data-tab="econometrics">ML &amp; Econometrics</span>
     <span data-tab="text">Text as Data</span>
     <span data-tab="prediction">Prediction, Fraud &amp; Decisions</span>
@@ -337,6 +338,19 @@
     <button class="sb" data-s="Efficiency &amp; Distillation">Efficiency &amp; Distillation</button>
     <button class="sb" data-s="Agents">Agents</button>
     <button class="sb" data-s="Finance LLMs">Finance LLMs</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-evals">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Benchmark Design">Benchmark Design</button>
+    <button class="sb" data-s="Knowledge &amp; Reasoning">Knowledge &amp; Reasoning</button>
+    <button class="sb" data-s="Code &amp; Agents">Code &amp; Agents</button>
+    <button class="sb" data-s="Truthfulness &amp; Safety">Truthfulness &amp; Safety</button>
+    <button class="sb" data-s="Judging &amp; Arenas">Judging &amp; Arenas</button>
+    <button class="sb" data-s="Finance Evals">Finance Evals</button>
+    <button class="sb" data-s="Critiques">Critiques</button>
   </div>
 </div>
 
@@ -687,6 +701,125 @@
   <div class="au">Wei, Sun &amp; Li (DeepSeek-AI)</div>
   <div class="jo">Technical report (arXiv), 2025</div>
   <div class="ex">The OCR hack, empirically tested: render long text as an IMAGE and let a vision encoder compress it — the report claims ~97% decoding precision at under 10× compression, meaning ten pages of tokens squeezed into one page's worth of vision tokens. Context windows priced like pictures instead of words.<div class="lg">A technical report, not peer-reviewed — but if the compression numbers hold up, a serious lever on the cost of long-document analysis (10-Ks included).</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-evals">
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2016</span>
+<div class="R"><div class="c e" data-sub="Benchmark Design">
+  <div class="tp">Empirical<span class="sub">Benchmark Design</span></div>
+  <div class="ti">SQuAD: 100,000+ Questions for Machine Comprehension of Text</div>
+  <div class="au">Rajpurkar, Zhang, Lopyrev &amp; Liang</div>
+  <div class="jo">EMNLP, 2016</div>
+  <div class="ex">The benchmark that started the leaderboard era of NLP: 100,000 crowd-sourced questions over Wikipedia paragraphs, with exact-match and F1 scoring anyone could reproduce. Within two years, models passed the human baseline — and the field learned its first lesson about benchmark SATURATION.<div class="lg">The template for the modern eval: big dataset, clean metric, public leaderboard — and a lifespan shorter than anyone expected.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2019</span>
+<div class="R"><div class="c e" data-sub="Benchmark Design">
+  <div class="tp">Empirical<span class="sub">Benchmark Design</span></div>
+  <div class="ti">GLUE: A Multi-Task Benchmark and Analysis Platform for Natural Language Understanding</div>
+  <div class="au">Wang, Singh, Michael, Hill, Levy &amp; Bowman</div>
+  <div class="jo">ICLR, 2019</div>
+  <div class="ex">Nine language-understanding tasks bundled into ONE score, so models could no longer overfit a single task. BERT promptly crushed it; SuperGLUE arrived a year later and was crushed too. The eval treadmill was born: build benchmark, saturate benchmark, repeat.<div class="lg">The multi-task evaluation paradigm every LLM leaderboard descends from — and the classic case study in how fast benchmarks die.</div></div>
+</div></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Benchmark Design">
+  <div class="tp">Analytical<span class="sub">Benchmark Design</span></div>
+  <div class="ti">Dynabench: Rethinking Benchmarking in NLP</div>
+  <div class="au">Kiela et al.</div>
+  <div class="jo">NAACL, 2021</div>
+  <div class="ex">The HOW-TO-BUILD-EVALS manifesto: static benchmarks saturate and leak into training data, so collect them DYNAMICALLY — humans adversarially writing examples that current models get wrong, with the model in the loop. The benchmark evolves as the models do.<div class="lg">The intellectual case for living, adversarial evaluation — the antidote to training-set contamination and leaderboard overfitting.</div></div>
+</div><div class="c a" data-sub="Critiques">
+  <div class="tp">Analytical<span class="sub">Critiques</span></div>
+  <div class="ti">AI and the Everything in the Whole Wide World Benchmark</div>
+  <div class="au">Raji, Bender, Paullada, Denton &amp; Hanna</div>
+  <div class="jo">NeurIPS Datasets &amp; Benchmarks, 2021</div>
+  <div class="ex">The critique every eval builder should read: benchmarks like ImageNet and GLUE get treated as measures of GENERAL capability when they are narrow, arbitrary samples with contested construct validity. A high score means the model is good at the benchmark — everything else is inference.<div class="lg">Construct validity comes to AI: know what your eval actually measures before you claim what the model can do.</div></div>
+</div></div>
+<span class="yr">2021</span>
+<div class="R"><div class="c e" data-sub="Knowledge &amp; Reasoning">
+  <div class="tp">Empirical<span class="sub">Knowledge &amp; Reasoning</span></div>
+  <div class="ti">Measuring Massive Multitask Language Understanding</div>
+  <div class="au">Hendrycks, Burns, Basart, Zou, Mazeika, Song &amp; Steinhardt</div>
+  <div class="jo">ICLR, 2021</div>
+  <div class="ex">MMLU: 57 subjects — law, medicine, accounting, philosophy — testing knowledge acquired in pretraining, not task-specific tricks. GPT-3 scored ~44% when random is 25%; frontier models now near-saturate it. For four years it was THE headline number in every model release.<div class="lg">The de facto IQ score of the LLM era. Its saturation is why harder successors (GPQA, MMLU-Pro) exist.</div></div>
+</div><div class="c e" data-sub="Code &amp; Agents">
+  <div class="tp">Empirical<span class="sub">Code &amp; Agents</span></div>
+  <div class="ti">Evaluating Large Language Models Trained on Code</div>
+  <div class="au">Chen et al. (OpenAI)</div>
+  <div class="jo">Working paper (arXiv), 2021</div>
+  <div class="ex">The Codex paper, and with it HumanEval: hand-WRITTEN programming problems (so they can't be memorized from GitHub) scored by whether generated code passes unit tests — the pass@k metric. Functional correctness replaced textual similarity as the standard for code.<div class="lg">Defined how the world measures AI coding — execution-based evaluation, not string matching — and launched the tool now called GitHub Copilot.</div></div>
+</div><div class="c e" data-sub="Knowledge &amp; Reasoning">
+  <div class="tp">Empirical<span class="sub">Knowledge &amp; Reasoning</span></div>
+  <div class="ti">Training Verifiers to Solve Math Word Problems</div>
+  <div class="au">Cobbe et al. (OpenAI)</div>
+  <div class="jo">Working paper (arXiv), 2021</div>
+  <div class="ex">GSM8K: 8,500 grade-school math word problems that stumped GPT-3 — plus the idea of training VERIFIERS to judge candidate solutions and rerank them, foreshadowing today's reasoning models scored by outcome checks.<div class="lg">The standard math-reasoning eval for half a decade, and an early blueprint for verification-based training.</div></div>
+</div><div class="c e" data-sub="Finance Evals">
+  <div class="tp">Empirical<span class="sub">Finance Evals</span></div>
+  <div class="ti">FinQA: A Dataset of Numerical Reasoning over Financial Data</div>
+  <div class="au">Chen, Chen, Smiley, Shah et al.</div>
+  <div class="jo">EMNLP, 2021</div>
+  <div class="ex">The finance-domain eval: 8,281 expert-written questions requiring MULTI-STEP numerical reasoning over real earnings-report tables and text — compute the ratio, compare the years, chain the operations. Models must show an executable reasoning program, not just an answer.<div class="lg">The benchmark for whether AI can actually do financial-statement work — and the ancestor of every accounting-domain eval since.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2022</span>
+<div class="R"><div class="c e" data-sub="Truthfulness &amp; Safety">
+  <div class="tp">Empirical<span class="sub">Truthfulness &amp; Safety</span></div>
+  <div class="ti">TruthfulQA: Measuring How Models Mimic Human Falsehoods</div>
+  <div class="au">Lin, Hilton &amp; Evans</div>
+  <div class="jo">ACL, 2022</div>
+  <div class="ex">The hallucination eval with a twist: 817 questions where the TRAINING DATA itself is wrong — misconceptions, conspiracy theories, old wives' tales. Bigger models were initially LESS truthful, because scale means better imitation of human text, errors included.<div class="lg">Formalized truthfulness as measurable and separable from capability — the conceptual basis of every hallucination benchmark.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Benchmark Design">
+  <div class="tp">Analytical<span class="sub">Benchmark Design</span></div>
+  <div class="ti">Holistic Evaluation of Language Models</div>
+  <div class="au">Liang et al. (Stanford CRFM)</div>
+  <div class="jo">Transactions on Machine Learning Research, 2023</div>
+  <div class="ex">HELM: the framework paper for building eval SUITES. Taxonomize scenarios (tasks × domains × users) and metrics (accuracy, calibration, robustness, fairness, bias, toxicity, efficiency), then measure every model on every cell — exposing that models topping accuracy leaderboards often fail on calibration or robustness.<div class="lg">The methodology reference for anyone designing an evaluation: multi-metric, transparent, and explicit about what is NOT covered.</div></div>
+</div></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Benchmark Design">
+  <div class="tp">Empirical<span class="sub">Benchmark Design</span></div>
+  <div class="ti">Beyond the Imitation Game: Quantifying and Extrapolating the Capabilities of Language Models</div>
+  <div class="au">Srivastava et al. (442 authors)</div>
+  <div class="jo">Transactions on Machine Learning Research, 2023</div>
+  <div class="ex">BIG-bench: 204 tasks crowd-sourced from 132 institutions — from chess to social bias to ancient languages — built to measure capabilities BEYOND saturated benchmarks and to study how performance scales, including the 'emergent' jumps that appear only above certain model sizes.<div class="lg">The community-scale approach to eval construction, and a primary data source for the emergent-abilities debate.</div></div>
+</div><div class="c e" data-sub="Knowledge &amp; Reasoning">
+  <div class="tp">Empirical<span class="sub">Knowledge &amp; Reasoning</span></div>
+  <div class="ti">GPQA: A Graduate-Level Google-Proof Q&amp;A Benchmark</div>
+  <div class="au">Rein et al.</div>
+  <div class="jo">Working paper (arXiv), 2023</div>
+  <div class="ex">The eval built for the post-MMLU world: PhD-written science questions so hard that skilled non-experts WITH GOOGLE score only ~34% (experts ~65%). Designed explicitly for scalable oversight — how do you evaluate a model on questions you can't answer yourself?<div class="lg">The current frontier knowledge benchmark — and a preview of the deepest eval problem: judging systems smarter than their judges.</div></div>
+</div><div class="c e" data-sub="Judging &amp; Arenas">
+  <div class="tp">Empirical<span class="sub">Judging &amp; Arenas</span></div>
+  <div class="ti">Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena</div>
+  <div class="au">Zheng, Chiang, Sheng et al.</div>
+  <div class="jo">NeurIPS Datasets &amp; Benchmarks, 2023</div>
+  <div class="ex">The two evals that rule the chatbot era: MT-Bench (multi-turn questions scored by GPT-4) and Chatbot Arena (crowdsourced blind A/B battles aggregated into Elo ratings). Crucially, it VALIDATED the judge: strong LLM judges agree with humans ~80% — about as often as humans agree with each other — while documenting position, verbosity, and self-preference biases.<div class="lg">Made LLM-as-a-judge a legitimate, audited methodology — the scalable evaluation trick behind most modern model comparisons.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Code &amp; Agents">
+  <div class="tp">Empirical<span class="sub">Code &amp; Agents</span></div>
+  <div class="ti">SWE-bench: Can Language Models Resolve Real-World GitHub Issues?</div>
+  <div class="au">Jimenez, Yang, Wettig, Yao, Pei, Press &amp; Narasimhan</div>
+  <div class="jo">ICLR, 2024</div>
+  <div class="ex">The AGENTIC eval: 2,294 real GitHub issues from real repositories — fix the bug so the actual test suite passes, navigating a full codebase, not a toy function. Frontier models initially solved under 2%; agent scaffolds now push far higher, making it the yardstick of the coding-agent race.<div class="lg">The benchmark that moved evaluation from answering questions to DOING WORK — the standard for measuring autonomous AI agents.</div></div>
 </div></div>
 </div>
 </div>
@@ -1606,6 +1739,7 @@
 var tf='all',sf='all',activeTab='foundations';
 var subtitles={
   'foundations':'From Turing\'s question to transformers, LLMs, agents, and the collapsing cost of intelligence, 1943–2025.',
+  'evals':'How AI capability is measured: benchmark design, the canonical evals and their saturation, LLM-as-judge, and what a good eval requires.',
   'econometrics':'Prediction versus causation, machine predictions versus human judgment, look-ahead bias, and inference when ML is inside the estimate.',
   'text':'How economics, accounting, and finance learned to read: sentiment, readability, deception, and measurement from text.',
   'prediction':'Machine learning applied to the core prediction tasks of accounting: misstatement, bankruptcy, earnings, credit, and governance.',
