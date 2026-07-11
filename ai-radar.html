@@ -1,0 +1,1435 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Temporal Map of AI Research</title>
+<meta name="description" content="A temporal map of artificial intelligence research — analytical and empirical papers from Turing to transformers to GenAI in accounting, finance, and economics. Curated by Jedson Pinto.">
+<style>
+
+  :root {
+    --bg: #0c0e13;
+    --surface: #161921;
+    --surface2: #1e2230;
+    --border: #272b3a;
+    --text: #dfe1e8;
+    --text-dim: #6b7084;
+    --text-mid: #9298ab;
+    --a-color: #5b9bf5;
+    --a-dim: rgba(91,155,245,0.10);
+    --e-color: #5bca7b;
+    --e-dim: rgba(91,202,123,0.10);
+    --line: #1e2230;
+  }
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    max-width: 780px;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 0.8rem;
+    text-align: center;
+  }
+  header h1 {
+    font-size: 1.75rem;
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    margin-bottom: 0.5rem;
+    background: linear-gradient(135deg, var(--a-color), var(--e-color));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+  header p {
+    color: var(--text-dim);
+    font-size: 0.86rem;
+    line-height: 1.6;
+    max-width: 530px;
+    margin: 0 auto;
+  }
+  header .series {
+    margin-top: 0.8rem;
+    font-size: 0.7rem;
+    color: var(--text-dim);
+    letter-spacing: 0.04em;
+  }
+  header .series span {
+    display: inline-block;
+    padding: 0.25rem 0.6rem;
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    margin: 0.15rem;
+  }
+  header .series span.active {
+    border-color: var(--a-color);
+    color: var(--a-color);
+    background: var(--a-dim);
+  }
+
+  /* Filters */
+  .filters {
+    display: flex;
+    justify-content: center;
+    gap: 0.4rem;
+    padding: 0.9rem 1.5rem;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    background: rgba(12,14,19,0.9);
+    backdrop-filter: blur(16px);
+    border-bottom: 1px solid var(--border);
+  }
+  .fb {
+    font-family: inherit;
+    font-size: 0.78rem;
+    font-weight: 600;
+    padding: 0.38rem 1rem;
+    border-radius: 20px;
+    border: 1.5px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .fb:hover { color: var(--text); border-color: var(--text-dim); }
+  .fb.on[data-f="all"] { background: var(--surface2); border-color: var(--text-mid); color: var(--text); }
+  .fb.on[data-f="a"] { background: var(--a-dim); border-color: var(--a-color); color: var(--a-color); }
+  .fb.on[data-f="e"] { background: var(--e-dim); border-color: var(--e-color); color: var(--e-color); }
+
+  .ct { text-align: center; font-size: 0.7rem; color: var(--text-dim); padding: 0.5rem 0 0; }
+
+  /* Subtopic filters */
+  .subtopics {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.25rem;
+    padding: 0.3rem 1.5rem 0.5rem;
+    max-width: 800px;
+    margin: 0 auto;
+    background: rgba(12,14,19,0.95);
+    border-bottom: 1px solid var(--border);
+    position: sticky;
+    top: 46px;
+    z-index: 99;
+  }
+  .sb {
+    font-family: inherit;
+    font-size: 0.62rem;
+    font-weight: 500;
+    padding: 0.18rem 0.55rem;
+    border-radius: 10px;
+    border: 1px solid var(--border);
+    background: transparent;
+    color: var(--text-dim);
+    cursor: pointer;
+    transition: all 0.2s;
+  }
+  .sb:hover {
+    color: var(--text-mid);
+    border-color: var(--text-dim);
+  }
+  .sb.on {
+    background: var(--surface2);
+    border-color: var(--text-mid);
+    color: var(--text);
+  }
+
+  /* Track headers */
+  .trk {
+    display: flex;
+    max-width: 1050px;
+    margin: 1rem auto 0;
+    padding: 0 1rem;
+  }
+  .trk div {
+    flex: 1;
+    text-align: center;
+    font-size: 0.65rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.14em;
+    padding-bottom: 0.5rem;
+  }
+  .trk .al { color: var(--a-color); }
+  .trk .ar { color: var(--e-color); }
+
+  /* Timeline */
+  .tl { max-width: 1050px; margin: 0 auto; padding: 0 1rem 4rem; }
+
+  .dec {
+    text-align: center;
+    font-size: 1.5rem;
+    font-weight: 800;
+    color: #1e2230;
+    padding: 2.2rem 0 0.8rem;
+    letter-spacing: -0.02em;
+  }
+
+  .row {
+    display: flex;
+    gap: 1.5rem;
+    position: relative;
+    margin-bottom: 0.3rem;
+  }
+  .row::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    width: 1px;
+    height: 100%;
+    background: var(--line);
+  }
+  .yr {
+    position: absolute;
+    left: 50%;
+    top: 0.5rem;
+    transform: translateX(-50%);
+    font-size: 0.62rem;
+    font-weight: 700;
+    color: var(--text-dim);
+    background: var(--bg);
+    padding: 0.05rem 0.4rem;
+    border-radius: 6px;
+    z-index: 2;
+    white-space: nowrap;
+  }
+  .L, .R { flex: 1; display: flex; flex-direction: column; gap: 0.3rem; }
+  .L { align-items: flex-end; }
+  .R { align-items: flex-start; }
+
+  /* Cards */
+  .c {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    padding: 0.65rem 0.85rem;
+    max-width: 435px;
+    width: 100%;
+    cursor: pointer;
+    transition: all 0.2s;
+    position: relative;
+    z-index: 1;
+  }
+  .c:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 18px rgba(0,0,0,0.25);
+    border-color: #3a3f52;
+  }
+  .c.a { border-left: 3px solid var(--a-color); }
+  .c.e { border-left: 3px solid var(--e-color); }
+  .c.h {
+    opacity: 0; max-height: 0; padding: 0; margin: 0;
+    border: 0; overflow: hidden; pointer-events: none;
+  }
+  .c .tp {
+    font-size: 0.58rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.08em;
+    margin-bottom: 0.25rem;
+  }
+  .c.a .tp { color: var(--a-color); }
+  .c.e .tp { color: var(--e-color); }
+  .c .sub {
+    font-size: 0.55rem;
+    font-weight: 600;
+    color: var(--text-dim);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    display: inline;
+    margin-left: 0.3rem;
+    opacity: 0.7;
+  }
+  .c .ti {
+    font-size: 0.83rem;
+    font-weight: 700;
+    line-height: 1.3;
+    margin-bottom: 0.15rem;
+  }
+  .c .au { font-size: 0.7rem; color: var(--text-mid); }
+  .c .jo { font-size: 0.65rem; color: var(--text-dim); font-style: italic; }
+
+  .c .ex {
+    display: none;
+    margin-top: 0.55rem;
+    padding-top: 0.55rem;
+    border-top: 1px solid var(--border);
+    font-size: 0.78rem;
+    line-height: 1.6;
+    color: var(--text);
+  }
+  .c .lg {
+    margin-top: 0.4rem;
+    font-size: 0.71rem;
+    color: var(--text-dim);
+    font-style: italic;
+    line-height: 1.45;
+  }
+  .c.o .ex { display: block; }
+
+  @media (max-width: 700px) {
+    .row { flex-direction: column; gap: 0.3rem; padding-left: 2rem; }
+    .row::before { left: 0.8rem; }
+    .yr { left: 0.8rem; transform: none; }
+    .L, .R { align-items: stretch; }
+    .c { max-width: 100%; }
+    .trk { display: none; }
+    header h1 { font-size: 1.35rem; }
+  }
+
+  footer {
+    text-align: center;
+    padding: 2rem 1rem;
+    font-size: 0.68rem;
+    color: var(--text-dim);
+    border-top: 1px solid var(--border);
+    max-width: 780px;
+    margin: 0 auto;
+  }
+
+  /* Tab system */
+  .tab-content { display: none; }
+  .tab-content.active { display: block; }
+  .subs-container { display: none; }
+  .subs-container.active { display: block; }
+  header .series span { cursor: pointer; transition: all 0.2s; }
+
+</style>
+  <script src="analytics.js"></script>
+</head>
+<body>
+
+<header>
+  <h1>Temporal Map of AI Research</h1>
+  <p id="subtitle">From Turing's question to AlexNet: the mathematical and computational foundations of artificial intelligence, 1943–2012. Click any paper to expand.</p>
+  <div class="series">
+    <span data-tab="foundations" class="active">Foundations of AI</span>
+    <span data-tab="llms">Deep Learning &amp; LLMs</span>
+    <span data-tab="text">Text as Data</span>
+    <span data-tab="prediction">Prediction, Fraud &amp; Decisions</span>
+    <span data-tab="markets">AI &amp; Asset Pricing</span>
+    <span data-tab="econ">Economics of AI</span>
+    <span data-tab="genai">GenAI at Work</span>
+  </div>
+</header>
+
+<div class="filters">
+  <button class="fb on" data-f="all">All Papers</button>
+  <button class="fb" data-f="a">Analytical</button>
+  <button class="fb" data-f="e">Empirical</button>
+</div>
+
+<div class="subs-container active" id="subs-foundations">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Origins">Origins</button>
+    <button class="sb" data-s="Neural Networks">Neural Networks</button>
+    <button class="sb" data-s="Learning Theory">Learning Theory</button>
+    <button class="sb" data-s="Statistical ML">Statistical ML</button>
+    <button class="sb" data-s="Text Methods">Text Methods</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-llms">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Embeddings">Embeddings</button>
+    <button class="sb" data-s="Architectures">Architectures</button>
+    <button class="sb" data-s="Scaling">Scaling</button>
+    <button class="sb" data-s="Reasoning">Reasoning</button>
+    <button class="sb" data-s="Alignment">Alignment</button>
+    <button class="sb" data-s="Finance LLMs">Finance LLMs</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-text">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Sentiment &amp; Tone">Sentiment &amp; Tone</button>
+    <button class="sb" data-s="Readability">Readability</button>
+    <button class="sb" data-s="Deception">Deception</button>
+    <button class="sb" data-s="Measurement">Measurement</button>
+    <button class="sb" data-s="Culture &amp; Risk">Culture &amp; Risk</button>
+    <button class="sb" data-s="Machine Readers">Machine Readers</button>
+    <button class="sb" data-s="Survey">Survey</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-prediction">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Fraud &amp; Misstatement">Fraud &amp; Misstatement</button>
+    <button class="sb" data-s="Earnings Prediction">Earnings Prediction</button>
+    <button class="sb" data-s="Credit &amp; Lending">Credit &amp; Lending</button>
+    <button class="sb" data-s="Analysts vs AI">Analysts vs AI</button>
+    <button class="sb" data-s="Governance">Governance</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-markets">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Return Prediction">Return Prediction</button>
+    <button class="sb" data-s="Factor Models">Factor Models</button>
+    <button class="sb" data-s="Bonds">Bonds</button>
+    <button class="sb" data-s="Complexity">Complexity</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-econ">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Information Theory">Information Theory</button>
+    <button class="sb" data-s="Automation &amp; Labor">Automation &amp; Labor</button>
+    <button class="sb" data-s="Data Economics">Data Economics</button>
+    <button class="sb" data-s="Growth">Growth</button>
+    <button class="sb" data-s="Policy">Policy</button>
+  </div>
+</div>
+
+<div class="subs-container" id="subs-genai">
+  <div class="subtopics">
+    <button class="sb on" data-s="all">All Topics</button>
+    <button class="sb" data-s="Productivity">Productivity</button>
+    <button class="sb" data-s="Capital Markets">Capital Markets</button>
+    <button class="sb" data-s="Disclosure">Disclosure</button>
+    <button class="sb" data-s="Bias &amp; Ethics">Bias &amp; Ethics</button>
+    <button class="sb" data-s="Learning">Learning</button>
+  </div>
+</div>
+
+<div class="ct" id="ct"></div>
+
+<div class="trk">
+  <div class="al">Analytical / Theory &amp; Methods</div>
+  <div class="ar">Empirical / Evidence &amp; Applications</div>
+</div>
+
+<div class="tl">
+<div class="tab-content active" id="tab-foundations">
+<div class="dec">1940s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Origins">
+  <div class="tp">Analytical<span class="sub">Origins</span></div>
+  <div class="ti">A Logical Calculus of the Ideas Immanent in Nervous Activity</div>
+  <div class="au">McCulloch &amp; Pitts</div>
+  <div class="jo">Bulletin of Mathematical Biophysics, 1943</div>
+  <div class="ex">The FIRST mathematical model of a neuron. Showed that networks of simple on/off units can compute any logical function. Before computers even existed, this paper established the idea that thinking might be computation — and that networks of simple units might do it.<div class="lg">The intellectual ancestor of every neural network, from the perceptron to GPT.</div></div>
+</div></div>
+<span class="yr">1943</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Origins">
+  <div class="tp">Analytical<span class="sub">Origins</span></div>
+  <div class="ti">A Mathematical Theory of Communication</div>
+  <div class="au">Shannon</div>
+  <div class="jo">Bell System Technical Journal, 1948</div>
+  <div class="ex">Invented information theory in one paper: bits, entropy, channel capacity, redundancy. Defined information as reduction of uncertainty and made it MEASURABLE. Language models are, at their core, machines trained to minimize Shannon's cross-entropy on text.<div class="lg">Every measure of information content — in markets, in disclosures, in language models — descends from this paper.</div></div>
+</div></div>
+<span class="yr">1948</span>
+<div class="R"></div>
+</div>
+<div class="dec">1950s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Origins">
+  <div class="tp">Analytical<span class="sub">Origins</span></div>
+  <div class="ti">Computing Machinery and Intelligence</div>
+  <div class="au">Turing</div>
+  <div class="jo">Mind, 1950</div>
+  <div class="ex">Asked the question that started the field: “Can machines think?” — and replaced it with an operational test: can a machine's conversation be distinguished from a human's? The Turing Test reframed intelligence as behavior rather than essence, and anticipated machine learning: “Instead of trying to produce a programme to simulate the adult mind, why not rather try to produce one which simulates the child's?”<div class="lg">Seventy-five years later, LLMs passing casual Turing Tests made the paper's question urgently practical.</div></div>
+</div></div>
+<span class="yr">1950</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Origins">
+  <div class="tp">Analytical<span class="sub">Origins</span></div>
+  <div class="ti">A Behavioral Model of Rational Choice</div>
+  <div class="au">Simon</div>
+  <div class="jo">Quarterly Journal of Economics, 1955</div>
+  <div class="ex">Introduced BOUNDED RATIONALITY: real decision-makers do not optimize, they SATISFICE — search until an option is good enough, then stop. Simon (a Turing Award winner AND an economics Nobel laureate) is the human bridge between economics and artificial intelligence: he spent the rest of his career building AI programs that mimicked human problem solving.<div class="lg">The reason AI matters for economics: if humans are computationally constrained, machines that relax the constraint change behavior, markets, and organizations.</div></div>
+</div></div>
+<span class="yr">1955</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Neural Networks">
+  <div class="tp">Analytical<span class="sub">Neural Networks</span></div>
+  <div class="ti">The Perceptron: A Probabilistic Model for Information Storage and Organization in the Brain</div>
+  <div class="au">Rosenblatt</div>
+  <div class="jo">Psychological Review, 1958</div>
+  <div class="ex">The first LEARNING machine: a neural network that adjusts its own weights from examples. Rosenblatt built it in hardware — the Mark I Perceptron — and the New York Times promised machines that would “walk, talk, see, write, reproduce itself and be conscious of its existence.” The hype cycle is not new.<div class="lg">Every gradient update in every deep network is a descendant of the perceptron learning rule.</div></div>
+</div></div>
+<span class="yr">1958</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">1959</span>
+<div class="R"><div class="c e" data-sub="Origins">
+  <div class="tp">Empirical<span class="sub">Origins</span></div>
+  <div class="ti">Some Studies in Machine Learning Using the Game of Checkers</div>
+  <div class="au">Samuel</div>
+  <div class="jo">IBM Journal of Research and Development, 1959</div>
+  <div class="ex">COINED the term “machine learning.” Samuel's checkers program improved by playing against itself and learning an evaluation function — self-play and reinforcement learning, decades before AlphaGo made the same idea famous.<div class="lg">The first working demonstration that a computer can get better at a task than its programmer.</div></div>
+</div></div>
+</div>
+<div class="dec">1960s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Neural Networks">
+  <div class="tp">Analytical<span class="sub">Neural Networks</span></div>
+  <div class="ti">Perceptrons</div>
+  <div class="au">Minsky &amp; Papert</div>
+  <div class="jo">MIT Press, 1969</div>
+  <div class="ex">The book that (almost) killed neural networks. Proved mathematically that single-layer perceptrons cannot represent simple functions like XOR — and expressed skepticism that multi-layer versions could be trained. Funding collapsed; the first AI WINTER followed.<div class="lg">A cautionary tale about proving limits of the wrong model class. The multi-layer networks they doubted now write poetry and pass bar exams.</div></div>
+</div></div>
+<span class="yr">1969</span>
+<div class="R"></div>
+</div>
+<div class="dec">1980s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Neural Networks">
+  <div class="tp">Analytical<span class="sub">Neural Networks</span></div>
+  <div class="ti">Learning Representations by Back-Propagating Errors</div>
+  <div class="au">Rumelhart, Hinton &amp; Williams</div>
+  <div class="jo">Nature, 1986</div>
+  <div class="ex">The paper that revived neural networks. Backpropagation — applying the chain rule to send error signals backward through layers — made training MULTI-layer networks practical, answering Minsky &amp; Papert's challenge. Hidden layers learn internal representations that no one programmed.<div class="lg">Still the training algorithm of essentially every deep network, including the LLMs. Hinton received the Turing Award (2018) and the Nobel Prize in Physics (2024) for this line of work.</div></div>
+</div></div>
+<span class="yr">1986</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Learning Theory">
+  <div class="tp">Analytical<span class="sub">Learning Theory</span></div>
+  <div class="ti">Probabilistic Reasoning in Intelligent Systems</div>
+  <div class="au">Pearl</div>
+  <div class="jo">Morgan Kaufmann, 1988</div>
+  <div class="ex">Made uncertainty rigorous for AI. Bayesian networks let machines represent and update beliefs coherently, replacing brittle rule-based expert systems with probabilistic inference. Pearl later extended this to causal inference — the do-calculus that quietly underlies modern empirical economics.<div class="lg">Turing Award 2011. The bridge between AI and the causal-inference revolution in economics and accounting research.</div></div>
+</div></div>
+<span class="yr">1988</span>
+<div class="R"></div>
+</div>
+<div class="dec">1990s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Statistical ML">
+  <div class="tp">Analytical<span class="sub">Statistical ML</span></div>
+  <div class="ti">Support-Vector Networks</div>
+  <div class="au">Cortes &amp; Vapnik</div>
+  <div class="jo">Machine Learning, 1995</div>
+  <div class="ex">The workhorse classifier of the pre-deep-learning era. SVMs found the maximum-margin boundary between classes and — via the kernel trick — did it in spaces of essentially infinite dimension, with statistical learning theory guarantees behind it.<div class="lg">For fifteen years, the default answer to any classification problem — including early fraud-detection and text-classification work in accounting.</div></div>
+</div></div>
+<span class="yr">1995</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Neural Networks">
+  <div class="tp">Analytical<span class="sub">Neural Networks</span></div>
+  <div class="ti">Long Short-Term Memory</div>
+  <div class="au">Hochreiter &amp; Schmidhuber</div>
+  <div class="jo">Neural Computation, 1997</div>
+  <div class="ex">Solved the vanishing-gradient problem that kept neural networks from remembering. LSTM cells with input, forget, and output gates could hold information across long sequences — making neural machine translation, speech recognition, and early text models work.<div class="lg">The dominant sequence architecture for two decades, until attention replaced recurrence in 2017.</div></div>
+</div></div>
+<span class="yr">1997</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Learning Theory">
+  <div class="tp">Analytical<span class="sub">Learning Theory</span></div>
+  <div class="ti">Reinforcement Learning: An Introduction</div>
+  <div class="au">Sutton &amp; Barto</div>
+  <div class="jo">MIT Press, 1998</div>
+  <div class="ex">The canonical statement of learning from reward: value functions, temporal-difference learning, exploration versus exploitation. No labels, no supervision — just an agent, an environment, and consequences.<div class="lg">The framework behind AlphaGo, robotic control, and RLHF — the technique that turned raw language models into usable assistants.</div></div>
+</div></div>
+<span class="yr">1998</span>
+<div class="R"><div class="c e" data-sub="Neural Networks">
+  <div class="tp">Empirical<span class="sub">Neural Networks</span></div>
+  <div class="ti">Gradient-Based Learning Applied to Document Recognition</div>
+  <div class="au">LeCun, Bottou, Bengio &amp; Haffner</div>
+  <div class="jo">Proceedings of the IEEE, 1998</div>
+  <div class="ex">Convolutional neural networks reading handwritten checks — deep learning's first large-scale commercial deployment. Weight sharing and local receptive fields encoded the structure of images directly into the architecture.<div class="lg">LeCun and Bengio shared the 2018 Turing Award with Hinton. The MNIST benchmark introduced here trained a generation of researchers.</div></div>
+</div></div>
+</div>
+<div class="dec">2000s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Statistical ML">
+  <div class="tp">Analytical<span class="sub">Statistical ML</span></div>
+  <div class="ti">Random Forests</div>
+  <div class="au">Breiman</div>
+  <div class="jo">Machine Learning, 2001</div>
+  <div class="ex">Average hundreds of decorrelated decision trees and variance collapses while bias stays low. Random forests were embarrassingly simple, nearly tuning-free, and for two decades the strongest off-the-shelf learner on tabular data.<div class="lg">Still the first serious benchmark in most applied prediction papers in accounting and finance — and frequently still the winner on structured financial data.</div></div>
+</div><div class="c a" data-sub="Statistical ML">
+  <div class="tp">Analytical<span class="sub">Statistical ML</span></div>
+  <div class="ti">Statistical Modeling: The Two Cultures</div>
+  <div class="au">Breiman</div>
+  <div class="jo">Statistical Science, 2001</div>
+  <div class="ex">The manifesto. Breiman accused statistics of clinging to elegant data-generating models while the “algorithmic modeling” culture — judged purely on PREDICTIVE accuracy — solved real problems. Prediction and inference are different games with different rules.<div class="lg">Required reading for social scientists using ML. The prediction-versus-causation distinction it sharpened is now the organizing principle of ML-in-economics research.</div></div>
+</div></div>
+<span class="yr">2001</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Text Methods">
+  <div class="tp">Analytical<span class="sub">Text Methods</span></div>
+  <div class="ti">Latent Dirichlet Allocation</div>
+  <div class="au">Blei, Ng &amp; Jordan</div>
+  <div class="jo">Journal of Machine Learning Research, 2003</div>
+  <div class="ex">Documents as mixtures of latent topics; topics as distributions over words. LDA gave researchers a principled, unsupervised way to discover WHAT texts are about — no dictionaries, no human labels.<div class="lg">The topic-modeling tool behind a wave of accounting and finance papers measuring the content of filings, analyst reports, and conference calls.</div></div>
+</div></div>
+<span class="yr">2003</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2006</span>
+<div class="R"><div class="c e" data-sub="Neural Networks">
+  <div class="tp">Empirical<span class="sub">Neural Networks</span></div>
+  <div class="ti">Reducing the Dimensionality of Data with Neural Networks</div>
+  <div class="au">Hinton &amp; Salakhutdinov</div>
+  <div class="jo">Science, 2006</div>
+  <div class="ex">The comeback paper. Layer-by-layer pretraining made DEEP networks trainable for the first time, beating PCA at compression and shocking a field that had written neural networks off. The phrase “deep learning” entered the mainstream here.<div class="lg">Lit the fuse of the deep-learning decade that followed.</div></div>
+</div></div>
+</div>
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2012</span>
+<div class="R"><div class="c e" data-sub="Neural Networks">
+  <div class="tp">Empirical<span class="sub">Neural Networks</span></div>
+  <div class="ti">ImageNet Classification with Deep Convolutional Neural Networks</div>
+  <div class="au">Krizhevsky, Sutskever &amp; Hinton</div>
+  <div class="jo">NeurIPS, 2012</div>
+  <div class="ex">AlexNet cut the ImageNet error rate nearly in HALF overnight — GPUs, ReLUs, dropout, and scale. Computer vision converted to deep learning within two years; every other field followed.<div class="lg">The Big Bang of modern AI. The moment 'more data + more compute + deeper networks' became the dominant paradigm.</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-llms">
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Embeddings">
+  <div class="tp">Analytical<span class="sub">Embeddings</span></div>
+  <div class="ti">Efficient Estimation of Word Representations in Vector Space</div>
+  <div class="au">Mikolov, Chen, Corrado &amp; Dean</div>
+  <div class="jo">arXiv / ICLR Workshop, 2013</div>
+  <div class="ex">word2vec: words as dense vectors learned from raw text, where geometry encodes meaning — king − man + woman ≈ queen. Cheap to train on billions of words, and suddenly every NLP system had a semantic foundation.<div class="lg">The moment language became linear algebra. Embeddings are now the substrate of search, recommendation, and every LLM.</div></div>
+</div></div>
+<span class="yr">2013</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Architectures">
+  <div class="tp">Analytical<span class="sub">Architectures</span></div>
+  <div class="ti">Generative Adversarial Nets</div>
+  <div class="au">Goodfellow, Pouget-Abadie, Mirza, Xu, Warde-Farley, Ozair, Courville &amp; Bengio</div>
+  <div class="jo">NeurIPS, 2014</div>
+  <div class="ex">Two networks locked in a game: a generator forging samples, a discriminator calling fakes. Adversarial training produced the first photorealistic synthetic images and put GENERATIVE modeling at the center of AI.<div class="lg">The conceptual ancestor of today's generative AI — and of deepfakes, synthetic data, and the authenticity problems markets now grapple with.</div></div>
+</div></div>
+<span class="yr">2014</span>
+<div class="R"><div class="c e" data-sub="Embeddings">
+  <div class="tp">Empirical<span class="sub">Embeddings</span></div>
+  <div class="ti">GloVe: Global Vectors for Word Representation</div>
+  <div class="au">Pennington, Socher &amp; Manning</div>
+  <div class="jo">EMNLP, 2014</div>
+  <div class="ex">Word vectors from global co-occurrence statistics rather than local context windows. GloVe embeddings became the standard pre-trained input for a generation of NLP models — including early finance applications.<div class="lg">With word2vec, established pre-trained representations as the default starting point — the seed of the transfer-learning paradigm LLMs perfected.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Architectures">
+  <div class="tp">Analytical<span class="sub">Architectures</span></div>
+  <div class="ti">Attention Is All You Need</div>
+  <div class="au">Vaswani, Shazeer, Parmar, Uszkoreit, Jones, Gomez, Kaiser &amp; Polosukhin</div>
+  <div class="jo">NeurIPS, 2017</div>
+  <div class="ex">Threw away recurrence entirely. The TRANSFORMER processes all tokens in parallel, letting attention decide what matters — massively scalable on modern hardware. Eight authors at Google reshaped the entire trajectory of AI in eleven pages.<div class="lg">The architecture of everything: GPT, BERT, Gemini, Claude, LLaMA. Arguably the most consequential ML paper of the century so far.</div></div>
+</div></div>
+<span class="yr">2017</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2019</span>
+<div class="R"><div class="c e" data-sub="Architectures">
+  <div class="tp">Empirical<span class="sub">Architectures</span></div>
+  <div class="ti">BERT: Pre-training of Deep Bidirectional Transformers for Language Understanding</div>
+  <div class="au">Devlin, Chang, Lee &amp; Toutanova</div>
+  <div class="jo">NAACL, 2019</div>
+  <div class="ex">Pre-train once on all of Wikipedia by masking words and predicting them; fine-tune cheaply for any task. BERT swept eleven NLP benchmarks and made TRANSFER LEARNING the standard workflow for text.<div class="lg">The model that brought modern NLP to applied research — including the finance- and accounting-specific FinBERTs that followed.</div></div>
+</div><div class="c e" data-sub="Finance LLMs">
+  <div class="tp">Empirical<span class="sub">Finance LLMs</span></div>
+  <div class="ti">FinBERT: Financial Sentiment Analysis with Pre-trained Language Models</div>
+  <div class="au">Araci</div>
+  <div class="jo">Working paper (arXiv), 2019</div>
+  <div class="ex">Took BERT and fine-tuned it on financial text, showing large gains over dictionaries and generic models for financial sentiment. Domain adaptation mattered: finance language is its own dialect.<div class="lg">Opened the domain-specific LLM path for finance that later work — including the Contemporary Accounting Research FinBERT — professionalized.</div></div>
+</div></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2020</span>
+<div class="R"><div class="c e" data-sub="Scaling">
+  <div class="tp">Empirical<span class="sub">Scaling</span></div>
+  <div class="ti">Language Models are Few-Shot Learners</div>
+  <div class="au">Brown et al. (OpenAI)</div>
+  <div class="jo">NeurIPS, 2020</div>
+  <div class="ex">GPT-3: 175 billion parameters, trained on much of the internet — and capabilities nobody explicitly programmed. Show it a few examples in the prompt and it performs tasks it was never trained for. IN-CONTEXT LEARNING emerged from scale alone.<div class="lg">The proof that scale creates qualitatively new behavior — and the direct ancestor of ChatGPT.</div></div>
+</div><div class="c e" data-sub="Scaling">
+  <div class="tp">Empirical<span class="sub">Scaling</span></div>
+  <div class="ti">Scaling Laws for Neural Language Models</div>
+  <div class="au">Kaplan, McCandlish, Henighan, Brown et al.</div>
+  <div class="jo">Working paper (arXiv), 2020</div>
+  <div class="ex">Model loss falls as a smooth POWER LAW in parameters, data, and compute — predictable across orders of magnitude. Suddenly you could budget intelligence: decide the loss you want, compute the model you need.<div class="lg">Turned AI progress from craft into engineering, and justified the billion-dollar training runs that followed.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2022</span>
+<div class="R"><div class="c e" data-sub="Reasoning">
+  <div class="tp">Empirical<span class="sub">Reasoning</span></div>
+  <div class="ti">Chain-of-Thought Prompting Elicits Reasoning in Large Language Models</div>
+  <div class="au">Wei, Wang, Schuurmans, Bosma, Ichter, Xia, Chi, Le &amp; Zhou</div>
+  <div class="jo">NeurIPS, 2022</div>
+  <div class="ex">Ask the model to “think step by step” and reasoning performance jumps — dramatically, and only above a certain scale. Intermediate steps in plain language turned out to be a computational resource.<div class="lg">Founded the prompting-as-methodology literature and previewed today's reasoning models that deliberate before answering.</div></div>
+</div><div class="c e" data-sub="Alignment">
+  <div class="tp">Empirical<span class="sub">Alignment</span></div>
+  <div class="ti">Training Language Models to Follow Instructions with Human Feedback</div>
+  <div class="au">Ouyang et al. (OpenAI)</div>
+  <div class="jo">NeurIPS, 2022</div>
+  <div class="ex">Raw language models complete text; they don't HELP. InstructGPT used reinforcement learning from human feedback (RLHF) to make models follow instructions, refuse harm, and admit uncertainty — with a 1.3B model preferred by humans over a 175B raw one.<div class="lg">The alignment step that made ChatGPT possible. 'Helpful, honest, harmless' became an engineering objective.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Scaling">
+  <div class="tp">Empirical<span class="sub">Scaling</span></div>
+  <div class="ti">Sparks of Artificial General Intelligence: Early Experiments with GPT-4</div>
+  <div class="au">Bubeck et al. (Microsoft Research)</div>
+  <div class="jo">Working paper (arXiv), 2023</div>
+  <div class="ex">A 155-page tour of GPT-4 solving problems across math, coding, medicine, law, and psychology — often with no task-specific training. Controversial title, careful documentation. Whatever it is, it is not a stochastic parrot.<div class="lg">The capabilities inventory that made 'general-purpose technology' the default frame for LLMs in economics.</div></div>
+</div><div class="c e" data-sub="Finance LLMs">
+  <div class="tp">Empirical<span class="sub">Finance LLMs</span></div>
+  <div class="ti">FinBERT: A Large Language Model for Extracting Information from Financial Text</div>
+  <div class="au">Huang, Wang &amp; Yang</div>
+  <div class="jo">Contemporary Accounting Research, 2023</div>
+  <div class="ex">The accounting profession's FinBERT: pre-trained on 4.9 billion tokens of financial text — 10-Ks, earnings calls, analyst reports. Beats dictionaries and generic BERT at sentiment, ESG classification, and identifying forward-looking statements, especially where financial language diverges from everyday English.<div class="lg">The reference domain-LLM for accounting research, and the standard baseline in the text-analysis literature since.</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-text">
+<div class="dec">2000s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2004</span>
+<div class="R"><div class="c e" data-sub="Sentiment &amp; Tone">
+  <div class="tp">Empirical<span class="sub">Sentiment &amp; Tone</span></div>
+  <div class="ti">Is All That Talk Just Noise? The Information Content of Internet Stock Message Boards</div>
+  <div class="au">Antweiler &amp; Frank</div>
+  <div class="jo">Journal of Finance, 2004</div>
+  <div class="ex">The first serious NLP on investor social media: 1.5 million Yahoo! Finance and Raging Bull messages, classified by machine. Message-board talk predicted VOLATILITY (not returns), and disagreement predicted trading volume. “Noise” turned out to contain measurable signal.<div class="lg">Twenty years before FinTwit and StockTwits research, this paper set the template: classify the chatter, then test what it moves.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2007</span>
+<div class="R"><div class="c e" data-sub="Sentiment &amp; Tone">
+  <div class="tp">Empirical<span class="sub">Sentiment &amp; Tone</span></div>
+  <div class="ti">Giving Content to Investor Sentiment: The Role of Media in the Stock Market</div>
+  <div class="au">Tetlock</div>
+  <div class="jo">Journal of Finance, 2007</div>
+  <div class="ex">Ran the Wall Street Journal's “Abreast of the Market” column through a word-count dictionary. High pessimism predicted downward price pressure followed by REVERSAL — media tone was sentiment, not just information. The paper that made textual analysis respectable in top finance journals.<div class="lg">The founding paper of media-and-markets research. Its design — text measure, then horse-race against fundamentals — is still the standard.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2008</span>
+<div class="R"><div class="c e" data-sub="Readability">
+  <div class="tp">Empirical<span class="sub">Readability</span></div>
+  <div class="ti">Annual Report Readability, Current Earnings, and Earnings Persistence</div>
+  <div class="au">Li</div>
+  <div class="jo">Journal of Accounting and Economics, 2008</div>
+  <div class="ex">Counted syllables and sentence lengths in 55,000 10-Ks. Firms with LONGER, harder-to-read reports have lower earnings and less persistent profits — consistent with managers obfuscating bad news. Readability became a strategic disclosure choice, not a style preference.<div class="lg">Launched the readability literature in accounting and put linguistic obfuscation on the research map.</div></div>
+</div><div class="c e" data-sub="Sentiment &amp; Tone">
+  <div class="tp">Empirical<span class="sub">Sentiment &amp; Tone</span></div>
+  <div class="ti">More Than Words: Quantifying Language to Measure Firms' Fundamentals</div>
+  <div class="au">Tetlock, Saar-Tsechansky &amp; Macskassy</div>
+  <div class="jo">Journal of Finance, 2008</div>
+  <div class="ex">Negative words in firm-specific news predict LOW earnings — and the market underreacts to that verbal information. Language contains hard fundamental content that numbers haven't captured yet.<div class="lg">Established that text predicts fundamentals, not just sentiment — the intellectual license for two decades of NLP in capital markets research.</div></div>
+</div></div>
+</div>
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2010</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">The Information Content of Forward-Looking Statements in Corporate Filings — A Naïve Bayesian Machine Learning Approach</div>
+  <div class="au">Li</div>
+  <div class="jo">Journal of Accounting Research, 2010</div>
+  <div class="ex">One of the FIRST supervised machine-learning applications in accounting: a naïve Bayes classifier categorizing 30 million forward-looking sentences from MD&amp;As by tone and content. Machine-classified tone predicted future earnings; dictionaries could not match it.<div class="lg">The proof of concept that supervised ML beats word lists for accounting text — a decade before that became consensus.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2011</span>
+<div class="R"><div class="c e" data-sub="Sentiment &amp; Tone">
+  <div class="tp">Empirical<span class="sub">Sentiment &amp; Tone</span></div>
+  <div class="ti">When Is a Liability Not a Liability? Textual Analysis, Dictionaries, and 10-Ks</div>
+  <div class="au">Loughran &amp; McDonald</div>
+  <div class="jo">Journal of Finance, 2011</div>
+  <div class="ex">Three-quarters of “negative” words from the standard psychology dictionary are NOT negative in finance — liability, cost, tax, board. Built finance-specific word lists from scratch and showed generic dictionaries systematically mismeasure financial text.<div class="lg">The most-used dictionary in accounting and finance NLP. Also the field's canonical lesson: domain context is everything in text measurement.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2012</span>
+<div class="R"><div class="c e" data-sub="Deception">
+  <div class="tp">Empirical<span class="sub">Deception</span></div>
+  <div class="ti">Detecting Deceptive Discussions in Conference Calls</div>
+  <div class="au">Larcker &amp; Zakolyukina</div>
+  <div class="jo">Journal of Accounting Research, 2012</div>
+  <div class="ex">Trained classifiers on the calls of firms that later restated earnings. Deceptive executives use more references to general knowledge, fewer self-references, and fewer nonextreme positive words — linguistic fingerprints of deception that beat chance by a wide margin.<div class="lg">Founded computational deception detection in accounting. The ancestor of every 'can AI catch lying managers?' paper.</div></div>
+</div><div class="c e" data-sub="Deception">
+  <div class="tp">Empirical<span class="sub">Deception</span></div>
+  <div class="ti">The Power of Voice: Managerial Affective States and Future Firm Performance</div>
+  <div class="au">Mayew &amp; Venkatachalam</div>
+  <div class="jo">Journal of Finance, 2012</div>
+  <div class="ex">Ran earnings-call AUDIO through vocal-emotion software. Managers' vocal affect — beyond the words themselves — predicts future performance, analyst forecast errors, and subsequent negative news. The market hears the words but underprices the voice.<div class="lg">Extended textual analysis into paralinguistics: HOW managers speak carries information the transcript misses.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2014</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">Evidence on the Information Content of Text in Analyst Reports</div>
+  <div class="au">Huang, Zang &amp; Zheng</div>
+  <div class="jo">The Accounting Review, 2014</div>
+  <div class="ex">Naïve Bayes over 363,952 analyst reports: the TEXT carries information beyond the earnings forecasts and recommendations — and the market reaction to text is stronger when it disagrees with the quantitative summary measures.<div class="lg">Demonstrated that analysts' words are a distinct information channel, not decoration around the numbers.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Survey">
+  <div class="tp">Analytical<span class="sub">Survey</span></div>
+  <div class="ti">Textual Analysis in Accounting and Finance: A Survey</div>
+  <div class="au">Loughran &amp; McDonald</div>
+  <div class="jo">Journal of Accounting Research, 2016</div>
+  <div class="ex">The field guide: readability, tone, similarity, and the methodological landmines — document length effects, dictionary misuse, and the perils of overfitting text. Set the standards the literature still cites.<div class="lg">The survey every PhD student reads before touching a 10-K corpus.</div></div>
+</div></div>
+<span class="yr">2016</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">Measuring Economic Policy Uncertainty</div>
+  <div class="au">Baker, Bloom &amp; Davis</div>
+  <div class="jo">Quarterly Journal of Economics, 2016</div>
+  <div class="ex">Counted newspaper articles pairing 'economy', 'policy', and 'uncertainty' into the EPU index — validated against human readings, replicated in a dozen countries, and shown to predict investment and employment dynamics.<div class="lg">The most successful text-based measure in economics: cited tens of thousands of times and updated monthly at policyuncertainty.com.</div></div>
+</div><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">Text-Based Network Industries and Endogenous Product Differentiation</div>
+  <div class="au">Hoberg &amp; Phillips</div>
+  <div class="jo">Journal of Political Economy, 2016</div>
+  <div class="ex">Rebuilt industry classification from the product descriptions firms write in their own 10-Ks. Text-based networks capture competition SIC and NAICS codes miss — and they move as firms reposition their products.<div class="lg">Replaced static industry codes with living, text-defined product markets. A landmark of measurement-by-text.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2017</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">News Implied Volatility and Disaster Concerns</div>
+  <div class="au">Manela &amp; Moreira</div>
+  <div class="jo">Journal of Financial Economics, 2017</div>
+  <div class="ex">Built a VIX going back to 1890 — from newspaper front pages. Support vector regression maps Wall Street Journal text to implied volatility, extending a key state variable a century before options markets existed.<div class="lg">Text as a TIME MACHINE: machine learning recovering unobservable economic quantities from historical archives.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2018</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">Analyst Information Discovery and Interpretation Roles: A Topic Modeling Approach</div>
+  <div class="au">Huang, Lehavy, Zang &amp; Zheng</div>
+  <div class="jo">Management Science, 2018</div>
+  <div class="ex">LDA over analyst reports and conference calls separates what analysts DISCOVER (topics beyond the call) from what they INTERPRET (topics echoing management). Both roles carry price-relevant information — but in different proportions across the information cycle.<div class="lg">Showcased topic models answering a real economic question: what exactly do information intermediaries add?</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Survey">
+  <div class="tp">Analytical<span class="sub">Survey</span></div>
+  <div class="ti">Text as Data</div>
+  <div class="au">Gentzkow, Kelly &amp; Taddy</div>
+  <div class="jo">Journal of Economic Literature, 2019</div>
+  <div class="ex">The methodological synthesis: text as high-dimensional data, the representation choices (counts, embeddings, topics), and the inference pitfalls when features number in the millions. Written by economists, for economists.<div class="lg">The canonical bridge between NLP and econometrics — the survey that made text methods part of the economist's standard toolkit.</div></div>
+</div></div>
+<span class="yr">2019</span>
+<div class="R"><div class="c e" data-sub="Culture &amp; Risk">
+  <div class="tp">Empirical<span class="sub">Culture &amp; Risk</span></div>
+  <div class="ti">Firm-Level Political Risk: Measurement and Effects</div>
+  <div class="au">Hassan, Hollander, van Lent &amp; Tahoun</div>
+  <div class="jo">Quarterly Journal of Economics, 2019</div>
+  <div class="ex">Measured each firm's political risk from the political share of its earnings-call language. The striking finding: most variation in political risk is FIRM-level, not aggregate — and firms facing it hedge, lobby, and retrench investment.<div class="lg">The template for firm-level 'exposure' measures mined from calls — political, climate, pandemic, and beyond.</div></div>
+</div></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2021</span>
+<div class="R"><div class="c e" data-sub="Culture &amp; Risk">
+  <div class="tp">Empirical<span class="sub">Culture &amp; Risk</span></div>
+  <div class="ti">Measuring Corporate Culture Using Machine Learning</div>
+  <div class="au">Li, Mai, Shen &amp; Yan</div>
+  <div class="jo">Review of Financial Studies, 2021</div>
+  <div class="ex">Word embeddings trained on 200,000+ earnings calls score firms on the 'Big Five' cultural values — innovation, integrity, quality, respect, teamwork. Culture scores predict business outcomes and shift measurably after shocks like fraud revelations.<div class="lg">Made 'soft' corporate culture a hard, replicable variable — embeddings as measurement instruments.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2022</span>
+<div class="R"><div class="c e" data-sub="Sentiment &amp; Tone">
+  <div class="tp">Empirical<span class="sub">Sentiment &amp; Tone</span></div>
+  <div class="ti">Disclosure Sentiment: Machine Learning vs. Dictionary Methods</div>
+  <div class="au">Frankel, Jennings &amp; Lee</div>
+  <div class="jo">Management Science, 2022</div>
+  <div class="ex">The head-to-head: machine learning extracts sentiment from disclosures that explains market reactions BETTER than Loughran-McDonald dictionaries — but the gains are largest where dictionaries are weakest, and interpretability trades off against power.<div class="lg">The measured verdict on ML-versus-dictionaries, and a model of how to benchmark text methods honestly.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Machine Readers">
+  <div class="tp">Empirical<span class="sub">Machine Readers</span></div>
+  <div class="ti">How to Talk When a Machine Is Listening: Corporate Disclosure in the Age of AI</div>
+  <div class="au">Cao, Jiang, Yang &amp; Zhang</div>
+  <div class="jo">Review of Financial Studies, 2023</div>
+  <div class="ex">Firms KNOW the machines are reading. As machine ownership of their shares rises, companies rewrite filings to be machine-friendly — avoiding words that algorithms score as negative and adjusting tone the machines will parse. Disclosure is now written for two audiences.<div class="lg">The feedback-loop paper: AI doesn't just read disclosure, it CHANGES it. Directly relevant to strategic-communication research.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Measurement">
+  <div class="tp">Empirical<span class="sub">Measurement</span></div>
+  <div class="ti">Business News and Business Cycles</div>
+  <div class="au">Bybee, Kelly, Manela &amp; Xiu</div>
+  <div class="jo">Journal of Finance, 2024</div>
+  <div class="ex">Topic-modeled the full text of the Wall Street Journal, 1984–2017, into 180 interpretable news themes whose attention shares track and FORECAST macro activity — a narrative decomposition of the business cycle.<div class="lg">Text as macro data: the news is a real-time survey of the economy, and machine-measured attention is a state variable.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2025</span>
+<div class="R"><div class="c e" data-sub="Culture &amp; Risk">
+  <div class="tp">Empirical<span class="sub">Culture &amp; Risk</span></div>
+  <div class="ti">Beyond Words: The Challenge of Interpreting Financial Text Across Cultures</div>
+  <div class="au">Pinto &amp; Siano</div>
+  <div class="jo">Journal of International Business Studies, 2025</div>
+  <div class="ex">US-trained NLP tools stumble abroad: the same disclosure language carries different meaning across cultural and linguistic contexts, and standard US-based approaches systematically mismeasure tone in international filings.<div class="lg">A caution for the globalization of text-based research: language models inherit the culture of their training data.</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-prediction">
+<div class="dec">1960s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">1968</span>
+<div class="R"><div class="c e" data-sub="Credit &amp; Lending">
+  <div class="tp">Empirical<span class="sub">Credit &amp; Lending</span></div>
+  <div class="ti">Financial Ratios, Discriminant Analysis and the Prediction of Corporate Bankruptcy</div>
+  <div class="au">Altman</div>
+  <div class="jo">Journal of Finance, 1968</div>
+  <div class="ex">The Z-score: five accounting ratios, one discriminant function, and bankruptcy prediction accuracy that stunned the field. The first famous demonstration that statistical models beat expert judgment on a core financial task.<div class="lg">Still quoted on trading desks six decades later. The ancestor of every credit-risk model — statistical or neural.</div></div>
+</div></div>
+</div>
+<div class="dec">1980s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">1980</span>
+<div class="R"><div class="c e" data-sub="Credit &amp; Lending">
+  <div class="tp">Empirical<span class="sub">Credit &amp; Lending</span></div>
+  <div class="ti">Financial Ratios and the Probabilistic Prediction of Bankruptcy</div>
+  <div class="au">Ohlson</div>
+  <div class="jo">Journal of Accounting Research, 1980</div>
+  <div class="ex">Replaced discriminant analysis with conditional LOGIT — probabilities instead of classifications, and a fix for the methodological problems in matched-sample designs. The O-score.<div class="lg">Methodological rigor arriving in prediction research; the workhorse specification for decades of distress studies.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">1989</span>
+<div class="R"><div class="c e" data-sub="Earnings Prediction">
+  <div class="tp">Empirical<span class="sub">Earnings Prediction</span></div>
+  <div class="ti">Financial Statement Analysis and the Prediction of Stock Returns</div>
+  <div class="au">Ou &amp; Penman</div>
+  <div class="jo">Journal of Accounting and Economics, 1989</div>
+  <div class="ex">Fed 68 accounting ratios into a statistical model to produce Pr — the probability that earnings rise next year — and showed that trading on it earned abnormal returns. Fundamental analysis, mechanized.<div class="lg">The intellectual grandfather of every machine-learning-on-fundamentals paper: the information is in the statements, if you have the machinery to extract it.</div></div>
+</div></div>
+</div>
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2011</span>
+<div class="R"><div class="c e" data-sub="Fraud &amp; Misstatement">
+  <div class="tp">Empirical<span class="sub">Fraud &amp; Misstatement</span></div>
+  <div class="ti">Predicting Material Accounting Misstatements</div>
+  <div class="au">Dechow, Ge, Larson &amp; Sloan</div>
+  <div class="jo">Contemporary Accounting Research, 2011</div>
+  <div class="ex">Built the F-SCORE from a comprehensive database of SEC enforcement actions: a scaled probability of misstatement from accruals quality, performance, and market signals. A red-flag index practitioners actually adopted.<div class="lg">The benchmark every ML fraud model has to beat — and the paper that defined the misstatement-prediction task.</div></div>
+</div><div class="c e" data-sub="Fraud &amp; Misstatement">
+  <div class="tp">Empirical<span class="sub">Fraud &amp; Misstatement</span></div>
+  <div class="ti">Financial Statement Fraud Detection: An Analysis of Statistical and Machine Learning Algorithms</div>
+  <div class="au">Perols</div>
+  <div class="jo">Auditing: A Journal of Practice &amp; Theory, 2011</div>
+  <div class="ex">The first systematic horse-race of ML classifiers — SVMs, neural networks, logistic regression, bagging — on fraud detection, with careful attention to the extreme class imbalance that makes fraud prediction statistically brutal.<div class="lg">Early, honest evidence on what ML can and cannot add when positives are rare — a lesson the field keeps relearning.</div></div>
+</div></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2020</span>
+<div class="R"><div class="c e" data-sub="Fraud &amp; Misstatement">
+  <div class="tp">Empirical<span class="sub">Fraud &amp; Misstatement</span></div>
+  <div class="ti">Detecting Accounting Fraud in Publicly Traded U.S. Firms Using a Machine Learning Approach</div>
+  <div class="au">Bao, Ke, Li, Yu &amp; Zhang</div>
+  <div class="jo">Journal of Accounting Research, 2020</div>
+  <div class="ex">Ensemble learning on RAW financial statement numbers — no researcher-designed ratios — beats the F-score and logit benchmarks out of sample. The machine finds the ratios itself.<div class="lg">The JAR paper that legitimized pure-ML prediction in top-tier accounting research, and open-sourced its fraud data for the field.</div></div>
+</div><div class="c e" data-sub="Credit &amp; Lending">
+  <div class="tp">Empirical<span class="sub">Credit &amp; Lending</span></div>
+  <div class="ti">Machine + Man: A Field Experiment on the Role of Discretion in Augmenting AI-Based Lending Models</div>
+  <div class="au">Costello, Down &amp; Mehta</div>
+  <div class="jo">Journal of Accounting and Economics, 2020</div>
+  <div class="ex">A REAL field experiment at a commercial lender: give loan officers discretion to override the machine's credit scores. Human overrides underperform the model on average — but discretion helps exactly where the machine's data is thinnest.<div class="lg">One of the cleanest tests of human-plus-machine decision-making in accounting: the answer is a division of labor, not a winner.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2021</span>
+<div class="R"><div class="c e" data-sub="Fraud &amp; Misstatement">
+  <div class="tp">Empirical<span class="sub">Fraud &amp; Misstatement</span></div>
+  <div class="ti">Using Machine Learning to Detect Misstatements</div>
+  <div class="au">Bertomeu, Cheynel, Floyd &amp; Pan</div>
+  <div class="jo">Review of Accounting Studies, 2021</div>
+  <div class="ex">Gradient-boosted trees over accounting, audit, and market variables. Beyond accuracy, the paper reads the model's feature importances ECONOMICALLY: which signals matter, when, and why — turning a black box into evidence about the anatomy of misstatement.<div class="lg">A model for interpretable ML in accounting: prediction as a microscope, not just a scorecard.</div></div>
+</div><div class="c e" data-sub="Governance">
+  <div class="tp">Empirical<span class="sub">Governance</span></div>
+  <div class="ti">Selecting Directors Using Machine Learning</div>
+  <div class="au">Erel, Stern, Tan &amp; Weisbach</div>
+  <div class="jo">Review of Financial Studies, 2021</div>
+  <div class="ex">Trained on director histories, the algorithm predicts which board appointees will underperform — and the directors the model would NOT have chosen are more likely to be friends of the CEO, male, and well-connected. The machine exposes the favoritism in the boardroom.<div class="lg">Algorithmic decision aids as governance diagnostics: the gap between model choice and human choice IS the agency problem, quantified.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2022</span>
+<div class="R"><div class="c e" data-sub="Analysts vs AI">
+  <div class="tp">Empirical<span class="sub">Analysts vs AI</span></div>
+  <div class="ti">Human Versus Machine: A Comparison of Robo-Analyst and Traditional Research Analyst Investment Recommendations</div>
+  <div class="au">Coleman, Merkley &amp; Pacelli</div>
+  <div class="jo">The Accounting Review, 2022</div>
+  <div class="ex">Robo-analysts — automated research platforms — issue more balanced recommendations than human analysts, revise on filings rather than headlines, and their buys earn abnormal returns. Fewer conflicts, different information diet, real performance.<div class="lg">First systematic evidence on automated equity research: the machines are not just cheaper, they are differently biased.</div></div>
+</div><div class="c e" data-sub="Earnings Prediction">
+  <div class="tp">Empirical<span class="sub">Earnings Prediction</span></div>
+  <div class="ti">Predicting Future Earnings Changes Using Machine Learning and Detailed Financial Data</div>
+  <div class="au">Chen, Cho, Dou &amp; Lev</div>
+  <div class="jo">Journal of Accounting Research, 2022</div>
+  <div class="ex">Machine learning over the FULL detail of financial statements — hundreds of granular line items, not summary ratios — predicts earnings changes better than analysts and generates profitable trading signals. The detail the literature aggregated away was the signal.<div class="lg">Vindicated the accounting system itself: the value is in the granularity, and ML is the technology that finally exploits it.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Analysts vs AI">
+  <div class="tp">Empirical<span class="sub">Analysts vs AI</span></div>
+  <div class="ti">Man versus Machine Learning: The Term Structure of Earnings Expectations and Conditional Biases</div>
+  <div class="au">van Binsbergen, Han &amp; Lopez-Lira</div>
+  <div class="jo">Review of Financial Studies, 2023</div>
+  <div class="ex">Built a machine-learning benchmark for expected earnings and measured analysts AGAINST it: analyst forecasts are predictably biased — too optimistic at long horizons — and the machine-implied expectation errors predict returns.<div class="lg">Turned ML into an econometric instrument: a rational benchmark against which human belief distortions become measurable.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Analysts vs AI">
+  <div class="tp">Empirical<span class="sub">Analysts vs AI</span></div>
+  <div class="ti">From Man vs. Machine to Man + Machine: The Art and AI of Stock Analyses</div>
+  <div class="au">Cao, Jiang, Wang &amp; Yang</div>
+  <div class="jo">Journal of Financial Economics, 2024</div>
+  <div class="ex">AI analysts beat most human analysts — but humans WIN where soft information and institutional knowledge matter: illiquid small firms, asset-light business models, distress. And man + machine beats either alone.<div class="lg">The definitive comparative-advantage map for AI in investment research: substitution where data is rich, complementarity where judgment is scarce.</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-markets">
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2019</span>
+<div class="R"><div class="c e" data-sub="Factor Models">
+  <div class="tp">Empirical<span class="sub">Factor Models</span></div>
+  <div class="ti">Characteristics Are Covariances: A Unified Model of Risk and Return</div>
+  <div class="au">Kelly, Pruitt &amp; Su</div>
+  <div class="jo">Journal of Financial Economics, 2019</div>
+  <div class="ex">Instrumented PCA lets factor loadings depend on firm characteristics — collapsing the zoo of anomaly characteristics into a handful of latent risk factors estimated from the data. Characteristics predict returns BECAUSE they proxy for time-varying betas.<div class="lg">Modern statistical machinery applied to the oldest question in asset pricing: risk or mispricing?</div></div>
+</div></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2020</span>
+<div class="R"><div class="c e" data-sub="Return Prediction">
+  <div class="tp">Empirical<span class="sub">Return Prediction</span></div>
+  <div class="ti">Empirical Asset Pricing via Machine Learning</div>
+  <div class="au">Gu, Kelly &amp; Xiu</div>
+  <div class="jo">Review of Financial Studies, 2020</div>
+  <div class="ex">The benchmark study: every major ML method — trees, forests, boosting, neural nets — horse-raced on predicting US stock returns with 94 characteristics. Neural networks and trees roughly DOUBLE the out-of-sample R² of regressions, mostly by capturing interactions no linear model sees.<div class="lg">The paper that made machine learning a standard tool in empirical asset pricing. The methodological template for hundreds of follow-ups.</div></div>
+</div><div class="c e" data-sub="Return Prediction">
+  <div class="tp">Empirical<span class="sub">Return Prediction</span></div>
+  <div class="ti">Dissecting Characteristics Nonparametrically</div>
+  <div class="au">Freyberger, Neuhierl &amp; Weber</div>
+  <div class="jo">Review of Financial Studies, 2020</div>
+  <div class="ex">Adaptive group LASSO asks two questions the anomalies literature dodged: which characteristics matter JOINTLY (only ~a dozen of 62 survive), and is their effect nonlinear (emphatically yes).<div class="lg">Variable selection with discipline: most of the anomaly zoo is redundant once you let a few characteristics act nonlinearly.</div></div>
+</div><div class="c e" data-sub="Factor Models">
+  <div class="tp">Empirical<span class="sub">Factor Models</span></div>
+  <div class="ti">Shrinking the Cross-Section</div>
+  <div class="au">Kozak, Nagel &amp; Santosh</div>
+  <div class="jo">Journal of Financial Economics, 2020</div>
+  <div class="ex">Bayesian shrinkage over thousands of characteristic portfolios constructs a robust stochastic discount factor — regularization as economics, since absence of near-arbitrage implies the SDF loads on a few dominant principal components.<div class="lg">Machine-learning regularization, derived from asset-pricing theory rather than borrowed from computer science.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2021</span>
+<div class="R"><div class="c e" data-sub="Bonds">
+  <div class="tp">Empirical<span class="sub">Bonds</span></div>
+  <div class="ti">Bond Risk Premiums with Machine Learning</div>
+  <div class="au">Bianchi, Büchner &amp; Tamoni</div>
+  <div class="jo">Review of Financial Studies, 2021</div>
+  <div class="ex">Extended the ML toolkit to Treasury markets: neural networks uncover bond-return predictability from macro and yield-curve information that spanning regressions miss, with economic gains for bond investors.<div class="lg">Evidence that the ML advantage generalizes beyond equities — nonlinearity is a feature of asset markets, not a quirk of stocks.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Complexity">
+  <div class="tp">Analytical<span class="sub">Complexity</span></div>
+  <div class="ti">The Virtue of Complexity in Return Prediction</div>
+  <div class="au">Kelly, Malamud &amp; Zhou</div>
+  <div class="jo">Journal of Finance, 2024</div>
+  <div class="ex">Against ALL conventional wisdom: theory and evidence that bigger models keep helping even when parameters vastly outnumber observations. In the 'double descent' regime, ridge-regularized complexity improves out-of-sample Sharpe ratios — parsimony was the bias.<div class="lg">The theoretical license for large models in finance. The bias-variance folklore that governed empirical finance for decades, overturned.</div></div>
+</div></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Return Prediction">
+  <div class="tp">Empirical<span class="sub">Return Prediction</span></div>
+  <div class="ti">Deep Learning in Asset Pricing</div>
+  <div class="au">Chen, Pelger &amp; Zhu</div>
+  <div class="jo">Management Science, 2024</div>
+  <div class="ex">Imposed the no-arbitrage moment condition directly on a deep network — GANs estimating the SDF, LSTMs digesting macro time series — delivering an economically disciplined deep model that prices the cross-section out of sample.<div class="lg">The synthesis: not ML instead of theory, but ML constrained BY theory. Where the asset-pricing-meets-AI literature is heading.</div></div>
+</div></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-econ">
+<div class="dec">1980s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Information Theory">
+  <div class="tp">Analytical<span class="sub">Information Theory</span></div>
+  <div class="ti">On the Impossibility of Informationally Efficient Markets</div>
+  <div class="au">Grossman &amp; Stiglitz</div>
+  <div class="jo">American Economic Review, 1980</div>
+  <div class="ex">The paradox that governs all information technology in markets: if prices fully reveal information, nobody pays to gather it — so equilibrium requires prices to be INEFFICIENT enough to reward the informed. Information acquisition is an economic activity with costs and returns.<div class="lg">The framework for every question about AI in markets: cheaper information processing shifts the equilibrium amount of informed trading — it cannot make markets fully efficient.</div></div>
+</div></div>
+<span class="yr">1980</span>
+<div class="R"></div>
+</div>
+<div class="dec">2000s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Information Theory">
+  <div class="tp">Analytical<span class="sub">Information Theory</span></div>
+  <div class="ti">Implications of Rational Inattention</div>
+  <div class="au">Sims</div>
+  <div class="jo">Journal of Monetary Economics, 2003</div>
+  <div class="ex">Modeled humans as Shannon channels: finite information-processing CAPACITY, allocated optimally. Rational inattention explains sluggish, discrete responses to news without assuming irrationality — attention is the scarce resource.<div class="lg">The economics of limited attention that AI directly disrupts: machines relax the very constraint this theory is built on.</div></div>
+</div></div>
+<span class="yr">2003</span>
+<div class="R"></div>
+</div>
+<div class="dec">2010s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Data Economics">
+  <div class="tp">Analytical<span class="sub">Data Economics</span></div>
+  <div class="ti">Big Data in Finance and the Growth of Large Firms</div>
+  <div class="au">Begenau, Farboodi &amp; Veldkamp</div>
+  <div class="jo">Journal of Monetary Economics, 2018</div>
+  <div class="ex">Big data is not neutral: large firms generate more data, data attracts cheaper capital, cheaper capital makes them larger. A theory of how the data economy FEEDS scale — and quietly disadvantages young, small, data-poor firms.<div class="lg">The data-feedback-loop model underlying debates about AI, market concentration, and who benefits from the information revolution.</div></div>
+</div><div class="c a" data-sub="Automation &amp; Labor">
+  <div class="tp">Analytical<span class="sub">Automation &amp; Labor</span></div>
+  <div class="ti">The Race between Man and Machine: Implications of Technology for Growth, Factor Shares, and Employment</div>
+  <div class="au">Acemoglu &amp; Restrepo</div>
+  <div class="jo">American Economic Review, 2018</div>
+  <div class="ex">The task framework: automation DISPLACES labor from existing tasks while technology also CREATES new tasks where labor has comparative advantage. The race between displacement and reinstatement determines wages and labor share — and nothing guarantees the race is won.<div class="lg">The canonical model for thinking about AI and jobs — the reason 'what tasks?' replaced 'how many jobs?' as the right question.</div></div>
+</div></div>
+<span class="yr">2018</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Growth">
+  <div class="tp">Analytical<span class="sub">Growth</span></div>
+  <div class="ti">Artificial Intelligence and Economic Growth</div>
+  <div class="au">Aghion, Jones &amp; Jones</div>
+  <div class="jo">In: The Economics of Artificial Intelligence (NBER / U. Chicago Press), 2019</div>
+  <div class="ex">If AI automates the production of IDEAS themselves, growth theory changes character — with Baumol's cost disease as the crucial brake: growth ends up constrained not by what we automate, but by what we CANNOT.<div class="lg">The framework for the biggest question in economics right now: does AI accelerate growth modestly, dramatically, or explosively?</div></div>
+</div><div class="c a" data-sub="Automation &amp; Labor">
+  <div class="tp">Analytical<span class="sub">Automation &amp; Labor</span></div>
+  <div class="ti">Exploring the Impact of Artificial Intelligence: Prediction versus Judgment</div>
+  <div class="au">Agrawal, Gans &amp; Goldfarb</div>
+  <div class="jo">Information Economics and Policy, 2019</div>
+  <div class="ex">The clean decomposition: modern AI is a drop in the cost of PREDICTION. Prediction and judgment are complements in decisions — so cheap machine prediction raises the value of human judgment about payoffs, ethics, and objectives.<div class="lg">The single most useful sentence for thinking about AI adoption: machines predict, humans decide what matters.</div></div>
+</div></div>
+<span class="yr">2019</span>
+<div class="R"></div>
+</div>
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Data Economics">
+  <div class="tp">Analytical<span class="sub">Data Economics</span></div>
+  <div class="ti">Long-Run Growth of Financial Data Technology</div>
+  <div class="au">Farboodi &amp; Veldkamp</div>
+  <div class="jo">American Economic Review, 2020</div>
+  <div class="ex">Why did markets shift from fundamentals research to order-flow analysis? A growth model of data technology: as processing improves, investors rationally reallocate from long-run fundamental information to short-run demand information. Price informativeness about fundamentals need not improve.<div class="lg">The unsettling equilibrium answer to 'does better data technology make prices more informative?' — not necessarily, and maybe the opposite.</div></div>
+</div></div>
+<span class="yr">2020</span>
+<div class="R"><div class="c e" data-sub="Automation &amp; Labor">
+  <div class="tp">Empirical<span class="sub">Automation &amp; Labor</span></div>
+  <div class="ti">Robots and Jobs: Evidence from US Labor Markets</div>
+  <div class="au">Acemoglu &amp; Restrepo</div>
+  <div class="jo">Journal of Political Economy, 2020</div>
+  <div class="ex">The empirical counterpart to the task model: one more industrial robot per thousand workers reduces local employment and wages, concentrated in manufacturing communities. Displacement is not hypothetical — it shows up in commuting-zone data.<div class="lg">The benchmark causal estimate of automation's labor-market bite, and the empirical anchor of the AI-and-labor debate.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Policy">
+  <div class="tp">Analytical<span class="sub">Policy</span></div>
+  <div class="ti">Generative AI for Economic Research: Use Cases and Implications for Economists</div>
+  <div class="au">Korinek</div>
+  <div class="jo">Journal of Economic Literature, 2023</div>
+  <div class="ex">A living field manual: LLMs as research assistants across ideation, writing, coding, data work, and math — with honest benchmarking of what they do well, where they hallucinate, and how economists' comparative advantage shifts as capabilities grow.<div class="lg">The profession's reference document for AI-assisted research — updated as the models improve, which is itself the message.</div></div>
+</div></div>
+<span class="yr">2023</span>
+<div class="R"></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Data Economics">
+  <div class="tp">Analytical<span class="sub">Data Economics</span></div>
+  <div class="ti">The Changing Economics of Knowledge Production</div>
+  <div class="au">Abis &amp; Veldkamp</div>
+  <div class="jo">Review of Financial Studies, 2024</div>
+  <div class="ex">Knowledge work has a production function — labor plus data — and machine learning changes its shape: data becomes substitutable for analyst labor. Estimated on the finance industry, the model quantifies how AI reallocates value from human capital to data owners.<div class="lg">The framework for the deepest labor question in finance: who captures the rents when the analyst's knowledge is in the training set?</div></div>
+</div></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Data Economics">
+  <div class="tp">Empirical<span class="sub">Data Economics</span></div>
+  <div class="ti">Artificial Intelligence, Firm Growth, and Product Innovation</div>
+  <div class="au">Babina, Fedyk, He &amp; Hodson</div>
+  <div class="jo">Journal of Financial Economics, 2024</div>
+  <div class="ex">Measured AI adoption from millions of job postings and resumes: AI-investing firms GROW — more sales, more employment, more market share — and the mechanism is product INNOVATION, not cost-cutting. Growth concentrates among the largest firms, deepening industry concentration.<div class="lg">The first comprehensive firm-level evidence on what AI investment actually does — growth through new products, with winner-take-most dynamics.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"><div class="c a" data-sub="Growth">
+  <div class="tp">Analytical<span class="sub">Growth</span></div>
+  <div class="ti">The Simple Macroeconomics of AI</div>
+  <div class="au">Acemoglu</div>
+  <div class="jo">Economic Policy, 2025</div>
+  <div class="ex">The cold-shower paper: mapping task-level AI capabilities into aggregate productivity implies modest gains — roughly a percentage point of TFP over a decade, not a growth revolution. Hype meets national accounts.<div class="lg">The rigorous pessimist's benchmark in the AI-growth debate — the number every optimist now has to argue against.</div></div>
+</div></div>
+<span class="yr">2025</span>
+<div class="R"></div>
+</div>
+</div>
+
+<div class="tab-content" id="tab-genai">
+<div class="dec">2020s</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2023</span>
+<div class="R"><div class="c e" data-sub="Productivity">
+  <div class="tp">Empirical<span class="sub">Productivity</span></div>
+  <div class="ti">Experimental Evidence on the Productivity Effects of Generative Artificial Intelligence</div>
+  <div class="au">Noy &amp; Zhang</div>
+  <div class="jo">Science, 2023</div>
+  <div class="ex">The first prominent RCT of ChatGPT at work: mid-level professional writing tasks completed 40% FASTER with 18% higher quality — and the productivity gains are LARGEST for the weakest writers. AI compresses the skill distribution.<div class="lg">The equalization result: generative AI lifts the bottom more than the top — with deep implications for wage inequality and skill formation.</div></div>
+</div><div class="c e" data-sub="Productivity">
+  <div class="tp">Empirical<span class="sub">Productivity</span></div>
+  <div class="ti">Navigating the Jagged Technological Frontier: Field Experimental Evidence of the Effects of AI on Knowledge Worker Productivity and Quality</div>
+  <div class="au">Dell'Acqua, McFowland, Mollick, Lifshitz-Assaf, Kellogg, Rajendran, Krayer, Candelon &amp; Lakhani</div>
+  <div class="jo">Working paper (Harvard Business School), 2023</div>
+  <div class="ex">758 BCG consultants, randomized: on tasks INSIDE the AI frontier, consultants with GPT-4 were 12% faster and 40% higher quality; on tasks OUTSIDE it, AI users did WORSE — trusting the machine where it fails. Introduced 'centaurs' and 'cyborgs' as working styles.<div class="lg">The 'jagged frontier' is now the standard mental model for AI at work: the technology's capability boundary is invisible, and knowing where it lies is the new skill.</div></div>
+</div><div class="c e" data-sub="Capital Markets">
+  <div class="tp">Empirical<span class="sub">Capital Markets</span></div>
+  <div class="ti">Can ChatGPT Forecast Stock Price Movements? Return Predictability and Large Language Models</div>
+  <div class="au">Lopez-Lira &amp; Tang</div>
+  <div class="jo">Working paper (University of Florida), 2023</div>
+  <div class="ex">Asked ChatGPT to score news headlines as good or bad for the stock — no finance training, no fine-tuning. The scores predicted next-day returns, outperforming traditional sentiment measures, especially among smaller stocks. The market had not yet priced the machine's reading.<div class="lg">The paper that launched a thousand LLM-trading studies — and an early exhibit on how fast such predictability decays once everyone has the same machine.</div></div>
+</div><div class="c e" data-sub="Capital Markets">
+  <div class="tp">Empirical<span class="sub">Capital Markets</span></div>
+  <div class="ti">Can ChatGPT Decipher Fedspeak?</div>
+  <div class="au">Hansen &amp; Kazinnik</div>
+  <div class="jo">Working paper (Federal Reserve Bank of Richmond), 2023</div>
+  <div class="ex">GPT models classify the hawkishness of Fed statements about as well as trained human readers — and better than dictionaries and smaller models — while explaining their reasoning. Central-bank communication, machine-read.<div class="lg">Evidence that LLMs match domain experts on nuanced institutional text — from inside the Federal Reserve System itself.</div></div>
+</div><div class="c e" data-sub="Disclosure">
+  <div class="tp">Empirical<span class="sub">Disclosure</span></div>
+  <div class="ti">Bloated Disclosures: Can ChatGPT Help Investors Process Information?</div>
+  <div class="au">Kim, Muhn &amp; Nikolaev</div>
+  <div class="jo">Working paper (University of Chicago), 2023</div>
+  <div class="ex">GPT summaries of earnings calls and MD&amp;As are dramatically SHORTER yet capture the price-relevant content — and the 'bloat' the machine strips out is itself informative: bloated disclosures are associated with worse information environments.<div class="lg">Turned the LLM into a measurement device for disclosure quality: what the machine can delete without losing information is, by definition, noise.</div></div>
+</div><div class="c e" data-sub="Capital Markets">
+  <div class="tp">Empirical<span class="sub">Capital Markets</span></div>
+  <div class="ti">Generative AI and Firm Values</div>
+  <div class="au">Eisfeldt, Schubert &amp; Zhang</div>
+  <div class="jo">Working paper (NBER No. 31222), 2023</div>
+  <div class="ex">Built firm-level exposure to generative AI from the task content of occupations — and showed the stock market repricing it within DAYS of ChatGPT's release. Firms whose workforces are more exposed to LLMs gained value; Artificial Minus Human portfolios earned significant returns.<div class="lg">The event study of the ChatGPT moment: markets capitalized the GenAI shock immediately, and unevenly across firms.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2024</span>
+<div class="R"><div class="c e" data-sub="Capital Markets">
+  <div class="tp">Empirical<span class="sub">Capital Markets</span></div>
+  <div class="ti">Financial Statement Analysis with Large Language Models</div>
+  <div class="au">Kim, Muhn &amp; Nikolaev</div>
+  <div class="jo">Working paper (University of Chicago Booth), 2024</div>
+  <div class="ex">Gave GPT-4 standardized, ANONYMIZED financial statements — no text, no names, no dates — and chain-of-thought prompts mimicking analyst reasoning. The model predicts earnings direction better than human analysts and matches specialized ML models, with narrative rationales investors can audit.<div class="lg">The provocative result for the profession: the reasoning layer of fundamental analysis, not just the reading layer, is now automatable.</div></div>
+</div><div class="c e" data-sub="Productivity">
+  <div class="tp">Empirical<span class="sub">Productivity</span></div>
+  <div class="ti">GPTs are GPTs: Labor Market Impact Potential of LLMs</div>
+  <div class="au">Eloundou, Manning, Mishkin &amp; Rock</div>
+  <div class="jo">Science, 2024</div>
+  <div class="ex">Task-by-task exposure mapping across the entire US labor market: about 80% of workers have at least 10% of their tasks exposed to LLMs, and roughly a FIFTH have half or more — with exposure INCREASING in wages and education. White-collar work is the frontier this time.<div class="lg">The exposure atlas the policy debate runs on: generative AI as a general-purpose technology, formally argued in the title's double meaning.</div></div>
+</div><div class="c e" data-sub="Capital Markets">
+  <div class="tp">Empirical<span class="sub">Capital Markets</span></div>
+  <div class="ti">ChatGPT and Corporate Policies</div>
+  <div class="au">Jha, Qian, Weber &amp; Yang</div>
+  <div class="jo">Working paper (NBER No. 32161), 2024</div>
+  <div class="ex">Asked GPT to read earnings-call discussions and score firms' expected INVESTMENT policy. The resulting 'GPT investment score' predicts actual future capex and R&amp;D — and subsumes traditional text measures. LLMs extract managerial intentions, not just tone.<div class="lg">From sentiment to substance: LLMs recovering forward-looking corporate policy from the words executives choose.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2025</span>
+<div class="R"><div class="c e" data-sub="Productivity">
+  <div class="tp">Empirical<span class="sub">Productivity</span></div>
+  <div class="ti">Generative AI at Work</div>
+  <div class="au">Brynjolfsson, Li &amp; Raymond</div>
+  <div class="jo">Quarterly Journal of Economics, 2025</div>
+  <div class="ex">5,000+ customer-support agents at a real firm, staggered AI rollout: 15% average productivity gain, concentrated among NOVICE workers — the assistant embodies the tacit knowledge of top performers and transfers it down. Turnover falls; customers are happier.<div class="lg">The first major QJE evidence on GenAI in production: AI as a machine for diffusing expertise — with the returns flowing to the least experienced.</div></div>
+</div><div class="c e" data-sub="Disclosure">
+  <div class="tp">Empirical<span class="sub">Disclosure</span></div>
+  <div class="ti">ChatGPT for Textual Analysis? How to Use Generative LLMs in Accounting Research</div>
+  <div class="au">de Kok</div>
+  <div class="jo">Management Science, 2025</div>
+  <div class="ex">The methods paper for the LLM era in accounting: when generative models beat traditional NLP, how to prompt, validate, and audit them, and the reproducibility traps — model drift, temperature, versioning — that can silently break a study.<div class="lg">The field's instruction manual for doing LLM-based research that replicates.</div></div>
+</div></div>
+</div>
+<div class="row">
+<div class="L"></div>
+<span class="yr">2026</span>
+<div class="R"><div class="c e" data-sub="Bias &amp; Ethics">
+  <div class="tp">Empirical<span class="sub">Bias &amp; Ethics</span></div>
+  <div class="ti">Impartial Intelligence? Country Bias in GenAI Financial Analysis</div>
+  <div class="au">Pinto &amp; Motoki</div>
+  <div class="jo">Journal of Business Ethics, 2026</div>
+  <div class="ex">Give GenAI the SAME financial fundamentals and change only the country: the analysis changes. Systematic country bias in AI-generated financial assessments — with direct consequences for cross-border capital allocation as investors outsource analysis to machines.<div class="lg">Bias audits arriving in finance: the training data's geography becomes the analyst's prejudice.</div></div>
+</div><div class="c e" data-sub="Learning">
+  <div class="tp">Empirical<span class="sub">Learning</span></div>
+  <div class="ti">AI Adoption and the Loss of Learning</div>
+  <div class="au">Pinto, Radhakrishnan &amp; Weber</div>
+  <div class="jo">Working paper, 2026</div>
+  <div class="ex">The productivity gains of AI adoption have a shadow price: the on-the-job learning that junior work used to produce. If AI does the apprentice tasks, where do the next experts come from? Examines how AI adoption reshapes skill development inside firms.<div class="lg">The human-capital question underneath every AI productivity study — connecting the GenAI literature to the economics of learning-by-doing.</div></div>
+</div></div>
+</div>
+</div>
+</div>
+
+<footer>
+  Temporal Map of AI Research &mdash; July 2026 &middot; Curated by <a href="index.html" style="color:inherit">Jedson Pinto</a> &middot; Companion to the <a href="accounting-radar.html" style="color:inherit">Temporal Map of Accounting Research</a>
+</footer>
+
+<script>
+var tf='all',sf='all',activeTab='foundations';
+var subtitles={
+  'foundations':'From Turing\'s question to AlexNet: the mathematical and computational foundations of artificial intelligence, 1943–2012.',
+  'llms':'Word embeddings to transformers to instruction-tuned LLMs: the decade that made language the interface to intelligence.',
+  'text':'How accounting and finance learned to read: sentiment, readability, deception, and measurement from corporate and media text.',
+  'prediction':'Machine learning applied to the core prediction tasks of accounting: misstatement, bankruptcy, earnings, credit, and governance.',
+  'markets':'The machine-learning revolution in empirical asset pricing: return prediction, factor models, and the virtue of complexity.',
+  'econ':'The theory: information economics, automation and labor, the data economy, and what AI does to growth.',
+  'genai':'The ChatGPT era: experimental and market evidence on generative AI in work, disclosure, and capital markets — and its biases.'
+};
+function upd(){
+  var container=document.getElementById('tab-'+activeTab);
+  var cs=container.querySelectorAll('.c');
+  var n=0,total=cs.length;
+  cs.forEach(function(c){
+    var tm=tf==='all'||(tf==='a'&&c.classList.contains('a'))||(tf==='e'&&c.classList.contains('e'));
+    var sm=sf==='all'||c.dataset.sub===sf;
+    var show=tm&&sm;
+    c.classList.toggle('h',!show);
+    if(!show)c.classList.remove('o');
+    if(show)n++;
+  });
+  document.getElementById('ct').textContent='Showing '+n+' of '+total+' papers';
+}
+document.querySelectorAll('.fb').forEach(function(b){
+  b.addEventListener('click',function(){
+    document.querySelectorAll('.fb').forEach(function(x){x.classList.remove('on')});
+    b.classList.add('on');
+    tf=b.dataset.f;
+    upd();
+  });
+});
+document.querySelectorAll('.sb').forEach(function(s){
+  s.addEventListener('click',function(){
+    var parent=s.closest('.subs-container');
+    parent.querySelectorAll('.sb').forEach(function(x){x.classList.remove('on')});
+    s.classList.add('on');
+    sf=s.dataset.s;
+    upd();
+  });
+});
+document.addEventListener('click',function(e){
+  var card=e.target.closest('.c');
+  if(card)card.classList.toggle('o');
+});
+document.querySelectorAll('[data-tab]').forEach(function(pill){
+  pill.addEventListener('click',function(){
+    var tab=pill.dataset.tab;
+    activeTab=tab;
+    document.querySelectorAll('[data-tab]').forEach(function(p){p.classList.remove('active')});
+    pill.classList.add('active');
+    document.querySelectorAll('.tab-content').forEach(function(t){t.classList.remove('active')});
+    document.getElementById('tab-'+tab).classList.add('active');
+    document.querySelectorAll('.subs-container').forEach(function(s){s.classList.remove('active')});
+    document.getElementById('subs-'+tab).classList.add('active');
+    sf='all';
+    document.getElementById('subs-'+tab).querySelectorAll('.sb').forEach(function(s){
+      s.classList.toggle('on',s.dataset.s==='all');
+    });
+    document.getElementById('subtitle').innerHTML=subtitles[tab]+' Click any paper to expand.';
+    tf='all';
+    document.querySelectorAll('.fb').forEach(function(b){
+      b.classList.toggle('on',b.dataset.f==='all');
+    });
+    upd();
+  });
+});
+upd();
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="reactions.js"></script>
+</body>
+</html>
