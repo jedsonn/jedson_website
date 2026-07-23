@@ -22,6 +22,27 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from common import CFG, ROOT, log, read_jsonl, write_json
 
+# Top research institutions (accounting/finance/economics). A paper affiliated
+# with any of these is never hidden by the technical filter. Lowercase
+# substrings matched against OpenAlex institution display names.
+TOP_INSTITUTIONS = [
+    "harvard", "stanford", "massachusetts institute of technology", "mit sloan",
+    "university of chicago", "university of pennsylvania", "wharton", "columbia",
+    "new york university", "berkeley", "northwestern", "yale", "duke university",
+    "university of michigan", "los angeles", "cornell", "carnegie mellon",
+    "university of texas at dallas", "university of texas at austin", "ohio state",
+    "indiana university", "university of washington", "university of southern california",
+    "dartmouth", "university of north carolina", "emory", "georgetown",
+    "university of rochester", "washington university in st", "university of illinois",
+    "boston college", "university of minnesota", "michigan state", "arizona state",
+    "university of iowa", "university of wisconsin", "national university of singapore",
+    "hong kong university of science", "university of hong kong", "nanyang technological",
+    "tsinghua", "peking university", "university of toronto", "princeton",
+    "california institute of technology", "university of maryland", "london business school",
+    "insead", "university of oxford", "university of cambridge",
+    "london school of economics", "bocconi", "university of mannheim",
+]
+
 PUBLIC_FIELDS = [
     "uid", "doi", "arxiv_id", "title", "authors", "affiliations", "posted",
     "added", "source_label", "url", "alt_urls", "field", "role", "bullets",
@@ -77,7 +98,9 @@ def main():
     for i, p in enumerate(papers):
         p["n"] = i + 1
 
-    # Attach OpenAlex author profiles + institutions (open metadata) if present.
+    # Attach OpenAlex author profiles + institutions (open metadata) if present,
+    # and flag papers from top-tier institutions so the technical filter never
+    # hides them.
     apath = os.path.join(ROOT, "data", "authors.json")
     if os.path.exists(apath):
         amap = json.load(open(apath, encoding="utf-8"))
@@ -87,6 +110,9 @@ def main():
                 p["authors_detailed"] = a["authors"]
                 if a.get("affiliations"):
                     p["affiliations"] = a["affiliations"]
+            affs = " ; ".join(p.get("affiliations") or []).lower()
+            if affs and any(t in affs for t in TOP_INSTITUTIONS):
+                p["prestige"] = True
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)

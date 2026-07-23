@@ -1161,7 +1161,8 @@
         "Carnegie Mellon University Africa",
         "KU Leuven",
         "Utrecht University"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "arxiv:2607.07858v1",
@@ -1976,7 +1977,8 @@
         "Carnegie Mellon University",
         "Nanjing Audit University",
         "Singapore Management University"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6920881",
@@ -2174,7 +2176,8 @@
       "affiliations": [
         "University of Oxford",
         "FACE Foundation"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6703798",
@@ -2333,7 +2336,8 @@
         "University of Michigan",
         "New York University",
         "Indiana University Bloomington"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.5985277",
@@ -2381,7 +2385,8 @@
       ],
       "affiliations": [
         "Chinese University of Hong Kong"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7119484",
@@ -2551,7 +2556,8 @@
         "University of Chicago",
         "George Mason University",
         "University of South Florida"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7145231",
@@ -2966,7 +2972,8 @@
         "Massachusetts Institute of Technology",
         "Microsoft Research (United Kingdom)",
         "Microsoft (Finland)"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.5287110",
@@ -3008,7 +3015,8 @@
       ],
       "affiliations": [
         "University of Oxford"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.5100205",
@@ -3054,7 +3062,8 @@
         "Rutgers Sexual and Reproductive Health and Rights",
         "New Jersey Institute of Technology",
         "New York University"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.5094968",
@@ -3104,7 +3113,8 @@
         "Public Policy Institute of California",
         "University of Chicago",
         "Massachusetts Institute of Technology"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.4731283",
@@ -3193,7 +3203,8 @@
       ],
       "affiliations": [
         "Harvard University"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.4511540",
@@ -3369,7 +3380,8 @@
       "affiliations": [
         "Microsoft (United States)",
         "Harvard University"
-      ]
+      ],
+      "prestige": true
     }
   ]
 }

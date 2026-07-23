@@ -227,7 +227,9 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     if (st.field==="other") return p.field!=="accounting" && p.field!=="finance";
     return p.field === st.field;
   }
-  function inScope(p){ return st.tech || p.audience !== "technical"; }
+  // Technical papers are hidden by default — EXCEPT work from top-50
+  // institutions / prominent authors, which always stays visible.
+  function inScope(p){ return st.tech || p.audience !== "technical" || p.prestige; }
   function match(p){ return inField(p) && inWhen(p) && inScope(p); }
 
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
@@ -287,12 +289,12 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 
   function render(){
     var rows = papers.filter(match);
-    // Default order is the archive number descending: the most recently
-    // classified paper sits on top, and the left-hand numbers read cleanly
-    // from the running total down to 1.
+    // Default order: most recently posted first. Archive number is a stable id.
     rows.sort(function(a,b){
-      if ((b.n||0)!==(a.n||0)) return (b.n||0)-(a.n||0);
-      return String(b.posted||"").localeCompare(String(a.posted||""));
+      var pd = String(b.posted||"").localeCompare(String(a.posted||""));
+      if (pd !== 0) return pd;
+      if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
+      return (b.n||0)-(a.n||0);
     });
     document.getElementById("status").textContent =
       rows.length + " of " + papers.length + " papers";
