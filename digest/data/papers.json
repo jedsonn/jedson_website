@@ -87,8 +87,11 @@
         {
           "name": "J Q Xu",
           "url": "https://openalex.org/A5111626467",
-          "inst": ""
+          "inst": "Shangrao Normal University"
         }
+      ],
+      "affiliations": [
+        "Shangrao Normal University"
       ]
     },
     {
@@ -122,7 +125,7 @@
         {
           "name": "Johannes Habel",
           "url": "https://openalex.org/A5035054127",
-          "inst": ""
+          "inst": "Michael Baker International (United States)"
         },
         {
           "name": "Jan Zawadzki",
@@ -134,6 +137,9 @@
           "url": "https://openalex.org/A5141210370",
           "inst": ""
         }
+      ],
+      "affiliations": [
+        "Michael Baker International (United States)"
       ]
     },
     {
@@ -167,19 +173,23 @@
         {
           "name": "Zhenyu Gao",
           "url": "https://openalex.org/A5139791820",
-          "inst": ""
+          "inst": "Chinese University of Hong Kong"
         },
         {
           "name": "Wenxi Jiang",
           "url": "https://openalex.org/A5139694346",
-          "inst": ""
+          "inst": "Chinese University of Hong Kong"
         },
         {
           "name": "Yutong Yan",
           "url": "https://openalex.org/A5139696699",
-          "inst": ""
+          "inst": "Chinese University of Hong Kong"
         }
-      ]
+      ],
+      "affiliations": [
+        "Chinese University of Hong Kong"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7147559",
@@ -258,19 +268,24 @@
         {
           "name": "Fuli Yang",
           "url": "https://openalex.org/A5101033933",
-          "inst": ""
+          "inst": "Shandong University of Technology"
         },
         {
           "name": "Shiyu Lin",
           "url": "https://openalex.org/A5140253041",
-          "inst": ""
+          "inst": "Massachusetts Institute of Technology"
         },
         {
           "name": "Jing Huang",
           "url": "https://openalex.org/A5141209589",
           "inst": ""
         }
-      ]
+      ],
+      "affiliations": [
+        "Shandong University of Technology",
+        "Massachusetts Institute of Technology"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7017778",
@@ -311,12 +326,12 @@
         {
           "name": "Roy Ngu Esibe",
           "url": "https://openalex.org/A5116715581",
-          "inst": ""
+          "inst": "Carnegie Mellon University Africa"
         },
         {
           "name": "Erik Stam",
           "url": "https://openalex.org/A5000347839",
-          "inst": ""
+          "inst": "Utrecht University"
         },
         {
           "name": "Jesse Thornburg",
@@ -326,9 +341,14 @@
         {
           "name": "João Barros",
           "url": "https://openalex.org/A5089850116",
-          "inst": ""
+          "inst": "Carnegie Mellon University Africa"
         }
-      ]
+      ],
+      "affiliations": [
+        "Carnegie Mellon University Africa",
+        "Utrecht University"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6993619",
@@ -530,7 +550,7 @@
         {
           "name": "F Zhang",
           "url": "https://openalex.org/A5047301622",
-          "inst": ""
+          "inst": "City University of Hong Kong"
         },
         {
           "name": "Zhuoran Yang",
@@ -542,7 +562,11 @@
           "url": "https://openalex.org/A5141068785",
           "inst": ""
         }
-      ]
+      ],
+      "affiliations": [
+        "City University of Hong Kong"
+      ],
+      "prestige": true
     },
     {
       "uid": "arxiv:2607.13618v1",
@@ -584,8 +608,11 @@
         {
           "name": "Ashwanth Krishnan",
           "url": "https://openalex.org/A5120250599",
-          "inst": ""
+          "inst": "Qiagen (India)"
         }
+      ],
+      "affiliations": [
+        "Qiagen (India)"
       ]
     },
     {
@@ -1096,8 +1123,11 @@
         {
           "name": "Johnny Jefferson Telles",
           "url": "https://openalex.org/A5136606017",
-          "inst": ""
+          "inst": "Universidade Estadual do Oeste do Paraná"
         }
+      ],
+      "affiliations": [
+        "Universidade Estadual do Oeste do Paraná"
       ]
     },
     {
@@ -1196,23 +1226,26 @@
         {
           "name": "Robert Richardson",
           "url": "https://openalex.org/A5140326157",
-          "inst": ""
+          "inst": "Brigham Young University"
         },
         {
           "name": "Josh Meyers",
           "url": "https://openalex.org/A5021497920",
-          "inst": ""
+          "inst": "Brigham Young University"
         },
         {
           "name": "Brian Hartman",
           "url": "https://openalex.org/A5058501967",
-          "inst": ""
+          "inst": "Brigham Young University"
         },
         {
           "name": "David Sandberg",
           "url": "https://openalex.org/A5105032410",
-          "inst": ""
+          "inst": "Brigham Young University"
         }
+      ],
+      "affiliations": [
+        "Brigham Young University"
       ]
     },
     {
@@ -1286,9 +1319,13 @@
         {
           "name": "Markus Pelger",
           "url": "https://openalex.org/A5036333323",
-          "inst": ""
+          "inst": "Stanford University"
         }
-      ]
+      ],
+      "affiliations": [
+        "Stanford University"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6970578",
@@ -1450,13 +1487,16 @@
         {
           "name": "Caleb Price",
           "url": "https://openalex.org/A5138988307",
-          "inst": ""
+          "inst": "Kansas State University"
         },
         {
           "name": "Mckenzie Curtis",
           "url": "https://openalex.org/A5140108699",
           "inst": ""
         }
+      ],
+      "affiliations": [
+        "Kansas State University"
       ]
     },
     {
@@ -1587,7 +1627,7 @@
         {
           "name": "Yuhang Qiu",
           "url": "https://openalex.org/A5129066322",
-          "inst": ""
+          "inst": "Jimei University"
         },
         {
           "name": "Cheng Xiang",
@@ -1601,6 +1641,7 @@
         }
       ],
       "affiliations": [
+        "Jimei University",
         "Chongqing University",
         "Victoria University"
       ]
@@ -1890,7 +1931,7 @@
         {
           "name": "Xuguang Ai",
           "url": "https://openalex.org/A5136513630",
-          "inst": ""
+          "inst": "Yale University"
         },
         {
           "name": "Fengran Mo",
@@ -2079,12 +2120,12 @@
         {
           "name": "Jeonghoon Oh",
           "url": "https://openalex.org/A5110306578",
-          "inst": ""
+          "inst": "Seoul National University of Science and Technology"
         },
         {
           "name": "Jason Meyers",
           "url": "https://openalex.org/A5125292088",
-          "inst": ""
+          "inst": "Mercy Medical Center"
         },
         {
           "name": "Gerard Brennan",
@@ -2094,7 +2135,7 @@
         {
           "name": "Miklos A. Vasarhelyi",
           "url": "https://openalex.org/A5136535968",
-          "inst": ""
+          "inst": "Rutgers, The State University of New Jersey"
         },
         {
           "name": "Alexander J. Sannella",
@@ -2109,18 +2150,25 @@
         {
           "name": "Abdelkader O. El Alaoui",
           "url": "https://openalex.org/A5075218424",
-          "inst": ""
+          "inst": "International University of Rabat"
         },
         {
           "name": "Bassma Guermah",
           "url": "https://openalex.org/A5044855285",
-          "inst": ""
+          "inst": "International University of Rabat"
         },
         {
           "name": "Saïd Ouatik El Alaoui",
           "url": "https://openalex.org/A5084532237",
-          "inst": ""
+          "inst": "Université Ibn-Tofail"
         }
+      ],
+      "affiliations": [
+        "Seoul National University of Science and Technology",
+        "Mercy Medical Center",
+        "Rutgers, The State University of New Jersey",
+        "International University of Rabat",
+        "Université Ibn-Tofail"
       ]
     },
     {
@@ -2155,7 +2203,7 @@
         {
           "name": "Johan Linåker",
           "url": "https://openalex.org/A5033925467",
-          "inst": ""
+          "inst": "Lund University"
         },
         {
           "name": "Cailean Osborne",
@@ -2174,6 +2222,7 @@
         }
       ],
       "affiliations": [
+        "Lund University",
         "University of Oxford",
         "FACE Foundation"
       ],
@@ -2280,9 +2329,13 @@
         {
           "name": "Joshua Schwartzstein",
           "url": "https://openalex.org/A5018766009",
-          "inst": ""
+          "inst": "Harvard University Press"
         }
-      ]
+      ],
+      "affiliations": [
+        "Harvard University Press"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6166986",
@@ -2595,9 +2648,13 @@
         {
           "name": "Markus Pelger",
           "url": "https://openalex.org/A5036333323",
-          "inst": ""
+          "inst": "Stanford University"
         }
-      ]
+      ],
+      "affiliations": [
+        "Stanford University"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7037798",
@@ -2801,8 +2858,11 @@
         {
           "name": "Advaith Nila Narayanan",
           "url": "https://openalex.org/A5070519856",
-          "inst": ""
+          "inst": "Anna University, Chennai"
         }
+      ],
+      "affiliations": [
+        "Anna University, Chennai"
       ]
     },
     {
