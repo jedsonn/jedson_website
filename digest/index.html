@@ -267,7 +267,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       ? '<span class="cites">Cited <b>'+p.citations+'</b></span>' : "";
     return '<article data-i="'+i+'">'
       + '<div class="chead" data-toggle="'+i+'">'
-      +   '<div class="cnum" title="Archive number">'+(p.n||"")+'</div>'
+      +   '<div class="cnum" title="Position in the current view">'+(p._num||"")+'</div>'
       +   '<div class="chead-main">'
       +     '<div class="tags"><span>'+esc(fieldLabel)+'</span>'
       +       '<span>'+esc(p.posted)+'</span>'+cites+'</div>'
@@ -289,13 +289,16 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 
   function render(){
     var rows = papers.filter(match);
-    // Default order: most recently posted first. Archive number is a stable id.
+    // Default order: most recently posted first.
     rows.sort(function(a,b){
       var pd = String(b.posted||"").localeCompare(String(a.posted||""));
       if (pd !== 0) return pd;
       if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
       return (b.n||0)-(a.n||0);
     });
+    // The left-hand number counts the CURRENT view: the newest paper on top
+    // is numbered with the visible total and it counts down to 1.
+    rows.forEach(function(p, i){ p._num = rows.length - i; });
     document.getElementById("status").textContent =
       rows.length + " of " + papers.length + " papers";
     var list = document.getElementById("list");
