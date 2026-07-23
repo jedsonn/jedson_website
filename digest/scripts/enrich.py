@@ -65,6 +65,21 @@ def from_openalex(doi):
         return "", ""
 
 
+def openalex_citations(doi):
+    """Open citation count from OpenAlex. Honest, open impact signal — shown
+    only when > 0, so brand-new papers (nearly all of ours) display nothing
+    rather than a misleading zero. SSRN download counts are proprietary and
+    off-limits (no scraping), so citations are the open substitute."""
+    if not doi:
+        return None
+    try:
+        resp = guarded_get(OPENALEX_DOI + doi, params={"mailto": CFG["run"]["polite_mailto"]})
+        n = resp.json().get("cited_by_count")
+        return int(n) if isinstance(n, int) else None
+    except Exception:  # noqa: BLE001
+        return None
+
+
 def from_s2(doi):
     if not CFG["enrichment"].get("semanticscholar_enabled"):
         return "", ""
@@ -126,8 +141,19 @@ def main():
         log("Capping %d records to %d by relevance." % (len(kept), cap))
         kept = kept[:cap]
 
-    log("Abstracts: %d already, %d fetched, %d unavailable. Carrying %d records."
-        % (already, filled, missing, len(kept)))
+    # Citation counts only for the papers we actually keep, to spare the API.
+    cited = 0
+    for rec in kept:
+        if rec.get("doi"):
+            n = openalex_citations(rec["doi"])
+            if n is not None:
+                rec["citations"] = n
+                if n > 0:
+                    cited += 1
+            time.sleep(0.2)
+
+    log("Abstracts: %d already, %d fetched, %d unavailable. Carrying %d records. %d with citations."
+        % (already, filled, missing, len(kept), cited))
     write_json(os.path.join(run_dir, "enriched.json"), kept)
 
 

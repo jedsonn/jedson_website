@@ -8,10 +8,10 @@ brand:
   disclaimer: "Independent and not affiliated with, sponsored by, or endorsed by SSRN, Elsevier, arXiv, or any publisher listed."
 
 run:
-  window_days: 2
+  window_days: 23
   polite_mailto: "jedson.pinto@utdallas.edu"
   user_agent: "LLMResearchDigest/1.0 (https://www.jedsonpinto.com/digest; mailto:jedson.pinto@utdallas.edu)"
-  max_papers_per_edition: 40
+  max_papers_per_edition: 220
   min_relevance: 2
   request_timeout: 45
   retries: 3

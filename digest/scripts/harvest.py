@@ -36,6 +36,33 @@ def cr_date(parts):
     return "%04d-%02d-%02d" % (bits[0], bits[1], bits[2])
 
 
+def cr_date_prec(parts):
+    """Return (iso_date, precision) where precision is 3=day, 2=month, 1=year, 0=none."""
+    if not parts:
+        return ("", 0)
+    dp = parts.get("date-parts", [[]])
+    if not dp or not dp[0]:
+        return ("", 0)
+    p = dp[0]
+    bits = (list(p) + [1, 1])[:3]
+    return ("%04d-%02d-%02d" % (bits[0], bits[1], bits[2]), min(len(p), 3))
+
+
+def cr_best_date(it):
+    """Pick the most granular real date. SSRN often gives only a year in
+    'posted'/'issued', but 'created' (Crossref registration) is usually a full
+    day-precision date and is a good proxy for when the paper was posted.
+    Prefer, at equal precision: posted, published, created, issued, deposited.
+    'indexed' is deliberately excluded — it reflects re-indexing, not posting.
+    """
+    best_iso, best_prec = "", 0
+    for key in ("posted", "published", "created", "issued", "deposited"):
+        iso, prec = cr_date_prec(it.get(key))
+        if prec > best_prec:
+            best_iso, best_prec = iso, prec
+    return best_iso
+
+
 def harvest_crossref(src, start, end):
     """Fetch every DOI under a prefix indexed in the window, then filter locally.
 
@@ -50,7 +77,7 @@ def harvest_crossref(src, start, end):
             "rows": 1000,
             "cursor": cursor,
             "mailto": CFG["run"]["polite_mailto"],
-            "select": "DOI,title,author,abstract,posted,created,issued,URL,type,subject",
+            "select": "DOI,title,author,abstract,posted,created,issued,deposited,published,URL,type,subject",
         }
         resp = guarded_get(CROSSREF, params=params)
         msg = resp.json().get("message", {})
@@ -64,7 +91,7 @@ def harvest_crossref(src, start, end):
             rec["title"] = strip_tags((it.get("title") or [""])[0])
             rec["abstract"] = strip_tags(it.get("abstract") or "")
             rec["abstract_source"] = "crossref" if rec["abstract"] else ""
-            rec["posted"] = cr_date(it.get("posted")) or cr_date(it.get("created")) or cr_date(it.get("issued"))
+            rec["posted"] = cr_best_date(it) or cr_date(it.get("posted")) or cr_date(it.get("created")) or cr_date(it.get("issued"))
             for a in it.get("author", []) or []:
                 nm = " ".join(x for x in [a.get("given"), a.get("family")] if x).strip()
                 if nm:
