@@ -26,7 +26,7 @@ PUBLIC_FIELDS = [
     "uid", "doi", "arxiv_id", "title", "authors", "affiliations", "posted",
     "added", "source_label", "url", "alt_urls", "field", "role", "bullets",
     "bullet_provenance", "models", "open_weights", "validated",
-    "validation_note", "salience", "edition", "n", "citations",
+    "validation_note", "salience", "edition", "n", "citations", "audience",
 ]
 
 

@@ -156,6 +156,12 @@ footer.site .links{font-family:var(--mono);font-size:12px}
         <button class="chip" type="button" data-when="all" aria-pressed="true">All</button>
       </div>
     </div>
+    <div class="fgroup">
+      <span class="flabel">Scope</span>
+      <div class="chips">
+        <button class="chip" type="button" id="tech-toggle" aria-pressed="false">Include technical <span id="tech-count" style="opacity:.6"></span></button>
+      </div>
+    </div>
   </div>
   <div class="bar-meta">
     <span id="status">Loading</span>
@@ -180,7 +186,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 (function(){
   var D = JSON.parse(document.getElementById("data").textContent);
   var papers = D.papers;
-  var st = {field:"all", when:"all"};
+  var st = {field:"all", when:"all", tech:false};
 
   // running archive record: total papers classified to date
   (function(){
@@ -219,7 +225,8 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     if (st.field==="other") return p.field!=="accounting" && p.field!=="finance";
     return p.field === st.field;
   }
-  function match(p){ return inField(p) && inWhen(p); }
+  function inScope(p){ return st.tech || p.audience !== "technical"; }
+  function match(p){ return inField(p) && inWhen(p) && inScope(p); }
 
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
 
@@ -307,6 +314,15 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     var b = e.target.closest(".chip"); if (!b) return;
     st.when = b.dataset.when;
     this.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b); });
+    render();
+  });
+
+  // technical-scope toggle: technical papers hidden by default
+  var techN = papers.filter(function(p){ return p.audience === "technical"; }).length;
+  document.getElementById("tech-count").textContent = techN;
+  document.getElementById("tech-toggle").addEventListener("click", function(){
+    st.tech = !st.tech;
+    this.setAttribute("aria-pressed", st.tech);
     render();
   });
 
