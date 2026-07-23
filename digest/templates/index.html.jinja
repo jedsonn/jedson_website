@@ -238,7 +238,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       body = '<p class="nobul">No abstract was available from an open source, so this entry is a link only.</p>';
     }
     var prov = PROV[p.bullet_provenance] || "Metadata only";
-    var val = p.validated===true ? '<span class="val">reports validation</span>' : "";
+    var val = p.validated===true ? ' · <span class="val">reports validation</span>' : "";
     var fieldLabel = FIELD_LABEL[p.field] || p.field;
     var cites = (typeof p.citations === "number" && p.citations > 0)
       ? '<span class="cites">Cited <b>'+p.citations+'</b></span>' : "";
@@ -247,8 +247,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       +   '<div class="cnum" title="Archive number">'+(p.n||"")+'</div>'
       +   '<div class="chead-main">'
       +     '<div class="tags"><span>'+esc(fieldLabel)+'</span>'
-      +       '<span>'+esc(p.source_label)+'</span>'
-      +       '<span>'+esc(p.posted)+'</span>'+val+cites+'</div>'
+      +       '<span>'+esc(p.posted)+'</span>'+cites+'</div>'
       +     '<h2 class="ptitle"><a href="'+esc(p.url)+'" rel="noopener" target="_blank">'+esc(p.title)
       +       '<span class="ext">&#8599;</span></a></h2>'
       +     '<p class="byline">'+esc((p.authors||[]).join(", "))+'</p>'
@@ -259,7 +258,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       +   '</button>'
       + '</div>'
       + '<div class="body">' + body
-      +   '<div class="cfoot"><span>'+prov+'</span>'
+      +   '<div class="cfoot"><span>'+esc(p.source_label)+' · '+prov+val+'</span>'
       +     '<a href="'+esc(p.url)+'" rel="noopener" target="_blank">Open paper &#8599;</a></div>'
       + '</div>'
       + '</article>';
