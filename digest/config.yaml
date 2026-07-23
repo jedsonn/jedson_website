@@ -13,9 +13,9 @@ run:
   user_agent: "LLMResearchDigest/1.0 (https://www.jedsonpinto.com/digest; mailto:jedson.pinto@utdallas.edu)"
   max_papers_per_edition: 220
   min_relevance: 2
-  request_timeout: 45
-  retries: 3
-  backoff_seconds: 4
+  request_timeout: 20
+  retries: 2
+  backoff_seconds: 2
 
 # HARD BLOCK. The pipeline must never issue a request to these hosts.
 # SSRN's terms of use prohibit automated querying. All SSRN coverage
@@ -81,7 +81,10 @@ sources:
 
 enrichment:
   order: ["crossref", "openalex", "semanticscholar"]
-  semanticscholar_enabled: true
+  # Keyless Semantic Scholar rate-limits hard (429) and the retry backoff can
+  # stall a large edition; OpenAlex + Crossref cover abstracts well enough.
+  semanticscholar_enabled: false
+  citations_enabled: false
   # Never store or display the Semantic Scholar tldr field. It is their
   # generated content, not ours. Abstracts are cached locally and are
   # gitignored. They are classifier input only and are never published.

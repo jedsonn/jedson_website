@@ -141,16 +141,20 @@ def main():
         log("Capping %d records to %d by relevance." % (len(kept), cap))
         kept = kept[:cap]
 
-    # Citation counts only for the papers we actually keep, to spare the API.
+    # Citation counts are OPT-IN. Keyless OpenAlex rate-limits rapid per-paper
+    # calls, and the retry backoff can stall a large edition for over an hour.
+    # For fresh papers citations are ~0 anyway, so default off; enable with
+    # enrichment.citations_enabled: true only for small runs.
     cited = 0
-    for rec in kept:
-        if rec.get("doi"):
-            n = openalex_citations(rec["doi"])
-            if n is not None:
-                rec["citations"] = n
-                if n > 0:
-                    cited += 1
-            time.sleep(0.2)
+    if CFG.get("enrichment", {}).get("citations_enabled"):
+        for rec in kept:
+            if rec.get("doi"):
+                n = openalex_citations(rec["doi"])
+                if n is not None:
+                    rec["citations"] = n
+                    if n > 0:
+                        cited += 1
+                time.sleep(0.2)
 
     log("Abstracts: %d already, %d fetched, %d unavailable. Carrying %d records. %d with citations."
         % (already, filled, missing, len(kept), cited))
