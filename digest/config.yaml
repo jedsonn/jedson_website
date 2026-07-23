@@ -1,0 +1,207 @@
+brand:
+  name: "LLM Research Digest"
+  tagline: "New work using or studying large language models in accounting, finance, and economics"
+  curator: "Jedson Pinto"
+  affiliation: "Naveen Jindal School of Management, UT Dallas"
+  site_url: "https://www.jedsonpinto.com/digest"
+  contact_email: "jedson.pinto@utdallas.edu"
+  disclaimer: "Independent and not affiliated with, sponsored by, or endorsed by SSRN, Elsevier, arXiv, or any publisher listed."
+
+run:
+  window_days: 2
+  polite_mailto: "jedson.pinto@utdallas.edu"
+  user_agent: "LLMResearchDigest/1.0 (https://www.jedsonpinto.com/digest; mailto:jedson.pinto@utdallas.edu)"
+  max_papers_per_edition: 40
+  min_relevance: 2
+  request_timeout: 45
+  retries: 3
+  backoff_seconds: 4
+
+# HARD BLOCK. The pipeline must never issue a request to these hosts.
+# SSRN's terms of use prohibit automated querying. All SSRN coverage
+# comes from Crossref, which SSRN itself deposits to.
+blocked_hosts:
+  - papers.ssrn.com
+  - www.ssrn.com
+  - ssrn.com
+  - hq.ssrn.com
+  - www.sciencedirect.com
+  - onlinelibrary.wiley.com
+
+sources:
+  - id: crossref_ssrn
+    name: "SSRN"
+    kind: crossref_prefix
+    enabled: true
+    prefix: "10.2139"
+    label: "SSRN"
+    note: "SSRN is a Crossref member and deposits DOI metadata under prefix 10.2139."
+
+  - id: crossref_nber
+    name: "NBER"
+    kind: crossref_prefix
+    enabled: true
+    prefix: "10.3386"
+    label: "NBER"
+
+  - id: crossref_researchsquare
+    name: "Research Square"
+    kind: crossref_prefix
+    enabled: false
+    prefix: "10.21203"
+    label: "Research Square"
+
+  - id: arxiv_qfin
+    name: "arXiv q-fin"
+    kind: arxiv
+    enabled: true
+    query: "cat:q-fin.GN OR cat:q-fin.CP OR cat:q-fin.ST OR cat:q-fin.TR OR cat:q-fin.PM OR cat:q-fin.RM"
+    label: "arXiv"
+
+  - id: arxiv_econ
+    name: "arXiv econ"
+    kind: arxiv
+    enabled: true
+    query: "cat:econ.GN OR cat:econ.EM OR cat:econ.TH"
+    label: "arXiv"
+
+  - id: arxiv_cs_finance
+    name: "arXiv cs, finance filtered"
+    kind: arxiv
+    enabled: true
+    query: '(cat:cs.CL OR cat:cs.AI OR cat:cs.CE) AND (abs:"financial" OR abs:"accounting" OR abs:"earnings" OR abs:"investor" OR abs:"audit" OR abs:"disclosure" OR abs:"stock")'
+    label: "arXiv"
+
+  - id: openalex_recent
+    name: "OpenAlex sweep"
+    kind: openalex
+    enabled: true
+    concepts: ["economics", "finance", "accounting"]
+    label: "OpenAlex"
+
+enrichment:
+  order: ["crossref", "openalex", "semanticscholar"]
+  semanticscholar_enabled: true
+  # Never store or display the Semantic Scholar tldr field. It is their
+  # generated content, not ours. Abstracts are cached locally and are
+  # gitignored. They are classifier input only and are never published.
+  cache_dir: ".cache/abstracts"
+
+# Stage 1 relevance gate. Cheap string matching on title plus abstract.
+# Each hit adds 1. Papers must reach run.min_relevance to survive.
+keywords:
+  strong:
+    - "large language model"
+    - "large language models"
+    - " llm"
+    - " llms"
+    - "chatgpt"
+    - "gpt-3"
+    - "gpt-4"
+    - "gpt-5"
+    - "generative ai"
+    - "generative artificial intelligence"
+    - "foundation model"
+    - "claude"
+    - "gemini"
+    - "llama"
+    - "mistral"
+    - "qwen"
+    - "deepseek"
+  weak:
+    - "prompt engineering"
+    - "prompting"
+    - "fine-tuning"
+    - "fine tuning"
+    - "retrieval-augmented"
+    - "retrieval augmented"
+    - "chain-of-thought"
+    - "chain of thought"
+    - "transformer model"
+    - "instruction-tuned"
+    - "in-context learning"
+    - "ai agent"
+    - "agentic"
+    - "token embedding"
+    - "text embedding"
+  legacy_nlp:
+    - "bert"
+    - "roberta"
+    - "finbert"
+    - "word2vec"
+    - "topic model"
+    - "lda"
+  exclude:
+    - "llm degree"
+    - "master of laws"
+  # Pre-LLM neural NLP. Set true to include BERT-era measurement papers.
+  include_legacy_nlp: false
+
+domain_terms:
+  - accounting
+  - auditing
+  - audit
+  - disclosure
+  - earnings
+  - financial reporting
+  - analyst
+  - investor
+  - stock
+  - asset pricing
+  - corporate finance
+  - banking
+  - credit
+  - insurance
+  - tax
+  - economics
+  - labor market
+  - firm
+  - management
+  - governance
+
+taxonomy:
+  fields:
+    - id: accounting
+      label: "Accounting"
+    - id: finance
+      label: "Finance"
+    - id: economics
+      label: "Economics"
+    - id: management
+      label: "Management"
+    - id: other
+      label: "Other"
+  roles:
+    - id: instrument
+      label: "Instrument"
+      blurb: "The model measures something. Extraction, classification, scoring of text."
+    - id: object
+      label: "Object"
+      blurb: "The model is what is being studied. Adoption, effects, disclosure about AI."
+    - id: agent
+      label: "Agent"
+      blurb: "The model stands in for a human. Simulated investors, analysts, subjects."
+    - id: method
+      label: "Method"
+      blurb: "The paper is about doing it right. Validation, benchmarking, reproducibility."
+
+model_families:
+  gpt: ["gpt-3", "gpt-4", "gpt-5", "chatgpt", "openai", "o1", "o3"]
+  claude: ["claude", "anthropic", "opus", "sonnet", "haiku"]
+  gemini: ["gemini", "palm", "bard"]
+  llama: ["llama", "meta ai"]
+  open_other: ["mistral", "qwen", "deepseek", "falcon", "olmo", "phi-3", "gemma"]
+  legacy: ["bert", "roberta", "finbert", "distilbert", "longformer"]
+
+open_weight_families: ["llama", "open_other", "legacy"]
+
+dedupe:
+  fuzzy_threshold: 92
+  require_same_first_author: true
+
+site:
+  papers_per_page: 0
+  show_matrix: true
+  show_model_filter: true
+  show_validated_filter: true
+  rss_items: 60

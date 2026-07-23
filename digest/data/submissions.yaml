@@ -1,0 +1,14 @@
+# Author-submitted summaries. These outrank anything the pipeline generates
+# and are labelled "Summary by the authors" on the site.
+#
+# Authors send these by email. Paste them here verbatim, lightly copy-edited
+# to fit the three fixed slots. Do not rewrite their claims.
+#
+# Match on doi or arxiv_id. One of the two is required.
+entries:
+  - doi: "10.2139/ssrn.0000000"
+    submitted_by: "corresponding author, by email 2026-07-18"
+    bullets:
+      - "Setting line. Sample, period, geography, unit of observation."
+      - "What the model did. Which model, what task, how it was validated."
+      - "Result line. Headline finding with magnitude and direction."

@@ -1,0 +1,11 @@
+# Curator-written summaries and corrections. Labelled "Summary by the curator".
+#
+# Use this when generated bullets are wrong, when the abstract was missing but
+# you have read the paper, or when a taxonomy call needs a human override.
+#
+# A record listed here is never sent to the classifier for bullets.
+entries: []
+
+# Papers to exclude permanently, by doi or arxiv_id. Use for withdrawn papers,
+# duplicates the deduper keeps missing, or author removal requests.
+suppress: []
