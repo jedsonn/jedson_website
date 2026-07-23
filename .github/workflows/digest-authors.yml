@@ -1,0 +1,51 @@
+name: Digest author enrichment
+
+# Author names, OpenAlex profile links, and institutions are open
+# bibliographic metadata (NOT abstracts), so this runs on a networked runner
+# and commits data/authors.json directly. Rebuilds the site so the new
+# author links/affiliations render.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: digest-authors
+  cancel-in-progress: false
+
+jobs:
+  authors:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -q -r digest/requirements.txt
+
+      - name: Enrich authors + institutions from OpenAlex
+        run: |
+          set -euo pipefail
+          cd digest
+          python3 scripts/authors.py
+          python3 scripts/build_site.py --edition "$(python3 -c "import json;print(json.load(open('data/last-run.json'))['edition'])")" --date "$(date -u +%F)"
+          python3 -c "import json; d=json.load(open('data/papers.json')); assert not any('abstract' in p for p in d['papers']), 'abstract leaked'; print('gate ok', d['count'])"
+
+      - name: Commit author enrichment
+        run: |
+          set -euo pipefail
+          git config user.name "digest-bot"
+          git config user.email "noreply@anthropic.com"
+          git add digest/data/authors.json digest/data/papers.json digest/index.html digest/feed.xml
+          if git diff --cached --quiet; then
+            echo "No author changes."
+          else
+            git commit -m "Digest: enrich author institutions and profile links (OpenAlex)"
+            git pull --rebase origin main
+            git push origin main
+          fi

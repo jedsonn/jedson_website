@@ -85,6 +85,8 @@ h2.ptitle a{color:var(--accent);text-decoration:none;border-bottom:1px solid tra
 h2.ptitle a:hover{border-bottom-color:var(--accent)}
 h2.ptitle .ext{font-size:10px;color:var(--ink3);margin-left:4px;white-space:nowrap}
 .byline{font-size:12.5px;color:var(--ink);margin:5px 0 0;font-weight:500}
+.byline a{color:var(--ink);text-decoration:none;border-bottom:1px dotted var(--rule2)}
+.byline a:hover{color:var(--accent);border-bottom-color:var(--accent)}
 .aff{font-size:12px;color:var(--ink3);margin:2px 0 0;font-weight:400}
 .cites{font-size:11px;color:var(--ink3);font-family:var(--mono)}
 .cites b{color:var(--ink2);font-weight:500}
@@ -230,6 +232,18 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
 
+  function bylineHtml(p){
+    var det = p.authors_detailed;
+    if (det && det.length){
+      return det.map(function(a){
+        var nm = esc(a.name);
+        var lab = a.inst ? ' title="'+esc(a.inst)+'"' : '';
+        return a.url ? '<a href="'+esc(a.url)+'" target="_blank" rel="noopener"'+lab+'>'+nm+'</a>' : '<span'+lab+'>'+nm+'</span>';
+      }).join(", ");
+    }
+    return esc((p.authors||[]).join(", "));
+  }
+
   var SLOTS = ["Setting","What the model did","Result"];
   var PROV = {author:"Summary by the authors", editor:"Summary by the curator",
               ai:"Summary generated, checked", none:"Metadata only"};
@@ -257,7 +271,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       +       '<span>'+esc(p.posted)+'</span>'+cites+'</div>'
       +     '<h2 class="ptitle"><a href="'+esc(p.url)+'" rel="noopener" target="_blank">'+esc(p.title)
       +       '<span class="ext">&#8599;</span></a></h2>'
-      +     '<p class="byline">'+esc((p.authors||[]).join(", "))+'</p>'
+      +     '<p class="byline">'+bylineHtml(p)+'</p>'
       +     (p.affiliations && p.affiliations.length ? '<p class="aff">'+esc(p.affiliations.join(" · "))+'</p>' : '')
       +   '</div>'
       +   '<button class="chev" type="button" aria-label="Expand summary" data-toggle="'+i+'">'

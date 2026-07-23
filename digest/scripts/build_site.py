@@ -76,6 +76,17 @@ def main():
     # newest paper's number equals the running total ever classified.
     for i, p in enumerate(papers):
         p["n"] = i + 1
+
+    # Attach OpenAlex author profiles + institutions (open metadata) if present.
+    apath = os.path.join(ROOT, "data", "authors.json")
+    if os.path.exists(apath):
+        amap = json.load(open(apath, encoding="utf-8"))
+        for p in papers:
+            a = amap.get(p.get("uid"))
+            if a and a.get("authors"):
+                p["authors_detailed"] = a["authors"]
+                if a.get("affiliations"):
+                    p["affiliations"] = a["affiliations"]
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)
