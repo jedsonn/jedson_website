@@ -1,0 +1,63 @@
+name: Digest harvest (artifact)
+
+# Harvest runs on GitHub's runners because they have open internet; the
+# sandbox and cloud environments cannot reach Crossref/arXiv/OpenAlex.
+# Abstracts ride in an ephemeral, auto-expiring Actions artifact (the same
+# role .cache plays) and are NEVER committed. A Claude session downloads the
+# artifact, classifies, strips abstracts, and pushes the clean edition.
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "30 8 * * *"
+
+permissions:
+  contents: read
+
+concurrency:
+  group: digest-harvest
+  cancel-in-progress: false
+
+jobs:
+  harvest:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -q -r digest/requirements.txt
+
+      - name: Harvest, enrich, prepare batches
+        id: h
+        run: |
+          set -euo pipefail
+          cd digest
+          RUN_DATE=$(date -u +%F)
+          EDITION=$(python3 -c "import json,os;print(json.load(open('data/last-run.json'))['edition']+1 if os.path.exists('data/last-run.json') else 1)")
+          echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "Edition $EDITION on $RUN_DATE"
+          python3 scripts/harvest.py --edition "$EDITION" --date "$RUN_DATE"
+          RUN_DIR=$(printf "data/runs/edition-%03d" "$EDITION")
+          KEPT=$(python3 -c "import json;print(len(json.load(open('$RUN_DIR/harvested.json'))))" 2>/dev/null || echo 0)
+          echo "Harvested $KEPT raw records."
+          if [ "$KEPT" = "0" ]; then
+            echo "empty=1" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          python3 scripts/enrich.py --edition "$EDITION"
+          python3 scripts/classify.py prepare --edition "$EDITION" --batch-size 8
+          echo "Prepared batches for edition $EDITION."
+
+      - name: Upload edition artifact (abstracts live here, not in git)
+        if: steps.h.outputs.empty != '1'
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-edition-${{ steps.h.outputs.edition }}
+          path: digest/data/runs/edition-*
+          retention-days: 5
+          if-no-files-found: error
