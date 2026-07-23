@@ -1,0 +1,104 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7121598",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7024983",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [
+   "Eight types of timely disclosure PDFs from TDnet, the Tokyo Stock Exchange filing system, paired with document specific JSON schemas for zero shot structured extraction.",
+   "Twelve conditions crossing GPT-5.4, mini, and nano variants with four reasoning effort settings, each run three times; the largest model reaches core field accuracy of 0.905.",
+   "Schema guided extraction is viable for structuring disclosure PDFs, but the best settings differ by document type and higher reasoning effort does not reliably improve accuracy."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "core field accuracy 0.905 with variance across repeated runs",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7025538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7158720",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.3386/w35374",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "A step by step guide for economists new to language models, taking a research idea to working code and data across chat, editor assistants, agentic tools, and the API.",
+   "No single model is promoted; the guide covers model selection, prompting, context and cost management, and how to validate, reproduce, and correct LLM generated measures in regressions.",
+   "Four worked examples with replication files, from linking census records without names to measuring newspaper salience around the 1882 Chinese Exclusion Act."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 70
+ },
+ {
+  "uid": "arxiv:2607.20270v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5370043",
+  "drop": false,
+  "field": "management",
+  "role": "agent",
+  "bullets": [
+   "Industrial supply chain planning settings where optimization tools already exist but planners spend days interpreting outputs, running scenarios, and updating mathematical models.",
+   "Language models sit on top of the optimization stack to explain recommendations, answer what if questions, and update models without a data science team; the model family is not stated.",
+   "Reported time to decision falls from days or weeks to minutes or hours; no formal accuracy evaluation against ground truth is stated in the abstract."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 64
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7028322",
+  "drop": false,
+  "field": "other",
+  "role": "method",
+  "bullets": [
+   "Theory linking Bayes linear estimation, ensemble Kalman filtering, and sparse mixture of experts training, evaluated with controlled simulations rather than a field dataset.",
+   "No commercial model is deployed; the paper proves structural correspondences between linear Bayes mixtures of experts and sparse LLM architectures, including Adam as a diagonal Kalman filter.",
+   "Exact Bayes linear updating shows essentially no forgetting across sequential tasks where SGD and Adam forget 5.1 and 3.5 times more, and a threshold theorem characterizes when mixture filters help."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ }
+]

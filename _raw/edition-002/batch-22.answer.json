@@ -1,0 +1,114 @@
+[
+ {
+  "uid": "arxiv:2607.13034v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.14178v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7117418",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.16097v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7135996",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7123419",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Systematic PRISMA review screening 847 records across Web of Science, Scopus, SSRN, and Google Scholar, synthesizing 60 studies on algorithmic and high-frequency trading in equity, Treasury, and foreign exchange markets.",
+   "No language model is applied by the authors; the review surveys how AI, including unnamed LLM classifiers and NLP surveillance tools, reshapes liquidity, price discovery, and manipulation detection.",
+   "Frames current markets as an algorithmic ecology and argues microstructure research must shift from rational human agents toward frameworks for correlated algorithmic failures and emergent dynamics."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 45
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7017778",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "High-growth ventures and entrepreneurial ecosystems across the African continent, with unicorn founders as the unit of observation, drawing on unstructured online data plus primary founder interviews.",
+   "Retrieval-augmented generation with an unnamed LLM extracts founder-level insights into structured narratives, which are then checked against primary founder interviews to surface factual and framing errors.",
+   "AI narratives carry factual and framing errors and miss undisclosed private considerations, so AI-assisted qualitative research in data-sparse contexts still requires primary triangulation."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "narratives compared to founder interviews, no accuracy figure",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7018998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

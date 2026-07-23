@@ -1,0 +1,124 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7147559",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "Thirty-six known past market events, including crises, bullish catalysts, and narrative reversals, form the evaluation set; period and geography not stated.",
+   "Four LLM agents playing bull, bear, skeptic, and editor roles debate each narrative, and Claude, GPT-4o, and Gemini scores are ensembled into a conviction measure benchmarked against FinBERT.",
+   "The framework flags 86 percent of events before they occur versus FinBERT's 67 percent, and finds structural fragility in 10 events where FinBERT reads neutral sentiment."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "36 labeled past events, pre-event detection rate vs FinBERT",
+  "salience": 40
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7150549",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 8
+ },
+ {
+  "uid": "arxiv:2607.18424v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 8
+ },
+ {
+  "uid": "arxiv:2607.17774v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 6
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7028322",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7145231",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "General method-of-moments framework for treating LLM-generated features as covariates, illustrated with news-based sentiment and stock returns; sample period and size not stated.",
+   "LLMs, not named, extract sentiment and classifications, and AI-Powered Inference corrects input-dependent errors with a small human-labeled calibration set and weights combining multiple model-prompt pairs.",
+   "AI-PI keeps conclusions stable across model and prompt choices where naive regressions vary, cutting confidence interval length to roughly half that of using human labels alone."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 72
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7151418",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "291,314 product launches posted to Product Hunt between January 2018 and April 2026, with each launch as the unit of observation.",
+   "An outcome-blind LLM ideation-exposure index, model not named, measures how much general-purpose LLMs can assist ideation per category, using ChatGPT's release as the timing shock.",
+   "After ChatGPT the distinctive share of launches fell from 25 to 16 percent, with larger similarity gains in more exposed categories and within both new and experienced teams."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "",
+  "salience": 66
+ },
+ {
+  "uid": "arxiv:2607.18961v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 6
+ }
+]

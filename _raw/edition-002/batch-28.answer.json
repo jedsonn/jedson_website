@@ -1,0 +1,58 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6997818",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "50,277 order-book and trade-flow snapshots of MEXC spot BTC/USDT collected over two live runs, with about 21,905 observations at the 15-minute horizon used for the main test.",
+   "Multiple heterogeneous base LLMs, none named in the abstract, read compressed order-book snapshots to output directional bias, conviction, and dispersion; hypotheses and thresholds were pre-registered before any result was computed.",
+   "None of the four signal types clears its pre-registered bar; inter-model disagreement to forward volatility is killed at 15 minutes (partial Spearman +0.010, 95% CI -0.006 to +0.027), and models converge on directional bias."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 55
+ },
+ {
+  "uid": "arxiv:2607.05682v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.04640v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7068678",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

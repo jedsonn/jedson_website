@@ -1,0 +1,121 @@
+[
+ {
+  "uid": "arxiv:2607.06411v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6970578",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Literature survey of financial large language models covering data construction, domain adaptation, retrieval-augmented generation, benchmarks, applications, and risk control; number of papers reviewed and time span are not stated.",
+   "No new model is run; the survey organizes financial LLM research into six layers from corpora and governance to agentic workflow automation, and names no specific model.",
+   "Argues the next generation of financial models should be evaluated as auditable decision-support systems operating under temporal, regulatory, and economic constraints rather than as isolated text generators."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 40
+ },
+ {
+  "uid": "arxiv:2607.08046v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7091050",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6942498",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual framework paper on how AI assistants recommend experts, drawing on reported industry data compiled between December 2025 and June 2026; the unit of observation is a personal brand's citation eligibility.",
+   "No model is run or validated; the paper proposes a six-signal AI Visibility Framework and qualitatively compares how ChatGPT, Claude, and Perplexity weight sources when generating recommendations.",
+   "Concludes the three systems weight sources differently, so brand visibility must be pursued one engine at a time, shifting relevant metrics from traffic toward revenue and branded search."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 34
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7102725",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113405",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113516",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Three public customer-service dialogue datasets are used to extract event logs for process mining; the unit of observation is the conversation and its recognized business activities.",
+   "An unnamed LLM runs a retrieval-augmented extraction pipeline with ten-pass self-consistency voting and a separate verification model; accuracy is measured by F1 against the labelled datasets and baselines.",
+   "Reaches average F1 of 93 percent, exceeding the NLI-BART baseline by four percentage points and standalone LLM methods by eight percentage points."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "F1 against three labelled dialogue datasets and NLI-BART baseline",
+  "salience": 43
+ }
+]

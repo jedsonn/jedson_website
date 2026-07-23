@@ -1,0 +1,90 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7153923",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7119484",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Five language models evaluated on four structured market tasks: candlestick pattern recognition from OHLCV data, buy sell hold signal generation, simulated backtests, and financial report comprehension.",
+   "GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and the finance tuned FinGPT are scored on F1, Sharpe ratio, drawdown, and benchmark comprehension metrics.",
+   "GPT-4 Turbo posts the highest simulated annualized return and Sharpe ratio among general models; every model shows numerical hallucination and degrades in sideways market regimes."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude",
+   "gemini",
+   "llama",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "classification F1 and benchmark comprehension scores reported",
+  "salience": 46
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7120478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7155798",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7167544",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7158001",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Panel of listed Chinese cultural enterprises in film, music, publishing, and interactive media, 2020 to 2024, with staggered provincial licensing enforcement of generative AI rules.",
+   "No language model is used for measurement; AIGC adoption is the studied technology, identified through difference in differences and event studies around regulator announcements.",
+   "Better provincial governance quality reduces AI driven creative workforce displacement; state affiliated platforms comply more easily, widening structural gaps with independent creators."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7073158",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7146358",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ }
+]

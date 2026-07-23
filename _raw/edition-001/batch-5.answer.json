@@ -1,0 +1,93 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7127378",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "A conceptual framework extending model risk management to generative and agentic AI across finance, insurance, healthcare, law, and energy.",
+   "No model is deployed or tested; the paper adapts the model risk pillars of meaningful challenge, conceptual soundness, and ongoing monitoring to hallucination, prompt injection, and execution drift.",
+   "It offers sector specific analyses and a governance roadmap for risk professionals; no empirical results or effect sizes are stated."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 47
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6097886",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4675409",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7162473",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7167442",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7069438",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "A large scale controlled experiment with language models acting as financial advisors, recommending equity allocations to otherwise identical clients varied by gender and race.",
+   "The models stand in for advisors and their recommendations are the object of study; model family is not stated, and bias is measured against identical White male profiles.",
+   "Models recommend lower equity allocations to female and Asian clients, a gap that intensifies for sophisticated clients; scale, safety alignment, and debiasing prompts do not fix it, only stronger reasoning."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "controlled experiment with identical-profile counterfactuals; portfolio efficiency measured",
+  "salience": 80
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7152490",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6206500",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "A vignette based experiment comparing risky portfolio share advice from professional advisors, financially literate peers, and a language model, eliminating matching problems by design.",
+   "The model is prompted repeatedly on identical vignettes and its recommendations are the object of study; the family is not named, and a Bayesian hierarchical Tobit model captures heterogeneity.",
+   "The model's advice has smaller variance but is very sensitive to declared risk tolerance, and using AI can offset peers' tendency to discourage equity for younger, lower income investors."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 68
+ }
+]

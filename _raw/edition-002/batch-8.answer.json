@@ -1,0 +1,120 @@
+[
+ {
+  "uid": "arxiv:2607.17935v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": [],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7146358",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": [],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7121598",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": [],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7158001",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullet_provenance": "ai",
+  "bullets": [
+   "Firm-level panel from 2020 to 2024 covering all listed Chinese cultural enterprises in film, music, publishing, and interactive media, with AI-generated content adoption intensity as the treatment.",
+   "Generative AI is the object rather than a research tool; identification uses difference-in-differences on staggered provincial licensing enforcement plus an event study around Cyberspace Administration announcements, with no model named.",
+   "Governance quality significantly shapes labour displacement from AIGC adoption; state-affiliated platforms gain compliance advantages, and higher provincial regulatory quality reduces creative workforce displacement up to a point."
+  ],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7073158",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": [],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7024983",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullet_provenance": "ai",
+  "bullets": [
+   "Japanese timely disclosure PDFs released through the Tokyo Stock Exchange TDnet system, spanning eight disclosure types, with each of twelve extraction conditions run three times to measure output variation.",
+   "GPT-5.4, GPT-5.4-mini, and GPT-5.4-nano performed zero-shot schema-guided JSON extraction under four reasoning-effort settings, scored against document-type JSON schemas by core field accuracy.",
+   "GPT-5.4 at high reasoning effort scored highest with core field accuracy of 0.905 plus or minus 0.045, and higher reasoning effort did not consistently improve accuracy across document types."
+  ],
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "core field accuracy vs JSON schema, 0.905",
+  "salience": 51
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6970459",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": [],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.3386/w35374",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullet_provenance": "ai",
+  "bullets": [
+   "An NBER practitioner's guide for economic historians, reviewing recent applications and four worked examples with replication files covering paintings, nameless census linkage, 1882 Chinese Exclusion Act newspapers, and Roosevelt speeches.",
+   "Surveys four ways of using LLMs, the chat window, editor assistants, agentic coding tools, and the API, covering model selection, prompting, context limits, cost control, and validating generated measures in regressions; no single model named.",
+   "Not an empirical result; delivers a step-by-step workflow, best-practice checklists, and replication packages showing how LLMs extract, link, harmonize, and classify historical data at scale."
+  ],
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 58
+ }
+]

@@ -1,0 +1,122 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7065905",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "arxiv:2607.05685v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 12
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6925119",
+  "drop": false,
+  "field": "management",
+  "role": "instrument",
+  "bullets": [
+   "Real open-ended exam responses from one university course marked by a single instructor across two independent grading rounds held at different times; geography not stated.",
+   "Fine-tunes large language models, family not stated, on the instructor's historical grades, then uses AI-human grade discrepancies as a signal; no accuracy or agreement figure against ground truth is reported.",
+   "AI-human grading discrepancies are statistically significantly associated with intra-rater grading variability, indicating the model flags responses whose scores are unstable across repeated grading."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 45
+ },
+ {
+  "uid": "arxiv:2607.06845v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 12
+ },
+ {
+  "uid": "arxiv:2607.07858v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Synthetic but realistic experimental environment for straight-through underwriting of small commercial business owner insurance policies; the unit of observation is individual underwriting cases, with no real-world data.",
+   "Builds and compares three pipelines, a single-LLM baseline, a naive retrieval-augmented system, and a multi-agent agentic RAG, model family not stated, across standard and information-scarce underwriting scenarios.",
+   "The agentic RAG pipeline performs best overall, with the largest gains in multi-step and missing-information cases where structured retrieval and reflection prevent unsupported straight-through decisions."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6931398",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Two experiments: 108 responses in the accommodation sector of Foz do Iguacu, Brazil, and 5,544 responses covering 82 entities across hospitality and ERP verticals.",
+   "Queries Gemini 2.5 Flash, Claude Sonnet 4.6, and GPT-4o via official APIs on 22 May 2026, measuring whether each entity is cited under branded, categorical, and problem query formulations; no ground-truth check.",
+   "Citation sensitivity is a property of the engine-by-vertical pair; branded queries cite entities 0.968 to 1.000 of the time while discovery queries vary sharply, with GPT reaching a 0.874 delta in ERP."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gemini",
+   "claude",
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 40
+ },
+ {
+  "uid": "arxiv:2607.08054v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "arxiv:2607.10252v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 12
+ }
+]

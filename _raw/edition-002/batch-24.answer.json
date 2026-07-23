@@ -1,0 +1,114 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.4511540",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 32
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4603221",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 5
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4675409",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4731283",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 33
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5100205",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5267655",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 5
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5749004",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 5
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5894082",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 5
+ }
+]

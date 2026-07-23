@@ -1,0 +1,86 @@
+[
+ {
+  "uid": "arxiv:2607.18867v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "A 258 node vintage correct macro panel used to audit whether language models leak knowledge of realized outcomes into time indexed historical financial decision tasks.",
+   "HindsightBench is a black box protocol chaining a four arm date manipulation matrix, memory probes, and six per model metrics; applied to 15 models from seven vendors at probe level cost.",
+   "The date trigger reflex tracks training generation not scale, absent in the 2024 open weight generation but present in every 2026 model, and effective cutoffs precede vendor reported dates by up to eight months."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "15 models audited on a vintage-correct macro panel with per-model metrics",
+  "salience": 78
+ },
+ {
+  "uid": "arxiv:2607.18828v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7162222",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7157742",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7018998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7153775",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7163179",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullet_provenance": "none",
+  "bullets": []
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7120281",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "A systematic review of small language models adapted through parameter efficient fine tuning for high stakes domains, with financial compliance among the four focus areas.",
+   "No single model; the review argues domain purity of curated narrow datasets outweighs dataset scale, and examines synthetic data generation as a cost effective adaptation lever.",
+   "It proposes a unified framework for vertical scaling across subdomains and catalogs challenges such as overfitting and structural instability. No effect sizes are stated."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 33
+ }
+]

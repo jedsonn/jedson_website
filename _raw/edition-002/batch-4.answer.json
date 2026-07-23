@@ -1,0 +1,116 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7063638",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.5281/zenodo.21380237",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7135523",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7123198",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7120478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.09121v1",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "Nine listed companies scanned over four weeks, drawing on their reports, macroeconomic indicators such as GDP and inflation, and SEC filings from EDGAR; briefs judged by nine individual investors.",
+   "gpt-4o accessed through an API in a retrieval-augmented setup generated automatic investor briefs, aided by a document encoding Kitchin-cycle investor knowledge; no comparison against ground truth is reported.",
+   "The abstract reports only that briefs were sent to nine participants to evaluate usefulness; no quantitative outcome, accuracy, or effect size is stated."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "investor usefulness ratings only, no ground truth",
+  "salience": 32
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7102067",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "No labelled dataset is described; the paper develops a conceptual framework for agentic AI model risk and tests it with one empirical case study and an ablation, with unit and period not stated.",
+   "Large language models, family not stated, serve as a semantic observation model turning evidence into a distribution over latent operating regimes, combined with a Bayesian state filter; checked via case study and ablation.",
+   "Bayesian filtering substantially reduces posterior instability and uncertainty, raises regime-classification accuracy, and lowers downstream risk measures, though the abstract gives no numerical magnitude."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 45
+ },
+ {
+  "uid": "arxiv:2607.14385v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

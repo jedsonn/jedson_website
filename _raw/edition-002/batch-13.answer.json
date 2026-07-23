@@ -1,0 +1,124 @@
+[
+ {
+  "uid": "doi:10.3386/w35185",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "OpenAI's GPT-5.4 and a representative sample of Americans each choose between paired life stories varying in income, longevity, and working conditions; the unit is an individual choice.",
+   "GPT-5.4 was prompted to pick the life it would prefer, standing in for a respondent, and its choices were compared against actual human choices and human-derived attribute valuations.",
+   "A person's choice was better predicted by the LLM's choice than by another person's choice over the same stories, and LLM valuations of several life attributes matched human ones."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "predicts individual human choices better than another human",
+  "salience": 68
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6885020",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Fourteen diverse open large language model projects studied through semi-structured interviews with their developers, spanning models, data, software, evaluation, compute, and community engagement across the open source AI ecosystem.",
+   "No model was run by the researchers; the study qualitatively maps collaboration practices, motivations, and governance across the open LLM development and reuse lifecycle.",
+   "Openness emerges from how collaboration is organised, shifting from concentrated early engagement to broader distributed participation after release, coordinated through governance ranging from company-led to grassroots initiatives."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 44
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6920881",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Duke-Federal Reserve CFO Survey economic-optimism question, 2002 to 2025, covering US firms; the unit of observation is an individual CFO's response at a survey date.",
+   "An unnamed LLM was prompted to role-play as a specific company's CFO on a specific date and predict the optimism answer; predictions were compared against actual survey responses.",
+   "Predicted optimism significantly forecasts the CFO's actual answer under firm and year-quarter fixed effects and a lagged-response control, with accuracy improving as respondent history and firm characteristics are supplied."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "predicts individual CFO survey responses",
+  "salience": 70
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6958931",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [
+   "Corporate filings with numerical facts to be tagged to a US-GAAP taxonomy of more than 17,000 concepts, using mixed text and table inputs; the benchmark is FINTAGGING.",
+   "LLMs were evaluated zero-shot on two staged tasks: identifying numerical facts and value types (FinNI) and linking each fact to a US-GAAP concept (FinCL); specific models are not named.",
+   "Models recover many numerical facts but remain weaker at concept linking, revealing a persistent gap between numeric extraction and taxonomy-grounded semantic alignment."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "zero-shot benchmark against US-GAAP gold tags",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6973978",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 8
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7029046",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 8
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7010318",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 5
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6914220",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 6
+ }
+]

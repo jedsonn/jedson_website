@@ -1,0 +1,137 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7121419",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Panel of 606 foundational open-weight LLMs released on Hugging Face between July 2024 and December 2025, with downloads tracked at monthly snapshots over roughly six months.",
+   "No model is used as a research tool; monthly downloads are regressed on contributors' prior platform success, model novelty, and the interaction of the two.",
+   "Prior success predicts adoption at every snapshot, and novelty raises downloads far more for contributors without a track record, significant at the first snapshot and again through month six."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": true,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6968998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.14371v1",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Theoretical model of LLM personalization under shared compute, complemented by GPT-2 experiments on linear-regression tasks and a review of documentation from 21 major AI platforms spanning 2021 to 2025.",
+   "GPT-2 is run on linear-regression tasks to check predictions about when supervised fine-tuning beats in-context learning; the paper reports no accuracy comparison against a ground truth.",
+   "Fine-tuning and in-context learning dominate in different regimes and congestion can flip the ranking, while offering both methods never lowers the platform's maximal profit."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": true,
+  "validated": null,
+  "validation_note": "",
+  "salience": 58
+ },
+ {
+  "uid": "arxiv:2607.13618v1",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "STOCKTAKE, a 26-week supply-chain replenishment benchmark built as a factored partially observable Markov decision process with six hidden factor processes, run over fifty seeds with curated stress profiles.",
+   "Claude Sonnet 5, GPT-5.4, DeepSeek-V4-Pro and Grok 4.5 act as replenishment agents; runs are scored between a symptom-blind floor and an exact Bayes-filter oracle to separate perception from control.",
+   "Models detect 84 to 88 percent of hidden failures within about a week, yet skill scores span 0.62 to minus 0.23, with two of four below the symptom-blind floor."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6993619",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [
+   "Matched panel of 30 Japanese Prime Market firms across reporting years FY2022 to FY2024, covering 60 targeted prior-year firm-year cells of ESG narrative disclosure.",
+   "A four-model consensus system (claude-opus-4-7, gpt-5.5, gemini-3.1-pro-preview, deepseek-v4-pro) extracts and scores narrative spans, with stability judged within an inter-model dispersion threshold and no human benchmark.",
+   "48 percent of cells reached full comparability, 72 percent of 87 change observations were stable, and single-point comparability did not imply longitudinal identifiability."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gpt",
+   "gemini",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "arxiv:2607.15766v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7009038",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Audit of fourteen mainstream LLMs for hiring discrimination using the paired-resume design of Kline, Rose and Walters (2022), based on 24,024 paired job postings per model.",
+   "Each model screens resumes differing only by race or gender and callback gaps are computed per model; the abstract names no individual model.",
+   "The single 2023 model reproduces a pro-White gap of 2.12 pp, while every 2024-or-later model shows a null gap or a pro-Black reversal up to 3.01 pp, echoed on gender."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 60
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7138610",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

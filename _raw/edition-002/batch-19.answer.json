@@ -1,0 +1,128 @@
+[
+ {
+  "uid": "arxiv:2607.18867v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "15 large language models from seven vendors evaluated on a 258-node vintage-correct macroeconomic panel of time-indexed financial decision tasks.",
+   "HindsightBench, a black-box audit chaining a four-arm date-manipulation matrix and dual memory probes, profiles how models leak realized-outcome knowledge into decisions; tested models include Qwen and other open and proprietary systems.",
+   "The date-trigger reflex tracks training generation rather than scale, and behaviorally effective knowledge cutoffs span 22 months and precede vendor-reported dates by up to eight months."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 60
+ },
+ {
+  "uid": "arxiv:2607.18828v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7037798",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7161207",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7158737",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Single production deployment in a data-intensive enterprise; a conversational business-intelligence system answering natural-language questions over a governed data warehouse of financial and operational KPIs.",
+   "Unnamed large language models generate SQL constrained by a certified metrics catalog, schema-linking retrieval, a two-pass generation-critique step, and a read-only sandbox; no accuracy benchmark is reported.",
+   "The authors report large reductions in time-to-answer for recurring questions and reduced dependence on data-analyst intermediation, with validation limited to a single deployment."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "single-deployment production observations, no benchmark",
+  "salience": 40
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7051078",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Original 2026 survey of 50 employees at a single two-year public college, an 18.9 percent response rate, studying unauthorized generative-AI use in higher education.",
+   "No model is used by the researchers; the paper documents employee use of ChatGPT, Gemini, Claude and Copilot and proposes a seven-dimension shadow-AI governance-gap framework.",
+   "98 percent reported basic AI literacy and 84 percent wanted training, yet most used unsanctioned consumer tools such as ChatGPT at 72 percent, indicating institutional enablement gaps."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "gemini",
+   "claude"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4395751",
+  "drop": false,
+  "field": "management",
+  "role": "agent",
+  "bullets": [
+   "Consumer preference elicitation for products and features; multiple large language models queried dozens of times per survey question, with estimates compared to human willingness-to-pay studies.",
+   "Unnamed LLMs generate distributions of survey responses to estimate willingness-to-pay, and fine-tuning on prior human survey data is tested; outputs are checked against human study estimates.",
+   "LLM willingness-to-pay is sometimes comparable to human estimates but often inaccurate or wrong-signed; fine-tuning improves alignment only within the same product category and population."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "LLM willingness-to-pay compared to human survey estimates",
+  "salience": 70
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6215938",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

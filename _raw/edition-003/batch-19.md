@@ -1,0 +1,134 @@
+# Classification batch 19 of 423, edition 3
+
+Read prompts/classify.md before answering. Write your answer to
+`data/runs/edition-003/batch-19.answer.json` as a JSON array.
+
+---
+
+## uid: `doi:10.2139/ssrn.6799069`
+
+- title: STRATA: A Security Tactic-Aware Framework for LLM-Based Vulnerability Repair
+- authors: Mohammed Latif Siddiq, Xinye Zhao, Joanna Cecilia da Silva Santos
+- affiliations: not stated
+- posted: 2026-05-20
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6799069
+- keyword hits: gpt-4, large language model, large language models, llm, llms, qwen
+
+### abstract
+
+Security hardening of existing software, injecting well-known security tactics such as input validation, output encoding, authentication guards, path-traversal mitigation, and secure API substitutions, remains a largely manual and error-prone task. Existing automated program repair (APR) techniques primarily optimize for functional correctness, while naively prompted large language models (LLMs) often add security-looking code without removing the underlying vulnerable behavior. We present STRATA, a static-analysis-guided Large Language Model (LLM) pipeline for automated injection of security mitigation tactics into Java programs. STRATA uses WALA-based static analysis to identify taint-sensitive entry-points and sink-reaching paths, focuses the LLM on a localized repair context, generates structured diff patches, and verifies candidates through an iterative build-test-policy loop with up to three refinement rounds. We evaluated STRATA on 632 tasks from four benchmarks: OWASP BenchmarkJava (303 tasks), OWASP WebGoat (42 tasks), IPSynth (20 tasks), and Defects4J (267 tasks). We use GPT-4o-mini and Qwen3-Coder as backbone models and compare against three LLM baselines, Vanilla, ThinkRepair, and LoopRepair, and the template-based APR tool TBar. Overall, STRATA achieves 47.1% fully validated patches with GPT-4o-mini and 45.2% with Qwen3-Coder, outperforming baselines on security-oriented benchmarks. Qualitative analysis shows that STRATA reduces superficial and additive fixes by encouraging the replacement of vulnerable behavior, but remaining failures often stem from misaligned targets, unreachable mitigation targets, or API misuse. These findings show that static-analysis guidance improves the reliability of LLM-based security repair and highlight the need for stronger semantic verification of patch faithfulness.
+
+---
+
+## uid: `doi:10.2139/ssrn.6786126`
+
+- title: Not a Private Consultation: Third-Party Network Traffic in Commercial LLMs
+- authors: Rahul Gorijavolu, Kaushik Madapati, Chia-Hua Lin, Ania Switzer, Matthew Elmore, Amelia Fiske, Abhimanyu Sareen, Aryan Mehta
+- affiliations: not stated
+- posted: 2026-05-20
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6786126
+- keyword hits: chatgpt, claude, gemini, llm, llms
+
+### abstract
+
+Objective: This study presents an analysis of network traffic across four commercial LLM platforms to document which external domains they contact during routine use and to classify those domains by functional purpose. Design: Cross-sectional analysis of HTTP/HTTPS network traffic captured from four commercial LLM platforms (Claude, ChatGPT, Gemini, and Grok) using an intercepting proxy. SettingTwo researchers independently executed standardized interaction protocols using newly created free-tier accounts from US-based locations. Data were collected from October 7 to November 14, 2025. Results: A total of 1,839 HTTP/HTTPS requests were captured. Third-party request rates varied substantially across platforms: Grok, 35.9% (123 of 343 requests); Claude, 14.0% (87 of 623); ChatGPT, 13.7% (54 of 395); and Gemini, 9.0% (43 of 478). The login action generated the highest third-party request proportions across all platforms; Claude transmitted 64.0% of login requests to external domains. Of 307 third-party requests, 301 (98.0%) were classified. Analytics and tracking services were contacted by all four platforms. Functional breakdown revealed that 62% of Claude’s third-party traffic comprised content delivery network (CDN) requests; Grok’s third-party traffic included 38 analytics requests (Mixpanel and Google Analytics). Gemini’s comparatively low aggregate third-party rate partly reflects Google’s vertical infrastructure ownership rather than categorically different data-sharing practices. Conclusions: All four commercial LLM platforms maintained connections to third-party analytics and tracking infrastructure during routine use. These findings identify a regulatory void in which platforms increasingly used for health-related queries operate under consumer technology data governance frameworks without the privacy protections applicable to healthcare settings. Independent monitoring, transparent disclosure to users, and updated regulatory frameworks are warranted.
+
+---
+
+## uid: `doi:10.2139/ssrn.6772819`
+
+- title: Look-Ahead Bias in Financial Forecasts Generated by Large Language Models
+- authors: Chuan Liang
+- affiliations: not stated
+- posted: 2026-05-22
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6772819
+- keyword hits: gpt-4, large language model, large language models, llm, llms
+
+### abstract
+
+Pretrained large language models (LLMs) introduce a distinct form of look-ahead bias in financial forecasting because their training corpora end at a knowledge cutoff date, so forecasts for pre-cutoff targets may be contaminated by information embedded in the model during pretraining. This paper quantifies the presence and economic magnitude of such bias in GPT-4 across daily index levels, monthly stock prices, and quarterly earnings forecasts. The empirical strategy compares absolute forecast errors for targets dated before versus after GPT-4's knowledge cutoff (September 30, 2021). The paper finds that GPT-4 exhibits a statistically and economically meaningful precutoff advantage. Absolute forecast errors are about 18% lower pre-cutoff for daily index forecasts, concentrated in the S&P 500 (about 65%) and statistically insignificant for the Russell 2000. For monthly stock prices, errors are about 16% lower pre-cutoff. For quarterly earnings, errors are about 11% lower pre-cutoff using earnings pressrelease text and remain similarly lower under the prompt with only two lagged EPS values. Benchmarking against analysts shows that the pre-cutoff period compresses the GPT-analyst accuracy gap, especially in high-volatility and high-surprise firmquarters. Overall, the results provide task-comparable benchmarks for the magnitude of look-ahead bias and clarify when it is most consequential for interpreting LLM forecasting performance.
+
+---
+
+## uid: `doi:10.2139/ssrn.6748819`
+
+- title: Hybrid BERT-LLM Routing for Low-Latency Network Intrusion Analysis
+- authors: Hop Le, Izzat Alsmadi
+- affiliations: not stated
+- posted: 2026-05-26
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6748819
+- keyword hits: gpt-4, large language model, large language models, llama, llm, llms
+
+### abstract
+
+Recent advances in Large Language Models (LLMs) have enabled new approaches to intelligent cybersecurity monitoring and explainable intrusion analysis. Hybrid intrusion detection architectures combining lightweight local classifiers with centralized semantic reasoning offer the potential to improve scalability, reduce cloud dependency, and accelerate operational response times. However, practical evaluations of adaptive routing strategies and low-latency semantic reporting remain limited. This paper presents a hybrid intrusion analysis framework integrating local transformer-based packet classification with confidence-aware LLM reporting. The proposed architecture combines a networkspecialized BERT model for local packet-flow inference with a three-tier routing mechanism that selectively invokes cloud-based semantic analysis according to prediction confidence. High-confidence detections trigger compact mitigation-oriented reports, medium-confidence detections invoke deeper semantic investigation, and low-confidence detections are processed locally without cloud interaction. In addition, the framework evaluates latency-aware LLM deployment using LLaMA 3.3 70B served on Groq Language Processing Unit (LPU) infrastructure and compares its performance against GPT-4o cloud inference. Evaluation was conducted using an 8-node NS-3 network intrusion scenario containing distributed attack traffic captured as PCAP files. Across the evaluated benchmark configuration, Groq LPU inference achieved an average time-to-report of 773 ms compared to 2,677 ms for GPT-4o, corresponding to an approximate 3.5× reduction in response latency while producing operationally similar incident reports. Experimental observations additionally highlight limitations of local transformer inference, including confident attack-category misclassification under certain traffic conditions. The results demonstrate the feasibility of combining lightweight local transformer inference with adaptive semantic reporting for latency-sensitive intrusion analysis workflows. The complete implementation, benchmarking infrastructure, and evaluation tooling are designed to support reproducible experimentation in hybrid AI-assisted cybersecurity systems.
+
+---
+
+## uid: `doi:10.2139/ssrn.6839367`
+
+- title: Insolvency Prediction: Employing Large Language Models to Strengthen Traditional Machine Learning Approaches
+- authors: Devendra Jain, Saurav Roychoudhury, Harsh Jain, Pratham Rao, Nitish Jain
+- affiliations: not stated
+- posted: 2026-05-27
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6839367
+- keyword hits: chain-of-thought, gpt-4, large language model, large language models, llm, prompting
+
+### abstract
+
+We introduce a hybrid framework for corporate insolvency prediction that integrates quantitative financial ratios with qualitative narrative analysis. Using a dataset of 2,966 U.S. companies (2012–2023), we combine an XGBoost classifier with GPT-4o–based analysis of Management Discussion and Analysis (MD&A) sections, applying Chain-of-Thought prompting to extract forward-looking risk signals across six thematic dimensions. The standalone approaches show complementary weaknesses: the XGBoost model achieves 88% recall but misses narrative warning signs, while the GPT-4o classifier achieves 99% recall with a high false-positive rate. On a held-out test sample of 345 firms (20 bankrupt, 325 healthy), the hybrid model correctly identifies 90% of bankruptcies and sharply reduces false positives relative to the LLM-only baseline, lifting overall accuracy to 96%. Bootstrap confidence intervals are reported to characterize uncertainty given the small bankrupt sample. SHAP analysis identifies Shareholders’ Equity to Total Debt, Retained Earnings to Total Assets, and Interest Coverage Ratio as the dominant quantitative predictors. We frame the contribution as a proof-of-concept early-warning system that combines backward-looking financial evidence with forward-looking narrative insight; potential look-ahead bias from the LLM’s pre-training corpus is acknowledged and discussed as a limitation.
+
+---
+
+## uid: `doi:10.2139/ssrn.6840225`
+
+- title: Uncertainty-Guided Claim-Level Verification with Adaptive Retrieval for Hallucination Mitigation in LLMs
+- authors: Samuel Stephen, R Vignesh
+- affiliations: not stated
+- posted: 2026-05-29
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6840225
+- keyword hits: generative ai, large language model, large language models, llm, llms
+
+### abstract
+
+Large Language Models (LLMs) frequently produce hallucinations—factually incorrect statements that undermine trust in generative AI. Existing adaptive verification methods suffer from three limitations: they rely on simulated retrieval rather than real evidence, lack rigorous comparison against official baseline implementations, and fail to provide actionable outputs when verification fails. This paper introduces VICTOR (Verification with Intelligent Confidence Thresholding and Optimal Retrieval), a framework that addresses these gaps through three key innovations. First, VICTOR integrates BM25-based retrieval over a controlled reference corpus, replacing simulated lexical overlap common in prior work. Second, it employs token-level entropy from LLM logprobs to dynamically adjust verification depth per claim. Third, unlike methods that only detect hallucinations, VICTOR uniquely combines BM25 retrieval, token entropy, revision, and abstention (refusing to answer when evidence is insufficient). Experimental evaluation on FEVER, HaluEval, and TruthfulQA demonstrates that VICTOR achieves higher recall while maintaining competitive precision compared to baseline methods including SelfCheckGPT, FActScore, RAG, VeriLLM, and ReLiC. Ablation studies across all three datasets confirm that uncertainty-driven routing significantly improves verification performance.
+
+---
+
+## uid: `doi:10.2139/ssrn.6862788`
+
+- title: A Study on Food Safety Risk Perception: Introducing Large Language Models to Online Public Opinion Analysis
+- authors: Jiabin Yu, Shuaixiang Chen, Ruipeng Cheng, Zhiyao Zhao
+- affiliations: not stated
+- posted: 2026-06-01
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6862788
+- keyword hits: chatgpt, gpt-4, large language model, large language models, llm, llms
+
+### abstract
+
+To promote the transformation of food safety risk response from “post-event inspection” to “proactive perception,” this study proposes a food safety public opinion risk perception method based on large language models (LLMs). A food safety risk domain lexicon (FSRL) was constructed, and a ChatGPT-4o-based retrieval and data collection approach was employed to achieve the automated acquisition and structured processing of food-related public opinion information. Subsequently, the low-rank adaptation (LoRA) technique was applied to fine-tune LLMs such as ChatGLM4-9B, enabling more accurate food safety event classification and named entity recognition (NER). On this basis, a multidimensional food safety public opinion risk portrait was developed to reveal public concern patterns across multiple dimensions. Experimental results show that ChatGLM4-9B achieved 99% accuracy in event classification, outperforming other models and demonstrating strong few-shot learning capability. Under the vector similarity–based evaluation method, its NER performance also achieved high precision. Furthermore, the risk portrait indicates that public opinion perception is higher in eastern coastal and first-tier cities, with pesticide and veterinary drug residues and microbial contamination being the most common risk types of public concern. Overall, this method enhances the comprehensiveness and accuracy of risk information extraction and provides a new technical pathway for regulatory authorities.
+
+---
+
+## uid: `doi:10.2139/ssrn.6866876`
+
+- title: When Legal AI Speaks with Authority: Framing, Refusal, and Source Diversity in Generative AI Legal Answers
+- authors: Ruoxi Li, Sirui Han, Yi-Ke Guo
+- affiliations: not stated
+- posted: 2026-06-02
+- source: SSRN
+- link: https://doi.org/10.2139/ssrn.6866876
+- keyword hits: chatgpt, claude, deepseek, generative ai, qwen
+
+### abstract
+
+A chatbot answer about law can be accurate, cautious, and still consequential for public understanding. Direct-answer generative AI does more than retrieve legal information: it selects frames, foregrounds sources, and sets boundaries around controversy. This article audits that problem in a sensitive public-law setting, using Hong Kong's hybrid rule-of-law discourse under One Country, Two Systems as a critical case. We submitted Traditional Chinese prompts across five domains to five generative AI systems - ChatGPT5, Claude Sonnet 4.5, Deepseek-V3.2-Exp, Qwen3-MAX, and HKChat - producing 500 first-turn responses. BGE-M3 embeddings measured Top-1 semantic alignment with seven constructed discourse baselines, while refusal coding and critical discourse analysis examined refusal, proceduralization, citation, hedging, and neutralization. The results reveal a concentrated answer space: 244 responses (48.8%) aligned most closely with an order-mobilizing Hong Kong media baseline, 190 (38.0%) with a Hong Kong institutional-legal baseline, and 63 (12.6%) with a Mainland sovereign-legal baseline. Rights-centered, liberal/critical, mainstream-media, and intensified international critique baselines rarely or never became dominant. Model profiles also diverged: Deepseek-V3.2-Exp was the only model with a Mainland sovereign-legal plurality and the only system producing explicit refusals, while HKChat showed the strongest institutional-legal profile. The findings show why legal AI governance should address not only accuracy and safety, but also framing, refusal accountability, source diversity, and plural presentation.
+
+---

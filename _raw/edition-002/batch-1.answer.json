@@ -1,0 +1,116 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7140345",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7009698",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.1109/svcc65277.2025.11133642",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6978200",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.15414v1",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Five large language models evaluated on four technical-analysis tasks using OHLCV price data and financial reports; sample period and market coverage not stated, benchmarked against a passive S&P 500 strategy.",
+   "GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and domain-tuned FinGPT generate buy/sell/hold signals and read reports, scored with F1, BLEU, and simulated backtest risk metrics.",
+   "GPT-4 Turbo posts the highest annualized return and Sharpe ratio among general models and FinGPT trails closely; both beat the S&P 500, but all models show numerical hallucination and weak sideways-market performance."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude",
+   "gemini",
+   "llama",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "F1 on pattern and signal tasks, BLEU on report comprehension",
+  "salience": 40
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7153923",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7119484",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.02825v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

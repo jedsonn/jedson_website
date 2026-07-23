@@ -1,0 +1,117 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7102846",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "1,000 verified Amazon reviews across three product categories plus an out-of-domain Yelp corpus, each review converted into a targeted advertisement and a five-section marketing strategy report.",
+   "A fine-tuned DeBERTa-v3 extracts aspect-sentiment pairs, BART-large-MNLI classifies intent, and Gemini 2.5 Flash generates copy from aspect-aware retrieved evidence, all scored by an LLM-as-judge over six dimensions.",
+   "The aspect-aware pipeline scored groundedness 7.33 of 10 against 1.33 for both baselines, with similar margins on hallucination avoidance and specificity, in an unpowered single-run pilot."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gemini",
+   "open_other"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "LLM-as-judge quality scores, no human ground truth",
+  "salience": 31
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113581",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.11183v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.11141v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "LLM agents constructing equity portfolios on Hong Kong, US, and China A-share markets under live conditions, with the full decision path from market observation to executed trade as the unit.",
+   "The paper does not state which models are used; the platform provides time-consistent market access, coordinated multi-agent analysis, and persistent logging viewable through an interactive Trading Arena.",
+   "Demonstrates the platform across three markets, arguing that inspectable decision histories enable fairer benchmarking and clearer diagnosis; no aggregate return or accuracy comparison is reported."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 36
+ },
+ {
+  "uid": "arxiv:2607.14309v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6990301",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6970438",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.1145/3807503.3819448",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]
