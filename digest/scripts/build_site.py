@@ -26,7 +26,7 @@ PUBLIC_FIELDS = [
     "uid", "doi", "arxiv_id", "title", "authors", "affiliations", "posted",
     "added", "source_label", "url", "alt_urls", "field", "role", "bullets",
     "bullet_provenance", "models", "open_weights", "validated",
-    "validation_note", "salience", "edition",
+    "validation_note", "salience", "edition", "n",
 ]
 
 
@@ -72,6 +72,10 @@ def main():
         raise SystemExit("data/index.jsonl is empty. Nothing to build.")
 
     papers = [public_view(r) for r in index]
+    # Stable archive number: index.jsonl is append-order (oldest first), so the
+    # newest paper's number equals the running total ever classified.
+    for i, p in enumerate(papers):
+        p["n"] = i + 1
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)

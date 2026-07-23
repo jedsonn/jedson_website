@@ -29,7 +29,8 @@
       "validated": true,
       "validation_note": "15 models audited on a vintage-correct macro panel with per-model metrics",
       "salience": 78,
-      "edition": 1
+      "edition": 1,
+      "n": 12
     },
     {
       "uid": "doi:10.3386/w35374",
@@ -53,7 +54,8 @@
       "salience": 70,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 4
     },
     {
       "uid": "doi:10.2139/ssrn.7119484",
@@ -85,7 +87,8 @@
       "validated": true,
       "validation_note": "classification F1 and benchmark comprehension scores reported",
       "salience": 46,
-      "edition": 1
+      "edition": 1,
+      "n": 1
     },
     {
       "uid": "doi:10.2139/ssrn.7158001",
@@ -109,7 +112,8 @@
       "salience": 48,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 2
     },
     {
       "uid": "doi:10.2139/ssrn.7024983",
@@ -138,7 +142,8 @@
       "validated": true,
       "validation_note": "core field accuracy 0.905 with variance across repeated runs",
       "salience": 55,
-      "edition": 1
+      "edition": 1,
+      "n": 3
     },
     {
       "uid": "doi:10.2139/ssrn.7028322",
@@ -164,7 +169,8 @@
       "salience": 52,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 6
     },
     {
       "uid": "doi:10.2139/ssrn.7145231",
@@ -190,7 +196,8 @@
       "validation_note": "human labeled calibration set; consistency and asymptotic normality established",
       "salience": 82,
       "edition": 1,
-      "models": []
+      "models": [],
+      "n": 7
     },
     {
       "uid": "doi:10.2139/ssrn.7037798",
@@ -214,7 +221,8 @@
       "salience": 50,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 8
     },
     {
       "uid": "doi:10.2139/ssrn.7051078",
@@ -244,7 +252,8 @@
       "open_weights": false,
       "salience": 38,
       "edition": 1,
-      "validated": null
+      "validated": null,
+      "n": 9
     },
     {
       "uid": "doi:10.2139/ssrn.7158737",
@@ -268,7 +277,8 @@
       "validated": false,
       "salience": 44,
       "edition": 1,
-      "models": []
+      "models": [],
+      "n": 10
     },
     {
       "uid": "doi:10.2139/ssrn.7151418",
@@ -296,7 +306,8 @@
       "open_weights": false,
       "salience": 74,
       "edition": 1,
-      "validated": null
+      "validated": null,
+      "n": 11
     },
     {
       "uid": "doi:10.2139/ssrn.7120281",
@@ -320,7 +331,8 @@
       "salience": 33,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 13
     },
     {
       "uid": "doi:10.2139/ssrn.7127378",
@@ -344,7 +356,8 @@
       "salience": 47,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 14
     },
     {
       "uid": "doi:10.2139/ssrn.7069438",
@@ -372,7 +385,8 @@
       "validation_note": "controlled experiment with identical-profile counterfactuals; portfolio efficiency measured",
       "salience": 80,
       "edition": 1,
-      "models": []
+      "models": [],
+      "n": 15
     },
     {
       "uid": "doi:10.2139/ssrn.6206500",
@@ -399,7 +413,8 @@
       "salience": 68,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 16
     },
     {
       "uid": "doi:10.2139/ssrn.5370043",
@@ -426,7 +441,8 @@
       "salience": 64,
       "edition": 1,
       "models": [],
-      "validated": null
+      "validated": null,
+      "n": 5
     }
   ]
 }
