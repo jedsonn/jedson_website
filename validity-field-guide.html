@@ -1,0 +1,772 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Validity: a field guide to threats</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Spectral:ital,wght@0,400;0,500;0,600;1,400&family=Karla:wght@400;500;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#16212B;
+  --ink-soft:#4B5862;
+  --plate:#EAE9E1;
+  --card:#F3F2EC;
+  --rule:#C3C0B4;
+  --rule-soft:#DAD8CE;
+  --stat:#A8771A;
+  --int:#2F6E63;
+  --con:#3E4E86;
+  --ext:#7A3B54;
+  --serif:"Spectral",Georgia,"Times New Roman",serif;
+  --sans:"Karla",-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;
+  --mono:"IBM Plex Mono",ui-monospace,SFMono-Regular,Menlo,monospace;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0}
+body{
+  background:var(--plate);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-size:15px;
+  line-height:1.55;
+  -webkit-font-smoothing:antialiased;
+}
+.wrap{max-width:1080px;margin:0 auto;padding:28px 22px 80px}
+
+/* ---------- plate header ---------- */
+.eyebrow{
+  font-family:var(--mono);
+  font-size:11px;
+  letter-spacing:.18em;
+  text-transform:uppercase;
+  color:var(--ink-soft);
+}
+h1{
+  font-family:var(--serif);
+  font-weight:600;
+  font-size:clamp(30px,5vw,46px);
+  line-height:1.05;
+  margin:10px 0 6px;
+  letter-spacing:-.01em;
+}
+.deck{
+  font-family:var(--serif);
+  font-style:italic;
+  font-size:17px;
+  color:var(--ink-soft);
+  max-width:62ch;
+  margin:0 0 18px;
+}
+.dbl-rule{border-top:2px solid var(--ink);border-bottom:1px solid var(--rule);height:4px;margin:0 0 2px}
+
+/* ---------- tabs ---------- */
+nav{display:flex;flex-wrap:wrap;gap:2px;margin:18px 0 0;border-bottom:1px solid var(--rule)}
+.tab{
+  font-family:var(--mono);
+  font-size:12px;
+  letter-spacing:.08em;
+  text-transform:uppercase;
+  background:none;
+  border:0;
+  border-bottom:3px solid transparent;
+  color:var(--ink-soft);
+  padding:10px 14px;
+  cursor:pointer;
+}
+.tab:hover{color:var(--ink)}
+.tab[aria-selected="true"]{color:var(--ink);border-bottom-color:var(--int);font-weight:500}
+.tab:focus-visible{outline:2px solid var(--con);outline-offset:2px}
+.panel{display:none;padding-top:26px;animation:fade .25s ease}
+.panel.on{display:block}
+@keyframes fade{from{opacity:0}to{opacity:1}}
+
+h2{font-family:var(--serif);font-weight:600;font-size:22px;margin:0 0 8px}
+h3{font-family:var(--serif);font-weight:600;font-size:17px;margin:0 0 6px}
+p.lede{max-width:70ch;color:var(--ink-soft);margin:0 0 22px}
+
+/* ---------- chain ---------- */
+.chain{display:grid;grid-template-columns:repeat(4,1fr);gap:0;grid-auto-flow:column;margin:0 0 26px;border:1px solid var(--rule);background:var(--card)}
+.stage{
+  border-right:1px solid var(--rule);
+  padding:16px 14px 18px;
+  cursor:pointer;
+  background:none;
+  text-align:left;
+  font-family:inherit;
+  color:inherit;
+  position:relative;
+}
+.stage:last-child{border-right:0}
+.stage:focus-visible{outline:2px solid var(--con);outline-offset:-2px}
+.stage .num{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+.stage .nm{font-family:var(--serif);font-size:17px;font-weight:600;display:block;margin:4px 0 6px}
+.stage .q{font-size:13px;color:var(--ink-soft);line-height:1.4}
+.stage .bar{position:absolute;left:0;right:0;bottom:0;height:4px;background:transparent}
+.stage[data-on="1"]{background:#fff}
+.stage[data-on="1"] .bar{background:var(--c)}
+
+.cards4{display:grid;grid-auto-flow:column;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:16px}
+.vcard{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--c);padding:16px 16px 18px}
+.vcard .tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.vcard h3{margin:6px 0 8px}
+.vcard p{margin:0 0 10px;font-size:14px}
+.vcard .fail{font-size:13px;color:var(--ink-soft);border-top:1px dashed var(--rule);padding-top:9px;margin:0}
+.vcard .fail b{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;display:block;color:var(--ink-soft);font-weight:500}
+
+.note{border-left:3px solid var(--rule);padding:2px 0 2px 14px;margin:26px 0 0;max-width:72ch;font-size:14px;color:var(--ink-soft)}
+.note b{color:var(--ink)}
+
+/* ---------- libby ---------- */
+.libby{display:block}
+.plate-box{background:var(--card);border:1px solid var(--rule);padding:10px}
+svg{display:block;width:100%;height:auto}
+.hot{cursor:pointer}
+.hot:focus-visible{outline:2px solid var(--con)}
+.cue{font-family:var(--mono);font-size:11px;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);text-align:center;margin:14px 0 12px}
+.cue b{color:var(--ink);font-weight:500}
+.margin-note{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--c,var(--int));padding:16px 20px 20px}
+.mn-head{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;border-bottom:1px solid var(--rule-soft);padding-bottom:11px;margin-bottom:14px}
+.margin-note .lbl{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft)}
+.margin-note h3{margin:0;font-size:21px}
+.margin-note .gov{font-family:var(--mono);font-size:10px;letter-spacing:.06em;color:#fff;background:var(--c,var(--int));padding:3px 8px;margin-left:auto}
+.margin-note dl{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:22px}
+.margin-note dt{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--ink-soft);margin:0 0 5px;padding-bottom:4px;border-bottom:1px dashed var(--rule)}
+.margin-note dd{margin:0;font-size:14px}
+.margin-note dd.ex{font-family:var(--serif);font-style:italic}
+dl{margin:0}
+
+/* ---------- explorer ---------- */
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin:0 0 18px}
+.chip{
+  font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  border:1px solid var(--rule);background:var(--card);color:var(--ink-soft);
+  padding:6px 11px;cursor:pointer;
+}
+.chip[aria-pressed="true"]{background:var(--ink);color:var(--plate);border-color:var(--ink)}
+.chip[data-f="time"]{border-style:dashed}
+.chip:focus-visible{outline:2px solid var(--con);outline-offset:2px}
+#q{
+  font-family:var(--sans);font-size:13px;padding:7px 10px;min-width:190px;flex:1;
+  border:1px solid var(--rule);background:#fff;color:var(--ink);
+}
+#q:focus{outline:2px solid var(--con);outline-offset:-1px}
+.count{font-family:var(--mono);font-size:11px;color:var(--ink-soft)}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(275px,1fr));gap:14px}
+.tcard{background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--c);padding:13px 14px}
+.tcard .code{font-family:var(--mono);font-size:10px;letter-spacing:.1em;color:var(--c)}
+.tcard h4{font-family:var(--serif);font-size:16px;font-weight:600;margin:3px 0 6px}
+.tcard p{margin:0 0 8px;font-size:13.5px}
+.tcard .ex{font-family:var(--serif);font-style:italic;font-size:13.5px;color:var(--ink-soft);margin:0 0 8px}
+.tcard .fix{font-size:12.5px;border-top:1px dashed var(--rule);padding-top:7px;margin:0}
+.tcard .fix b{font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;font-weight:500;color:var(--ink-soft)}
+
+/* ---------- matrix ---------- */
+.scroller{overflow-x:auto;border:1px solid var(--rule);background:var(--card)}
+table{border-collapse:collapse;width:100%;min-width:760px;font-size:13px}
+th,td{padding:9px 8px;text-align:center;border-bottom:1px solid var(--rule-soft)}
+thead th{
+  font-family:var(--mono);font-size:10px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink-soft);font-weight:500;vertical-align:bottom;border-bottom:1px solid var(--rule);
+}
+tbody th{
+  text-align:left;font-family:var(--serif);font-size:14.5px;font-weight:500;
+  white-space:nowrap;position:sticky;left:0;background:var(--card);border-right:1px solid var(--rule);
+}
+tbody tr{cursor:pointer}
+tbody tr:hover th,tbody tr:hover td{background:#fff}
+tbody tr[data-on="1"] th,tbody tr[data-on="1"] td{background:#fff;box-shadow:inset 0 0 0 1px var(--rule-soft)}
+.mark{display:inline-block;width:15px;height:15px;border-radius:50%}
+.m2{background:var(--int)}
+.m1{background:var(--stat);opacity:.75}
+.m0{background:var(--ext);opacity:.55}
+.legend{display:flex;gap:18px;flex-wrap:wrap;font-family:var(--mono);font-size:11px;color:var(--ink-soft);margin:12px 0 0;align-items:center}
+.legend span{display:flex;gap:7px;align-items:center}
+#rownote{margin:18px 0 0;background:var(--card);border:1px solid var(--rule);border-left:4px solid var(--int);padding:14px 16px;max-width:74ch}
+#rownote h3{margin:0 0 5px}
+#rownote p{margin:0;font-size:14px;color:var(--ink-soft)}
+
+/* ---------- checklist ---------- */
+.check-head{display:flex;justify-content:space-between;align-items:baseline;flex-wrap:wrap;gap:10px;margin:0 0 16px}
+.progress{font-family:var(--mono);font-size:12px;color:var(--ink-soft)}
+.btn{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;background:none;border:1px solid var(--rule);padding:6px 11px;cursor:pointer;color:var(--ink-soft)}
+.btn:hover{color:var(--ink);border-color:var(--ink)}
+.btn:focus-visible{outline:2px solid var(--con);outline-offset:2px}
+.checkgroup{background:var(--card);border:1px solid var(--rule);border-top:4px solid var(--c);padding:14px 16px 16px;margin:0 0 14px}
+.checkgroup .tag{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--c)}
+.checkgroup h3{margin:5px 0 10px}
+label.q{display:flex;gap:10px;align-items:flex-start;padding:6px 0;font-size:14px;cursor:pointer;border-top:1px dashed var(--rule-soft)}
+label.q:first-of-type{border-top:0}
+label.q input{margin:4px 0 0;accent-color:var(--int);width:15px;height:15px;flex:none}
+label.q input:focus-visible{outline:2px solid var(--con);outline-offset:2px}
+label.q.done span{color:var(--ink-soft);text-decoration:line-through}
+.two{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+
+footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px;color:var(--ink-soft);line-height:1.7}
+
+@media (max-width:860px){
+  .margin-note dl{grid-template-columns:1fr 1fr}
+  .chain{grid-template-columns:1fr 1fr}
+  .two{grid-template-columns:1fr}
+}
+@media (max-width:520px){
+  .margin-note dl{grid-template-columns:1fr}
+  .margin-note .gov{margin-left:0}
+  .chain{grid-template-columns:1fr}
+  .stage{border-right:0;border-bottom:1px solid var(--rule)}
+}
+@media (prefers-reduced-motion:reduce){
+  .panel{animation:none}
+}
+</style>
+<script src="analytics.js"></script>
+</head>
+<body>
+<div class="wrap">
+
+  <header>
+    <div class="eyebrow">BUSI 899 &nbsp;/&nbsp; PhD Seminar in Research Design</div>
+    <h1>Validity: a field guide to threats</h1>
+    <p class="deck">Every empirical paper says one thing caused another. Four things have to be true before you can believe it. This guide shows what they are, what breaks each one, and where to look in a paper to find the break.</p>
+    <div class="dbl-rule"></div>
+
+    <nav role="tablist" aria-label="Sections">
+      <button class="tab" role="tab" aria-selected="true" aria-controls="p2" id="t2">Libby boxes</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p1" id="t1">Four validities</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p6" id="t6">Measure validation</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p3" id="t3">Threat explorer</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p4" id="t4">Design matrix</button>
+      <button class="tab" role="tab" aria-selected="false" aria-controls="p5" id="t5">Referee lens</button>
+    </nav>
+  </header>
+
+  <!-- =============== PANEL 2 (first) =============== -->
+  <section class="panel on" id="p2" role="tabpanel" aria-labelledby="t2">
+    <h2>The anatomy of an empirical paper</h2>
+    <p class="lede">Start here. Every empirical paper lives in two worlds at once. On top is the conceptual world, where your ideas and your theory sit. Underneath is the empirical world, where the data you can actually get sits. Your paper is only as good as the four arrows that connect them. Each arrow is a promise, and each one breaks in its own way. Click any arrow or box to see what it promises and what breaks it.</p>
+
+    <div class="libby">
+      <div class="plate-box">
+        <svg viewBox="0 0 720 470" role="img" aria-label="Libby box diagram with four numbered links">
+          <defs>
+            <marker id="ar" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#16212B"/>
+            </marker>
+            <marker id="arl" markerWidth="9" markerHeight="9" refX="8" refY="4.5" orient="auto">
+              <path d="M0,0 L9,4.5 L0,9 z" fill="#4B5862"/>
+            </marker>
+          </defs>
+
+          <!-- external frame -->
+          <rect x="18" y="18" width="684" height="434" fill="none" stroke="#7A3B54" stroke-width="1" stroke-dasharray="7 6" class="hot" data-k="ext" tabindex="0"/>
+          <text x="34" y="40" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1.4" fill="#7A3B54">WHICH FIRMS, WHERE, WHEN</text>
+          <text x="686" y="40" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10.5" letter-spacing="1.4" fill="#7A3B54">EXTERNAL VALIDITY</text>
+
+          <!-- theory band label -->
+          <text x="50" y="130" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1" fill="#16212B" transform="rotate(-90 50 130)">THEORY / CONCEPTUAL</text>
+          <text x="37" y="130" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="10.5" font-style="italic" fill="#4B5862" transform="rotate(-90 37 130)">the ideas</text>
+          <text x="50" y="355" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing="1" fill="#16212B" transform="rotate(-90 50 355)">EMPIRICAL / OPERATIONAL</text>
+          <text x="37" y="355" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="10.5" font-style="italic" fill="#4B5862" transform="rotate(-90 37 355)">what you can measure</text>
+          <line x1="58" y1="60" x2="58" y2="200" stroke="#C3C0B4"/>
+          <line x1="58" y1="270" x2="58" y2="440" stroke="#C3C0B4"/>
+
+          <!-- box 1 -->
+          <g class="hot" data-k="b1" tabindex="0">
+            <rect x="88" y="78" width="212" height="74" fill="#F3F2EC" stroke="#16212B" stroke-width="1.4"/>
+            <text x="194" y="106" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="16" font-weight="600" fill="#16212B">The cause, as an idea</text>
+            <text x="194" y="128" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">information asymmetry</text>
+          </g>
+          <!-- box 2 -->
+          <g class="hot" data-k="b2" tabindex="0">
+            <rect x="420" y="78" width="212" height="74" fill="#F3F2EC" stroke="#16212B" stroke-width="1.4"/>
+            <text x="526" y="106" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="16" font-weight="600" fill="#16212B">The effect, as an idea</text>
+            <text x="526" y="128" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">cost of capital</text>
+          </g>
+          <!-- box 3 -->
+          <g class="hot" data-k="b3" tabindex="0">
+            <rect x="88" y="298" width="212" height="74" fill="#F3F2EC" stroke="#16212B" stroke-width="1.4"/>
+            <text x="194" y="326" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="16" font-weight="600" fill="#16212B">The cause, as a variable</text>
+            <text x="194" y="348" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">a before and after dummy</text>
+          </g>
+          <!-- box 4 -->
+          <g class="hot" data-k="b4" tabindex="0">
+            <rect x="420" y="298" width="212" height="74" fill="#F3F2EC" stroke="#16212B" stroke-width="1.4"/>
+            <text x="526" y="326" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="16" font-weight="600" fill="#16212B">The effect, as a variable</text>
+            <text x="526" y="348" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">cost of equity estimate</text>
+          </g>
+          <!-- box 5 -->
+          <g class="hot" data-k="b5" tabindex="0">
+            <rect x="292" y="404" width="136" height="42" fill="#EAE9E1" stroke="#4B5862" stroke-dasharray="4 3"/>
+            <text x="360" y="430" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="14" fill="#16212B">Everything else</text>
+          </g>
+          <line x1="360" y1="404" x2="360" y2="348" stroke="#4B5862" marker-end="url(#arl)"/>
+
+          <!-- link 1 -->
+          <line x1="300" y1="115" x2="412" y2="115" stroke="#16212B" stroke-width="1.4" marker-end="url(#ar)"/>
+          <g class="hot" data-k="l1" tabindex="0">
+            <circle cx="356" cy="115" r="15" fill="#3E4E86"/>
+            <text x="356" y="120" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff">1</text>
+          </g>
+          <!-- link 2 -->
+          <line x1="194" y1="152" x2="194" y2="290" stroke="#16212B" stroke-width="1.4" marker-end="url(#ar)"/>
+          <g class="hot" data-k="l2" tabindex="0">
+            <circle cx="194" cy="221" r="15" fill="#3E4E86"/>
+            <text x="194" y="226" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff">2</text>
+          </g>
+          <!-- link 3 -->
+          <line x1="526" y1="152" x2="526" y2="290" stroke="#16212B" stroke-width="1.4" marker-end="url(#ar)"/>
+          <g class="hot" data-k="l3" tabindex="0">
+            <circle cx="526" cy="221" r="15" fill="#3E4E86"/>
+            <text x="526" y="226" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff">3</text>
+          </g>
+          <!-- link 4 -->
+          <line x1="300" y1="335" x2="412" y2="335" stroke="#16212B" stroke-width="1.4" marker-end="url(#ar)"/>
+          <g class="hot" data-k="l4" tabindex="0">
+            <circle cx="356" cy="335" r="15" fill="#2F6E63"/>
+            <text x="356" y="340" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="13" fill="#fff">4</text>
+          </g>
+
+          <text x="356" y="88" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#4B5862">WHAT YOU EXPECT</text>
+          <text x="356" y="372" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#4B5862">WHAT YOU ACTUALLY TEST</text>
+        </svg>
+      </div>
+
+      <p class="cue">Click any arrow or box above. <b>Showing: arrow 4</b></p>
+
+      <aside class="margin-note" id="mnote" style="--c:var(--int)">
+        <div class="mn-head">
+          <div class="lbl" id="mlbl">Arrow 4</div>
+          <h3 id="mtitle">The number you actually estimate</h3>
+          <span class="gov" id="mgov">INTERNAL VALIDITY</span>
+        </div>
+        <dl>
+          <dt>The promise</dt><dd id="mclaim"></dd>
+          <dt>What breaks it</dt><dd id="mbreak"></dd>
+          <dt>In accounting</dt><dd class="ex" id="mex"></dd>
+          <dt>Referee question</dt><dd id="mref"></dd>
+        </dl>
+      </aside>
+    </div>
+
+    <p class="note"><b>Most papers defend one arrow and assume the rest.</b> Empirical accounting works hard on arrow 4 and waves at arrows 2 and 3. Experimental work does the opposite. When you write a referee report, say which arrow the paper defended and which it took for granted.</p>
+  </section>
+
+  <!-- =============== PANEL 1 (second) =============== -->
+  <section class="panel" id="p1" role="tabpanel" aria-labelledby="t1">
+    <h2>The inference chain</h2>
+    <p class="lede">These are the names for the four ways a paper can break. The order depends on what you are doing. Building a paper, you work from the idea down: decide what you are measuring, then how to get a clean comparison, then how to estimate it, then who the answer applies to. Reading someone else, you work the other way, from the data outward. Switch below and watch the sequence flip.</p>
+
+    <div class="controls" style="margin-bottom:14px">
+      <span class="count" style="margin-right:4px">Order for:</span>
+      <button class="chip" data-o="build" aria-pressed="true">Building a paper</button>
+      <button class="chip" data-o="read" aria-pressed="false">Reading a paper</button>
+    </div>
+
+    <div class="chain" id="chain">
+      <button class="stage" data-i="0" style="--c:var(--stat)"><span class="num">01</span><span class="nm">Statistical conclusion</span><span class="q">Do the two things really move together?</span><span class="bar"></span></button>
+      <button class="stage" data-i="1" style="--c:var(--int)"><span class="num">02</span><span class="nm">Internal</span><span class="q">Did one of them cause the other?</span><span class="bar"></span></button>
+      <button class="stage" data-i="2" style="--c:var(--con)"><span class="num">03</span><span class="nm">Construct</span><span class="q">Are you measuring what you say you are?</span><span class="bar"></span></button>
+      <button class="stage" data-i="3" style="--c:var(--ext)"><span class="num">04</span><span class="nm">External</span><span class="q">Who does the answer apply to?</span><span class="bar"></span></button>
+    </div>
+
+    <div class="cards4">
+      <div class="vcard" style="--c:var(--stat)">
+        <div class="tag"><span class="n">01</span> &nbsp;Statistical conclusion</div>
+        <h3>Is the pattern real?</h3>
+        <p>Do the two things really move together? This depends on how you ran the test, how you computed the standard errors, and how many tests you tried before this one.</p>
+        <p class="fail"><b>Failure looks like</b>A t statistic of 2.1, standard errors that were never clustered, three treated states, and the fourth measure you tried.</p>
+      </div>
+      <div class="vcard" style="--c:var(--int)">
+        <div class="tag"><span class="n">02</span> &nbsp;Internal</div>
+        <h3>Did the cause produce the effect?</h3>
+        <p>They move together, but is that because one caused the other? Or because firms chose their own treatment, something else happened at the same time, the trend was already running, or the outcome moved the cause?</p>
+        <p class="fail"><b>Failure looks like</b>Treated firms were already diverging from controls two years before the mandate.</p>
+      </div>
+      <div class="vcard" style="--c:var(--con)">
+        <div class="tag"><span class="n">03</span> &nbsp;Construct</div>
+        <h3>Are you measuring what you say?</h3>
+        <p>Your variables have to stand for the ideas in your title. You can have a clean causal effect and still be wrong about what caused what.</p>
+        <p class="fail"><b>Failure looks like</b>The bid ask spread went up, so the paper says information asymmetry went up. The spread moves for other reasons too.</p>
+      </div>
+      <div class="vcard" style="--c:var(--ext)">
+        <div class="tag"><span class="n">04</span> &nbsp;External</div>
+        <h3>Who does the result apply to?</h3>
+        <p>Does the result hold for other firms, other sizes of the same change, other outcomes, other countries, other years? Designs that are clean on step 02 usually pay the price here.</p>
+        <p class="fail"><b>Failure looks like</b>The design only compares firms right at a cutoff, and the abstract talks about firms in general.</p>
+      </div>
+    </div>
+
+    <p class="note"><b>So which order is correct?</b> Both, for different jobs, and this guide opens on the one you need first. When you build a paper, construct validity comes first. Decide what you are measuring and how, then find a clean comparison, then worry about estimation, then ask who the answer applies to. Start anywhere else and you get a clean coefficient for a question nobody asked. The textbook order, from Shadish, Cook and Campbell, is the reading order: is the pattern real, then did one cause the other, then are we measuring what we say, then who does it apply to. That is how you check a result someone hands you. Use it in referee reports. Use the building order for your own work.</p>
+    <p class="note"><b>Steps 02 and 04 fight each other.</b> A clean design gives you a solid answer about a small group. A big sample gives you reach, but more things can confound it. Neither is better on its own. The question is whether the paper made the right trade for the question it asked.</p>
+    <p class="note"><b>Where time enters.</b> Students ask whether temporal validity is a fifth type. It is not. Time enters at three points and the distinction matters. At step 01 it is the horizon: the window you chose decides the coefficient. At step 02 it is timing: anticipation, mis dated treatment, dynamic effects, and trends that were already running. At step 04 it is the regime: whether the relation itself has a half life. A paper can be flawless about the period it studies and still be describing a world that no longer exists.</p>
+    <p class="note"><b>What sits inside each of these.</b> Construct validity contains the whole measurement family: content, face, convergent, discriminant, criterion and nomological validity, resting on reliability. That family has its own tab. External validity contains population validity, ecological validity, and the temporal question above. Statistical conclusion validity contains the identification assumptions you cannot test, including the exclusion restriction. Nothing here covers the qualitative tradition, where Maxwell splits validity into descriptive, interpretive, theoretical and evaluative. If a student is doing field work, that framework replaces this one.</p>
+    <p class="note"><b>Where the frameworks come from.</b> The four way split and the named threats follow Campbell and Stanley, then Shadish, Cook and Campbell. The link diagram in the first tab follows Libby, Bloomfield and Nelson. The econometric vocabulary follows Angrist and Pischke. They describe the same problem in three dialects.</p>
+  </section>
+
+  <!-- =============== PANEL 6 =============== -->
+  <section class="panel" id="p6" role="tabpanel" aria-labelledby="t6">
+    <h2>Validating a measure</h2>
+    <p class="lede">Arrows 2 and 3 are where most accounting papers are weakest. Showing that your variable measures what you say is not one test. It is six, and they only work if the measure is stable to begin with. This applies to an index you build by hand, a score from text, or anything a language model produces.</p>
+
+    <div class="plate-box" style="margin:0 0 24px">
+      <svg viewBox="0 0 720 330" role="img" aria-label="Six measure validation checks rising above a reliability floor">
+        <line x1="40" y1="72" x2="680" y2="72" stroke="#3E4E86" stroke-dasharray="6 5"/>
+        <text x="680" y="64" text-anchor="end" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#3E4E86">CEILING SET BY RELIABILITY</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="11" fill="#4B5862">
+          <rect x="40" y="92" width="100" height="170" fill="#3E4E86" opacity=".28"/><text x="90" y="86" text-anchor="middle">01</text>
+          <rect x="146" y="120" width="100" height="142" fill="#3E4E86" opacity=".40"/><text x="196" y="114" text-anchor="middle">02</text>
+          <rect x="252" y="148" width="100" height="114" fill="#3E4E86" opacity=".52"/><text x="302" y="142" text-anchor="middle">03</text>
+          <rect x="358" y="176" width="100" height="86" fill="#3E4E86" opacity=".64"/><text x="408" y="170" text-anchor="middle">04</text>
+          <rect x="464" y="204" width="100" height="58" fill="#3E4E86" opacity=".78"/><text x="514" y="198" text-anchor="middle">05</text>
+          <rect x="570" y="232" width="100" height="30" fill="#3E4E86" opacity=".92"/><text x="620" y="226" text-anchor="middle">06</text>
+        </g>
+        <rect x="40" y="266" width="640" height="30" fill="#16212B"/>
+        <text x="360" y="286" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="11" letter-spacing="2" fill="#EAE9E1">RELIABILITY</text>
+        <g font-family="IBM Plex Mono, monospace" font-size="9.5" letter-spacing=".6" fill="#4B5862" text-anchor="middle">
+          <text x="90" y="316">CONTENT</text><text x="196" y="316">FACE</text><text x="302" y="316">CONVERGENT</text>
+          <text x="408" y="316">DISCRIMINANT</text><text x="514" y="316">CRITERION</text><text x="620" y="316">NOMOLOGICAL</text>
+        </g>
+        <text x="40" y="24" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">The evidence gets harder to fake as you move right. Most papers stop after the third one.</text>
+      </svg>
+    </div>
+
+    <div class="grid" id="mgrid"></div>
+
+    <p class="note"><b>Reliability is a floor, not a check.</b> A measure that gives a different answer on a rerun cannot be valid for anything. For hand collected data that means inter coder agreement. For a measure produced by a language model it means the same thing under a different seed, a different prompt wording, and a different model version. Report it before you report a correlation.</p>
+    <p class="note"><b>The check that gets skipped.</b> Discriminant validity. Convergent evidence is easy, because in accounting almost every firm level measure correlates with size, and a proxy that correlates with the accepted proxy has cleared a low bar. The harder question is what your measure should be unrelated to, and whether it is. Name that variable before you build the measure.</p>
+  </section>
+
+  <!-- =============== PANEL 3 =============== -->
+  <section class="panel" id="p3" role="tabpanel" aria-labelledby="t3">
+    <h2>Threat explorer</h2>
+    <p class="lede">Forty seven things that can go wrong, each with an accounting example and what to do about it. Filter by type, or press Time to see the ten that are about timing. Time is not a fifth type. It shows up inside three of the four.</p>
+
+    <div class="controls">
+      <button class="chip" data-f="all" aria-pressed="true">All</button>
+      <button class="chip" data-f="stat" aria-pressed="false">Statistical</button>
+      <button class="chip" data-f="int" aria-pressed="false">Internal</button>
+      <button class="chip" data-f="con" aria-pressed="false">Construct</button>
+      <button class="chip" data-f="ext" aria-pressed="false">External</button>
+      <button class="chip" data-f="time" aria-pressed="false">Time (cuts across)</button>
+      <input id="q" type="search" placeholder="Search: trends, clustering, IFRS, spread" aria-label="Search threats">
+      <span class="count" id="count"></span>
+    </div>
+    <div class="grid" id="grid"></div>
+  </section>
+
+  <!-- =============== PANEL 4 =============== -->
+  <section class="panel" id="p4" role="tabpanel" aria-labelledby="t4">
+    <h2>What each design buys you</h2>
+    <p class="lede">No design is best. Each one solves some problems and leaves others open. Click a row to see the weakness a referee will go to first.</p>
+
+    <div class="scroller">
+      <table id="matrix">
+        <thead><tr>
+          <th style="text-align:left">Design</th>
+          <th>History</th><th>Maturation</th><th>Selection</th><th>Regression to mean</th>
+          <th>Attrition</th><th>Omitted variable</th><th>Reverse causality</th><th>External reach</th>
+        </tr></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+    <div class="legend">
+      <span><i class="mark m2"></i> Handled by the design</span>
+      <span><i class="mark m1"></i> Partly handled, needs argument</span>
+      <span><i class="mark m0"></i> Left exposed</span>
+    </div>
+    <div id="rownote"><h3>Select a design</h3><p>Each row carries one weakness that referees go to first. Click a row to read it.</p></div>
+  </section>
+
+  <!-- =============== PANEL 5 =============== -->
+  <section class="panel" id="p5" role="tabpanel" aria-labelledby="t5">
+    <h2>Referee lens</h2>
+    <p class="lede">Work through these before you write your report. Order matters. If a paper fails the first block, it does not need your comments on the last one.</p>
+    <div class="check-head">
+      <span class="progress" id="prog">0 of 24 checked</span>
+      <button class="btn" id="reset">Clear all</button>
+    </div>
+    <div class="two" id="checks"></div>
+    <p class="note"><b>Writing the report.</b> Lead with the link that carries the paper. State the threat, say why it is plausible in this setting, then name the test that would settle it. A threat you cannot turn into a test is a comment, not an objection.</p>
+  </section>
+
+  <footer>
+    BUSI 899 &nbsp;/&nbsp; Research design in accounting<br>
+    Frameworks after Campbell and Stanley (1963), Shadish, Cook and Campbell (2002), Libby, Bloomfield and Nelson (2002), Angrist and Pischke (2014).
+  </footer>
+</div>
+
+<script>
+/* ---------------- tabs ---------------- */
+const tabs=[...document.querySelectorAll('.tab')];
+tabs.forEach(t=>t.addEventListener('click',()=>{
+  tabs.forEach(x=>x.setAttribute('aria-selected',String(x===t)));
+  document.querySelectorAll('.panel').forEach(p=>p.classList.toggle('on',p.id===t.getAttribute('aria-controls')));
+}));
+document.querySelector('nav').addEventListener('keydown',e=>{
+  const i=tabs.indexOf(document.activeElement); if(i<0)return;
+  if(e.key==='ArrowRight'){tabs[(i+1)%tabs.length].focus();e.preventDefault();}
+  if(e.key==='ArrowLeft'){tabs[(i-1+tabs.length)%tabs.length].focus();e.preventDefault();}
+});
+
+/* ---------------- chain highlight ---------------- */
+const stages=[...document.querySelectorAll('.stage')];
+const cards=[...document.querySelectorAll('.vcard')];
+const ORD={read:[0,1,2,3],build:[2,1,0,3]};
+function setOrder(mode){
+  const pos=ORD[mode];
+  stages.forEach((st,i)=>{
+    st.style.order=pos[i];
+    st.querySelector('.num').textContent=String(pos[i]+1).padStart(2,'0');
+    st.style.borderRight=(pos[i]===3)?'0':'1px solid var(--rule)';
+  });
+  cards.forEach((c,i)=>{
+    c.style.order=pos[i];
+    c.querySelector('.n').textContent=String(pos[i]+1).padStart(2,'0');
+  });
+}
+document.querySelectorAll('.chip[data-o]').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip[data-o]').forEach(x=>x.setAttribute('aria-pressed',String(x===c)));
+  setOrder(c.dataset.o);
+}));
+setOrder('build');
+
+stages.forEach(s=>s.addEventListener('click',()=>{
+  const on=s.dataset.on==='1';
+  stages.forEach(x=>x.dataset.on='0');
+  cards.forEach(c=>c.style.opacity='1');
+  if(!on){ s.dataset.on='1'; cards.forEach((c,j)=>c.style.opacity=(j==s.dataset.i)?'1':'.35'); }
+}));
+
+/* ---------------- libby margin notes ---------------- */
+const LB={
+  l1:{lbl:'Arrow 1',t:'The idea you are testing',gov:'THEORY AND EXTERNAL VALIDITY',c:'--con',
+      claim:'One idea moves another idea. This is the prediction the paper makes. No amount of data can prove it, because it lives in the theory, not the data.',
+      brk:'A prediction so loose that the opposite result would also have been written up. Rival theories that predict the same sign. A hypothesis restated from the empirical result.',
+      ex:'Higher disclosure lowers the cost of capital. Two theories give this, and one gives the reverse under noise trading.',
+      ref:'Would a different theory have made a different prediction here? If not, what does the test discriminate between?'},
+  l2:{lbl:'Arrow 2',t:'Does your variable capture the cause?',gov:'CONSTRUCT VALIDITY',c:'--con',
+      claim:'The variable you use for the cause really stands for the idea in your hypothesis, and not for something else.',
+      brk:'The event changed several things at once. Or you have only one way of measuring the cause. Or your variable also picks up the thing you were worried about.',
+      ex:'IFRS adoption is coded as a change in standards, but it arrived with enforcement reform in most adopting countries.',
+      ref:'What else changed at the same moment, and can the design separate it?'},
+  l3:{lbl:'Arrow 3',t:'Does your variable capture the effect?',gov:'CONSTRUCT VALIDITY',c:'--con',
+      claim:'The variable you use for the effect really measures the outcome you care about, and not a close cousin of it.',
+      brk:'Noise in the measure. Every variable pulled from the same source. Or a measure that everyone already knows means two things at once.',
+      ex:'Bid ask spread is read as adverse selection, though it also loads on inventory and order processing costs.',
+      ref:'Does a second proxy with different weaknesses give the same answer?'},
+  l4:{lbl:'Arrow 4',t:'The number you actually estimate',gov:'INTERNAL AND STATISTICAL VALIDITY',c:'--int',
+      claim:'The number you get from the regression really is the cause moving the outcome, for these firms, in these years.',
+      brk:'Firms chose to be treated. Something else happened at the same time. The trend was already there. Or the outcome moved the cause. On the statistics side: wrong standard errors, too few observations, too many tests.',
+      ex:'Treated and control firms diverge two years before the mandate, so the post period gap is a trend, not an effect.',
+      ref:'Show me the pre period. What is the level of assignment, and are the errors clustered there?'},
+  b1:{lbl:'Box 1',t:'The cause, in the conceptual world',gov:'CONSTRUCT VALIDITY',c:'--con',
+      claim:'The idea, stated clearly enough that a reader can tell what counts as an example of it and what does not.',
+      brk:'Big vague words that can fit any result: information environment, transparency, governance quality.',
+      ex:'A paper defines the information environment and then measures it with analyst counts, spreads and forecast error interchangeably.',
+      ref:'Define the construct in one sentence without naming a proxy. Can you?'},
+  b2:{lbl:'Box 2',t:'The effect, in the conceptual world',gov:'CONSTRUCT VALIDITY',c:'--con',
+      claim:'The outcome is the one your theory talks about, at the same level your theory talks about it.',
+      brk:'Sliding between firm level and market level outcomes, or between a real effect and its accounting representation.',
+      ex:'Theory predicts a change in real investment, and the paper tests reported capital expenditure.',
+      ref:'Is the outcome the theory concept, or its accounting shadow?'},
+  b3:{lbl:'Box 3',t:'The cause, in the empirical world',gov:'CONSTRUCT VALIDITY',c:'--con',
+      claim:'The variable as you actually built it: the coding, the dates, and whether the rule was enforced.',
+      brk:'Law on the books that is not enforced. Adoption dates coded from the wrong source. Continuous treatment collapsed into a binary.',
+      ex:'A state law is coded as effective on the enactment date, while firms responded at the compliance deadline a year later.',
+      ref:'Where do the treatment dates come from, and what happens if they are shifted by a year?'},
+  b4:{lbl:'Box 4',t:'The effect, in the empirical world',gov:'CONSTRUCT AND STATISTICAL VALIDITY',c:'--con',
+      claim:'The outcome as you actually built it, including the noise, the scaling, and the trimming.',
+      brk:'Noise pushes the estimate toward zero. Scaling can create a correlation on its own, before any economics happens.',
+      ex:'A ratio scaled by total assets, when the treatment also moves total assets.',
+      ref:'Does the denominator respond to the treatment?'},
+  b5:{lbl:'Box 5',t:'Everything else that moves the outcome',gov:'INTERNAL VALIDITY',c:'--int',
+      claim:'The other things that move the outcome, held fixed so your main number means something.',
+      brk:'Controls that sit between cause and effect, soaking up the very thing you want to measure. Too few controls. Or controls picked after seeing the results.',
+      ex:'Controlling for analyst following in a study of disclosure and liquidity, when disclosure changes analyst following.',
+      ref:'Is every control measured before treatment? What happens to the coefficient without them?'},
+  ext:{lbl:'The frame around everything',t:'Who, where and when the result is about',gov:'EXTERNAL VALIDITY',c:'--ext',
+      claim:'The firms, the country, and the years your result is actually about.',
+      brk:'Silence. Most papers state the sample and then write conclusions about firms in general.',
+      ex:'An estimate from large US public firms in a low enforcement decade, presented as a general result about disclosure.',
+      ref:'Name the population this coefficient describes. Would you expect the same sign for private firms?'}
+};
+function showNote(k){
+  const d=LB[k]; if(!d)return;
+  const n=document.getElementById('mnote');
+  n.style.setProperty('--c','var('+d.c+')');
+  document.getElementById('mlbl').textContent=d.lbl;
+  document.querySelector('.cue b').textContent='Showing: '+d.lbl.toLowerCase();
+  document.getElementById('mtitle').textContent=d.t;
+  document.getElementById('mgov').textContent=d.gov;
+  document.getElementById('mclaim').textContent=d.claim;
+  document.getElementById('mbreak').textContent=d.brk;
+  document.getElementById('mex').textContent=d.ex;
+  document.getElementById('mref').textContent=d.ref;
+  document.querySelectorAll('.hot').forEach(h=>h.style.opacity=(h.dataset.k===k)?'1':'.55');
+}
+document.querySelectorAll('.hot').forEach(h=>{
+  h.addEventListener('click',()=>showNote(h.dataset.k));
+  h.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();showNote(h.dataset.k);}});
+});
+showNote('l4');
+
+
+/* ---------------- measure validation ---------------- */
+const MV=[
+ ['00','Reliability','Does the measure give the same value when produced again?','Two coders tag the same 200 filings. A language model tags the same call twice under different seeds.','Inter coder agreement, test retest correlation, seed and prompt stability. Report it as a number, not as a sentence.'],
+ ['01','Content','Does the measure cover the whole construct, or one corner of it?','A disclosure quality index built from 8-K counts is silent on everything in the MD&A and the call.','Map the construct domain first, then show which parts the measure reaches and which it does not.'],
+ ['02','Face','Would an expert reading the raw output agree with the label?','Pull fifty sentences your classifier tagged as forward looking guidance and read them yourself.','Hand inspect a random sample. Report the errors you found, including the embarrassing ones.'],
+ ['03','Convergent','Does it move with accepted measures of the same construct?','A new tone measure correlates with an established dictionary measure on the same documents.','Correlate with two or three existing proxies. A high correlation with only one is weak evidence.'],
+ ['04','Discriminant','Does it stay clear of measures of neighbouring constructs?','Your complexity measure correlates 0.8 with firm size, so it may be measuring size.','Name what it should not track, then show it does not. Take out the obvious confound and run it again.'],
+ ['05','Criterion','Does it predict something the construct is supposed to predict?','Guidance extracted by a model is checked against guidance recorded by a commercial data vendor.','Benchmark against an independent gold standard. Report precision and recall, not just a correlation.'],
+ ['06','Nomological','Does it behave the way theory says it should, on results we already trust?','The measure reproduces three established findings before it is used to produce a new one.','Replicate known results with the new measure. Failure here means the measure, not the theory.']
+];
+document.getElementById('mgrid').innerHTML=MV.map(r=>`<article class="tcard" style="--c:var(--con)">
+  <div class="code">${r[0]} &nbsp;&middot;&nbsp; ${r[0]==='00'?'Precondition':'Construct validity'}</div>
+  <h4>${r[1]}</h4><p>${r[2]}</p><p class="ex">${r[3]}</p>
+  <p class="fix"><b>How to show it</b><br>${r[4]}</p></article>`).join('');
+
+/* ---------------- threats ---------------- */
+const F={stat:'Statistical',int:'Internal',con:'Construct',ext:'External'};
+const T=[
+ ['INT-01','History','int','An outside event hits at the same time as the treatment and moves the outcome.','A governance mandate lands in the same window as a wave of enforcement actions and restatement publicity.','Use a control group exposed to the same calendar. Run placebo windows in adjacent years.','time'],
+ ['INT-02','Maturation','int','The outcome was already trending, and the post period simply continues the trend.','Filing length rises every year, so a post mandate rise in text based disclosure proves little.','Plot pre trends. Allow group specific trends and see if the effect survives.','time'],
+ ['INT-03','Testing','int','Being measured or being subject to a first round changes later behaviour.','Firms learn from the first year under a new filing requirement and adjust in year two.','Estimate first exposure cohorts separately from later ones.'],
+ ['INT-04','Instrumentation','int','The measuring instrument changes over the sample, not the underlying construct.','Data item definitions or required filing sections change mid sample, shifting a text measure mechanically.','Hold the measure fixed across regimes. Hand code a subsample as a check.','time'],
+ ['INT-05','Regression to the mean','int','Units selected on an extreme value drift back toward average with no treatment at all.','Firms sampled because they just missed the consensus improve the following year on their own.','Do not select on the outcome. Match on the same extreme in an untreated group.'],
+ ['INT-06','Attrition','int','Units leave the sample for reasons related to treatment.','Delisted and acquired firms drop out after the shock, leaving the survivors.','Report the balanced panel. Bound the estimate under worst case exit.'],
+ ['INT-07','Selection','int','Units choose their own treatment status.','Voluntary adopters of a reporting practice differ from non adopters on everything that matters.','Find assignment the firm did not control, or an instrument, or a discontinuity.'],
+ ['INT-08','Selection by history','int','Only the treated group also experienced some other shock.','The adopting country also went through a banking crisis in the same year.','Use several control groups. Consider a triple difference.'],
+ ['INT-09','Selection by maturation','int','The groups were on different trajectories before treatment ever happened.','Treated firms were growing faster for three years, so parallel trends fails.','Show the event study. Match on pre period trajectory, not just level.','time'],
+ ['INT-10','Selection by instrumentation','int','The measure behaves differently in one group than the other.','Small firms file shorter reports, so a length based measure is not comparable across the groups.','Scale within group. Test the measure on untreated variation.'],
+ ['INT-11','Diffusion or spillover','int','Control units are affected by the treatment through the network.','Peer firms copy the new disclosure format, or competitors learn from the treated firms filings.','Choose controls outside the network. Estimate the spillover as its own outcome.'],
+ ['INT-12','Compensatory rivalry','int','Controls respond strategically to being untreated.','Rivals of treated firms raise voluntary disclosure to compete, shrinking the measured gap.','Model the rival response. Interpret the estimate as a relative effect.'],
+ ['INT-13','Omitted variable','int','A common cause drives both the treatment and the outcome.','Governance quality drives both the disclosure choice and the cost of capital.','Fixed effects at the level of the confound. Better still, design based identification.'],
+ ['INT-14','Reverse causality','int','The outcome moves the treatment rather than the other way around.','Firms facing rising litigation risk hire the specialist auditor, and the paper reads it as the auditor causing the risk.','Use timing, a shock, and lead lag tests that would fail under reversal.'],
+ ['INT-15','Bad controls','int','A control variable sits on the causal path and absorbs part of the effect.','Controlling for analyst following in a study of disclosure and liquidity.','Control only for variables determined before treatment.'],
+ ['SCV-01','Low power','stat','Too little variation to detect an effect that is really there.','A shock affecting twenty firms, or a cross country design with twelve treated countries.','Report the minimum detectable effect. Do not read a null as evidence of no effect.'],
+ ['SCV-02','Few treated clusters','stat','Standard errors understate uncertainty when treatment varies across very few clusters.','A state law with three treated states, clustered at the state level.','Wild cluster bootstrap or randomization inference.'],
+ ['SCV-03','Correlated errors','stat','Firm and time dependence inflate t statistics in panels.','Unclustered errors in a firm year panel produce a t statistic that doubles under two way clustering.','Cluster at the level of treatment assignment. Report both dimensions.'],
+ ['SCV-04','Fishing and the error rate','stat','Many tests were run and one was reported.','Six proxies for disclosure quality exist in the literature, and one appears in the table.','Pre specify. Report every proxy. Adjust for multiplicity when the claim depends on it.'],
+ ['SCV-05','Violated assumptions','stat','The estimator does not match the structure of the data.','A linear model on a censored, bounded, or count outcome.','Match the estimator to the outcome, and show the result is not an artefact of functional form.'],
+ ['SCV-06','Heterogeneous timing','stat','Two way fixed effects compares late adopters to already treated units, producing negative weights.','Staggered adoption of a state level rule across fifteen years.','Use a stacked design or a heterogeneity robust estimator, and report the weights.','time'],
+ ['SCV-07','Unreliable measures','stat','Noise in the measure pushes your estimate toward zero.','A hand collected variable with substantial disagreement between coders.','Report inter coder reliability. Use multiple coders and instrument one measure with another.'],
+ ['SCV-08','Restriction of range','stat','The sample compresses the variation the test depends on.','Restricting to large index firms leaves almost no variation in analyst coverage.','Widen the sample or state that the estimate is local to a narrow range.'],
+ ['SCV-09','Weak instrument','stat','The instrument barely moves the treatment, so the second stage is badly biased.','A first stage F statistic in the single digits, with a large and significant second stage.','Report the first stage. Use weak instrument robust inference.'],
+ ['SCV-10','Extraneous variance','stat','Noise from the setting swamps a real effect.','Pooling crisis years with calm years in a market reaction test.','Condition on the setting. Report subperiods rather than an average that describes neither.'],
+ ['CON-01','Vague construct','con','The idea is never pinned down, so any measure can be justified after the fact.','Information environment is used to mean coverage, precision, and asymmetry in the same paper.','Define the idea before you pick the measure, in words that rule something out.'],
+ ['CON-02','Construct confounding','con','The variable picks up a second thing along with the one you want.','Bid ask spread reflects inventory and order processing costs, not only adverse selection.','Use several measures that are wrong in different ways.'],
+ ['CON-03','Mono operation bias','con','One way of measuring the cause stands in for the whole idea.','Disclosure activity measured only by the count of filings.','Measure the cause two or three ways and show the answer does not depend on which one you pick.'],
+ ['CON-04','Mono method bias','con','Every variable comes from the same source, so shared method drives the correlation.','Cause and effect both extracted from the same document by the same parser.','Draw the outcome from an independent data source.'],
+ ['CON-05','Bundled treatment','con','The event is a package, and the component named in the title is not separately identified.','A reporting mandate arrives with an enforcement change and a tax change in the same statute.','Find settings where the components separate, and say plainly what the estimate contains.'],
+ ['CON-06','Levels read as constructs','con','A small dose produces nothing and the paper concludes the construct does not matter.','A one percentage point rate change shows no response, and the paper concludes taxes do not affect the choice.','State the dose. Restrict the claim to the range that was actually tested.'],
+ ['CON-07','Reactivity','con','Subjects behave differently because they know they are observed.','Firms respond to the first year of a public disclosure requirement partly because attention is on them.','Use unobtrusive measures. Compare early and late cohorts.'],
+ ['CON-08','Researcher expectancy','con','Design and coding choices made after seeing results leak the hypothesis into the measure.','A coding scheme built and revised after the outcomes were known.','Blind the coding. Fix the scheme before merging the outcome.'],
+ ['INT-16','Anticipation','int','Units respond before the official start date, so the pre period is already treated.','Firms adjust in the year the rule is proposed, not the year it takes effect, flattening the measured jump.','Date the treatment from first credible news. Test for effects in the proposal window.','time'],
+ ['INT-17','Treatment date error','int','The coded date is not the date firms actually faced the treatment.','A statute is coded at enactment, while compliance was required at the first fiscal year end a year later.','State the source of every date. Shift all dates by one period and see what survives.','time'],
+ ['SCV-11','Horizon choice','stat','The estimation window decides the answer, and the window was chosen after seeing results.','A three day window shows nothing and a twelve month window shows an effect, along with everything else that happened.','Pre specify the horizon. Report the full path, not the window that works.','time'],
+ ['EXT-07','Regime shift','ext','The relation itself changes over time, so the estimate has a half life.','A relation documented in the pre algorithmic trading era, tested again today, no longer replicates.','Split the sample by decade. Report whether the coefficient is stable or decaying.','time'],
+ ['INT-18','Exclusion restriction','int','The instrument affects the outcome through a channel other than the treatment.','A weather or distance instrument plausibly moves the outcome directly, and no test can rule it out.','Say out loud what the other channel would be, and show a test that would catch it.','',],
+ ['CON-09','No discriminant check','con','The measure is validated only against things it should correlate with.','A new complexity score is shown to track an existing one, and never tested against firm size.','Name the neighbouring construct first, then show separation from it.',''],
+ ['CON-10','Content gap','con','The measure covers one corner of the construct and is named for the whole.','An index of mandatory items is labelled disclosure quality, with voluntary channels excluded.','Map the domain, then state which parts the measure reaches.',''],
+ ['EXT-08','Ecological validity','ext','The setting is too artificial for the result to describe the field.','Student subjects deciding on hypothetical incentives, or a lab task stripped of the frictions that define the problem.','Raise realism where it matters for the theory, and say which frictions were removed.',''],
+ ['EXT-01','Other units (population validity)','ext','The effect may not hold for firms unlike those in the sample.','Estimated on large listed firms, and extended in the conclusion to private and small firms.','Name the population. Replicate on a different one where possible.'],
+ ['EXT-02','Other doses','ext','A larger or smaller version of the treatment may behave differently.','A voluntary programme and a mandate are treated as the same treatment.','Exploit dose variation inside the design and report the gradient.'],
+ ['EXT-03','Other outcomes','ext','A related outcome moves in the opposite direction.','Accrual based management falls while real activity management rises, so total management is unchanged.','Measure several outcomes on the same sample before claiming an overall effect.'],
+ ['EXT-04','Other settings (ecological reach)','ext','Institutions carry the effect, and they differ across settings.','An enforcement dependent result estimated where enforcement is strong.','Replicate across institutional settings, or condition the claim on the institution.'],
+ ['EXT-05','Other periods','ext','The window is special.','The estimate comes from the crisis years, when every relation was different.','Report other periods, or say the result is about that regime.','time'],
+ ['EXT-06','Local effect only','ext','The design identifies a narrow subgroup by construction.','Regression discontinuity identifies firms at the cutoff, and instrumental variables identifies compliers.','State who the estimate is about, and resist writing the abstract about everyone else.']
+];
+const grid=document.getElementById('grid');
+let filt='all', qq='';
+function render(){
+  const list=T.filter(r=>(filt==='all'||(filt==='time'?r[6]==='time':r[2]===filt))&&(qq===''||(r[1]+' '+r[3]+' '+r[4]+' '+r[5]).toLowerCase().includes(qq)));
+  grid.innerHTML=list.map(r=>`<article class="tcard" style="--c:var(--${r[2]})">
+    <div class="code">${r[0]} &nbsp;&middot;&nbsp; ${F[r[2]]}</div>
+    <h4>${r[1]}</h4>
+    <p>${r[3]}</p>
+    <p class="ex">${r[4]}</p>
+    <p class="fix"><b>Design response</b><br>${r[5]}</p>
+  </article>`).join('');
+  document.getElementById('count').textContent=list.length+' of '+T.length+' shown';
+}
+document.querySelectorAll('.chip').forEach(c=>c.addEventListener('click',()=>{
+  document.querySelectorAll('.chip').forEach(x=>x.setAttribute('aria-pressed',String(x===c)));
+  filt=c.dataset.f; render();
+}));
+document.getElementById('q').addEventListener('input',e=>{qq=e.target.value.toLowerCase().trim();render();});
+render();
+
+/* ---------------- matrix ---------------- */
+const D=[
+ ['One group, post only',[0,0,0,0,1,0,0,2],'Nothing is held fixed. Any difference in the outcome could be the treatment, the year, the trend, or the kind of firm that ends up treated. Useful for describing, never for causal claims.'],
+ ['One group, pre and post',[0,0,0,0,1,0,1,2],'The pre period rules out fixed differences between firms and nothing else. History and maturation are wide open, because the comparison is with the same firms at a different time.'],
+ ['Cross section with controls',[1,1,0,1,1,0,0,2],'Controls handle what you can name and measure. Selection and omitted variables are exactly the things you cannot. This is the design most referees reject on identification grounds.'],
+ ['Nonequivalent groups, DiD',[2,1,1,1,1,1,1,2],'Common shocks are differenced out, which is the whole point. What remains is anything that hit the treated group alone, including the reason they were treated.'],
+ ['Matched DiD with pre trends',[2,2,1,1,1,1,1,1],'Pre trend evidence turns parallel trends from an assumption into something testable. It still cannot rule out a shock that coincides with treatment for the treated group only.'],
+ ['Staggered DiD, robust estimator',[2,2,1,1,1,1,1,2],'Heterogeneity robust estimators fix the weighting problem in two way fixed effects. They do not fix selection into adoption timing, which is usually the real issue.'],
+ ['Regression discontinuity',[2,2,2,2,1,2,2,0],'The strongest internal validity available without an experiment, and the narrowest claim. The estimate is about units at the cutoff. Manipulation of the running variable is the one live threat.'],
+ ['Instrumental variables',[1,1,2,1,1,2,2,0],'Everything rests on exclusion, which is an assumption and not a test. The estimate describes compliers, a group you cannot observe directly and should still describe.'],
+ ['Randomized field experiment',[2,2,2,2,1,2,2,1],'Assignment solves the internal validity problem by construction. What is left is attrition, reactivity, and the question of whether the setting resembles anywhere else.']
+];
+const tb=document.querySelector('#matrix tbody');
+tb.innerHTML=D.map((d,i)=>'<tr data-i="'+i+'"><th>'+d[0]+'</th>'+d[1].map(v=>'<td><i class="mark m'+v+'"></i></td>').join('')+'</tr>').join('');
+tb.querySelectorAll('tr').forEach(tr=>tr.addEventListener('click',()=>{
+  tb.querySelectorAll('tr').forEach(x=>x.dataset.on='0');
+  tr.dataset.on='1';
+  const d=D[tr.dataset.i];
+  document.getElementById('rownote').innerHTML='<h3>'+d[0]+'</h3><p>'+d[2]+'</p>';
+}));
+
+/* ---------------- checklist ---------------- */
+const CH=[
+ ['stat','Statistical conclusion','01',[
+   'Is the level of clustering the level at which treatment was assigned?',
+   'How many treated clusters are there, and does inference survive a bootstrap?',
+   'What is the minimum effect this sample could detect?',
+   'How many proxies, windows and specifications exist, and how many are shown?',
+   'If timing is staggered, is the estimator robust to heterogeneous effects?',
+   'Does the result survive a different functional form?']],
+ ['int','Internal','02',[
+   'What is the source of variation, and did the firm choose it?',
+   'Does the event study show flat pre trends with enough pre periods?',
+   'What else happened to the treated group in the same window?',
+   'Could the outcome have caused the treatment?',
+   'Are all controls measured before treatment?',
+   'Who left the sample after treatment, and why?']],
+ ['con','Construct','03',[
+   'Can the construct be defined without naming its proxy?',
+   'What else does this proxy capture, and does it move with the treatment?',
+   'Is the treatment a single change or a bundle?',
+   'Do cause and effect come from the same data source?',
+   'Does a second proxy with different weaknesses give the same sign?',
+   'Does the abstract claim more than the proxy can carry?',
+   'Is reliability of the measure reported as a number?',
+   'What should this measure be unrelated to, and was that tested?']],
+ ['ext','External','04',[
+   'Which population does this coefficient describe?',
+   'Is the estimate local to a cutoff, a complier group, or a period?',
+   'Would you expect the same sign under weaker enforcement?',
+   'Does a related outcome move the other way?',
+   'Is the dose in this setting representative of the policy being discussed?',
+   'What in the conclusion goes beyond what was tested?']]
+];
+const box=document.getElementById('checks');
+box.innerHTML=CH.map((g,gi)=>'<section class="checkgroup" style="--c:var(--'+g[0]+')"><div class="tag">'+g[2]+' &nbsp;'+g[1]+'</div><h3>Ask before you write</h3>'+
+  g[3].map((q,qi)=>'<label class="q"><input type="checkbox" data-g="'+gi+'" data-q="'+qi+'"><span>'+q+'</span></label>').join('')+'</section>').join('');
+const boxes=[...box.querySelectorAll('input')];
+function prog(){
+  const n=boxes.filter(b=>b.checked).length;
+  document.getElementById('prog').textContent=n+' of '+boxes.length+' checked';
+}
+boxes.forEach(b=>b.addEventListener('change',()=>{b.closest('label').classList.toggle('done',b.checked);prog();}));
+document.getElementById('reset').addEventListener('click',()=>{
+  boxes.forEach(b=>{b.checked=false;b.closest('label').classList.remove('done');});prog();
+});
+prog();
+</script>
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script src="reactions.js"></script>
+</body>
+</html>
