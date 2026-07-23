@@ -82,7 +82,15 @@ def norm_title(title):
 def strip_tags(text):
     if not text:
         return ""
-    text = re.sub(r"<[^>]+>", " ", text)
+    # Crossref sometimes delivers HTML-entity-encoded tags (e.g. &lt;p&gt;),
+    # so unescape and strip repeatedly until stable, then collapse whitespace.
+    import html as _html
+    text = str(text)
+    for _ in range(3):
+        new = re.sub(r"<[^>]+>", " ", _html.unescape(text))
+        if new == text:
+            break
+        text = new
     text = re.sub(r"\s+", " ", text)
     return text.strip()
 
