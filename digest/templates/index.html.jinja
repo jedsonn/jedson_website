@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -8,180 +8,176 @@
 <link rel="alternate" type="application/rss+xml" title="{{ brand.name }}" href="feed.xml">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@300;400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
 <style>
 :root{
-  --ink:#14181d; --ink2:#545c66; --ink3:#8a939e;
-  --paper:#f2f4f6; --card:#ffffff; --rule:#dfe3e8; --rule2:#c8cfd6;
-  --instrument:#2d5d8a; --object:#6b4e8f; --agent:#a85b2b; --method:#2e6b52;
+  --ink:#14181d; --ink2:#565f6a; --ink3:#8b939e;
+  --paper:#f6f7f9; --card:#ffffff; --rule:#e4e8ec; --rule2:#d0d6dd;
+  --accent:#1a5276; --accent-soft:#eaf1f7;
+  --ok:#2e6b52; --warn:#a06a1b;
   --sans:"Public Sans",system-ui,sans-serif;
   --serif:"Instrument Serif",Georgia,serif;
   --mono:"IBM Plex Mono",ui-monospace,monospace;
 }
-@media (prefers-color-scheme:dark){
-  :root{--ink:#e8ebee;--ink2:#a3acb6;--ink3:#727b85;--paper:#14181d;--card:#1b2027;--rule:#2b323b;--rule2:#3c454f;
-  --instrument:#7fa8d4;--object:#b191d6;--agent:#dd9a63;--method:#6cb494;}
+:root[data-theme="dark"]{
+  --ink:#e8ebee; --ink2:#a3acb6; --ink3:#6f7883;
+  --paper:#12151a; --card:#1a1f26; --rule:#2a313a; --rule2:#3a434d;
+  --accent:#6ea6d6; --accent-soft:#1d2a35;
+  --ok:#6cb494; --warn:#d0a25a;
 }
 *{box-sizing:border-box}
-body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;
+html,body{margin:0}
+body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;
   font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
-.wrap{max-width:1000px;margin:0 auto;padding:0 24px 80px}
+.wrap{max-width:860px;margin:0 auto;padding:0 24px 96px}
 a{color:inherit}
-:focus-visible{outline:2px solid var(--instrument);outline-offset:3px}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
 
-header.mast{padding:56px 0 28px;border-bottom:1px solid var(--rule2)}
+/* ---- masthead ---- */
+header.mast{padding:40px 0 22px}
+.mast-top{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:22px}
+.back{font-family:var(--mono);font-size:12px;color:var(--ink3);text-decoration:none}
+.back:hover{color:var(--ink)}
+.theme-btn{font-family:var(--mono);font-size:12px;background:transparent;border:1px solid var(--rule2);
+  color:var(--ink2);border-radius:999px;padding:6px 14px;cursor:pointer;display:inline-flex;
+  align-items:center;gap:7px;transition:all .15s}
+.theme-btn:hover{border-color:var(--ink3);color:var(--ink)}
 .mast-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
-h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,62px);line-height:1;margin:0;letter-spacing:-.01em}
-.tagline{font-size:15px;color:var(--ink2);margin:12px 0 0;max-width:46ch}
-.edno{font-family:var(--mono);font-size:13px;color:var(--ink2);text-align:right;line-height:1.9;white-space:nowrap}
-.edno b{display:block;font-family:var(--serif);font-size:34px;font-weight:400;color:var(--ink);letter-spacing:.02em}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(40px,7vw,64px);line-height:.98;margin:0;letter-spacing:-.01em}
+.tagline{font-size:15px;color:var(--ink2);margin:12px 0 0;max-width:52ch}
+.tagline a{color:var(--accent);text-decoration:none}
+.tagline a:hover{text-decoration:underline}
+.edno{font-family:var(--mono);font-size:12px;color:var(--ink3);text-align:right;line-height:1.8;white-space:nowrap}
+.edno b{display:block;font-family:var(--serif);font-size:30px;font-weight:400;color:var(--ink);letter-spacing:.02em}
 
-section{padding-top:36px}
-.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink3);margin:0 0 14px}
-
-.matrix{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px}
-.matrix th{font-weight:500;color:var(--ink2);text-align:center;padding:0 0 10px;font-size:11px;
-  letter-spacing:.1em;text-transform:uppercase}
-.matrix th.rowhead,.matrix td.rowhead{text-align:left;width:120px;color:var(--ink2);font-size:11px;
-  letter-spacing:.1em;text-transform:uppercase}
-.matrix td{padding:0;border:1px solid var(--rule)}
-.matrix td.rowhead{border:none;padding-right:14px}
-.matrix td.tot{border:none;text-align:right;padding-left:14px;color:var(--ink2);width:52px}
-.cell{width:100%;border:0;background:transparent;cursor:pointer;font:inherit;color:var(--ink);
-  padding:16px 6px;display:block;transition:background .12s}
-.cell:hover:not(:disabled){background:var(--rule)}
-.cell:disabled{cursor:default;color:var(--ink3)}
-.cell[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
-.matrix tfoot td{border:none;padding-top:10px;color:var(--ink2);text-align:center;font-size:11px}
-
-.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
-.chip{font-family:var(--mono);font-size:12px;padding:6px 13px;border:1px solid var(--rule2);
-  background:transparent;color:var(--ink2);border-radius:2px;cursor:pointer;transition:all .12s}
+/* ---- filter bar ---- */
+.bar{position:sticky;top:0;z-index:20;background:var(--paper);
+  border-top:1px solid var(--rule2);border-bottom:1px solid var(--rule2);
+  padding:14px 0;margin-bottom:8px}
+.bar-row{display:flex;gap:22px;align-items:center;flex-wrap:wrap}
+.fgroup{display:flex;align-items:center;gap:8px}
+.flabel{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--ink3)}
+.chips{display:flex;gap:6px;flex-wrap:wrap}
+.chip{font-family:var(--sans);font-size:13px;font-weight:500;padding:5px 13px;border:1px solid var(--rule2);
+  background:var(--card);color:var(--ink2);border-radius:999px;cursor:pointer;transition:all .12s;white-space:nowrap}
 .chip:hover{border-color:var(--ink3);color:var(--ink)}
-.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
-.status{font-family:var(--mono);font-size:12px;color:var(--ink3);margin:22px 0 14px;
-  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
-.status button{background:none;border:0;font:inherit;color:var(--instrument);cursor:pointer;padding:0;
+.chip[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .chip[aria-pressed="true"]{color:#0d1115}
+.bar-meta{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--ink3)}
+.bar-meta .acts{display:flex;gap:16px}
+.bar-meta button{background:none;border:0;font:inherit;color:var(--accent);cursor:pointer;padding:0;
   text-decoration:underline;text-underline-offset:3px}
 
-article{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--rule2);
-  padding:22px 26px;margin-bottom:14px}
-article.r-instrument{border-left-color:var(--instrument)}
-article.r-object{border-left-color:var(--object)}
-article.r-agent{border-left-color:var(--agent)}
-article.r-method{border-left-color:var(--method)}
-.tags{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
-  color:var(--ink3);margin-bottom:9px;display:flex;gap:14px;flex-wrap:wrap}
-.tags .role{font-weight:500}
-.r-instrument .tags .role{color:var(--instrument)}
-.r-object .tags .role{color:var(--object)}
-.r-agent .tags .role{color:var(--agent)}
-.r-method .tags .role{color:var(--method)}
-h2.ptitle{font-size:19px;font-weight:600;line-height:1.35;margin:0 0 6px;letter-spacing:-.005em}
-.byline{font-size:14px;color:var(--ink2);margin:0 0 16px}
+/* ---- cards ---- */
+main{margin-top:20px}
+article{background:var(--card);border:1px solid var(--rule);border-radius:10px;
+  padding:18px 22px;margin-bottom:12px;transition:border-color .12s}
+article:hover{border-color:var(--rule2)}
+.tags{font-family:var(--mono);font-size:10.5px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:8px;display:flex;gap:12px;flex-wrap:wrap;align-items:center}
+.tags .role{font-weight:600;color:var(--accent)}
+.tags .val{color:var(--ok)}
+.chead{display:flex;gap:14px;align-items:flex-start;cursor:pointer}
+.chead-main{flex:1;min-width:0}
+h2.ptitle{font-size:18px;font-weight:600;line-height:1.34;margin:0;letter-spacing:-.005em}
+h2.ptitle a{text-decoration:none;background-image:linear-gradient(var(--accent),var(--accent));
+  background-size:0% 1.5px;background-position:0 100%;background-repeat:no-repeat;transition:background-size .2s}
+h2.ptitle a:hover{background-size:100% 1.5px;color:var(--accent)}
+h2.ptitle .ext{font-size:12px;color:var(--ink3);margin-left:5px;white-space:nowrap}
+.byline{font-size:13.5px;color:var(--ink2);margin:5px 0 0}
 .byline .aff{color:var(--ink3)}
-dl{margin:0;display:grid;grid-template-columns:132px minmax(0,1fr);gap:9px 18px}
-dt{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+.chev{flex-shrink:0;width:22px;height:22px;border:0;background:transparent;color:var(--ink3);
+  cursor:pointer;display:flex;align-items:center;justify-content:center;margin-top:1px;transition:transform .18s}
+article.open .chev{transform:rotate(90deg)}
+.body{display:none;margin-top:15px;padding-top:15px;border-top:1px solid var(--rule)}
+article.open .body{display:block}
+dl{margin:0;display:grid;grid-template-columns:120px minmax(0,1fr);gap:10px 18px}
+dt{font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;
   color:var(--ink3);padding-top:3px}
-dd{margin:0;font-size:15px;line-height:1.55}
+dd{margin:0;font-size:14.5px;line-height:1.55}
 .nobul{font-size:14px;color:var(--ink3);font-style:italic;margin:0}
-.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
-  border-top:1px solid var(--rule);margin-top:18px;padding-top:13px;
-  font-family:var(--mono);font-size:11px;color:var(--ink3)}
-.foot a{color:var(--instrument);text-decoration:none;font-weight:500}
-.foot a:hover{text-decoration:underline}
-.empty{border:1px dashed var(--rule2);padding:52px 24px;text-align:center;color:var(--ink2)}
+.cfoot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  margin-top:14px;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
+.cfoot a{color:var(--accent);text-decoration:none;font-weight:500}
+.cfoot a:hover{text-decoration:underline}
+.empty{border:1px dashed var(--rule2);border-radius:10px;padding:56px 24px;text-align:center;color:var(--ink2)}
 .empty p{margin:0 0 6px}
 
-footer.site{border-top:1px solid var(--rule2);margin-top:56px;padding-top:28px;
-  font-size:13px;color:var(--ink2);line-height:1.75}
-footer.site h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
-  color:var(--ink3);font-weight:500;margin:26px 0 8px}
-footer.site .disc{border:1px solid var(--rule);padding:14px 16px;margin-top:22px;color:var(--ink3);font-size:12px}
-@media(max-width:640px){
+/* ---- footer ---- */
+footer.site{border-top:1px solid var(--rule2);margin-top:48px;padding-top:22px;
+  font-size:12.5px;color:var(--ink3);line-height:1.7;display:flex;justify-content:space-between;
+  gap:16px;flex-wrap:wrap;align-items:baseline}
+footer.site a{color:var(--accent);text-decoration:none}
+footer.site a:hover{text-decoration:underline}
+footer.site .links{font-family:var(--mono);font-size:12px}
+
+@media(max-width:600px){
   .wrap{padding:0 16px 60px}
   dl{grid-template-columns:1fr;gap:2px 0}
-  dt{padding-top:8px}
-  .matrix th.rowhead,.matrix td.rowhead{width:64px}
-  .cell{padding:13px 2px}
+  dt{padding-top:9px}
+  .bar-row{gap:14px}
 }
-@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+@media(prefers-reduced-motion:reduce){*{transition:none!important}}
 </style>
 </head>
 <body>
 <div class="wrap">
 
 <header class="mast">
+  <div class="mast-top">
+    <a class="back" href="https://www.jedsonpinto.com">&larr; jedsonpinto.com</a>
+    <button type="button" class="theme-btn" id="theme" aria-label="Toggle dark mode">
+      <span id="theme-ico">◐</span> <span id="theme-txt">Dark</span>
+    </button>
+  </div>
   <div class="mast-row">
     <div>
       <h1>{{ brand.name }}</h1>
-      <p class="tagline">{{ brand.tagline }}</p>
-      <p class="tagline" style="margin-top:4px">Curated by <a href="https://www.jedsonpinto.com" style="color:inherit">{{ brand.curator }}</a> &middot; updated daily &middot; <a href="https://www.jedsonpinto.com" style="color:inherit">&larr; back to jedsonpinto.com</a></p>
+      <p class="tagline">{{ brand.tagline }}. Curated by
+        <a href="https://www.jedsonpinto.com">{{ brand.curator }}</a>, updated daily.</p>
     </div>
     <div class="edno">
       <b>no. {{ "%03d"|format(edition.number) }}</b>
-      {{ edition.date }}<br>
-      {{ edition.count }} new {{ "paper" if edition.count == 1 else "papers" }}
+      {{ edition.date }}
     </div>
   </div>
 </header>
 
-<section>
-  <p class="eyebrow">Field by role. Select a cell to filter.</p>
-  <table class="matrix" id="matrix">
-    <thead>
-      <tr>
-        <th class="rowhead"></th>
-        {% for r in roles %}<th scope="col" title="{{ r.blurb }}">{{ r.label }}</th>{% endfor %}
-        <th></th>
-      </tr>
-    </thead>
-    <tbody id="matrix-body"></tbody>
-    <tfoot>
-      <tr><td colspan="{{ roles|length + 2 }}">
-        {% for r in roles %}<b>{{ r.label }}</b>: {{ r.blurb }}{% if not loop.last %} &nbsp;·&nbsp; {% endif %}{% endfor %}
-      </td></tr>
-    </tfoot>
-  </table>
-</section>
-
-<section>
-  <p class="eyebrow">Refine</p>
-  <div class="controls" id="controls"></div>
-  <div class="status">
-    <span id="status">Loading</span>
-    <button type="button" id="reset">Clear all filters</button>
+<div class="bar">
+  <div class="bar-row">
+    <div class="fgroup">
+      <span class="flabel">Field</span>
+      <div class="chips" id="field-chips">
+        <button class="chip" type="button" data-field="all" aria-pressed="true">All</button>
+        <button class="chip" type="button" data-field="accounting" aria-pressed="false">Accounting</button>
+        <button class="chip" type="button" data-field="finance" aria-pressed="false">Finance</button>
+        <button class="chip" type="button" data-field="other" aria-pressed="false">Other</button>
+      </div>
+    </div>
+    <div class="fgroup">
+      <span class="flabel">When</span>
+      <div class="chips" id="date-chips">
+        <button class="chip" type="button" data-when="today" aria-pressed="false">Today</button>
+        <button class="chip" type="button" data-when="week" aria-pressed="false">This week</button>
+        <button class="chip" type="button" data-when="all" aria-pressed="true">All</button>
+      </div>
+    </div>
   </div>
-</section>
+  <div class="bar-meta">
+    <span id="status">Loading</span>
+    <span class="acts">
+      <button type="button" id="expand-all">Expand all</button>
+      <button type="button" id="collapse-all">Collapse all</button>
+    </span>
+  </div>
+</div>
 
 <main id="list" aria-live="polite"></main>
 
 <footer class="site">
-  <h3>How this is built</h3>
-  <p>Every record comes from an open metadata API. Crossref supplies DOI records
-  for SSRN, NBER, and other depositing publishers. arXiv supplies preprints through
-  its public API. OpenAlex and Semantic Scholar fill in abstracts where a publisher
-  did not deposit one. Nothing here is scraped, and no publisher site is queried
-  automatically.</p>
-
-  <h3>What the bullets are</h3>
-  <p>Abstracts are not reproduced. Each entry carries three written summary lines in
-  fixed slots: the setting, what the model actually did, and the headline result. Each
-  entry states who wrote those lines. Author supplied means the authors submitted them.
-  Editor written means the curator wrote them. Generated means a language model drafted
-  them from the abstract and a second pass checked them. Where no abstract was available,
-  the entry carries a link only.</p>
-
-  <h3>Corrections and submissions</h3>
-  <p>Authors are welcome to send their own three lines, or to ask for an entry to be
-  corrected or removed. Write to <a href="mailto:{{ brand.contact_email }}">{{ brand.contact_email }}</a>.</p>
-
-  <h3>Curator</h3>
-  <p>{{ brand.curator }}, {{ brand.affiliation }}. Updated {{ edition.date }}.
-  <a href="feed.xml">RSS</a> · <a href="data/papers.json">JSON</a></p>
-
-  <p class="disc">{{ brand.disclaimer }}</p>
+  <span>Open metadata only (Crossref, arXiv, OpenAlex) &middot; no scraping &middot; summaries are ours, abstracts not reproduced. Corrections: <a href="mailto:{{ brand.contact_email }}">{{ brand.contact_email }}</a></span>
+  <span class="links"><a href="feed.xml">RSS</a> &middot; <a href="data/papers.json">JSON</a></span>
 </footer>
 
 </div>
@@ -190,133 +186,126 @@ footer.site .disc{border:1px solid var(--rule);padding:14px 16px;margin-top:22px
 <script>
 (function(){
   var D = JSON.parse(document.getElementById("data").textContent);
-  var papers = D.papers, FIELDS = D.fields, ROLES = D.roles;
-  var st = {field:null, role:null, models:new Set(), validated:false, source:null};
+  var papers = D.papers;
+  var st = {field:"all", when:"all"};
 
-  function match(p, ignore){
-    if (ignore!=="field" && st.field && p.field!==st.field) return false;
-    if (ignore!=="role" && st.role && p.role!==st.role) return false;
-    if (st.validated && p.validated!==true) return false;
-    if (st.source && p.source_label!==st.source) return false;
-    if (st.models.size){
-      var ms = p.models||[];
-      var any = false;
-      st.models.forEach(function(m){ if (ms.indexOf(m)>-1) any = true; });
-      if (!any) return false;
-    }
+  // ----- theme (default light; remember choice) -----
+  var root = document.documentElement;
+  function setTheme(t){
+    root.setAttribute("data-theme", t);
+    document.getElementById("theme-txt").textContent = t==="dark" ? "Light" : "Dark";
+    document.getElementById("theme-ico").textContent = t==="dark" ? "○" : "●";
+    try{ localStorage.setItem("digest-theme", t); }catch(e){}
+  }
+  var saved; try{ saved = localStorage.getItem("digest-theme"); }catch(e){}
+  setTheme(saved === "dark" ? "dark" : "light");
+  document.getElementById("theme").addEventListener("click", function(){
+    setTheme(root.getAttribute("data-theme")==="dark" ? "light" : "dark");
+  });
+
+  // ----- date helpers (relative to the viewer's clock) -----
+  function daysAgo(n){ var d=new Date(); d.setDate(d.getDate()-n); return d.toISOString().slice(0,10); }
+  var TODAY = new Date().toISOString().slice(0,10);
+  var WEEK = daysAgo(6);
+  function inWhen(p){
+    if (st.when==="all") return true;
+    var a = p.added || "";
+    if (st.when==="today") return a === TODAY;
+    if (st.when==="week")  return a >= WEEK;
     return true;
   }
-
-  function drawMatrix(){
-    var pool = papers.filter(function(p){ return match(p,"both"); });
-    var body = document.getElementById("matrix-body"), html = "";
-    FIELDS.forEach(function(f){
-      var rowTotal = 0, cells = "";
-      ROLES.forEach(function(r){
-        var n = pool.filter(function(p){ return p.field===f.id && p.role===r.id; }).length;
-        rowTotal += n;
-        var on = (st.field===f.id && st.role===r.id);
-        cells += '<td><button class="cell" type="button" data-f="'+f.id+'" data-r="'+r.id+'"'
-              + ' aria-pressed="'+on+'"'+(n===0?' disabled':'')
-              + ' aria-label="'+f.label+', '+r.label+', '+n+' papers">'+n+'</button></td>';
-      });
-      if (rowTotal===0 && !st.field) return;
-      html += '<tr><td class="rowhead">'+f.label+'</td>'+cells+'<td class="tot">'+rowTotal+'</td></tr>';
-    });
-    body.innerHTML = html || '<tr><td class="rowhead"></td><td colspan="'+(ROLES.length+1)+'" style="border:none;padding:18px 0;color:var(--ink3)">No papers match.</td></tr>';
-    body.querySelectorAll(".cell").forEach(function(b){
-      b.addEventListener("click", function(){
-        var f=b.dataset.f, r=b.dataset.r;
-        if (st.field===f && st.role===r){ st.field=null; st.role=null; }
-        else { st.field=f; st.role=r; }
-        render();
-      });
-    });
+  function inField(p){
+    if (st.field==="all") return true;
+    if (st.field==="other") return p.field!=="accounting" && p.field!=="finance";
+    return p.field === st.field;
   }
-
-  function drawControls(){
-    var box = document.getElementById("controls"), html = "";
-    var models = {};
-    papers.forEach(function(p){ (p.models||[]).forEach(function(m){ models[m]=(models[m]||0)+1; }); });
-    Object.keys(models).sort().forEach(function(m){
-      html += '<button class="chip" type="button" data-k="model" data-v="'+m+'" aria-pressed="'
-           + st.models.has(m) + '">'+m+' <span style="opacity:.6">'+models[m]+'</span></button>';
-    });
-    var nv = papers.filter(function(p){ return p.validated===true; }).length;
-    html += '<button class="chip" type="button" data-k="validated" aria-pressed="'+st.validated
-         + '">validated only <span style="opacity:.6">'+nv+'</span></button>';
-    var srcs = {};
-    papers.forEach(function(p){ srcs[p.source_label]=(srcs[p.source_label]||0)+1; });
-    Object.keys(srcs).sort().forEach(function(s){
-      html += '<button class="chip" type="button" data-k="source" data-v="'+s+'" aria-pressed="'
-           + (st.source===s) + '">'+s+' <span style="opacity:.6">'+srcs[s]+'</span></button>';
-    });
-    box.innerHTML = html;
-    box.querySelectorAll(".chip").forEach(function(b){
-      b.addEventListener("click", function(){
-        var k=b.dataset.k, v=b.dataset.v;
-        if (k==="model"){ st.models.has(v) ? st.models.delete(v) : st.models.add(v); }
-        else if (k==="validated"){ st.validated = !st.validated; }
-        else if (k==="source"){ st.source = (st.source===v) ? null : v; }
-        render();
-      });
-    });
-  }
+  function match(p){ return inField(p) && inWhen(p); }
 
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
 
-  function card(p){
-    var slots = ["Setting","What the model did","Result"];
+  var SLOTS = ["Setting","What the model did","Result"];
+  var PROV = {author:"Summary by the authors", editor:"Summary by the curator",
+              ai:"Summary generated, checked", none:"Metadata only"};
+  var FIELD_LABEL = {accounting:"Accounting", finance:"Finance", economics:"Economics",
+                     management:"Management", other:"Other"};
+
+  function card(p, i){
     var body;
     if (p.bullets && p.bullets.length===3){
-      body = "<dl>" + p.bullets.map(function(b,i){
-        return "<dt>"+slots[i]+"</dt><dd>"+esc(b)+"</dd>"; }).join("") + "</dl>";
+      body = "<dl>" + p.bullets.map(function(b,j){
+        return "<dt>"+SLOTS[j]+"</dt><dd>"+esc(b)+"</dd>"; }).join("") + "</dl>";
     } else {
-      body = '<p class="nobul">No abstract was available from any open source, so this entry '
-           + 'carries a link only.</p>';
+      body = '<p class="nobul">No abstract was available from an open source, so this entry is a link only.</p>';
     }
-    var prov = {author:"Summary by the authors", editor:"Summary by the curator",
-                ai:"Summary generated, checked", none:"No summary"}[p.bullet_provenance] || "No summary";
-    var val = p.validated===true ? " · reports validation" : (p.validated===false ? " · no validation reported" : "");
-    return '<article class="r-'+esc(p.role)+'">'
-      + '<div class="tags"><span class="role">'+esc(p.role)+'</span><span>'+esc(p.field)+'</span>'
-      + '<span>'+esc(p.source_label)+'</span><span>'+esc(p.posted)+'</span></div>'
-      + '<h2 class="ptitle">'+esc(p.title)+'</h2>'
-      + '<p class="byline">'+esc((p.authors||[]).join(", "))
-      + (p.affiliations && p.affiliations.length ? ' <span class="aff">· '+esc(p.affiliations.join(", "))+'</span>' : '')
-      + '</p>' + body
-      + '<div class="foot"><span>'+prov+val+'</span>'
-      + '<a href="'+esc(p.url)+'" rel="noopener">Open paper</a></div></article>';
+    var prov = PROV[p.bullet_provenance] || "Metadata only";
+    var val = p.validated===true ? '<span class="val">reports validation</span>' : "";
+    var fieldLabel = FIELD_LABEL[p.field] || p.field;
+    return '<article data-i="'+i+'">'
+      + '<div class="chead" data-toggle="'+i+'">'
+      +   '<div class="chead-main">'
+      +     '<div class="tags"><span class="role">'+esc(p.role)+'</span>'
+      +       '<span>'+esc(fieldLabel)+'</span><span>'+esc(p.source_label)+'</span>'
+      +       '<span>'+esc(p.posted)+'</span>'+val+'</div>'
+      +     '<h2 class="ptitle"><a href="'+esc(p.url)+'" rel="noopener" target="_blank">'+esc(p.title)
+      +       '<span class="ext">&#8599;</span></a></h2>'
+      +     '<p class="byline">'+esc((p.authors||[]).join(", "))
+      +       (p.affiliations && p.affiliations.length ? ' <span class="aff">&middot; '+esc(p.affiliations.join(", "))+'</span>' : '')
+      +     '</p>'
+      +   '</div>'
+      +   '<button class="chev" type="button" aria-label="Expand summary" data-toggle="'+i+'">'
+      +     '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>'
+      +   '</button>'
+      + '</div>'
+      + '<div class="body">' + body
+      +   '<div class="cfoot"><span>'+prov+'</span>'
+      +     '<a href="'+esc(p.url)+'" rel="noopener" target="_blank">Open paper &#8599;</a></div>'
+      + '</div>'
+      + '</article>';
   }
 
   function render(){
-    drawMatrix(); drawControls();
-    var rows = papers.filter(function(p){ return match(p); });
-    var order = {}; ROLES.forEach(function(r,i){ order[r.id]=i; });
+    var rows = papers.filter(match);
     rows.sort(function(a,b){
-      if (order[a.role]!==order[b.role]) return order[a.role]-order[b.role];
       if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
-      return String(b.posted).localeCompare(String(a.posted));
+      return String(b.added||b.posted).localeCompare(String(a.added||a.posted));
     });
-    var bits = [];
-    if (st.field) bits.push(st.field);
-    if (st.role) bits.push(st.role);
-    if (st.validated) bits.push("validated");
-    if (st.source) bits.push(st.source);
-    st.models.forEach(function(m){ bits.push(m); });
     document.getElementById("status").textContent =
-      rows.length + " of " + papers.length + " papers" + (bits.length ? " · " + bits.join(" · ") : "");
-    document.getElementById("list").innerHTML = rows.length
+      rows.length + " of " + papers.length + " papers";
+    var list = document.getElementById("list");
+    list.innerHTML = rows.length
       ? rows.map(card).join("")
-      : '<div class="empty"><p>Nothing matches that combination yet.</p>'
-        + '<p style="font-size:13px;color:var(--ink3)">Absence is information too. '
-        + 'This grid has thin cells because the literature does.</p></div>';
+      : '<div class="empty"><p>Nothing matches that filter yet.</p>'
+        + '<p style="font-size:13px;color:var(--ink3)">Try widening the field or the date range.</p></div>';
+    list.querySelectorAll("[data-toggle]").forEach(function(el){
+      el.addEventListener("click", function(e){
+        if (e.target.closest("a")) return; // let title/link clicks through
+        var art = el.closest("article");
+        art.classList.toggle("open");
+        var open = art.classList.contains("open");
+        art.querySelector(".chev").setAttribute("aria-label", open ? "Collapse summary" : "Expand summary");
+      });
+    });
   }
 
-  document.getElementById("reset").addEventListener("click", function(){
-    st = {field:null, role:null, models:new Set(), validated:false, source:null};
+  function setAll(open){
+    document.querySelectorAll("#list article").forEach(function(a){ a.classList.toggle("open", open); });
+  }
+  document.getElementById("expand-all").addEventListener("click", function(){ setAll(true); });
+  document.getElementById("collapse-all").addEventListener("click", function(){ setAll(false); });
+
+  document.getElementById("field-chips").addEventListener("click", function(e){
+    var b = e.target.closest(".chip"); if (!b) return;
+    st.field = b.dataset.field;
+    this.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b); });
     render();
   });
+  document.getElementById("date-chips").addEventListener("click", function(e){
+    var b = e.target.closest(".chip"); if (!b) return;
+    st.when = b.dataset.when;
+    this.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b); });
+    render();
+  });
+
   render();
 })();
 </script>

@@ -17,6 +17,7 @@ Usage:
 
 import argparse
 import os
+from datetime import datetime, timezone
 
 from common import CFG, ROOT, append_jsonl, log, norm_title, read_json, read_jsonl, write_json
 
@@ -36,7 +37,10 @@ def surname(rec):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--edition", type=int, required=True)
+    ap.add_argument("--date", default=None,
+                    help="Run date (YYYY-MM-DD) stamped as 'added' on new records. Defaults to today (UTC).")
     args = ap.parse_args()
+    added_date = args.date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
 
     run_dir = os.path.join(ROOT, "data", "runs", "edition-%03d" % args.edition)
     incoming = read_json(os.path.join(run_dir, "classified.json"), [])
@@ -90,6 +94,7 @@ def main():
             continue
 
         rec["edition"] = args.edition
+        rec["added"] = added_date
         seen_this_run[nt] = rec
         fresh.append(rec)
 
