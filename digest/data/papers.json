@@ -1,0 +1,416 @@
+{
+  "generated": "2026-07-23",
+  "edition": 1,
+  "count": 16,
+  "papers": [
+    {
+      "uid": "arxiv:2607.18867v1",
+      "arxiv_id": "2607.18867v1",
+      "title": "HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks",
+      "authors": [
+        "Haozhe Jia"
+      ],
+      "posted": "2026-07-21",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2607.18867v1",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "A 258 node vintage correct macro panel used to audit whether language models leak knowledge of realized outcomes into time indexed historical financial decision tasks.",
+        "HindsightBench is a black box protocol chaining a four arm date manipulation matrix, memory probes, and six per model metrics; applied to 15 models from seven vendors at probe level cost.",
+        "The date trigger reflex tracks training generation not scale, absent in the 2024 open weight generation but present in every 2026 model, and effective cutoffs precede vendor reported dates by up to eight months."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "15 models audited on a vintage-correct macro panel with per-model metrics",
+      "salience": 78,
+      "edition": 1
+    },
+    {
+      "uid": "doi:10.3386/w35374",
+      "doi": "10.3386/w35374",
+      "title": "A Practitioner's Guide to Using Large Language Models and Generative AI in Economic History",
+      "authors": [
+        "Andreas Ferrara"
+      ],
+      "posted": "2026-06-30",
+      "source_label": "NBER",
+      "url": "https://doi.org/10.3386/w35374",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "A step by step guide for economists new to language models, taking a research idea to working code and data across chat, editor assistants, agentic tools, and the API.",
+        "No single model is promoted; the guide covers model selection, prompting, context and cost management, and how to validate, reproduce, and correct LLM generated measures in regressions.",
+        "Four worked examples with replication files, from linking census records without names to measuring newspaper salience around the 1882 Chinese Exclusion Act."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 70,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7119484",
+      "doi": "10.2139/ssrn.7119484",
+      "title": "AI Trading: Evaluating Large Language Models for Technical Market Analysis",
+      "authors": [
+        "Geofrey Ntale"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7119484",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Five language models evaluated on four structured market tasks: candlestick pattern recognition from OHLCV data, buy sell hold signal generation, simulated backtests, and financial report comprehension.",
+        "GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and the finance tuned FinGPT are scored on F1, Sharpe ratio, drawdown, and benchmark comprehension metrics.",
+        "GPT-4 Turbo posts the highest simulated annualized return and Sharpe ratio among general models; every model shows numerical hallucination and degrades in sideways market regimes."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "classification F1 and benchmark comprehension scores reported",
+      "salience": 46,
+      "edition": 1
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7158001",
+      "doi": "10.2139/ssrn.7158001",
+      "title": "Generative AI Regulation, Creative Industry Disruption, and Governance Response in China's Cultural Sector",
+      "authors": [
+        "Gh U"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7158001",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "Panel of listed Chinese cultural enterprises in film, music, publishing, and interactive media, 2020 to 2024, with staggered provincial licensing enforcement of generative AI rules.",
+        "No language model is used for measurement; AIGC adoption is the studied technology, identified through difference in differences and event studies around regulator announcements.",
+        "Better provincial governance quality reduces AI driven creative workforce displacement; state affiliated platforms comply more easily, widening structural gaps with independent creators."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 48,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7024983",
+      "doi": "10.2139/ssrn.7024983",
+      "title": "Zero-Shot Structured Data Extraction from Timely Disclosure Documents in PDF Format with Large Language Models",
+      "authors": [
+        "Nobushige Doi",
+        "Mayuri Tanaka"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7024983",
+      "field": "accounting",
+      "role": "method",
+      "bullets": [
+        "Eight types of timely disclosure PDFs from TDnet, the Tokyo Stock Exchange filing system, paired with document specific JSON schemas for zero shot structured extraction.",
+        "Twelve conditions crossing GPT-5.4, mini, and nano variants with four reasoning effort settings, each run three times; the largest model reaches core field accuracy of 0.905.",
+        "Schema guided extraction is viable for structuring disclosure PDFs, but the best settings differ by document type and higher reasoning effort does not reliably improve accuracy."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "core field accuracy 0.905 with variance across repeated runs",
+      "salience": 55,
+      "edition": 1
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7028322",
+      "doi": "10.2139/ssrn.7028322",
+      "title": "Scalable Linear Bayes Prediction for Mixtures of Experts and LLMs",
+      "authors": [
+        "Nicholas G. Polson",
+        "Vadim Sokolov",
+        "Daniel Zantedeschi"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7028322",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "Theory linking Bayes linear estimation, ensemble Kalman filtering, and sparse mixture of experts training, evaluated with controlled simulations rather than a field dataset.",
+        "No commercial model is deployed; the paper proves structural correspondences between linear Bayes mixtures of experts and sparse LLM architectures, including Adam as a diagonal Kalman filter.",
+        "Exact Bayes linear updating shows essentially no forgetting across sequential tasks where SGD and Adam forget 5.1 and 3.5 times more, and a threshold theorem characterizes when mixture filters help."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 52,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7145231",
+      "doi": "10.2139/ssrn.7145231",
+      "title": "Inference with AI-Generated Covariates",
+      "authors": [
+        "Junting Duan",
+        "Markus Pelger"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7145231",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "News based sentiment and stock returns, with a small human labeled calibration set used to correct errors in features generated by language models across model and prompt pairs.",
+        "AI-Powered Inference is a method of moments framework that bias corrects generated covariates, weights multiple model prompt pairs, and targets human labels where features are least reliable.",
+        "In the sentiment application it produces stable conclusions where naive LLM regressions vary widely, with confidence intervals roughly half as long as using human labeled data alone."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "human labeled calibration set; consistency and asymptotic normality established",
+      "salience": 82,
+      "edition": 1,
+      "models": []
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7037798",
+      "doi": "10.2139/ssrn.7037798",
+      "title": "Position: The Machine Learning Community is Accumulating Calibration Debt Anonymized for Review",
+      "authors": [
+        "Madhav Mittal"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7037798",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "A position paper on calibration error across language models, agentic systems, retrieval augmented pipelines, tabular foundation models, and clinical AI, with a two stage classification experiment.",
+        "No single deployed model; it synthesizes three 2026 impossibility results arguing miscalibration is structural, and proposes a three cause taxonomy and a Calibration Debt Score.",
+        "The pipeline experiment shows system level expected calibration error exceeds the maximum of component level errors even when each component is individually calibrated."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 50,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7051078",
+      "doi": "10.2139/ssrn.7051078",
+      "title": "Shadow AI in Higher Education: A Socio-technical Framework for Governing Unauthorized Employee use of Artificial Intelligence",
+      "authors": [
+        "Aeron Zentner",
+        "Tobi West"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7051078",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Original 2026 survey of 50 employees at a single two year public college, an 18.9 percent response rate, on unauthorized workplace use of AI tools.",
+        "No model is used for measurement; generative AI adoption is the studied phenomenon, framed through a seven dimension shadow AI adoption governance gap model.",
+        "Respondents report high AI literacy and strong training demand yet prefer consumer tools like ChatGPT, Gemini, and Claude over the institution's three sanctioned platforms. Single institution and self reported."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 38,
+      "edition": 1,
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7158737",
+      "doi": "10.2139/ssrn.7158737",
+      "title": "Certified Metric Injection: A Hybrid Deterministic–Large Language Model Architecture for Hallucination-Resistant Enterprise Conversational Business Intelligence",
+      "authors": [
+        "Ricardo Amodio Neves de Albuquerque"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7158737",
+      "field": "accounting",
+      "role": "method",
+      "bullets": [
+        "A single production enterprise business intelligence deployment where language models translate business questions about financial and operational KPIs into SQL against a data warehouse.",
+        "A hybrid architecture injects pre validated SQL for canonical KPIs, links schema, adds a second model critique pass, sandboxes execution, and routes simple queries to smaller models; model family not stated.",
+        "The deployment reports large reductions in time to answer and less reliance on analysts; validation is qualitative and limited to one organization, with no accuracy statistic stated."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 44,
+      "edition": 1,
+      "models": []
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7151418",
+      "doi": "10.2139/ssrn.7151418",
+      "title": "Does Generative AI Make Startup Ideas Alike? Evidence from Product Hunt",
+      "authors": [
+        "Zhaoqi Cheng",
+        "Kaige Gao"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7151418",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "291,314 product launches posted to Product Hunt from January 2018 to April 2026, measuring the distinctiveness of startup ideas before and after ChatGPT's release.",
+        "An outcome blind LLM ideation exposure index measures how much general purpose models can assist ideation in each category; the models are studied, not used to build variables from firm text.",
+        "The share of distinctive launches falls from 25 to 16 percent after ChatGPT, and the rise in similarity is larger in categories more exposed to LLM assisted ideation."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 74,
+      "edition": 1,
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7120281",
+      "doi": "10.2139/ssrn.7120281",
+      "title": "Vertical Scaling of Subdomain-Specific Small Language Models: A Framework for High-Stakes Domains - A Systematic Review of Methodologies, Applications, and Future Directions in Finance, Law, Medicine, and Government",
+      "authors": [
+        "Ismet Beljulji"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7120281",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "A systematic review of small language models adapted through parameter efficient fine tuning for high stakes domains, with financial compliance among the four focus areas.",
+        "No single model; the review argues domain purity of curated narrow datasets outweighs dataset scale, and examines synthetic data generation as a cost effective adaptation lever.",
+        "It proposes a unified framework for vertical scaling across subdomains and catalogs challenges such as overfitting and structural instability. No effect sizes are stated."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 33,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7127378",
+      "doi": "10.2139/ssrn.7127378",
+      "title": "Generative and Agentic AI Through the Lens of Model Risk Management: A Multisector Framework for Identifying Opportunities and Circumventing Risks",
+      "authors": [
+        "Advaith Nila Narayanan"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7127378",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "A conceptual framework extending model risk management to generative and agentic AI across finance, insurance, healthcare, law, and energy.",
+        "No model is deployed or tested; the paper adapts the model risk pillars of meaningful challenge, conceptual soundness, and ongoing monitoring to hallucination, prompt injection, and execution drift.",
+        "It offers sector specific analyses and a governance roadmap for risk professionals; no empirical results or effect sizes are stated."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 47,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7069438",
+      "doi": "10.2139/ssrn.7069438",
+      "title": "Stereotypes in the Machine: Gender and Racial Bias in LLM-Generated Financial Advice",
+      "authors": [
+        "Ang Li",
+        "Fujing Xue",
+        "Zixuan Zeng",
+        "Xiaofeng Zhao"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7069438",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "A large scale controlled experiment with language models acting as financial advisors, recommending equity allocations to otherwise identical clients varied by gender and race.",
+        "The models stand in for advisors and their recommendations are the object of study; model family is not stated, and bias is measured against identical White male profiles.",
+        "Models recommend lower equity allocations to female and Asian clients, a gap that intensifies for sophisticated clients; scale, safety alignment, and debiasing prompts do not fix it, only stronger reasoning."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "controlled experiment with identical-profile counterfactuals; portfolio efficiency measured",
+      "salience": 80,
+      "edition": 1,
+      "models": []
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6206500",
+      "doi": "10.2139/ssrn.6206500",
+      "title": "From Humans to Algorithms: How Financial Advice Differs Across Professionals, Peers, and LLMs",
+      "authors": [
+        "Matthias Rumpf",
+        "Michael Haliassos",
+        "Tetyana Kosyakova",
+        "Thomas Otter"
+      ],
+      "posted": "2026-01-01",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6206500",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "A vignette based experiment comparing risky portfolio share advice from professional advisors, financially literate peers, and a language model, eliminating matching problems by design.",
+        "The model is prompted repeatedly on identical vignettes and its recommendations are the object of study; the family is not named, and a Bayesian hierarchical Tobit model captures heterogeneity.",
+        "The model's advice has smaller variance but is very sensitive to declared risk tolerance, and using AI can offset peers' tendency to discourage equity for younger, lower income investors."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 68,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    },
+    {
+      "uid": "doi:10.2139/ssrn.5370043",
+      "doi": "10.2139/ssrn.5370043",
+      "title": "Large Language Models for Supply Chain Decisions",
+      "authors": [
+        "David Simchi-Levi",
+        "Konstantina Mellou",
+        "Ishai Menache",
+        "Jeevan Pathuri"
+      ],
+      "posted": "2025-07-30",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.5370043",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Industrial supply chain planning settings where optimization tools already exist but planners spend days interpreting outputs, running scenarios, and updating mathematical models.",
+        "Language models sit on top of the optimization stack to explain recommendations, answer what if questions, and update models without a data science team; the model family is not stated.",
+        "Reported time to decision falls from days or weeks to minutes or hours; no formal accuracy evaluation against ground truth is stated in the abstract."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 64,
+      "edition": 1,
+      "models": [],
+      "validated": null
+    }
+  ]
+}

@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>LLM Research Digest</title>
+<meta name="description" content="New work using or studying large language models in accounting, finance, and economics">
+<link rel="alternate" type="application/rss+xml" title="LLM Research Digest" href="feed.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=Public+Sans:wght@300;400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<style>
+:root{
+  --ink:#14181d; --ink2:#545c66; --ink3:#8a939e;
+  --paper:#f2f4f6; --card:#ffffff; --rule:#dfe3e8; --rule2:#c8cfd6;
+  --instrument:#2d5d8a; --object:#6b4e8f; --agent:#a85b2b; --method:#2e6b52;
+  --sans:"Public Sans",system-ui,sans-serif;
+  --serif:"Instrument Serif",Georgia,serif;
+  --mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+@media (prefers-color-scheme:dark){
+  :root{--ink:#e8ebee;--ink2:#a3acb6;--ink3:#727b85;--paper:#14181d;--card:#1b2027;--rule:#2b323b;--rule2:#3c454f;
+  --instrument:#7fa8d4;--object:#b191d6;--agent:#dd9a63;--method:#6cb494;}
+}
+*{box-sizing:border-box}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-weight:400;
+  font-size:16px;line-height:1.6;-webkit-font-smoothing:antialiased}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px 80px}
+a{color:inherit}
+:focus-visible{outline:2px solid var(--instrument);outline-offset:3px}
+
+header.mast{padding:56px 0 28px;border-bottom:1px solid var(--rule2)}
+.mast-row{display:flex;justify-content:space-between;align-items:flex-end;gap:24px;flex-wrap:wrap}
+h1{font-family:var(--serif);font-weight:400;font-size:clamp(38px,6vw,62px);line-height:1;margin:0;letter-spacing:-.01em}
+.tagline{font-size:15px;color:var(--ink2);margin:12px 0 0;max-width:46ch}
+.edno{font-family:var(--mono);font-size:13px;color:var(--ink2);text-align:right;line-height:1.9;white-space:nowrap}
+.edno b{display:block;font-family:var(--serif);font-size:34px;font-weight:400;color:var(--ink);letter-spacing:.02em}
+
+section{padding-top:36px}
+.eyebrow{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink3);margin:0 0 14px}
+
+.matrix{width:100%;border-collapse:collapse;font-family:var(--mono);font-size:13px}
+.matrix th{font-weight:500;color:var(--ink2);text-align:center;padding:0 0 10px;font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase}
+.matrix th.rowhead,.matrix td.rowhead{text-align:left;width:120px;color:var(--ink2);font-size:11px;
+  letter-spacing:.1em;text-transform:uppercase}
+.matrix td{padding:0;border:1px solid var(--rule)}
+.matrix td.rowhead{border:none;padding-right:14px}
+.matrix td.tot{border:none;text-align:right;padding-left:14px;color:var(--ink2);width:52px}
+.cell{width:100%;border:0;background:transparent;cursor:pointer;font:inherit;color:var(--ink);
+  padding:16px 6px;display:block;transition:background .12s}
+.cell:hover:not(:disabled){background:var(--rule)}
+.cell:disabled{cursor:default;color:var(--ink3)}
+.cell[aria-pressed="true"]{background:var(--ink);color:var(--paper)}
+.matrix tfoot td{border:none;padding-top:10px;color:var(--ink2);text-align:center;font-size:11px}
+
+.controls{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:8px}
+.chip{font-family:var(--mono);font-size:12px;padding:6px 13px;border:1px solid var(--rule2);
+  background:transparent;color:var(--ink2);border-radius:2px;cursor:pointer;transition:all .12s}
+.chip:hover{border-color:var(--ink3);color:var(--ink)}
+.chip[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.status{font-family:var(--mono);font-size:12px;color:var(--ink3);margin:22px 0 14px;
+  display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap}
+.status button{background:none;border:0;font:inherit;color:var(--instrument);cursor:pointer;padding:0;
+  text-decoration:underline;text-underline-offset:3px}
+
+article{background:var(--card);border:1px solid var(--rule);border-left:3px solid var(--rule2);
+  padding:22px 26px;margin-bottom:14px}
+article.r-instrument{border-left-color:var(--instrument)}
+article.r-object{border-left-color:var(--object)}
+article.r-agent{border-left-color:var(--agent)}
+article.r-method{border-left-color:var(--method)}
+.tags{font-family:var(--mono);font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+  color:var(--ink3);margin-bottom:9px;display:flex;gap:14px;flex-wrap:wrap}
+.tags .role{font-weight:500}
+.r-instrument .tags .role{color:var(--instrument)}
+.r-object .tags .role{color:var(--object)}
+.r-agent .tags .role{color:var(--agent)}
+.r-method .tags .role{color:var(--method)}
+h2.ptitle{font-size:19px;font-weight:600;line-height:1.35;margin:0 0 6px;letter-spacing:-.005em}
+.byline{font-size:14px;color:var(--ink2);margin:0 0 16px}
+.byline .aff{color:var(--ink3)}
+dl{margin:0;display:grid;grid-template-columns:132px minmax(0,1fr);gap:9px 18px}
+dt{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--ink3);padding-top:3px}
+dd{margin:0;font-size:15px;line-height:1.55}
+.nobul{font-size:14px;color:var(--ink3);font-style:italic;margin:0}
+.foot{display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  border-top:1px solid var(--rule);margin-top:18px;padding-top:13px;
+  font-family:var(--mono);font-size:11px;color:var(--ink3)}
+.foot a{color:var(--instrument);text-decoration:none;font-weight:500}
+.foot a:hover{text-decoration:underline}
+.empty{border:1px dashed var(--rule2);padding:52px 24px;text-align:center;color:var(--ink2)}
+.empty p{margin:0 0 6px}
+
+footer.site{border-top:1px solid var(--rule2);margin-top:56px;padding-top:28px;
+  font-size:13px;color:var(--ink2);line-height:1.75}
+footer.site h3{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink3);font-weight:500;margin:26px 0 8px}
+footer.site .disc{border:1px solid var(--rule);padding:14px 16px;margin-top:22px;color:var(--ink3);font-size:12px}
+@media(max-width:640px){
+  .wrap{padding:0 16px 60px}
+  dl{grid-template-columns:1fr;gap:2px 0}
+  dt{padding-top:8px}
+  .matrix th.rowhead,.matrix td.rowhead{width:64px}
+  .cell{padding:13px 2px}
+}
+@media(prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header class="mast">
+  <div class="mast-row">
+    <div>
+      <h1>LLM Research Digest</h1>
+      <p class="tagline">New work using or studying large language models in accounting, finance, and economics</p>
+      <p class="tagline" style="margin-top:4px">Curated by <a href="https://www.jedsonpinto.com" style="color:inherit">Jedson Pinto</a> &middot; updated daily &middot; <a href="https://www.jedsonpinto.com" style="color:inherit">&larr; back to jedsonpinto.com</a></p>
+    </div>
+    <div class="edno">
+      <b>no. 001</b>
+      2026-07-23<br>
+      16 new papers
+    </div>
+  </div>
+</header>
+
+<section>
+  <p class="eyebrow">Field by role. Select a cell to filter.</p>
+  <table class="matrix" id="matrix">
+    <thead>
+      <tr>
+        <th class="rowhead"></th>
+        <th scope="col" title="The model measures something. Extraction, classification, scoring of text.">Instrument</th><th scope="col" title="The model is what is being studied. Adoption, effects, disclosure about AI.">Object</th><th scope="col" title="The model stands in for a human. Simulated investors, analysts, subjects.">Agent</th><th scope="col" title="The paper is about doing it right. Validation, benchmarking, reproducibility.">Method</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody id="matrix-body"></tbody>
+    <tfoot>
+      <tr><td colspan="6">
+        <b>Instrument</b>: The model measures something. Extraction, classification, scoring of text. &nbsp;·&nbsp; <b>Object</b>: The model is what is being studied. Adoption, effects, disclosure about AI. &nbsp;·&nbsp; <b>Agent</b>: The model stands in for a human. Simulated investors, analysts, subjects. &nbsp;·&nbsp; <b>Method</b>: The paper is about doing it right. Validation, benchmarking, reproducibility.
+      </td></tr>
+    </tfoot>
+  </table>
+</section>
+
+<section>
+  <p class="eyebrow">Refine</p>
+  <div class="controls" id="controls"></div>
+  <div class="status">
+    <span id="status">Loading</span>
+    <button type="button" id="reset">Clear all filters</button>
+  </div>
+</section>
+
+<main id="list" aria-live="polite"></main>
+
+<footer class="site">
+  <h3>How this is built</h3>
+  <p>Every record comes from an open metadata API. Crossref supplies DOI records
+  for SSRN, NBER, and other depositing publishers. arXiv supplies preprints through
+  its public API. OpenAlex and Semantic Scholar fill in abstracts where a publisher
+  did not deposit one. Nothing here is scraped, and no publisher site is queried
+  automatically.</p>
+
+  <h3>What the bullets are</h3>
+  <p>Abstracts are not reproduced. Each entry carries three written summary lines in
+  fixed slots: the setting, what the model actually did, and the headline result. Each
+  entry states who wrote those lines. Author supplied means the authors submitted them.
+  Editor written means the curator wrote them. Generated means a language model drafted
+  them from the abstract and a second pass checked them. Where no abstract was available,
+  the entry carries a link only.</p>
+
+  <h3>Corrections and submissions</h3>
+  <p>Authors are welcome to send their own three lines, or to ask for an entry to be
+  corrected or removed. Write to <a href="mailto:jedson.pinto@utdallas.edu">jedson.pinto@utdallas.edu</a>.</p>
+
+  <h3>Curator</h3>
+  <p>Jedson Pinto, Naveen Jindal School of Management, UT Dallas. Updated 2026-07-23.
+  <a href="feed.xml">RSS</a> · <a href="data/papers.json">JSON</a></p>
+
+  <p class="disc">Independent and not affiliated with, sponsored by, or endorsed by SSRN, Elsevier, arXiv, or any publisher listed.</p>
+</footer>
+
+</div>
+
+<script id="data" type="application/json">{"papers": [{"uid": "arxiv:2607.18867v1", "arxiv_id": "2607.18867v1", "title": "HindsightBench: A Black-Box Behavioral Audit Protocol for Parametric Hindsight in Time-Indexed LLM Decision Tasks", "authors": ["Haozhe Jia"], "posted": "2026-07-21", "source_label": "arXiv", "url": "https://arxiv.org/abs/2607.18867v1", "field": "finance", "role": "method", "bullets": ["A 258 node vintage correct macro panel used to audit whether language models leak knowledge of realized outcomes into time indexed historical financial decision tasks.", "HindsightBench is a black box protocol chaining a four arm date manipulation matrix, memory probes, and six per model metrics; applied to 15 models from seven vendors at probe level cost.", "The date trigger reflex tracks training generation not scale, absent in the 2024 open weight generation but present in every 2026 model, and effective cutoffs precede vendor reported dates by up to eight months."], "bullet_provenance": "ai", "models": ["open_other"], "open_weights": true, "validated": true, "validation_note": "15 models audited on a vintage-correct macro panel with per-model metrics", "salience": 78, "edition": 1}, {"uid": "doi:10.3386/w35374", "doi": "10.3386/w35374", "title": "A Practitioner's Guide to Using Large Language Models and Generative AI in Economic History", "authors": ["Andreas Ferrara"], "posted": "2026-06-30", "source_label": "NBER", "url": "https://doi.org/10.3386/w35374", "field": "economics", "role": "method", "bullets": ["A step by step guide for economists new to language models, taking a research idea to working code and data across chat, editor assistants, agentic tools, and the API.", "No single model is promoted; the guide covers model selection, prompting, context and cost management, and how to validate, reproduce, and correct LLM generated measures in regressions.", "Four worked examples with replication files, from linking census records without names to measuring newspaper salience around the 1882 Chinese Exclusion Act."], "bullet_provenance": "ai", "salience": 70, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7119484", "doi": "10.2139/ssrn.7119484", "title": "AI Trading: Evaluating Large Language Models for Technical Market Analysis", "authors": ["Geofrey Ntale"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7119484", "field": "finance", "role": "method", "bullets": ["Five language models evaluated on four structured market tasks: candlestick pattern recognition from OHLCV data, buy sell hold signal generation, simulated backtests, and financial report comprehension.", "GPT-4 Turbo, Claude 3 Opus, Gemini 1.5 Pro, Llama 3 70B, and the finance tuned FinGPT are scored on F1, Sharpe ratio, drawdown, and benchmark comprehension metrics.", "GPT-4 Turbo posts the highest simulated annualized return and Sharpe ratio among general models; every model shows numerical hallucination and degrades in sideways market regimes."], "bullet_provenance": "ai", "models": ["claude", "gemini", "gpt", "llama", "open_other"], "open_weights": true, "validated": true, "validation_note": "classification F1 and benchmark comprehension scores reported", "salience": 46, "edition": 1}, {"uid": "doi:10.2139/ssrn.7158001", "doi": "10.2139/ssrn.7158001", "title": "Generative AI Regulation, Creative Industry Disruption, and Governance Response in China's Cultural Sector", "authors": ["Gh U"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7158001", "field": "economics", "role": "object", "bullets": ["Panel of listed Chinese cultural enterprises in film, music, publishing, and interactive media, 2020 to 2024, with staggered provincial licensing enforcement of generative AI rules.", "No language model is used for measurement; AIGC adoption is the studied technology, identified through difference in differences and event studies around regulator announcements.", "Better provincial governance quality reduces AI driven creative workforce displacement; state affiliated platforms comply more easily, widening structural gaps with independent creators."], "bullet_provenance": "ai", "salience": 48, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7024983", "doi": "10.2139/ssrn.7024983", "title": "Zero-Shot Structured Data Extraction from Timely Disclosure Documents in PDF Format with Large Language Models", "authors": ["Nobushige Doi", "Mayuri Tanaka"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7024983", "field": "accounting", "role": "method", "bullets": ["Eight types of timely disclosure PDFs from TDnet, the Tokyo Stock Exchange filing system, paired with document specific JSON schemas for zero shot structured extraction.", "Twelve conditions crossing GPT-5.4, mini, and nano variants with four reasoning effort settings, each run three times; the largest model reaches core field accuracy of 0.905.", "Schema guided extraction is viable for structuring disclosure PDFs, but the best settings differ by document type and higher reasoning effort does not reliably improve accuracy."], "bullet_provenance": "ai", "models": ["gpt"], "open_weights": false, "validated": true, "validation_note": "core field accuracy 0.905 with variance across repeated runs", "salience": 55, "edition": 1}, {"uid": "doi:10.2139/ssrn.7028322", "doi": "10.2139/ssrn.7028322", "title": "Scalable Linear Bayes Prediction for Mixtures of Experts and LLMs", "authors": ["Nicholas G. Polson", "Vadim Sokolov", "Daniel Zantedeschi"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7028322", "field": "other", "role": "method", "bullets": ["Theory linking Bayes linear estimation, ensemble Kalman filtering, and sparse mixture of experts training, evaluated with controlled simulations rather than a field dataset.", "No commercial model is deployed; the paper proves structural correspondences between linear Bayes mixtures of experts and sparse LLM architectures, including Adam as a diagonal Kalman filter.", "Exact Bayes linear updating shows essentially no forgetting across sequential tasks where SGD and Adam forget 5.1 and 3.5 times more, and a threshold theorem characterizes when mixture filters help."], "bullet_provenance": "ai", "salience": 52, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7145231", "doi": "10.2139/ssrn.7145231", "title": "Inference with AI-Generated Covariates", "authors": ["Junting Duan", "Markus Pelger"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7145231", "field": "finance", "role": "method", "bullets": ["News based sentiment and stock returns, with a small human labeled calibration set used to correct errors in features generated by language models across model and prompt pairs.", "AI-Powered Inference is a method of moments framework that bias corrects generated covariates, weights multiple model prompt pairs, and targets human labels where features are least reliable.", "In the sentiment application it produces stable conclusions where naive LLM regressions vary widely, with confidence intervals roughly half as long as using human labeled data alone."], "bullet_provenance": "ai", "validated": true, "validation_note": "human labeled calibration set; consistency and asymptotic normality established", "salience": 82, "edition": 1, "models": []}, {"uid": "doi:10.2139/ssrn.7037798", "doi": "10.2139/ssrn.7037798", "title": "Position: The Machine Learning Community is Accumulating Calibration Debt Anonymized for Review", "authors": ["Madhav Mittal"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7037798", "field": "other", "role": "method", "bullets": ["A position paper on calibration error across language models, agentic systems, retrieval augmented pipelines, tabular foundation models, and clinical AI, with a two stage classification experiment.", "No single deployed model; it synthesizes three 2026 impossibility results arguing miscalibration is structural, and proposes a three cause taxonomy and a Calibration Debt Score.", "The pipeline experiment shows system level expected calibration error exceeds the maximum of component level errors even when each component is individually calibrated."], "bullet_provenance": "ai", "salience": 50, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7051078", "doi": "10.2139/ssrn.7051078", "title": "Shadow AI in Higher Education: A Socio-technical Framework for Governing Unauthorized Employee use of Artificial Intelligence", "authors": ["Aeron Zentner", "Tobi West"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7051078", "field": "management", "role": "object", "bullets": ["Original 2026 survey of 50 employees at a single two year public college, an 18.9 percent response rate, on unauthorized workplace use of AI tools.", "No model is used for measurement; generative AI adoption is the studied phenomenon, framed through a seven dimension shadow AI adoption governance gap model.", "Respondents report high AI literacy and strong training demand yet prefer consumer tools like ChatGPT, Gemini, and Claude over the institution's three sanctioned platforms. Single institution and self reported."], "bullet_provenance": "ai", "models": ["claude", "gemini", "gpt"], "open_weights": false, "salience": 38, "edition": 1, "validated": null}, {"uid": "doi:10.2139/ssrn.7158737", "doi": "10.2139/ssrn.7158737", "title": "Certified Metric Injection: A Hybrid Deterministic–Large Language Model Architecture for Hallucination-Resistant Enterprise Conversational Business Intelligence", "authors": ["Ricardo Amodio Neves de Albuquerque"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7158737", "field": "accounting", "role": "method", "bullets": ["A single production enterprise business intelligence deployment where language models translate business questions about financial and operational KPIs into SQL against a data warehouse.", "A hybrid architecture injects pre validated SQL for canonical KPIs, links schema, adds a second model critique pass, sandboxes execution, and routes simple queries to smaller models; model family not stated.", "The deployment reports large reductions in time to answer and less reliance on analysts; validation is qualitative and limited to one organization, with no accuracy statistic stated."], "bullet_provenance": "ai", "validated": false, "salience": 44, "edition": 1, "models": []}, {"uid": "doi:10.2139/ssrn.7151418", "doi": "10.2139/ssrn.7151418", "title": "Does Generative AI Make Startup Ideas Alike? Evidence from Product Hunt", "authors": ["Zhaoqi Cheng", "Kaige Gao"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7151418", "field": "economics", "role": "object", "bullets": ["291,314 product launches posted to Product Hunt from January 2018 to April 2026, measuring the distinctiveness of startup ideas before and after ChatGPT's release.", "An outcome blind LLM ideation exposure index measures how much general purpose models can assist ideation in each category; the models are studied, not used to build variables from firm text.", "The share of distinctive launches falls from 25 to 16 percent after ChatGPT, and the rise in similarity is larger in categories more exposed to LLM assisted ideation."], "bullet_provenance": "ai", "models": ["gpt"], "open_weights": false, "salience": 74, "edition": 1, "validated": null}, {"uid": "doi:10.2139/ssrn.7120281", "doi": "10.2139/ssrn.7120281", "title": "Vertical Scaling of Subdomain-Specific Small Language Models: A Framework for High-Stakes Domains - A Systematic Review of Methodologies, Applications, and Future Directions in Finance, Law, Medicine, and Government", "authors": ["Ismet Beljulji"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7120281", "field": "finance", "role": "method", "bullets": ["A systematic review of small language models adapted through parameter efficient fine tuning for high stakes domains, with financial compliance among the four focus areas.", "No single model; the review argues domain purity of curated narrow datasets outweighs dataset scale, and examines synthetic data generation as a cost effective adaptation lever.", "It proposes a unified framework for vertical scaling across subdomains and catalogs challenges such as overfitting and structural instability. No effect sizes are stated."], "bullet_provenance": "ai", "salience": 33, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7127378", "doi": "10.2139/ssrn.7127378", "title": "Generative and Agentic AI Through the Lens of Model Risk Management: A Multisector Framework for Identifying Opportunities and Circumventing Risks", "authors": ["Advaith Nila Narayanan"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7127378", "field": "finance", "role": "method", "bullets": ["A conceptual framework extending model risk management to generative and agentic AI across finance, insurance, healthcare, law, and energy.", "No model is deployed or tested; the paper adapts the model risk pillars of meaningful challenge, conceptual soundness, and ongoing monitoring to hallucination, prompt injection, and execution drift.", "It offers sector specific analyses and a governance roadmap for risk professionals; no empirical results or effect sizes are stated."], "bullet_provenance": "ai", "salience": 47, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.7069438", "doi": "10.2139/ssrn.7069438", "title": "Stereotypes in the Machine: Gender and Racial Bias in LLM-Generated Financial Advice", "authors": ["Ang Li", "Fujing Xue", "Zixuan Zeng", "Xiaofeng Zhao"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.7069438", "field": "finance", "role": "agent", "bullets": ["A large scale controlled experiment with language models acting as financial advisors, recommending equity allocations to otherwise identical clients varied by gender and race.", "The models stand in for advisors and their recommendations are the object of study; model family is not stated, and bias is measured against identical White male profiles.", "Models recommend lower equity allocations to female and Asian clients, a gap that intensifies for sophisticated clients; scale, safety alignment, and debiasing prompts do not fix it, only stronger reasoning."], "bullet_provenance": "ai", "validated": true, "validation_note": "controlled experiment with identical-profile counterfactuals; portfolio efficiency measured", "salience": 80, "edition": 1, "models": []}, {"uid": "doi:10.2139/ssrn.6206500", "doi": "10.2139/ssrn.6206500", "title": "From Humans to Algorithms: How Financial Advice Differs Across Professionals, Peers, and LLMs", "authors": ["Matthias Rumpf", "Michael Haliassos", "Tetyana Kosyakova", "Thomas Otter"], "posted": "2026-01-01", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.6206500", "field": "finance", "role": "agent", "bullets": ["A vignette based experiment comparing risky portfolio share advice from professional advisors, financially literate peers, and a language model, eliminating matching problems by design.", "The model is prompted repeatedly on identical vignettes and its recommendations are the object of study; the family is not named, and a Bayesian hierarchical Tobit model captures heterogeneity.", "The model's advice has smaller variance but is very sensitive to declared risk tolerance, and using AI can offset peers' tendency to discourage equity for younger, lower income investors."], "bullet_provenance": "ai", "salience": 68, "edition": 1, "models": [], "validated": null}, {"uid": "doi:10.2139/ssrn.5370043", "doi": "10.2139/ssrn.5370043", "title": "Large Language Models for Supply Chain Decisions", "authors": ["David Simchi-Levi", "Konstantina Mellou", "Ishai Menache", "Jeevan Pathuri"], "posted": "2025-07-30", "source_label": "SSRN", "url": "https://doi.org/10.2139/ssrn.5370043", "field": "management", "role": "agent", "bullets": ["Industrial supply chain planning settings where optimization tools already exist but planners spend days interpreting outputs, running scenarios, and updating mathematical models.", "Language models sit on top of the optimization stack to explain recommendations, answer what if questions, and update models without a data science team; the model family is not stated.", "Reported time to decision falls from days or weeks to minutes or hours; no formal accuracy evaluation against ground truth is stated in the abstract."], "bullet_provenance": "ai", "salience": 64, "edition": 1, "models": [], "validated": null}], "fields": [{"id": "accounting", "label": "Accounting"}, {"id": "finance", "label": "Finance"}, {"id": "economics", "label": "Economics"}, {"id": "management", "label": "Management"}, {"id": "other", "label": "Other"}], "roles": [{"id": "instrument", "label": "Instrument", "blurb": "The model measures something. Extraction, classification, scoring of text."}, {"id": "object", "label": "Object", "blurb": "The model is what is being studied. Adoption, effects, disclosure about AI."}, {"id": "agent", "label": "Agent", "blurb": "The model stands in for a human. Simulated investors, analysts, subjects."}, {"id": "method", "label": "Method", "blurb": "The paper is about doing it right. Validation, benchmarking, reproducibility."}]}</script>
+<script>
+(function(){
+  var D = JSON.parse(document.getElementById("data").textContent);
+  var papers = D.papers, FIELDS = D.fields, ROLES = D.roles;
+  var st = {field:null, role:null, models:new Set(), validated:false, source:null};
+
+  function match(p, ignore){
+    if (ignore!=="field" && st.field && p.field!==st.field) return false;
+    if (ignore!=="role" && st.role && p.role!==st.role) return false;
+    if (st.validated && p.validated!==true) return false;
+    if (st.source && p.source_label!==st.source) return false;
+    if (st.models.size){
+      var ms = p.models||[];
+      var any = false;
+      st.models.forEach(function(m){ if (ms.indexOf(m)>-1) any = true; });
+      if (!any) return false;
+    }
+    return true;
+  }
+
+  function drawMatrix(){
+    var pool = papers.filter(function(p){ return match(p,"both"); });
+    var body = document.getElementById("matrix-body"), html = "";
+    FIELDS.forEach(function(f){
+      var rowTotal = 0, cells = "";
+      ROLES.forEach(function(r){
+        var n = pool.filter(function(p){ return p.field===f.id && p.role===r.id; }).length;
+        rowTotal += n;
+        var on = (st.field===f.id && st.role===r.id);
+        cells += '<td><button class="cell" type="button" data-f="'+f.id+'" data-r="'+r.id+'"'
+              + ' aria-pressed="'+on+'"'+(n===0?' disabled':'')
+              + ' aria-label="'+f.label+', '+r.label+', '+n+' papers">'+n+'</button></td>';
+      });
+      if (rowTotal===0 && !st.field) return;
+      html += '<tr><td class="rowhead">'+f.label+'</td>'+cells+'<td class="tot">'+rowTotal+'</td></tr>';
+    });
+    body.innerHTML = html || '<tr><td class="rowhead"></td><td colspan="'+(ROLES.length+1)+'" style="border:none;padding:18px 0;color:var(--ink3)">No papers match.</td></tr>';
+    body.querySelectorAll(".cell").forEach(function(b){
+      b.addEventListener("click", function(){
+        var f=b.dataset.f, r=b.dataset.r;
+        if (st.field===f && st.role===r){ st.field=null; st.role=null; }
+        else { st.field=f; st.role=r; }
+        render();
+      });
+    });
+  }
+
+  function drawControls(){
+    var box = document.getElementById("controls"), html = "";
+    var models = {};
+    papers.forEach(function(p){ (p.models||[]).forEach(function(m){ models[m]=(models[m]||0)+1; }); });
+    Object.keys(models).sort().forEach(function(m){
+      html += '<button class="chip" type="button" data-k="model" data-v="'+m+'" aria-pressed="'
+           + st.models.has(m) + '">'+m+' <span style="opacity:.6">'+models[m]+'</span></button>';
+    });
+    var nv = papers.filter(function(p){ return p.validated===true; }).length;
+    html += '<button class="chip" type="button" data-k="validated" aria-pressed="'+st.validated
+         + '">validated only <span style="opacity:.6">'+nv+'</span></button>';
+    var srcs = {};
+    papers.forEach(function(p){ srcs[p.source_label]=(srcs[p.source_label]||0)+1; });
+    Object.keys(srcs).sort().forEach(function(s){
+      html += '<button class="chip" type="button" data-k="source" data-v="'+s+'" aria-pressed="'
+           + (st.source===s) + '">'+s+' <span style="opacity:.6">'+srcs[s]+'</span></button>';
+    });
+    box.innerHTML = html;
+    box.querySelectorAll(".chip").forEach(function(b){
+      b.addEventListener("click", function(){
+        var k=b.dataset.k, v=b.dataset.v;
+        if (k==="model"){ st.models.has(v) ? st.models.delete(v) : st.models.add(v); }
+        else if (k==="validated"){ st.validated = !st.validated; }
+        else if (k==="source"){ st.source = (st.source===v) ? null : v; }
+        render();
+      });
+    });
+  }
+
+  function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
+
+  function card(p){
+    var slots = ["Setting","What the model did","Result"];
+    var body;
+    if (p.bullets && p.bullets.length===3){
+      body = "<dl>" + p.bullets.map(function(b,i){
+        return "<dt>"+slots[i]+"</dt><dd>"+esc(b)+"</dd>"; }).join("") + "</dl>";
+    } else {
+      body = '<p class="nobul">No abstract was available from any open source, so this entry '
+           + 'carries a link only.</p>';
+    }
+    var prov = {author:"Summary by the authors", editor:"Summary by the curator",
+                ai:"Summary generated, checked", none:"No summary"}[p.bullet_provenance] || "No summary";
+    var val = p.validated===true ? " · reports validation" : (p.validated===false ? " · no validation reported" : "");
+    return '<article class="r-'+esc(p.role)+'">'
+      + '<div class="tags"><span class="role">'+esc(p.role)+'</span><span>'+esc(p.field)+'</span>'
+      + '<span>'+esc(p.source_label)+'</span><span>'+esc(p.posted)+'</span></div>'
+      + '<h2 class="ptitle">'+esc(p.title)+'</h2>'
+      + '<p class="byline">'+esc((p.authors||[]).join(", "))
+      + (p.affiliations && p.affiliations.length ? ' <span class="aff">· '+esc(p.affiliations.join(", "))+'</span>' : '')
+      + '</p>' + body
+      + '<div class="foot"><span>'+prov+val+'</span>'
+      + '<a href="'+esc(p.url)+'" rel="noopener">Open paper</a></div></article>';
+  }
+
+  function render(){
+    drawMatrix(); drawControls();
+    var rows = papers.filter(function(p){ return match(p); });
+    var order = {}; ROLES.forEach(function(r,i){ order[r.id]=i; });
+    rows.sort(function(a,b){
+      if (order[a.role]!==order[b.role]) return order[a.role]-order[b.role];
+      if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
+      return String(b.posted).localeCompare(String(a.posted));
+    });
+    var bits = [];
+    if (st.field) bits.push(st.field);
+    if (st.role) bits.push(st.role);
+    if (st.validated) bits.push("validated");
+    if (st.source) bits.push(st.source);
+    st.models.forEach(function(m){ bits.push(m); });
+    document.getElementById("status").textContent =
+      rows.length + " of " + papers.length + " papers" + (bits.length ? " · " + bits.join(" · ") : "");
+    document.getElementById("list").innerHTML = rows.length
+      ? rows.map(card).join("")
+      : '<div class="empty"><p>Nothing matches that combination yet.</p>'
+        + '<p style="font-size:13px;color:var(--ink3)">Absence is information too. '
+        + 'This grid has thin cells because the literature does.</p></div>';
+  }
+
+  document.getElementById("reset").addEventListener("click", function(){
+    st = {field:null, role:null, models:new Set(), validated:false, source:null};
+    render();
+  });
+  render();
+})();
+</script>
+</body>
+</html>
