@@ -1,0 +1,121 @@
+[
+ {
+  "uid": "arxiv:2607.01854v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.01612v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7051224",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7049101",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Chinese Stock Connect constituent firms tradable by foreign investors versus non-constituent firms traded by domestic investors, around the 2022 ChatGPT launch and the 2025 DeepSeek release, in a difference-in-differences design.",
+   "No model is run by the authors; availability of ChatGPT and later DeepSeek serves as access shocks, with informed trading proxied by VPIN and no validation against a ground truth reported.",
+   "Informed trading rose significantly for foreign-tradable Connect firms after ChatGPT relative to domestic firms, and the gap disappeared once DeepSeek gave domestic investors comparable tools, indicating widened informational inequality."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 70
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7044979",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7050283",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.04103v3",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Conceptual landscape paper covering generative AI across banking, capital markets, insurance, payments, and wealth management, with no empirical sample or dataset analyzed.",
+   "No specific model is named; the paper organizes uses into five capability patterns and maps architectures such as retrieval-augmented generation, tool-using assistants, and agentic workflows, without any validation.",
+   "Delivers a taxonomy linking capability patterns to functions such as investment research, fraud investigation, and financial reporting, pointing to where generative AI may add operational value, with no quantitative results."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7044058",
+  "drop": false,
+  "field": "accounting",
+  "role": "object",
+  "bullets": [
+   "Synthesis paper reviewing agentic AI applications across three financial-services domains, regulatory compliance, auditing, and financial modeling, drawing on existing research rather than an original dataset.",
+   "No specific model is named; the paper describes multi-agent systems built on large language models for parsing regulations, monitoring transactions, model replication, and backtesting, with no validation of its own.",
+   "Cites reported compliance detection rates of 89 percent for agentic systems versus 43 percent for conventional testing, and segregation-of-duties enforcement efficacy of 96 percent, all drawn from prior work."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 40
+ }
+]

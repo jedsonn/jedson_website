@@ -1,0 +1,128 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7102340",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7109990",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6944698",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "192 structured strategy conversations and 1,920 model replies generated across four public LLMs, two response modes, and four Porter strategy domains, analyzed by quantitative content analysis.",
+   "ChatGPT, Claude, Gemini, and Grok replied to managerial prompts and the replies were coded for confirmation-bias cues; the paper reports no validation of the coding against a ground truth.",
+   "Confirmation-bias cues were pervasive across models; Claude showed the lowest bias, ChatGPT intermediate, and Gemini and Grok the highest, and reasoning mode did not reduce bias."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7147495",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.17765v1",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "All 104 matches of the 2026 FIFA World Cup, yielding 416 forecasts and 414 reflections; every match kicked off after model training cutoffs, making the benchmark contamination-free.",
+   "Claude Opus 4.8, ChatGPT GPT-5.5, Gemini 3.1 Pro, and Grok ran a search-act-reflect loop to forecast 1X2 outcomes and place virtual bets, scored by Brier against final results.",
+   "The four agents shared the top pick in 92 percent of matches, none beat the betting market's Brier score, and betting return on investment ranged from -18 to +10 percent."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "Brier score against actual match results",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6996018",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7018684",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7118103",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Three instruction-tuned open LLMs audited across five demographic axes, three decision domains (hiring, loan approval, medical advice), and three conversational conditions including sycophancy and rebuttal probes.",
+   "Mistral-7B, Qwen2.5-7B, and Zephyr-7B produced multi-turn responses scored for bias with an SST-2 sentiment proxy and a regard classifier; no accuracy against ground truth is reported.",
+   "Bias drifted across turns and varied by model; the sycophancy probe moved Mistral most (Cohen's d = 0.34), Qwen less (0.13), and Zephyr barely (0.04)."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "",
+  "salience": 40
+ }
+]

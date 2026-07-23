@@ -1,0 +1,118 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7083227",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7090112",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Sixteen founders of Africa's six unicorn ventures as of 2024, with over 1,000 YouTube videos and nine hours of podcast audio processed into more than 30,000 embedded text chunks.",
+   "Unnamed large language models with retrieval-augmented generation reconstruct entrepreneurial journeys through multi-query expansion, semantic retrieval, and iterative refinement, evaluated on precision, recall, F1, and faithfulness; the specific model is not stated.",
+   "Generated narratives reach faithfulness scores of 0.94 to 0.99, and quality depends more on thematic diversity than data volume, with 800 to 1,200 curated chunks sufficient for reliable output."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "precision, recall, F1, faithfulness 0.94-0.99",
+  "salience": 53
+ },
+ {
+  "uid": "arxiv:2607.08395v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.13069v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113411",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "A balanced corpus of 450,000 Turkish e-commerce reviews, comprising 225,000 authentic Hepsiburada product reviews and 225,000 synthetic fake reviews.",
+   "Synthetic fakes were generated with seven methods including fine-tuned GPT-2 and instruction-tuned Qwen2, LLaMA-3, and Mistral; six Turkish BERT variants were then trained to detect them across five random seeds.",
+   "ElecTRa scored the highest in-distribution F1 at 0.994, BERTurk-128k led on the external held-out set at 0.943 accuracy, and detection improved as synthetic generation diversity increased."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "llama",
+   "open_other",
+   "legacy"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "F1 and accuracy on labeled and held-out reviews",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6956641",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7089478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7102064",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

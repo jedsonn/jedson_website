@@ -1,0 +1,114 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7053778",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "News-based sentiment and stock returns serve as the empirical application, with the framework aimed at any setting where LLM-generated features enter downstream estimation. Period and geography not stated.",
+   "Multiple LLM and prompt pairs extract sentiment, models not named; Gen-PI applies method-of-moments bias correction from a small human-labeled calibration set, adaptive weighting across generators, and optimal placement of costly labels.",
+   "Against naive LLM regressions the method gives stable conclusions where model and prompt choice otherwise shifts results, and its confidence interval runs about half the length of one using human labels alone."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 72
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7082874",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7062098",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6980679",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6955198",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.08961v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.10402v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.10251v1",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Frontier language models play no-limit Texas Hold'em in homogeneous self-play and heterogeneous mixed-model games; behavior is measured by participation and pre-flop proactiveness. Sample size and specific models not stated.",
+   "Several frontier LLMs, not individually named, are made to decide under uncertainty at the poker table, with risk disposition read off voluntary engagement and pre-flop risk escalation and no comparison to a ground truth.",
+   "Models show stable, model-specific risk profiles spanning conservative to aggressive, largely robust to opponent mix, and adjust in heterogeneous ways under global risk pressure and personal resource constraints."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 50
+ }
+]

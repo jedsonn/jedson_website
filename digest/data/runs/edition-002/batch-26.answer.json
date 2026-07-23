@@ -1,0 +1,114 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7008899",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6992061",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Conceptual essay on using language models in qualitative research; it describes the Skimle.com analysis tool but reports no empirical sample, geography, or study period.",
+   "Does not name a specific model; proposes three design criteria, predictable processes, end-to-end data-to-conclusion transparency, and researcher control over coding, implemented in the tool, with no validation reported.",
+   "Argues that method-agnostic tools built to these criteria augment rather than automate expert interpretation, countering hallucination and the cognitive offloading that erodes engagement with data."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6963161",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.31522v2",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Simulation benchmark, FinPersona-Bench, in which a synthetic market separates observable price from hidden fundamental value; 18 frontier and open-source LLMs each run under one of three behavioral mandates.",
+   "The 18 models, not individually named, act as autonomous trading agents; the benchmark measures mandate salience decay across three failure modes, with no comparison to human coding.",
+   "Mandate influence decays over long horizons and is model-dependent; in crashes the behavioral gap between static and periodically re-grounded agents grows 4.4 times by the final quarter."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 62
+ },
+ {
+  "uid": "arxiv:2607.00551v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.00738v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.00368v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6908358",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

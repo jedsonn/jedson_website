@@ -1,0 +1,139 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6977604",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Financial PhraseBank corpus of expert-annotated sentences, with a held-out test subset of 300 sentences used for evaluation of three-way sentiment classification.",
+   "DeepSeek-R1-Distill-Qwen-1.5B, an open distillation of DeepSeek-R1, fine-tuned with LoRA and 4-bit QLoRA on a single consumer GPU, scored against the annotated test set.",
+   "Fine-tuning lifts test accuracy from 54.00 to 84.33 percent and weighted F1 from 45.32 to 84.17, a gain of about 30 accuracy points over the zero-shot base."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "300-sentence expert-annotated test set, accuracy and F1 reported",
+  "salience": 34
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7155798",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7167544",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5287110",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Review article synthesizing the emerging literature on generative AI and finance, organized around six areas from corporate finance and asset pricing to household finance and labor economics.",
+   "No model is applied by the authors; the review categorizes LLMs as analytic tools, external shocks to the economy, and autonomous economic agents. Specific models not stated.",
+   "Synthesizes how firms benefit from AI, how it aids return predictability and financial inclusion, and its labor market effects, closing with unanswered questions and research avenues."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6166986",
+  "drop": false,
+  "field": "management",
+  "role": "agent",
+  "bullets": [
+   "Thirty US technology ventures raising on Kickstarter, launched after all studied models' training cutoffs, evaluated live while outcomes were unknown through 870 pairwise comparisons.",
+   "A suite of frontier and open-weight LLMs, the best being Gemini 2.5 Pro, produced venture rankings, benchmarked against 346 experienced managers from Prolific and three MBA-trained investors.",
+   "Frontier models reached rank correlations above 0.60 with actual outcomes, Gemini 2.5 Pro reaching 0.74, versus 0.04 to 0.45 for humans; hybrid teams did not outperform the best model."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "rank correlation of forecasts against actual Kickstarter outcomes",
+  "salience": 72
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6738599",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837058",
+  "drop": false,
+  "field": "accounting",
+  "role": "agent",
+  "bullets": [
+   "Proposes a Blockchain Network Participation disclosure taxonomy of 148 input questions and 125 output elements in XBRL-JSON, prompted by the GENIUS Act stablecoin framework.",
+   "Three LLMs, Claude Sonnet 4.6, Gemini 3.1, and GPT-5, independently evaluated disclosure elements as synthetic experts, with agreement measured by Gwet's AC1 across models.",
+   "Model consensus rejected the minimized disclosure set, concluding infrastructure and MEV-conflict disclosures are non-deferrable and that fiat-reserve audits alone are insufficient for investor protection."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "inter-model Gwet's AC1 agreement, no external ground truth",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7037031",
+  "drop": false,
+  "field": "management",
+  "role": "agent",
+  "bullets": [
+   "Tourism futures foresight study for the Middle East and North Africa, applying a modified multi-AI Delphi protocol across three iterative rounds.",
+   "Five generative AI systems, ChatGPT, Gemini, DeepSeek, Copilot, and Claude, acted as synthetic expert informants to structure judgment, map uncertainty, and revise challenge categories. No ground-truth check.",
+   "Ranks climate change and extreme heat, geopolitical instability and destination-risk perception, and water scarcity as the most consequential existential risks for MENA tourism over the coming decade."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "gemini",
+   "claude",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ }
+]

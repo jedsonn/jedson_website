@@ -1,0 +1,114 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.5950714",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6206500",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Vignette-based experiment comparing belief-driven financial advice from professional advisors, financially literate peers, and a large language model; unit of observation is a recommended risky portfolio share. Sample size and geography not stated.",
+   "An unnamed LLM received repeated identical prompts to elicit portfolio recommendations, with recommendations analysed via a Bayesian hierarchical Tobit model; no validation against a human ground truth is reported.",
+   "LLM advice showed smaller variance than human advice but was highly sensitive to declared risk tolerance, and AI use could mitigate peers' discouragement of equity among younger, lower-income investors."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6332149",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6703798",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "LLM-simulated household surveys of inflation expectations, benchmarked against real-world surveys that show wide cross-individual disagreement; unit of observation is an individual respondent. Period and geography not stated.",
+   "An unnamed LLM generated survey responses that were compared to real survey averages and dispersion, and unlearning methods were applied to remove memorized training data; no accuracy statistic is reported.",
+   "LLMs matched average expectations but responses collapsed into a narrow range, behaving as a single representative agent, while unlearning widened dispersion and improved replication of experimental results."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "compared to real survey means, no figure reported",
+  "salience": 58
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6865201",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6960175",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6900601",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6895820",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ }
+]

@@ -1,0 +1,116 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7120281",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7162222",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7157742",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7127378",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual multisector framework paper covering healthcare, insurance, legal services, energy, and finance, with no empirical sample or dataset.",
+   "The authors run no model; the paper is conceptual and refers to generative AI, agentic AI, and LLMs generically without naming a family or version.",
+   "Argues the model risk management principles of meaningful challenge, conceptual soundness, and ongoing monitoring extend to non-deterministic AI and address hallucination, prompt injection, and execution drift."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7153775",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7163179",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4412788",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 70
+ },
+ {
+  "uid": "doi:10.3386/w31122",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Simulation experiments that replicate three classic behavioral economics studies from Charness and Rabin 2002, Kahneman Knetsch and Thaler 1986, and Samuelson and Zeckhauser 1988, using LLM agents as subjects.",
+   "The unnamed LLM is given endowments, information, and preferences, then its choices are simulated across scenarios; the specific model and version are not stated.",
+   "Simulated agents reproduce the original human patterns qualitatively, and scenario variations are easily generated to pilot new social science hypotheses before field testing."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "qualitative match to original experiments, no accuracy statistic",
+  "salience": 80
+ }
+]

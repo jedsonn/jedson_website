@@ -1,0 +1,113 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6972558",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7102854",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.11414v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "FinQA and TAT-QA, two question-answering benchmarks built from real corporate filings, with the unit of observation a model-generated answer to a filing question.",
+   "Linear probes on residual-stream activations of Qwen3-8B, Llama-3.1-8B and Gemma-2-9B flag confident hallucinations, benchmarked by AUROC against token log-probabilities and the model's own true or false self-assessment.",
+   "Among answers where all eight resamples agreed, 15 to 23 percent were wrong on FinQA; probes reached 0.68 to 0.77 AUROC while the best baselines fell to 0.55 to 0.63."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "llama",
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "probe AUROC against benchmark answer correctness",
+  "salience": 50
+ },
+ {
+  "uid": "arxiv:2607.11292v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7050418",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7105458",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.14818v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.17219v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

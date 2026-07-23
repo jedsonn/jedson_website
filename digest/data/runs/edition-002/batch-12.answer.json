@@ -1,0 +1,118 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7122635",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7013259",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Three phone-sales studies: a randomized field experiment reaching 1,337 customers, a second reaching 366, and an online experiment with 238 participants.",
+   "AI voice agents built on large language models (specific model not stated) placed sales calls; the design contrasts disclosed AI, undisclosed AI, and human agents rather than validating any measurement.",
+   "Disclosing the AI agent no longer reduced conversion versus nondisclosure, but AI agents still substantially underperformed human sellers on sales-process execution."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 58
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7128878",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7025538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7158720",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.20270v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5094968",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "Methodological paper for empirical economics with no single dataset, organized around two uses of text: forecasting outcomes and automating measurement of economic concepts for downstream analysis.",
+   "Large language models (families not named) read text; the framework enforces no training leakage for prediction and pairs model outputs with a small human validation sample for estimation.",
+   "Without a validation sample researchers cannot bound LLM errors, and seemingly minor choices of model or prompt can shift downstream parameter estimates dramatically."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 80
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5985277",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Firm-date pairs spanning in-sample and post-training-cutoff periods, applied to two forecasting tasks: news headlines predicting stock returns and earnings-call transcripts predicting capital expenditures.",
+   "An LLM (not named) produces the forecasts, and a date-only recall query yields a Lookahead Propensity statistic estimating whether the model already internalized the realized outcome.",
+   "Lookahead Propensity is materially positive in-sample and collapses to near zero after the cutoff, and forecast power is amplified on high-propensity pairs, flagging contamination."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 66
+ }
+]

@@ -1,0 +1,110 @@
+[
+ {
+  "uid": "arxiv:2607.10103v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7103027",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 12
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6973018",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 12
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7076438",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7090958",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7111960",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Conceptual essay with no original dataset, synthesizing mechanistic interpretability findings and labor economics studies on how workers use language models.",
+   "The essay uses no model of its own; it reframes language models as a compressed, queryable database of human knowledge written in training and read at inference.",
+   "Argues these systems distribute knowledge and close skill gaps where missing knowledge binds, leaving judgment scarce, so the intelligence framing diverts attention from governance."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 34
+ },
+ {
+  "uid": "arxiv:2607.13305v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ },
+ {
+  "uid": "arxiv:2607.12723v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 10
+ }
+]
