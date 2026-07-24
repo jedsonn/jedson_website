@@ -99,6 +99,11 @@ def resolve_by_name(existing, mailto):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--batch", type=int, default=40)
+    ap.add_argument("--resolve-names", action="store_true",
+                    help="Also resolve still-missing institutions by author-name "
+                         "search. Best-effort and slower (one OpenAlex query per "
+                         "unresolved author); off by default because same-named "
+                         "researchers can be misattributed.")
     args = ap.parse_args()
 
     index = read_jsonl(os.path.join(ROOT, "data", "index.jsonl"))
@@ -199,9 +204,9 @@ def main():
             rec["top_author"] = True
             topcount += 1
 
-    # Third pass: resolve the still-missing institutions by author name, then
-    # rebuild each record's affiliation list from the final author institutions.
-    name_inst = resolve_by_name(existing, mailto)
+    # Third pass (opt-in): resolve still-missing institutions by author name,
+    # then rebuild each record's affiliation list from the final institutions.
+    name_inst = resolve_by_name(existing, mailto) if args.resolve_names else {}
     resolved = 0
     for uid, rec in existing.items():
         for a in rec.get("authors", []):

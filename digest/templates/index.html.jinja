@@ -161,6 +161,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     <div class="fgroup">
       <span class="flabel">Scope</span>
       <div class="chips">
+        <button class="chip" type="button" id="featured-toggle" aria-pressed="false" title="Papers from widely-cited researchers and leading departments">Featured <span id="feat-count" style="opacity:.6"></span></button>
         <button class="chip" type="button" id="tech-toggle" aria-pressed="false">Include technical <span id="tech-count" style="opacity:.6"></span></button>
       </div>
     </div>
@@ -188,7 +189,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 (function(){
   var D = JSON.parse(document.getElementById("data").textContent);
   var papers = D.papers;
-  var st = {field:"all", when:"all", tech:false};
+  var st = {field:"all", when:"all", tech:false, featured:false};
 
   // running archive record: total papers classified to date
   (function(){
@@ -233,7 +234,9 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   // Technical papers are hidden by default — EXCEPT work from top-50
   // institutions / prominent authors, which always stays visible.
   function inScope(p){ return st.tech || p.audience !== "technical" || p.prestige; }
-  function match(p){ return inField(p) && inWhen(p) && inScope(p); }
+  // "Featured" narrows to papers from widely-cited researchers / leading departments.
+  function inFeatured(p){ return !st.featured || p.prestige; }
+  function match(p){ return inField(p) && inWhen(p) && inScope(p) && inFeatured(p); }
 
   function esc(s){ return String(s||"").replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/"/g,"&quot;"); }
 
@@ -348,6 +351,15 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   document.getElementById("tech-toggle").addEventListener("click", function(){
     st.tech = !st.tech;
     this.setAttribute("aria-pressed", st.tech);
+    render();
+  });
+
+  // featured toggle (off by default): prominent authors / leading departments
+  var featN = papers.filter(function(p){ return p.prestige; }).length;
+  document.getElementById("feat-count").textContent = featN;
+  document.getElementById("featured-toggle").addEventListener("click", function(){
+    st.featured = !st.featured;
+    this.setAttribute("aria-pressed", st.featured);
     render();
   });
 
