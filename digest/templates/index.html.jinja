@@ -214,11 +214,14 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   // ----- date helpers (relative to the viewer's clock) -----
   function daysAgo(n){ var d=new Date(); d.setDate(d.getDate()-n); return d.toISOString().slice(0,10); }
   var TODAY = new Date().toISOString().slice(0,10);
+  var YESTERDAY = daysAgo(1);
   var WEEK = daysAgo(6);
   function inWhen(p){
     if (st.when==="all") return true;
     var d = p.posted || "";
-    if (st.when==="today") return d === TODAY;
+    // "Today" also covers yesterday — postings lag a day and that is what
+    // readers usually expect to see under "today".
+    if (st.when==="today") return d >= YESTERDAY;
     if (st.when==="week")  return d >= WEEK;
     return true;
   }
@@ -289,10 +292,13 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 
   function render(){
     var rows = papers.filter(match);
-    // Default order: most recently posted first.
+    // Default order: most recently posted first, and within the same day the
+    // papers from top schools / prominent authors (prestige) float to the top.
     rows.sort(function(a,b){
       var pd = String(b.posted||"").localeCompare(String(a.posted||""));
       if (pd !== 0) return pd;
+      var pa = a.prestige?1:0, pb = b.prestige?1:0;
+      if (pb !== pa) return pb - pa;
       if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
       return (b.n||0)-(a.n||0);
     });

@@ -10,6 +10,7 @@ Output: data/authors.json = { uid: {authors: [{name, url, inst}], affiliations: 
 import argparse
 import json
 import os
+import re
 import time
 
 from common import CFG, ROOT, guarded_get, read_jsonl, write_json
@@ -38,6 +39,61 @@ def author_entry(a):
     elif a.get("raw_affiliation_strings"):
         inst = a["raw_affiliation_strings"][0]
     return {"name": name, "url": url, "inst": inst}
+
+
+def profile_inst(au):
+    """Best institution from an OpenAlex author profile: the last-known one, then
+    the most recent historical affiliation if last-known is empty."""
+    insts = au.get("last_known_institutions") or []
+    if insts and insts[0].get("display_name"):
+        return insts[0]["display_name"]
+    for aff in (au.get("affiliations") or []):
+        name = (aff.get("institution") or {}).get("display_name")
+        if name:
+            return name
+    return ""
+
+
+def norm_name(s):
+    return re.sub(r"[^a-z]", "", (s or "").lower())
+
+
+def resolve_by_name(existing, mailto):
+    """Authors still missing an institution are usually SSRN-deposited entities
+    whose OpenAlex profile carries no affiliation. Search OpenAlex by display
+    name and accept a canonical profile ONLY on an exact normalized-name match
+    for an established author (>= 8 works), so we never misattribute a school to
+    the wrong same-named person. Returns {normalized_name: institution}."""
+    want = {}
+    for rec in existing.values():
+        for a in rec.get("authors", []):
+            if not a.get("inst") and a.get("name"):
+                nk = norm_name(a["name"])
+                if len(nk) >= 8:  # skip initials-only / too-short names
+                    want.setdefault(nk, a["name"])
+    print("Name-resolving %d unique authors still missing an institution." % len(want))
+    out = {}
+    for i, (nk, name) in enumerate(want.items()):
+        try:
+            resp = guarded_get("https://api.openalex.org/authors", params={
+                "search": name, "per-page": 5, "mailto": mailto,
+                "select": "id,display_name,works_count,last_known_institutions,affiliations",
+            })
+            for au in resp.json().get("results", []):
+                if norm_name(au.get("display_name")) != nk:
+                    continue
+                if (au.get("works_count") or 0) < 8:
+                    continue
+                inst = profile_inst(au)
+                if inst:
+                    out[nk] = inst
+                break
+        except Exception as exc:  # noqa: BLE001
+            if i % 100 == 0:
+                print("  name-resolve error near %d: %s" % (i, str(exc)[:80]))
+        time.sleep(0.15)
+    print("Name-resolved institutions for %d authors." % len(out))
+    return out
 
 
 def main():
@@ -110,15 +166,16 @@ def main():
         try:
             resp = guarded_get("https://api.openalex.org/authors", params={
                 "filter": "openalex_id:" + "|".join(chunk), "per-page": 50,
-                "select": "id,last_known_institutions,summary_stats", "mailto": mailto,
+                "select": "id,last_known_institutions,affiliations,summary_stats",
+                "mailto": mailto,
             })
             for au in resp.json().get("results", []):
                 aid = (au.get("id") or "").rstrip("/").split("/")[-1]
                 if aid not in meta:
                     continue
-                insts = au.get("last_known_institutions") or []
-                if insts and insts[0].get("display_name"):
-                    meta[aid]["inst"] = insts[0]["display_name"]
+                inst = profile_inst(au)
+                if inst:
+                    meta[aid]["inst"] = inst
                 h = ((au.get("summary_stats") or {}).get("h_index")) or 0
                 meta[aid]["h"] = int(h)
         except Exception as exc:  # noqa: BLE001
@@ -141,6 +198,18 @@ def main():
         if top:
             rec["top_author"] = True
             topcount += 1
+
+    # Third pass: resolve the still-missing institutions by author name, then
+    # rebuild each record's affiliation list from the final author institutions.
+    name_inst = resolve_by_name(existing, mailto)
+    resolved = 0
+    for uid, rec in existing.items():
+        for a in rec.get("authors", []):
+            if not a.get("inst") and a.get("name"):
+                inst = name_inst.get(norm_name(a["name"]))
+                if inst:
+                    a["inst"] = inst
+                    resolved += 1
         affs = []
         for a in rec.get("authors", []):
             if a.get("inst") and a["inst"] not in affs:
@@ -148,8 +217,8 @@ def main():
         rec["affiliations"] = affs[:8]
 
     write_json(out_path, existing)
-    print("Wrote %d author records (%d newly enriched, %d institutions backfilled, %d with a top-researcher author)."
-          % (len(existing), got, backfilled, topcount))
+    print("Wrote %d author records (%d newly enriched, %d backfilled, %d name-resolved, %d with a top-researcher author)."
+          % (len(existing), got, backfilled, resolved, topcount))
 
 
 if __name__ == "__main__":
