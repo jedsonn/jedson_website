@@ -1,0 +1,8 @@
+# Editorial exclusions — uids omitted from the built site (duplicates, junk).
+# The index (data/index.jsonl) stays append-only; this only hides entries at build.
+# One uid per line; text after # is a comment.
+
+# Duplicate of doi:10.2139/ssrn.7053778 "Generative-AI Powered Inference"
+# (same authors, Duan & Pelger, Stanford — re-uploaded under a new SSRN id and
+# retitled). This copy also carried a placeholder 2026-01-01 date.
+doi:10.2139/ssrn.7145231

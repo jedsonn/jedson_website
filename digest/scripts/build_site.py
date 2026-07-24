@@ -108,6 +108,20 @@ def main():
     if not index:
         raise SystemExit("data/index.jsonl is empty. Nothing to build.")
 
+    # Editorial exclusions (duplicates, junk). The index stays append-only; these
+    # uids are simply not rendered. One uid per line in data/exclude.txt; # comments.
+    excl = set()
+    epath = os.path.join(ROOT, "data", "exclude.txt")
+    if os.path.exists(epath):
+        for line in open(epath, encoding="utf-8"):
+            uid = line.split("#")[0].strip()
+            if uid:
+                excl.add(uid)
+    if excl:
+        before = len(index)
+        index = [r for r in index if r.get("uid") not in excl]
+        log("Excluded %d record(s) via data/exclude.txt." % (before - len(index)))
+
     papers = [public_view(r) for r in index]
     # Stable archive number: index.jsonl is append-order (oldest first), so the
     # newest paper's number equals the running total ever classified.
