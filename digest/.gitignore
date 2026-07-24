@@ -16,3 +16,4 @@ data/runs/*/final.json
 data/runs/*/rejects.json
 data/runs/*/partitions.json
 data/runs/*/remaining_batches.json
+data/runs/*/aud/
