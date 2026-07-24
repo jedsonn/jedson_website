@@ -41,11 +41,17 @@ jobs:
           set -euo pipefail
           git config user.name "digest-bot"
           git config user.email "noreply@anthropic.com"
-          git add digest/data/authors.json digest/data/papers.json digest/index.html digest/feed.xml
+          # Stage every file the enrichment + rebuild touches. build_site.py also
+          # writes data/last-run.json; leaving it unstaged makes pull --rebase refuse.
+          git add digest/data/authors.json digest/data/papers.json \
+                  digest/data/last-run.json digest/index.html digest/feed.xml
           if git diff --cached --quiet; then
             echo "No author changes."
           else
             git commit -m "Digest: enrich author institutions and profile links (OpenAlex)"
+            # Belt and suspenders: keep the tree clean so rebase never balks.
+            git stash --include-untracked || true
             git pull --rebase origin main
+            git stash pop || true
             git push origin main
           fi
