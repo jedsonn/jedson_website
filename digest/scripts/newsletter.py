@@ -1,17 +1,21 @@
 """Render the weekly digest email from data/papers.json.
 
-Email-safe HTML: table layout, inline styles, web-safe fonts, ~600px. No
-external CSS or images, so it renders in Gmail/Outlook/Apple Mail alike.
+A lean teaser: ~5 papers, each shown as title + institutions only (no summaries),
+plus a prominent link to the dashboard. The point is to drive clicks to the page,
+where the full three-bullet summaries live.
 
-Selection: papers posted on/after --since (default 7 days back), ordered
-date desc -> US top university -> featured -> salience, capped at --top.
-Pass --sample to ignore the date window and just take the top featured papers
-(useful for previewing the template against the current index).
+Email-safe HTML: table layout, inline styles, web-safe fonts, ~600px, no images.
+
+Selection: papers posted on/after --since (default 7 days back), ranked by
+US top university -> featured (top institution / prominent author) -> salience,
+capped at --top. So the email always leads with the week's top-institution /
+highest-quality work. --sample ignores the date window (preview against the
+current index).
 
 Usage:
-  python3 scripts/newsletter.py --out email.html --top 10 --sample
-  python3 scripts/newsletter.py --out email.html --top 10 --since 2026-07-17 \
-      --date 2026-07-24 --unsub "https://www.jedsonpinto.com/digest/unsub?t=TOKEN"
+  python3 scripts/newsletter.py --out email.html --top 5 --sample
+  python3 scripts/newsletter.py --out email.html --top 5 --since 2026-07-17 \
+      --date 2026-07-24 --unsub "https://.../unsub?t=TOKEN"
 """
 import argparse
 import html
@@ -27,6 +31,7 @@ SERIF = "Georgia,'Times New Roman',serif"
 SANS = "-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,Helvetica,Arial,sans-serif"
 FIELD = {"accounting": "Accounting", "finance": "Finance",
          "economics": "Economics", "management": "Management", "other": "Other"}
+SITE = "https://www.jedsonpinto.com/digest"
 
 
 def esc(s):
@@ -34,57 +39,60 @@ def esc(s):
 
 
 def rank(p):
-    return (p.get("posted") or "", 1 if p.get("us_top") else 0,
-            1 if p.get("prestige") else 0, p.get("salience") or 0)
+    # Quality first for a 5-paper highlight: top US school, then any featured,
+    # then salience; recency only breaks ties.
+    return (1 if p.get("us_top") else 0, 1 if p.get("prestige") else 0,
+            p.get("salience") or 0, p.get("posted") or "")
 
 
-def byline(p):
+def institutions(p):
+    affs = p.get("affiliations") or []
+    if not affs:
+        return ""
+    shown = affs[:3]
+    txt = " · ".join(shown) + (" +%d more" % (len(affs) - 3) if len(affs) > 3 else "")
+    return esc(txt)
+
+
+def authors_line(p):
     det = p.get("authors_detailed") or []
     names = [a.get("name", "") for a in det] or (p.get("authors") or [])
     if not names:
         return ""
-    shown = ", ".join(names[:6]) + (", et al." if len(names) > 6 else "")
-    affs = p.get("affiliations") or []
-    tail = "  ·  " + esc(" · ".join(affs[:2])) if affs else ""
-    return esc(shown) + tail
+    return esc(", ".join(names[:3]) + (" +%d" % (len(names) - 3) if len(names) > 3 else ""))
 
 
 def paper_row(p):
-    tag = "%s&nbsp;&nbsp;·&nbsp;&nbsp;%s" % (esc(FIELD.get(p.get("field"), p.get("field"))),
-                                             esc(p.get("posted", "")))
-    star = ('<span style="color:%s;font-weight:700;">&#9733; featured</span>&nbsp;&nbsp;·&nbsp;&nbsp;'
-            % ACCENT) if p.get("prestige") else ""
-    bl = p.get("bullets") or []
-    bullets = ""
-    if len(bl) == 3:
-        bullets = "".join(
-            '<div style="font:400 13.5px/1.5 %s;color:%s;margin:3px 0;">%s</div>'
-            % (SANS, INK, esc(b)) for b in bl)
-    else:
-        bullets = ('<div style="font:italic 13px/1.5 %s;color:%s;">Metadata only — follow the link.</div>'
-                   % (SANS, INK3))
-    bl_line = byline(p)
-    byhtml = ('<div style="font:400 12.5px/1.45 %s;color:%s;margin:2px 0 9px;">%s</div>'
-              % (SANS, INK2, bl_line)) if bl_line else '<div style="height:6px;"></div>'
+    star = ('<span style="color:%s;">&#9733;</span> ' % ACCENT) if p.get("prestige") else ""
+    tag = "%s%s&nbsp;&nbsp;·&nbsp;&nbsp;%s" % (
+        star, esc(FIELD.get(p.get("field"), p.get("field"))), esc(p.get("posted", "")))
+    inst = institutions(p)
+    auth = authors_line(p)
+    meta = ""
+    if inst:
+        meta += ('<div style="font:600 12.5px/1.45 %s;color:%s;margin:5px 0 0;">%s</div>'
+                 % (SANS, ACCENT, inst))
+    if auth:
+        meta += ('<div style="font:400 12px/1.45 %s;color:%s;margin:2px 0 0;">%s</div>'
+                 % (SANS, INK3, auth))
     return (
-        '<tr><td style="padding:20px 32px;border-bottom:1px solid %s;">'
-        '<div style="font:600 10px %s;letter-spacing:1.2px;text-transform:uppercase;color:%s;">%s%s</div>'
-        '<a href="%s" style="display:block;font:700 17px/1.3 %s;color:%s;text-decoration:none;margin:7px 0 0;">%s</a>'
-        '%s%s'
+        '<tr><td style="padding:17px 32px;border-bottom:1px solid %s;">'
+        '<div style="font:600 10px %s;letter-spacing:1.2px;text-transform:uppercase;color:%s;">%s</div>'
+        '<a href="%s" style="display:block;font:400 18px/1.32 %s;color:%s;text-decoration:none;margin:6px 0 0;">%s</a>'
+        '%s'
         '</td></tr>'
-        % (RULE, SANS, INK3, star, tag,
-           esc(p.get("url", "")), SERIF, ACCENT, esc(p.get("title", "")),
-           byhtml, bullets)
+        % (RULE, SANS, INK3, tag, esc(p.get("url", "")), SERIF, ACCENT,
+           esc(p.get("title", "")), meta)
     )
 
 
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--out", required=True)
-    ap.add_argument("--top", type=int, default=10)
+    ap.add_argument("--top", type=int, default=5)
     ap.add_argument("--since", default=None, help="ISO date; default 7 days before --date")
     ap.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
-    ap.add_argument("--sample", action="store_true", help="ignore date window; take top featured")
+    ap.add_argument("--sample", action="store_true", help="ignore date window; preview")
     ap.add_argument("--unsub", default="{{UNSUBSCRIBE_URL}}")
     args = ap.parse_args()
 
@@ -110,15 +118,17 @@ def main():
 <table role="presentation" width="100%%" cellpadding="0" cellspacing="0" style="background:#eceef1;">
 <tr><td align="center" style="padding:24px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#ffffff;border:1px solid %(rule)s;border-radius:12px;overflow:hidden;">
-  <tr><td style="padding:28px 32px 18px;border-bottom:2px solid %(ink)s;">
+  <tr><td style="padding:28px 32px 16px;border-bottom:2px solid %(ink)s;">
     <div style="font:600 11px %(sans)s;letter-spacing:2px;text-transform:uppercase;color:%(accent)s;">Weekly digest &nbsp;·&nbsp; %(date)s</div>
     <div style="font:400 27px/1.05 %(serif)s;color:%(ink)s;margin:8px 0 0;">AI Business Research</div>
-    <div style="font:400 13px/1.5 %(sans)s;color:%(ink2)s;margin:6px 0 0;">The week's new work using or studying AI and large language models in accounting, finance, and economics.</div>
+    <div style="font:400 13px/1.5 %(sans)s;color:%(ink2)s;margin:6px 0 0;">A few of this week's standout new papers using AI and large language models in accounting, finance, and economics &mdash; open the dashboard for the full set and the summaries.</div>
   </td></tr>
   %(rows)s
-  <tr><td style="padding:22px 32px;background:%(paper)s;">
-    <a href="https://www.jedsonpinto.com/digest" style="font:600 13px %(sans)s;color:%(accent)s;text-decoration:none;">See all %(total)s papers on the dashboard &rarr;</a>
-    <div style="font:400 11.5px/1.6 %(sans)s;color:%(ink3)s;margin-top:14px;">
+  <tr><td align="center" style="padding:24px 32px 26px;">
+    <a href="%(site)s" style="display:inline-block;background:%(accent)s;color:#ffffff;font:600 14px %(sans)s;text-decoration:none;padding:13px 30px;border-radius:8px;">Read the summaries &amp; browse all %(total)s papers &rarr;</a>
+  </td></tr>
+  <tr><td style="padding:18px 32px 22px;background:%(paper)s;border-top:1px solid %(rule)s;">
+    <div style="font:400 11.5px/1.6 %(sans)s;color:%(ink3)s;">
       You are receiving this because you subscribed at jedsonpinto.com/digest.<br>
       <a href="%(unsub)s" style="color:%(ink3)s;text-decoration:underline;">Unsubscribe</a> &nbsp;·&nbsp; Curated by Jedson Pinto, UT Dallas. Independent; not affiliated with SSRN, arXiv, or any publisher.
     </div>
@@ -127,7 +137,7 @@ def main():
 </td></tr></table>
 </body></html>""" % {
         "rule": RULE, "ink": INK, "ink2": INK2, "ink3": INK3, "accent": ACCENT,
-        "paper": PAPER, "sans": SANS, "serif": SERIF,
+        "paper": PAPER, "sans": SANS, "serif": SERIF, "site": SITE,
         "date": esc(nice_date), "rows": rows, "total": total, "unsub": esc(args.unsub),
     }
 
