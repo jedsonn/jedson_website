@@ -243,8 +243,8 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
 
   <!-- =============== PANEL 2 (first) =============== -->
   <section class="panel on" id="p2" role="tabpanel" aria-labelledby="t2">
-    <h2>The anatomy of an empirical paper</h2>
-    <p class="lede">Start here. Every empirical paper lives in two worlds at once. On top is the conceptual world, where your ideas and your theory sit. Underneath is the empirical world, where the data you can actually get sits. Your paper is only as good as the four arrows that connect them. Each arrow is a promise, and each one breaks in its own way. Click any arrow or box to see what it promises and what breaks it.</p>
+    <h2>The Libby boxes</h2>
+    <p class="lede">Start here. The Libby boxes (Libby, Bloomfield and Nelson, 2002) lay out every empirical paper as two worlds at once. On top is the conceptual world, where your ideas and your theory sit. Underneath is the empirical world, where the data you can actually get sits. Your paper is only as good as the four arrows that connect them. Each arrow is a promise, and each one breaks in its own way. Click any arrow or box to see what it promises and what breaks it.</p>
 
     <div class="libby">
       <div class="plate-box">
@@ -295,12 +295,12 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
             <text x="526" y="326" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="16" font-weight="600" fill="#16212B">The effect, as a variable</text>
             <text x="526" y="348" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">cost of equity estimate</text>
           </g>
-          <!-- box 5 -->
+          <!-- box 5: everything else (confounders) feeds the measured effect -->
           <g class="hot" data-k="b5" tabindex="0">
-            <rect x="292" y="404" width="136" height="42" fill="#EAE9E1" stroke="#4B5862" stroke-dasharray="4 3"/>
-            <text x="360" y="430" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="14" fill="#16212B">Everything else</text>
+            <rect x="458" y="406" width="136" height="40" fill="#EAE9E1" stroke="#4B5862" stroke-dasharray="4 3"/>
+            <text x="526" y="431" text-anchor="middle" font-family="Spectral, Georgia, serif" font-size="14" fill="#16212B">Everything else</text>
           </g>
-          <line x1="360" y1="404" x2="360" y2="348" stroke="#4B5862" marker-end="url(#arl)"/>
+          <line x1="526" y1="406" x2="526" y2="374" stroke="#4B5862" marker-end="url(#arl)"/>
 
           <!-- link 1 -->
           <line x1="300" y1="115" x2="412" y2="115" stroke="#16212B" stroke-width="1.4" marker-end="url(#ar)"/>
@@ -328,7 +328,7 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
           </g>
 
           <text x="356" y="88" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#4B5862">WHAT YOU EXPECT</text>
-          <text x="356" y="372" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#4B5862">WHAT YOU ACTUALLY TEST</text>
+          <text x="300" y="392" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" letter-spacing="1.2" fill="#4B5862">WHAT YOU ACTUALLY TEST</text>
         </svg>
       </div>
 
@@ -349,7 +349,7 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
       </aside>
     </div>
 
-    <p class="note"><b>Most papers defend one arrow and assume the rest.</b> Empirical accounting works hard on arrow 4 and waves at arrows 2 and 3. Experimental work does the opposite. When you write a referee report, say which arrow the paper defended and which it took for granted.</p>
+    <p class="note"><b>A paper usually defends one arrow carefully and leans on the others.</b> Archival designs tend to concentrate on arrow 4; experiments tend to concentrate on arrows 2 and 3. When you write a referee report, say which arrow the paper defended and which it took for granted.</p>
   </section>
 
   <!-- =============== PANEL 1 (second) =============== -->
@@ -407,7 +407,7 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
   <!-- =============== PANEL 6 =============== -->
   <section class="panel" id="p6" role="tabpanel" aria-labelledby="t6">
     <h2>Validating a measure</h2>
-    <p class="lede">Arrows 2 and 3 are where most accounting papers are weakest. Showing that your variable measures what you say is not one test. It is six, and they only work if the measure is stable to begin with. This applies to an index you build by hand, a score from text, or anything a language model produces.</p>
+    <p class="lede">Arrows 2 and 3 are about construct validity — whether your variables measure the ideas you named. Showing that a variable measures what you say is not one test. It is six, and they only work if the measure is stable to begin with. This applies to an index you build by hand, a score from text, or anything a language model produces.</p>
 
     <div class="plate-box" style="margin:0 0 24px">
       <svg viewBox="0 0 720 330" role="img" aria-label="Six measure validation checks rising above a reliability floor">
@@ -427,14 +427,14 @@ footer{margin:44px 0 0;padding-top:14px;border-top:1px solid var(--rule);font-fa
           <text x="90" y="316">CONTENT</text><text x="196" y="316">FACE</text><text x="302" y="316">CONVERGENT</text>
           <text x="408" y="316">DISCRIMINANT</text><text x="514" y="316">CRITERION</text><text x="620" y="316">NOMOLOGICAL</text>
         </g>
-        <text x="40" y="24" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">The evidence gets harder to fake as you move right. Most papers stop after the third one.</text>
+        <text x="40" y="24" font-family="Spectral, Georgia, serif" font-size="13" font-style="italic" fill="#4B5862">Each check to the right asks more of the measure than the last.</text>
       </svg>
     </div>
 
     <div class="grid" id="mgrid"></div>
 
     <p class="note"><b>Reliability is a floor, not a check.</b> A measure that gives a different answer on a rerun cannot be valid for anything. For hand collected data that means inter coder agreement. For a measure produced by a language model it means the same thing under a different seed, a different prompt wording, and a different model version. Report it before you report a correlation.</p>
-    <p class="note"><b>The check that gets skipped.</b> Discriminant validity. Convergent evidence is easy, because in accounting almost every firm level measure correlates with size, and a proxy that correlates with the accepted proxy has cleared a low bar. The harder question is what your measure should be unrelated to, and whether it is. Name that variable before you build the measure.</p>
+    <p class="note"><b>The check that is easy to overlook.</b> Discriminant validity. Convergent evidence is easy to come by, because in accounting almost every firm level measure correlates with size, so a proxy that tracks the accepted proxy has not shown much. The harder question is what your measure should be unrelated to, and whether it is. Name that variable before you build the measure.</p>
   </section>
 
   <!-- =============== PANEL 3 =============== -->
@@ -702,7 +702,7 @@ render();
 const D=[
  ['One group, post only',[0,0,0,0,1,0,0,2],'Nothing is held fixed. Any difference in the outcome could be the treatment, the year, the trend, or the kind of firm that ends up treated. Useful for describing, never for causal claims.'],
  ['One group, pre and post',[0,0,0,0,1,0,1,2],'The pre period rules out fixed differences between firms and nothing else. History and maturation are wide open, because the comparison is with the same firms at a different time.'],
- ['Cross section with controls',[1,1,0,1,1,0,0,2],'Controls handle what you can name and measure. Selection and omitted variables are exactly the things you cannot. This is the design most referees reject on identification grounds.'],
+ ['Cross section with controls',[1,1,0,1,1,0,0,2],'Controls handle what you can name and measure. Selection and omitted variables are exactly the things you cannot. This is the design referees most often push on for identification.'],
  ['Nonequivalent groups, DiD',[2,1,1,1,1,1,1,2],'Common shocks are differenced out, which is the whole point. What remains is anything that hit the treated group alone, including the reason they were treated.'],
  ['Matched DiD with pre trends',[2,2,1,1,1,1,1,1],'Pre trend evidence turns parallel trends from an assumption into something testable. It still cannot rule out a shock that coincides with treatment for the treated group only.'],
  ['Staggered DiD, robust estimator',[2,2,1,1,1,1,1,2],'Heterogeneity robust estimators fix the weighting problem in two way fixed effects. They do not fix selection into adoption timing, which is usually the real issue.'],
