@@ -43,6 +43,22 @@ TOP_INSTITUTIONS = [
     "london school of economics", "bocconi", "university of mannheim",
 ]
 
+# US subset of the above. A featured paper from one of these sorts ABOVE other
+# featured papers (international schools, highly-cited authors) within a date.
+US_TOP = [
+    "harvard", "stanford", "massachusetts institute of technology", "mit sloan",
+    "university of chicago", "university of pennsylvania", "wharton", "columbia",
+    "new york university", "berkeley", "northwestern", "yale", "duke university",
+    "university of michigan", "los angeles", "cornell", "carnegie mellon",
+    "university of texas at dallas", "university of texas at austin", "ohio state",
+    "indiana university", "university of washington", "university of southern california",
+    "dartmouth", "university of north carolina", "emory", "georgetown",
+    "university of rochester", "washington university in st", "university of illinois",
+    "boston college", "university of minnesota", "michigan state", "arizona state",
+    "university of iowa", "university of wisconsin", "princeton",
+    "california institute of technology", "university of maryland",
+]
+
 PUBLIC_FIELDS = [
     "uid", "doi", "arxiv_id", "title", "authors", "affiliations", "posted",
     "added", "source_label", "url", "alt_urls", "field", "role", "bullets",
@@ -115,6 +131,8 @@ def main():
             affs = " ; ".join(p.get("affiliations") or []).lower()
             if affs and any(t in affs for t in TOP_INSTITUTIONS):
                 p["prestige"] = True  # a top-50 institution
+            if affs and any(t in affs for t in US_TOP):
+                p["us_top"] = True  # a US top university — sorts to the very top
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)

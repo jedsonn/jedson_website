@@ -444,7 +444,8 @@
       "affiliations": [
         "Arizona State University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7036359",
@@ -678,7 +679,8 @@
         "University of Cambridge",
         "Northwestern University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7031578",
@@ -1866,7 +1868,8 @@
       "affiliations": [
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.17952v1",
@@ -1950,7 +1953,8 @@
         "Sinopec (China)",
         "University of Michigan"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7123240",
@@ -2676,7 +2680,8 @@
         "University of Chicago",
         "Mila - Quebec Artificial Intelligence Institute"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.17447v1",
@@ -2960,7 +2965,8 @@
         "Shandong University of Technology",
         "Massachusetts Institute of Technology"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7017778",
@@ -3023,7 +3029,8 @@
         "Carnegie Mellon University Africa",
         "Utrecht University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.17122v1",
@@ -3497,7 +3504,8 @@
         "Shandong University of Technology",
         "Massachusetts Institute of Technology"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6985126",
@@ -3693,7 +3701,8 @@
         "Emory University",
         "Bowdoin College"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6990198",
@@ -4096,7 +4105,8 @@
       "affiliations": [
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6993619",
@@ -4294,7 +4304,8 @@
       "affiliations": [
         "University of California, Los Angeles"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6976098",
@@ -5097,7 +5108,8 @@
         "Government of the District of Columbia",
         "Oregon State University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.13998v1",
@@ -5699,7 +5711,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6962978",
@@ -5743,7 +5756,8 @@
         "University of Oregon",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7116980",
@@ -6540,7 +6554,8 @@
         "University of Virginia",
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6951718",
@@ -6627,7 +6642,8 @@
         "Massachusetts Institute of Technology",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6976819",
@@ -7624,7 +7640,8 @@
         "Google (United States)",
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6936318",
@@ -8755,7 +8772,8 @@
       "affiliations": [
         "Dartmouth Advisory Partners, 2261 Lakeshore Road East, 1305, Toronto, Ontario M8V 3X1, Canada"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.08920v1",
@@ -9000,7 +9018,8 @@
         "KU Leuven",
         "Utrecht University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6983958",
@@ -9385,7 +9404,8 @@
         "Columbia University",
         "Meta"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7059539",
@@ -9484,7 +9504,8 @@
       "affiliations": [
         "Massachusetts Institute of Technology"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6927858",
@@ -9563,7 +9584,8 @@
       "affiliations": [
         "University of Maryland, College Park"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6781380",
@@ -9662,7 +9684,8 @@
         "Columbia University",
         "Peking University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7017118",
@@ -10032,7 +10055,8 @@
       "affiliations": [
         "Stanford University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6970578",
@@ -10337,7 +10361,8 @@
       "affiliations": [
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7072890",
@@ -10607,7 +10632,8 @@
       "affiliations": [
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6919480",
@@ -10886,7 +10912,8 @@
       "affiliations": [
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7053519",
@@ -11218,7 +11245,8 @@
       "affiliations": [
         "Stanford Medicine"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.03516v1",
@@ -12747,7 +12775,8 @@
         "California University of Pennsylvania",
         "Institute for Forecasting of the Slovak Academy of Sciences"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.29955v1",
@@ -12865,7 +12894,8 @@
         "McGovern Institute for Brain Research",
         "Kurgan State University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.30583v2",
@@ -12920,7 +12950,8 @@
         "Yale University",
         "University of Rochester"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6894862",
@@ -12964,7 +12995,8 @@
         "University of Washington",
         "University of North Carolina at Chapel Hill"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6835301",
@@ -13234,7 +13266,8 @@
         "University of Kuala Lumpur",
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7021144",
@@ -13512,7 +13545,8 @@
       "affiliations": [
         "Harvard University Press"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.29771v1",
@@ -14498,7 +14532,8 @@
       "affiliations": [
         "Georgetown University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6893379",
@@ -15450,7 +15485,8 @@
         "Central South University of Forestry and Technology",
         "Zhejiang Chinese Medical University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6993643",
@@ -15600,7 +15636,8 @@
         "Tsinghua University",
         "Boston College"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6895958",
@@ -15851,7 +15888,8 @@
         "University of Pennsylvania",
         "Duke University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6986775",
@@ -15895,7 +15933,8 @@
         "Duke University",
         "China University of Political Science and Law"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2607.16229v1",
@@ -16206,7 +16245,8 @@
         "University of Rochester",
         "University of Connecticut"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6989759",
@@ -16371,7 +16411,8 @@
         "University of Rochester",
         "University of Illinois Urbana-Champaign"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.26432v1",
@@ -16433,7 +16474,8 @@
       "affiliations": [
         "University of Illinois Urbana-Champaign"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.26350v1",
@@ -17359,7 +17401,8 @@
         "Cornell University",
         "National Bureau of Economic Research"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6869664",
@@ -17396,7 +17439,8 @@
       "affiliations": [
         "FHNW University of Applied Sciences and Arts Northwestern Switzerland"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.22797v1",
@@ -18519,7 +18563,8 @@
         "Carnegie Mellon University",
         "Professional Analytical and Consulting Services (United States)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6853581",
@@ -18804,7 +18849,8 @@
         "Nanjing Audit University",
         "Singapore Management University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.17383v1",
@@ -19016,7 +19062,8 @@
         "University of Chicago",
         "Woodlawn School"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6849539",
@@ -19725,7 +19772,8 @@
         "University of Southern California",
         "Cheung Kong Graduate School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.15031v2",
@@ -19998,7 +20046,8 @@
         "Chicago Kent College of Law",
         "Gleason (United States)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6927344",
@@ -20575,7 +20624,8 @@
       "affiliations": [
         "University of Maryland - Robert H. Smith School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6913339",
@@ -20953,7 +21003,8 @@
         "North West Agriculture and Forestry University",
         "University of Michigan–Dearborn"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6834298",
@@ -21914,7 +21965,8 @@
       "affiliations": [
         "The University of Texas at Dallas"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6901066",
@@ -22095,7 +22147,8 @@
         "University of California, Berkeley",
         "University of Minnesota"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6891398",
@@ -22947,7 +23000,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6864181",
@@ -22991,7 +23045,8 @@
         "University of Chicago",
         "Harvard University Press"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6878994",
@@ -23091,7 +23146,8 @@
         "Data & Society Research Institute",
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6879985",
@@ -23705,7 +23761,8 @@
         "University of Rochester",
         "Jiangsu University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6815500",
@@ -24705,7 +24762,8 @@
         "Rutgers, The State University of New Jersey",
         "Harvard Business School"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6864440",
@@ -25312,7 +25370,8 @@
         "Florida State University",
         "Xinjiang Academy of Agricultural Sciences"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2606.11238v2",
@@ -27505,7 +27564,8 @@
         "Alibaba Group (United States)",
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6784680",
@@ -27620,7 +27680,8 @@
         "Nanjing University of Science and Technology",
         "BI Norwegian Business School"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6782581",
@@ -27984,7 +28045,8 @@
         "Shanghai University of Finance and Economics",
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6811763",
@@ -29108,7 +29170,8 @@
       "affiliations": [
         "Carnegie Mellon University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6763360",
@@ -29231,7 +29294,8 @@
       "affiliations": [
         "Massachusetts Institute of Technology"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6786518",
@@ -29550,7 +29614,8 @@
         "California State University, Northridge",
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6805250",
@@ -29936,7 +30001,8 @@
         "University of North Carolina at Chapel Hill",
         "IZA - Institute of Labor Economics"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6800339",
@@ -30034,7 +30100,8 @@
         "Tel Aviv University",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6682038",
@@ -30122,7 +30189,8 @@
       "affiliations": [
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6797298",
@@ -31073,7 +31141,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "arxiv:2605.16699v1",
@@ -31684,7 +31753,8 @@
         "Washington State University",
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6734723",
@@ -31738,7 +31808,8 @@
         "BI Norwegian Business School",
         "University of North Carolina at Chapel Hill"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6752298",
@@ -32168,7 +32239,8 @@
       "affiliations": [
         "University of Maryland, College Park"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6712540",
@@ -32269,7 +32341,8 @@
         "Dartmouth College",
         "Royal Bank of Canada"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6695678",
@@ -32313,7 +32386,8 @@
         "Harvard University",
         "Wilfrid Laurier University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6676238",
@@ -32965,7 +33039,8 @@
         "University of Chicago",
         "University Surgical Associates"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6746900",
@@ -33294,7 +33369,8 @@
       "affiliations": [
         "Harvard University Press"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6742119",
@@ -34345,7 +34421,8 @@
         "European Central Bank",
         "Centre for Studies in Economics and Finance"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6479841",
@@ -35456,7 +35533,8 @@
       "affiliations": [
         "Stanford Graduate School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6713089",
@@ -35736,7 +35814,8 @@
         "Zhejiang University",
         "University of Rochester"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6714178",
@@ -36072,7 +36151,8 @@
         "Michigan State University",
         "University of California, Berkeley"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6614321",
@@ -36109,7 +36189,8 @@
       "affiliations": [
         "University of Illinois Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6617798",
@@ -36389,7 +36470,8 @@
       "affiliations": [
         "University of California, Berkeley"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6709360",
@@ -36623,7 +36705,8 @@
         "Washington University in Saint Louis, John M. Olin Business School",
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6598618",
@@ -37582,7 +37665,8 @@
         "Institute for the Future",
         "University of British Columbia"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6682498",
@@ -37639,7 +37723,8 @@
         "Georgia State University",
         "Rutgers, The State University of New Jersey"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6690839",
@@ -38336,7 +38421,8 @@
       "affiliations": [
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6555282",
@@ -38668,7 +38754,8 @@
         "Korea Development Institute",
         "Max Planck Institute for Security and Privacy"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6591698",
@@ -39103,7 +39190,8 @@
         "Northwestern University - School of Education and Social Policy",
         "American University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6666660",
@@ -39312,7 +39400,8 @@
         "University of Southern California",
         "Tel Aviv University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6670582",
@@ -40986,7 +41075,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6644299",
@@ -41366,7 +41456,8 @@
       "affiliations": [
         "Northwestern University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6415040",
@@ -41587,7 +41678,8 @@
         "Beijing Jiaotong University",
         "University of Illinois Urbana-Champaign"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6640618",
@@ -42386,7 +42478,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6367978",
@@ -42587,7 +42680,8 @@
         "The University of Texas at Dallas",
         "Supply Chain Management Department - W.P.Carey School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6545958",
@@ -42624,7 +42718,8 @@
       "affiliations": [
         "Northwestern University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6455039",
@@ -42793,7 +42888,8 @@
         "University of Southern California",
         "PricewaterhouseCoopers (South Korea)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6419378",
@@ -43013,7 +43109,8 @@
         "Federal Reserve",
         "Texas A&M University – San Antonio"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6480858",
@@ -43236,7 +43333,8 @@
       "affiliations": [
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6240278",
@@ -43428,7 +43526,8 @@
       "affiliations": [
         "The University of Texas at Dallas"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6487478",
@@ -43466,7 +43565,8 @@
       "affiliations": [
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6426761",
@@ -43576,7 +43676,8 @@
         "The University of Melbourne",
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6423358",
@@ -43639,7 +43740,8 @@
         "California University of Pennsylvania",
         "National Taiwan University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6479459",
@@ -43696,7 +43798,8 @@
         "Harvard University",
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6474601",
@@ -43745,7 +43848,8 @@
         "National Bureau of Economic Research",
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6391618",
@@ -44066,7 +44170,8 @@
       "affiliations": [
         "Cornell University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6381458",
@@ -44103,7 +44208,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6362299",
@@ -44227,7 +44333,8 @@
         "California University of Pennsylvania",
         "Drexel University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6310740",
@@ -44451,7 +44558,8 @@
         "State University of New York",
         "University of Illinois Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6293738",
@@ -44496,7 +44604,8 @@
         "Brigham Young University",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6210099",
@@ -44653,7 +44762,8 @@
         "NYU Stern School of Business",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6204619",
@@ -44707,7 +44817,8 @@
         "Emory University",
         "Lancaster University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6276278",
@@ -44775,7 +44886,8 @@
         "University of International Business and Economics",
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6217459",
@@ -44913,7 +45025,8 @@
       "affiliations": [
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6240158",
@@ -44959,7 +45072,8 @@
       "affiliations": [
         "University of Illinois Urbana-Champaign"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6119646",
@@ -45047,7 +45161,8 @@
         "New York University",
         "Indiana University Bloomington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6253818",
@@ -45134,7 +45249,8 @@
         "University of California, Berkeley",
         "Vrije Universiteit Amsterdam"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6244621",
@@ -45171,7 +45287,8 @@
       "affiliations": [
         "Indiana University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6300040",
@@ -45302,7 +45419,8 @@
       "affiliations": [
         "Arizona State University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6311499",
@@ -45582,7 +45700,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6134446",
@@ -45702,7 +45821,8 @@
         "Harvard University Press",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5985277",
@@ -45853,7 +45973,8 @@
         "FishBase Information and Research Group",
         "Université de Montréal"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6001414",
@@ -46078,7 +46199,8 @@
         "George Mason University",
         "University of South Florida"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7145231",
@@ -46122,7 +46244,8 @@
       "affiliations": [
         "Stanford University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7037798",
@@ -46690,7 +46813,8 @@
         "Dartmouth College",
         "Princeton University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5824422",
@@ -46843,7 +46967,8 @@
         "University of Maryland - Robert H. Smith School of Business",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5873823",
@@ -46917,7 +47042,8 @@
         "University of Pennsylvania",
         "Tsinghua University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5666991",
@@ -46975,7 +47101,8 @@
         "Data Assurance and Communication Security",
         "San Diego State University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5875406",
@@ -47268,7 +47395,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5702344",
@@ -47474,7 +47602,8 @@
         "Anhui University",
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5566718",
@@ -47684,7 +47813,8 @@
         "Harvard University Press",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5440116",
@@ -47731,7 +47861,8 @@
         "Harvard University",
         "Hong Kong Polytechnic University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5406332",
@@ -47970,7 +48101,8 @@
         "Microsoft Research (United Kingdom)",
         "Microsoft (Finland)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5361703",
@@ -48038,7 +48170,8 @@
       "affiliations": [
         "Yale University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5318992",
@@ -48266,7 +48399,8 @@
         "University of Chicago",
         "University of Copenhagen"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5263803",
@@ -48487,7 +48621,8 @@
         "Columbia University",
         "Yeshiva University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5247196",
@@ -48585,7 +48720,8 @@
         "Massachusetts Institute of Technology",
         "MIT Sloan School of Management"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5223637",
@@ -48703,7 +48839,8 @@
       "affiliations": [
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5217340",
@@ -48819,7 +48956,8 @@
         "University of Chicago",
         "University of Copenhagen"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5143165",
@@ -48895,7 +49033,8 @@
         "National Bureau of Economic Research",
         "Washington University in St. Louis"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5187344",
@@ -48987,7 +49126,8 @@
         "World Bank",
         "Clemson University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5176089",
@@ -49034,7 +49174,8 @@
         "Independent  - affiliation not provided to SSRN",
         "yale"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5189069",
@@ -49153,7 +49294,8 @@
         "New Jersey Institute of Technology",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5166656",
@@ -49248,7 +49390,8 @@
         "National University of Singapore",
         "Renmin University of China"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5133400",
@@ -49432,7 +49575,8 @@
         "Massachusetts Institute of Technology",
         "University of Warwick"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5050951",
@@ -49479,7 +49623,8 @@
         "McGill University",
         "Dartmouth College"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5051800",
@@ -49535,7 +49680,8 @@
         "Reichman University",
         "Stanford Graduate School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5023563",
@@ -49653,7 +49799,8 @@
         "University of Chicago",
         "Massachusetts Institute of Technology"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5057769",
@@ -49700,7 +49847,8 @@
         "Washington University in St. Louis",
         "Supply Chain Management Department - W.P.Carey School of Business"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5053915",
@@ -49751,7 +49899,8 @@
       "affiliations": [
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5004249",
@@ -49797,7 +49946,8 @@
         "University of British Columbia",
         "Cheung Kong Graduate School of Business (New York)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5040309",
@@ -49843,7 +49993,8 @@
         "Indiana University",
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5053905",
@@ -49913,7 +50064,8 @@
         "Indiana University",
         "Emory University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5053346",
@@ -49952,7 +50104,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4979501",
@@ -49992,7 +50145,8 @@
         "University of Virginia",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4988760",
@@ -50041,7 +50195,8 @@
       "affiliations": [
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4986017",
@@ -50140,7 +50295,8 @@
       "affiliations": [
         "University of Pennsylvania"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4950340",
@@ -50247,7 +50403,8 @@
         "University of California, Berkeley",
         "National Bureau of Economic Research"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4979155",
@@ -50422,7 +50579,8 @@
         "Mitchell E. Daniels, Jr School of Business, Purdue University",
         "Baruch College"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4932769",
@@ -50794,7 +50952,8 @@
         "Michigan State University",
         "Shanghai Jiao Tong University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4848956",
@@ -50934,7 +51093,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4782875",
@@ -51026,7 +51186,8 @@
       "affiliations": [
         "Carnegie Mellon University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4799209",
@@ -51277,7 +51438,8 @@
         "University of Pennsylvania",
         "ResearchWorks (United States)"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4746770",
@@ -51370,7 +51532,8 @@
         "Tel Aviv University",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4731283",
@@ -51461,7 +51624,8 @@
         "Massachusetts Institute of Technology",
         "MIT Computer Science and Artificial Intelligence Laboratory"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4705130",
@@ -51494,7 +51658,8 @@
       "affiliations": [
         "The University of Texas at Austin"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4692960",
@@ -51644,7 +51809,8 @@
         "Wisconsin School of Professional Psychology",
         "University of Wisconsin–Madison"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4680203",
@@ -51775,7 +51941,8 @@
       "affiliations": [
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4665876",
@@ -51886,7 +52053,8 @@
         "Washington University in St. Louis",
         "Tsinghua University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4659476",
@@ -51919,7 +52087,8 @@
       "affiliations": [
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4650172",
@@ -51958,7 +52127,8 @@
       "affiliations": [
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4595896",
@@ -52056,7 +52226,8 @@
       "affiliations": [
         "University of Southern California"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4603227",
@@ -52213,7 +52384,8 @@
         "University of Bath",
         "Tilburg University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4584928",
@@ -52439,7 +52611,8 @@
       "affiliations": [
         "University of Illinois Urbana-Champaign"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4526071",
@@ -52493,7 +52666,8 @@
         "University of Pennsylvania",
         "William P. Wharton Trust"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4527336",
@@ -52540,7 +52714,8 @@
         "Washington University in Saint Louis, John M. Olin Business School, Students",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4519583",
@@ -52749,7 +52924,8 @@
         "Columbia University",
         "New York University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4489831",
@@ -52799,7 +52975,8 @@
         "New York Foundation",
         "Columbia University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4480947",
@@ -52881,7 +53058,8 @@
       "affiliations": [
         "Stanford University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4452670",
@@ -52936,7 +53114,8 @@
         "Washington University in St. Louis",
         "National University of Singapore"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4464002",
@@ -52997,7 +53176,8 @@
         "Stevens Institute of Technology",
         "University of California, Los Angeles"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4458613",
@@ -53239,7 +53419,8 @@
         "University of Rochester",
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4437679",
@@ -53477,7 +53658,8 @@
       "affiliations": [
         "University of Washington"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4425527",
@@ -53525,7 +53707,8 @@
       "affiliations": [
         "University of Chicago"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4416159",
@@ -53792,7 +53975,8 @@
         "Microsoft (United States)",
         "Harvard University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4390529",
@@ -53963,7 +54147,8 @@
         "Virginia Tech",
         "The University of Melbourne"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4351817",
@@ -54040,7 +54225,8 @@
       "affiliations": [
         "Indiana University"
       ],
-      "prestige": true
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.4345921",
