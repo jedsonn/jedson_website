@@ -1,5 +1,5 @@
 {
-  "generated": "2026-07-23",
+  "generated": "2026-07-24",
   "edition": 2,
   "count": 71,
   "papers": [
@@ -2069,7 +2069,8 @@
       "affiliations": [
         "National Bureau of Economic Research",
         "Georgia State University"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6837058",
@@ -3390,7 +3391,8 @@
       ],
       "affiliations": [
         "National Bureau of Economic Research"
-      ]
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.4395751",

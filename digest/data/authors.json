@@ -26,7 +26,8 @@
       "Massachusetts Institute of Technology",
       "Microsoft Research (United Kingdom)",
       "Microsoft (Finland)"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.5094968": {
     "authors": [
@@ -50,7 +51,8 @@
       "Public Policy Institute of California",
       "University of Chicago",
       "Massachusetts Institute of Technology"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.5287110": {
     "authors": [
@@ -361,7 +363,8 @@
       "Carnegie Mellon University Africa",
       "KU Leuven",
       "Utrecht University"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.6931398": {
     "authors": [
@@ -798,7 +801,8 @@
     ],
     "affiliations": [
       "National Bureau of Economic Research"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.4395751": {
     "authors": [
@@ -1025,7 +1029,8 @@
       "Carnegie Mellon University",
       "Nanjing Audit University",
       "Singapore Management University"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.6703798": {
     "authors": [
@@ -1066,7 +1071,8 @@
     "affiliations": [
       "National Bureau of Economic Research",
       "Georgia State University"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.6992061": {
     "authors": [
@@ -1419,7 +1425,8 @@
     "affiliations": [
       "Carnegie Mellon University Africa",
       "Utrecht University"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.7147559": {
     "authors": [
