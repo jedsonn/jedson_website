@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6763918",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6761960",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6763583",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Two studies of human-GenAI ideation: a controlled simulation and a field study using real ideation conversations from a global retail company.",
+      "GenAI acts as an ideation collaborator; a computational framework traces idea agency and process agency across conversations. The specific model is not stated and no accuracy check is reported.",
+      "Process agency shapes human-GenAI interaction independently of idea agency, and four distinct innovation dynamics emerge from combinations of idea and process agency."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6800887",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6806718",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6797281",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper, fifth in a series on human-AI hybrid organizations; no empirical sample, with computational demonstration rather than field data.",
+      "No language model is used or named; AI agents are assumed to execute routine work, and the paper defines Human Alignment Value to replace man-hours as the contribution unit.",
+      "Derives a crossover threshold above which alignment-value governance outperforms man-hours governance on organizational fitness, and argues man-hours accounting incentivises pathology beyond that threshold."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6767278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6806499",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "Case application to public road-infrastructure contracts for one state road in Ceara, Brazil; the corpus held 117 documents and 3,121 retrievable chunks.",
+      "A retrieval-augmented generation pipeline combines hybrid lexical and semantic retrieval with structured answer generation; the model is not named and it is evaluated with RAGAS metrics.",
+      "On the Portuguese benchmark the system reached context precision 0.87 and recall 0.98 but factual correctness of only 0.57, suggesting human-supervised use rather than autonomous audit."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "RAGAS metrics on structured Portuguese benchmark",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6766758",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Comparative study of rural entrepreneurship in India, China, and Southeast Asia, drawing on World Bank, TRAI, Alibaba Research Institute, and ASEAN reports.",
+      "No model is run by the researchers; generative AI and voice-based AI agents are theorised as an AI Compression mechanism that collapses the digital capability layer. Model not stated.",
+      "Argues the binding constraint is the capability-to-commerce transition rather than connectivity, and that AI compression may enable a direct connectivity-to-commerce path for rural entrepreneurs."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6770624",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual research note with no empirical sample, positioning the Living Enterprise framework within organizational design theory alongside Mintzberg, Galbraith, and Laloux.",
+      "No model is used or named; AI agents are the premise, assumed to perform most operational work while human judgment concentrates at named coherence points.",
+      "Extends the organizational design canon for AI-heavy firms, uses the Spotify Model as a counter-case, and names four conditions under which the framework would fail."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6814922",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6775598",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6811533",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6775102",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6797302",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6809940",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

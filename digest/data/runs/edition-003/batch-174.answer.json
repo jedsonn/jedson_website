@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "arxiv:2607.13477v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6978498",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6970159",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "India, 1997 to 2025, 115 quarters, testing the Phillips curve around the 2016 shift to flexible inflation targeting under recurrent supply shocks.",
+      "Three unnamed large-language-model families read the Reserve Bank's quarterly assessments under a fixed protocol to split demand from supply-led quarters, agreeing at Fleiss kappa 0.45.",
+      "The demand-pull slope was plus 2.2 before targeting and near zero after, the supply slope stayed negative, and the model read 77 of 115 quarters as supply-led."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "inter-model agreement only, Fleiss kappa 0.45, no human benchmark",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7111158",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Systematic review following PRISMA 2020 across five databases, identifying seventeen empirical studies that pair the UTAUT2 adoption model with fuzzy-set or configurational methods for generative AI.",
+      "No language model is applied by the reviewers; generative AI is the object of study, with adoption modelled through fuzzy-set qualitative comparative analysis rather than linear regression.",
+      "Performance expectancy and hedonic motivation are the most reliable predictors, while high adoption arises from several substitutable configurations rather than one dominant path."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6971298",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Practitioner-derived framework developed inductively over three years managing more than 1,200 AI and product privacy reviews per month in a technology organization.",
+      "No language model is applied; the paper studies governance of generative-AI product development and proposes the KITE framework with twelve numbered sub-practices; no model is named.",
+      "The framework is demonstrated through a generative-AI enterprise connector scenario and mapped to NIST CSF 2.0, IEEE Ethically Aligned Design, GDPR, and the EU AI Act."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6990818",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.14713v1",
+    "drop": false,
+    "field": "economics",
+    "role": "method",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Forty-four economics meta-analyses in a pre-registered, identity-masked, within-paper experiment where each paper's authors ranked three length-matched AI reports on their own work by usefulness.",
+      "An unnamed single-pass frontier model was compared with two multi-agent debate tools the authors built, and Gemini served as one of three AI judges of the reports.",
+      "Authors preferred the single pass by 0.66 rank points over one tool and 0.57 over the other, which used roughly thirty times the tokens."
+    ],
+    "models": ["gemini"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "arxiv:2607.15079v2",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.14491v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.14443v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7062598",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Conceptual methodological paper with no empirical sample, focused on applying generative AI to qualitative analysis of policy documents as a distinct form of research material.",
+      "No model is applied empirically; generative AI, not named, is proposed as a selectively deployable assistant under a bounded-delegation principle tied to interpretive task demands.",
+      "It distinguishes four analytical task types with corresponding generative-AI boundaries and sets rigour principles of transparency, auditability, reflexivity, validation, and process traceability."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6980618",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Conceptual framework for business-to-business sales prospecting with no empirical data, drawing on the AI-and-sales literature and documented industry practice on manual outreach.",
+      "It proposes an autonomous, agent-orchestrated pipeline using Model Context Protocol servers and enrichment providers such as Clay, Apollo.io, and ZoomInfo; no specific language model is named.",
+      "The workflow collapses fragmented multi-tool prospecting into a single conversational control plane, with discussion of throughput, personalization quality, deliverability governance, and outreach ethics."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6979203",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Interpretive synthesis of structural announcements from the 2026 Databricks Data and AI Summit held in San Francisco, with no empirical data collected.",
+      "No language model is applied; the paper analyses agentic-AI data infrastructure such as Lakebase, Unity Catalog, and Model Context Protocol interception; no model is named.",
+      "It organizes five paradigm shifts around four pillars of context, cost, control, and choice, mapped against NIST AI RMF, ISO/IEC 42001, and the EU AI Act."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7129019",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Systematic literature review of agentic and multi-agent AI for enterprise automation spanning cloud, ERP, CRM, DevOps, cybersecurity, and business process management, using academic and industrial sources.",
+      "No language model is applied by the authors; the review synthesizes architectures, deployment strategies, and advantages of multi-agent systems; no specific model is named.",
+      "It reports that multi-agent AI improves efficiency, scalability, and resilience, while flagging governance, interoperability, explainability, trust, and security as barriers to adoption."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6971038",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7036119",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

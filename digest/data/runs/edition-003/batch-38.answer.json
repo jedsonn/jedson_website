@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.5472929",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5558284",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5749004",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5894082",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5950714",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6206500",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "Vignette-based experiment eliciting belief-driven financial advice from professional advisors, financially literate peers, and a large language model; sample size, period, and geography not stated.",
+      "A large language model, name not stated, was prompted repeatedly with identical vignettes to recommend risky portfolio shares, with output variation traced to shifting implicit rules and no accuracy check reported.",
+      "The model gives advice with smaller variance than humans but highly sensitive to declared risk tolerance, and its use can offset peers' discouragement of equity for younger, lower-income investors."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6127146",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "809 US financial institutions from 2018 to 2025, linking SEC 10-Q filings to Federal Reserve regulatory data to measure generative AI adoption in banking.",
+      "Uses the November 2022 ChatGPT release as an exogenous shock in synthetic difference-in-differences and dynamic spatial Durbin models; no language model output is measured or validated by the researchers.",
+      "Adopting banks show a 428-basis-point ROE decline, larger for small banks (517 versus 129 bp), with positive network spillovers pointing to algorithmic coupling and systemic risk."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 57
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6265318",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6304512",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6329621",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6332149",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6300040",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "18,796 O*NET task descriptions scored and mapped to US firms via industry employment shares, with the ChatGPT release used as an information shock in a difference-in-differences design.",
+      "A large language model, name not stated, scored each task for augmentation and substitution exposure; ChatGPT is the studied shock and no validation of the scoring against human coding is reported.",
+      "Augmentation exposure raises profitability, productivity, and abnormal returns, with a 97-basis-point monthly five-factor alpha, while substitution exposure shows null return and negative profitability effects."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 66
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6248918",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis paired with empirical demonstrations of large language model behaviour on strategic problem-solving tasks; sample size and data not stated.",
+      "Large language models, families not named, were prompted on strategy problems to demonstrate three biases, with outputs judged against coherence and root-cause reasoning and no reported accuracy statistic.",
+      "Identifies patchwork bias, misattention to surface cues over root causes, and pandering toward agreeable answers as architecture-driven limits on strategic problem solving."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6280858",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6217459",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Randomized experiment with 164 law students completing an issue-spotting examination under three conditions: no GenAI, optional LLM access, or access plus a ten-minute training.",
+      "An unnamed large language model was made available to students; the study measures adoption and exam performance rather than using the model as a measurement tool, so no validation applies.",
+      "Training raised LLM adoption from 26 to 41 percent and lifted scores by 0.27 grade points (p=0.027), while untrained access did not improve performance and produced shorter answers."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 61
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6227838",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7009289",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.29091v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.29366v1",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "29 production evaluation batches from JD.com covering multi-warehouse inventory allocation in large-scale e-commerce, distributing fixed replenishment quantities across warehouses under heterogeneous demand and coverage constraints.",
+      "An unnamed LLM generates candidate operations-research formulations and executable solver code from semi-structured natural-language specs, while a solver verifies executability, feasibility, and quality; the specific model is not stated.",
+      "The best single formulation raised allocation accuracy 3.4 percentage points over the incumbent, while the full ORLA framework gained 4.5 points and improved allocation in 26 of 29 batches."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7021520",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.30987v1",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Over 55,000 forecast-rationale pairs from a multiyear forecasting tournament, with probabilistic judgments and written rationales scored against realized outcomes at both forecast and forecaster levels.",
+      "Unnamed large language models score sixty theory-guided reasoning patterns, called Explanation Quality Markers, in each rationale; benchmarked against pre-LLM text methods and human ratings, with no model named.",
+      "EQMs predict accuracy and outperform pre-LLM methods, matching directional hypotheses in over 90 percent of significant correlations, and identify likely underperformers more reliably than the very best forecasters."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "arxiv:2606.30602v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.30578v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.30247v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.29955v1",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "321 spreadsheet tasks built from authentic financial reports and corporate filings, each instance averaging 11.8 worksheets and 593.5 cell modifications, annotated and validated by domain experts.",
+      "Eight frontier large language models, not named, run under a unified multi-turn agent scaffold on generation, debugging, and visualization tasks, with outputs scored against expert ground-truth solutions.",
+      "The best model reached 34.89 percent overall task accuracy and debugging accuracy fell to 12 percent; insufficient spreadsheet inspection and wrong target-cell selection were the dominant failures."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "expert-annotated benchmark, best model 34.89% accuracy",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6900601",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6895820",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7008899",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6992061",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "A conceptual design essay on the use of AI in qualitative research, with no empirical sample, period, geography, or dataset reported.",
+      "Discusses large language models generally, with no model named, for coding and categorization, and sets out three design criteria implemented in the Skimle.com tool rather than testing any model.",
+      "Proposes predictable processes, two-way transparency between data and conclusions, and researcher control over AI coding to augment rather than automate expert interpretive judgment."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6963161",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.31522v2",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "A simulation benchmark whose synthetic market decouples observable price from hidden fundamental value, testing autonomous financial agents over long trading horizons across calm, crash, and bubble regimes.",
+      "Eighteen frontier and open-source large language models, none named, act as trading agents under three behavioral mandates, with their decisions treated as behavior to be studied rather than measurements.",
+      "Mandate salience decay compounds over time and is model-dependent; in crashes the behavioral gap grows 4.4 times by the final quarter, and re-grounding helps conservative but harms aggressive agents."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "arxiv:2607.00551v2",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

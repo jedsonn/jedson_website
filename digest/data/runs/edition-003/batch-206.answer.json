@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6959799",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Financial authorities worldwide, drawing on four years of State of SupTech survey data covering hundreds of authorities and the GovSpace corpus of 102 consumer and investor protection suptech implementations across 73 countries.",
+      "No language model is run; the report builds two diagnostic frameworks, the GovTech Generations 3.0 maturity model and the DataStack Blueprint, to sequence the move toward AI-augmented and agentic supervision, model not stated.",
+      "Adoption concentrates in complaint and conduct signal capture, while early warning systems, predictive analytics, algorithmic auditing, and other anticipatory functions remain limited or absent in most jurisdictions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7074360",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Systematic mapping review following PRISMA 2020, identifying 198 records from academic databases, regulatory repositories, standards organizations, and government sources, narrowed to a final corpus of 96 studies.",
+      "No model is run; the paper synthesizes literature across five dimensions spanning autonomous financial agents, quantum machine learning, cybersecurity and post-quantum security governance, and financial regulation, model not stated.",
+      "Research on quantum finance and agentic AI is growing, but governance for autonomous financial decision-making, post-quantum resilience, auditability, accountability, and supervisory control stays fragmented across jurisdictions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7072740",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual theory-building working paper on knowledge work in AI-augmented organizations, integrating public enterprise surveys, labor-market signals, and organizational theory, with no specified sample, period, or geography.",
+      "No model is run; the paper develops the efficiency inflation concept and five mechanisms, output commoditization, hidden supervisory labor, verification failure, cognitive-load transfer, and apprenticeship collapse, model not stated.",
+      "Argues AI reprices rather than replaces work by separating low-judgment execution from high-judgment responsibility, making abundant output cheaper while scarce judgment becomes more valuable."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7073098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7075038",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Financial services firms deploying generative and agentic AI, from internal drafting assistance to autonomous transaction execution, illustrated with two hypothetical case studies in retail banking and anti-money-laundering operations.",
+      "No model is run; the paper proposes the IDEA lifecycle spine, a five-dimension risk-tiering method, and the CRUS-T runtime reliability score gated against tier-specific thresholds, model not stated.",
+      "Capability-level CRUS-T scoring identifies the reliability dimension responsible for under-governance in one case and the single authority-bearing action responsible for over-governance in the other."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6940278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7091055",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7090430",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.1145/3770855.3818311",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "One of the largest banks in Eastern Europe; multimodal sequences of user events unify transaction histories and digital interaction signals into single chronological sequences, sample size not stated.",
+      "Pretrained a foundation transformer on user event sequences with a next-event prediction objective, producing representations combined with engineered features for lightweight downstream task models, no ground-truth accuracy figure reported.",
+      "The foundation-model system outperforms traditional task-specific models and, deployed in production, produced measurable improvements in business metrics, with magnitudes not stated."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "arxiv:2607.09586v1",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Enterprise and public-sector agentic AI systems; the framework applies to seven types of agentic AI systems and is demonstrated with one illustrative example, no empirical dataset.",
+      "No model is run; the paper builds a risk-classification instrument with a twelve-dimension scoring rubric, a GPA plus IAT classification model, and a five-level autonomy framework, model not stated.",
+      "Produces a three-tier governance output with mapped control recommendations plus a coding-assistant extension, presented as an iterating framework rather than validated against realized outcomes."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7097178",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on entrepreneurial governance under agentic AI, with no empirical sample, drawing on transaction cost economics, agency theory, sociomateriality, and recent AI governance scholarship.",
+      "No model is run; the paper formulates the Governance Lag construct and the FUTURISTIC framework, extending agency theory to human-agent dyads with falsifiable propositions, model not stated.",
+      "Proposes that governance institutions lag agentic AI decision capacity, generating alignment risk, and offers a Governor-Agent architecture plus testable propositions for future empirical work."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7100729",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical task-based production model of agentic AI adoption within an oligopoly product market, embedded in union-firm bargaining, with no empirical data.",
+      "No model is run; the paper models agentic AI substituting human tasks while requiring human-in-the-loop supervision labor, comparing Right-to-Manage and Manning bargaining regimes, model not stated.",
+      "Identifies thresholds where AI becomes a labor complement, an RTM trap where strong unions accelerate automation, and a hump-shaped bargaining life cycle spanning four structural regimes."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7099660",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.10463v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.10455v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.10878v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

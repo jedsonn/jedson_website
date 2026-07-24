@@ -1,0 +1,217 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7077603",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Twelve employees from a single ChatGPT Enterprise pilot program, studied through focus groups and retrospective accounts of the implementation; geography and industry not stated.",
+      "ChatGPT Enterprise is the technology studied rather than a research tool; the model was not used for measurement and no output was validated against any ground truth.",
+      "Employees followed three adjustment profiles (rapid, gradual, minimal); the authors extend techno-overload to include a monitoring burden and techno-insecurity to include deskilling concerns."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7078021",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7083233",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7077979",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7077651",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7074138",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7076204",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "144 technology-oriented reward-based crowdfunding campaigns scraped from Indiegogo; geography not stated, with the individual campaign as the unit of observation.",
+      "Text embedding techniques vectorize product network dimensions (attributes, value propositions, audiences); the model family is not stated and the predictive model is validated only through a train-test split with no accuracy figure.",
+      "Product network has a statistically significant effect on success; funding target size, structural similarity of campaigns, and the creator's prior campaign count are the main predictors."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "train-test split, no accuracy reported",
+    "salience": 35
+  },
+  {
+    "uid": "arxiv:2607.07646v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7087581",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6931279",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical paper with no empirical sample, integrating computability theory, non-equilibrium thermodynamics, endogenous growth theory, and philosophy of mind into a framework for AI economics.",
+      "No language model is used or named; AI and deep reinforcement learning are treated as the object of a three-tier nested endogenous growth model.",
+      "Yields three predictions: synthetic Turing data has diminishing value, long-run AI growth is bounded by human innovation rather than Moore's Law, and non-algorithmic human labor stays irreplaceable."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6930198",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6933718",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Billionaire investor portfolio reallocations from June 2025 to June 2026, drawn from regulatory filings, insider disclosures, industry surveys, and FSB, ESRB, IMF and WEF publications.",
+      "No model is used by the researchers; agentic AI and cyber-enabled systems are studied as factors that could alter how financial shocks propagate.",
+      "Current de-risking and hard-asset rotation echo pre-crisis patterns; the paper argues agentic AI could compress the time from disruption to systemic impact, while disclaiming any crisis forecast."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6931278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.08691v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6943944",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper with no empirical sample, addressing enterprise adoption of AI and arguing organizations mishandle it as a centralized IT project rather than an extension of the worker.",
+      "No model is used or named; the paper proposes Cognitive Task Analysis as a foundation for LLM-assisted work and for a DESIRE and belief-desire-intention multi-agent architecture.",
+      "Claims that CTA-based deconstruction lets knowledge workers offload 60 to 80 percent of cognitive burden while keeping autonomous agents deterministic, verifiable, and aligned with human intent."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  }
+]

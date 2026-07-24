@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6725248",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6759126",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6762245",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual management article on leading human-agent teams, drawing on literature on employee AI adoption, human-AI collaboration, algorithmic management, and responsible AI governance; no empirical sample.",
+      "No language model is used or named; the paper develops a framework rather than running a model, organizing leadership around objectives, guardrails, capabilities, handoffs, escalation, supervision, telemetry, and auditability.",
+      "Proposes the ORCHESTRA framework across three phases, arguing sustainable value from agentic AI depends on designing conditions where human judgment and accountability work with machine capability rather than replacing judgment."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6767042",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6755498",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Legal-conceptual book chapter analyzing whether an agentic AI could assume and satisfy the fiduciary duties a human manager owes to a firm and its owners; no data or empirical sample.",
+      "No language model is used or named; the analysis is doctrinal, covering preconditions for AI legal personhood, accountability mechanisms, liability of AI and owners, and the alignment problem.",
+      "Argues an AI manager is a nonstarter unless duty and accountability can be implemented, and that agency risk is mitigated by contracting for duties, liability-incentivized monitoring, and reserved removal power."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6771165",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Daily closing prices of S&P 500 constituent stocks from 2015 to 2026, used to forecast future closing prices across a large-scale equity dataset.",
+      "Compares four deep learning forecasters, LSTM, bidirectional LSTM, a pure Transformer, and a hybrid LSTM-Transformer; no language model family is named and no accuracy figure is reported in the abstract.",
+      "Reports that attention-based architectures capture complex temporal dependencies, with the hybrid combining sequential and long-range modelling, but gives no magnitudes for forecast accuracy."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6753921",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6773533",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6765742",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on the insurance sector's adoption of agentic AI and digital technologies, based on a systematic literature review; no firm-level sample or period is stated.",
+      "No language model is used or named; the paper synthesizes literature to identify adoption drivers, barriers, and research gaps in governance, trust, and workforce transformation.",
+      "Proposes a management-oriented framework with phased adoption, governance mechanisms, and human-on-the-loop collaboration to balance operational efficiency with regulatory compliance and stakeholder trust."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 31
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6766026",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6763498",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6725982",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6765180",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual systems-design paper on governance of autonomous AI agents that initiate, route, and settle payments in enterprise and regulated financial environments; no empirical sample.",
+      "No language model is used or named; the paper synthesizes treasury governance, payment authorization, information security, AI governance, and model risk management into a governance framework.",
+      "Proposes the Sovereign Payment Agent model with a governance envelope, a five-tier agent autonomy classification, an audit artifact standard, and an adversarial risk architecture, stating it presents no empirical validation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6791657",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6786041",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6802902",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

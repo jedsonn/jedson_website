@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6885378",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Seventy cryptocurrency trading pairs, using ChatGPT service outages as exogenous shocks to adoption; sample period and geography not stated.",
+      "ChatGPT is the object of study rather than a research tool; the paper models how its adoption changes trader information and market-maker adverse selection.",
+      "During outages trading volume rises 24 percent and return volatility 19 percent, while book depth falls 8 percent and price impact rises 12 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7003865",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7004505",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Multi-source supervisor-employee dyads covering 315 employees and 72 supervisors in project-based technology firms in an unnamed emerging economy.",
+      "No specific model is named; generative AI use is a self-reported survey construct, not a research tool, tested with covariance-based structural equation modeling and bootstrapping.",
+      "Generative AI use positively predicts innovative behavior, partially mediated by work-related curiosity, with the indirect effect stronger among more reflective employees."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6886378",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6989978",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7003669",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Survey of 22,963 higher education students across 155 countries and territories, with self-reported economic status, financial aid, and residential setting as indicators.",
+      "ChatGPT is the object of study, not a research tool; access captured through version tier, usage intensity, and perceived educational benefit, analysed with regression and mediation.",
+      "Economically advantaged students hold more paid subscriptions, use ChatGPT more intensively, and report greater benefit; version access partially mediates the status-benefit link."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "arxiv:2607.19375v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "US labour economy spanning all occupations and their tasks, with evaluations grounded in real user queries to language models supplemented by synthetic data.",
+      "Introduces EconEvals, an open-source evaluation suite, plus a simulation-based exposure measure; observed Claude usage is analysed; validation against a labelled ground truth not stated.",
+      "Current models could save substantial time on at least half of tasks in 47 percent of occupations, yet observed Claude usage lags potential in 79 percent of high-savings tasks."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 66
+  },
+  {
+    "uid": "arxiv:2606.28471v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.28002v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Synthetic multimodal dataset replicating first-notice-of-loss insurance claim conditions, generating agent-customer dialogue transcripts and two-speaker audio recordings.",
+      "Pipeline combines speech recognition, diarisation, named-entity recognition, regex features, LLM-RAG retrieval, and speaker embeddings into a rule-based risk score; the LLM is not named.",
+      "Reports dataset validation and component-level stability as a reproducible multimodal baseline; no overall fraud-detection accuracy figure is stated."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "component-level evaluations, no fraud accuracy reported",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7002721",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7008301",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7010979",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7010223",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6892319",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6892440",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Cross-industry case evidence from media, platforms, software, and AI, including Tencent WeChat versus its gaming and music units and The New York Times around divestiture.",
+      "Generative AI is not a research tool but an object; general-purpose AI models are cited as heterogeneous products that preclude a single coherent customer persona.",
+      "Narrow, coherent products support direct consumer pricing, whereas broad systems such as general-purpose AI models push firms toward business-side or layered monetization."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6892378",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Twenty-two companies across three regulatory jurisdictions, built from live government corporate registries: MCA India, SEC EDGAR in the US, and BRIS or Companies House in the EU.",
+      "A locally deployed, unnamed large language model performs natural-language report synthesis on top of graph algorithms that infer ownership and governance risk.",
+      "Reports 93.8 percent indirect ownership inference accuracy, a 200 percent gain in relationship coverage over direct-only methods, and a 97 percent reduction in analyst effort."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": true,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  }
+]

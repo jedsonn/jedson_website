@@ -1,0 +1,254 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6357778",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Almost 500,000 company transcripts from firms in industries such as airlines, steel, and truck rentals, where public price coordination has been documented.",
+      "A large language model, not named, scores transcripts for collusive content, and a human audit of the 301 highest-scored transcripts checks the classifications without reporting an agreement figure.",
+      "Only 0.12 percent of transcripts meet the collusive-content criterion, and the audit finds systematic ways flagged communications facilitate coordinated conduct, supporting use as an antitrust screening tool."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "human audit of 301 top-scored transcripts, no agreement figure stated",
+    "salience": 56
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6433263",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6362299",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Occupational generative-AI exposure metrics combined with administrative firm records; geography and sample period not stated, with observation at the sector and firm level.",
+      "No language model is run by the researchers; generative AI is the object, measured through occupational exposure, with a general-equilibrium model of firm heterogeneity built to rationalize the findings.",
+      "Higher AI exposure triggers an immediate surge in firm entry and persistent relative price deflation in exposed sectors, implying a sustained consumer welfare dividend."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 54
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6447160",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6482741",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6487478",
+    "drop": false,
+    "field": "economics",
+    "role": "method",
+    "bullets": [
+      "Legislative bills and policy texts, including a 125-paper published benchmark and 159 fresh US state bills, screened for usable causal variation.",
+      "A large-language-model pipeline, model not named, extracts running variable, cutoff, treatment and comparison groups for RD and DID designs, validated against the benchmark and a three-RA adjudicator panel.",
+      "Recall reaches 97.3 percent for DID and 94.1 percent for RD on the benchmark; on fresh bills precision is 63 percent DID and 53 percent RD against the panel."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "125-paper benchmark and three-RA panel, recall and precision reported",
+    "salience": 63
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6426761",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "A sequential bubble game with a unique no-trade equilibrium, plus environments admitting both no-trade and speculative equilibria, populated by AI agents rather than human traders.",
+      "AI agents, model not named, trade in the game while varying reasoning capacity, and chain-of-thought traces are analyzed to explain their belief formation and framing sensitivity.",
+      "AI agents generate speculative trades despite the no-trade equilibrium; more reasoning reduces but does not eliminate irrational bubbles, and agents coordinate on the speculative equilibrium when it exists."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6438562",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "All 52,266 unique S&P 500 CEOs and board members serving 2006 to 2026, matched against 1,293,753 text-bearing documents from the released Epstein files.",
+      "A large language model, not named, classifies 117,394 matched correspondences and identifies 67,637 indicating direct contact with 1,179 executives; no accuracy check is reported.",
+      "Firms with Epstein-linked leaders earned cumulative abnormal returns up to -8.5 percent over ten days after the January 2026 DOJ release, and show more governance incidents."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "LLM classification, no accuracy check reported",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6508277",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6505391",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6437669",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Press-conference transcripts from China's Ministry of Foreign Affairs and US State Department statements, extended to the UK, Japan, and South Korea, at daily frequency.",
+      "A large language model pipeline, model not named, builds daily war-related diplomatic sentiment indices with human validation, though no agreement figure is reported.",
+      "In China a one-unit decline in sentiment corresponds to about a $35.6 million shift toward net equity outflows, while US negative sentiment coincides with safe-haven foreign holdings."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "human validation of sentiment indices, no agreement figure stated",
+    "salience": 57
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6467778",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Administrative online job-vacancy data from Flanders, Belgium, 2021 to 2025, with occupations grouped by predetermined generative-AI exposure across three experience tiers.",
+      "No model is run by the researchers; the public release of ChatGPT serves as a common timing shock in a difference-in-differences design.",
+      "The top exposure quartile drives effects; no-experience roles fall roughly 17 percent three years after ChatGPT, while experienced roles show no significant decline."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6455039",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Systematic review of 40 empirical and conceptual studies published 2020 to 2025 on generative AI in workplace and professional settings, following the PRISMA framework.",
+      "No model is used; searches of Google Scholar and Dimensions.ai returned 3,252 records screened to 40, synthesizing evidence on productivity, perceptions, and job insecurity.",
+      "Consistent productivity gains from automation and decision support coexist with mixed employee perceptions and job insecurity acting as a key mediator of behavioral responses."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6592679",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "350 million LinkedIn job postings from Revelio Labs used to build a firm-level generative-AI adoption measure based on hiring for large-language-model integrator roles.",
+      "No model is run; adoption is measured from job postings and analyzed with staggered difference-in-differences, entropy balancing, synthetic DiD, and two instrumental-variable strategies.",
+      "Adopting firms reduce leverage and improve debt-service capacity, shifting toward intangible capital and raising mass layoffs, with stronger deleveraging in low-union industries."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6562398",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "227 studies applying machine learning to quantitative finance, published 2015 to 2025, organized into six application domains and five methodological families.",
+      "No model is run; the review scores reproducibility with a proposed Reproducibility Disclosure Score applied to 99 empirical studies and releases the full annotated database.",
+      "Tree ensembles remain hard to beat cross-sectionally, the strongest gains appear in derivatives pricing and volatility, and only about one in five studies shares code."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6529658",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Nearly 50 million Amazon reviews across ten categories, with a 2-million reviewer panel of cross-period contributors, in an interrupted time series around the November 2022 ChatGPT launch.",
+      "Generative AI is the object; sentence-BERT measures between-review similarity and an LLM-derived substitutability score, model not named, validates the linguistic outcomes but not helpfulness.",
+      "After December 2022 reviews became longer, less helpful, and more similar; effects are larger for search goods, entering via new contributors rather than downstream dilution."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "construct validation of substitutability score, no human accuracy figure",
+    "salience": 60
+  }
+]

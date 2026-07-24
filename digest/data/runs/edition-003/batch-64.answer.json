@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7108778",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "OpenRouter dataset of 380 trillion realized AI-consumption tokens across more than four hundred large language models, roughly 2 percent of global monthly token use, matched to firm stock returns.",
+      "No model is used for measurement; the authors build an AI factor from token, dollar, and user growth and estimate firm-level AI betas from return comovement.",
+      "High AI-beta firms earn higher subsequent returns, with a value-weighted long-short strategy of 64.1 basis points per week, concentrated in closed-source frontier use and absent in emerging markets."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 72
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7117519",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6968139",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Worker profiles and job postings from Upwork, a large online freelance labor market, in a difference-in-differences design around the November 2022 release of ChatGPT; sample size not stated.",
+      "High-dimensional text embeddings represent worker profiles to measure the predictive importance of human capital versus price; the embedding model is not named and no accuracy check is reported.",
+      "In more AI-exposed categories the importance of human capital falls and price rises, the human-capital demand premium shrinks, and demand reallocates toward lower-priced workers."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7125062",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7060219",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7123579",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual practitioner methodology for enterprise AI governance, illustrated with a case study of one enterprise software company deploying roughly one hundred agents across eight business domains.",
+      "No model is used by the researchers; the paper proposes four governance components covering board assessment, an L1-L6 agent maturity model, human-oversight calibration, and phased implementation.",
+      "Presents a qualitative blueprint arguing layered governance can preserve human oversight while enabling operational autonomy; no quantitative results are reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7135124",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Last-mile inventory control evaluated on the LaDe logistics dataset of 9.16 million delivery records, tested on held-out data.",
+      "A hierarchical Mistral-7B language model applies fifteen governance motifs to audit and refine multi-agent reinforcement-learning actions before execution; assessed on constraint enforcement and service level.",
+      "The system reaches 1.0 precision in constraint enforcement and a 97.4 percent service level, versus 46.0 percent for a traditional economic-order-quantity baseline."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": true,
+    "validation_note": "1.0 constraint-enforcement precision, 97.4 percent held-out service level",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6970398",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis of generative and agentic AI risk in financial markets, with a case study of emergent spoofing in multi-agent trading systems.",
+      "No model is used for measurement; the authors draw on complex adaptive systems theory to propose a four-layer modular governance architecture of regulatory blocks.",
+      "Argues layered self-regulation, firm, regulator, and audit blocks can quarantine harmful emergent behavior in real time while remaining compatible with existing model-risk rules."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "arxiv:2607.18308v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6986920",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6999738",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7011398",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.17952v1",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "Two corpora of corporate climate disclosures that share one label space but come from different sources such as annual reports, press releases, and earnings calls.",
+      "Eleven open- and closed-source LLMs, not individually named, are compared using definitions, few-shot examples, and LoRA fine-tuning, with classification measured within and across sources.",
+      "All strategies yield positive cross-source gains, but retrieval and LoRA fine-tuning lose most of their in-source advantage under source shift while random few-shot and definitions transfer more reliably."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "labeled climate-disclosure classification, cross-source gains measured",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7153925",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7149459",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7162937",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

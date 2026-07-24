@@ -1,0 +1,229 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7033079",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7077548",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7083040",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7059539",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Comparison of Ruwiki, a 2023 regime-aligned clone of Russian-language Wikipedia, against the original across 1.9 million articles, measured twenty months after the fork.",
+      "An unnamed LLM plus machine-learning analysis of text deletions and insertions classifies ideological changes; no accuracy figure is reported, with textbook and placebo benchmarks used instead.",
+      "27 percent of articles changed, 2.8 percent heavily edited, and 0.14 percent deleted, with revisions organized around Russia's global image, domestic politics, and culture."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 68
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7078663",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7080180",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Daily return data from January 2023 to June 2026, 874 observations, covering semiconductor (SOXX), uranium and nuclear (URA), and utilities (XLU) exchange-traded funds.",
+      "No language model is used; a DCC-GARCH(1,1) framework estimates time-varying correlations, with a two-sample t-test comparing pre- and post-2024H2 co-movement regimes.",
+      "SOXX-URA correlation nearly doubled from 0.284 to 0.518 after 2024H2, a shift significant at p below 0.001, linking AI demand to energy-asset volatility."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7081500",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7077838",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6927858",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual management paper with no empirical sample, addressing organizational foresight and strategic planning under generative AI.",
+      "No model is used or tested; the paper defines predictive planning as a construct and process, positioning generative AI as a low-cost foresight enabler.",
+      "Proposes a four-phase continuous cycle of scan, story, stake, and steer, with seven propositions and boundary conditions on prediction under radical uncertainty."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7076641",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "169 Nike digital posts over twelve months, comparing public relations communication in the United States and China, using a mixed-methods design.",
+      "An unnamed large language model assists natural-language processing to quantify frequency of communicative logics; no validation against human coding is reported.",
+      "Finds Nike uses attribute framing to signal in-group status across cultures, extending social identity theory to cross-border corporate identity signaling."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6781380",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual legal and policy analysis with no empirical sample, comparing AI risk governance to two centuries of bank regulation and supervision.",
+      "No model is used; the paper studies AI foundation models as objects of regulation, drawing analogies to banking supervision instruments.",
+      "Proposes an AI Risk Supervisor using on-site continuous monitoring, institutional risk designations, and stress testing, structured for agency-independence jurisprudence."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6932098",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Theoretical operations study with no empirical sample, modeling memory-constrained large language model inference under continuous batching and key-value cache growth.",
+      "No model is deployed; a discrete-time dynamical model analyzes admission, memory growth, and eviction, deriving stability and limit-cycle results.",
+      "The eviction-free equilibrium is unstable and the system converges to a worst-case limit cycle with throughput losses as large as 50 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7079541",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7017118",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual essay with no data, examining ghost job postings, opaque applicant screening, and simulated consideration in hiring markets.",
+      "No model is used; the paper argues generative AI did not create hiring-market corruption but made pre-existing fraud cheap to operate at scale.",
+      "Argues gains flow to volume-paid platforms and firms posting unfilled vacancies, distinguishing honest automation from what it calls costumed automation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7082923",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "369 Chinese cities, using the generative outputs of multimodal large language models as a data source for measuring holistic urban perception.",
+      "Unnamed multimodal large language models generate image outputs treated as data; no validation against human-labeled ground truth is reported.",
+      "Perceptual similarity forms community structures associated, via QAP analysis, with geographic proximity, economic development, population size, and industrial structure."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 40
+  }
+]

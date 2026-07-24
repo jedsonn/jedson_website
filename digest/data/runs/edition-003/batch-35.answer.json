@@ -1,0 +1,229 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.7009890",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.29406v1",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual governance study of organizations that delegate decision authority to large language models and agentic AI in high-consequence settings, evaluated on synthetic stress tests rather than field data.",
+   "No specific model is used or named; the paper formulates AI delegation as a governance-aware partially observable Markov decision process with Bayesian state estimation, benchmarked against five alternative governance strategies.",
+   "Sequential Bayesian governance is the strongest general-purpose policy across heterogeneous AI-quality regimes, while specialized heuristics perform well only in stationary settings."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7022006",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.31963v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.31639v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.01934v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7067665",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7067175",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.06411v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6970578",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Survey of the financial large language model literature, organizing work into six layers from financial corpora and domain modeling to retrieval grounding, multimodal integration, and agentic workflow automation.",
+   "As a survey it uses no model of its own; it reviews domain-adapted, instruction-tuned, retrieval-augmented, and agentic financial systems along with their benchmarks and risk-control practices.",
+   "Argues the next generation of financial models should be evaluated as auditable decision-support systems operating under temporal, regulatory, and economic constraints rather than as isolated text generators."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "arxiv:2607.08046v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7091050",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6942498",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual marketing framework for how AI assistants surface personal brands, with a cross-system comparison of ChatGPT, Claude, and Perplexity, drawing on reported industry data from December 2025 to June 2026.",
+   "No empirical model test is run; the paper proposes a six-signal model of citation eligibility covering reputation, source colocation, structured presence, distinctiveness, freshness, and crawl accessibility, weighted by citation likelihood.",
+   "Concludes that the three systems weight sources differently so visibility must be pursued engine by engine, and that relevant indicators shift from traffic to revenue and branded search."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 33
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7102725",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113405",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7113516",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Three public customer-service dialogue datasets used to extract process-mining event logs from unstructured enterprise conversations, with individual conversations as the unit of extraction.",
+   "A retrieval-extraction-verification pipeline with RAG grounding, ten-pass self-consistency voting, and a separate verification model extracts activities; the underlying model family is not named. Evaluated by F1 against dataset labels.",
+   "Reaches average F1 of 93 percent, surpassing an NLI-BART baseline by 4 percentage points and standalone LLM methods by 8 percentage points."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "F1 on three dialogue datasets vs NLI-BART",
+  "salience": 46
+ }
+]

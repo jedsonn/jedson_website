@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6558458",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper in service management and platform economics, using four illustrative cases (Bloomberg, Stripe, Epic Systems, Perplexity AI); the unit of analysis is the digital service architecture.",
+      "No model is run by the authors; the paper theorizes autonomous AI agents as service consumers and classifies services by AI consumption intensity and human visual oversight necessity.",
+      "Produces a two by two typology of four service architectures and derives eight testable propositions on interface value migration, dual architecture burden, and ecosystem externality."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6682018",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6682238",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6582598",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6691228",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6682498",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Large-sample study of equity analyst reports and their authors, examining generative AI adoption in investment research; sample size, period, and geography are not stated.",
+      "A supervised machine learning classifier detects AI-assisted report content; the underlying generative AI model is not named and no detection accuracy is reported.",
+      "AI-assisted reports show greater earnings forecast accuracy, larger for busier and lower-skill analysts, and trigger stronger market reactions; an overlapping-calls workload shock supports causality."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 70
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6691889",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6578940",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6690839",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Formal signaling model plus empirical evidence from Bittensor metagraph data (18,101 miner observations across 80 subnets) and a 10,000-run simulation of staking and quality.",
+      "No language model is used as a tool; the paper studies the economics of trust in decentralized AI, deriving a separating equilibrium and a closed-form minimum stake threshold.",
+      "Staked miners earn 15.4 times higher incentive scores (t = 12.40); the simulation raises mean quality about 12 to 13 percent and cuts variance 18 to 33 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6685720",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6570382",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6693158",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Two-part laboratory experiment on preferences for human versus robo-advisors, where subjects value investment advice before and after learning advisor accuracy; sample size not stated.",
+      "ChatGPT generates the robo-advice used as stimulus; the study measures subjects' valuations, decomposing belief bias from taste-based source preference rather than validating model output.",
+      "Subjects initially favor robo-advice; many revise toward human advisors after learning the two perform similarly, but a substantial subset retains a taste-based robo-preference."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6695638",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Local factor research system tested on BTCUSDT 30-minute candlestick data, spanning five generation rounds with 504 factor candidates and 39,528 factor-configuration combinations.",
+      "An unnamed large language model generates candidate factors, paired with engineering audit, cost-adjusted economic evaluation, and point-in-time data governance across four separated threads.",
+      "Under cost-adjusted evaluation at two basis points per side, zero factors passed on research grounds; the contribution is an auditable taxonomy of why factors fail."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6570383",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6695191",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6700819",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis of how AI reshapes digital marketing campaigns, drawing on real-world cases from global corporations and emerging enterprises; no formal sample, period, or geography.",
+      "No model is run; the paper surveys machine learning, natural language processing, predictive analytics, generative AI, and programmatic advertising as marketing capabilities.",
+      "Argues firms that strategically integrate AI gain measurable competitive advantage, but success also requires organizational adaptability, data governance, and human-centred design."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  }
+]

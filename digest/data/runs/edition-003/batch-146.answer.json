@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6796058",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6736141",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual design-research and analytic-review paper surveying agentic commerce protocols launched through April 2026 and the improvised custody stack for physical goods, using the AOG Technics counterfeit-parts case.",
+      "No language model is run; the paper argues autonomous AI agents transacting at machine speed remove the human handoff that previously assured a physical object's identity and paperwork.",
+      "Proposes a cryptographic, object-bound custody layer with ten architectural requirements, a threat model, and a twelve-question research agenda, offering no field measurements or product endorsement."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6776519",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual case study of Nikola Corporation's rise and fall, examining multimodal pre-enactment practices in strategic investor communication and their role in building market value.",
+      "No model is run; the paper theorizes how generative AI, by pushing the marginal cost of plausible multimodal content toward zero, reshapes creative labor in professional communication.",
+      "Argues that automating persuasion shifts professional competence toward evaluative and ethical judgment and proposes a multidimensional framework for verifying promissory narratives through physical evidence."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6739725",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on multi-brand corporate portfolios, extending the AI Availability framework across the four Aaker brand-architecture types: branded house, sub-brand, endorsed brand, and house of brands.",
+      "No model is run; the paper studies how generative AI surfaces and represents brands in category-query responses and formalizes aggregation of brand-level visibility to the corporate level.",
+      "Develops a coupling-coefficient formalism and hypothesizes branded-house structures concentrate AI-mediation risk while house-of-brands structures distribute it; the matched-pair empirical test is registered as future work."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6819110",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6819383",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2605.24490v1",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "Backtest over 1,037 trading days across 13 crypto assets and five random seeds, testing a cooperative three-agent LLM system for portfolio allocation.",
+      "Market Regime Council combines specialist LLM-agent outputs using exact Shapley credit weights, a Bayesian mixture for early periods, and regime-dependent multipliers; the model family is not stated.",
+      "Achieves a Sharpe ratio of 1.51 and cumulative return of 440.1 percent, ranking first on cumulative return, Sharpe, and information ratio among active baselines."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6744618",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual, prescriptive paper on AI adoption by US small and mid-sized businesses, which account for roughly 43.5 percent of GDP and 46 percent of private-sector employment.",
+      "No model is run; the paper synthesizes adoption evidence, citing that 95 percent of generative AI pilots show no profit-and-loss impact and about 80 percent of AI projects fail.",
+      "Introduces the Staircase Methodology, a two-phase, six-step phase-gated framework with use-case scoring and a Risk-times-Stickiness reversibility check, illustrated with a single small-business case."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6827454",
+    "drop": false,
+    "field": "economics",
+    "role": "method",
+    "bullets": [
+      "342,452 unique online job advertisements scraped from the German portal StepStone between April and July 2023, geolocated for labour-market skill-demand analysis.",
+      "A locally run large language model, AI4Privacy, censors personally identifiable information for GDPR compliance in a Scrapy and Playwright pipeline; the censoring accuracy itself is not benchmarked.",
+      "Single-portal coverage reaches 79 percent of German municipalities versus Lightcast's 80 percent, comparable spatially but smaller in volume and cross-portal reach, limiting small-sector analysis."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": false,
+    "validation_note": "coverage checked vs Lightcast; PII model not benchmarked",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6743278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6745059",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Systematic literature review of 58 sources plus qualitative analysis of 27 artificial-intelligence initiatives across six ASEAN nations in the Global South.",
+      "No model is run; the paper studies AI development paradigms and ethics scholarship, finding roughly 85 percent of AI ethics research is Western-focused.",
+      "Proposes RSquare (Regenerative and Responsible) AI and a Regenerative AI Leadership Flywheel grounded in polycentric governance, regenerative capital, and community-embedded living labs as an ASEAN alternative."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6744878",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6746478",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6742421",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6826891",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Simulation and practitioner study of cloud-cost governance for LLM-powered coding assistants in Agile software development, using a Monte Carlo of 10,000 sprints and a 13-practitioner face-validity study.",
+      "The authors run no LLM; a Bayesian eight-node directed acyclic graph estimates project-health states from Azure OpenAI pricing and GitClear code data to detect a Phantom ROI condition.",
+      "The AI-Efficiency Ratio is the strongest governance predictor (Spearman rho +0.728), and Phantom ROI detection separates health states by 22.95 points at about 1.11 percent prevalence."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "arxiv:2605.25632v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

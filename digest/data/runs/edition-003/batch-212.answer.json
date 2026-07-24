@@ -1,0 +1,19 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6933040",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Qualitative study of agentic AI in the construction industry, based on semi-structured interviews with 34 professionals across seven regions plus five categories of archival data.",
+      "No language model is used by the researchers; the paper studies agentic AI adoption itself through disruptive innovation theory and names no specific model or system.",
+      "Identifies innovation triggers, resistance, and institution-enabled innovation, arguing construction sits between sustaining and disruptive trajectories, with institutions shaping the pace of AI disruption."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  }
+]

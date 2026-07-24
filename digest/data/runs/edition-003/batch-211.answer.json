@@ -1,0 +1,243 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7122520",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual essay on the 2025-2026 AI investment cycle, with an illustrative data-calibrated demonstration for Brazil's services economy benchmarked against the Brazil-United States trade balance.",
+      "No language model is run; the paper argues AI is a directly-valued labor-substituting production factor rather than a medium, and reads SaaS weakness as agentic-AI substitution along a commoditization gradient.",
+      "Concludes venture concentration in frontier labs is rational repricing not mania, and that wage-bill conversion into imported-factor payments could become a first-order driver of the bilateral imbalance.",
+      ""
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 37
+  },
+  {
+    "uid": "arxiv:2607.19453v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Audit of candle-based machine-learning timing models on Binance spot paper-trading, using fixed-seed model runs and deterministic simulators over July 2026 cycles with assumed transaction costs.",
+      "Human-supervised AI agents (model not stated) supported an evidence-integrity revision via literature retrieval, critique, artifact reconciliation and documentation, not trading decisions; the agents themselves were not validated.",
+      "A ten-pair daily selector lost 6.72% over 19 cycles at 31 bps cost (3 wins, 16 losses); across protocols no policy showed positive executable value and every operational decision was NO_TRADE."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "arxiv:2607.18912v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.5281/zenodo.19060285",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7042538",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7032178",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "61,056 developers treated by Claude Code's launch, matched to 61,056 controls on pre-treatment activity, using monthly public GitHub commit histories from January 2025 through March 2026.",
+      "Claude Code is the studied treatment, identified through commit-message trailers; researchers use rolling-entry matching with matrix-completion counterfactual estimation rather than the model for measurement.",
+      "Repository initiation rose 7.4% and pushes 93.1%, concentrated in exploration (original-repo pushes +72.6%); security practice improved modestly while security state declined, steepest among novices."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 70
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7163029",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7162285",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7138916",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7023239",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual framework paper on governing agentic AI in enterprises and institutions, applied across enterprise, healthcare, education, public institutions, capital and venture creation, and food systems.",
+      "No language model is run; the paper extends Meadows's twelve leverage points into a twenty-one-point framework adding a governance control plane and five agentic-intelligence levers (not stated).",
+      "Argues that agentic-AI consequences depend on the systems of purpose, governance, ownership and capital into which intelligence is embedded, because AI amplifies the logic of the deploying system."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 31
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7031218",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Analytical operations-marketing model of a platform jointly choosing AI personalization intensity and geographically distributed workload migration across two inference regions; no empirical data.",
+      "No language model is run; GenAI personalization is modeled as an endogenous marketing decision generating inference demand, solved via a Hamilton-Jacobi-Bellman equation and a linear-quadratic Riccati benchmark.",
+      "Optimal personalization decreases with infrastructure stress, migration responds to congestion asymmetry, ripple effects amplify volatility, and decentralized engagement creates shared-infrastructure externalities versus the social optimum."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7037438",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual marketing and strategy paper theorizing delegated purchasing by AI agents that execute consumers' purchases; no empirical data.",
+      "No language model is run; the paper formalizes a Shopper Schism separating the value-experiencing consumer from the purchase-executing shopper, and an Agent Intent Optimization construct.",
+      "Derives testable propositions for commercial strategy, brand equity, and governance in markets where the customer is an algorithm acting on a human's behalf with distinct selection and loyalty logic."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "arxiv:2607.20019v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.19856v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Shared-task overview of multilingual financial multiple-choice question answering in English, Chinese, Arabic and Hindi; final-test set of 800 questions, 200 per language, with gold answers withheld during submission.",
+      "Ranked LLM-based submissions (specific families not named) used retrieval augmentation, direct answer-option scoring, language-specific prompting, selective self-consistency, confidence checks, and LLM review stages, scored per language by accuracy.",
+      "Top accuracies ranged from 92.0% in Hindi to 97.5% in English and Arabic, with the same leading teams appearing near the top across all four languages."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "leaderboard accuracy vs withheld gold answers",
+    "salience": 43
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7073378",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical macroeconomic general-equilibrium model with a large heterogeneous population of AI agents treated as autonomous end-user consumers under acute human population decline; no empirical data.",
+      "No language model is run; AI agents are endowed with modified Stone-Geary utility functions and a baseline electricity survival cost, generating effective demand under an optimal Ramsey taxation scheme.",
+      "Proves per-capita human wealth expands monotonically as the human population declines toward a sustainable lower-bound steady state, redistributing AI market transactions to human agents."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7133663",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

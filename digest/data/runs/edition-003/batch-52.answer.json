@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6989769",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6990359",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6986845",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6989090",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Mutual fund reports, using strategy statements and market outlooks as the text; sample size, period, and geography not stated, with the fund as the unit of observation.",
+      "Large language models, family not named, score the ESG orientation of fund narratives as a proxy for managers' ESG beliefs; no validation against ground truth is reported.",
+      "Stronger ESG orientation predicts higher subsequent fund performance through stock selection, is not fully priced by investors, and strengthens after the carbon neutrality pledge."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "arxiv:2606.26079v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.25984v2",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "InvestPhilBench, a benchmark of 118 principle cards, 25 decision-framework cards, and 243 question-answer items across eight cognitive tiers of expert investment philosophy.",
+      "A four-model wave is scored by an automated pipeline; the composite tracks a 100-item human gold set at Pearson r of 0.72, mean absolute error 0.10.",
+      "Composite scores saturate at the frontier, Claude reaching 0.932 at tier four, while gate reconstruction accuracy falls to 0.57 to 0.62 at tier seven, exposing procedural gaps."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "automated scoring vs 100-item human gold set, Pearson r 0.72",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6997375",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6997097",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6975678",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "100 postgraduate students and research scholars sampled by convenience, surveyed with a five-point Likert questionnaire; geography not stated, individual consumer as the unit.",
+      "No model is run by the authors; the study measures self-reported usage of and trust in generative AI tools including ChatGPT, Gemini, Copilot, and Perplexity.",
+      "Generative AI usage and trust in AI suggestions relate to purchase intention via regression; ChatGPT is the most used tool and most respondents report daily use."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "gemini"],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6992669",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.27316v1",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Securities prospectuses at the German Central Bank, lengthy, semi-structured, and often bilingual German and English; collateral eligibility verification, with sample size and period not stated.",
+      "Large language models, family not named, run a generative extraction, normalization, and interpretation pipeline, evaluated with a value-based LLM-as-a-judge metric.",
+      "The system reaches up to 91 percent precision on document-level eligibility with a conservative profile that minimizes false acceptances."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "document-level eligibility precision up to 91 percent",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7003024",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6999350",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "7,548 real-world user and ChatGPT financial conversations drawn from over one million conversations in the WildChat dataset; period and geography not stated.",
+      "ChatGPT is the object studied; the authors apply BERTopic to label 21 financial topics and compare emphasis across GPT-3.5 and GPT-4 tiers and the market calendar.",
+      "Pricing and costs at 12.5 percent leads, GPT-4 conversations skew toward sophisticated topics, and speculative topics carry more weight on non-trading days."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6999349",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Next-day realized variance forecasts for 30 assets, comparing sixteen large language models from five providers against a log-HAR benchmark; sample period not stated.",
+      "The models forecast variance and are evaluated with QLIKE, Diebold-Mariano tests, and the model confidence set; one 7B open model is dissected in detail against HAR.",
+      "No model significantly beats log-HAR, the 7B loses to HAR in 29 of 30 assets, and reported portfolio gains trace to a covariance-geometry tilt rather than forecast skill."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "QLIKE against realized variance, log-HAR benchmark and model confidence set",
+    "salience": 68
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7004918",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "PRISMA-guided systematic review of 362 peer-reviewed Scopus studies on machine-readable disclosure from 2006 to 2026, combining bibliometric and structured content analysis.",
+      "No model is run; the review frames large language models that read untagged disclosures and generative AI as forces unsettling the XBRL-anchored literature.",
+      "The field's intellectual base contains no co-citation cluster for generative AI or sustainability reporting; the authors propose an eight-question agenda around a five-layer disclosure stack."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "arxiv:2606.27845v1",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Two behavioural games, a p-beauty contest and a public goods game, run over a 360-cell factorial of temperature, scale from 0.5 to 32B, quantisation, instruct versus base, and framing.",
+      "Open local language models, family not named, play as stand-ins; their choice distributions are compared against published human data through level-k cognitive theory.",
+      "Models act as static, category-retrieved level-k players with k set by scale, showing no belief updating, no last-round defection, and contributions that stay flat as human cooperation decays."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": null,
+    "validation_note": "",
+    "salience": 56
+  }
+]

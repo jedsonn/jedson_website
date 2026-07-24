@@ -1,0 +1,229 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6986775",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Firm-level panel of Chinese online job postings, used to test a task-based labor-demand model that adds endogenous supervision, across occupations and regions.",
+      "Researchers do not run an LLM; they build occupation-level LLM exposure and supervision-requirement measures and interact them in labor-demand regressions, model not stated.",
+      "Higher LLM exposure is associated with lower hiring, especially cognitive labor, but supervision requirements moderate this and can drive net hiring expansion."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "arxiv:2606.25442v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6997673",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.27446v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7002953",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "58 participants completed two controlled cybersecurity triage tasks, phishing email triage and network intrusion triage, in an exploratory mixed-methods design.",
+      "An LLM (model not stated) supplied triage advice; interaction logs were qualitatively coded and paired quantitative analyses compared decisions made with and without the assistant.",
+      "Collaboration gave modest gains in phishing triage and larger gains in intrusion triage, with reliance higher when independent verification of cues was harder."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7002057",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Vertiport location selection for urban air mobility, with LLM agents role-playing heterogeneous stakeholders as an alternative to stated-preference surveys, evaluated on synthetic scenarios.",
+      "The proposed REMS framework uses an unnamed LLM with reasoning-before-responding and PPO alignment, then Fuzzy-AHP converts simulated reasoning into decision weights, benchmarked against non-reasoning baselines.",
+      "REMS reportedly outperforms non-reasoning baselines on behavioral authenticity and decision consistency, with no comparison to real stakeholder responses reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no agreement figure versus real stakeholder responses",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6893079",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "Eight prominent LLMs answered a 15-question behavioral risk-preference survey, Risktyle, previously administered to global and regional human respondents.",
+      "The LLMs, not individually named, completed the survey as respondents, and their answers were compared with academic risk-preference personas and human distributions.",
+      "LLM risk preferences fall outside both academic theory and human populations, implying they cannot be used for investment advice without checking algorithmic biases."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6893379",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual position paper comparing SAP S/4HANA and Oracle Fusion Cloud against an AI-native ERP design framework, with no empirical sample analyzed.",
+      "No model is empirically evaluated; LLMs are proposed as a conversational interaction layer, illustrated by the author's own proof-of-concept platform under a disclosed conflict of interest.",
+      "The paper argues AI-native ERP could cut operational complexity and training burden, but leaves controlled user studies and benchmarks to future work."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 24
+  },
+  {
+    "uid": "arxiv:2606.28061v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7006267",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Thirty supply chain professionals were interviewed, paired with a comparative case study of three LLMs identifying supplier reputational risk from real-world news articles.",
+      "Three LLMs, not named, flagged reputational risk signals from news text; performance varied across models and domains and the authors report no single accuracy figure.",
+      "Managers view reputational risk as strategically important, and LLMs can surface many risk signals as early-warning tools but still require human validation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "comparative evaluation, no accuracy figure in abstract",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7009806",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Multi-constraint nurse scheduling evaluated on three synthetic hospital instances modeled on the Ubon Ratchathani provincial healthcare network in Thailand.",
+      "An unnamed LLM acts as a heuristic solver using constraint-priority tokenization, violation-gradient self-repair, and partial rescheduling, compared against seven published baseline methods.",
+      "The solver reached 99.3 percent hard-constraint satisfaction, resolved 94.9 percent of disruptions within 37.6 seconds, and cut night-shift inequality 64 percent over the weakest baseline."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "objective performance metrics, no ground-truth benchmark",
+    "salience": 33
+  },
+  {
+    "uid": "arxiv:2606.28978v1",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Audit of fourteen mainstream LLMs using the Kline, Rose and Walters 2022 paired-resume method, with 24,024 paired job postings scored per model.",
+      "Each LLM, not individually named, issued callback decisions on resumes with race and gender signaled by names, and results were benchmarked against field-experiment discrimination estimates.",
+      "The single 2023 model reproduced a pro-White gap of 2.12 points, while all 2024-or-later models showed null or pro-Black reversals up to 3.01 points."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 63
+  },
+  {
+    "uid": "arxiv:2606.29437v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7022812",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7029046",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

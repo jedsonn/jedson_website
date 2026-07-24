@@ -1,0 +1,231 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6878405",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6816879",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6816538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.08285v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Topical review and reproducibility audit of 30 primary studies on LLM-based financial trading, with a 10-equity worked example used only as a methodological scaffold.",
+   "No single model is evaluated; a coded evidence matrix scores each study on point-in-time controls, split transparency, held-out evaluation, cost and turnover treatment, execution semantics, and artifact release.",
+   "Architecture reporting is generally clearer than the evaluation assumptions needed to judge economic interpretability, and explicit friction and timing choices can materially compress active-strategy results."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6877678",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6902294",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6914470",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.17383v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Conceptual model-risk framework for agentic AI, demonstrated on a portfolio-management case where an agent infers latent market regimes from market and macroeconomic data and builds Black-Litterman portfolios.",
+   "LLMs are formalized as approximate Bayesian filtering operators, and the framework decomposes decisions into information, beliefs, forecasts, actions, and utility, checked with belief calibration, coverage tests, and ablations. Model not stated.",
+   "Latent-state inference contributes independently to decision quality, and the paper reports that the main conclusions remain robust across a broad range of parameter values."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 50
+ },
+ {
+  "uid": "arxiv:2606.18005v1",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Conceptual paper with no empirical sample; it defines the scope of consumer behavior in agentic markets where LLM agents make consumption decisions on behalf of human users.",
+   "The authors run no model; they unify prior work on LLM decision-making, human behavior simulation, and preference elicitation under an economic lens rather than providing empirical validation.",
+   "It proposes LLM consumer behavior theory and identifies where assumptions such as rationality and heterogeneity may fail, with open questions on alignment and market dynamics."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6966610",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.23032v3",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Benchmark of LLM financial analysts on IPO due diligence; a 1,000-question dataset is built from S-1 filings, with 70 questions on the SpaceX S-1 released publicly.",
+   "Frontier models including Claude, ChatGPT, Gemini, GLM, MiMo, and MiniMax answer S-1 questions using contextual retrieval, scored against automatically generated rubrics that human experts review before deployment.",
+   "Zhipu GLM-5.2 leads at 79.8 percent accuracy and Xiaomi MiMo-2.5 Pro reaches 77.2 percent at 0.05 dollars per query, both beating the prior 57.9 percent ceiling."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude",
+   "gemini",
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "accuracy vs human-reviewed rubrics on SpaceX S-1",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6879858",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6871439",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6991925",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6989042",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.26036v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

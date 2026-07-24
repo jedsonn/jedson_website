@@ -1,0 +1,226 @@
+[
+ {
+  "uid": "arxiv:2607.13034v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.14178v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7117418",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.16097v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7135996",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7123419",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Systematic PRISMA-compliant review of algorithmic trading, high-frequency trading, and machine learning across equity, Treasury, and foreign exchange markets, screening 847 records and synthesizing 60 studies.",
+   "No model is run; the review surveys how algorithmic agents, machine learning classifiers, and large language models affect liquidity, price discovery, and market stability, with no named model.",
+   "Characterizes markets as an algorithmic ecology and argues microstructure theory must move from rational human agents toward frameworks for correlated algorithmic failures and emergent dynamics."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7017778",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "High-growth ventures and entrepreneurial ecosystems across Africa, with founder-level narratives generated from unstructured online data and supplemented by primary founder interviews.",
+   "Retrieval-augmented generation with an unnamed large language model extracts founder insights into structured narratives, checked against founder interviews but without a reported accuracy figure.",
+   "AI narratives contain factual and framing errors and miss undisclosed private considerations, so AI-assisted qualitative research in data-sparse settings still requires primary triangulation."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "compared narratives to founder interviews, no accuracy figure",
+  "salience": 50
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7018998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7120281",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7162222",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7157742",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7127378",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual multisector framework covering healthcare, insurance, law, energy, and finance, with no dataset, examining governance of generative and agentic AI systems.",
+   "No model is run; the paper adapts model risk management principles of meaningful challenge, conceptual soundness, and ongoing monitoring to non-deterministic large language models and autonomous agents.",
+   "Argues traditional model risk management remains the strongest defense against novel failure modes such as hallucination, prompt injection, and execution drift across sectors."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 40
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7153775",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7163179",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4351817",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4412788",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 58
+ }
+]

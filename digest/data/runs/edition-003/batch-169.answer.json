@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6924640",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Corpus of fiscal-policy articles from four major German newspapers, 2006 to March 2025, linked to household inflation expectations.",
+      "ChatGPT, version not stated, identifies distinct fiscal narratives in article text and builds narrative indices; no validation against hand-coded labels reported.",
+      "All narrative indices raise household inflation expectations by significant, varying amounts, and some amplify while others dampen the transmission of a government spending shock."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "arxiv:2607.07674v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "arxiv:2607.07474v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "arxiv:2607.07436v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6932478",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "3,232 SEC Form NT 10-K and NT 10-Q late-filing narratives from 2014 to 2024, plus a held-out 2025-Q1 to 2026-Q2 cohort of 912 filings.",
+      "A zero-shot large language model, not named, classifies each narrative as accounting-issue or residual; no accuracy check against hand-coded labels is reported.",
+      "Accounting-issue filings carry a 32.6% versus 23.5% chance of a restatement disclosure within ninety trading days; a long-short basket earns 30.1 percentage points annualized alpha."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6958682",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7081218",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6932158",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Seventeen US Federal Open Market Committee meetings from March 2024 to March 2026, with the twelve voting members instantiated as persona agents.",
+      "gemini-3-flash-preview backs twelve persona-and-memory agents that deliberate over a release-date-filtered Fed corpus and emit decisions, statements, minutes, and votes, scored against published outcomes.",
+      "The simulator labelled 16 of 17 rate directions correctly, recovered all six cuts, held magnitude error to 2.2 basis points, and reached 0.82 statement embedding cosine."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gemini"],
+    "open_weights": false,
+    "validated": true,
+    "validation_note": "scored against published FOMC decisions, 16/17 directions",
+    "salience": 66
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6938479",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6935198",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Conceptual design paper on governance of autonomous AI agents in production systems, including regulated financial institutions, with no empirical sample.",
+      "No model is run by the authors; the paper proposes AA-1, an open seven-section attestation specification built on Anthropic's Zero Trust for AI Agents control taxonomy.",
+      "It argues for a continuous attestation model bound to architecture state and behavioural baselines, defines financial-services and high-assurance sector profiles, and flags self-attestation gaming risks."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "arxiv:2607.08920v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "S&P 500 firms over 2016 to 2025, with AI adoption estimated at the enterprise level from SEC 10-K filings.",
+      "The authors build a measure of deep AI integration from 10-K disclosures to separate genuine adoption from hype; the underlying model is not named and no validation figure is reported.",
+      "In 2025, 11% of S&P 500 firms had AI deeply integrated, up from 5% in 2022; profitability follows a J-curve while capex and productivity show no differences."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 70
+  },
+  {
+    "uid": "arxiv:2607.08740v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "arxiv:2607.08331v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "arxiv:2607.08288v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7090772",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Systematic narrative review synthesizing peer-reviewed literature, industry disclosures, and macroeconomic modeling on generative AI's energy, water, and embodied-carbon footprint.",
+      "No AI model is run; the study reviews inference-phase energy costs of deployed systems through Triple Bottom Line, Jevons Paradox, FinOps, and Green IS lenses.",
+      "Inference dominates operational energy cost, per-query energy varies up to three orders of magnitude, and unchecked demand could add about 1.7 gigatons of emissions between 2025 and 2030."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7095214",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual study of generative AI's role in knowledge flow within sustainable innovation ecosystems, using the Quadruple Helix Model and system dynamics simulation, with no firm sample.",
+      "No AI model is run; generative AI is modeled as playing a dual role, auxiliary tool and active innovator, altering feedback loops, trust mechanisms, and system evolution.",
+      "Generative AI accelerates knowledge transmission most in its tool role, while as an innovator it deepens system-level trust and transparency, with citizen participation amplifying both effects."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  }
+]

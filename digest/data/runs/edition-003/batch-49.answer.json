@@ -1,0 +1,254 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6869019",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "SEC 10-K and 20-F filings for 13 semiconductor companies, with a 43-question adversarial benchmark covering two- to three-hop supply chain contagion scenarios evaluated across three independent runs.",
+   "Builds a directed knowledge graph and DCG-RAG retrieval system, compares six configurations from a zero-shot LLM upward, and grades outputs with a DeepSeek-R1 judge plus programmatic verification and human adjudication.",
+   "Tuned DCG-RAG scored 2.9 times higher than the best agentic baseline while using 77 percent fewer tokens, and the grading protocol revealed systematic biases in LLM-based evaluation."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "43-question benchmark, human adjudication plus corpus verification",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6910509",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Between-subjects experiment comparing participants brainstorming with a human partner versus an LLM partner in live dialogues, analyzed turn by turn; sample size and geography not stated.",
+   "The LLM acted as the brainstorming partner while human contributions were scored via Observable Creative Sense-Making using computational semantic and linguistic measures validated against expert ratings; the model is not named.",
+   "LLM collaboration raised idea divergence and exploration but lowered participation, appropriateness, reported experience, and confidence, whereas human-human pairs showed stronger participation and cumulative idea development."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 44
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6912480",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6834298",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "24 premium spirits brands probed across six large language models under Protocol v1.6, using 144 recognition probes, as the seventh substrate in the author's AIAS measurement program; geography not stated.",
+   "The six models, not individually named, were queried for brand recognition and recommendation recall to build a presence composite; all 144 probes returned rich recognition, so scores came only from recall.",
+   "Composite scores ranged from 40.0 to 71.19 across four regimes, and the conglomerate-ownership hypothesis was falsified, with owned brands at 60.75 versus 58.05 for independents, a non-significant lift (t=0.59, p=0.28)."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6908584",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "Financial news from Thomson Reuters, the Wall Street Journal, and the New York Times, with the model trained on a 6.3 billion word corpus; sample period and geography not stated.",
+   "ModFinBERT, a finance-specialized BERT-style model trained on the corpus, extracts sentiment to build the Financial Optimism Index and is reported to beat other LLMs and dictionary methods, though no accuracy figure is given.",
+   "The Financial Optimism Index shows a bidirectional relationship with stock index returns during non-COVID sample periods, consistent with the behavioral finance literature."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "legacy"
+  ],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "claims outperformance, no figure reported",
+  "salience": 40
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837300",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6906929",
+  "drop": false,
+  "field": "management",
+  "role": "instrument",
+  "bullets": [
+   "Dutch tulip sector from June 13 to July 24, 2025, forecasting industry consumer sentiment, macroeconomic time series, and ecological indicators for small and family-run businesses.",
+   "XGBoost, LSTM, and random forest models generate the forecasts, and Meta's Llama 3 8B Instruct interprets them into a six-week action plan; RMSE is reported for forecasts but the LLM output is not validated.",
+   "Testing RMSEs were about 7.39 for average humidity, 1.54 for temperature, and 1.47 for PM2.5, framed as windows for smaller firms to take share from larger corporations."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "llama"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "RMSE for forecasts, LLM output unchecked",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6838543",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Conceptual paper on intellectual-property licensing in low-marginal-cost digital markets where AI agents copy and recombine works, using fragmented music licensing as the illustrative case; no empirical sample.",
+   "No model is deployed; the paper frames the Model Context Protocol as an interoperability layer between AI agents and IP institutions and builds a stylized transaction-cost model with comparative statics.",
+   "Lower search, verification, contracting, payment, and monitoring costs shift marginal uses into licensed exchange when rights records are reliable and terms standardized, with NFTs acting as machine-readable rights objects."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "arxiv:2606.12848v1",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "Pre-specified 2x4 factorial experiment with 280 complete AI-assisted research runs across four datasets, including a Qing-dynasty population register, plus an 80-run ablation.",
+   "The same unnamed underlying model drives a multi-agent research pipeline; the HLER architecture lets LLMs reason but not execute data work, computes deterministically, and binds the workflow with three human decision gates.",
+   "The unconstrained baseline produced critical failures in 72 percent of runs versus 16 percent under HLER (Fisher's exact p<0.001), with the largest reliability gains on the least publicly represented dataset."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6927019",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6928677",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "4,238 decision scenarios generated across multiple domains and complexity tiers for use as stimuli in cognitive decision-making research; the underlying model is not named.",
+   "An automated pipeline generates structured scenarios and scores their complexity with a composite framework drawn from Wood, Campbell, Liu and Li, and Sweller, then checks reliability and validity.",
+   "Inter-LLM agreement was near perfect (ICC 0.997, kappa 0.971), test-retest reliability high (ICC 0.995), and known-groups validity strong with large tier separation (eta-squared 0.587)."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "inter-LLM ICC 0.997, known-groups eta-squared 0.587",
+  "salience": 45
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6929036",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6838425",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6926957",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6932539",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6868459",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "25 fixed-income-plus funds, 15 secondary bond and 10 convertible bond, from January 2022 to December 2024, with 224 periodic reports and daily net-asset-value data as inputs.",
+   "DeepSeek Chat at temperature 0.1, via API, extracts structured labels from the 224 reports to form six style dimensions alongside nine NAV indicators and holdings analysis; no extraction accuracy is reported.",
+   "Low-volatility funds averaged 2.4 percent versus minus 2.33 percent for high-volatility (p<0.05), left-side-layout funds had a higher Sharpe ratio (0.38 versus minus 0.13), and neutral-sentiment managers outperformed optimistic ones."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "no extraction accuracy check",
+  "salience": 42
+ }
+]

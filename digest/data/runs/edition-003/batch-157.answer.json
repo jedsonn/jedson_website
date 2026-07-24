@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6962370",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6863059",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6947999",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6860338",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Ten years of UK flat and jumps horse racing with full finishing orders, using pre-race market-implied probabilities, official ratings, and runner characteristics.",
+      "An unnamed large language model extracts trouble-in-running indicators from post-race commentaries as features for a Plackett-Luce rank-ordered model, with no ground-truth validation of the extraction reported.",
+      "The model matches the market benchmark in probabilistic accuracy and yields 20 to 22 percent ROI with Sharpe near 0.13 under selective thresholds, but the LLM features add no measurable accuracy."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6945098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6965778",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6861398",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6862398",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual synthesis on generative AI in professional work, drawing evidence from clinical practice, controlled experiments, and electrophysiology, with no new dataset or sample.",
+      "No LLM is used as a tool; the paper studies human oversight of AI, arguing reviewers degrade through skill erosion, over-reliance, and measurable neural change.",
+      "It contends that legally mandated human oversight, including under the EU AI Act, is more fragile than assumed and introduces the concept of AI-induced cognitive freeze."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6966508",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6961901",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "Audit of an AI model deployed by Indian FinTech firms in loan-decisioning and customer-support roles, using approximately 9,400 structured prompts.",
+      "GPT-4o-mini was prompted to approve microloans and answer RBI regulatory queries, with caste signalled explicitly versus through surnames and addresses to compare behaviour.",
+      "Explicit caste gave marginalized applicants 7 to 8 point higher approval, but proxy signals cut SC/Dalit approval from 28 to 10 percent, and the support agent hallucinated on 36 percent of regulatory questions."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6961279",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6968384",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6869626",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6981429",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "National carbon market price forecasting using carbon-market-related news and related influencing factors; sample size, period, and country are not stated in the abstract.",
+      "An unnamed large language model scores sentiment from news as features, combined with variational mode decomposition, causal-discovery feature selection, and reinforcement-learning model weighting, with sentiment not validated.",
+      "The SentiCausRL model produces interval-valued forecasts and reportedly outperforms traditional benchmark methods, though the abstract gives no specific error magnitudes."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6861099",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on agentic AI deployed autonomously in medical, legal, and financial high-stakes domains, with no dataset, drawing on Polanyi's tacit knowledge and clinical communication research.",
+      "No LLM is used empirically; the paper studies governance of AI agents, arguing task competence is insufficient and introducing delegated trust failure and a tacit knowledge problem.",
+      "It proposes a three-tier governance framework and argues agentic AI should be restricted to administrative functions where relational, tacit competence is the critical capability."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6868545",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "US labor market absorption capacity, using Current Population Survey data from 2019 to 2025 with 8.6 million observations, crossed with the AI exposure measure of Massenkoff and McCrory (2026).",
+      "No LLM is used as a tool; the paper models labor reallocation throughput and treats generative AI exposure of about 0.80 of occupations as a technological shock.",
+      "It estimates maximum throughput near 770,000 workers per year constrained by retraining, finds no divergence by exposure yet, and argues tripling active labor market policy spending would absorb the conservative scenario."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  }
+]

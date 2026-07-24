@@ -1,0 +1,246 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6854679",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual competition-policy analysis of the generative AI foundation model market, treated as three-tier economic infrastructure, with no empirical sample or specific geography stated.",
+      "No language model is used by the authors; the paper builds an analytical framework from gatekeeper, value-chain, and ecosystem theories to diagnose antitrust risks.",
+      "Argues incumbents consolidate power through data privatization, proprietary APIs, and partnerships, and recommends data-sharing mandates, open-source compliance metrics, and adapted merger control."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854700",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854625",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "Korean-language voluntary sustainability reports and conventional ESG ratings, at the report and firm level, during the transition toward mandatory ESG disclosure in Korea.",
+      "Gemini 3 Flash constructs report-level measures of disclosure quality, clarity, and continuity from the Korean reports, with no reported validation against human coding.",
+      "Voluntary reporters carry higher ESG ratings, and higher textual quality and reporting continuity are associated with higher subsequent external ESG assessments."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gemini"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6864773",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6809844",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "US 10-K risk factor disclosure summaries required since the SEC's 2020 modernization for filings over fifteen pages, covering the initial post-rule years at the firm-filing level.",
+      "An unnamed large language model generates benchmark risk-factor summaries, and firm-disclosed summaries are compared against them, with no accuracy figure reported.",
+      "Firm summaries are more positively toned, less specific, and omit idiosyncratic risks; larger deviations from the benchmark align with higher information asymmetry and disagreement."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6806138",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Synthesis of six papers presented at the 2025 Journal of Accounting Research Conference on generative AI in capital-market information flows, with no new empirical data.",
+      "The authors use no model themselves; they organize the evidence around a three-layer framework of information production, dissemination, and processing.",
+      "Across layers, generative AI lowers preparation costs, raises intermediary productivity, and cuts processing costs, but gains depend on information verification costs."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6866863",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6867203",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on organizational decision-making under generative AI, with no empirical sample, drawing on bounded rationality and exploration-exploitation frameworks.",
+      "No model is applied; the paper develops the constructs of epistemically bounded rationality and exploratory inflation tied to the transformer-based dominant design.",
+      "Argues the binding constraint shifts from generating information to evaluating evidential weight, so agents grow more confident while evidential robustness declines."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6845148",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6810222",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6806318",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on tourism marketing under generative AI search engines, focused on underserved destinations such as rural, small-island, indigenous, and Global South communities.",
+      "No model is run; the paper proposes generative engine optimization as a three-layer content, authority, and technical framework for destination visibility.",
+      "Argues generative search returns a single synthesized answer that excludes resource-constrained destinations, framing the gap as a structural digital-equity concern."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6866866",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.03777v1",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual insurance framework for losses arising from an insured organization's generative or agentic AI systems, illustrated with the PocketOS, Replit, and Air Canada incidents.",
+      "No model is used; the paper introduces CER, a diagnostic covering control boundary, evidence reconstruction, and insurance response for AI residual risk transfer.",
+      "Argues AI losses need state reconstruction rather than event reconstruction, and specifies claim-grade evidence required to support insurance recovery."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6847684",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.05383v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Four published economic theory papers, each containing an error the author had helped identify, submitted to several AI models for correctness checking, with no formal sample size.",
+      "Gemini, Claude, and ChatGPT were prompted to verify proofs; ChatGPT Pro performed best and occasionally built counterexamples, with data contamination noted as a caveat.",
+      "No model located a true error without substantial human guidance, and the author concludes AI cannot yet refute economic theory on its own."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gemini", "claude", "gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "arxiv:2606.04978v1",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "The St. Petersburg game as a controlled testbed for risk decisions, with 28 large language models evaluated through a structured prompt suite of the original game and variants.",
+      "Models produced bids under perturbed truncation, repeated play, endowment, and occupational identity, plus human-perspective prompts and base versus instruction-tuned comparisons.",
+      "Finite bids resemble human caution at the outcome level, but controlled variants reveal computationally rational mechanisms rather than human-consistent ones."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  }
+]

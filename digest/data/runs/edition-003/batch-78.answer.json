@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6746498",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6776642",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6773839",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6719098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6788788",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Cross-sectional survey of 458 faculty members at one Spanish public university, measuring seven perceptual dimensions of generative AI including benefits, risks, and ethics.",
+      "No AI model is deployed by the researchers; proportional-odds ordinal regression and k-means clustering profile faculty attitudes, with no specific system named.",
+      "Three faculty profiles emerge, critical enthusiasts, pragmatists, and skeptical, distinguished by perceived benefits, risks, and ethical concerns, while institutional training is rated low."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6790221",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6795404",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6795098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6771787",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6766598",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6797660",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6800169",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Administrative data on Turkish firms from 2021 to 2024, comparing the determinants of traditional AI adoption against generative AI adoption at the firm level.",
+      "No model is deployed; the study uses the ChatGPT release as a quasi-experimental reduction in access costs to identify adoption drivers, naming ChatGPT as the studied technology.",
+      "Generative AI adoption is driven by workforce skill intensity and not firm size, whereas traditional AI depends on both; high-skill firms differentially increased adoption after ChatGPT."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 61
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6806084",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Survey of 1,025 Chinese youth who use ERNIE Bot, DeepSeek Chat, or Doubao as everyday generative AI companions.",
+      "No model is deployed; structural equation modeling and moderated mediation link trust in generative AI to prosocial intentions through satisfaction and emotional-dependency pathways.",
+      "A satisfaction pathway operates largely independent of trust while an emotional-dependency pathway emerges only under high trust, indicating an emerging AI relational divide."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6761739",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6786098",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "No firm dataset; three regulated-finance case studies covering consumer-credit regulatory question answering, SME lending decision support, and customer-service query triage.",
+      "Proposes SCOPE, an operations-research framework composing submodular chunk selection, Pandora's box stopping, and contextual bandits for token-efficient LLM retrieval; the underlying model is not stated.",
+      "Reports a 3x token reduction at a 0.15 quality gain over top-k retrieval, with an empirical cumulative-regret exponent of 0.60 matching the theoretical square-root bound."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "benchmark quality reported, no human-agreement figure",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6788620",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical paper with no empirical sample; a dynamic model of childhood human-capital formation under generative artificial intelligence.",
+      "No language model is used; the theory distinguishes process-preserving from process-replacing cognitive delegation and decomposes the long-run capacity wedge into discipline and cascade costs.",
+      "The marginal welfare cost concentrates in early childhood and the welfare effect hinges on governance capacity, parental supervision, teacher monitoring, and process-based assignments, not access alone."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  }
+]

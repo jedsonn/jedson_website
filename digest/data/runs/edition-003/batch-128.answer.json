@@ -1,0 +1,246 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6391618",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Firm-level psychological safety measured from Glassdoor employee reviews, matched to US stock returns and Fama-French factors; sample period and size not stated.",
+      "An unnamed large language model annotates reviews and feeds a supervised machine-learning classifier to score psychological safety; no accuracy or agreement figure is reported.",
+      "A value-weighted high-minus-low psychological safety portfolio earns a six-factor alpha of 3.57 percent, with stronger effects among innovation-intensive firms."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no accuracy figure reported",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6213138",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Digital marketing content across major platforms, studied through platform policy analysis, empirical traffic data, and 450 longitudinal organizational case studies over 2024 to 2026.",
+      "No language model is used for measurement; the paper studies how platforms deprioritize content once it is detected or labelled as AI-generated.",
+      "Reports a roughly 60 percent AI-content saturation threshold that triggers accelerated visibility decay, reduced reach, and exclusion from high-authority citation contexts."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 20
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6423358",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Roughly a five-month Python course across ten Taipei high schools, with students randomized between a fixed and an adaptive practice-problem sequence.",
+      "An unnamed generative AI chatbot tutor is paired with a reinforcement-learning algorithm that sequences problems from student-chatbot signals; effect measured by randomized trial, not against ground truth.",
+      "Adaptive sequencing raised unassisted final-exam performance by 0.15 standard deviations, with mediation analysis attributing gains to increased engagement."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 70
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6479459",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Wall Street Journal articles before and after its rollout of AI-generated summaries, plus a controlled investor experiment; sample size and period not stated.",
+      "The studied model is the Journal's own AI summarization tool, not named; the researchers measure investor reactions rather than validate model output.",
+      "Articles with AI summaries draw higher trading volume and amplified price responses, and raise readers' confidence and recall rather than encouraging skimming."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 68
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6211440",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6430698",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6543998",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Stylized theoretical labor-market matching model with no data; empirical design suggestions are offered for future testing.",
+      "No language model is used; the analysis is theoretical, showing generative AI raises within-job productivity while degrading the screening rank that sorts workers across firms.",
+      "Aggregate output can fall even when every worker-firm pair becomes more productive, and the model predicts weaker screening validity and more probationary hiring."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6490259",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6274418",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual framework paper with no empirical sample, drawing on cognitive psychology, deliberate-practice research, behavioral economics, and critical educational-technology studies.",
+      "No language model is used; the paper argues generative AI lowers the cognitive cost of task completion, substituting fluency for durable mastery. Model not named.",
+      "Proposes a perceived-versus-experienced value gap and a valuation-learning decoupling effect to explain high EdTech valuations despite weak learning outcomes; no quantitative estimates."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6456998",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6464098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6584984",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6479920",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Federal Reserve communications, specifically FOMC statements and post-meeting press conferences; sample period and count not stated.",
+      "Large language models, not named, quantify sentiment and content of the communications; output is aligned with market-based policy measures but not checked against a labelled benchmark.",
+      "The press conference correlates with future policy more strongly than the statement, fine-tuning the coarse stance signal and helping markets revise expectations."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no labelled benchmark, aligned with market measures only",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6480858",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Firm press releases used to identify corporate ClimateTech investment projects; sample size, geography, and period not stated.",
+      "An unnamed large language model's contextual functions classify press releases into a ClimateTech taxonomy; no accuracy or agreement figure is reported.",
+      "Investment concentrates in multipurpose infrastructure and specialized environmental technologies; infrastructure yields financial returns without measurable environmental impact, specialized technologies yield neither on average."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no accuracy figure reported",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6610238",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Theoretical continuous-seniority personnel-flow model of professional service firms, focused on advisory and assurance archetypes; no empirical data.",
+      "No language model is used; the model analyzes how generative AI compresses junior-intensive work under capacity, pipeline, and span-of-control constraints. Model not stated.",
+      "Generative AI produces two non-pyramidal structures, a pinched waist when task profiles invert and a bulging middle when mid-level loads resist compression."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6402098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

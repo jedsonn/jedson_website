@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6880210",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6815498",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6878396",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6880639",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6819460",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "US Magnificent Seven technology portfolio, with a PPO allocation policy trained on 2018 to 2021 data and tested on a fully held-out 2022 bear-market period.",
+      "An unnamed LLM acts as a point-in-time auditing gate over the PPO policy, triggered by a deterministic risk detector; in the offline fallback the LLM and rule-based gates were numerically identical.",
+      "The gated configuration returned -48.5% versus -53.0% for the PPO baseline, cut maximum drawdown to -53.4% from -57.3%, and raised the Sharpe ratio to -0.99 from -1.06."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6883290",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual curricular design set in a College of Business spanning accounting, finance, marketing, management, operations, and business analytics, with no empirical sample.",
+      "No model is used by the researchers; the paper proposes a Human-Centric GenAI Orchestrator framework organizing AI literacy into five dimensions mapped to courses and learning outcomes.",
+      "Presented as design propositions rather than validated outcomes, the framework augments existing courses instead of adding standalone ones and closes with a research agenda for testing."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6883075",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Two Spanish public universities, economics undergraduates in the same courses across consecutive years, repeated cross-sectional design, 162 students in 2024/25 and 116 in 2025/26 (N=278).",
+      "No model is used by the researchers; habitual generative AI use was self-reported through a start-of-term questionnaire and linked to official final assessment records.",
+      "Habitual AI use rose about 17 points to 58.6%, while adjusted final grades fell (b=-1.43, 95% CI -2.04 to -0.82; Cohen's d=0.60), persisting after controls."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6891552",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6656280",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6907642",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6902610",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6904219",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6902947",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Brazil, 2017Q1 to 2024Q4, combining a nationally representative household survey of 5.7 million worker-quarter observations with 13 million formal-sector hiring and separation records.",
+      "No model is used by the researchers; ChatGPT's November 2022 release serves as a timing shock in a difference-in-differences design across high versus low AI-exposure occupations.",
+      "Young workers aged 16 to 21 in high-exposure occupations earned 4.7% less and were 1.5 points less likely to be formally employed; prime-age and older workers showed no differential."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 72
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6904223",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6906943",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Simulated electronics-manufacturing-services weekly build-and-buy decisions under finite capacity and recurring disruption, using factory-sim, a deterministic simulator with a per-period linear-programming optimum and identical paired scenarios.",
+      "Five foundation models from four vendors, not individually named, run across six agent architectures and make production and procurement decisions via the Model Context Protocol, benchmarked against the LP optimum.",
+      "The effect is regime-dependent: a single-prompt LLM beats the myopic LP when capacity is slack, driven by roughly 2.8 times more early purchase orders, but the LP overtakes once capacity binds."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "agent decisions compared to per-period LP optimum",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6904051",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on case-based management education, grounded in experiential learning, cognitive offloading, and authentic assessment theory, with no empirical sample or data collection.",
+      "No model is used by the researchers; the paper describes how generative AI can produce case-analysis outputs and distinguishes AI-augmented from AI-substituted case learning.",
+      "It proposes assessment redesign principles including staged submissions, disclosure of AI use, an oral defense, and critique of AI-generated outputs to preserve assessment validity."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  }
+]

@@ -1,0 +1,236 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6804000",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6818764",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6783159",
+  "drop": false,
+  "field": "management",
+  "role": "instrument",
+  "bullets": [
+   "82,350 online restaurant reviews, used to study how consumers describe sensory experiences in text and how those descriptions relate to product ratings.",
+   "An unnamed large language model infers which sensory modalities each review invokes given context, validated against human coders and a lexicon method, though no numeric agreement figure is reported.",
+   "Sensory modalities differ in their association with ratings in isolation, but those differences largely disappear once evaluative context is accounted for, with some senses tied to positive and others to negative evaluations."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "human coders and lexicon, no agreement figure reported",
+  "salience": 52
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6782581",
+  "drop": false,
+  "field": "management",
+  "role": "instrument",
+  "bullets": [
+   "Customer evaluations from e-commerce and live-commerce platforms, used to build a proactive product-risk identification and sales-response system; sample size, period, and geography not stated.",
+   "Sentence-Transformers embeddings with HDBSCAN clustering group feedback, then a Llama model generates defect categories and issue descriptions, with aspect-level sentiment and a vote-based risk score; no validation against ground truth reported.",
+   "The framework outputs defect categories, risk scores, and objection-response guidelines for live broadcasts, demonstrating feasibility rather than reporting accuracy or business-outcome magnitudes."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "llama"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6819391",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6739060",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual essay on how agentic AI coding tools reshape the software engineering workforce, citing global estimates that 41 percent of code is AI-generated and 97 percent of developers use AI, with no original data.",
+   "No model is applied by the authors; agentic LLM coding tools such as Claude Code are the object, and the essay argues hallucinations and contextual errors keep human oversight necessary.",
+   "Argues that automating entry-level tasks removes the on-ramps that build engineering judgment, creating a Junior Gap in the talent pipeline, and calls for new training models."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 25
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6826582",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6744998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6827658",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6740818",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6750700",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6783579",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837689",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837695",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "90 highly liquid, predominantly NASDAQ-listed US technology stocks, selected weekly over a nine-week live evaluation from August to October 2025.",
+   "Five role-specialized agents (Momentum, Catalyst, Technical, Liquidity, Risk) run on Llama 3.3 70B with zero-shot prompting, orchestrated via LangGraph into a score-based portfolio; no validation against ground truth reported.",
+   "The portfolio returned 3.28 percent per week on average, 32.99 percent cumulative, with an annualized Sharpe of 6.05, beating the NASDAQ-100, S&P 500, and XLK over the window."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "llama"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "arxiv:2605.28359v1",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Ten frontier LLM trading agents evaluated on the Chinese CSI300 index over a 2024 to 2026 window in an end-to-end backtest trading setup.",
+   "Models are not individually named; a data-masking protocol anonymizes tickers, dates, and prices to block memorization, and a Barra-style attribution splits returns into market, style, and stock-selection components.",
+   "After leakage control, agents' cumulative returns are largely explained by passive market and style exposure, with limited evidence of persistent stock-selection alpha."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6831480",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

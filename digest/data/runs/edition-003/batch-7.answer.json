@@ -1,0 +1,237 @@
+[
+  {
+    "uid": "arxiv:2606.29254v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.09121v1",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Nine U.S. companies scanned over four weeks, drawing on SEC EDGAR filings and macroeconomic documents on GDP and inflation, framed around Kitchin business cycles.",
+      "gpt-4o was queried via API in a retrieval-augmented regime to generate automatic investor briefs; outputs were judged for usefulness rather than validated against any ground truth.",
+      "Briefs were distributed to nine individual investors to rate the usefulness of the approach; the abstract reports no quantitative accuracy or performance figure."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7102067",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Conceptual framework paper for agentic AI model risk, illustrated with a single empirical case study and an ablation; the underlying dataset and period are not stated.",
+      "An unnamed large language model acts as a semantic observation model mapping evidence to a distribution over latent regimes, combined with a Bayesian filter for belief updating.",
+      "Bayesian filtering reduces posterior instability and uncertainty, improves regime-classification accuracy, and lowers downstream risk measures, with no numeric magnitude given in the abstract."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "arxiv:2607.14385v2",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6977604",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Financial PhraseBank corpus with a held-out test subset of 300 expert-annotated sentences, run on a single consumer-grade GPU.",
+      "DeepSeek-R1-Distill-Qwen-1.5B fine-tuned with LoRA and 4-bit QLoRA, evaluated against expert sentiment labels for accuracy and weighted F1.",
+      "Fine-tuned model reaches 84.33% accuracy and 84.17% weighted F1, versus 54.00% accuracy and 45.32% F1 for the zero-shot base model."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": true,
+    "validation_note": "Financial PhraseBank, 300 expert-annotated test sentences",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7155798",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7167544",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.4448938",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Stack Overflow questions surrounding the November 2022 launch of ChatGPT, analyzed through several empirical designs, with effects tracked into May 2023.",
+      "ChatGPT, version not stated, is treated as an external shock rather than a research tool; its causal effect is estimated with difference-in-differences style designs.",
+      "Question volume fell 14.09% on average and 27.88% by May 2023, while the average quality of remaining questions rose, driven partly by uneven substitution of simpler questions."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 67
+  },
+  {
+    "uid": "doi:10.3386/w33033",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Methodological paper in strategic management, applied to a theory of strategic exploration under uncertainty; specific sample and data are not stated.",
+      "Proposes Generative AI-Based Experimentation, running unnamed LLMs as configurable in silico agents whose roles, preferences, and stated explanations can be varied, checked against prior human-subject results.",
+      "The framework reproduces human-subject experimental results at lower cost and extends theory by clarifying boundary conditions and surfacing mechanisms; no agreement statistic is reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 64
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5181651",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5287110",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Review article synthesizing the emerging literature at the intersection of generative AI and finance, organized around six areas spanning corporate, asset pricing, and household finance.",
+      "Not a model-using study; it surveys LLMs as analytic tools, external economic shocks, and autonomous economic agents, without applying or validating any specific model.",
+      "Maps findings across corporate finance, asset pricing, household finance, and labor economics, and identifies open questions and future research directions rather than a new empirical result."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 54
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5716903",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "One-shot Prisoner's Dilemma experiment using a full factorial design that varies payoff parameters, number of partners, strategy space, and elicitation order.",
+      "ChatGPT-3.5-turbo serves as the experimental subject, providing both decisions and stated beliefs; behavior is characterized rather than compared to a benchmark.",
+      "The model cooperates highly at baseline despite pessimistic beliefs, is largely insensitive to payoff variation, but responds systematically to group size, action space, and elicitation order."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.5962814",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Cryptocurrency markets and 32 global equity markets, using financial news, with recursive out-of-sample forecasting and economic value tests; the sample period is not stated.",
+      "Three Gemini-1.5-Flash agents process financial news to split disagreement into within-group belief dispersion and cross-group stance polarization; no ground-truth validation is reported.",
+      "Within-group uncertainty predicts downward price pressure while cross-group polarization predicts higher subsequent returns; crypto disagreement leads international equity returns with meaningful certainty-equivalent gains."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gemini"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6136529",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Survey of the emerging Agentic FinTech paradigm, spanning application domains such as trading, risk management, and regulatory compliance, with no empirical sample.",
+      "Reviews LLM-based financial agents with perception, planning, memory, and tool use; no single model is deployed or validated by the authors.",
+      "Formalizes core agentic capabilities and organizes workflows, architectures, and evaluation methods, outlining open challenges toward trustworthy agentic financial systems, with no empirical finding."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6210681",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "41,332 attorney-coded police stop narratives from 2012 to 2023 in one jurisdiction, plus more than one million additional stops with imputed legality.",
+      "Fine-tuned GPT-4.1 classifies whether a stop is illegal from its narrative, validated against attorney coding at over 90% accuracy with well-calibrated confidence.",
+      "Officer heterogeneity is limited (replacing the most illegal half of officers cuts illegal stops only 12.7%), and stops of Black males are 1.6 points more likely illegal."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": true,
+    "validation_note": "41,332 attorney-coded stops, >90% accuracy",
+    "salience": 66
+  }
+]

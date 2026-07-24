@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7031578",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "US corporate bonds issued between 2015 and 2025 by firms across sectors, with issuance yield spreads examined against sectoral AI intensity from the OECD taxonomy.",
+      "No language model is used by the researchers; sectoral AI intensity is the object, and the ChatGPT launch marks an event studied for a break in spreads.",
+      "Bonds from more AI-intensive sectors carry higher yield spreads, an AI penalty, stronger beyond three-year maturities and more pronounced after ChatGPT, driven mainly by AI use."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7042398",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual legal and economic-history essay tracing chartered non-human actors from the 1555 Muscovy Company to today's autonomous AI shopping and procurement agents.",
+      "No language model is used; AI agents are the object, analysed through legal precedent including Thaler, Moffatt v Air Canada, and Ooki DAO, and state DAO statutes.",
+      "Argues commerce needs chartered agents rather than AI legal persons, with the joint-stock company charter offering the delegation template for agentic commerce."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7044938",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7026958",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7158180",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Patent documents drawn from the Derwent database, applied to automatic aircraft riveting technology in aerospace manufacturing, for technological opportunity identification.",
+      "BERTopic topic modelling is combined with the F-term classification system; unnamed large language models and named-entity recognition screen technical elements to expand and migrate concepts.",
+      "The multidimensional technology landscape yields high-granularity, practically applicable technological opportunities, shown on the aircraft riveting case with no reported accuracy benchmark."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7163013",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7160963",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "European NUTS-2 regions, youth labour outcomes across 2024 to 2026 during generative-AI diffusion, with exposure measured by a 2010 industry-mix shift-share index.",
+      "No model is used; generative-AI adoption is the object, identified through a continuous difference-in-differences design exploiting the sharp 2024 break in firm AI adoption.",
+      "More-exposed regions saw youth NEET rates fall about 1.4 percentage points per standard deviation of exposure, with youth unemployment down, indicating complementarity not displacement."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7049319",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on autonomous AI agents transacting for retail and commercial banking customers through APIs across financial-services platforms.",
+      "No model is used; AI agents are the object, and the paper proposes a four-pillar governance framework of identify, classify, authenticate, respond, with a twelve-month roadmap.",
+      "Argues blanket blocking of non-human traffic is unsustainable and that banks need risk-proportionate, identity-aware controls aligned with PSD2, FAPI 2.0, and DORA."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 37
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7049518",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7026918",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Design-science working paper presenting Procedra, a controlled local-demo prototype for generating industrial work instructions across engineering and safety review workflows.",
+      "An unnamed large language model performs schema-validated generation with retrieval-based context, deterministic fallback, rule-based quality checks, and human expert review, with no accuracy benchmark.",
+      "Contributes a source-supported drafting workflow pattern and evidence protocol; the authors disclaim production deployment, certified compliance, and measured productivity gains."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 31
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7038158",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Synthesis of three independent 2025 industry studies of enterprise generative-AI initiatives, integrated with four research streams on IS success, technology acceptance, algorithm aversion, and general-purpose technologies.",
+      "No model is used; enterprise GenAI adoption is the object, analysed through a layered model separating selection, organisation and adoption, and execution and technology causes.",
+      "Argues most value failures originate in the under-scrutinised selection layer rather than the technology, proposing a selection-first framework scoring use cases on value, feasibility, risk, and adoptability."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 47
+  },
+  {
+    "uid": "arxiv:2607.20379v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.19935v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7047158",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7051578",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7046079",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

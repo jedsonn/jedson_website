@@ -1,0 +1,216 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6717658",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "More than 65,000 voluntary comment letters addressing 417 rules the SEC proposed between 1995 and 2024, with each letter linked to a stated constituent preference.",
+      "Large language models, family not stated, extract and link constituents' stated preferences to specific rule provisions; the abstract reports no validation against hand coding.",
+      "Proposed rules align more often with firms' stated interests than with other constituents, an advantage that weakens at adoption, while retail investors' preferences track dropped provisions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6713199",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper in organization studies with no empirical sample; the unit of interest is everyday organizational knowing and the practice traces that scaffold it.",
+      "No language model is applied; the paper theorizes that LLMs create a synthetic practice regime where knowing engages algorithmic syntheses of prior representations rather than lived-experience residues.",
+      "Proposes knowing-in-synthesis as a remedy, arguing practitioners restore coherence by moving around synthetic representations through embodied and collective engagement; the contribution is theoretical."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6642358",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6718438",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6721779",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Pre-registered measurement of brand visibility for Bed Bath & Beyond and Pier 1 in LLM outputs, 288 successful runs from six prompts, six models and eight repetitions in May 2026.",
+      "Prompted model lineups from Anthropic, OpenAI, Google and xAI, versions not stated; a manual valence audit of BBB mentions reached 88 percent inter-rater agreement on a 25-row spot check.",
+      "BBB raw AI presence was 38.2 percent versus 0.0 percent for Pier 1, but after valence review the naive-phantom rate was 1.7 percent, with 88 percent of mentions carrying entity-change disclaimers."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude", "gpt", "gemini", "open_other"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6727187",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6722444",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6667898",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "US firms in asset pricing tests; the study builds a newspaper-based generative AI risk index and an earnings-call implementation-exposure measure, with sample size and period not stated.",
+      "Textual measures use CEO-native earnings-call language and an eight-channel taxonomy; the specific model is not stated and no validation against a benchmark is reported.",
+      "Adverse generative AI news lowers average returns but less for high-exposure firms, widening the machine-minus-human spread chiefly by depressing low-exposure firms."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6723472",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Corpus of 849 real user-chatbot interactions drawn from three conversational AI settings (SaaS, software factory, English school), analyzed under a Design Science Research approach.",
+      "Generative AI models, not named, extract subjective conversational variables that feed structural equation modeling of quality, trust, engagement and dropout; no accuracy check is reported.",
+      "Low technical performance does not trigger immediate abandonment; dropout arises through exhaustion once users' adaptive effort exceeds perceived value, a pattern the authors call the Persistence Paradox."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6725154",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Semi-structured interviews with 24 construction safety experts plus a questionnaire survey; the topic is generative AI across the construction safety knowledge management lifecycle, geography not stated.",
+      "No model is applied; the study elicits and rates stakeholder perceptions of six GenAI functional roles and 24 application scenarios, analyzed with mixed-design ANOVA.",
+      "Knowledge acquisition and creation ranked most important; general contractors valued GenAI-enabled management most and supervisors least, with a significant three-way stakeholder interaction."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6725558",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6645998",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 5
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6722700",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual synthesis on AI adoption by Hispanic-owned US small and medium businesses, drawing on provider pricing and third-party failure-rate and demographic reports rather than primary data.",
+      "No model is applied; the paper contrasts access to enterprise LLMs from Anthropic, OpenAI and Google with implementation capacity and proposes an implementation-with-context framework.",
+      "Argues access is democratized at equal per-token rates while value capture is not, with 74 to 95 percent of organizational AI initiatives failing, leaving Hispanic SMBs most exposed."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "claude", "gemini"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6729902",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual and psychometric paper on Perceived Cognitive Assistance, a construct for retail traders' felt cognitive expansion when using an LLM as a reasoning partner; no new empirical sample.",
+      "No model is applied; the construct is positioned against technology acceptance and planned behavior neighbors and seven rival construct families through a construct-proliferation audit.",
+      "Concludes the construct has defensible local distinctness but that current instruments lack matched-domain comparators to justify a new confirmatory factor analysis battery."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  }
+]

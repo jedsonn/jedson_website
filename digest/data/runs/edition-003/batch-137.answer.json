@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6715522",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Chinese A-share listed firms from 2015 to 2022, with firm-level AI narrative intensity compared to actual AI investment growth to define AI strategic decoupling.",
+      "An unnamed large language model scores AI narrative intensity from firm disclosures, combined with an IPC-based patent technology-space method; no validation against hand coding is reported.",
+      "AI decoupling raises breakthrough patent quantity but lowers the breakthrough share of the portfolio, via a positive subsidy channel and a negative financialization channel concentrated among non-state-owned firms."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6671898",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6716246",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6716248",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6715480",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Cryptocurrency factor discovery, with a portfolio trained only on 2020 to 2022 data and evaluated out of sample over 2024 to 2026 after transaction costs.",
+      "An unnamed LLM agent reads an append-only experiment trace and proposes falsifiable factor hypotheses within a restricted domain-specific language, while a deterministic engine enforces fixed splits, selection gates, and costs.",
+      "The ridge-combined portfolio earns a 44.55 percent annualized return and a Sharpe ratio of 1.55 in the pure out-of-sample period after 5 basis points one-way trading cost."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6705510",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "A prospective daily time series of stock recommendations collected from several large language models, used to characterize AI's investment style for household portfolios.",
+      "Several unnamed LLMs are queried, with multiple query versions, for stock picks, and recommendations are analyzed for factor loadings and abnormal returns using the Daniel et al 1997 characteristic-based method.",
+      "AI favors undiversified portfolios loading on momentum, large size, and low book-to-market, driven by media attention, and its buy-and-hold or active portfolios earn no significant abnormal returns."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6717505",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6618878",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6614321",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Autonomous AI agents in business-to-business financial operations such as payments and liquidity management, examined conceptually through formal modeling and a single B2B payment execution scenario rather than empirical data.",
+      "No specific model is named; the paper proposes FASTRAC, a control-theoretic governance framework modeling agents as bounded, risk-scored actors under dynamically enforced constraints, validation, monitoring, and learning.",
+      "The authors argue adaptive mechanisms such as dynamic risk thresholds and trust-calibrated autonomy can keep agent actions compliant and auditable while preserving operational efficiency, with no empirical results reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6716257",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2605.03310v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6722712",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Six hundred large language model agents act as synthetic analysts across four applied economics papers, organized into balanced cells of fifty runs per ideology (left, neutral, right).",
+      "Unnamed LLM agents receive an ideology persona through an identity-framing system-prompt clause, then choose among pre-enumerated defensible specifications and retrieve coefficients from a frozen database, isolating specification selection.",
+      "Ideology shifts which specifications agents pick in every paper, with mean estimates ordering in the predicted direction, from clean separation in the voter identification paper to a near-null gap for DACA."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6639918",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6639820",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6726105",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6723042",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

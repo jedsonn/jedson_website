@@ -1,0 +1,235 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6962575",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6960175",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6967784",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6859338",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Closed economy simulation with 6 agents run across 7 unnamed LLMs, 50 rounds each and 4 resource types, tracking how models interact, compete and deceive.",
+   "The paper does not name the seven models; agents were not instructed to deceive, so deception emerged as a survival tactic, and no validation against ground truth is reported.",
+   "Average deception rate around 97.23 percent, Gini coefficients from 0.085 to 0.248, and a 192 percent inequality difference when swapping to more powerful models."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6865978",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6947918",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6962779",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.22337v2",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "One worked example in economic theory, designing a Groves or Pigouvian incentive mechanism for the Gans-Kominers eigengrade model of grade inflation.",
+   "Three protocols are compared: a single disciplined pass, an adversarial pair with Claude Opus 4.8 proposing and OpenAI Codex refuting, and a multi-agent project with a reviewer gate.",
+   "No run produced a strict VCG mechanism; adversarial verification caught three false claims, and external verification rather than model capability was the binding constraint."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6869664",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Organizations of varying sizes, studied with a mixed-methods design combining a literature review and a workshop involving students from a Business Information Systems master's program.",
+   "No LLM is applied by the researchers; the paper compares cloud versus on-premises infrastructure for deploying LLMs on cost, environmental impact and required skills.",
+   "Cloud lowers upfront costs and scales for startups and smaller firms, while on-premises gives more control and potentially lower long-term costs for larger organizations."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6869438",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.22797v1",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Controlled experiments across seven canonical economic decision problems using payoff-equivalent environments that share incentive structure but differ in surface presentation.",
+   "The paper does not name the LLMs; a framework fits an interpretable behavioral model on pooled source environments and tests out-of-sample prediction against an oracle trained on target data.",
+   "Substantial and systematic portability losses, indicating behavioral characterizations of LLMs do not transfer reliably to structurally equivalent decision environments."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 60
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6985744",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Two classroom field studies, 597 students in an introductory information systems course and 916 in an accounting program, plus a qualitative survey of 32 working professionals.",
+   "A custom LLM chatbot and ChatGPT served as on-demand support; effects were measured through field studies rather than validated against any coded benchmark.",
+   "Chatbots significantly reduced help-seeking avoidance and were preferred over human support, appearing to level access across introversion and social anxiety."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 56
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6962406",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6985531",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6900538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6986543",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6988699",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.29793v2",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "Financial advisor personas grounded in fund disclosures, holdings transitions, market context, and manager commentary; evaluated on held-out holdings-transition reconstruction, with sample size, period, and geography not stated.",
+      "An unnamed LLM builds personas refined through an agentic actor, scorer, and patcher loop, then compared to generic persona baselines on reconstruction and manager-commentary alignment, with no accuracy figure reported.",
+      "Fund-grounded personas recover portfolio decisions and manager interpretation better than generic baselines and give more specific advisory dialogue, with no magnitude reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "arxiv:2606.30801v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.30190v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.29863v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6900243",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Incentivized laboratory experiment where humans and autonomous LLM agents play a 40-round repeated Prisoner's Dilemma or Battle of the Sexes, 20 rounds against each counterpart type; geography not stated.",
+      "Autonomous LLM agents, family not stated, interpret instructions, form earnings beliefs, choose moves, and generate round-by-round reasoning as strategic decision-makers; no validation against ground truth applies.",
+      "Humans show more reciprocity and cooperation toward other humans while AI agents display in-group bias toward AI, so AI-AI pairs achieve the highest payoffs in both games."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 61
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7036766",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6900918",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual reference architecture for enterprise agentic AI, synthesizing publicly attributed observations from Klarna, Walmart, JPMorgan, Siemens, Schneider Electric, Notion, and Box, with no primary empirical data.",
+      "No model is used by the authors; the paper names foundation models and vendor stacks generically and proposes a Verifiable Context Layer, offering no validation against ground truth.",
+      "Argues that governed enterprise context is the substrate making agentic AI verifiable against EU AI Act and NIST obligations, a structural claim the authors state is not empirically validated."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "arxiv:2607.01388v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "RusFinChain, a Russian-language financial reasoning benchmark spanning 17 domains and 172 topics, with 5,280 parameterized examples from executable Python templates and gold-standard reasoning chains.",
+      "Eight open-weight LLMs are evaluated on a stratified sample generating 8,100 responses, scored against gold intermediate values using new Fuzzy Numeric and Soft-Attention alignment metrics.",
+      "Models reach Hard F1 around 0.65 for step alignment but only about 29 percent of final answers are correct, and fuzzy metrics correlate with correctness at Spearman rho about 0.48."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": true,
+    "validation_note": "gold-standard CoT chains, F1 and final-answer accuracy reported",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7042054",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6942138",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical model of an organization deploying an AI agent and allocating costly verification effort to outputs whose error risk is imperfectly observed; no empirical sample.",
+      "No model is used as an instrument; the author discloses Claude assisted drafting and numerical scripts while analytical results were verified in Python, so validation does not apply.",
+      "Derives a competence-trap condition where undetected risk rises as reliability improves, and shows minimum verification floors and audits eliminate the zero-verification collapse equilibrium."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7044241",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.02703v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7051818",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7065060",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6976218",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

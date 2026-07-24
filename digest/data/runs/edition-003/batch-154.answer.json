@@ -1,0 +1,225 @@
+[
+  {
+    "uid": "arxiv:2606.24616v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual framework paper with no empirical sample, treating tokens as the accounting unit for foundation model services linking computation, memory, energy, pricing, and economic value.",
+      "No model is used by the author; the paper builds an economic framework connecting token-level technical costs to production functions, resource allocation, and market design, naming no specific model.",
+      "Argues token expenditure and economic value are distinct, with value driven by marginal productivity, workflow position, hidden reasoning activity, risk, and downstream propagation effects."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6917759",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6921600",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Analytical game-theoretic model of a single AIGC firm choosing between subscription and on-demand pricing when consumers hold privacy concerns, motivated by services such as ChatGPT.",
+      "No AI model is used; the study derives optimal pricing analytically and does not name a model beyond citing ChatGPT and OpenAI as example services.",
+      "On-demand pricing is optimal when usage value is high, or moderate with low privacy concern; otherwise subscription is preferred, and firm and government interests can align."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6916764",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6906676",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6906677",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.13314v2",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "83,000 employed graduates in India's redesigned Periodic Labour Force Survey for 2025, with three occupational generative-AI exposure indices mapped to their occupations.",
+      "No language model is run; the authors assign existing occupational AI-exposure indices to survey respondents and compare exposure across caste groups within the same district.",
+      "Scheduled Caste and Tribe graduates are 0.24 to 0.37 standard deviations less exposed than upper-caste peers, and with a 20 percent exposure wage premium AI may widen the caste gap."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6841618",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6879502",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Survey of 100 managers in one of Asia's most regulated financial environments, drawn from doctoral dissertation research at Golden Gate University on generative AI adoption.",
+      "No language model is used; the study empirically examines whether governance infrastructure or frequent use drives managerial trust, with the abstract giving no model or method detail.",
+      "The title states the thesis that frequent use rather than governance builds managerial trust in generative AI; the abstract reports no effect size or statistical result."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6894638",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6918142",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6923333",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Comparative processual case study of two Chinese technology firms, using 42 semi-structured interviews and non-participant observation of management accountants working with generative AI.",
+      "No model is used by the researchers; the qualitative study analyzes how accountants evaluate and defend AI-generated forecasts and scenarios they did not fully produce.",
+      "Identifies three micro-practices, algorithmic interrogation, hybrid decision-making, and contextual sensemaking, and finds staged adoption builds shared review routines while rapid rollout leaves authority individually exposed."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6922888",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6845738",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper with no empirical sample, asking whether artificial intelligence can display entrepreneurial judgment and seeking to make that claim falsifiable.",
+      "No model is used empirically; the argument reasons from the resemblance of large language model architecture to constrained maximization and Stiglerian search, naming no specific model.",
+      "Argues that by available falsifiable standards the claim that AI lacks entrepreneurial judgment is being falsified, with implications for market economies."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6845958",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Conceptual and design-science paper introducing Generative Brand Narrative Intelligence and its EABN implementation, evaluated against existing system categories rather than an empirical dataset.",
+      "A multimodal multi-agent system orchestrated with LangGraph coordinates seven agents to generate and govern brand narratives through a state-aware lifecycle; no underlying model family is named.",
+      "The framework is presented as the only system satisfying all five defined qualifying properties, contributing a seven-agent architecture and a twelve-metric evaluation framework."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  }
+]

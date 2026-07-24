@@ -1,0 +1,221 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6627158",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6720239",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "Segment-level disclosures drawn from Form 10-K filings, spread across tabular and narrative sections; sample size, period, and geography are not stated in the abstract.",
+      "An unnamed large language model extracts reportable and nested segment items, paired with a retrieval augmented system that reads across multiple filings; no accuracy figure is reported.",
+      "The framework extracts segment information and answers cross-period questions, supporting within-firm longitudinal analysis and cross-firm alignment of geographic segments."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6731664",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6731295",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6675603",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "543 regulated financial institutions across 66 countries, covering 95,876 AI agents and 626,390 governance edges in a production scanning campaign.",
+      "Large language models (not named) plus web-scale search extract governance topology with a three-tier evidence classification; validity is assessed through classical measurement theory rather than a ground-truth accuracy check.",
+      "Governance scores track supervisory maturity from pension funds (12.10) to banks (20.92), and the v13.1.0 scanner recovers 21.7 percent more observed edges than v11.1."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "known-groups validity, no ground-truth accuracy",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6711019",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6687940",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual essay on AI agent governance, anchored to the February 2026 'Agents of Chaos' empirical study of autonomous agent failures across several universities.",
+      "No model is run by the author; large language model agents are discussed as the object, framed through the military metaphor of commander's intent.",
+      "Argues that rule-based guardrails handle only anticipated cases and fail when situations change, so agents need conveyed intent rather than only explicit orders."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6749582",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 12
+  },
+  {
+    "uid": "arxiv:2605.23955v2",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Survey of reproducibility in financial AI across credit risk, fraud detection, and anti-money laundering, supplemented by first-party experiments on public financial datasets.",
+      "Covers tabular models, graph networks, and LLM-based agentic workflows (models not named), and proposes a layered framework linking modality-specific determinism metrics to audit readiness.",
+      "Documents mechanical nondeterminism: explanation rank instability in credit scoring, prediction flips in GNN fraud detection, and tensor-parallel output divergence in LLM entity extraction."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6696178",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 12
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6713620",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "A real-time market simulator in which an LLM agent performs tender selection and execution, with reasoning intensity and market speed varied experimentally.",
+      "Agents built on frontier models (not named) reason about each decision in real time rather than following a fixed policy, with a deterministic algorithm as the limiting case.",
+      "Greater reasoning improves selection and conditional execution but consumes time, producing stuck inventory and expired-tender losses when the market moves faster."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6755658",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6753201",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 10
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6773860",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 12
+  },
+  {
+    "uid": "arxiv:2605.28850v2",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "TradeArena, an auditable LLM trading-agent testbed with risk reports and execution simulation, evaluated over 80 rolling failure anchors, eight LLM trajectories, and a 51-stock intraday experiment.",
+      "Multiple LLM agents (not named) trade while planning embeddings and hidden states are probed for pre-failure signatures using hash, LSA, Transformer, and white-box hidden-state probes.",
+      "Planning embeddings drift from normal centroids before drawdowns, and structured risk feedback aligns reasoning without fine-tuning but does not universally raise returns."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  }
+]

@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "arxiv:2607.18485v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.17766v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7024098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7065358",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7152575",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7156598",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "739 peer-reviewed articles on SEC 10-K filings published between 1994 and 2025, treated as a corpus to map the research literature.",
+      "Applies four topic modeling methods (LDA, BERTopic, Bunka, and the LLM-based Turftopic) and triangulates across them; no accuracy benchmark against ground truth is reported.",
+      "Identifies 103 topics consolidating into 22 cross-method themes, 13 recovered by all four methods, with sentiment, readability and risk-factor topics rising while voluntary disclosure and governance recede."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7020818",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7152791",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual position paper on generative AI in higher education, with no empirical sample, geography, or unit of observation stated.",
+      "No language model is used or named by the authors; the paper introduces Generational Unskilling Theory drawing on capabilities-development and technological-deskilling literatures.",
+      "Argues repeated AI-mediated cognitive substitution may block formation of foundational analytical and reflective capabilities, shifting concern from skill erosion to skill non-formation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7154038",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7020118",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7019578",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7154054",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "384 digital marketing users and practitioners in Iran, surveyed through an electronic seven-point Likert questionnaire.",
+      "No LLM is used by the researchers; they extend the Technology Acceptance Model and estimate it with partial least squares structural equation modeling.",
+      "Perceived usefulness and ease of use most shape attitudes, while trust, social norms and economic benefits raise adoption and ethical concerns, job-loss fears and infrastructure limits reduce it."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7019199",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7151338",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7133422",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis prompted by OpenAI's 2026 introduction of advertising into ChatGPT, treating its answer-independence claim as the object of study, with no empirical dataset.",
+      "ChatGPT is studied rather than run by the authors; the independence claim is decomposed into five sub-constructs and graded for external verifiability using measurement theory.",
+      "Verifiability is asymmetric: content and tone neutrality are partially verifiable, mention neutrality conditional on disclosure, omission neutrality unverifiable in principle, and longitudinal stability unverifiable without pipeline access."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7122180",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "10,000 synthetic personas for Switzerland built from two free Federal Statistical Office cross-tabulations, plus a validation against an 844-rater Swiss landscape-technology panel.",
+      "LLM-based synthetic respondents (specific family not stated) are elicited via Semantic Similarity Rating, with iterative proportional fitting used to match population marginals without microdata.",
+      "Synthetic concept means track human rankings at R of 0.68 near a 0.99 reliability ceiling; demographic conditioning moves income-driven purchase intent but not aesthetic ratings."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "correlation with real Swiss human panel, R=0.68",
+    "salience": 56
+  }
+]

@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6476021",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Exploratory comparative synthesis drawing on a small core corpus of direct SEO and GEO studies plus a contextual layer of market, overlap, and citation-behavior sources, with no primary sample.",
+      "No language model is run by the author; generative search engines including ChatGPT search, Google AI Overviews, and Perplexity are the object, and a provisional Divergence Index is applied across factor families.",
+      "Reports that GEO visibility ties more to entity and brand prominence and citation-bearing content than to link proxies, and that generative search augments rather than replaces organic SEO."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6658238",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6661500",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6473079",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Single-case, hypothesis-generating study of one senior engineer building a production-intended brokerage order management system over 21 development sessions, covering Saudi Exchange and US equities execution.",
+      "Claude 4.6 Opus via Cursor served as the primary code generator; the paper logs governance failures, including 32 review agents unanimously passing code with seven runtime-breaking SQL defects, with no accuracy benchmark.",
+      "Proposes an Authority-Capability Gap principle, a three-layer quality model, and a taxonomy of six AI failure modes drawn from more than thirty logged incidents."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6465739",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6570638",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6589479",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6670582",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Analysis of 507 real-world generative AI incidents drawn from the OECD AI Incident Monitoring database, focused on systemic risks in the media sector.",
+      "No language model is used as a tool; the authors adapt the IPCC hazard, exposure, and vulnerability risk framework to classify incident drivers, and the coding procedure is not stated.",
+      "Opacity and inadequate validity checks are the most prevalent hazards and content integrity the dominant exposure pathway, producing economic, reputational, and public-interest harms for businesses and consumers."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6662143",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Theoretical model of platform ecosystems facing generative AI, developed analytically and explored through a theory-guided computational application rather than any empirical sample.",
+      "No language model is run; complementors choose substantive effort, AI-enabled polish, and verification, with generative AI treated as lowering the cost of manufacturing surface plausibility.",
+      "Selective permeability, combining a trusted lane with a protected exploratory frontier, becomes optimal in most post-AI categories and outperforms both openness and closure in discovery-rich environments."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6668103",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6667132",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6512098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6665242",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Ninety-seven undergraduate management students completed two AI-enhanced activities using different chatbot tools across a single semester at one institution.",
+      "Researchers ran no model as an instrument; they test a dual-pathway serial mediation model linking reactance through autonomy and ethical perceptions through emotional engagement to effectiveness judgments, with tools not named.",
+      "Both pathways held, but by the second activity reactance bypassed autonomy and suppressed effectiveness directly, while the affective ethics-to-engagement pathway stayed stable across exposures."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6669317",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6666661",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Major listed euro-area banks, with emissions data from four leading commercial providers compared against outputs generated by three generative AI tools.",
+      "Three unnamed generative AI tools estimate or retrieve bank emissions, and their outputs are compared with commercial provider data for correlation, consistency, and replicability.",
+      "GenAI emissions data correlate with traditional sources and can partially fill gaps and flag anomalies, but share similar quality, consistency, replicability, and transparency limitations."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "correlation with commercial provider emissions data",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6657278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

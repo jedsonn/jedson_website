@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6768459",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6766518",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6795784",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Publicly available deepfake and synthetic-media policies issued by X, YouTube, TikTok, and Instagram, examined through qualitative document and interpretive discourse analysis. No time period stated.",
+      "No model is run by the researchers; generative AI appears as the object, the source of synthetic media whose platform governance is analysed.",
+      "Platform policies converge and diverge in defining synthetic media and distributing responsibility across creators, platforms, and users, revealing a shared but internally fragmented governance logic."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6798842",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Online experiment where participants used either ChatGPT or Google to complete practical search tasks, choosing a smartphone or holiday destination, plus qualitative interviews. Sample size and geography not stated.",
+      "ChatGPT, version not stated, served as the search tool participants used; the study measured behavioural outcomes rather than validating model output against any ground truth.",
+      "ChatGPT users more often identified the optimal option, did so faster, and consulted fewer external websites, indicating one-stop rather than gateway information use."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6725021",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "US equity panel of 30 NASDAQ-100 names with FNSPID news, 2019 to 2023 test window, evaluating portfolio and reinforcement-learning decisions built on sparse text signals.",
+      "An unnamed LLM maps news into K named coordinates (SSAI); performance is compared against FinBERT, principal-component, and lexical baselines, not against any text ground truth.",
+      "The SSAI portfolio edge is largely a basket-selection effect; a first principal component reaches 433.6% cumulative return and FinBERT ranks stronger, while RL results depend on algorithm not representation."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["legacy"],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6760701",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6760638",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6761698",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Brand appearance across matched LLM responses to category-recommendation prompts, spanning categories such as premium skincare, personal-finance apps, and premium tea. Sample size and period not stated.",
+      "An unnamed LLM generates category recommendations; the brand-presence rate is tested for construct validity against Google Trends rank as a consumer-search proxy.",
+      "The paper identifies four empirical regimes linking AI presence to search rank and promotes the covariate-saturated Regime 4 to canonical on three pre-registered confirmations."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "compared to Google Trends rank, regime taxonomy not an accuracy figure",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6785217",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "About 114,000 matched claim pairs drawn from all six IPCC Assessment Reports, 1990 to 2023, and ten major US and UK newspaper outlets.",
+      "Unnamed LLMs score matched claims to compare severity across the Technical Summary, the Summary for Policymakers, and press coverage; no human-coding validation is reported.",
+      "Both the policymaker summary and the press shift systematically toward the more severe end of source ranges, mainly by emphasizing higher-impact magnitudes within reported ranges."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6723919",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6787636",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6800170",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "China smart city pilot initiatives evaluated with China Family Panel Studies data, 2010 to 2018, using a staggered difference-in-differences design on household welfare.",
+      "Large language models, not named, classify policy-discourse text to measure government emphasis on human-centered digital technology; no validation figure is reported.",
+      "Smart city pilots raised welfare, income levels, and equity, with human-centered technology as a central mechanism, and discourse analysis shows heightened government emphasis on it."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6757745",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6731418",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Historical case studies of information-propagation technologies from the printing press to the internet, plus a non-Western case, used to time institutional responses to AI.",
+      "No model is used; ChatGPT's 2022 launch only marks the onset of the AI adoption cohort in a cohort-replacement extrapolation, not a modelling exercise.",
+      "The paper predicts the first major institutional response to AI in the 2037 to 2047 window, with pre-registered conditions that would disconfirm the compression thesis."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6787638",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "243 million new hires and 407 million online job postings across the US, UK, Canada, and Australia, 2017 to 2025, with occupation, region, and firm-level difference-in-differences.",
+      "No model is used; generative-AI exposure is an occupational index studied as a treatment alongside working-from-home exposure, with no specific model named.",
+      "Estimated jointly, the working-from-home effect on falling junior hiring persists while the generative-AI coefficient attenuates to near zero and often statistical insignificance."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 72
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6786319",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

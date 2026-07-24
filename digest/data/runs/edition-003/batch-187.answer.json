@@ -1,0 +1,250 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6557018",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6565538",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual policy white paper aimed at institutional, infrastructure, and governance leaders; no empirical sample, period, or geography, drawing instead on interdisciplinary evidence about AI adoption in organizations.",
+      "No model is used or named; the paper builds a framework linking workforce atrophy, cognitive overreliance, technical vulnerability, and infrastructure concentration into a unified account of systemic risk.",
+      "Argues institutions improve output faster than they preserve capacity to understand, audit, and govern AI, producing accelerated fragility, and proposes a Red Switch Mandate governance response."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6576486",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Practitioner account drawn from operating an AI-governed tax practice serving LATAM entrepreneurs in the United States, with the protocol reported operational in December 2025.",
+      "No model family is named; the AI system, called Aila, earns decision autonomy incrementally through logged and verified reliability in bounded decisions before scope expands.",
+      "Documents a live incident where the verification discipline caught a silent data-loss bug that unit tests, stress tests, and manual QA missed, and maps the protocol to EU AI Act Article 26."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6689376",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6690319",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Study of agentic AI in financial infrastructure using Python-based analytical frameworks on historical data covering traditional assets such as gold and digital assets such as Bitcoin; sample size and period not stated.",
+      "No model is named; analytical tools identify cross-asset correlations, and the paper surveys AI use in credit approval and fraud detection with no validation against a ground truth.",
+      "Reports a paradox where AI boosts speed and insight yet enables fraud projected to raise global losses from 23 to 58 billion dollars, while only 8 percent of major banks report clear ROI."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 27
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6685711",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual framework study grounded in the Resource-Based View for engineering project management offices and project-based organizations, built from a systematically retrieved literature corpus with no primary sample.",
+      "No model is used or named; cross-impact structural analysis maps three AI capability tiers (analytical, generative, agentic) against four project-management governance dimensions.",
+      "Finds a maturity asymmetry where analytical-operational applications dominate and strategic-agentic cells stay underdeveloped, and proposes three sequenced adoption trajectories toward sustained competitive advantage."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6697218",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical study of decentralized autonomous organizations and AI-agent systems that pair blockchain governance with a conventional legal wrapper such as a foundation or limited liability entity; no empirical sample.",
+      "No AI model is used; a stylized economic model has token-holders jointly choose wrapper and governance concentration, with a global-games argument selecting among multiple equilibria.",
+      "Identifies an inefficient trap where no holder absorbs the front-loaded fixed cost alone versus an efficient wrapper equilibrium, and bounds the Coasean singularity claim that AI agents sharply reduce frictions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6695983",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6701718",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6708820",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual framework paper on payment infrastructure spanning banking systems, card networks, real-time rails, and blockchain settlement; no empirical sample, period, or geography.",
+      "No model is named; the paper proposes an Agentic Layer in which intelligent agents autonomously execute transactions from intent, policy, and real-time signals, illustrated through a scenario walkthrough.",
+      "Reframes payments as autonomous decision-execution systems and outlines architectural components, presenting no empirical results or validation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6609178",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on software delivery methodology for agentic AI with no empirical sample, contrasting Waterfall, Agile, and SAFe against the governance needs of autonomous decision-making software.",
+      "No model is used or named; the paper introduces the Agentic Project Execution Framework (APEX), a governance-first methodology that replaces Agile constructs for software that decides autonomously.",
+      "Argues the governance gap from agentic AI is a paradigm problem requiring first-principles governance of autonomous decisions rather than feature delivery, and presents no empirical evaluation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 27
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6705878",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual governance study of built-environment organizations under the EU AI Act, applied illustratively to structural compliance checking, AI-assisted procurement, and predictive asset maintenance; no empirical sample.",
+      "No model is used or named; drawing on socio-technical systems theory and principal-agent analysis, the paper builds a four-stage Threshold Governance Protocol for shifting decision authority to AI.",
+      "Defines the Delegation Threshold as a context-specific point where governance capacity, regulatory ceiling, and workforce readiness jointly permit a shift from human-led to AI-led authority."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6600899",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Systematic synthesis of 21 foundational sources, including surveys of nearly 10,000 organizational leaders, on why enterprise AI investment fails to produce earnings impact; geography and period not stated.",
+      "No model is used or named; the paper builds the Orchestration Maturity Framework mapping enterprise AI capability across five pillars from culture and leadership to governance and regulatory compliance.",
+      "Argues AI project failure is an organizational learning problem, not a technology deficit, noting only 6 percent of firms report significant earnings impact despite 252 billion dollars of 2024 investment."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6709172",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6714599",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6617798",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Simulation study extending a coupled feedback-loop model of AI sycophancy from conversational to agentic settings, adding parameters for verification capacity and specification clarity; no empirical field sample.",
+      "No model is named; simulations compare a chatbot baseline against agentic architectures under varied conformity and observability conditions to measure spiralling feedback dynamics.",
+      "Agentic architectures spiral catastrophically in 38.9 to 41.6 percent of runs versus 4.4 percent for chatbots, an 8.7 to 9.4 times amplification, while informed users cut spiral rates 62 to 93 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 43
+  }
+]

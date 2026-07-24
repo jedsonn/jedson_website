@@ -1,0 +1,225 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6830575",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6815378",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Twenty-four cosmetics brands across three identity-load cells (prestige, celebrity-DTC, and drugstore), sampled worldwide and scored on a locked six-LLM reference panel for AI-mediated brand retrieval.",
+      "A six-frame query battery splits category-canonical from cultural retrieval across the six-LLM panel; the specific models are not named in this abstract, and outputs are scored under a pre-registered protocol.",
+      "Type 2 emergence confirmed with three high-identity-load cases (Rare Beauty scored 1 canonical versus 17 cultural) plus one out-of-cell case; the recognition regime was falsified by uniform saturation."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 24
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6835490",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6838201",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6812419",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6816340",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Methodology extension of the AIAS presence protocol, retrospectively scored against the v0.16 to v0.21 brand corpus of skincare and cosmetics substrates using a locked six-LLM panel.",
+      "Adds three increments: a recognition pre-screen, a direct identity-load hypothesis tested via bootstrap intervals, and a phantom-brand persistence count; the six panel models are not named here.",
+      "For the cosmetics phase the direct identity-load hypothesis is confirmed (Cell B delta of +7.12) and six off-panel brands clear the phantom-persistence threshold of six mentions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 24
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6843649",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6845159",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "Russell 3000 firms with climate risk disclosures in the MD&A and risk-factors sections of 10-K filings, linked to market-based measures of firm risk; the sample period is not stated.",
+      "An unnamed large language model plus dictionary methods classify disclosures into physical and transition risk; no accuracy or agreement check against human coding is reported.",
+      "Greater climate disclosure is associated with higher market-implied risk; physical-risk text reads as reassurance while transition-risk text reads as a red flag, attenuating after the 2022 SEC proposal."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no accuracy check reported",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6840256",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual essay on generative AI in entrepreneurship education within higher education, with no empirical sample, drawing on sociocultural mediation, problem-posing pedagogy, experiential learning, and effectual logic.",
+      "No model is used or named; the essay theorizes three pedagogical roles for generative AI: co-pilot in design-based learning, dynamic stakeholder in simulations, and Socratic tutor in reflection.",
+      "Proposes the AI-Mediated Entrepreneurial Method, reframing generative AI from an answer-generating oracle to a mediator of inquiry, judgment, and reflective practice."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6844822",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6783940",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual essay on generative AI operation risk, using cel-style character images as diagnostic probes within an Open Bias Architecture framework; no empirical sample or quantitative measurement.",
+      "GPT-5.5 is invoked illustratively rather than benchmarked; the paper introduces character-structure preservation to observe template absorption and structural drift in model outputs.",
+      "Argues that stable, coherent output is not structural preservation; user-specific conditions get reshaped into acceptable templates, posing governance risk for business outputs without operational control."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6796558",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6841482",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6799479",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Specification of AIAS presence measurement protocol v1.4 for measuring AI availability across LLM-mediated retrieval; the empirical anchor is the v0.17 premium kitchenware brand program.",
+      "A locked six-slot reference panel with the classifier fixed to claude-opus-4-7 measures Recognition via Phase A anchoring and Recall via Phase B mention rate, producing eighteen cells per brand.",
+      "The Iwachu case shows full Recognition at 6/6 anchoring with zero Recall at 0/18 mention rate, anchoring the claim that AI availability is a two-component construct."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "arxiv:2606.00811v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "US data centers, now 4.4 percent of national electricity demand, and local grid outcomes near them; a novel dataset links AI activity to grid data, with difference-in-differences on staggered LLM releases.",
+      "Language models are not a research tool here; their staggered release serves as the natural experiment, paired with a game-theoretic model of REC, PPA, and colocation procurement choices.",
+      "AI demand raises fossil generation, wholesale prices (up to 25 percent in treated PJM zones), and outages (0.5 to 1 more per year), scaling with model size; on-site generation reverses power-quality effects."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  }
+]

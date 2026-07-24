@@ -1,0 +1,231 @@
+[
+ {
+  "uid": "doi:10.3386/w31122",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Simulation experiments that replay three classic behavioral economics studies from Charness and Rabin, Kahneman Knetsch and Thaler, and Samuelson and Zeckhauser, with a language model as the decision maker instead of human participants.",
+   "The model is given endowments, information and preferences and asked to choose in each scenario; the abstract does not name the model, and outputs are compared qualitatively to the original human findings.",
+   "Simulated agents reproduce the qualitative patterns of the original experiments, and cheap scenario variations can generate hypotheses to later test with real people."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "qualitative match to classic experiments, no agreement figure",
+  "salience": 82
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4448091",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4568800",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 28
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4511540",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4603221",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4675409",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4715355",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4731283",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 28
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4819603",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4902960",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.4950340",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "A real-world retail dataset covering thousands of heterogeneous products, used to build and test an inventory management model at the product level, including new products with limited history.",
+   "The authors train their own foundation model on the GPT architecture with a standardized process, giving cross-learning across the portfolio and zero-shot handling of new products; no off-the-shelf named model is used.",
+   "The foundation model consistently beats several state-of-the-art inventory models on inventory distortion costs, though the abstract reports no magnitude."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "real retail data, outperforms state-of-the-art on inventory distortion cost, magnitude not stated",
+  "salience": 58
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5100205",
+  "drop": false,
+  "field": "accounting",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 34
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5211017",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5258789",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "A practical guide rather than an empirical study, covering the full survey and experiment research workflow: literature review, instrument design, study administration, data coding and interpretation of results.",
+   "It explains how GenAI and language model systems operate, maps opportunities and risks at each research stage, and stresses checking the validity of GenAI-coded responses; no specific model is named.",
+   "Delivers rules and best-practice tips for responsible GenAI use, with a companion site offering reproducible R and SPSS coding templates and sample preregistrations."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 54
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5267655",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.5331771",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

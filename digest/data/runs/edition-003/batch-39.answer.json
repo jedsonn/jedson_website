@@ -1,0 +1,234 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6295398",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6470460",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6470445",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6427718",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6402338",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Federal Open Market Committee post-meeting press conferences; the unit is the conference window, with outcomes in Treasury ETF trading volume, returns, volatility, and quoted and effective spreads.",
+   "Trains large language models, family not stated, to generate realistic Fed Chair answers to journalist questions; no accuracy check against the actual responses is reported as validation.",
+   "Forecasts built on LLM-generated responses give higher explanatory power and lower error for liquidity and activity measures, and the actual-versus-generated gap predicts spreads on long-dated Treasuries."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6240278",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Multi-platform observational study of ChatGPT, Claude, Perplexity, and Gemini; 19,556 classified queries across eight verticals, plus a replication on 94,599 citation events across 1,998 queries.",
+   "Studies how the four platforms select cited sources; a logistic regression on log Google position predicts page citation with cross-validated AUC of 0.802, far above intent-only baselines.",
+   "Google rank dominates predictors; position-1 pages are cited by at least one platform 54 percent of the time, falling to about 2 percent at position 100, aligning more with Google than Bing."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "claude",
+   "gemini"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6416478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6571116",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6480298",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6503178",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6627298",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6632823",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "Roughly 7,000 US equities per cross-section, scored from twelve frozen OpenAI checkpoints spanning 2021 to 2025, each treated as a time-stamped summary of the public textual record.",
+   "Frozen OpenAI checkpoints extract a sector-neutral outlook score from pre-cutoff public text; no comparison of the score against a labelled benchmark or hand coding is reported.",
+   "The outlook score is positively associated with analyst revisions, target-price changes, and one-month returns (t = 6.02) after valuation and factor controls, and is stronger for high-coverage firms."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6423398",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6626538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6640179",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "UK banks and building societies; conceptual analysis drawing on the AI Security Institute evaluation, NCSC guidance, Bank of England statements, and the literature on large language models in cybersecurity.",
+   "Examines Anthropic's unreleased Claude Mythos Preview, studied for its autonomous offensive cyber capability rather than used by the authors; no empirical model evaluation is run.",
+   "Argues the model compresses time-to-exploit and lowers the cost of chained attacks without creating new vulnerability categories, and that existing frameworks remain fit for purpose; sets out five recommendations."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6642032",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

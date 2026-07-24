@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6832159",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6834839",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Chatbots in Telegram chat groups, classified along role positioning, enactment, and competency; period and geography not stated, with chat groups as the unit of observation.",
+      "Text embeddings and hierarchical clustering classify chatbot roles, model not named; effects on participation and emotional expression estimated with a matrix-completion estimator and covariate-balancing weights.",
+      "Governance chatbots raise participation with no effect on emotional expression while affordance chatbots suppress both, and AI-enabled chatbots produce larger positive participation than rule-based ones."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6874918",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on autonomous multi-agent AI in accounting, auditing, and anti-money-laundering and counter-terrorism-financing settings; no empirical sample, using conceptual simulations and governance stress testing.",
+      "No language model is run; the paper proposes an AHAA framework of recursive accountability, adaptive accountability, and governance receipts, with no validation against ground truth.",
+      "Argues the central challenge is accountability fragmentation rather than epistemic opacity, and that governance must become computationally infrastructural rather than retrospective human oversight."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6886518",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6841798",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis of AI assistants and agents reshaping competition in the European Union; no empirical sample, focused on vertical-chain power relations and ecosystem competition.",
+      "No language model is used; the paper reasons about how agentic AI shifts competition from products to integrated services and from firms to ecosystems, with no validation applicable.",
+      "Argues vertically integrated providers may leverage their AI tools to extract rents while agentic AI and collaborations may ease entry, questioning the adequacy of current competition-law analysis."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6839858",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual pricing framework for AI software services delivered by agentic coding agents, illustrated with one real engagement re-priced from a 2,500-hour quote to 200 hours.",
+      "No language model is run by the author; the paper analyzes how autonomous coding agents split delivery into thinking and making layers with different unit economics, no validation applicable.",
+      "Proposes cost-decomposition, hybrid, and value-anchored outcome-based pricing regimes plus three contractual instruments, and flags per-token inference pricing as an unstable subsidised rate."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6839340",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Practitioner synthesis of enterprise AI integration and adoption, drawing on the author's modernization, data-migration, and RPA experience plus published evidence; no original empirical data.",
+      "No language model is run; the paper cites evidence that about 95 percent of enterprise generative-AI pilots fail and introduces a seven-layer Accountable Integration Stack, no validation applicable.",
+      "Argues durable AI advantage accrues at the integration layer rather than model capability, and that national AI capability is fundamentally an institutional capability."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6916271",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6904799",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6898819",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Analytical study of whether the agentic-AI investment boom poses systemic financial risk, drawing on public equity concentration, private-credit, ABS, and issuer-filing evidence.",
+      "No language model is used; the paper combines boom-bust theory, historical comparators, and a 500,000-run synthetic sensitivity lab used only to rank evidence priorities, no validation applicable.",
+      "Concludes present evidence supports a dotcom-like equity correction or telecom-like capex-credit hangover more than a 2008-style systemic crisis, conditional on an attestation bottleneck."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6850202",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6923108",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Financial filings such as 10-K reports, evaluated on a benchmark of 60 questions written by analysts at a major institutional investment firm with human-verified ground-truth answers.",
+      "HybridRAG-Finance adds a summary quality-control agent feeding parallel ChromaDB vector and Neo4j graph stores; the underlying language model is not named, evaluated with the RAGAS framework.",
+      "Reaches 98 percent faithfulness and 97 percent context recall, outperforming VectorRAG and GraphRAG baselines on finance-critical metrics while keeping comparable retrieval latency."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "60-question analyst benchmark, RAGAS faithfulness 98%",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6929718",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6846561",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6879318",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Online experiment with 274 investors evaluating One-Person Companies, ventures in which a single founder coordinates specialized AI agents that perform all operational work.",
+      "No language model is run; the study manipulates AI agent control mode and workflow pattern and measures investors' processing fluency, investment intention, and word-of-mouth.",
+      "Centralized control and sequential workflow each independently raise processing fluency and investor evaluations, but their marginal contributions diminish when both are present together."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6945731",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

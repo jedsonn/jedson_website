@@ -1,0 +1,245 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6799068",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6786136",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6762100",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6793998",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "FNSPID news dataset with 28,502 ticker-date signals, ten Nasdaq stocks traded 2019 to 2023, evaluated across ten random seeds and 500,000 training steps.",
+   "OpenAI gpt-4o-mini scores each news article under five diverse prompts, and the response standard deviation gates whether the signal reaches the reinforcement-learning trader; no accuracy check against ground truth is reported.",
+   "The gate activates 34.2 percent of the time and uncertainty runs higher in the 2022 bear market than in 2019, but 36 percent cumulative return does not beat the 62 percent CPPO baseline."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6804059",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Two online surveys of generative AI users in China and the United States, combined sample of 1,632 respondents, cross-national comparison.",
+   "No model is run by the researchers; ChatGPT and DeepSeek are the studied systems, and the survey measures machine heuristics, privacy concerns, cynicism and self-disclosure.",
+   "Chinese respondents disclose more while US respondents report more privacy concern and mistrust; perceived fairness and accuracy link to lower concern, and concern raises cynicism."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6804466",
+  "drop": false,
+  "field": "economics",
+  "role": "instrument",
+  "bullets": [
+   "11,691 U.S. Department of the Treasury press releases from 1996 to 2026, used to build a high-frequency multidimensional measure of fiscal posture.",
+   "Large language models, not named, extract fiscal posture dimensions from the releases; the abstract reports no validation of the extraction against hand coding or a benchmark.",
+   "State-dependent local projections show fiscal erraticism suppressed output and employment during the crisis and zero lower bound era, but fed inflation and compressed term premia during COVID."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6734481",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6813758",
+  "drop": false,
+  "field": "accounting",
+  "role": "object",
+  "bullets": [
+   "Chinese Institute of Certified Public Accountants examination used as the test setting, with tasks grouped by complexity and analyzed through panel data regression.",
+   "Language models, not named, answer CICPA tasks; the study tests whether proficiency comes from creative reasoning or from overlap between training data and task content.",
+   "Data overlap, not creative reasoning, is the primary driver of current AI proficiency on accounting tasks once task complexity is accounted for."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 48
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6738161",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6750698",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6748780",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837687",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6839399",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "Circular economy policy evaluation, demonstrated on an electronics recycling policy, using a hybrid agent-based model coupled with system dynamics and environmentally extended input-output accounting.",
+   "Large language models, not named, read natural-language policy descriptions and select parameter values from a curated empirical library; a check finds they capture ordinal but not cardinal structure.",
+   "Language models reliably recover the ordinal structure of consumer heterogeneity but cannot replace empirical data for cardinal calibration, and the model stays reproducible without them."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "ordinal vs cardinal elicitation check, no numeric figure",
+  "salience": 45
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6783680",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "187 tourists to the Canary Islands recorded spoken visual diaries at three points, pre-trip, during-trip and post-trip, in a longitudinal design.",
+   "An ensemble of three frontier models including GPT-4-class scores transcripts zero-shot on cognitive, affective and conative dimensions, validated against survey scales with convergent validity r of .69 to .78.",
+   "LLM scores show internal consistency of .84 to .91 and predict satisfaction and loyalty comparably to surveys, while detecting in-trip cognitive updating that retrospective surveys miss."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "convergent validity r .69-.78, ICC .72-.79 vs survey scales",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6836268",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6835336",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Manually annotated dataset of 6,000 patent sentences, framed for functional requirement and design parameter extraction in patent analysis and new product development.",
+   "Encoder-only and decoder-only models, not named, compared under supervised fine-tuning versus prompting on sentence classification and named entity recognition, scored by F1 against the annotations.",
+   "Fine-tuned encoder-only models beat prompted decoder-only models by up to 0.1 F1 on classification and 0.4 F1 on entity recognition, with about 1,000 examples sufficing."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "F1 against 6,000 manually annotated patent sentences",
+  "salience": 50
+ }
+]

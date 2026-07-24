@@ -1,0 +1,258 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7115195",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Chinese firms with firm-level export data, using the staggered rollout of China's generative AI service registration system as a quasi-natural experiment; sample period not stated.",
+      "No language model is used by the researchers; generative AI adoption is the treatment, estimated with staggered difference-in-differences plus threshold and spatial spillover tests; model not stated.",
+      "Generative AI significantly raises export resilience through stabilizing import supply chains, securing production, and expanding export sales, with larger effects for technology- and capital-intensive firms."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7119690",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Lightcast online job postings for Australia and New Zealand covering 2015 to 2024, with the job posting and its skill requirements as the unit of observation.",
+      "No model is used; the study classifies AI-related roles as technical, human-centred, or hybrid and tracks skill bundles over time; not stated.",
+      "AI-related postings rose from 1.3 to 4.2 percent in Australia and 0.1 to 3.2 percent in New Zealand, shifting toward hybrid profiles combining technical and communication skills."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6960140",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Structured theory-building literature review of research published between 2015 and 2025 on AI and digital tool adoption by small and medium-sized enterprises, with a supply-chain focus.",
+      "No model is used; the review synthesizes adoption frameworks and builds testable propositions about channels and absorptive capacity; not stated.",
+      "Argues large-firm frameworks fit SMEs poorly and that positive performance findings reflect weak designs, proposing an SME-native account with autonomous, mimetic, and imposed adoption channels."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6959363",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "US firms and their corporate accounting functions, using within-industry variation in prior data-integration investment and post-generative-AI outcomes centered on the 2022 onward shock.",
+      "No model is used by the researchers; generative AI adoption is the shock, and text of job postings and résumés measures task content and skill requirements; model not stated.",
+      "A one-standard-deviation greater prior data-integration investment cuts accountant employment 2.7 percent and postings 13 percent, concentrated in junior roles and driven by attrition."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 63
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7105638",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6962978",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Founders of North American technology startups recruited to share detailed experiences with generative AI and its effects on their ability to scale.",
+      "No model is used; founders' delegation beliefs are studied via survey plus a randomized exposure to optimistic or pessimistic information about AI performance; not stated.",
+      "Founders estimate needing 55 percent more employees without AI on average, median 17 percent; formal integrators estimate headcount needs nearly four times higher than informal users."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 56
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7116980",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Fifty US states plus the District of Columbia, Census Bureau Business Formation Statistics from 2004 to 2026, linked to the Anthropic Economic Index for April and May 2026.",
+      "No model is used by the researchers; augmentative-versus-automative AI collaboration share is related to venture-creation resilience via OLS, gradient boosting, and PLS structural equation modelling.",
+      "The raw negative association of minus 0.25 to minus 0.34 disappears after controls; net domestic migration drives the pattern, leaving no evidence of a substantial AI effect."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6960860",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical model with no empirical sample; heterogeneous workers on a workplace collaboration network whose AI capability and human capital evolve through use and peer learning.",
+      "No language model is used; generative AI adoption is formalized as a finite-type network mean field game with Hamilton-Jacobi-Bellman and Fokker-Planck equations and a numerical illustration.",
+      "Managerial clarity operates like a control parameter that shifts collaboration as an order parameter and accelerates convergence toward the AI-capability frontier."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6959458",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7012498",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "One hundred sixty-nine economies around the November 2022 release of ChatGPT as a natural experiment, plus a controlled experiment across twelve languages of differing resourcedness.",
+      "ChatGPT and a frontier generative AI tool make business decisions across languages; language intensity measures compatibility with training data; no accuracy validation is reported.",
+      "A one-standard-deviation rise in language intensity raises productivity growth 0.94 percentage points; multilingual AI development would cut the inequality cost of AI growth by 59 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6959638",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual credit-risk and accountability workflow illustrated on a synthetic transaction stream into which a behavioral compromise is injected; no real-world data.",
+      "No language model is used as a tool; the paper proposes MANDATE to underwrite and monitor borrowing AI agents using a drift statistic, circuit breaker, and provenance ledger; not stated.",
+      "On the synthetic stream the monitor detects the injected regime change two transactions after onset, the breaker revokes the mandate, and the ledger detects retrospective tampering."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6969839",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6956618",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis of national AI strategies drawing on evidence from India, the European Union, the Gulf states, and US-China technology decoupling.",
+      "No model is used; the paper introduces the Compute Sovereignty Impact Model mapping how sovereign AI policy disrupts multinational enterprise infrastructure, talent, and markets; not stated.",
+      "Compute nationalism is estimated to raise enterprise infrastructure costs 25 to 40 percent, reduce cross-border innovation velocity, and create new geopolitical risk."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7115525",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical model with no data; users must reveal proprietary context to obtain useful generative AI output while providers may retain that context for model improvement.",
+      "No language model is used; a two-wedge model formalizes a user-side analogue of Arrow's information paradox for platform data retention; not stated.",
+      "Platforms under-retain when benefit appropriability is weaker than harm internalization and over-retain otherwise; the wedge ratio is a sufficient statistic, corrected by subsidy or tax."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7095059",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.13314v2",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Yogurt scanner panel of consumer purchase occasions, a discrete choice demand estimation setting central to marketing and operations.",
+      "Tabular foundation models applied via in-context learning, reformulated to encode choice-set dependence and consumer heterogeneity, with fine-tuning on population choice data; specific model not named.",
+      "The best reformulation beats hierarchical Bayesian estimation on holdout log-likelihood and hit rate while running sixteen times faster, with largest gains in the medium-data regime."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "holdout log-likelihood and hit rate vs hierarchical Bayes",
+    "salience": 54
+  }
+]

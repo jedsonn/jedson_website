@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6949948",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6852220",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual design science study targeting small and medium businesses with fewer than 250 employees; cites OECD adoption figures but reports no primary firm sample or fieldwork.",
+      "No language model is applied by the researchers; the paper builds a five-level by five-dimension maturity matrix with 88 behavioral indicators, following Peffers and Becker design science procedures.",
+      "Produces a scored diagnostic instrument using a weakest-link classification rule and a prioritized intervention sequence; a Delphi validation with twelve to eighteen experts is specified but not yet run."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6949507",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6945099",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Two benchmarks of survey respondents: Twin-2K-500, a homogeneous set, and 13 diverse sub-studies; task is predicting each individual's held-out responses from prior answers.",
+      "gpt-5.4-mini and Qwen3-8B build digital twins from raw transcripts, a hand-crafted background-decision-evaluation schema, and an automatic structure-discovery pipeline, evaluated by held-out response accuracy.",
+      "Structured personas raise accuracy 1.91 points over raw transcripts but the fixed schema fails on heterogeneous tasks; automatic structure discovery restores a 1.91 point mean gain."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "open_other"],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "held-out survey response prediction accuracy",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6853098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6960008",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Autonomous Province of Trento public administration; hybrid retrieval-augmented generation over more than 160,000 administrative documents; deployed in production for six months with 30 staff users.",
+      "A human-in-the-loop multi-agent system drafts grounded responses to citizen and council inquiries; the underlying base model is not stated, and outputs keep traceable document grounding.",
+      "Response preparation time fell by 70 percent while human oversight and institutional responsibility boundaries were preserved."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6958664",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6856700",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6858038",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual legal and policy analysis focused on Nigeria; unit of analysis is the national labour law and AI policy framework rather than firms or workers.",
+      "No language model is used; the article assesses generative AI's labour implications against ILO, UNESCO, Council of Europe and African Union norms and Nigerian statutes.",
+      "Concludes Nigeria's framework is fragmented and lacks a dedicated workplace AI governance regime, and proposes a decent-work agenda of human review, transparency and reskilling."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6957523",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6963910",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6966058",
+    "drop": false,
+    "field": "accounting",
+    "role": "object",
+    "bullets": [
+      "Mixed methods; Study 1 analyzes YouTube videos, comments and transcripts, and Study 2 surveys 437 accounting-related students in Indonesia and the Netherlands.",
+      "No language model is applied as a research tool; generative AI use is the object, analyzed thematically then modeled with partial least squares structural equation modeling.",
+      "Institutional guidance reduces policy ambiguity and strengthens ethical reasoning; policy ambiguity raises misuse normalization and misuse intention, while detection risk lowers misuse intention."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6968358",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Enterprise generative AI adoption modeled as a system dynamics simulation; adopters segmented by Rogers' five diffusion categories and calibrated to an empirical rise-dip-rebound-plateau reference mode.",
+      "No language model is applied; a simulation with 17 reinforcing and 8 balancing loops endogenizes performance, trust, literacy and cost, validated by behavior-pattern and structure tests.",
+      "Five leverage points are dominated by developer-ecosystem structure; ecosystem growth beyond governance capacity lowers long-run adoption, and combined interventions underperform targeted single ones."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6861738",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6863419",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6966070",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Series of experiments with users of large language model based conversational AI; participants are individuals reacting to AI failures; sample sizes not stated.",
+      "No language model is applied as a research instrument; the studies manipulate perceived anthropomorphism and error to examine causal attribution and willingness to engage.",
+      "Perceived anthropomorphism buffers engagement after failures by shifting attribution to external causes, whereas perceived autonomy shows no such moderating effect."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  }
+]

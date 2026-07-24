@@ -1,0 +1,275 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6650978",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6449018",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "llama",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6557318",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "llama",
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6688478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6690543",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6725589",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6732292",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6742119",
+  "drop": false,
+  "field": "accounting",
+  "role": "object",
+  "bullets": [
+   "Conceptual framework paper with no empirical sample, synthesizing management accounting, business-partnering, and decision-usefulness literature to classify finance function activities by strategic value contribution.",
+   "No model is run; the paper argues that generative AI and LLMs, without naming a specific system, automate data work, augment analytical work, and leave narrative work to human judgment.",
+   "Proposes a three-level Finance Value Pyramid and advances three propositions plus a falsifiable research agenda, positioning narrative translation as the highest-value and most AI-resilient finance activity."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 34
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6742418",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6750603",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6730842",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gemini"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6756303",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "2,160 forced-choice decisions from 36 experienced AI users judging LLM answers to 20 realistic information-seeking prompts, with participants blinded to both system identity and format category.",
+   "ChatGPT, Gemini, and Claude, versions not stated, each generated answers in four formats (prose, FAQ, fact list, table); the study measured human preference, not accuracy against any ground truth.",
+   "Format preferences were system specific: FAQ was favored for ChatGPT, prose for Gemini, and Claude read as helpful across formats, while tabular formatting was consistently least preferred."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "gemini",
+   "claude"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6682038",
+  "drop": false,
+  "field": "finance",
+  "role": "agent",
+  "bullets": [
+   "Backtest across seven major companies, with sample period and market not stated, comparing a multi-agent LLM plus reinforcement learning framework to equal-weighted and PPO portfolio benchmarks.",
+   "DeepSeek acts as the generation agent building formulaic alphas and Gemini as the evaluation agent selecting them; chosen alphas feed a DDPG reinforcement learner for portfolio weights, with no validation reported.",
+   "The multi-agent LLM plus DDPG framework generally achieved higher cumulative returns than equal-weighted and multi-agent PPO benchmarks, but with increased short-term risk, while single-agent PPO gave steadier, lower-drawdown performance."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gemini",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 44
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6772263",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6826575",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6829506",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [
+   "claude",
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

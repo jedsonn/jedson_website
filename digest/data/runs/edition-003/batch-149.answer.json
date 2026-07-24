@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6852200",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6844942",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6850540",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854336",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854691",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854680",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6854633",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "China's A-share market, specifically CSI 300 constituent stocks; strategies back-tested with quintile portfolios and IC analysis; sample period and number of stocks not stated.",
+      "An unnamed LLM drives the platform to generate investment insights, combined with IC-validated factors, three rule-based strategy engines, LSTM forecasting, and Z-score anomaly detection; LLM output not separately validated.",
+      "Reports a Sharpe ratio of 1.21 on CSI 300 constituents and factor IC absolute values above 0.03, demonstrating an end-to-end pipeline from data acquisition to insight generation."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "backtest performance only, no LLM output check",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6802261",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Pre-registered study of a 16-brand premium kitchenware panel spanning European, American, and Japanese tradition cells; brands tested for presence across six reference large language models.",
+      "Six unnamed reference LLMs queried for brand recognition (Phase A anchoring) and unprompted category recall (Phase B); models not named; presence scored as pass or exclude counts.",
+      "Substantive hypothesis falsified on panel inadequacy (operational n=10 below the pre-registered floor of 12); recognition and recall dissociate, for example Iwachu scored 6/6 recognition but 0/18 recall."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6838662",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6802961",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6862783",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6842561",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6869324",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6801178",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Conceptual paper on autonomous agent commerce, where software agents hire, pay, and evaluate other agents at micropayment scale; no empirical sample or dataset.",
+      "No model is run by the authors; they argue a central LLM evaluator is non-deterministic and unreliable, citing content moderation precision below 60 percent on context-dependent content; no model named.",
+      "Proposes a two-layer design of deterministic contract validators plus reputation-staked Quality Markets, arguing verification should rest on economic incentives rather than better computation."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6809082",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Theoretical labor economics paper; a two-period overlapping-generations model with heterogeneous junior tasks, each carrying a private automation gain and a task-specific learning value; no empirical data.",
+      "No LLM is used by the authors; generative AI is the object, modeled as automating entry-level tasks that build expertise, creating what the paper calls an apprenticeship externality; no model named.",
+      "Decentralized firms over-automate junior tasks relative to the social planner; absent alternative training channels the expert stock decays geometrically, motivating apprenticeship subsidies and protected junior tasks."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 56
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6867318",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Structured review of peer-reviewed literature and industry analyses published 2019 to 2026 on semiconductor and infrastructure supply chain constraints driven by generative AI compute demand.",
+      "No LLM is used by the authors; generative AI compute demand is the subject; the review covers GPU and HBM scarcity, energy-grid strain, thermal density limits, and capital obsolescence.",
+      "Proposes a six-vector resilience framework; a stylized 20 MW data centre case shows a 3.8-year microgrid payback, with interconnection queue avoidance identified as the dominant value driver."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  }
+]

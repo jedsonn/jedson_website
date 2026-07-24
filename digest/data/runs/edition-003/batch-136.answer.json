@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6702939",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6699558",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6703499",
+    "drop": false,
+    "field": "accounting",
+    "role": "instrument",
+    "bullets": [
+      "US public-firm restatements from 2005 to 2024, analyzed across the board interlock network, with firm-level restatement events as the unit of observation.",
+      "A multi-layer LLM protocol, model not stated, checks whether disclosure overlap between interlocked firms reflects shared accounting reasoning rather than shared boilerplate; no accuracy figure is reported.",
+      "Interlock exposure raises any-cause restatement probability by 3.7 percent and same-cause probability by 5.8 percent, roughly doubling when the shared director sits on both audit committees."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6706919",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual playbook for private equity operating partners deploying AI in portfolio companies; no empirical sample, drawing on 2025 industry data and the MIT NANDA report.",
+      "No language model is applied by the authors; the paper proposes the Portfolio AI Deployment Framework built on selection discipline, implementation architecture, and cross-portfolio compounding.",
+      "Cites that 95 percent of enterprise generative AI pilots produce no measurable profit impact and argues sponsors should concentrate AI effort on selected companies and use cases."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6604498",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6704400",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Federal Reserve FOMC minutes and Beige Books used to forecast six US macro targets out of sample from 2020Q1 to 2024Q4, including growth, inflation, unemployment, and rates.",
+      "Claude via the Anthropic API reads each text and returns five-dimensional sentiment scores that enter a Bayesian VAR and an AR model; no validation against human coding is reported.",
+      "The LLM-augmented AR beats the plain AR in 11 of 12 variable-horizon combinations, with the largest gains during the 2021 to 2023 inflation surge."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6705059",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6610419",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Over 800,000 Claude conversations from more than 100 countries during one week in February 2026, used to measure cross-country generative AI adoption.",
+      "The model is the object of study rather than a measurement tool; anonymized Claude usage is mapped into intensity, breadth, and a task-based AI-diffusion space.",
+      "Higher-income, science-intensive, services-oriented countries use AI more per capita; lower-income countries cluster in a software core while richer ones activate legal, health, creative, and financial tasks."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6596538",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6710600",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6627678",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6704019",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6709778",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual review of AI-driven personalization in modern e-commerce marketing; no empirical sample or dataset is stated.",
+      "No model is applied or named; the paper surveys generative AI, behavioral targeting, collaborative filtering, and context-aware marketing for segment-of-one personalization.",
+      "Concludes personalization raises engagement, loyalty, and conversion, but long-term success depends on data privacy, addressing algorithmic bias, and rebuilding consumer trust."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 28
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6712619",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "EU Labour Force Survey data combined with the Eurostat enterprise survey on AI adoption, giving cross-country European evidence on labour changes after generative AI, post-2022.",
+      "No language model is used by the authors; they link actual sector-level generative AI adoption, not mere exposure, to shifts in workforce age composition across NACE sectors.",
+      "In highest-adoption sectors the youngest workers lose relative ground while senior workers gain after 2022, a divergence not explained by demographic ageing."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6613078",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6717514",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Systematic literature review of explainable AI and generative AI in the e-commerce domain; the number of reviewed papers is not stated.",
+      "No model is applied; the review builds a taxonomy and traces the temporal evolution of models, techniques, and tools for content automation, tailored marketing, and system transparency.",
+      "Identifies ethical and technical challenges and future directions toward trustworthy AI in e-commerce, with no quantitative finding reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  }
+]

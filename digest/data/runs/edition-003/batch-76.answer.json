@@ -1,0 +1,246 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6664738",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6731642",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6728539",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "A mutual fund redemption game with economic and strategic uncertainty and default risk, populated by artificial investors of two architectures; no external dataset, sample or period is stated.",
+      "Compares Q-learning reinforcement agents and large language model investors, family not stated, as decision makers in the game; no validation against human behaviour is reported.",
+      "AI architecture is a first-order driver of stability: Q-learning agents over-redeem under default risk and amplify fragility, while LLM investors show belief heterogeneity that weakens coordination."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6727499",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6479841",
+    "drop": false,
+    "field": "economics",
+    "role": "agent",
+    "bullets": [
+      "Controlled experiment in which large language model agents trade in a prediction market after receiving private signals, across information structures of varying complexity; sample size not stated.",
+      "AI agents, model family not stated, place trades and infer others' knowledge from price moves; aggregation is measured by the log error of the final price with no human benchmark.",
+      "Markets aggregate well in easy structures but degrade significantly as complexity rises; cheap talk, duration and strategic prompting have no effect, while smarter agents aggregate better and profit more."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6730184",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6664200",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual argument about institutional capital allocation, drawing on a proprietary corpus of over 60,000 Clarity Scores benchmarked through the authors' RUNE Protocol; period and market not stated.",
+      "Foundational large language models, family not stated, are treated as commoditising information retrieval; no model is evaluated and no validation against ground truth is reported.",
+      "Argues information asymmetry stops generating alpha once all allocators share an LLM baseline, and proposes judgment infrastructure, seven thesis-failure archetypes and defensible audit logs as the new frontier."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6734908",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "S&P 500 constituent stocks from 2010 to 2025, fusing daily technical indicators with monthly macro releases and quarterly fundamentals from Crunchbase for multi-horizon return forecasting.",
+      "Introduces RAMAR, a regime-aware attention-RNN with Hidden Markov regime detection, benchmarked against time-series foundation models TimesFM, Chronos and Lag-Llama and against TFT; forecasts checked out of sample.",
+      "RAMAR reaches R2 of 0.962 and directional accuracy of 62.4 percent, cutting RMSE 17.9 percent versus TFT and beating zero-shot TimesFM by 58.9 percent, with largest gains in bear and crisis regimes."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "out-of-sample S&P 500 test, directional accuracy 62.4 percent",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6732578",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6724515",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Experiment spanning 258,660 API calls, 33 clinical scenarios and 12 large language models, testing pharmaceutical advertisements prepended to the models' system-level instructions.",
+      "The 12 models, families not stated, generate drug recommendations with and without an injected advertisement; the outcome is the change in selection of the advertised drug.",
+      "Prepended advertising increased selection of the advertised drug by 12.7 percentage points across scenarios; the reported significance value is truncated in the available abstract."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6738816",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Stocks from the Dow Jones Industrial Average and Euro Stoxx 50, evaluated on directional prediction, cross-sectional ranking and portfolio backtests using tiered chart images with progressively added technical indicators.",
+      "A pretrained multimodal large language model, name not stated, reads chart images to derive signals; performance is assessed by backtest rather than validation against labelled ground truth.",
+      "Chart images alone aid cross-sectional ranking and portfolio construction and beat price-only charts and rule-based strategies, while directional prediction stays near random and added chart complexity does not consistently help."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6738398",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Conceptual strategic-audit framework, the Xuanji system, with no empirical sample, applying system dynamics and Bayesian epistemology to organisational strategy.",
+      "Large language model multi-agent sandboxes, family not stated, run semantic gaming with an independent referee judge to stress-test strategy and locate a break point under environmental noise.",
+      "Reports that the proposed axiom identifies decision-makers' cognitive biases and yields a physics-styled strategic stress-testing procedure; no quantitative evaluation is provided."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 22
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6742058",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6746900",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Pipeline data from a leading bi-directional job-matching platform in China, comparing job categories with differing generative AI exposure on chats, resumes, contacts and interview conversions.",
+      "Generative AI, no specific model named, is the object of study rather than a tool; exposure is measured at the job-category level and effects estimated with dynamic regression.",
+      "In highly exposed jobs communication rises without more interviews: candidates initiate more but convert less while firms initiate less and convert more, as GenAI devalues domain-specific knowledge."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6750021",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "US research-intensive public firms, using the November 2022 public release of ChatGPT as a technological shock to firm-level innovation efficiency; exact sample size and window not stated.",
+      "ChatGPT is the object rather than a research tool; the design measures innovation efficiency around its release and tests moderation by organisational culture, with no model output evaluated.",
+      "Innovation efficiency declined after the release, but the drop was smaller among firms with stronger innovation- and adaptability-oriented cultures, suggesting culture is a complementary capability."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6749578",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

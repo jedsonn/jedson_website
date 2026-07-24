@@ -1,0 +1,229 @@
+[
+  {
+    "uid": "arxiv:2606.16326v2",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical mechanism-design paper on insurance contracts for autonomous AI agents that treats the operator as strategic; no empirical sample beyond cross-model traces borrowed from a companion paper.",
+      "Researchers use no language model themselves; they characterise five attacks on actuarial toll pricing of agent actions and prove gaming-resistance, testing an interface-compliance theorem on committed cross-model traces.",
+      "Three added clauses close the remaining attacks and make truthful reporting of the deployed model weakly dominant, yielding joint incentive compatibility with individual rationality and weak budget balance."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6949565",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Critical review synthesising human-AI trust research, habit psychology, automation complacency, and cognitive offloading; focus on agentic AI in industrial knowledge work; no empirical sample.",
+      "No model is used; the paper proposes the Delegation Habit Framework and operationalises it through adapted self-report automaticity measures, experience sampling, and skill-retention assessments.",
+      "Argues repeated AI reliance becomes automatized delegation that decouples from reliability appraisal and degrades the offloaded skills, so the augmentation-substitution line is behavioral."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6951954",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6852042",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual legal and governance analysis of EU AI Act Article 26 deployer obligations, with three worked examples covering NHS clinical AI, financial-services credit AI, and multinational recruitment AI.",
+      "No model is used; the paper parses the eleven Article 26 paragraphs and the conditions under which deployers assume provider-equivalent duties under Article 25.",
+      "Prescribes contractual architecture at the provider-deployer interface and proposes a deployer governance programme accounting for overlap with GDPR, NIS2, and DORA requirements."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6855560",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical economics paper building on the task-based automation framework of Zeira and Acemoglu-Restrepo; treats compute as a factor of production; connects to 2025-2026 adoption and spending evidence.",
+      "No model is used; the paper derives a firm-level automate-or-hire rule under which a task is automated only when its token cost falls below its labour cost.",
+      "Shows the automation boundary is non-monotonic because agentic systems can consume up to a thousand times more tokens, so automating a task can cost more than the worker replaced."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6948577",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6950571",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Daily West Texas Intermediate crude oil prices from June 2015 to June 2025, augmented with RSI, MACD, a 10-day moving average, and trading volume as inputs.",
+      "Compares a CNN, a bidirectional LSTM, and a hybrid CNN-BiLSTM-Transformer, tuned with Optuna and evaluated on held-out test data by R-squared and RMSE.",
+      "Standalone CNN performs best (R-squared 0.9025, RMSE 0.0122); the hybrid transformer is weaker (R-squared 0.8483), so added architectural complexity does not improve accuracy."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "test-set R-squared and RMSE against actual WTI prices",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6957336",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6955443",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual foresight article on autonomous agent-to-agent economies; draws on transaction-cost theory, token economics, and platform ecosystem theory; horizon 2026 to 2032; no empirical sample.",
+      "No model is used; the paper develops the Compute Tokenization-Transaction Mechanism Transformation framework linking tokenized compute to transaction infrastructure for autonomous agents.",
+      "Theorises three mechanisms (standardization, financialization, programmability) reshaping price discovery, settlement, trust, and identity, and sketches three scenarios with observable leading indicators."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6955512",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6957290",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6855918",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper, third in a series, mapping engineering practices to levels of the AI Authority Maturity Model; draws on NIST AI RMF, EU AI Act Article 14, and the Moffatt v. Air Canada ruling.",
+      "No model is used; the paper separates governance as organizational policy from guardrails as technical enforcement and assigns mechanisms to the maturity levels where they become necessary.",
+      "Argues accountability must be built into architecture rather than retrofitted, and that architecture choice is itself a governance decision with legal and operational consequences."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6956768",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6962768",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6874778",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Practitioner contribution on EU AI Act Article 50 transparency obligations for agentic AI, submitted to the European Commission consultation; focus on multi-model, tool-calling, sub-agent pipelines.",
+      "No model is used; the paper identifies nine engineering questions Article 50 guidance leaves unanswered for agentic AI and proposes six architectural patterns implementable with current tooling.",
+      "Highlights emergent systemic risk in chained components, disclosure at client handover, and marking thresholds for AI-generated content in composite retrieval-augmented outputs."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  }
+]

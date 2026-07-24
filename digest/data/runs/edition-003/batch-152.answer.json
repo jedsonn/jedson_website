@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6866171",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6822138",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.07392v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6875449",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6822960",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6826378",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Conceptual infrastructure paper demonstrated on a 40-month retrospective of the Adani Group case from January 2023 to May 2026 and a Maersk and Strait of Hormuz disruption episode over 2023 to 2026.",
+      "Proposes an AI probability oracle using temporal persistence filtering to price events from structural traces in shipping, actuarial, commodity, and procurement records; model family not stated; checked loosely against Kalshi market-implied probabilities.",
+      "The oracle's 47 percent estimate preceded the correct yes resolution of the Hormuz event on 28 February 2026; no systematic accuracy statistic is reported."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "case comparison vs Kalshi, no accuracy figure",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6886878",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Conceptual paper with no empirical sample; develops a real options decision framework for outsourcing governance under environmental uncertainty.",
+      "No model is used by the researchers; generative AI enters as a driver of uncertainty and of VRIN resource reclassification that forces periodic governance reassessment; model not named.",
+      "Proposes a two-stage option map and a recursive two-by-two governance archetype matrix, arguing AI-driven reclassification makes quadrant migration and periodic reassessment necessary rather than optional."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6822759",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6889585",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "China; large-scale firm registry records combined with high-frequency satellite nighttime-lights data used to build a city-level measure of overtime work; sample period not stated.",
+      "No LLM is used by the researchers; city generative AI exposure is the treatment variable and overtime is measured from nighttime lights; model not named and no model output is validated.",
+      "Higher city GenAI exposure raises the likelihood of overtime, with larger effects in more developed cities and more exposed industries, operating through reduced labor demand, task expansion, and faster skill shifts."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6877730",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6823940",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Chinese equity market; CSI300 constituents evaluated under a leakage-controlled forward protocol on the most recent 2026Q1 deployment window.",
+      "STAR couples an LLM-based alpha researcher with a metacognitive module that revises the research scaffold; the base LLM is not named; evolved agents are compared to the base model and a set of strong baselines on out-of-sample alpha quality.",
+      "Evolved STAR researchers generate higher-quality alphas than the base model and baselines, with a 6.9-times expansion of operator vocabulary attributed to genuine researcher evolution."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6875958",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6901664",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6899069",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6830598",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullet_provenance": "ai",
+    "bullets": [
+      "Four data-center-tilted US equities (Amazon, Equinix, NextEra Energy, Vistra) over 2021 to 2026, using 98 filings spanning SEC 8-K, state PUC dockets, FERC interconnection agreements, and REIT 10-K.",
+      "A four-vendor large language model ensemble extracts megawatt power purchase agreement commitments from the filings; specific models are not named and no extraction accuracy figure is reported.",
+      "A pre-registered median-split long-short portfolio on within-firm PPA size dispersion earns a full-sample Sharpe of 1.21 over 48 months (t of 2.35, p of 0.028), with a held-out 2024 to 2026 Sharpe of 1.32."
+    ],
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "no extraction accuracy reported",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6827818",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullet_provenance": "none",
+    "bullets": [],
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

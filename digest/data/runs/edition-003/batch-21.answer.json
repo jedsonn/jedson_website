@@ -1,0 +1,246 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6586418",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6696922",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6594538",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6594418",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "Eight canonical real-effort tasks from experimental economics, attempted by 23 large language models drawn from three major providers across successive model generations.",
+   "The unnamed models attempt each task while researchers measure completion accuracy and cost, and test whether verbally offered monetary incentives change performance.",
+   "Most tasks are solved accurately at negligible cost while a few resist automation; accuracy rises each generation and verbal incentives have no effect."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 60
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6699179",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Semi-systematic review of AI in quantitative finance spanning option pricing, volatility calibration, hedging, asset pricing, risk measurement, market simulation, and time-series forecasting.",
+   "Surveys neural option pricing, deep hedging, generative market models, financial large language models, and time-series foundation models; no single model, organized around constraint-injection patterns.",
+   "Separates financial constraints into three types, catalogs five constraint-injection design patterns, and proposes layered evaluation criteria distinguishing statistical fit from economic admissibility and deployability."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 45
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6695449",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6598718",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Query testing across four major LLM recommendation platforms including ChatGPT and Perplexity, used to recommend professional services such as marketing consultants and digital agencies.",
+   "The models generate recommendations analyzed for self-promotion patterns; model versions are not stated and no validation against independent credibility ground truth is reported.",
+   "Identifies three self-promotion patterns showing that visibility in AI recommendations does not equal verified credibility, and proposes a five-point buyer verification framework."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": null,
+  "validation_note": "",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6713089",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Illustrative case study ranking Inflammatory Bowel Disease treatments across clinical, operational, and ethical criteria, with multiple decision-makers evaluated across diverse scenarios.",
+   "An ensemble of multiple unnamed LLMs scores options within a multi-criteria decision framework combining risk-adjusted utility, performance equilibrium, reliability scoring, and bias detection.",
+   "Validation experiments report the framework yields consensus-driven rankings with claimed robustness and transparency; no accuracy figure against a ground truth is provided."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "illustrative case study, no ground-truth accuracy",
+  "salience": 36
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6720330",
+  "drop": false,
+  "field": "economics",
+  "role": "instrument",
+  "bullets": [
+   "Nearly four million Chinese government documents from prefecture-level cities, 2017 to 2019, linked to shift-share US tariff exposure and firm-level outcomes.",
+   "Unnamed large language models classify the documents to build a novel dataset of local industrial policies; no validation against hand coding is reported.",
+   "Greater tariff exposure raises supportive industrial policy with no rise in restrictive policy; policy-rich cities show attenuated export losses but weaker pollution reduction."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 68
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6626878",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6719550",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6719681",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Choice-based conjoint study of premium job-search platform subscriptions with 984 US job seekers, comparing a conventional randomized design with LLM-optimized designs.",
+   "Unnamed large language models generate prior part-worth utilities used to optimize designs; the priors are validated against holdout choices for predictive performance.",
+   "LLM priors predict holdout choices beyond chance and, when used to screen dominated tasks, substantially improve prediction; Bayesian integration adds mixed further benefits."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "holdout choice prediction vs 984 respondents",
+  "salience": 57
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6731995",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6681238",
+  "drop": false,
+  "field": "management",
+  "role": "agent",
+  "bullets": [
+   "German firms profiled in structured natural language, with innovation activity measured against the Community Innovation Survey and anchored using web-derived indicators and patent data.",
+   "Unnamed large language models simulate firm innovation; an uncalibrated baseline is compared with two theory-grounded, empirically calibrated variants and validated against observed survey outcomes.",
+   "The uncalibrated baseline over-predicts innovation while both calibrated variants substantially improve accuracy and align predictions with observed cross-industry patterns."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": true,
+  "validation_note": "vs Community Innovation Survey outcomes",
+  "salience": 60
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6731318",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6746238",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Pairs of life stories varying in income, longevity, and working conditions, shown to GPT-5.4 and a broadly representative sample of Americans who pick their preferred life.",
+   "GPT-5.4 chooses between the life-story pairs; its choices and attribute valuations are compared against human responses for predictive agreement.",
+   "A person's choice is better predicted by the model's choice than by another person's choice, and LLM valuations of several attributes resemble human ones."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "LLM choices vs human choices, predictive agreement",
+  "salience": 73
+ }
+]

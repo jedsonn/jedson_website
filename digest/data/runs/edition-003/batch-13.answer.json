@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7151327",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6204619",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Financial prediction tasks in which LLMs generate sentiment and competition measures meant to be independent of the downstream use. Period, geography and sample size not stated.",
+      "The paper does not name the model; it varies whether the downstream objective, predicting stock returns or earnings, is disclosed in the prompt, and compares behavior before and after the knowledge cutoff.",
+      "Revealing the downstream goal shifts the intermediate measures toward that objective and improves prediction before the knowledge cutoff, with no advantage after it."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 66
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6461160",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6405998",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Survey of enterprise AI agent deployments across customer service, software engineering, financial analysis and supply chain, with case studies and productivity projections through 2030.",
+      "No researcher-used model; the paper compares agent frameworks LangGraph, AutoGen, CrewAI and Amazon Bedrock Agents and reviews self-reported adopter metrics without independent validation.",
+      "Enterprises deploying AI agents report 35 to 55 percent operational efficiency gains, with multi-agent architectures enabling previously infeasible automation of knowledge-intensive work."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6608518",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6591118",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6577019",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Two demonstrations: a dual-coding experiment on fifteen open-access interview transcripts and a bibliographic stress test of LLM-generated literature syntheses.",
+      "The paper does not name the model; LLMs assist qualitative coding and literature synthesis, assessed on interpretive, integrative and bibliographic validity against correct sources.",
+      "Coding shows both context collapse and analytical reach, while LLM-generated literature syntheses carry a 63.2 percent distortion rate."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "bibliographic stress test, 63.2% distortion rate",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6396898",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6668914",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Sixteen founders of Africa's six unicorn ventures as of 2024, drawn from over 1,000 YouTube videos and 9 hours of podcast audio into more than 30,000 text chunks.",
+      "The paper does not name the LLM; a RAG pipeline with multi-query expansion, semantic retrieval and iterative refinement builds founder narratives, validated on precision, recall, F1 and faithfulness.",
+      "Faithfulness reaches 0.94 to 0.99, and narrative quality depends more on thematic diversity than data volume, with 800 to 1,200 curated chunks sufficient."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "faithfulness/precision/recall/F1, 0.94 to 0.99",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6668971",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Conceptual perspective on LLM use in energy-system decisions such as electricity pricing, cross-border power purchases and regulation, applied to a constrained-grid scenario.",
+      "The paper does not name the model; single LLMs are asked to simulate multiple strategic rationalities as decision-makers, drawing on prior empirical evidence rather than a new validation.",
+      "Single LLMs favor institutional conformity, termed Synthetic Optimism; a proposed multi-agent architecture generates context-sensitive strategic options that evade this bias."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6673101",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "Synthetic dataset of 46 heterogeneous PDF invoices and 10 Outlook order emails used as inputs to accounting systems.",
+      "Mixtral-8x7B performs named entity recognition to extract fields, testing and adapting prompt guidelines from prior literature; no accuracy figure is reported.",
+      "General prompting guidelines need case-specific adjustment for non-semantic semi-structured invoices and semantic unstructured emails; the paper derives transferable prompt strategies."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": false,
+    "validation_note": "",
+    "salience": 47
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6672583",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6678618",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual synthesis of LLM-assisted enterprise data stewardship, illustrated by a case study of Inspire Brands' AI-driven data governance initiatives.",
+      "The paper does not name a specific model; it reviews transformer LLMs with RAG, dense passage retrieval, weak supervision and knowledge-graph grounding, without empirical validation.",
+      "Proposes a reference architecture and an evidence-mapping method that assesses governance readiness from publicly observable signals without privileged internal disclosures."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6582258",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6672582",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6683241",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

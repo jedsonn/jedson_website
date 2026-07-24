@@ -1,0 +1,250 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.7118983",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7069098",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper comparing two proposals for pricing autonomous AI-agent output in energy units, Roemmele's JouleWork and the Citizen 5.0 social-contract framework, with no empirical sample.",
+      "No language model is applied; the paper contrasts the two frameworks on their mathematics, method, results to date, and feasibility. Model not stated.",
+      "Argues the two are complementary, with JouleWork-style accounting making the Citizen 5.0 synthetic-labor tax base observable and cutting measurement from three unknowns per task to one."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 26
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6961418",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.3386/w35431",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "US equity returns around earnings announcements, using only information available at announcement time including earnings call transcript text, via a real-time out-of-sample benchmark avoiding look-ahead bias.",
+      "Agentic AI systems extract structured signals from transcripts and optimize over them; the specific model is not stated, and performance is measured by out-of-sample R2 explaining contemporaneous returns.",
+      "Best-optimized systems more than double explained return variation, raising R2 from about 8 to near 20 percent, while producing human-readable economic mechanisms; an SDK is released."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "out-of-sample R2 explaining announcement returns",
+    "salience": 76
+  },
+  {
+    "uid": "arxiv:2607.12248v2",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Equity direction forecasting on a tech-heavy NASDAQ-100 and a broad S&P 500, with expanding walk-forward folds and a stratified held-out-ticker split on frozen data.",
+      "TimesFM time-series foundation model adapted with LoRA; directional accuracy compared to always-up, random-walk, persistence, and AR(1) baselines using McNemar and Diebold-Mariano tests under FDR control.",
+      "Fine-tuned model shows no directional skill above the roughly 70 percent always-up base rate; sector specialization is worse than a pooled adapter, and only point-forecast error improves."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": true,
+    "validation_note": "directional accuracy vs base rate and naive baselines",
+    "salience": 56
+  },
+  {
+    "uid": "arxiv:2607.13311v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6967238",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Knowledge-based industries; a mixed-methods design combining macroeconomic technology-adoption data with qualitative case studies of vanguard firms. Period and geography not stated.",
+      "No language model is applied; the paper analyzes how autonomous AI agents automate cognitive workflows and reshape the senior-junior talent pipeline. Model not stated.",
+      "Argues AI agents fragment rather than shrink the labor market, producing 'synthetic seniority' among juniors and obsolescence for non-adapting seniors, shifting value toward strategic judgment."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6968279",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual governance paper spanning boards, D&O underwriters, regulators, and assessors across NIST AI RMF, ISO/IEC 42001, and EU AI Act documentation requirements. No empirical sample.",
+      "No language model is applied; the paper defines the AI Proof Gap and proposes a five-layer Unified AI Evidence Framework mapping standards to reusable evidence artifacts. Model not stated.",
+      "Argues boards, insurers, and regulators require structurally overlapping evidence, so organizations must move from standards interpretation to evidence design to avoid governance theater."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7122683",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Structured review of 68 supply-chain papers published 2020 to 2026, with 44 providing primary analytical evidence mapped onto a sixteen-subtask capability taxonomy.",
+      "No language model is applied; the paper proposes the SADA-GO capability framework and classifies existing agentic-AI supply-chain implementations across its five domains. Model not stated.",
+      "Finds decision-making capabilities well researched but action and governance underdeveloped, with per-decision human approval persisting and no demonstrated move to human-on-the-loop autonomy."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7122678",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6958962",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on Digital Human CEOs, anthropomorphic AI-driven communicators delivering executive messages, illustrated with three theory-anchored organizational vignettes. No empirical sample.",
+      "No language model is applied; the paper develops the Transport-Ethics Model linking narrative transportation with four governance checkpoints for disclosure, anthropomorphism, explainability, and accountability. Model not stated.",
+      "Proposes that linguistic concreteness and moderated human-likeness shape trust and legitimacy while creating ethical risk when disclosure or accountability is weak; recommends bounded, low-risk use."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7122682",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6966682",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "60 firms listed on the Nairobi Securities Exchange, with hand-collected annual reports from 2010 to 2024, around the November 2021 mandatory ESG disclosure guidance manual.",
+      "Fine-tuned RoBERTa transformer models, one per ESG pillar, construct firm-level disclosure scores; no accuracy check against hand-coded ground truth is reported.",
+      "Firms with stronger prior ESG communication earn about 2.8 percentage points higher abnormal returns per disclosure-score standard deviation, concentrated in the environmental pillar."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": false,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "arxiv:2607.14044v1",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Enterprise professional upskilling context; a framework applying AI across knowledge acquisition, content development, review, teaching, and assessment. Sample and period not stated.",
+      "No specific language model is named; AI accelerates each of the five upskilling stages, validated by external signals rather than a model-accuracy benchmark. Model not stated.",
+      "A program built on the framework gained NASBA continuing-education approval and three learners passed the NVIDIA agentic-AI exam quickly, with fourteen more in progress."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 27
+  },
+  {
+    "uid": "arxiv:2607.13998v1",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual marketing paper on customer loyalty under agentic AI and autonomous commerce, synthesizing human-machine teaming, consumer decision, and algorithmic-trust literatures. No empirical sample.",
+      "No language model is applied; the paper formalizes brand choice via a softmax over human emotional equity, agent utility, calibrated trust, delegated authority, and verifiable execution. Model not stated.",
+      "Proposes the DVM-HALL model and an auditable Net Human-Agent Score, with a three-stage empirical validation plan across experiments, market simulations, and DeFi testbeds, not yet executed."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 29
+  },
+  {
+    "uid": "arxiv:2607.13940v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

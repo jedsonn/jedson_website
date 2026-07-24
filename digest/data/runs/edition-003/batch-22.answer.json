@@ -1,0 +1,230 @@
+[
+ {
+  "uid": "doi:10.3386/w35185",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "OpenAI's GPT-5.4 and a broadly representative sample of Americans each chose between pairs of life stories that vary income, longevity, and working conditions.",
+   "GPT-5.4 was asked which life it would prefer over the same story pairs shown to people, and its choices and implied attribute valuations were compared with human responses.",
+   "A person's choice was better predicted by the model's choice than by another person's choice, and model valuations of several life attributes resembled human ones; no numeric agreement is stated."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "compared to human choices, no numeric agreement reported",
+  "salience": 72
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6712518",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6758459",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "IBEX-35 banking sector stocks in Spain, with LSTM models trained on technical indicators and Reuters financial headlines from May 2020 to May 2025 and closing price as target.",
+   "FinBERT, an encoder-only pre-trained language model, extracted sentiment from company-specific Reuters headlines that was added to technical indicators as LSTM inputs, with no check of sentiment against labels reported.",
+   "Adding FinBERT sentiment improved LSTM forecasting across R2, RMSE, and MAE relative to technical indicators alone; no magnitudes are given."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "prediction metrics only, no sentiment ground truth",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6756322",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6723220",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6580964",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6760537",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6756301",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6761073",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6739860",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Enterprise LLM assistants facing when to act autonomously versus escalate, evaluated on synthetic IT and HR question-answer datasets and scenario-based transcript surveys rather than a field deployment.",
+   "The model is not named; the ActAsk framework wraps it with confidence gating, scope limits, confirmations, and fallbacks and tunes autonomy thresholds with a constrained contextual bandit, tested only in simulation.",
+   "In simulation ActAsk reduced incorrect answers, improved escalation precision, and raised perceived trust and satisfaction; no effect magnitudes are reported."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "simulation only, no ground-truth comparison",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6754899",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6770198",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6747579",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6759444",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual paper with no empirical sample, arguing that repeated interaction with large language models conditions users into directive, authority-driven communication habits, using military communication as an analogy.",
+   "No language model is run or measured; the authors draw on theories of power, habit formation, and social practice to theorize a 'computer communication spillover' mechanism.",
+   "They propose that habits formed with LLMs transfer to human interaction, predicting reduced politeness, lower tolerance for dissent, and more control-oriented communication developing outside users' awareness."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 34
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6779013",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6751780",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

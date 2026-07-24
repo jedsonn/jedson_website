@@ -1,0 +1,229 @@
+[
+ {
+  "uid": "arxiv:2607.00738v2",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.00368v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6908358",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.01854v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.01612v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7051224",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7049101",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Chinese-listed firms split by Stock Connect eligibility for foreign investors, in a difference-in-differences design around ChatGPT's launch and the 2025 DeepSeek release, with informed trading measured by VPIN.",
+   "Researchers do not run a model; generative AI access is the treatment, with ChatGPT and DeepSeek proxying foreign versus domestic investors' processing tools and no accuracy validation.",
+   "Informed trading rises significantly for foreign-tradable Connect firms after ChatGPT relative to domestic-traded firms, and the gap disappears after DeepSeek gives domestic investors comparable access, widening then closing informational inequality."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt",
+   "open_other"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7044979",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7050283",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.04103v3",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Conceptual, application-oriented review of generative AI across banking, capital markets, insurance, payments, and wealth management, with no empirical sample or unit of observation.",
+   "No specific model named; organizes uses into five capability patterns mapped to financial functions, discussing retrieval-augmented generation, tool-using assistants, multimodal models, and agentic workflows, with no validation.",
+   "Produces a landscape linking capability patterns to functions such as investment research, fraud investigation, and financial reporting; offers no empirical effect size, only a framework for locating operational value."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 33
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7044058",
+  "drop": false,
+  "field": "accounting",
+  "role": "object",
+  "bullets": [
+   "Synthesis of research on agentic AI in financial services across three domains, regulatory compliance, auditing, and financial modeling, with no primary empirical dataset of its own.",
+   "No specific model family named; reviews multi-agent LLM architectures that parse regulations, monitor transactions, generate audit trails, replicate models, and run signal discovery, code generation, and backtesting, with no own validation.",
+   "Reports cited figures of 89 percent agentic pre-deployment compliance detection versus 43 percent for conventional testing and 96 percent segregation-of-duties efficacy, drawn from existing research rather than the authors' tests."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 38
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6997818",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "50,277 order-book and trade-flow snapshots of MEXC spot BTC/USDT collected over two live runs, used to predict short-horizon crypto direction and realized volatility at 5, 15, and 30 minute horizons.",
+   "Heterogeneous LLM base models, not named, read a compressed order-book snapshot to emit directional and conviction signals, with hypotheses, thresholds, and kill gates pre-registered before any result was computed.",
+   "All four signal hypotheses fail their pre-registered bars; inter-model disagreement does not predict volatility (15-minute partial Spearman +0.010, 95 percent CI -0.006 to +0.027), and models instead converge on directional bias."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "",
+  "salience": 57
+ },
+ {
+  "uid": "arxiv:2607.05682v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2607.04640v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7068678",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7074124",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

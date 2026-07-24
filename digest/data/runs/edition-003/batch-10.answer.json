@@ -1,0 +1,240 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6799069",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6786126",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6772819",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "GPT-4 forecasts of daily index levels, monthly stock prices, and quarterly earnings, split by whether targets fall before or after the September 30, 2021 knowledge cutoff.",
+   "GPT-4 generates the forecasts; the design compares absolute forecast errors for pre- versus post-cutoff targets and benchmarks accuracy against analyst forecasts.",
+   "Pre-cutoff errors run about 18% lower for daily indices, concentrated in the S&P 500, 16% lower for monthly prices, and 11% lower for quarterly earnings."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "absolute forecast errors vs realized values and analyst benchmark",
+  "salience": 62
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6748819",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6839367",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "2,966 US companies from 2012 to 2023, using management discussion and analysis text plus financial ratios, with a held-out test of 345 firms including 20 bankruptcies.",
+   "GPT-4o with chain-of-thought prompting extracts forward-looking risk signals from MD&A across six themes, combined with an XGBoost classifier and checked on the held-out sample.",
+   "The hybrid model identifies 90% of bankruptcies at 96% accuracy, sharply cutting false positives versus the GPT-4o-only baseline that reached 99% recall."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": true,
+  "validation_note": "held-out test of 345 firms, recall and accuracy reported",
+  "salience": 55
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6840225",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6862788",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6866876",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6852773",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6866872",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6876270",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6879759",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6857203",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.08853v1",
+  "drop": false,
+  "field": "economics",
+  "role": "method",
+  "bullets": [
+   "Simulations plus three empirical applications: a survey mega-study, an email marketing A/B test, and a large-scale technology platform randomized experiment.",
+   "LLMs, not named, generate outcome predictions from unstructured inputs that enter standard regression adjustment as covariates, with guidance on turning discrete outputs into continuous scores.",
+   "Variance reductions are real but modest, larger when data contain text, and the adjusted estimator reverts to the difference in means when predictions are uninformative."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 60
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6830918",
+  "drop": false,
+  "field": "finance",
+  "role": "instrument",
+  "bullets": [
+   "50 equities from the FNSPID dataset, combining news text with 30-day price momentum; the trading period and geography are not stated.",
+   "Hidden states of DeepSeek-R1-Distill-Qwen-1.5B are fused via cross-attention with a Mamba state-space price encoder, trained using group relative and downside-aware policy optimization.",
+   "The latent-fusion model improves risk-adjusted returns and reduces maximum drawdown versus unimodal baselines while remaining feasible on consumer-grade hardware; no magnitudes are reported."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other"
+  ],
+  "open_weights": true,
+  "validated": false,
+  "validation_note": "",
+  "salience": 44
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6837058",
+  "drop": false,
+  "field": "accounting",
+  "role": "agent",
+  "bullets": [
+   "A proposed Blockchain Network Participation disclosure taxonomy of 148 input questions and 125 output elements in XBRL-JSON, motivated by the US GENIUS Act stablecoin framework.",
+   "Three pre-trained LLMs, Claude Sonnet 4.6, Gemini 3.1, and GPT-5, independently evaluate disclosure elements in a multi-agent design, with inter-model agreement measured by Gwet's AC1.",
+   "Model consensus rejects the minimized disclosure framework, supporting infrastructure and MEV-conflict disclosures as non-deferrable priorities beyond traditional fiat-reserve audits."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "claude",
+   "gemini",
+   "gpt"
+  ],
+  "open_weights": false,
+  "validated": false,
+  "validation_note": "inter-model Gwet's AC1 only, no human ground truth",
+  "salience": 54
+ }
+]

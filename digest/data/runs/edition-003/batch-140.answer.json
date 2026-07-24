@@ -1,0 +1,230 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6725358",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6739621",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Country-year panel of 146 aid recipient countries from 1987 to 2024, linking Korea's digital public infrastructure ODA to its exports, imports, and outward FDI.",
+      "An unnamed large language model classified OECD CRS project descriptions, identifying 5,523 DPI-related projects out of 83,083; no accuracy check against hand coding is reported.",
+      "DPI ODA is positively associated with Korea's exports and outward FDI with a lag, stronger where recipients have higher digital readiness, with a post-2015 break in the FDI channel."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6739939",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Thirty-six students who took part in STEM innovation competitions and programs, interviewed semi-structured and analysed with a qualitative inductive approach.",
+      "ChatGPT 4.0 performed thematic coding of interview transcripts alongside human coders; the paper reports some agreement between human and AI codes but no agreement statistic.",
+      "Participation strengthened self-awareness and open-mindedness and made students more receptive to innovation and entrepreneurship careers."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6740239",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6736917",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6737540",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6736926",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6745038",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "A career recommendation platform, PROSPER, deployed for displaced and transitioning workers in Michigan; a conceptual architecture paper with no empirical sample reported.",
+      "The design places a deterministic gating layer, a value-alignment guardrail, between an inference engine and a downstream large language model (not named) to enforce stated user preferences over inferred ones.",
+      "The author argues hierarchical signal governance stops inferred adjacencies from overriding a user's declared situation in high-stakes decision-support settings."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 30
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6744379",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6748306",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "More than 40 million US job postings and employment records covering marketing occupations from 2021 to 2024.",
+      "The release of ChatGPT serves as the treatment in a difference-in-differences design; generative AI is the object studied, not a measurement tool applied by the researchers.",
+      "Marketing employment falls about 5 to 7 percent, concentrated in production roles, while strategic and relational roles and mid to executive levels expand and wages rise."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 72
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6733638",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "5,803 publicly accessible crowdfunding campaigns on Give.Asia across Southeast and East Asia from 2012 to 2025, a cross-sectional descriptive study.",
+      "An unnamed large language model extracted campaign details from unstructured text, with rule-based keyword algorithms assigning five cause groups; no extraction accuracy is reported.",
+      "Health causes formed the largest volume at 35 percent but reached only 10 percent goal completion, while human-trafficking campaigns reached 83 percent despite lower targets."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6749002",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6749581",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6749888",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6685538",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6748958",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

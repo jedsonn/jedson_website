@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6945287",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "A 372,590-shipment freight panel from a retailer that decides which shipments to intervene on to avoid costly cancellations; period and geography not stated.",
+      "Prompted GPT-4o and Claude Sonnet 4.6 rank cancellation probability against calibrated tabular models, logistic regression, and a fallback rule, checked by AUC and out-of-time validation.",
+      "GPT-4o ranks competitively at AUC 0.810 versus 0.808 for XGBoost and 0.832 for logistic regression, but its probabilities exceed the cost threshold, so it intervenes on every shipment and saves nothing."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "claude"],
+    "open_weights": false,
+    "validated": true,
+    "validation_note": "AUC against realized cancellations, out-of-time test",
+    "salience": 58
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6951046",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6958667",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6860580",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.24950v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "4,416 US small and micro-cap equities over 2021 to 2026, sharing a point-in-time panel of prices, 46.8M XBRL facts, 53 macro series, 295,860 SEC filings, and 215,882 news articles.",
+      "The benchmark scores 19 methods across six families, from naive heuristics to time-series foundation models, fine-tuned LLM time-series models, and zero-shot LLMs; specific model names not stated.",
+      "Introduces seven tasks spanning contextual forecasting, public and private valuation, statement generation, and scenario-conditioned returns; no aggregate accuracy figure is reported in the abstract."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6890263",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "China's Local Government Financing Vehicles used as an empirical case of institutionalized information asymmetry, implicit state credit, and hidden transfer of financial burdens to the public.",
+      "Several unnamed LLM architectures interpret the dual-track LGFV mechanism, with ChatGPT screened out for sycophancy and semantic evasion; comparison is qualitative with no accuracy benchmark.",
+      "Institutional-weighted models over-index sanitized official data and show systemic blindness, while social-weighted models detect more risk but remain vulnerable to coordinated astroturfing narratives."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7005928",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6893598",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7001930",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7037031",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Tourism futures for the Middle East and North Africa over the next decade, using synthetic AI expert judgment across three iterative Delphi rounds; unit is AI-generated scenario input.",
+      "ChatGPT, Gemini, DeepSeek, Copilot, and Claude serve as synthetic expert informants to map convergence, divergence, and uncertainty; no validation against human experts is reported.",
+      "Identifies climate change and extreme heat, geopolitical instability, and water scarcity as the most consequential existential risks for MENA tourism over the coming decade."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "gemini", "claude", "open_other"],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7065905",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.05685v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6925119",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Real open-ended exam responses from a single university course and one instructor, graded across two independent rounds conducted at different times.",
+      "LLMs, family not stated, are fine-tuned on the instructor's historical grades; AI grades are compared with the two human rounds, with no accuracy check against a ground truth.",
+      "AI-human grading discrepancies are significantly associated with intra-rater grading variability, suggesting the model flags responses whose grades are unstable while leaving final decisions to the instructor."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "arxiv:2607.06845v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.07858v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Straight-through underwriting of small commercial Business Owner Policies in a synthetic but realistic experimental environment reflecting regulated actuarial decision workflows.",
+      "Three pipelines are compared, a single-LLM baseline, a naive RAG system, and a multi-agent agentic RAG with retrieval, third-party checks, and multi-step rules; models not named, no accuracy figure given.",
+      "The agentic RAG pipeline performs best overall, with the largest gains in multi-step and missing-information cases where retrieval and reflection avoid unsupported straight-through decisions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 47
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6931398",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Two experiments on entity citability in generative AI engines: 108 responses in the accommodation sector of Foz do Iguacu, and 5,544 responses across 82 hospitality and ERP entities.",
+      "Gemini 2.5 Flash, Claude Sonnet 4.6, and GPT-4o were queried via official APIs in May 2026 with branded, categorical, and problem formulations; citation rates were recorded directly.",
+      "Citability depends on the engine-by-vertical pair; branded queries cite the entity 96.8 to 100 percent of the time, while discovery queries vary sharply, for example Gemini's 0.368 delta in hospitality versus 0.828 in ERP."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt", "gemini", "claude"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  }
+]

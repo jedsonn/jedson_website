@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6911002",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6914531",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "U.S. commercial banks with a bank-level AI-adoption measure tracked over time; the unit of observation is the bank, and exact sample size and period are not stated.",
+      "Machine learning, validated by unspecified large language models, builds the bank-level AI-adoption measure; no accuracy or agreement figure against a benchmark is reported.",
+      "Banks with higher AI adoption take significantly lower risk through better loan quality and efficiency, with stronger effects for small and traditional banks."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "LLM used to validate ML measure, no accuracy reported",
+    "salience": 57
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6888861",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Millions of online vehicle discussions merged with millions of Texas used-car transactions, examining round-number price discontinuities and categorical thinking about mileage.",
+      "Unspecified large language models extract category boundaries from the discussion text, which then enter the pricing analysis; no validation against hand-coded boundaries is reported.",
+      "A 10-point rise in boundary prevalence predicts a 1.04-point larger listing-price drop and a 1.23-point larger transaction-price drop at the cutoff."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6906942",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6922035",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Media news reports on issuers in China's urban construction investment bond market, used to build firm-level media sentiment; period and sample size are not stated.",
+      "An unspecified large language model performs text analysis to construct the media sentiment measures; no validation against human coding or a benchmark is reported.",
+      "Negative media reports significantly raise bond risk premiums, with stronger effects in fiscally weaker regions and among lower-rated issuers, plus within-province spillovers."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6839464",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Game-theoretic model of a market where producer-side pricing algorithms can tacitly collude and consumers delegate purchases to consumer-facing AI agents.",
+      "No language model is run; the paper analyzes a consumer AI provider injecting demand noise by randomizing purchases of a small fraction of subscribers to disrupt monitoring.",
+      "Demand-noise injection breaks algorithmic collusion, and consumer AI presence always raises consumer surplus even though the providers maximize their own profits."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6909271",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6860600",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6886361",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6927344",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Coding-intensive occupations in the U.S., studying reallocation of coder employment across industries using quarterly data, with low-exposure occupations as a comparison group.",
+      "No language model is run; the paper builds a newspaper-based AI labor-displacement index and a destination-share reallocation framework against an industry-growth counterfactual.",
+      "A one-standard-deviation rise in the displacement index raises coders' strategic-minus-core rotation by about 0.31 points over quarters four to six, with core-tech declining."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 52
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6898283",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6923109",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6898581",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Pre-registered two-arm design over a fixed 24-brand automotive registry, scoring an AI-presence consistency measure under an older and a current model-version snapshot across six models.",
+      "GPT-family and other models (gpt-4o through gpt-5.x) extract brand mentions; the study tests version-stability of the CPC consistency score rather than accuracy against ground truth.",
+      "Rank stability was marginal (Spearman 0.708) and fragile leaving providers out, and magnitude stability failed with mean absolute change 0.077 above the 0.069 tolerance."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": false,
+    "validation_note": "version-stability study, no ground-truth accuracy",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6844478",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.15031v2",
+    "drop": false,
+    "field": "economics",
+    "role": "method",
+    "bullets": [
+      "Econometric framework with no specific dataset; large language models are treated as binary classifiers for a latent true label, observed as counts, response vectors, or matrices.",
+      "The paper runs no particular model; it derives partial-identification bounds for prevalence from LLM reports whose errors may be arbitrarily dependent given the truth.",
+      "Without restrictions prevalence is completely unidentified, identifying power comes from externally calibrated scores, and which models agree matters more than a vote count."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 68
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6923198",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Book chapter reviewing recent evidence on generative AI in medicine, with no original dataset, focused on institutional trust, liability, reimbursement, and skill effects.",
+      "No model is run; the chapter synthesizes evidence on physicians' use of ChatGPT-style generative AI and the agent frameworks built around it.",
+      "Visible AI use can lower peer and patient ratings of physicians, and the author argues trustworthy care depends on institutional governance, not model quality alone."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  }
+]

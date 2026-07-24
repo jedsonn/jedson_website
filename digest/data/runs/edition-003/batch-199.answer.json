@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6963088",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6963471",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6937698",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper with no empirical sample, examining agentic AI systems for business analytics and data science and their implications for organizations and managerial accountability.",
+      "No specific model named; develops a framework treating the agent as an accountable analytical operator that binds intent clarification, tool use, execution, error recovery, and explanation into one loop.",
+      "Argues agentic systems create value by reducing coordination costs and expanding analytical capacity, but make errors more procedural, compositional, and harder to detect, proposing design principles for deployment."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6860420",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Application to the German Credit dataset; an agentic system automates data preparation, model training, evaluation, and governance reporting for credit scoring, with loan applicants as the unit of observation.",
+      "No LLM family named; Data and Modeling agents run preprocessing and train candidate models scored by a SAFE metric for accuracy, robustness, explainability, and fairness on labelled data.",
+      "Voting Ensemble selected with SAFE score 0.7872; group-aware threshold mitigation raised the fairness metric from 0.5399 to 0.6650, lifting the SAFE score to 0.8185."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "German Credit labelled benchmark, SAFE and fairness scores reported",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6968221",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6862578",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Scenario-analysis working paper with no empirical sample, focused on frontier AI diffusion during early 2026 across enterprise deployment, professional services, capital markets, and labor pipelines.",
+      "No model used by the researchers; AI, especially agentic frontier AI, is the subject, analyzed through a structural-risk framework mapping drivers, transmission channels, vulnerable nodes, and early signals.",
+      "Argues frontier AI is a structural break in institutional absorption; introduces control latency and links cognitive-rent compression to thinning junior white-collar work and weakened income transmission."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6945200",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6909242",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical paper with no empirical data, studying consumer AI agents that search, recommend, and execute purchases on behalf of users.",
+      "No model used or named; develops a regime-switching theory in which agents steer users toward higher-paying options such as sponsored items when user checking becomes rare.",
+      "Shows a tipping pattern where systems look safe then abruptly turn risky; proposes a minimal approval gate as light-touch control, warning that explanations can accelerate the risky regime."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6866422",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.09702v1",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper with no empirical data, focused on the market core of financial markets, the rule system by which orders enter, interact, match, persist, and stabilize.",
+      "No model used; argues AI-agent alignment is a property of interaction infrastructure, applying formal modelling from theoretical computer science to specify and reason about market-core properties.",
+      "Proposes treating fundamental market design as an alignment layer, giving transparent-box market models where desirable behaviours are structurally favoured and manipulation is harder to sustain."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6871318",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Synthesis of four industry surveys from late 2024 to early 2026: Foundry n=1,156, Deloitte n=622, Gartner n=3,186, and McKinsey n=632, on the changing CIO role.",
+      "No model used by researchers; documents the CIO transformation through upper echelons and IT governance theory and proposes ContextGuard, a zero-trust architecture for AI context protocol security.",
+      "Reports 65% of CIOs report to the CEO, 36% hold P&L accountability, 80% lead AI evaluation, and 41.7% of audited MCP deployments harbor exploitable weaknesses."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6966955",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6981421",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.25195v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.24799v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.24783v1",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Vision paper with no empirical data, considering agentic e-commerce where autonomous buyer agents transact using agent-native micro-payment rails such as x402 and AP2.",
+      "No model used or named; argues the scarce resource shifts from product matching to acquiring trustworthy product information, sketching a micro-transaction market architecture with reputational trust scoring.",
+      "Proposes a freemium market where buyer agents pay fractions of a cent for verified seller and reviewer data, arguing it rewards genuine product quality and yields truer competition than ranking-based storefronts."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  }
+]

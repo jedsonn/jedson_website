@@ -1,0 +1,246 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6753098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6720578",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Survey of 247 papers published between 2010 and 2026 on machine learning applied to credit risk decisioning in regulated lending environments.",
+      "No model is applied; the survey taxonomizes scorecard, gradient boosting, deep learning, graph neural network, and large language model approaches against explainability, fairness, and governance criteria.",
+      "Concludes that no existing system simultaneously satisfies all three requirements for production deployment and identifies eight open challenges with a five-year research agenda."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6767646",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Bibliometric analysis of literature on teaching with AI, applied to designing an instructional activity in an undergraduate business course on retail promotion.",
+      "No model applied as an instrument; ChatGPT is framed as a career-relevant managerial decision-support tool within a scaffolded learning sequence rather than automated content production.",
+      "Presents a practical model for integrating AI into business education to strengthen AI literacy, human-AI collaboration, and career-ready managerial competencies; no quantitative outcome reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 33
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6753121",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Conceptual chapter evaluating AI and machine learning effects on conjoint analysis through Wagner Kamakura's heterogeneity imperative; no empirical sample is stated.",
+      "Model family not stated; assesses adaptive design, generative product design, large language model synthetic respondents, and deep-learning utility estimation, and proposes a coefficient-test validation framework.",
+      "Argues LLM synthetic respondents flatten consumer heterogeneity through stereotyping, while the concomitant-variable coefficient test can check whether synthetic data preserves covariate-preference mapping."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6768010",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "413 technology ventures founded in 2015 with verified outcomes for survival, closure, exit, and follow-on funding tracked through 2023.",
+      "Six leading AI architectures, not individually named, generated probabilistic outcome predictions from identical startup inputs, conceptualized as artificial signal receivers.",
+      "Predictions diverge substantially across architectures in performance, signal weighting, error patterns, and demographic and geographic differentials, especially for ambiguous outcomes."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "verified venture outcomes, no accuracy figure stated",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6752980",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Equilibrium model of business education calibrated to the French grandes ecoles market of roughly 30 schools, extended to a dynamic stochastic setting.",
+      "No language model is used; generative AI enters theoretically as a demand-side shock that compresses the labor-market returns justifying tuition.",
+      "Model predicts roughly 10 percent of schools face market exit over two to three decades under limited replacement, sooner if AI diffusion accelerates."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6774001",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6757618",
+    "drop": false,
+    "field": "accounting",
+    "role": "method",
+    "bullets": [
+      "TaxBench-AU benchmark built from public Australian Taxation Office rulings, determinations, guides, and worked-example solutions; results reported on a held-out 60-item test split.",
+      "Compares a Sonnet-based tool-using tax agent against raw Sonnet and Haiku baselines; programmatic checks and cross-provider LLM judges score source grounding, outcome alignment, and boundary safety.",
+      "Reports per-task pass rates and guardrail-failure counts, but overlapping confidence intervals lead the authors to frame it as an error-localisation diagnostic rather than certification."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["claude"],
+    "open_weights": false,
+    "validated": true,
+    "validation_note": "ATO worked-example gold labels, per-task pass rates",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6757918",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6779495",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6778921",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6779306",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2605.30363v1",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "2010-2024 FOMC minutes paired with a 14-variable U.S. Treasury and macroeconomic panel, using four interchangeable data-driven regime detectors.",
+      "Large language model, family not stated, reasons over central-bank communications to propose regime-shift candidates, validated with a bootstrap likelihood-ratio test on a vector autoregression.",
+      "Pipeline reaches F1 of 0.82 against a verified anchor list of monetary-policy regime shifts, with same-day detection latency and stronger performance than data-driven baselines."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "verified anchor list of regime shifts, F1 0.82",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6753841",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Chat-level panel from three markets: B2B SaaS (1.67M observations, 21 brands, 6 engines), MarTech (1.27M, 111 brands, 7 engines), and US finance (2.80M, 45 brands, 3 engines).",
+      "LLM engine responses are the outcome, not a tool; a correlated random effects logit models brand mention and an OLS models placement, with prompt, model, and date fixed effects.",
+      "Higher-ranked third-party listicle exposure is positively associated with mention probability and earlier placement, most monotonic in MarTech and concentrated at top tiers in finance."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 47
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6790565",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Panel of U.S. public firms from 2015 through 2025, combining an industry AI exposure measure and an AI economic uncertainty index in a shift-share design.",
+      "No language model is applied; the November 2022 ChatGPT launch serves as a discrete AI capability shock within fixed-effects specifications.",
+      "After the ChatGPT launch, AI-exposed firms cut cash holdings by roughly one percentage point, a step that persists through 2025, consistent with efficiency and substitution."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 54
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6758258",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

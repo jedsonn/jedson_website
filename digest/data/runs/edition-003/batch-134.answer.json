@@ -1,0 +1,225 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6672579",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6539278",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6672672",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6534580",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6550542",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Roughly 10,000 open-ended survey responses from baseball fans across five Major League Baseball teams, each paired with the fan's 0-10 overall game-day experience rating.",
+      "GPT-4.1 read only a single open-ended response and predicted the rating, validated against survey scores with 67 percent within one point and 36 percent exact matches.",
+      "Predictions correlated 0.82 with the overall rating but ran about one point low, a gap the authors read as a construct difference rather than measurement error."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": true,
+    "validation_note": "survey ratings, 67% within one point, r=0.82",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6607760",
+    "drop": false,
+    "field": "finance",
+    "role": "agent",
+    "bullets": [
+      "MarketSenseAI, a deployed multi-agent LLM equity system, evaluated live on the S&P 500 over 19 months and the S&P 100 over 35 months with no look-ahead bias.",
+      "Four specialist agents for news, fundamentals, dynamics, and macro feed a synthesis agent issuing monthly ordinal recommendations; the underlying LLM family is not stated.",
+      "The strong-buy equal-weight portfolio earned 2.18 percent monthly against a 1.15 percent benchmark, ranking at the 99.7th percentile of 10,000 Monte Carlo null portfolios."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6672958",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "91 interns in Indonesia's Magang Berdampak 2025 national program at PT Vidio, which integrated generative AI into daily internship workflows.",
+      "Gemini served as an interns' workflow tool; the study regresses self-reported AI enablement on work-readiness dimensions with no validation of model output.",
+      "AI enablement shows statistically significant positive relationships with all work-readiness dimensions, strongest for digital readiness, with AI described as scaffolded expertise."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gemini"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 35
+  },
+  {
+    "uid": "arxiv:2604.26747v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Cryptocurrency factor discovery, with data split into a 2020 to 2022 training window and a pure 2024 to 2026 out-of-sample evaluation period.",
+      "An unnamed LLM agent reads an append-only trace and proposes falsifiable factor hypotheses within a point-in-time DSL, while a deterministic engine enforces splits and costs.",
+      "A ridge-combined portfolio achieved 44.55 percent annualized return and a 1.55 Sharpe ratio out of sample after 5 basis point one-way trading costs."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 50
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6683258",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6676299",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Economy-wide AI adoption and productivity in Canada, drawing on international AI rankings and Canadian business survey data on AI use.",
+      "No model is run or named; the paper treats generative AI as a general-purpose technology and reviews adoption barriers, with no validation.",
+      "About 12 percent of Canadian businesses use AI, most reporting little employment change, and the country lags leaders in computing capacity and commercialization."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6682591",
+    "drop": false,
+    "field": "finance",
+    "role": "instrument",
+    "bullets": [
+      "Corporate bond primary-market deals in Japan, using Bank of Japan interventions as the setting and unstructured deal marketing reviews as the text source.",
+      "An unnamed large language model recovers deal-level measures of investors' expectations of BOJ purchases and order-book composition, with no validation reported.",
+      "BOJ trade expectations link to lower launch spreads on average, but the relationship weakens sharply when relationship-oriented investors dominate the order book."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6684220",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6559558",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6557178",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6682138",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Developer-level data from open-source projects of US public firms, using GitHub Copilot's launch as an exposure shock alongside a new AI exposure measure.",
+      "The researchers run no model; GitHub Copilot, powered by an unnamed LLM, is the studied technology whose adoption shifts developer effort, with no validation.",
+      "Senior developers capture productivity gains while career-concerned juniors shift to creative signaling work, and senior-heavy non-innovative firms gain most in stock reactions."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  }
+]

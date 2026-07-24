@@ -1,0 +1,242 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6996730",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6875778",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual and exploratory paper with no empirical sample, drawing on information economics, signaling theory, institutional economics, and trustworthy-AI governance to frame generative output as an economic good.",
+      "No model is used or named; the paper theorizes about generative AI broadly, treating synthetic output as an economic object whose quality is indeterminate.",
+      "Argues the bottleneck shifts from production to evaluation, so trust, provenance, domain expertise, and judgment become the scarce resources whose value rises as synthetic output scales."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 36
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6877798",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Conceptual argument on agentic commerce and machine-to-machine payments, citing a projected 3 to 5 trillion dollar market by 2030; no empirical data or sample.",
+      "No model is used or named; the paper reasons about autonomous AI agents' payment requirements and evaluates stablecoin infrastructure against legacy fiat and volatile crypto rails.",
+      "Argues MiCA-compliant stablecoins, with 1:1 safeguarded reserves and AMLA integration, are best positioned as the settlement layer for autonomous agentic payments."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 37
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6881538",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Literature review of thirty studies published 2019 to 2026 in management, economics, and information systems journals on AI and executive-level job performance.",
+      "No model is used; the review synthesizes evidence on generative AI's effect on executive decision-making, leadership, and managerial skills through upper-echelons and dynamic-capability lenses.",
+      "Reports substantial task-level productivity gains, a narrowing gap between junior and senior workers, persistent algorithm aversion in high-stakes settings, and associations with firm innovation and sales growth."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6917558",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2606.26924v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7003306",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6886958",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6888539",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6962668",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6890100",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual and modeling paper on generative AI and labor markets, noting large technology employers cut new-graduate hiring by roughly half versus pre-pandemic levels; no new dataset.",
+      "No LLM is used; the paper builds an individual value-curve model and a stock-flow workforce pipeline, synthesizing experimental evidence that AI's productivity uplift decreases in prior skill.",
+      "Finds a no-junior policy raises capability briefly then erodes it, and simultaneous firm-wide adoption collapses the shared senior market, a coordination failure on human capital."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7001392",
+    "drop": false,
+    "field": "management",
+    "role": "agent",
+    "bullets": [
+      "Open-source cyber-crisis decision simulator for regulated banking and healthcare organizations, covering four incident families in English and Polish across three difficulty levels with a cohort batch mode.",
+      "An unnamed LLM evaluates free-text player actions, advises during the exercise, and generates the debrief, alongside a deterministic weighted-KPI scorer; no accuracy validation is reported.",
+      "Presents the system with a regulation-accurate EU compliance clock spanning DORA, NIS2, GDPR, and AI Act article 73, producing an auditable 0 to 100 result; no outcome evaluation is reported."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7002154",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Experiment with 175 participants evaluating ten scenarios of challenging student situations, each with a response attributed to a human expert or ChatGPT and shown at high or low quality.",
+      "ChatGPT serves as the manipulated advice source rather than a research tool; responses analyzed with cumulative link mixed models for the ordinal, repeated-measures design.",
+      "Finds no main effect of source on credibility or adherence, so AI-attributed advice is judged like a human expert; higher quality raises credibility and pro-AI attitudes sharpen quality sensitivity."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 42
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7003668",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Survey of 22,963 higher education students across 155 countries, examining version access, usage intensity, and perceived educational benefit of ChatGPT by economic background.",
+      "No LLM is used as a tool; ChatGPT is the object studied via self-reported data analyzed with chi-square tests, ANOVA, hierarchical regression, and bootstrapped mediation.",
+      "Economically advantaged students hold paid subscriptions, use ChatGPT more intensively, and report greater benefit; version access partially mediates the link between economic status and perceived benefit."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6888640",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6885542",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Theoretical equilibrium model of user-generated-content platforms facing generative AI substitution, motivated by divergent platform outcomes since ChatGPT's release; no empirical dataset.",
+      "No LLM is used; the paper models fragility as governed by the directionality of value flow from higher- to lower-skilled users rather than AI's task capability.",
+      "Predicts more directional platforms collapse at lower AI reach, survivors shift value toward the peer channel, and transient overestimation produces hysteresis that blocks recovery."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 48
+  }
+]

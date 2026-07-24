@@ -1,0 +1,232 @@
+[
+ {
+  "uid": "doi:10.2139/ssrn.6237338",
+  "drop": false,
+  "field": "economics",
+  "role": "object",
+  "bullets": [
+   "US patent applications around the November 2022 release of ChatGPT, with particular attention to micro entities; the unit of observation is the individual patent application.",
+   "An AI-detection tool flags applications likely drafted with LLM help; the specific model behind the applications is not named and detection accuracy is not reported.",
+   "Likely LLM-assisted filings rose sharply after ChatGPT, up about 150 percent among micro entities, with no measurable quality difference but distinct linguistic patterns."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "gpt"
+  ],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 65
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6428004",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6480360",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6613558",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Small and medium businesses competing for visibility in AI-mediated commerce, using reported data on eight major generative AI platforms and consumer trust patterns; geography is not stated.",
+   "No language model is used or named by the researchers; the paper studies generative AI platforms as the objects reshaping product discovery and recommendation.",
+   "It argues SMBs face systematic disadvantage from opaque algorithms, hallucination, and cultural bias, and proposes four rights to secure equitable access to AI discovery channels."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6613678",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6586419",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6582599",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "Unstructured text from corporate annual reports; sample size, time period, and geography are not stated, with the firm-level innovation instance as the unit of analysis.",
+   "LLMs and generative AI classify innovation types against a codebook under a protocol requiring recursive textual citations for each instance; the model is not named and no accuracy is reported.",
+   "Innovation types and their significance are rated on a one-to-three scale and displayed in a three-by-three matrix; no substantive empirical finding is reported."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": false,
+  "validation_note": "citation-anchored self-check, no ground-truth accuracy",
+  "salience": 35
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6641752",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6623899",
+  "drop": false,
+  "field": "economics",
+  "role": "agent",
+  "bullets": [
+   "Reanalysis of the immigration policy and employment question from Huntington-Klein et al. (2025); each AI-agent run receives the same prompt and dataset and produces its own specification.",
+   "Repeated independent LLM agent runs act as stochastic replicators generating different research choices; the specific model is not named and outputs are not checked against a ground truth.",
+   "The agents produced 139 specifications with an interquartile range of estimates from -0.042 to 0.046, supporting AI agents as scalable proxies for multi-analyst studies."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 58
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6643910",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6653379",
+  "drop": false,
+  "field": "finance",
+  "role": "object",
+  "bullets": [
+   "Anti-money-laundering compliance in enterprise banking across global markets, drawn from more than a decade of practitioner experience rather than a defined sample or period.",
+   "The paper proposes replacing rule-based AML systems with LLM-driven contextual reasoning and real-time decisioning; no specific model is named and no formal evaluation is reported.",
+   "It outlines a framework for AI-native AML transformation and claims measurable outcomes from real-world implementations, though no figures are given."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 28
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6577780",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6472278",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6541198",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6584998",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6604918",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]

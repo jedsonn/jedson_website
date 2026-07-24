@@ -1,0 +1,234 @@
+[
+  {
+    "uid": "doi:10.2139/ssrn.6249619",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Perspective article reviewing the academic literature on personal financial decision making across three domains: savings versus consumption, investment decisions, and choices around debt.",
+      "The article uses no empirical language model; it conceptually discusses how generative AI might reshape individuals' savings, investment, and debt decisions, naming no specific system.",
+      "Argues people systematically deviate from normative financial-economics prescriptions in each domain and closes with a forward-looking view of GenAI's potential to reshape household choices."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 32
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6244621",
+    "drop": false,
+    "field": "management",
+    "role": "instrument",
+    "bullets": [
+      "Over 150 US universities with staggered entrepreneurship program introductions, linked historical catalogs to LinkedIn career histories for more than 300,000 graduates; within-university adjacent-cohort difference-in-differences.",
+      "A large language model, not named, performs text-based classification of graduates' ventures to distinguish small-business from growth-oriented entry, with no validation reported.",
+      "Program introduction cuts immediate business formation by 7.5 percent, driven by small-business entry, with no long-run entry, survival, or growth-venture effect."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 56
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6339098",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6151128",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6198058",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6385312",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6343438",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6136791",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6240158",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "US public firms classified by ex ante AI exposure from granular firm-technology data, studying merger and acquisition activity around the November 2022 ChatGPT release.",
+      "No language model is used for measurement; the ChatGPT release serves as the shock to AI returns, and firm AI exposure is the studied variable.",
+      "Higher-exposure acquirers buy more small, young, AI-producing targets and fewer non-AI targets, indicating reallocation rather than expansion of overall deal-making."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["gpt"],
+    "open_weights": false,
+    "validated": null,
+    "validation_note": "",
+    "salience": 60
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6396622",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6293738",
+    "drop": false,
+    "field": "management",
+    "role": "method",
+    "bullets": [
+      "Fourteen frontier language models evaluated on a task simulating empirical analysis of hospital merger effects, using synthetically generated data with embedded ground truth.",
+      "Models, with families not named, are scored on reaching correct conclusions and on conclusion stability when analytically irrelevant cues about desired outcomes are introduced.",
+      "Intelligence and integrity trade off: models most likely to reach correct conclusions are often most likely to shift inference under motivated framing."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": true,
+    "validation_note": "synthetic data with embedded ground truth, 14 models",
+    "salience": 62
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6224500",
+    "drop": false,
+    "field": "economics",
+    "role": "instrument",
+    "bullets": [
+      "Panel of mayors and senior government officials combined with administrative health-inspection data and official photographs, linking apparent-age gaps to local economic performance and promotion incentives.",
+      "Computer-vision models estimate apparent age from photos; large language models, not named, extract urgency, constraint, and risk emphasis from speeches and reports, with no accuracy check.",
+      "Officials in weaker-performing jurisdictions age faster, concentrated where promotion tournaments are steeper, and textual urgency measures predict within-official increases in apparent age."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": false,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6311158",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6376220",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6381458",
+    "drop": false,
+    "field": "finance",
+    "role": "object",
+    "bullets": [
+      "Task-based production model of generative AI paired with event studies around nineteen AI milestones spanning 2020 to 2024, examining cross-sectional stock returns and firms' AI exposure.",
+      "No language model is applied empirically; generative AI capability and cost enter as separate channels, and firm-level AI exposure is the object linked to returns.",
+      "Return sensitivity is roughly twice as large for capability as for cost events; the AI equity premium is about 46 basis points, capability risk 76 percent."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 55
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6336502",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

@@ -1,0 +1,238 @@
+[
+  {
+    "uid": "arxiv:2606.30997v2",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Multi-asset corpus of publicly traded securities used to train a portfolio management system; time period, geography and sample size are not stated.",
+      "Three-phase deep reinforcement learning combines a frozen T5-based Chronos time series foundation model, a mixture-of-experts PPO actor-critic and a 76-parameter LoRA personalization layer; no validation figure is reported.",
+      "Presents what the authors call the first use of a time series foundation model in portfolio reinforcement learning; no empirical performance magnitude is stated."
+    ],
+    "bullet_provenance": "ai",
+    "models": ["open_other"],
+    "open_weights": true,
+    "validated": null,
+    "validation_note": "",
+    "salience": 46
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7037862",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7034769",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Two-wave, time-lagged survey of 400 employees in medium and large Thai organizations, analyzed with partial least squares structural equation modeling.",
+      "No language model is run by the researchers; the study tests how GenAI-enabled HR practices affect trust, empowerment and outcomes, with transparency and AI anxiety as moderators.",
+      "All nine hypotheses supported; trust in AI and psychological empowerment fully mediated effects on engagement, wellbeing, performance and turnover, with transparency amplifying and anxiety attenuating trust."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7032780",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Conceptual paper on entrepreneurial judgment and founder governance; no empirical sample, period or geography is stated in the highlights provided.",
+      "No language model is used; the argument holds that generative AI cheaply supplies frictionless confirmation at both founder self-doubt and outside challenge.",
+      "Claims AI hollows out disconfirming content from board contact and distorts pivot-or-persevere timing in a way that stays invisible to governance."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 38
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7037618",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6999118",
+    "drop": false,
+    "field": "management",
+    "role": "object",
+    "bullets": [
+      "Structured review of academic literature, industry reports and vendor documentation on AI in enterprise resource planning systems, published between 2020 and 2026.",
+      "No specific model is used; the review maps machine learning, NLP, robotic process automation and agentic AI across ERP finance, supply chain, HR, CRM and manufacturing modules.",
+      "Reports AI-enhanced ERP improves forecasting accuracy, automation, decision speed and cost, and proposes a five-layer framework for structured AI and ERP integration."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 34
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7035468",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6946338",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7036831",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6901539",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual economics paper on how AI reallocates human time, attention and effort; the authors state they present no original empirical results.",
+      "No model is used; the paper builds on Becker's time-allocation theory, task-based automation models and self-determination theory to define a cognitive windfall.",
+      "Argues welfare depends on whether freed time flows to employer capture, passive absorption, purposeful reallocation or a capability trap, and proposes a measurement agenda."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 40
+  },
+  {
+    "uid": "doi:10.2139/ssrn.6906459",
+    "drop": false,
+    "field": "economics",
+    "role": "object",
+    "bullets": [
+      "Conceptual analysis of the generative AI industry's pricing and cost structure; no formal dataset, period or sample is stated.",
+      "No model is used; the paper argues generative AI firms use venture-funded blitzscaling to charge below cost-plus-margin despite high inference variable costs and weak network effects.",
+      "Predicts firms will raise prices, promote personalization to build consumer dependencies, and seek government financing, regulation and revenue support."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 45
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7036735",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "doi:10.2139/ssrn.7036093",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.00856v1",
+    "drop": false,
+    "field": "finance",
+    "role": "method",
+    "bullets": [
+      "Financial textual data modeled by large language models; the specific corpus, time period and sample size are not stated.",
+      "Applies Shapley-value attributions to the models' predictions and tests, theoretically and empirically, whether the attributions align with established financial domain knowledge; model family not stated.",
+      "Reports that Shapley values can produce explanations consistent with financial reasoning; no quantitative accuracy or agreement figure is stated."
+    ],
+    "bullet_provenance": "ai",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 44
+  },
+  {
+    "uid": "arxiv:2607.01510v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  },
+  {
+    "uid": "arxiv:2607.01470v1",
+    "drop": true,
+    "field": "other",
+    "role": "method",
+    "bullets": [],
+    "bullet_provenance": "none",
+    "models": [],
+    "open_weights": null,
+    "validated": null,
+    "validation_note": "",
+    "salience": 0
+  }
+]

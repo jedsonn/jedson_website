@@ -1,0 +1,229 @@
+[
+ {
+  "uid": "doi:10.5281/zenodo.21380237",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7135523",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7123198",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.7120478",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6638719",
+  "drop": false,
+  "field": "finance",
+  "role": "method",
+  "bullets": [
+   "Literature survey of more than 30 papers on financial information extraction, spanning traditional NLP through LLMs, evaluated on datasets including FinQA with 8,281 QA pairs, ConvFinQA, and TAT-QA.",
+   "Reviews prompting strategies and retrieval-augmented generation for pulling metrics from earnings reports and filings; no single model is named, and it compiles reported benchmark scores rather than running its own test.",
+   "State-of-the-art models reach 58 to 62 percent accuracy versus 89 to 91 percent for human experts, leaving a roughly 30 point gap driven by multi-step numerical reasoning."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 42
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6400178",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6445618",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "Conceptual framework plus a single case study in which a data governance architect with no mobile experience built an iOS and Android crossword app through natural language prompting.",
+   "LLMs act as the full technical scaffold generating deployable code from domain-expert prompts; no specific model is named and no validation is reported.",
+   "Argues software authorship shifts from engineers to domain experts, framing generative AI as a co-builder with implications for enterprise productivity and workforce transformation."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 30
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6672580",
+  "drop": false,
+  "field": "management",
+  "role": "object",
+  "bullets": [
+   "A system-level framework for agentic AI roles in manufacturing, illustrated with a melt-pool image analysis case study in powder bed fusion additive manufacturing.",
+   "LLMs and multimodal foundation models serve as goal-oriented agents in structured workflows with human-in-the-loop oversight; no specific model is named and no accuracy figure is reported.",
+   "Agentic AI complements conventional rule-based agents by adding contextual analysis and recommendations, with gains in adaptability and interpretability described qualitatively."
+  ],
+  "bullet_provenance": "ai",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 32
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6732520",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6763360",
+  "drop": false,
+  "field": "management",
+  "role": "method",
+  "bullets": [
+   "47,298 annual reports from 5,519 Chinese listed firms, 2010 to 2023, used to measure nationalistic rhetoric for international business research.",
+   "Compares classical machine learning, fine-tuned FinBERT, locally deployed LLMs, and cloud-based DeepSeek-V3 on zero-shot classification, with accuracy checked against labeled data.",
+   "FinBERT gives the best balance at 93.5 percent accuracy while DeepSeek-V3 leads zero-shot at 94.8 percent; measured nationalism relates to cross-border M&A premiums and outward FDI patterns."
+  ],
+  "bullet_provenance": "ai",
+  "models": [
+   "open_other",
+   "legacy"
+  ],
+  "open_weights": true,
+  "validated": true,
+  "validation_note": "accuracy vs labeled reports; FinBERT 93.5%, DeepSeek-V3 94.8%; event-study benchmarking",
+  "salience": 72
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6743358",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6949505",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6985050",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "doi:10.2139/ssrn.6878281",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.27023v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ },
+ {
+  "uid": "arxiv:2606.28992v1",
+  "drop": true,
+  "field": "other",
+  "role": "method",
+  "bullets": [],
+  "bullet_provenance": "none",
+  "models": [],
+  "open_weights": null,
+  "validated": null,
+  "validation_note": "",
+  "salience": 0
+ }
+]
