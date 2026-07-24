@@ -7,3 +7,12 @@ data/runs/*/enriched.json
 data/runs/*/with_overrides.json
 data/runs/*/classified.json
 data/runs/*/batch-*.md
+# Per-run build intermediates. The classifications land in data/index.jsonl
+# (committed); these are regenerable scratch and are actively rewritten mid-run.
+data/runs/*/batch-*.answer.json
+data/runs/*/coverage.json
+data/runs/*/batch-manifest.json
+data/runs/*/final.json
+data/runs/*/rejects.json
+data/runs/*/partitions.json
+data/runs/*/remaining_batches.json
