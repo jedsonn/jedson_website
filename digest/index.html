@@ -115,7 +115,35 @@ footer.site a{color:var(--accent);text-decoration:none}
 footer.site a:hover{text-decoration:underline}
 footer.site .links{font-family:var(--mono);font-size:12px}
 
+/* ---- engage: subscribe + suggest ---- */
+.engage{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:46px;padding-top:28px;border-top:1px solid var(--rule2)}
+.eng-h{font-family:var(--serif);font-weight:400;font-size:21px;margin:0 0 5px;letter-spacing:-.01em}
+.eng-p{font-size:13px;color:var(--ink2);margin:0 0 13px;line-height:1.5}
+.eng-tabs{display:flex;gap:6px;margin:0 0 10px}
+.eng-tab{font-family:var(--sans);font-size:12.5px;font-weight:500;padding:4px 12px;border:1px solid var(--rule2);
+  background:var(--card);color:var(--ink2);border-radius:999px;cursor:pointer;transition:all .12s}
+.eng-tab:hover{border-color:var(--ink3);color:var(--ink)}
+.eng-tab[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#fff}
+:root[data-theme="dark"] .eng-tab[aria-pressed="true"]{color:#0d1115}
+.eng-form{display:flex;gap:8px}
+.eng-form-col{flex-direction:column}
+.eng-row{display:flex;gap:8px}
+.eng-form input,.eng-form textarea{font:inherit;font-size:13.5px;color:var(--ink);background:var(--card);
+  border:1px solid var(--rule2);border-radius:8px;padding:9px 11px;width:100%}
+.eng-form textarea{min-height:72px;resize:vertical;line-height:1.5}
+.eng-form input::placeholder,.eng-form textarea::placeholder{color:var(--ink3)}
+.eng-form input:focus,.eng-form textarea:focus{outline:2px solid var(--accent);outline-offset:-1px;border-color:var(--accent)}
+.eng-row input{flex:1}
+.eng-btn{font-family:var(--sans);font-size:13.5px;font-weight:600;white-space:nowrap;
+  background:var(--accent);color:#fff;border:0;border-radius:8px;padding:9px 18px;cursor:pointer;transition:filter .12s}
+:root[data-theme="dark"] .eng-btn{color:#0d1115}
+.eng-btn:hover{filter:brightness(1.08)}
+.eng-btn:disabled{opacity:.55;cursor:default}
+.eng-msg{font-size:12.5px;color:var(--ok);margin:9px 0 0;min-height:16px;font-weight:500}
+.eng-msg.err{color:var(--warn)}
+
 @media(max-width:600px){
+  .engage{grid-template-columns:1fr;gap:32px}
   .wrap{padding:0 16px 60px}
   dl{grid-template-columns:1fr;gap:2px 0}
   dt{padding-top:9px}
@@ -176,6 +204,34 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 </div>
 
 <main id="list" aria-live="polite"></main>
+
+<section class="engage" aria-label="Get involved">
+  <div class="eng-col">
+    <h3 class="eng-h">Get the digest</h3>
+    <p class="eng-p">A short weekly email with the top new papers. At most one a week, and you can leave anytime.</p>
+    <form class="eng-form" id="sub-form" novalidate>
+      <input type="email" id="sub-email" required placeholder="you@university.edu" aria-label="Email address" maxlength="254" autocomplete="email">
+      <button type="submit" class="eng-btn">Subscribe</button>
+    </form>
+    <p class="eng-msg" id="sub-msg" role="status" aria-live="polite"></p>
+  </div>
+  <div class="eng-col">
+    <h3 class="eng-h">Suggest something</h3>
+    <div class="eng-tabs" role="group" aria-label="Suggestion type">
+      <button type="button" class="eng-tab" data-kind="paper" aria-pressed="true">A paper</button>
+      <button type="button" class="eng-tab" data-kind="feature" aria-pressed="false">A feature</button>
+    </div>
+    <form class="eng-form eng-form-col" id="sug-form" novalidate>
+      <input type="url" id="sug-link" placeholder="Link to the paper (SSRN, arXiv, DOI…)" aria-label="Paper link" maxlength="400">
+      <textarea id="sug-body" required placeholder="What should we add, and why?" aria-label="Your suggestion" maxlength="4000"></textarea>
+      <div class="eng-row">
+        <input type="email" id="sug-contact" placeholder="Your email (optional)" aria-label="Your email, optional" maxlength="200" autocomplete="email">
+        <button type="submit" class="eng-btn">Send</button>
+      </div>
+    </form>
+    <p class="eng-msg" id="sug-msg" role="status" aria-live="polite"></p>
+  </div>
+</section>
 
 <footer class="site">
   <span>Open metadata only (Crossref, arXiv, OpenAlex) &middot; no scraping &middot; summaries are ours, abstracts not reproduced. Corrections: <a href="mailto:jedson.pinto@utdallas.edu">jedson.pinto@utdallas.edu</a></span>
@@ -364,6 +420,69 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   });
 
   render();
+})();
+</script>
+
+<!-- Subscribe + suggest. Reuses the site's Supabase project ("rumo"). Degrades
+     silently if the CDN is blocked. web_feedback insert emails the curator. -->
+<script src="https://cdn.jsdelivr.net/npm/@supabase/supabase-js@2"></script>
+<script>
+(function(){
+  var SB_URL="https://nmkbznbjgfuqopezfncs.supabase.co";
+  var SB_KEY="sb_publishable_NuyK_vdjUJnxNPfOww8XNw_fsZ84bk0";
+  if(!window.supabase||!window.supabase.createClient) return;
+  var sb; try{ sb=window.supabase.createClient(SB_URL,SB_KEY); }catch(e){ return; }
+  var EMAIL=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
+  function say(el,text,err){ if(!el)return; el.textContent=text; el.classList.toggle("err",!!err); }
+
+  // ----- subscribe -----
+  var subForm=document.getElementById("sub-form");
+  if(subForm) subForm.addEventListener("submit",function(e){
+    e.preventDefault();
+    var email=document.getElementById("sub-email").value.trim();
+    var m=document.getElementById("sub-msg");
+    if(!EMAIL.test(email)){ say(m,"Please enter a valid email.",true); return; }
+    var btn=subForm.querySelector("button"); btn.disabled=true;
+    sb.from("web_subscribers").insert({email:email,source:"digest"}).then(function(r){
+      btn.disabled=false;
+      if(r.error){
+        if(r.error.code==="23505"||/duplicate|unique/i.test(r.error.message||"")){ say(m,"You’re already on the list — thank you."); subForm.reset(); }
+        else { say(m,"Something went wrong. Please try again later.",true); }
+      } else { say(m,"You’re on the list — thank you."); subForm.reset(); }
+    }).catch(function(){ btn.disabled=false; say(m,"Something went wrong. Please try again later.",true); });
+  });
+
+  // ----- suggest a paper / feature -----
+  var kind="paper";
+  var tabs=[].slice.call(document.querySelectorAll(".eng-tab"));
+  var linkEl=document.getElementById("sug-link");
+  tabs.forEach(function(t){ t.addEventListener("click",function(){
+    kind=t.dataset.kind;
+    tabs.forEach(function(x){ x.setAttribute("aria-pressed",String(x===t)); });
+    if(linkEl) linkEl.style.display=(kind==="paper")?"":"none";
+  }); });
+  var sugForm=document.getElementById("sug-form");
+  if(sugForm) sugForm.addEventListener("submit",function(e){
+    e.preventDefault();
+    var bodyEl=document.getElementById("sug-body");
+    var body=bodyEl.value.trim();
+    var m=document.getElementById("sug-msg");
+    if(!body){ bodyEl.focus(); return; }
+    var link=(linkEl?linkEl.value.trim():"");
+    var contact=document.getElementById("sug-contact").value.trim();
+    var full=(kind==="paper"&&link)?("Link: "+link+"\n\n"+body):body;
+    var btn=sugForm.querySelector("button[type=submit]"); btn.disabled=true;
+    sb.from("web_feedback").insert({
+      kind:"suggestion", page:"digest",
+      paper_title:(kind==="paper"?"Paper suggestion":"Feature request"),
+      body:full.slice(0,5000), contact:contact.slice(0,200),
+      user_agent:(navigator.userAgent||"").slice(0,400)
+    }).then(function(r){
+      btn.disabled=false;
+      if(r.error){ say(m,"Something went wrong. Please try again later.",true); }
+      else { say(m,"Sent to Jedson — thank you!"); sugForm.reset(); if(linkEl) linkEl.style.display=(kind==="paper")?"":"none"; }
+    }).catch(function(){ btn.disabled=false; say(m,"Something went wrong. Please try again later.",true); });
+  });
 })();
 </script>
 </body>
