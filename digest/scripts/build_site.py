@@ -110,9 +110,11 @@ def main():
                 p["authors_detailed"] = a["authors"]
                 if a.get("affiliations"):
                     p["affiliations"] = a["affiliations"]
+                if a.get("top_author"):
+                    p["prestige"] = True  # a highly-cited author
             affs = " ; ".join(p.get("affiliations") or []).lower()
             if affs and any(t in affs for t in TOP_INSTITUTIONS):
-                p["prestige"] = True
+                p["prestige"] = True  # a top-50 institution
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)

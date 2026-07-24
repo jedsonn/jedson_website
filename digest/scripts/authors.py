@@ -91,42 +91,56 @@ def main():
                 got += 1
         time.sleep(0.3)
 
-    # Second pass: backfill authors whose specific paper listed no institution
-    # from their OpenAlex profile's last-known institution. This is where most
-    # of the coverage gain comes from — preprints rarely tag affiliations.
-    need = {}
+    # Second pass: query every unique author's OpenAlex profile for their
+    # last-known institution (backfills preprints that tagged no affiliation)
+    # AND their h-index (flags "top researcher" papers so the technical filter
+    # never hides them).
+    H_TOP = 40  # h-index at/above which an author counts as a top researcher
+    meta = {}  # aid -> {"inst": str, "h": int}
     for uid, rec in existing.items():
         for a in rec.get("authors", []):
-            if not a.get("inst") and a.get("url"):
+            if a.get("url"):
                 aid = a["url"].rstrip("/").split("/")[-1]  # A5112431388
                 if aid.startswith("A"):
-                    need[aid] = None
-    ids = [aid for aid in need if need[aid] is None]
-    print("Backfilling institutions for %d authors from their OpenAlex profiles." % len(ids))
+                    meta.setdefault(aid, {"inst": "", "h": 0})
+    ids = list(meta.keys())
+    print("Looking up %d unique authors on OpenAlex (institution + h-index)." % len(ids))
     for i in range(0, len(ids), 50):
         chunk = ids[i:i + 50]
         try:
             resp = guarded_get("https://api.openalex.org/authors", params={
                 "filter": "openalex_id:" + "|".join(chunk), "per-page": 50,
-                "select": "id,last_known_institutions", "mailto": mailto,
+                "select": "id,last_known_institutions,summary_stats", "mailto": mailto,
             })
             for au in resp.json().get("results", []):
                 aid = (au.get("id") or "").rstrip("/").split("/")[-1]
+                if aid not in meta:
+                    continue
                 insts = au.get("last_known_institutions") or []
                 if insts and insts[0].get("display_name"):
-                    need[aid] = insts[0]["display_name"]
+                    meta[aid]["inst"] = insts[0]["display_name"]
+                h = ((au.get("summary_stats") or {}).get("h_index")) or 0
+                meta[aid]["h"] = int(h)
         except Exception as exc:  # noqa: BLE001
             print("  author batch %d failed: %s" % (i // 50, str(exc)[:120]))
         time.sleep(0.3)
 
-    backfilled = 0
+    backfilled, topcount = 0, 0
     for uid, rec in existing.items():
+        top = False
         for a in rec.get("authors", []):
-            if not a.get("inst") and a.get("url"):
-                aid = a["url"].rstrip("/").split("/")[-1]
-                if need.get(aid):
-                    a["inst"] = need[aid]
-                    backfilled += 1
+            if not a.get("url"):
+                continue
+            aid = a["url"].rstrip("/").split("/")[-1]
+            m = meta.get(aid) or {}
+            if not a.get("inst") and m.get("inst"):
+                a["inst"] = m["inst"]
+                backfilled += 1
+            if m.get("h", 0) >= H_TOP:
+                top = True
+        if top:
+            rec["top_author"] = True
+            topcount += 1
         affs = []
         for a in rec.get("authors", []):
             if a.get("inst") and a["inst"] not in affs:
@@ -134,8 +148,8 @@ def main():
         rec["affiliations"] = affs[:8]
 
     write_json(out_path, existing)
-    print("Wrote %d author records to data/authors.json (%d newly enriched, %d institutions backfilled)."
-          % (len(existing), got, backfilled))
+    print("Wrote %d author records (%d newly enriched, %d institutions backfilled, %d with a top-researcher author)."
+          % (len(existing), got, backfilled, topcount))
 
 
 if __name__ == "__main__":
