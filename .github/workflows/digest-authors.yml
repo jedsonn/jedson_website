@@ -7,6 +7,14 @@ name: Digest author enrichment
 
 on:
   workflow_dispatch:
+  # Auto-enrich whenever a new edition lands (index.jsonl changes). The daily
+  # publish pushes index.jsonl to main, which triggers this; this job only
+  # writes authors.json/papers.json/index.html/feed.xml, so it never re-triggers
+  # itself. External git pushes (the Routine session) do fire this; Action
+  # commits do not, so there is no loop.
+  push:
+    branches: [main]
+    paths: ["digest/data/index.jsonl"]
 
 permissions:
   contents: write
