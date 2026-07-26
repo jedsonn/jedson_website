@@ -20,7 +20,7 @@ import glob
 import json
 import os
 
-from common import CFG, ROOT, log, read_json, write_json
+from common import CFG, ROOT, log, read_json, read_jsonl, write_json
 
 FIELDS = [f["id"] for f in CFG["taxonomy"]["fields"]]
 ROLES = [r["id"] for r in CFG["taxonomy"]["roles"]]
@@ -49,6 +49,25 @@ def prepare(args):
     recs = read_json(os.path.join(run_dir, "enriched.json"), [])
     if not recs:
         raise SystemExit("No enriched.json for edition %d" % args.edition)
+
+    # Only classify papers NOT already published. A daily harvest window overlaps
+    # the last edition; skipping known ids keeps each run cheap even with a wide,
+    # robust window (which catches papers Crossref indexed late).
+    idx_path = os.path.join(ROOT, "data", "index.jsonl")
+    seen = set()
+    if os.path.exists(idx_path):
+        for r in read_jsonl(idx_path):
+            for k in ("uid", "doi", "arxiv_id"):
+                if r.get(k):
+                    seen.add(str(r[k]).lower())
+
+    def known(r):
+        return any(str(r.get(k)).lower() in seen for k in ("uid", "doi", "arxiv_id") if r.get(k))
+
+    before = len(recs)
+    recs = [r for r in recs if not known(r)]
+    log("Prepare: %d enriched, %d already in index, %d new to classify."
+        % (before, before - len(recs), len(recs)))
 
     overrides = load_overrides()
     todo = []

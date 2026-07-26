@@ -1,18 +1,23 @@
-name: Digest harvest (artifact)
+name: Digest harvest (artifact + transit)
 
-# Harvest runs on GitHub's runners because they have open internet; the
-# sandbox and cloud environments cannot reach Crossref/arXiv/OpenAlex.
-# Abstracts ride in an ephemeral, auto-expiring Actions artifact (the same
-# role .cache plays) and are NEVER committed. A Claude session downloads the
-# artifact, classifies, strips abstracts, and pushes the clean edition.
+# Harvest runs on GitHub's runners because they have open internet; a Claude
+# session (sandbox / cloud / Routine) CANNOT reach Crossref/arXiv/OpenAlex.
+# This job harvests, enriches, prepares batches for the NEW papers only, and
+# drops them onto the throwaway `digest-raw` branch. The daily Routine then
+# fetches digest-raw, classifies (the LLM step), strips abstracts, publishes a
+# clean edition to main, and deletes digest-raw. Abstracts live only in the
+# artifact and on digest-raw (transient) — NEVER on main.
+#
+# Runs at 07:00 UTC so it finishes well before the 10:00 UTC (~5am Central)
+# publish Routine, even with GitHub's scheduled-run delays.
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "30 8 * * *"
+    - cron: "0 7 * * *"
 
 permissions:
-  contents: read
+  contents: write
 
 concurrency:
   group: digest-harvest
@@ -31,7 +36,7 @@ jobs:
       - name: Install dependencies
         run: pip install -q -r digest/requirements.txt
 
-      - name: Harvest, enrich, prepare batches
+      - name: Harvest, enrich, prepare batches for NEW papers
         id: h
         run: |
           set -euo pipefail
@@ -46,14 +51,17 @@ jobs:
           KEPT=$(python3 -c "import json;print(len(json.load(open('$RUN_DIR/harvested.json'))))" 2>/dev/null || echo 0)
           echo "Harvested $KEPT raw records."
           if [ "$KEPT" = "0" ]; then
-            echo "empty=1" >> "$GITHUB_OUTPUT"
-            exit 0
+            echo "empty=1" >> "$GITHUB_OUTPUT"; exit 0
           fi
           python3 scripts/enrich.py --edition "$EDITION"
           python3 scripts/classify.py prepare --edition "$EDITION" --batch-size 8
-          echo "Prepared batches for edition $EDITION."
+          NEW=$(python3 -c "import json;print(json.load(open('$RUN_DIR/batch-manifest.json')).get('to_classify',0))" 2>/dev/null || echo 0)
+          echo "New papers to classify (not already in index): $NEW"
+          if [ "$NEW" = "0" ]; then
+            echo "empty=1" >> "$GITHUB_OUTPUT"
+          fi
 
-      - name: Upload edition artifact (abstracts live here, not in git)
+      - name: Upload edition artifact (backup; abstracts here, not on main)
         if: steps.h.outputs.empty != '1'
         uses: actions/upload-artifact@v4
         with:
@@ -61,3 +69,19 @@ jobs:
           path: digest/data/runs/edition-*
           retention-days: 5
           if-no-files-found: error
+
+      - name: Expose batches on digest-raw (transit; deleted after classify)
+        if: steps.h.outputs.empty != '1'
+        run: |
+          set -euo pipefail
+          git config user.name "digest-bot"
+          git config user.email "noreply@anthropic.com"
+          RUN_DIR=$(printf "digest/data/runs/edition-%03d" "${{ steps.h.outputs.edition }}")
+          git checkout --orphan digest-raw
+          git reset -q
+          echo "${{ steps.h.outputs.edition }}" > EDITION.txt
+          echo "${{ steps.h.outputs.run_date }}" > RUN_DATE.txt
+          git add -f EDITION.txt RUN_DATE.txt "$RUN_DIR"
+          git commit -q -m "Transit batches edition ${{ steps.h.outputs.edition }} (abstracts; do not merge; deleted after classify)"
+          git push -f origin digest-raw
+          echo "Pushed batches to digest-raw for edition ${{ steps.h.outputs.edition }}."
