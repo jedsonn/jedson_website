@@ -8,13 +8,16 @@ name: Digest harvest (artifact + transit)
 # clean edition to main, and deletes digest-raw. Abstracts live only in the
 # artifact and on digest-raw (transient) — NEVER on main.
 #
-# Runs at 07:00 UTC so it finishes well before the 10:00 UTC (~5am Central)
-# publish Routine, even with GitHub's scheduled-run delays.
+# Runs at 02:00 UTC to leave an ~8h buffer before the 10:00 UTC (~5am Central)
+# publish Routine. GitHub's scheduled runs can be delayed by hours under load;
+# on 2026-07-27 a 07:00 cron fired at 10:43 — AFTER the 10:00 Routine — so that
+# day's edition never got classified. The early start keeps a multi-hour delay
+# from pushing the harvest past the Routine again.
 
 on:
   workflow_dispatch:
   schedule:
-    - cron: "0 7 * * *"
+    - cron: "0 2 * * *"
 
 permissions:
   contents: write
