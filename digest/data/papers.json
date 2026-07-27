@@ -85,7 +85,34 @@
       "salience": 67,
       "edition": 5,
       "models": [],
-      "n": 1232
+      "n": 1232,
+      "authors_detailed": [
+        {
+          "name": "Mina Cho",
+          "url": "https://openalex.org/A5143658122",
+          "inst": ""
+        },
+        {
+          "name": "Russell Funk",
+          "url": "https://openalex.org/A5143655716",
+          "inst": ""
+        },
+        {
+          "name": "Alok Gupta",
+          "url": "https://openalex.org/A5022969857",
+          "inst": "University of Minnesota"
+        },
+        {
+          "name": "Mochen Yang",
+          "url": "https://openalex.org/A5008688627",
+          "inst": "University of Minnesota"
+        }
+      ],
+      "affiliations": [
+        "University of Minnesota"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7177738",
@@ -125,8 +152,11 @@
         {
           "name": "Dr. Brijesh M. Patel",
           "url": "https://openalex.org/A5143566626",
-          "inst": ""
+          "inst": "Sardar Patel University"
         }
+      ],
+      "affiliations": [
+        "Sardar Patel University"
       ]
     },
     {
@@ -159,7 +189,35 @@
       "salience": 58,
       "edition": 4,
       "validated": null,
-      "n": 1207
+      "n": 1207,
+      "authors_detailed": [
+        {
+          "name": "Yuehu Zhao",
+          "url": "https://openalex.org/A5129665790",
+          "inst": "Tsinghua University"
+        },
+        {
+          "name": "Ruoran Chen",
+          "url": "https://openalex.org/A5042839195",
+          "inst": "Southwest Jiaotong University"
+        },
+        {
+          "name": "Yuxuan Zhang",
+          "url": "https://openalex.org/A5014195111",
+          "inst": "University of International Business and Economics"
+        },
+        {
+          "name": "Simin Huang",
+          "url": "https://openalex.org/A5143576051",
+          "inst": "Tsinghua University"
+        }
+      ],
+      "affiliations": [
+        "Tsinghua University",
+        "Southwest Jiaotong University",
+        "University of International Business and Economics"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7076999",
@@ -188,7 +246,28 @@
       "salience": 54,
       "edition": 4,
       "models": [],
-      "n": 1215
+      "n": 1215,
+      "authors_detailed": [
+        {
+          "name": "Siva Shanmugam Mariappan",
+          "url": "https://openalex.org/A5125563479",
+          "inst": "San Antonio College"
+        },
+        {
+          "name": "Ashwin Malshe",
+          "url": "https://openalex.org/A5054246422",
+          "inst": "The University of Texas at San Antonio"
+        },
+        {
+          "name": "Jihye Jung",
+          "url": "https://openalex.org/A5125548812",
+          "inst": "The University of Texas at San Antonio"
+        }
+      ],
+      "affiliations": [
+        "San Antonio College",
+        "The University of Texas at San Antonio"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7084378",
@@ -217,7 +296,33 @@
       "salience": 56,
       "edition": 4,
       "models": [],
-      "n": 1217
+      "n": 1217,
+      "authors_detailed": [
+        {
+          "name": "Saeid Ashraf Vaghefi",
+          "url": "https://openalex.org/A5035433111",
+          "inst": "University of Zurich"
+        },
+        {
+          "name": "Chiara Colesanti Senni",
+          "url": "https://openalex.org/A5086406811",
+          "inst": "University of Zurich"
+        },
+        {
+          "name": "Christian Huggel",
+          "url": "https://openalex.org/A5028598221",
+          "inst": "University of Zurich"
+        },
+        {
+          "name": "Markus Leippold",
+          "url": "https://openalex.org/A5073309846",
+          "inst": "University of Zurich"
+        }
+      ],
+      "affiliations": [
+        "University of Zurich"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.7177328",
@@ -271,7 +376,17 @@
       "salience": 47,
       "edition": 4,
       "models": [],
-      "n": 1227
+      "n": 1227,
+      "authors_detailed": [
+        {
+          "name": "Prakhar Rai",
+          "url": "https://openalex.org/A5134061221",
+          "inst": "Great Lakes Institute of Management"
+        }
+      ],
+      "affiliations": [
+        "Great Lakes Institute of Management"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7182339",
@@ -296,7 +411,17 @@
       "salience": 34,
       "edition": 4,
       "models": [],
-      "n": 1228
+      "n": 1228,
+      "authors_detailed": [
+        {
+          "name": "Longjie Jia",
+          "url": "https://openalex.org/A5112328151",
+          "inst": "Imperial College London"
+        }
+      ],
+      "affiliations": [
+        "Imperial College London"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7069958",
@@ -49540,7 +49665,36 @@
       "bullets": [],
       "models": [],
       "validated": null,
-      "n": 1233
+      "n": 1233,
+      "authors_detailed": [
+        {
+          "name": "Vineet Bhagwat",
+          "url": "https://openalex.org/A5024186733",
+          "inst": "George Washington University"
+        },
+        {
+          "name": "J. Anthony Cookson",
+          "url": "https://openalex.org/A5076123255",
+          "inst": "University of Colorado Boulder"
+        },
+        {
+          "name": "Chukwuma Dim",
+          "url": "https://openalex.org/A5087528513",
+          "inst": "George Washington University"
+        },
+        {
+          "name": "Marina Niessner",
+          "url": "https://openalex.org/A5009534656",
+          "inst": "Indiana University"
+        }
+      ],
+      "affiliations": [
+        "George Washington University",
+        "University of Colorado Boulder",
+        "Indiana University"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5370043",
