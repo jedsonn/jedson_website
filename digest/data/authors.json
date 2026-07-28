@@ -23579,5 +23579,15 @@
       "University of Minnesota"
     ],
     "top_author": true
+  },
+  "doi:10.2139/ssrn.7180460": {
+    "authors": [
+      {
+        "name": "Bernd Johannes Wuebben",
+        "url": "https://openalex.org/A5134604989",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
   }
 }

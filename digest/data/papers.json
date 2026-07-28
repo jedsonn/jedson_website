@@ -246,7 +246,14 @@
       "edition": 5,
       "models": [],
       "validated": null,
-      "n": 1234
+      "n": 1234,
+      "authors_detailed": [
+        {
+          "name": "Bernd Johannes Wuebben",
+          "url": "https://openalex.org/A5134604989",
+          "inst": ""
+        }
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7085498",
