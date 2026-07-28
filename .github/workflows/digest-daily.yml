@@ -1,0 +1,110 @@
+name: Digest daily (self-contained, API classify)
+
+# ONE self-contained daily job that replaces the fragile two-piece design
+# (harvest Action + separate Claude Routine that kept not firing):
+#
+#   harvest -> enrich -> prepare -> classify (Claude API) -> apply -> dedupe
+#   -> build -> release gate -> commit to main
+#
+# No Routine, no `digest-raw` transit branch, no timing gap between two
+# independent schedules. Abstracts stay on the ephemeral runner and are never
+# committed (data/runs is gitignored; papers.json is gate-checked for a stray
+# `abstract` field before publish). The existing digest-authors.yml still fires
+# on the index.jsonl push to enrich author institutions.
+#
+# ACTIVATION (see PR body):
+#   1. Add repo secret ANTHROPIC_API_KEY.
+#   2. (optional) Add repo variable ANTHROPIC_MODEL (default claude-sonnet-5;
+#      claude-haiku-4-5-20251001 is cheaper).
+#   3. Run once via "Run workflow" to verify it publishes an edition.
+#   4. Uncomment the `schedule:` block below, and disable the now-redundant
+#      digest-harvest.yml / digest-expose.yml + the old Routine.
+#
+# Until ANTHROPIC_API_KEY is set, the classify + publish steps no-op, so merging
+# this is safe and changes nothing.
+
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "17 6 * * *"   # daily 06:17 UTC — enable after adding the secret
+
+permissions:
+  contents: write
+
+concurrency:
+  group: digest-daily
+  cancel-in-progress: false
+
+jobs:
+  daily:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install dependencies
+        run: pip install -q -r digest/requirements.txt -r digest/requirements-classify.txt
+
+      - name: Harvest, enrich, prepare batches for NEW papers
+        id: prep
+        run: |
+          set -euo pipefail
+          cd digest
+          RUN_DATE=$(date -u +%F)
+          EDITION=$(python3 -c "import json,os;print(json.load(open('data/last-run.json'))['edition']+1 if os.path.exists('data/last-run.json') else 1)")
+          echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
+          echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
+          echo "Edition $EDITION on $RUN_DATE"
+          python3 scripts/harvest.py --edition "$EDITION" --date "$RUN_DATE"
+          RUN_DIR=$(printf "data/runs/edition-%03d" "$EDITION")
+          KEPT=$(python3 -c "import json;print(len(json.load(open('$RUN_DIR/harvested.json'))))" 2>/dev/null || echo 0)
+          echo "Harvested $KEPT raw records."
+          if [ "$KEPT" = "0" ]; then echo "empty=1" >> "$GITHUB_OUTPUT"; exit 0; fi
+          python3 scripts/enrich.py --edition "$EDITION"
+          python3 scripts/classify.py prepare --edition "$EDITION" --batch-size 8
+          NEW=$(python3 -c "import json;print(json.load(open('$RUN_DIR/batch-manifest.json')).get('to_classify',0))" 2>/dev/null || echo 0)
+          echo "New papers to classify: $NEW"
+          if [ "$NEW" = "0" ]; then echo "empty=1" >> "$GITHUB_OUTPUT"; fi
+
+      - name: Classify (Claude API), apply, dedupe, build, gate
+        if: steps.prep.outputs.empty != '1'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          ANTHROPIC_MODEL: ${{ vars.ANTHROPIC_MODEL }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "ANTHROPIC_API_KEY not set — skipping classify/publish (no-op)."
+            exit 0
+          fi
+          cd digest
+          E="${{ steps.prep.outputs.edition }}"; D="${{ steps.prep.outputs.run_date }}"
+          python3 scripts/classify_api.py --edition "$E" --batch-size 8
+          python3 scripts/classify.py apply --edition "$E"
+          python3 scripts/dedupe.py --edition "$E" --date "$D"
+          python3 scripts/build_site.py --edition "$E" --date "$D"
+          python3 -c "import json; d=json.load(open('data/papers.json')); assert d['count']>0,'empty site'; assert not any('abstract' in p for p in d['papers']),'abstract leaked'; print('gate ok', d['count'])"
+
+      - name: Commit edition to main
+        if: steps.prep.outputs.empty != '1'
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+        run: |
+          set -euo pipefail
+          if [ -z "${ANTHROPIC_API_KEY:-}" ]; then
+            echo "No key — nothing to commit."; exit 0
+          fi
+          git config user.name "digest-bot"
+          git config user.email "noreply@anthropic.com"
+          git add digest/data/index.jsonl digest/data/papers.json \
+                  digest/data/last-run.json digest/index.html digest/feed.xml
+          if git diff --cached --quiet; then
+            echo "No new papers this edition."
+          else
+            git commit -m "Digest: edition ${{ steps.prep.outputs.edition }}, ${{ steps.prep.outputs.run_date }} (API classify)"
+            git pull --rebase origin main
+            git push origin main
+          fi
