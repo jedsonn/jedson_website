@@ -76,9 +76,9 @@ def paper_row(p):
         meta += ('<div style="font:400 12px/1.45 %s;color:%s;margin:2px 0 0;">%s</div>'
                  % (SANS, INK3, auth))
     return (
-        '<tr><td style="padding:17px 32px;border-bottom:1px solid %s;">'
+        '<tr><td style="padding:14px 32px;border-bottom:1px solid %s;">'
         '<div style="font:600 10px %s;letter-spacing:1.2px;text-transform:uppercase;color:%s;">%s</div>'
-        '<a href="%s" style="display:block;font:400 18px/1.32 %s;color:%s;text-decoration:none;margin:6px 0 0;">%s</a>'
+        '<a href="%s" style="display:block;font:400 15px/1.3 %s;color:%s;text-decoration:none;margin:5px 0 0;">%s</a>'
         '%s'
         '</td></tr>'
         % (RULE, SANS, INK3, tag, esc(p.get("url", "")), SERIF, ACCENT,
@@ -118,15 +118,13 @@ def main():
 <table role="presentation" width="100%%" cellpadding="0" cellspacing="0" style="background:#eceef1;">
 <tr><td align="center" style="padding:24px 12px;">
 <table role="presentation" width="600" cellpadding="0" cellspacing="0" style="width:600px;max-width:600px;background:#ffffff;border:1px solid %(rule)s;border-radius:12px;overflow:hidden;">
-  <tr><td style="padding:28px 32px 16px;border-bottom:2px solid %(ink)s;">
+  <tr><td style="padding:28px 32px 18px;border-bottom:2px solid %(ink)s;">
     <div style="font:600 11px %(sans)s;letter-spacing:2px;text-transform:uppercase;color:%(accent)s;">Weekly digest &nbsp;·&nbsp; %(date)s</div>
     <div style="font:400 27px/1.05 %(serif)s;color:%(ink)s;margin:8px 0 0;">AI Business Research</div>
-    <div style="font:400 13px/1.5 %(sans)s;color:%(ink2)s;margin:6px 0 0;">A few of this week's standout new papers using AI and large language models in accounting, finance, and economics &mdash; open the dashboard for the full set and the summaries.</div>
+    <div style="font:400 13px/1.5 %(sans)s;color:%(ink2)s;margin:6px 0 0;">A few of this week's new papers using AI and large language models in accounting, finance, and economics &mdash; open the dashboard for the full set and the summaries.</div>
+    <div style="text-align:center;margin:18px 0 2px;"><a href="%(site)s" style="display:inline-block;background:%(accent)s;color:#ffffff;font:600 13px %(sans)s;text-decoration:none;padding:11px 26px;border-radius:8px;">Browse all %(total)s papers &rarr;</a></div>
   </td></tr>
   %(rows)s
-  <tr><td align="center" style="padding:24px 32px 26px;">
-    <a href="%(site)s" style="display:inline-block;background:%(accent)s;color:#ffffff;font:600 14px %(sans)s;text-decoration:none;padding:13px 30px;border-radius:8px;">Read the summaries &amp; browse all %(total)s papers &rarr;</a>
-  </td></tr>
   <tr><td style="padding:18px 32px 22px;background:%(paper)s;border-top:1px solid %(rule)s;">
     <div style="font:400 11.5px/1.6 %(sans)s;color:%(ink3)s;">
       You are receiving this because you subscribed at jedsonpinto.com/digest.<br>
@@ -138,7 +136,7 @@ def main():
 </body></html>""" % {
         "rule": RULE, "ink": INK, "ink2": INK2, "ink3": INK3, "accent": ACCENT,
         "paper": PAPER, "sans": SANS, "serif": SERIF, "site": SITE,
-        "date": esc(nice_date), "rows": rows, "total": total, "unsub": esc(args.unsub),
+        "date": esc(nice_date), "rows": rows, "total": "{:,}".format(total), "unsub": esc(args.unsub),
     }
 
     with open(args.out, "w", encoding="utf-8") as fh:
