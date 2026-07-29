@@ -110,19 +110,23 @@ def send_one(api_key, mail_from, reply_to, to_email, subject, html, unsub):
     """Send one email through Resend. Returns (ok, detail)."""
     headers = {"Authorization": "Bearer " + api_key,
                "Content-Type": "application/json"}
-    # RFC 8058 one-click unsubscribe. mailto is always included as a fallback.
-    lu = "<%s>, <mailto:%s?subject=Unsubscribe>" % (unsub, CONTACT) \
-        if unsub.startswith("http") else "<%s>" % unsub
+    # List-Unsubscribe. With an https endpoint, advertise RFC 8058 one-click
+    # (POST) and keep mailto as a fallback; a mailto-only opt-out can't do
+    # one-click, so omit that header rather than claim it.
+    if unsub.startswith("http"):
+        mail_headers = {
+            "List-Unsubscribe": "<%s>, <mailto:%s?subject=Unsubscribe>" % (unsub, CONTACT),
+            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
+        }
+    else:
+        mail_headers = {"List-Unsubscribe": "<%s>" % unsub}
     payload = {
         "from": mail_from,
         "to": [to_email],
         "subject": subject,
         "html": html,
         "reply_to": reply_to,
-        "headers": {
-            "List-Unsubscribe": lu,
-            "List-Unsubscribe-Post": "List-Unsubscribe=One-Click",
-        },
+        "headers": mail_headers,
     }
     try:
         r = requests.post(RESEND_ENDPOINT, headers=headers,
