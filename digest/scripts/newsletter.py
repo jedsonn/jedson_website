@@ -76,12 +76,13 @@ def paper_row(p):
     if inst:
         meta += ('<div style="font:400 11px/1.4 %s;color:%s;margin:2px 0 0;">%s</div>'
                  % (SANS, INK3, inst))
-    # Title clamped to a single line with an ellipsis so rows stay uniform.
+    # Title clamped to at most two lines (webkit line-clamp; degrades to full
+    # title in Outlook/Word, which ignores the property) so rows stay compact.
     return (
         '<tr><td style="padding:13px 32px;border-bottom:1px solid %s;">'
         '<div style="font:600 10px %s;letter-spacing:1.2px;text-transform:uppercase;color:%s;">%s</div>'
-        '<a href="%s" style="display:block;font:400 15px/1.3 %s;color:%s;text-decoration:none;margin:5px 0 0;'
-        'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">%s</a>'
+        '<a href="%s" style="display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;'
+        'overflow:hidden;font:400 15px/1.3 %s;color:%s;text-decoration:none;margin:5px 0 0;">%s</a>'
         '%s'
         '</td></tr>'
         % (RULE, SANS, INK3, tag, esc(p.get("url", "")), SERIF, ACCENT,

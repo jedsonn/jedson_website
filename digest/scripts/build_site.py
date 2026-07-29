@@ -16,6 +16,7 @@ import argparse
 import html
 import json
 import os
+import re
 from datetime import datetime, timezone
 
 from jinja2 import Environment, FileSystemLoader, select_autoescape
@@ -58,6 +59,42 @@ US_TOP = [
     "university of iowa", "university of wisconsin", "princeton",
     "california institute of technology", "university of maryland",
 ]
+
+# OpenAlex attaches noisy affiliations to authors — hospitals/clinics from
+# name collisions, and publisher imprints ("Harvard University Press") standing
+# in for the university. These substrings mark a display affiliation as noise
+# and are dropped (the top-institution flags above are computed on the cleaned
+# list, so a real co-author's school still counts).
+AFFILIATION_DROP = (
+    "hospital", "hôpital", "clinic", "medical center", "medical centre",
+    "health system", "cancer center", "cancer centre",
+)
+
+
+def clean_affiliations(affs):
+    """Tidy affiliations for display: normalize publisher imprints
+    (`X University Press` -> `X University`), drop non-academic mismatches, and
+    surface any recognized top institution first so the featured school leads the
+    line instead of a stray first-author affiliation. Stable within each tier."""
+    normed, seen = [], set()
+    for a in affs:
+        a = re.sub(r"\s+University Press\b", " University", a).strip()
+        if a and a not in seen:
+            seen.add(a)
+            normed.append(a)
+    kept = [a for a in normed if not any(n in a.lower() for n in AFFILIATION_DROP)]
+    kept = kept or normed  # never blank the list entirely
+
+    def prio(a):
+        al = a.lower()
+        if any(t in al for t in US_TOP):
+            return 0
+        if any(t in al for t in TOP_INSTITUTIONS):
+            return 1
+        return 2
+
+    return sorted(kept, key=prio)
+
 
 PUBLIC_FIELDS = [
     "uid", "doi", "arxiv_id", "title", "authors", "affiliations", "posted",
@@ -139,7 +176,7 @@ def main():
             if a and a.get("authors"):
                 p["authors_detailed"] = a["authors"]
                 if a.get("affiliations"):
-                    p["affiliations"] = a["affiliations"]
+                    p["affiliations"] = clean_affiliations(a["affiliations"])
                 if a.get("top_author"):
                     p["prestige"] = True  # a highly-cited author
             affs = " ; ".join(p.get("affiliations") or []).lower()
