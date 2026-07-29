@@ -1486,12 +1486,13 @@
       {
         "name": "Jing Huang",
         "url": "https://openalex.org/A5141209589",
-        "inst": ""
+        "inst": "Harvard University Press"
       }
     ],
     "affiliations": [
       "Shandong University of Technology",
-      "Massachusetts Institute of Technology"
+      "Massachusetts Institute of Technology",
+      "Harvard University Press"
     ]
   },
   "doi:10.3386/w33033": {
@@ -23557,12 +23558,12 @@
       {
         "name": "Mina Cho",
         "url": "https://openalex.org/A5143658122",
-        "inst": ""
+        "inst": "University of Minnesota"
       },
       {
         "name": "Russell Funk",
         "url": "https://openalex.org/A5143655716",
-        "inst": ""
+        "inst": "University of Minnesota"
       },
       {
         "name": "Alok Gupta",
@@ -23589,5 +23590,417 @@
       }
     ],
     "affiliations": []
+  },
+  "doi:10.2139/ssrn.4905637": {
+    "authors": [
+      {
+        "name": "Tian Guo",
+        "url": "https://openalex.org/A5073299519",
+        "inst": "RAM Active Investments"
+      },
+      {
+        "name": "Emmanuel Hauptman",
+        "url": "https://openalex.org/A5106356374",
+        "inst": "Independent  - affiliation not provided to SSRN"
+      }
+    ],
+    "affiliations": [
+      "RAM Active Investments",
+      "Independent  - affiliation not provided to SSRN"
+    ]
+  },
+  "doi:10.2139/ssrn.7177500": {
+    "authors": [
+      {
+        "name": "William Grieser",
+        "url": "https://openalex.org/A5143713911",
+        "inst": "Oklahoma State University"
+      },
+      {
+        "name": "J. Anthony Cookson",
+        "url": "https://openalex.org/A5076123255",
+        "inst": "Pennsylvania State University"
+      },
+      {
+        "name": "Maryam Fathollahi",
+        "url": "https://openalex.org/A5074636098",
+        "inst": "University of Oklahoma"
+      },
+      {
+        "name": "Buvaneshwaran Venugopal",
+        "url": "https://openalex.org/A5143726401",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "Oklahoma State University",
+      "Pennsylvania State University",
+      "University of Oklahoma"
+    ]
+  },
+  "doi:10.2139/ssrn.7093099": {
+    "authors": [
+      {
+        "name": "Awais Ur Rehman",
+        "url": "https://openalex.org/A5139639286",
+        "inst": "Shura Council"
+      }
+    ],
+    "affiliations": [
+      "Shura Council"
+    ]
+  },
+  "doi:10.2139/ssrn.7085498": {
+    "authors": [
+      {
+        "name": "Kürşat Taştan",
+        "url": "https://openalex.org/A5069697806",
+        "inst": "Turkish Academy of Sciences"
+      },
+      {
+        "name": "Nalan Sabır Taştan",
+        "url": "https://openalex.org/A5123922541",
+        "inst": "Ankara Sosyal Bilimler Üniversitesi"
+      }
+    ],
+    "affiliations": [
+      "Turkish Academy of Sciences",
+      "Ankara Sosyal Bilimler Üniversitesi"
+    ]
+  },
+  "doi:10.2139/ssrn.7119058": {
+    "authors": [
+      {
+        "name": "Fuli Yang",
+        "url": "https://openalex.org/A5101033933",
+        "inst": "Harvard University Press"
+      },
+      {
+        "name": "Jing Huang",
+        "url": "https://openalex.org/A5141209589",
+        "inst": "Harvard University Press"
+      }
+    ],
+    "affiliations": [
+      "Harvard University Press"
+    ]
+  },
+  "doi:10.2139/ssrn.7191255": {
+    "authors": [
+      {
+        "name": "Yi Kefu",
+        "url": "https://openalex.org/A5047124497",
+        "inst": "University of International Business and Economics"
+      },
+      {
+        "name": "Feng Wu",
+        "url": "https://openalex.org/A5139657744",
+        "inst": "Inner Mongolia University"
+      }
+    ],
+    "affiliations": [
+      "University of International Business and Economics",
+      "Inner Mongolia University"
+    ]
+  },
+  "arxiv:2607.24372v1": {
+    "authors": [
+      {
+        "name": "Guillaume Coqueret",
+        "url": "https://openalex.org/A5041711577",
+        "inst": "Hôpital Jean Jaurès"
+      },
+      {
+        "name": "Joan Llull",
+        "url": "https://openalex.org/A5143844902",
+        "inst": ""
+      },
+      {
+        "name": "Florian Oswald",
+        "url": "https://openalex.org/A5040941542",
+        "inst": "University of Turin"
+      },
+      {
+        "name": "Christophe Pérignon",
+        "url": "https://openalex.org/A5110741158",
+        "inst": "HEC Paris"
+      },
+      {
+        "name": "Christoph Scheuch",
+        "url": "https://openalex.org/A5003775169",
+        "inst": "Humboldt-Universität zu Berlin"
+      },
+      {
+        "name": "Lars Vilhuber",
+        "url": "https://openalex.org/A5082879481",
+        "inst": "Cornell University"
+      }
+    ],
+    "affiliations": [
+      "Hôpital Jean Jaurès",
+      "University of Turin",
+      "HEC Paris",
+      "Humboldt-Universität zu Berlin",
+      "Cornell University"
+    ]
+  },
+  "arxiv:2607.23313v1": {
+    "authors": [
+      {
+        "name": "Dana Golden",
+        "url": "https://openalex.org/A5003023054",
+        "inst": "Henry M. Jackson Foundation"
+      },
+      {
+        "name": "Brett Indelicato",
+        "url": "https://openalex.org/A5143846919",
+        "inst": ""
+      },
+      {
+        "name": "Lav R. Varshney",
+        "url": "https://openalex.org/A5122150805",
+        "inst": ""
+      },
+      {
+        "name": "Carlos D. Messina",
+        "url": "https://openalex.org/A5143804557",
+        "inst": ""
+      },
+      {
+        "name": "Suzanne Thornsbury",
+        "url": "https://openalex.org/A5135689258",
+        "inst": "Universitario Francisco de Asís"
+      }
+    ],
+    "affiliations": [
+      "Henry M. Jackson Foundation",
+      "Universitario Francisco de Asís"
+    ]
+  },
+  "arxiv:2607.24273v1": {
+    "authors": [
+      {
+        "name": "Changyu Chen",
+        "url": "https://openalex.org/A5143850657",
+        "inst": ""
+      },
+      {
+        "name": "Chenwei Lin",
+        "url": "https://openalex.org/A5143841786",
+        "inst": ""
+      },
+      {
+        "name": "Xian Xu",
+        "url": "https://openalex.org/A5027756547",
+        "inst": "Xinjiang Production and Construction Corps"
+      }
+    ],
+    "affiliations": [
+      "Xinjiang Production and Construction Corps"
+    ]
+  },
+  "arxiv:2607.24072v1": {
+    "authors": [
+      {
+        "name": "Paul Kilian",
+        "url": "https://openalex.org/A5143822521",
+        "inst": ""
+      },
+      {
+        "name": "Markus Kleffmann",
+        "url": "https://openalex.org/A5069595103",
+        "inst": "University of Applied Sciences Erfurt"
+      }
+    ],
+    "affiliations": [
+      "University of Applied Sciences Erfurt"
+    ]
+  },
+  "arxiv:2607.24649v1": {
+    "authors": [
+      {
+        "name": "Atharva Pandey",
+        "url": "https://openalex.org/A5063715042",
+        "inst": "Indian Institute of Technology Jodhpur"
+      },
+      {
+        "name": "Gautam Jajoo",
+        "url": "https://openalex.org/A5114472764",
+        "inst": "Birla Institute of Technology and Science, Pilani"
+      }
+    ],
+    "affiliations": [
+      "Indian Institute of Technology Jodhpur",
+      "Birla Institute of Technology and Science, Pilani"
+    ]
+  },
+  "doi:10.2139/ssrn.4914889": {
+    "authors": [
+      {
+        "name": "Ihsan Manshur Putra",
+        "url": "https://openalex.org/A5106269824",
+        "inst": "Independent  - affiliation not provided to SSRN"
+      },
+      {
+        "name": "Fauziah Istiqomah Abdunnafi",
+        "url": "https://openalex.org/A5099020123",
+        "inst": "Independent  - affiliation not provided to SSRN"
+      }
+    ],
+    "affiliations": [
+      "Independent  - affiliation not provided to SSRN"
+    ]
+  },
+  "doi:10.2139/ssrn.4908364": {
+    "authors": [
+      {
+        "name": "Christos Makridis",
+        "url": "https://openalex.org/A5041747384",
+        "inst": "University of Nicosia"
+      },
+      {
+        "name": "Joshua Ammons",
+        "url": "https://openalex.org/A5050816381",
+        "inst": "George Mason University"
+      }
+    ],
+    "affiliations": [
+      "University of Nicosia",
+      "George Mason University"
+    ]
+  },
+  "doi:10.2139/ssrn.4907325": {
+    "authors": [
+      {
+        "name": "Frank Chen",
+        "url": "https://openalex.org/A5046450507",
+        "inst": "University of Edinburgh"
+      },
+      {
+        "name": "Adam William Chalmers",
+        "url": "https://openalex.org/A5082128541",
+        "inst": "University of Edinburgh"
+      }
+    ],
+    "affiliations": [
+      "University of Edinburgh"
+    ]
+  },
+  "doi:10.2139/ssrn.4909429": {
+    "authors": [
+      {
+        "name": "Qian Minghui",
+        "url": "https://openalex.org/A5103661983",
+        "inst": "Renmin University of China"
+      },
+      {
+        "name": "Mengchun Zhao",
+        "url": "https://openalex.org/A5114198854",
+        "inst": "Renmin University of China"
+      },
+      {
+        "name": "Jianliang Yang",
+        "url": "https://openalex.org/A5051199776",
+        "inst": "Renmin University of China"
+      },
+      {
+        "name": "Zhian Ying",
+        "url": "https://openalex.org/A5111271980",
+        "inst": "Renmin University of China"
+      },
+      {
+        "name": "Chi Wang",
+        "url": "https://openalex.org/A5100342213",
+        "inst": "Renmin University of China"
+      },
+      {
+        "name": "Shulin Guo",
+        "url": "https://openalex.org/A5107298418",
+        "inst": "Renmin University of China"
+      }
+    ],
+    "affiliations": [
+      "Renmin University of China"
+    ]
+  },
+  "doi:10.2139/ssrn.5227409": {
+    "authors": [
+      {
+        "name": "Matthias Apel",
+        "url": "",
+        "inst": "Quoniam Asset Management GmbH"
+      },
+      {
+        "name": "Maximilian Stroh",
+        "url": "https://openalex.org/A5055478210",
+        "inst": "Quoniam Asset Management"
+      }
+    ],
+    "affiliations": [
+      "Quoniam Asset Management GmbH",
+      "Quoniam Asset Management"
+    ]
+  },
+  "doi:10.2139/ssrn.7099318": {
+    "authors": [
+      {
+        "name": "Md Soad Sabir Shuvo",
+        "url": "https://openalex.org/A5141108703",
+        "inst": "Oldham Council"
+      }
+    ],
+    "affiliations": [
+      "Oldham Council"
+    ]
+  },
+  "doi:10.2139/ssrn.7178138": {
+    "authors": [
+      {
+        "name": "Hyun Ahn",
+        "url": "https://openalex.org/A5140769888",
+        "inst": "Korea Institute for Advanced Study"
+      }
+    ],
+    "affiliations": [
+      "Korea Institute for Advanced Study"
+    ]
+  },
+  "doi:10.2139/ssrn.7094458": {
+    "authors": [
+      {
+        "name": "Youhua Li",
+        "url": "https://openalex.org/A5143810706",
+        "inst": ""
+      },
+      {
+        "name": "Sibo Xu",
+        "url": "https://openalex.org/A5143852611",
+        "inst": ""
+      },
+      {
+        "name": "Yiqi Sun",
+        "url": "https://openalex.org/A5063877759",
+        "inst": "Financial Research (Hungary)"
+      },
+      {
+        "name": "Pengfei Guo",
+        "url": "https://openalex.org/A5143817355",
+        "inst": ""
+      },
+      {
+        "name": "Zuo-Jun Max Shen",
+        "url": "https://openalex.org/A5143748495",
+        "inst": ""
+      },
+      {
+        "name": "Houmin Yan",
+        "url": "https://openalex.org/A5101054146",
+        "inst": "City University of Hong Kong"
+      }
+    ],
+    "affiliations": [
+      "Financial Research (Hungary)",
+      "City University of Hong Kong"
+    ]
   }
 }
