@@ -68,17 +68,20 @@ def paper_row(p):
         star, esc(FIELD.get(p.get("field"), p.get("field"))), esc(p.get("posted", "")))
     inst = institutions(p)
     auth = authors_line(p)
+    # Authors first, then a lighter, smaller institution line beneath them.
     meta = ""
-    if inst:
-        meta += ('<div style="font:600 12.5px/1.45 %s;color:%s;margin:5px 0 0;">%s</div>'
-                 % (SANS, ACCENT, inst))
     if auth:
-        meta += ('<div style="font:400 12px/1.45 %s;color:%s;margin:2px 0 0;">%s</div>'
+        meta += ('<div style="font:400 12px/1.45 %s;color:%s;margin:4px 0 0;">%s</div>'
                  % (SANS, INK3, auth))
+    if inst:
+        meta += ('<div style="font:400 11px/1.4 %s;color:%s;margin:2px 0 0;">%s</div>'
+                 % (SANS, INK3, inst))
+    # Title clamped to a single line with an ellipsis so rows stay uniform.
     return (
-        '<tr><td style="padding:14px 32px;border-bottom:1px solid %s;">'
+        '<tr><td style="padding:13px 32px;border-bottom:1px solid %s;">'
         '<div style="font:600 10px %s;letter-spacing:1.2px;text-transform:uppercase;color:%s;">%s</div>'
-        '<a href="%s" style="display:block;font:400 15px/1.3 %s;color:%s;text-decoration:none;margin:5px 0 0;">%s</a>'
+        '<a href="%s" style="display:block;font:400 15px/1.3 %s;color:%s;text-decoration:none;margin:5px 0 0;'
+        'white-space:nowrap;overflow:hidden;text-overflow:ellipsis;">%s</a>'
         '%s'
         '</td></tr>'
         % (RULE, SANS, INK3, tag, esc(p.get("url", "")), SERIF, ACCENT,
