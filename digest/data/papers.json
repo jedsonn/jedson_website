@@ -1,8 +1,1296 @@
 {
-  "generated": "2026-07-28",
-  "edition": 6,
-  "count": 1244,
+  "generated": "2026-07-29",
+  "edition": 7,
+  "count": 1295,
   "papers": [
+    {
+      "uid": "doi:10.2139/ssrn.6636298",
+      "doi": "10.2139/ssrn.6636298",
+      "title": "Three Ways to Fail to Conclude: A Null-report on Large Language Model Citation Claims for Brazilian Brands (N = 7,052, 12 days)",
+      "authors": [
+        "Alexandre Caramaschi"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6636298",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Probing run of 7,052 responses gathered over twelve days in early 2026, covering 69 entities including eight fictitious decoys, across fintech, retail, health, and technology in Brazilian Portuguese.",
+        "Four production models, GPT-4o-mini, Claude Haiku 4.5, Gemini 2.5 Pro, and Perplexity sonar, were queried for brand citations, with no validation against any ground-truth citation record reported.",
+        "Aggregate citation rate reached 77.6 percent, but three practitioner claims about retrieval advantage, hallucination robustness, and divergent citation universes each failed to reject the null, while vertical and language differences held."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "llama"
+      ],
+      "open_weights": false,
+      "salience": 40,
+      "edition": 7,
+      "validated": null,
+      "n": 1245
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6683303",
+      "doi": "10.2139/ssrn.6683303",
+      "title": "Limited Marginal Benefit of Reasoning-Heavy Deployment in ESG Narrative Scoring: Evidence from 4-Model Consensus on Japanese Listed Firms",
+      "authors": [
+        "Hiroyuki Kokubu"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6683303",
+      "field": "accounting",
+      "role": "method",
+      "bullets": [
+        "Ten Japanese listed firms scored on three ESG rubric axes, quantitative targets, progress-tracking infrastructure, and external-standard alignment, producing 120 firm by axis by model narrative scores.",
+        "A four-model consensus of Claude Opus, GPT-5.5 with reasoning on, Gemini 3.1 Pro, and DeepSeek scored the narratives; agreement was checked across models rather than against human ground truth.",
+        "The reasoning-on model deviated only 0.38 of five points from reasoning-off counterparts, yet the single reasoning-on arm cost roughly 5.6 times more per firm than the reasoning-off ensemble."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": false,
+      "validated": false,
+      "validation_note": "inter-model kappa only, no human ground truth",
+      "salience": 46,
+      "edition": 7,
+      "n": 1246
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6731878",
+      "doi": "10.2139/ssrn.6731878",
+      "title": "Off-Page Signals Have Model-Specific Effects on Generative AI Search Visibility: Evidence from a Cross-Platform Audit of 2,729 Businesses Across Five Generative AI Systems",
+      "authors": [
+        "Joel House"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6731878",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Cross-platform audit of 2,729 businesses across fourteen verticals and four metros, Los Angeles, New York, Chicago, and Sydney, yielding 266,844 business, model, and prompt observations.",
+        "Each business was probed with about 95 prompts across ChatGPT, Claude, Perplexity, Gemini, and Google AI Overview, correlating mentions with off-page presence signals; no ground-truth validation was reported.",
+        "Nearly 70 percent of businesses were mentioned by no system; off-page signals raised mention odds for Claude, ChatGPT, and Perplexity, partial correlations up to 0.22, but not Gemini or Google."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 48,
+      "edition": 7,
+      "validated": null,
+      "n": 1247
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6612061",
+      "doi": "10.2139/ssrn.6612061",
+      "title": "Large Language Models and Stock Investing: Is the Human Factor Required?",
+      "authors": [
+        "Ricardo Crisóstomo",
+        "Diana Mykhalyuk"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6612061",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "Evaluation of large language model stock recommendations across three prompting strategies, a naive query, a structured approach, and chain-of-thought; sample size, period, and geography are not stated.",
+        "ChatGPT, Gemini, DeepSeek, and Perplexity generated recommendations that were compared with market outcomes rather than validated against human-coded ground truth with a reported agreement statistic.",
+        "Recommendations showed recurring reasoning failures including financial misconceptions and hallucinated information; with supervision the models could beat the market, and grounding in regulatory filings raised forecasting accuracy."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gemini",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": false,
+      "salience": 50,
+      "edition": 7,
+      "validated": null,
+      "n": 1248
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6776298",
+      "doi": "10.2139/ssrn.6776298",
+      "title": "Provider-Dependent Behavioral Asymmetries in LLM Trading Agents: Evidence from the Brazilian Equity Market",
+      "authors": [
+        "Felipe Cataneo"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6776298",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "Brazilian B3-listed equities over roughly 504 trading days from April 2024 to April 2026, using a matched five-asset core with a 23-asset universe as robustness check.",
+        "GPT-5.4, Claude Haiku 4.5, and locally run Qwen-8B acted as autonomous trading agents in a hybrid quant architecture, tested for Prospect Theory biases without validation against ground truth.",
+        "All three providers issued more long than short signals, with long-to-short ratios of 1.26, 5.94, and 10.47; the asymmetry varied nearly tenfold across providers and confidence was poorly calibrated."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": true,
+      "salience": 54,
+      "edition": 7,
+      "validated": null,
+      "n": 1249
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7111078",
+      "doi": "10.2139/ssrn.7111078",
+      "title": "Confirmation Bias in LLM Pricing Recommendations",
+      "authors": [
+        "Maxime C. Cohen",
+        "Eddy Hage-Youssef"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7111078",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Controlled pricing experiment producing 350,000 recommendations, with a model cast as a pricing strategist for a well-specified product while suggested price, source credibility, timing, and input information were varied.",
+        "Claude Haiku 4.5 and GPT-5.4 Mini recommended prices; the study measured susceptibility to confirmation bias rather than validating output against an external benchmark, so no accuracy figure applies.",
+        "Both models discounted economically implausible suggestions but were swayed by conversational cues; a single follow-up challenge often made Claude abandon its price and adopt the suggested one."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 63,
+      "edition": 7,
+      "validated": null,
+      "n": 1250
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6798519",
+      "doi": "10.2139/ssrn.6798519",
+      "title": "Beyond Sentiment: Large Language Models as Organizational Sensors for Detecting Strategic Drift in Corporate Communications",
+      "authors": [
+        "Justin Yan"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6798519",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "StratDrift-10K corpus of 10,847 earnings call transcripts and 10-K filings from S&P 500 firms spanning 2003 to 2023, annotated with analyst-validated strategic coherence labels at paragraph level.",
+        "Seven instruction-tuned models from GPT-4o to open-weight alternatives detected strategic drift via zero-shot chain-of-thought, reaching F1 of 0.81 against analyst labels and beating fine-tuned BERT baselines by 9.3 points.",
+        "The extracted organizational signals predicted subsequent financial restatements with AUC 0.74 and CEO turnover with AUC 0.69 in held-out prospective data."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "legacy",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "analyst-labeled StratDrift-10K, F1 0.81",
+      "salience": 70,
+      "edition": 7,
+      "n": 1252
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6472520",
+      "doi": "10.2139/ssrn.6472520",
+      "title": "Generative Artificial Intelligence Capabilities in Sustainability Reporting of Oil and Gas Companies",
+      "authors": [
+        "Ekaterina Marina"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6472520",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Conceptual analysis of the sustainability reporting cycle at oil and gas companies under Russia's evolving disclosure regime, including the 2023 Methodological Recommendations and the 2025 Business Social Capital Standard.",
+        "Large language models paired with retrieval-augmented generation are discussed across three reporting stages of data processing, analysis, and disclosure drafting; no specific model is named and no validation is reported.",
+        "The paper argues that realizing this potential requires deliberate adaptation of accounting policies, prompt governance, and expert oversight rather than technological adoption alone."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 34,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1253
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6944258",
+      "doi": "10.2139/ssrn.6944258",
+      "title": "Frontier LLMs Add Almost No Information Beyond the Market Price, and Two Years of Scaling Has Not Changed That",
+      "authors": [
+        "Toni Zemani"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6944258",
+      "field": "economics",
+      "role": "agent",
+      "bullets": [
+        "ForecastBench data spanning 25 resolved rounds from July 2024 to May 2026, covering 1,256 model-configuration-rounds, 342 configurations, and roughly 371,000 resolved market forecasts.",
+        "A dozen model generations from GPT-3.5 and Claude-2.1 to GPT-5.x and Claude-Opus-4.x produce probabilistic forecasts, with contribution measured as bias-corrected incremental log-likelihood beyond the market price and scored against resolved outcomes.",
+        "Models add about 0.001 nats beyond the free market price with a non-positive two-year trend, while human superforecasters add about 0.09 nats on the same questions."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "forecasts scored against ForecastBench resolved outcomes; log-likelihood and Brier reported",
+      "salience": 72,
+      "edition": 7,
+      "n": 1254
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6641538",
+      "doi": "10.2139/ssrn.6641538",
+      "title": "Using Large Language Models to Generate New Features from Text Data for Loss Prediction",
+      "authors": [
+        "Guojun Gan",
+        "Christopher Shultz"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6641538",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "Unstructured insurance claims descriptions used to build features for actuarial loss prediction; sample size, period, and geography are not stated.",
+        "GPT-4o and Llama-3.2-3B classify incidents into ordinal risk categories using structured prompts, with no comparison to human-coded ground truth reported.",
+        "The resulting labels are predictive of average loss and improve generalized linear model in-sample fit and out-of-sample accuracy, with five-category GPT-4o labels performing best."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "llama"
+      ],
+      "open_weights": false,
+      "validated": false,
+      "validation_note": "labels shown predictive of loss but not benchmarked against human coding",
+      "salience": 52,
+      "edition": 7,
+      "n": 1255
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6591478",
+      "doi": "10.2139/ssrn.6591478",
+      "title": "Alignment of Generative Models (LLMs): Impacts of RLHF on Security, Governance, and Corporate Innovation",
+      "authors": [
+        "Luiz Carlos Bueno da Silva Junior"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6591478",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Conceptual document on corporate adoption of generative AI, with no empirical sample, covering model alignment, governance, security, and implications for professional work.",
+        "No model is deployed by the author; the paper reviews transformer architecture, supervised fine-tuning, LoRA, RAG, and RLHF methods such as PPO and DPO, without validation.",
+        "It argues that RLHF improves usability but is insufficient alone, and that responsible corporate adoption needs governance, human-in-the-loop oversight, auditing, and RAG-based factual grounding."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 28,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1256
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7035918",
+      "doi": "10.2139/ssrn.7035918",
+      "title": "Evaluative Translation in LLM-Based Judgment Systems: Evidence from Platform Rating Inference",
+      "authors": [
+        "Jing Li",
+        "Zhijie Lin"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7035918",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "A randomly drawn sample of 20,000 Yelp reviews, with the individual review as the unit and the platform star rating treated as ground truth.",
+        "GPT, Claude, and Gemini infer platform ratings from review narratives, and their divergence from actual star ratings is measured, giving validation against the platform ratings.",
+        "Divergence rises with evaluative ambiguity and high sentiment entropy and is lowest when text and rating are congruent, with patterns stable across the three model families."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "LLM-inferred ratings compared to actual Yelp star ratings; divergence measured",
+      "salience": 55,
+      "edition": 7,
+      "n": 1257
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6805398",
+      "doi": "10.2139/ssrn.6805398",
+      "title": "Coding Open-ended Responses with Large Language Models: Evidence from Three Economic Experiments",
+      "authors": [
+        "Daniel Parra",
+        "Sophia Aristizabal"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6805398",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "Open-ended responses and free-form communication from three published economic experiments that differ in coding structure, textual ambiguity, and the role of communication.",
+        "GPT, Claude, and Gemini code the responses under varied prompts and temperatures, validated against human coding and reaching Cohen's kappa above 0.80 in a trust game.",
+        "Models match humans when categories are deductively defined and explicitly marked, but over-identify rare categories three to five fold and fail on inductive or pragmatic coding."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "Cohen's kappa against human coders across three experiments; kappa above 0.80 in trust game",
+      "salience": 60,
+      "edition": 7,
+      "n": 1258
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6766498",
+      "doi": "10.2139/ssrn.6766498",
+      "title": "Territorial Algorithmic Invisibility: A Diagnostic Framework for Generative Engine Optimization Applied to Local Tourism Destination Entities",
+      "authors": [
+        "Eric Mees de Saboya Ribeiro"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6766498",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Structured diagnostic audit of Neltur, the official tourism organization of Niteroi near Rio de Janeiro, assessing how local attractions appear in AI-generated travel recommendations.",
+        "ChatGPT, Google Gemini, and Perplexity AI are queried systematically to measure destination visibility, and no validation against ground truth is reported.",
+        "Niteroi attractions were consistently attributed to neighboring Rio de Janeiro or omitted entirely, producing a baseline Destination Algorithmic Readiness Score of 38 out of 100."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 34,
+      "edition": 7,
+      "validated": null,
+      "n": 1259
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6803400",
+      "doi": "10.2139/ssrn.6803400",
+      "title": "EconBench: Rethinking Evaluation for Economic Reasoning in Large Language Models beyond Benchmark Saturation",
+      "authors": [
+        "Justin Yan"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6803400",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "EconBench comprises 4,200 expert-curated economics and finance items across five reasoning strata, constructed to resist memorization through novel framing, distractors, and adversarial perturbation.",
+        "Fourteen frontier and open-weight LLMs are evaluated on economic reasoning tasks and scored against expert-annotated answers and a human economist baseline.",
+        "Models are competitive on definitional and applied strata but diverge on harder reasoning, with best model GPT-4o at 51.3% on the top stratum versus 84.7% for economists."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "scored against expert-curated items and economist baseline; accuracy reported by stratum",
+      "salience": 62,
+      "edition": 7,
+      "n": 1260
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6705178",
+      "doi": "10.2139/ssrn.6705178",
+      "title": "Game-Theoretic Scaffolding in Financial Analysis: Why Human Direction of LLMs Outperforms Autonomous Models",
+      "authors": [
+        "Qiyu Zhang"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6705178",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "Live portfolio study over 56 trading days and 2,001 signals across 11 US technology stocks from February to May 2026.",
+        "LLMs including Claude and DeepSeek issue buy, hold, or sell decisions, compared against a human applying game-theoretic frameworks to weight model disagreement, with no measurement validation.",
+        "The augmented analyst returned 17.01% with Sharpe 0.89 and about half the volatility of the most aggressive autonomous model, Claude at plus 17.36%, all beating the NDX benchmark."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "open_other"
+      ],
+      "open_weights": true,
+      "salience": 42,
+      "edition": 7,
+      "validated": null,
+      "n": 1261
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6095166",
+      "doi": "10.2139/ssrn.6095166",
+      "title": "The Effect of Large Language Models on Audit Quality: Causal Evidence from a Randomized Field Experiment",
+      "authors": [
+        "Markus Jezierski",
+        "Sascha Kaltenpoth",
+        "Oliver Müller",
+        "Barbara E. Weißenberger"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6095166",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Preregistered randomized field experiment with 100 professional auditors at a global audit firm, each completing a complex inventory valuation task.",
+        "Auditors worked either with the traditional digital toolset or with added access to a firm-specific LLM, which serves as the treatment rather than a measurement instrument.",
+        "LLM access raised documentation quality and cut completion time, with largest gains for active users, but did not improve adherence to internal audit guidelines or vary by experience."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 73,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1262
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7118542",
+      "doi": "10.2139/ssrn.7118542",
+      "title": "Market-Segmented Enforcement: Adversarial LLM Analysis of Political Advertising Moderation across Linguistic Markets",
+      "authors": [
+        "Amirhossein Salehi Fashami"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7118542",
+      "field": "economics",
+      "role": "instrument",
+      "bullets": [
+        "1,080 high-engagement political advertisements from Meta's Ad Library across four linguistic markets, English, Hebrew, Arabic, and German, spanning October 2023 to January 2025.",
+        "Three LLMs, Claude Sonnet 4.5, GPT-4o, and DeepSeek, were assigned adversarial roles to classify each ad as policy-violative; outputs were not validated against human coders.",
+        "Multiple arbiter models flagged 5.2 percent of Hebrew ads as violative versus zero percent elsewhere, all retained by Meta; authors attribute the gap to Hebrew's lower CPM."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "validation_note": "no human-coded benchmark reported",
+      "salience": 42,
+      "edition": 7,
+      "n": 1263
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6768202",
+      "doi": "10.2139/ssrn.6768202",
+      "title": "Governing the Black Box: A Framework for Large Language Model Governance in Trading and Risk Management at Systemically Important Financial Institutions",
+      "authors": [
+        "Chandni Bhatia"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6768202",
+      "field": "finance",
+      "role": "object",
+      "bullets": [
+        "Documentary coding of 30 public regulatory documents issued between 2011 and April 2026, plus two 2024 SEC enforcement cases, Delphia and Global Predictions, at systemically important financial institutions.",
+        "No language model is used as a tool; the authors manually code each document for coverage of LLM trading and risk-management governance across defined pillars.",
+        "Probabilistic-validation coverage reaches only 18 percent and operational-risk-controls coverage 23 percent, and the April 2026 SR 26-2 update explicitly excludes generative and agentic AI from its scope."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 55,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1265
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6670260",
+      "doi": "10.2139/ssrn.6670260",
+      "title": "Reasoning Settings Attenuate Preference-Reversal-Style Inconsistency in Large Language Models",
+      "authors": [
+        "Jonathan Dang"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6670260",
+      "field": "economics",
+      "role": "agent",
+      "bullets": [
+        "Preregistered study of 25,920 API calls, using 28 risky-choice items, 8 dominance checks, and 3 prompt formats to estimate a weak-form Lichtenstein-Slovic preference-reversal analog.",
+        "Claude Opus 4.7, DeepSeek V4-Pro, Gemini 3 Flash, and GPT-5.5 were asked separately to choose and to price gambles; outputs treated as behavior, not validated against ground truth.",
+        "All models showed choice-valuation inconsistency; raising reasoning settings cut the mean inconsistency rate from 0.484 to 0.307, though this confounds output length."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": false,
+      "salience": 55,
+      "edition": 7,
+      "validated": null,
+      "n": 1268
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6631180",
+      "doi": "10.2139/ssrn.6631180",
+      "title": "The Welfare Impact of Delegating Choice to Large Language Models",
+      "authors": [
+        "Yann Delaprez",
+        "Ali Hortaçsu"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6631180",
+      "field": "economics",
+      "role": "agent",
+      "bullets": [
+        "Human and LLM-generated purchase choices in the US pizza restaurant market around the introduction of menu labeling laws, paired with a structural model of delegation.",
+        "ChatGPT generates purchase decisions standing in for consumers; model version and any validation against ground truth are not stated.",
+        "Delegation would cut total calorie intake by up to 18 percent, raise market concentration, and lift net welfare, with consumer surplus rising for delegators and falling slightly for others."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 62,
+      "edition": 7,
+      "validated": null,
+      "n": 1269
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6795338",
+      "doi": "10.2139/ssrn.6795338",
+      "title": "Generative AI for Central Bank Statements: Large Language Models as Monetary Policy Forecasters",
+      "authors": [
+        "Jens Hilscher",
+        "Yevgeny Mugerman",
+        "Alon Raviv"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6795338",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "140 time-stamped forecasts from five public LLMs generated in the weeks before three December 2025 policy meetings at the Federal Reserve, the ECB, and the Bank of England.",
+        "Five unnamed public LLMs forecast the rate decision, probabilities, and hawkish-dovish tone; accuracy checked against realized decisions using a prespecified tone rubric.",
+        "Individual model date accuracy was 87.9 percent and the equal-weight consensus 92.9 percent; models agreed on the rate decision earlier than on the surrounding communication."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "forecast accuracy vs realized policy decisions, 87.9 percent, Brier score",
+      "salience": 58,
+      "edition": 7,
+      "models": [],
+      "n": 1270
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7081318",
+      "doi": "10.2139/ssrn.7081318",
+      "title": "The Rise of Artificial Intelligence Phobia! Unveiling News-Driven Spread of AI Fear Sentiment Using ML, NLP, and LLMs",
+      "authors": [
+        "Jim Samuel",
+        "Tanya Khanna",
+        "Julia Esguerra",
+        "Srinivasaraghavan Sundar",
+        "Alexander Pelaez",
+        "Soumitra  S. Bhuyan"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7081318",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "Nearly 70,000 AI-related news headlines analyzed to identify dominant themes and fear-laden sentiment shaping public perception of artificial intelligence.",
+        "BERT, LLaMA, and Mistral applied for topic modeling and fear-sentiment classification alongside supervised machine learning; no accuracy against human coding is stated.",
+        "Emotionally negative and fear-inducing language persists in AI coverage, which the authors argue fuels AI phobia, behavioral resistance, and adverse effects on AI policy."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "legacy",
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "validation_note": "no accuracy against human-coded sentiment reported",
+      "salience": 40,
+      "edition": 7,
+      "n": 1271
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7017418",
+      "doi": "10.2139/ssrn.7017418",
+      "title": "LLM and Multi-Agent Systems in Algorithmic Trading: Taxonomy and Research Agenda",
+      "authors": [
+        "Sumin Pillai"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7017418",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Survey of more than forty papers published between 2019 and 2026 on large language models and multi-agent systems in algorithmic trading.",
+        "No model is applied; the paper builds a taxonomy across the LLM's functional role, information modality, learning paradigm, system architecture, and evaluation standard.",
+        "Identifies four gaps including the absence of a cost-adjusted benchmark for LLM signals, unexplored multi-agent failure modes, and near-total absence of testing in non-US markets."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 45,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1272
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6716458",
+      "doi": "10.2139/ssrn.6716458",
+      "title": "Beyond the AI Chase: A Tiered Intelligence Architecture for Insurance Automation in GCC Markets",
+      "authors": [
+        "Rishabha Garg"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6716458",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Gulf Cooperation Council insurance markets, drawing on twelve years of practitioner bancassurance experience across India, the UAE, and Oman.",
+        "No model is applied by the author; the paper proposes a Tiered Intelligence Architecture matching deterministic rules engines and domain-adapted LLMs to distinct decision layers.",
+        "Argues LLMs add value mainly in language-heavy customer-facing tasks while structured tasks suit deterministic rules, with privacy-safe local deployment as the binding constraint."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 32,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1273
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6834918",
+      "doi": "10.2139/ssrn.6834918",
+      "title": "Bounded-autonomy LLM Agents: A Structural Safety Architecture with a Live Algorithmic-trading Case Study",
+      "authors": [
+        "Jean Direl Nze Kabeyene"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6834918",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Live algorithmic-trading testbed over three crypto pairs (BTC, ETH, SOL) at five-minute intervals under a preregistered evaluation protocol with a stop-rule.",
+        "An open-weight Llama-3.3-70B acts only as a Boolean veto over a deterministic rule-based proposer, with a hard sizing and risk layer applied after the verdict.",
+        "The architecture guarantees by construction that the LLM cannot enlarge exposure; the drawdown-reduction hypothesis is not yet tested, at 66 to 90 cycles versus 500 preregistered."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "llama"
+      ],
+      "open_weights": true,
+      "salience": 40,
+      "edition": 7,
+      "validated": null,
+      "n": 1274
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6728000",
+      "doi": "10.2139/ssrn.6728000",
+      "title": "A Designed-for-Test Measurement of Discourse-Language Bias in Large Language Model Brand Recommendations",
+      "authors": [
+        "Pablo Ulpiano Gonzalez Castro"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6728000",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "33 premium kitchen knife brands across four lineages measured against six pre-registered prompts, six frontier models from four labs, and eight runs each (n = 288).",
+        "Claude Sonnet 4.6 and Opus 4.7, gpt-5.4-mini and gpt-5.5, Gemini 2.5 Flash, and Grok 4.1 were prompted for brand recommendations; outputs scored for brand presence without ground-truth validation.",
+        "The lineage-origin hypothesis failed, but English-marketed brands surfaced far more than boundary makers, a 48-point within-Japanese gap, suggesting English-marketing coverage drives AI presence."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": false,
+      "salience": 50,
+      "edition": 7,
+      "validated": null,
+      "n": 1275
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6908878",
+      "doi": "10.2139/ssrn.6908878",
+      "title": "Algorithmic Unit Economics: Variable Inference COGS, AI Margin Quality, and the IFRS 15 / IAS 38 Boundary",
+      "authors": [
+        "Rafael Minuti"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6908878",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Conceptual accounting analysis of GenAI and LLM product economics, with the unit of analysis being an AI-native product's cost structure and financial-statement presentation.",
+        "No model is applied; the paper formalizes Variable Inference COGS and related margin diagnostics tied to API logs, GPU utilization, and cloud billing tiers.",
+        "Argues aggregating inference into broad cost pools can mask negative unit economics, locating the central friction at the IAS 38 versus IFRS 15 boundary."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 55,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1276
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6961260",
+      "doi": "10.2139/ssrn.6961260",
+      "title": "The Automation Efficiency Paradox: Why Generative AI Increases the Need for Human Expertise",
+      "authors": [
+        "Sashikanta Barik"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6961260",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "A conceptual paper with no empirical sample, addressing organizations that adopt large language models to automate knowledge work and text-heavy operational tasks.",
+        "No language model is run by the authors; they build a behavioral and cognitive framework called the Automation Efficiency Paradox, and validation is not applicable.",
+        "The authors argue that fluent probabilistic outputs hide omissions, so replacing workers with AI erodes trust and raises the need for experts who audit outputs at the source."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude"
+      ],
+      "open_weights": false,
+      "salience": 26,
+      "edition": 7,
+      "validated": null,
+      "n": 1277
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7035480",
+      "doi": "10.2139/ssrn.7035480",
+      "title": "Artificial Intelligence and Competition Policy and Law Struggling Together In the Fragmented Global Economy: AI and Competition as the Penultimate Double-edged Sword",
+      "authors": [
+        "Derek John Ireland"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7035480",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "A working paper applying a complexity-science and chaos-theory lens to how competition policy and law confront artificial intelligence in a fragmented, networked global economy.",
+        "No language model is used by the author; the paper analyzes how LLMs, generative AI, and agentic AI create competition-law challenges, and validation is not applicable.",
+        "It argues AI-enabled deception and dominance abuses strain antitrust enforcement, and that competition-law consensus is more advanced than broader AI governance, which lacks transnational agreement."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 28,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1280
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6495198",
+      "doi": "10.2139/ssrn.6495198",
+      "title": "Governed Enterprise AI: A Three-Layer Architecture for Hallucination-Safe BPM Workflows",
+      "authors": [
+        "Chia Ho Lin"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6495198",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "One hundred high-stakes luxury-retail escalation scenarios used to test large language models given terminal decision authority within enterprise business-process workflows.",
+        "A 12B-parameter LLM, family not stated, served as the decision baseline; the authors added a deterministic policy engine, an ML risk model, and a bounded small language model in a three-layer design.",
+        "The baseline failed policy adherence 42 percent of the time despite zero factual tier hallucination, while the decoupled three-layer architecture cut the failure rate to zero."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 38,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1281
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6832218",
+      "doi": "10.2139/ssrn.6832218",
+      "title": "Failure Modes and Calibration of Local LLMs on Imbalanced VC Prediction",
+      "authors": [
+        "Samir Adam Annour Mahamat Saleh"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6832218",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "VCBench founder-success prediction from anonymized pre-founding profiles, an imbalanced rare-event task, evaluated on a 120-profile subset and the full 900-profile public validation split.",
+        "Two local Qwen3 variants run through Ollama classify founders under vanilla and few-shot prompts, benchmarked against trivial baselines and a logistic-regression TF-IDF model using F0.5 scores.",
+        "Prompt engineering mainly shifted the predicted-positive rate rather than improving discrimination, and a simple TF-IDF logistic model reaching F0.5 of 0.71 on the subset outperformed the LLMs."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "VCBench founder-success labels, F0.5 versus trivial and TF-IDF baselines",
+      "salience": 54,
+      "edition": 7,
+      "n": 1282
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6815399",
+      "doi": "10.2139/ssrn.6815399",
+      "title": "Evaluating AI in Finance: A Comprehensive Review and Taxonomy of LLM Benchmarks",
+      "authors": [
+        "Louis Bertucci",
+        "Murad Nuriyev"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6815399",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "A structured review of more than fifty public financial benchmarks for large language models, organizing them by construction and by task type.",
+        "No model is run; the authors build a taxonomy of eleven task categories and a two-dimensional grid separating what benchmarks measure from how they measure it.",
+        "Frontier models score well on sentiment and entity extraction but fall well below expert level on grounded numerical reasoning and agentic financial workflows, with seven structural limitations identified."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 62,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1283
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6743822",
+      "doi": "10.2139/ssrn.6743822",
+      "title": "Agentic LLM-Based Simulation for Pharmaceutical Evidence Planning",
+      "authors": [
+        "Francis Lee",
+        "Evangelos Katsamakas"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6743822",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "A 40-run, 2x2 pilot simulation of pharmaceutical real-world-evidence planning in a GLP-1 market scenario, with LLM agents acting as competing brand teams under varied information channels.",
+        "Large language models stand in for brand-team decision-makers whose visible signals are manipulated; the model family is not stated and outcome-based validation is unavailable by construction.",
+        "Masking evaluator criteria or competitor state produced asymmetric shifts in evidence-planning behavior, revealing portfolio coverage and evaluator fit as separable dimensions of strategic quality."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 50,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1284
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7067859",
+      "doi": "10.2139/ssrn.7067859",
+      "title": "SEDG: A Synthetic Experimental Data Generator for LLM-Based Behavioral Experiments",
+      "authors": [
+        "Siva Shanmugam Mariappan",
+        "Ashwin V. Malshe"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7067859",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "No empirical study is reported; the paper presents SEDG, a platform for generating synthetic experimental participants for behavioral research in marketing, psychology, information systems, and management.",
+        "Local and cloud LLMs, providers selected by the user rather than fixed, generate synthetic survey responses from optional personas; no comparison of synthetic responses to human data is reported.",
+        "The platform lets researchers without engineering skills specify stimuli, questions, models, and personas, and export structured outputs for replication and cross-model comparison."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 42,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1285
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6557745",
+      "doi": "10.2139/ssrn.6557745",
+      "title": "Generative AI Adoption Among Independent Knowledge Workers: A Framework for Cognitive Load Redistribution and Sustainable Productivity",
+      "authors": [
+        "Rowan Hayes"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6557745",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Survey of 287 independent knowledge workers plus 22 follow-up interviews, covering solo consultants and micro-firm practitioners; period and geography not stated.",
+        "No specific model is named; generative AI tools are the object of study rather than a research instrument, so no validation against ground truth is reported.",
+        "Perceived cognitive offloading predicts sustainable productivity (beta 0.41), with task-autonomy preservation moderating the relationship (beta 0.27)."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 46,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1286
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6686359",
+      "doi": "10.2139/ssrn.6686359",
+      "title": "Large Language Models Compress the Asymmetry that Defines Human Comparative Valuation",
+      "authors": [
+        "Hongcheol Choi"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6686359",
+      "field": "economics",
+      "role": "agent",
+      "bullets": [
+        "Six LLMs generating 45,000 synthetic survey observations are benchmarked against 523 human respondents on a social comparison task spanning upward, equal, and downward comparisons; geography is not stated.",
+        "Four instruction-tuned LLMs, families not named, act as synthetic respondents, and outputs are checked against the human benchmark through profile correlations and gain-loss asymmetry ratios.",
+        "Models reach high aggregate correlations above 0.83 yet compress the human upward asymmetry from roughly 6:1 to 2-3:1 and overestimate downward gain responses five to seven times."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "benchmarked against N=523 human data, correlations reported",
+      "salience": 60,
+      "edition": 7,
+      "models": [],
+      "n": 1291
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6938899",
+      "doi": "10.2139/ssrn.6938899",
+      "title": "Shopping By Algorithm: How Agentic AI Deploys Human Heuristics as a Surrogate Consumer",
+      "authors": [
+        "Davood Wadi",
+        "Yu Ma"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6938899",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Four experiments using Tool-Lab, a process-tracing paradigm that tracks how autonomous LLM shopping agents acquire product information under constraints; sample size, period, and geography are not stated.",
+        "Lower- and higher-parameter LLMs, families not named, act as surrogate consumers choosing products, and the study traces their information search rather than validating outputs against a ground truth.",
+        "Heuristic reliance in smaller models reflects a failure to compute net utility, while larger models truncate search as a resource-rational adaptation, and forcing explicit optimization can hurt performance."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 55,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1292
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7013978",
+      "doi": "10.2139/ssrn.7013978",
+      "title": "Branding Without Belonging: How AI-generated Content Marketing Erases the Cultural Context of Heritage Foods",
+      "authors": [
+        "Khushi Choudhary"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7013978",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "A prompt experiment covering six culturally rooted baked goods, challah, matzah, panettone, mooncakes, conchas, and modak, each queried under commercial, open-ended, and cultural-preservation framings.",
+        "ChatGPT 5.2, Gemini 3, and Claude 4.5 generate product and marketing descriptions, and outputs are scored with a cultural-context rubric rather than validated against external ground truth.",
+        "Commercial prompts score 83 percent lower on cultural context than preservation prompts, with models narrowing to ingredients, price, and convenience unless culturally framed."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 45,
+      "edition": 7,
+      "validated": null,
+      "n": 1293
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6742158",
+      "doi": "10.2139/ssrn.6742158",
+      "title": "FicusFind: A Grounded, Explainable Natural Language Interface for Real Estate Discovery Using LLaMA 3",
+      "authors": [
+        "Nidhi J Rao"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6742158",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "FicusFind, a natural-language interface for residential real estate discovery, evaluated on 100 queries across four difficulty tiers over a structured MLS-style dataset; period and geography are not stated.",
+        "LLaMA 3 extracts hard constraints from queries inside a design-science system that adds deterministic filtering and ranking, and extraction accuracy is validated against a rule-based baseline.",
+        "The LLaMA-based parser reaches 91 percent constraint-extraction accuracy versus 38 percent for the rule-based baseline, with full constraint compliance and no retrieval hallucination."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "llama"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "91% extraction accuracy vs 38% rule-based baseline",
+      "salience": 45,
+      "edition": 7,
+      "n": 1294
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7034398",
+      "doi": "10.2139/ssrn.7034398",
+      "title": "Interpretable Thematic Indices with Sparse Autoencoders: Shaping Investable Universes and Rede ining Industrial Landscapes",
+      "authors": [
+        "Vittorio Carlei"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7034398",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "Textual business descriptions from regulatory filings, with firm universe, period, and geography not stated, are used to build interpretable thematic stock indices as an alternative to GICS and SIC taxonomies.",
+        "Sparse autoencoders decompose the internal representations of an unnamed large language model into sparse, interpretable features used to cluster firms; no accuracy check against a benchmark is reported.",
+        "The method yields thematically consistent, transparent stock universes and is argued to define new sectors and meta-sectors, though headline performance magnitudes are not stated."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 45,
+      "edition": 7,
+      "models": [],
+      "n": 1295
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7099318",
+      "doi": "10.2139/ssrn.7099318",
+      "title": "The AI-assisted Solo Founder: Economics and Rapid Deployment Frameworks for Micro-SaaS",
+      "authors": [
+        "Md Soad Sabir Shuvo"
+      ],
+      "posted": "2026-07-28",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7099318",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Integrative review of 14 academic sources from 2024 to 2026 on the AI-assisted solo founder building Micro-SaaS products without a development team.",
+        "No model is applied by the authors; the paper adapts resource-based view, lean startup, and effectuation theory and proposes a Specification Governance Model.",
+        "Argues sustainable success requires distribution-first thinking, supervisory engineering skills, and specification-driven development to contain AI non-determinism and technical debt."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 33,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1266
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7178138",
+      "doi": "10.2139/ssrn.7178138",
+      "title": "Reading the Insider Cluster: Concurrent Disclosure-Tone Classification Predicts the Cross-Section of Post-Filing Returns",
+      "authors": [
+        "Hyun Ahn"
+      ],
+      "posted": "2026-07-28",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7178138",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "Survivorship-free 2015 to 2025 panel of 1,932,506 US Form 4 accessions covering 38,261 multi-insider open-market buy cluster events, unit is the concurrent 8-K and DEF 14A narrative.",
+        "Zero-shot tone classification with a GPT-4o-mini, Llama-3.3-70B, and DeepSeek ensemble; checked for vintage leakage via identifier-masked reclassification at kappa 0.92 rather than human ground truth.",
+        "Prioritizing the POSITIVE-outlook class lifts the five-day annualized net Sharpe ratio from 1.77 to 2.28, a 29 percent gain at 25 basis-point round-trip cost."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "validation_note": "cross-vendor and masked-vs-unmasked agreement (kappa 0.92); no human ground truth",
+      "salience": 72,
+      "edition": 7,
+      "n": 1267
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7094458",
+      "doi": "10.2139/ssrn.7094458",
+      "title": "Can Large Language Models Improve Scheduling Policies? Evidence from Queueing Networks, Job Shop Scheduling, and Ride-Hailing Dispatch",
+      "authors": [
+        "Youhua Li",
+        "Sibo Xu",
+        "Yiqi Sun",
+        "Pengfei Guo",
+        "Zuo-Jun Max Shen",
+        "Houmin Yan"
+      ],
+      "posted": "2026-07-28",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7094458",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Numerical experiments in three operations-management scheduling domains, queueing network control, job-shop scheduling, and ride-hailing dispatch, with simulation rollouts as the evaluation environment.",
+        "An unnamed LLM acts as an offline optimizer that drafts and iteratively tunes compact executable scoring policies from simulation feedback; the model family is not stated and no accuracy validation is reported.",
+        "The framework beat direct LLM prompting and matched learning-based methods, performing best in realistic settings lacking explicit mathematical structure, while classical heuristics still won where theory was well established."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 52,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1279
+    },
+    {
+      "uid": "arxiv:2607.25218v1",
+      "arxiv_id": "2607.25218v1",
+      "title": "Everyone is unique: Towards Behaviorally Heterogeneous Negotiation Dialogue Systems for Debt Collection",
+      "authors": [
+        "Yuhang Yang",
+        "Kai Tang",
+        "Chao Ye",
+        "Haobo Wang",
+        "Qiqi Luo",
+        "Jinguang Zheng",
+        "Zhixin Zhang"
+      ],
+      "posted": "2026-07-28",
+      "added": "2026-07-29",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2607.25218v1",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "DebtBench, a public persona-enriched benchmark of debt collection negotiations that pairs an AI collector with behaviorally heterogeneous debtor personas; sample period and geography are not stated.",
+        "Sixteen state-of-the-art LLMs including GPT-4o are evaluated as negotiators, and a trained agent DebtGPT jointly optimizes recovery and interaction experience; performance is scored on the benchmark, not against human collectors.",
+        "Most models struggle in this heterogeneous, high-stakes setting, whereas DebtGPT outperforms all open-source baselines and reaches parity with GPT-4o."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "validation_note": "benchmark scoring only, no human ground truth",
+      "salience": 45,
+      "edition": 7,
+      "n": 1290
+    },
     {
       "uid": "doi:10.2139/ssrn.7177500",
       "doi": "10.2139/ssrn.7177500",
@@ -50697,6 +51985,32 @@
       ]
     },
     {
+      "uid": "doi:10.2139/ssrn.5227409",
+      "doi": "10.2139/ssrn.5227409",
+      "title": "Breaking (up) News: How Current and Forward-Looking Information Impact US Treasury Yield Dynamics",
+      "authors": [
+        "Matthias Apel",
+        "Maximilian Stroh"
+      ],
+      "posted": "2025-05-05",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.5227409",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "US Federal Reserve-related news coverage used to study Treasury yield dynamics across maturities; sample size and time span are not stated.",
+        "Large language models, family not stated, were instructed to classify central bank news into current versus forward-looking hawkish or dovish signals, with no validation against human labels reported.",
+        "The forward-looking policy trend predicts future yield movements, strongest at short maturities, while the current-information trend only co-moves contemporaneously."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 58,
+      "edition": 7,
+      "models": [],
+      "n": 1289
+    },
+    {
       "uid": "doi:10.2139/ssrn.5159615",
       "doi": "10.2139/ssrn.5159615",
       "title": "Chronologically Consistent Large Language Models",
@@ -52627,6 +53941,62 @@
       "prestige": true
     },
     {
+      "uid": "doi:10.2139/ssrn.4907325",
+      "doi": "10.2139/ssrn.4907325",
+      "title": "Introducing Agora.ai: A Proof-of-Concept on AI-Driven Corporate Lobbying for EU Policy Analysis",
+      "authors": [
+        "Frank Chen",
+        "Adam Chalmers"
+      ],
+      "posted": "2024-08-12",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4907325",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "A proof-of-concept of Agora.ai, an LLM tool for corporate lobbying and policy advocacy in the European Union and European Parliament; sample size and evaluation set not stated.",
+        "The tool builds on OpenAI's GPT-4 through prompt engineering and fine-tuning to perform policy relevance analysis, stakeholder mapping, and political alignment suggestions; validation against human coding not stated.",
+        "Authors report the system yields insights they characterize as comparable to human outputs, but report no accuracy or agreement statistic."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": false,
+      "validation_note": "informal comparison to human outputs, no metric",
+      "salience": 35,
+      "edition": 7,
+      "n": 1264
+    },
+    {
+      "uid": "doi:10.2139/ssrn.4908364",
+      "doi": "10.2139/ssrn.4908364",
+      "title": "Governing the Large Language Model Commons: Using Digital Assets to Endow Intellectual Property Rights",
+      "authors": [
+        "Christos Makridis",
+        "Joshua Ammons"
+      ],
+      "posted": "2024-08-12",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4908364",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "Conceptual paper with one illustrative case study of blockchain-based dispute resolution; no empirical sample, period, or geography is used.",
+        "No model is named; large language models are treated as the force eroding intellectual property protection rather than a tool used by the authors.",
+        "Argues that non-fungible tokens, framed through polycentric governance theory, could help assign and enforce digital intellectual property rights."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 33,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1288
+    },
+    {
       "uid": "doi:10.2139/ssrn.4909147",
       "doi": "10.2139/ssrn.4909147",
       "title": "Artificial Intelligence Agentic Auditing",
@@ -52678,6 +54048,97 @@
         "Rutgers Sexual and Reproductive Health and Rights"
       ],
       "prestige": true
+    },
+    {
+      "uid": "doi:10.2139/ssrn.4905637",
+      "doi": "10.2139/ssrn.4905637",
+      "title": "Fine-Tuning Large Language Models for Stock Return Prediction Using Newsflow",
+      "authors": [
+        "Tian Guo",
+        "Emmanuel Hauptman"
+      ],
+      "posted": "2024-08-08",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4905637",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "Real financial newsflow paired with investment universes to forecast stock returns for long-only and long-short portfolios; sample period and geography are not stated in the abstract.",
+        "Encoder-only DeBERTa and decoder-only Mistral and Llama were fine-tuned to build text representations feeding a return-forecasting module; performance was judged by portfolio returns, not against labeled ground truth.",
+        "Aggregated token-level embeddings improved portfolios, decoder models led in large universes, Mistral was most robust, and the LLM representations outperformed conventional sentiment scores as a portfolio signal."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "legacy",
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "salience": 56,
+      "edition": 7,
+      "n": 1251
+    },
+    {
+      "uid": "doi:10.2139/ssrn.4914889",
+      "doi": "10.2139/ssrn.4914889",
+      "title": "Understanding the Unexpected: The Adverse Influence of Large Language Models on Critical Thinking and Professional Skepticism in Accounting Education",
+      "authors": [
+        "Ihsan  Manshur Putra",
+        "Fauziah  Istiqomah Abdunnafi"
+      ],
+      "posted": "2024-08-03",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4914889",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Experiment with fourth-year undergraduate accounting students at one accredited program, split into an LLM-using group and a control group; sample size and country not stated.",
+        "The LLM family and version are not stated; students used it as a study aid rather than researchers using it to measure anything, and no validation is reported.",
+        "Critical thinking scores fell among LLM users while rising in the control group, and the change moved together with professional skepticism."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 45,
+      "edition": 7,
+      "models": [],
+      "validated": null,
+      "n": 1287
+    },
+    {
+      "uid": "doi:10.2139/ssrn.4909429",
+      "doi": "10.2139/ssrn.4909429",
+      "title": "Pioneering Exploration in Patent Landscape Studies: Leveraging Large Language Models and In-Context Learning for Deeper Insights",
+      "authors": [
+        "Minghui Qian",
+        "Mengchun Zhao",
+        "Jianliang Yang",
+        "Zhian Ying",
+        "Chi Wang",
+        "Shulin Guo"
+      ],
+      "posted": "2024-07-29",
+      "added": "2026-07-29",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4909429",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "Patent landscape classification of patents into user-defined categories, evaluated on three public datasets named InjVal, Rito, and Atz in a low-resource setting.",
+        "GPT-PLS uses GPT with a task-specific prompt template and in-context learning demonstrations to classify patents, benchmarked against a fully trained state-of-the-art model using Macro-F1 and Micro-F1.",
+        "GPT-PLS improved Macro-F1 by 5.33 percent and Micro-F1 by 2.83 percent over the trained baseline, indicating LLMs can support patent classification without extensive annotation."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "three public patent datasets, Macro-F1 and Micro-F1 versus trained SOTA",
+      "salience": 42,
+      "edition": 7,
+      "n": 1278
     },
     {
       "uid": "doi:10.2139/ssrn.4891763",
