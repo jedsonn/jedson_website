@@ -90,32 +90,36 @@ def paper_row(p):
     )
 
 
-def main():
-    ap = argparse.ArgumentParser()
-    ap.add_argument("--out", required=True)
-    ap.add_argument("--top", type=int, default=5)
-    ap.add_argument("--since", default=None, help="ISO date; default 7 days before --date")
-    ap.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
-    ap.add_argument("--sample", action="store_true", help="ignore date window; preview")
-    ap.add_argument("--unsub", default="{{UNSUBSCRIBE_URL}}")
-    args = ap.parse_args()
+def load_papers():
+    """Load data/papers.json (the published edition data)."""
+    with open(os.path.join(ROOT, "data", "papers.json"), encoding="utf-8") as fh:
+        return json.load(fh)
 
-    data = json.load(open(os.path.join(ROOT, "data", "papers.json"), encoding="utf-8"))
+
+def select(data, top=5, since=None, date=None, sample=False):
+    """Choose the papers for one edition. Returns (picks, total, nice_date)."""
+    date = date or datetime.now(timezone.utc).strftime("%Y-%m-%d")
     papers = data["papers"]
     total = data.get("count", len(papers))
-
-    if args.sample:
+    if sample:
         pool = [p for p in papers if p.get("prestige")] or papers
     else:
-        since = args.since or (datetime.strptime(args.date, "%Y-%m-%d") - timedelta(days=7)).strftime("%Y-%m-%d")
+        since = since or (datetime.strptime(date, "%Y-%m-%d") - timedelta(days=7)).strftime("%Y-%m-%d")
         pool = [p for p in papers if (p.get("posted") or "") >= since]
     pool.sort(key=rank, reverse=True)
-    picks = pool[:args.top]
+    picks = pool[:top]
+    nice_date = datetime.strptime(date, "%Y-%m-%d").strftime("%B %-d, %Y")
+    return picks, total, nice_date
 
-    nice_date = datetime.strptime(args.date, "%Y-%m-%d").strftime("%B %-d, %Y")
+
+def build_email(picks, total, nice_date, unsub="{{UNSUBSCRIBE_URL}}"):
+    """Render the complete email HTML. Single source of truth for the template.
+
+    `unsub` is HTML-escaped and dropped into the footer link. Pass a real
+    per-recipient URL/mailto, or a sentinel string that the caller replaces once
+    per recipient (send.py renders once with a placeholder, then substitutes)."""
     rows = "".join(paper_row(p) for p in picks)
-
-    email = """<!DOCTYPE html>
+    return """<!DOCTYPE html>
 <html><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
 <title>AI Business Research — weekly</title></head>
 <body style="margin:0;padding:0;background:#eceef1;">
@@ -140,12 +144,27 @@ def main():
 </body></html>""" % {
         "rule": RULE, "ink": INK, "ink2": INK2, "ink3": INK3, "accent": ACCENT,
         "paper": PAPER, "sans": SANS, "serif": SERIF, "site": SITE,
-        "date": esc(nice_date), "rows": rows, "total": "{:,}".format(total), "unsub": esc(args.unsub),
+        "date": esc(nice_date), "rows": rows, "total": "{:,}".format(total), "unsub": esc(unsub),
     }
+
+
+def main():
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--out", required=True)
+    ap.add_argument("--top", type=int, default=5)
+    ap.add_argument("--since", default=None, help="ISO date; default 7 days before --date")
+    ap.add_argument("--date", default=datetime.now(timezone.utc).strftime("%Y-%m-%d"))
+    ap.add_argument("--sample", action="store_true", help="ignore date window; preview")
+    ap.add_argument("--unsub", default="{{UNSUBSCRIBE_URL}}")
+    args = ap.parse_args()
+
+    data = load_papers()
+    picks, total, nice_date = select(data, args.top, args.since, args.date, args.sample)
+    email = build_email(picks, total, nice_date, args.unsub)
 
     with open(args.out, "w", encoding="utf-8") as fh:
         fh.write(email)
-    print("Wrote %s with %d papers (of %d in pool)." % (args.out, len(picks), len(pool)))
+    print("Wrote %s with %d papers." % (args.out, len(picks)))
 
 
 if __name__ == "__main__":

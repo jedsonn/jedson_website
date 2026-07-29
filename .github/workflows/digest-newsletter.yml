@@ -1,0 +1,105 @@
+name: Digest newsletter
+
+# Manual only. There is no schedule — you decide when a weekly email goes out.
+#
+# SAFETY: dry_run defaults to true, so a plain "Run workflow" renders the email,
+# lists who would receive it, and uploads a preview artifact WITHOUT sending
+# anything. To actually deliver, run again with dry_run = false.
+#
+# Required repo VARIABLES (Settings -> Secrets and variables -> Actions -> Variables):
+#   SUPABASE_URL      e.g. https://nmkbznbjgfuqopezfncs.supabase.co  (optional; a default is baked in)
+#   MAIL_FROM         verified Resend sender, e.g. "AI Business Research <digest@jedsonpinto.com>"
+#   MAIL_REPLY_TO     optional reply-to (default: jedson.pinto@utdallas.edu)
+# Required repo SECRETS:
+#   SUPABASE_SERVICE_ROLE_KEY   reads the subscriber list (RLS bypass)
+#   RESEND_API_KEY              Resend API key (only used on a real send)
+
+on:
+  workflow_dispatch:
+    inputs:
+      date:
+        description: "Edition date YYYY-MM-DD (blank = today UTC)"
+        required: false
+        default: ""
+      since:
+        description: "Window start YYYY-MM-DD (blank = 7 days before date)"
+        required: false
+        default: ""
+      top:
+        description: "How many papers to feature"
+        required: false
+        default: "5"
+      audience:
+        description: "Who receives it"
+        required: false
+        default: "confirmed"
+        type: choice
+        options: ["confirmed", "all"]
+      test_email:
+        description: "If set, send ONLY to this address (ignores the list)"
+        required: false
+        default: ""
+      dry_run:
+        description: "Dry run (render + list recipients, send nothing)"
+        required: false
+        default: true
+        type: boolean
+
+permissions:
+  contents: read
+
+concurrency:
+  group: digest-newsletter
+  cancel-in-progress: false
+
+jobs:
+  send:
+    runs-on: ubuntu-latest
+    env:
+      SUPABASE_URL: ${{ vars.SUPABASE_URL || 'https://nmkbznbjgfuqopezfncs.supabase.co' }}
+      SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
+      RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
+      MAIL_FROM: ${{ vars.MAIL_FROM }}
+      MAIL_REPLY_TO: ${{ vars.MAIL_REPLY_TO }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Install deps
+        run: pip install "requests>=2.32"
+
+      - name: Send (or dry run)
+        working-directory: digest
+        env:
+          # Pass inputs through the environment (never interpolate into the
+          # shell body) so nothing in an input can be executed as a command.
+          IN_DATE: ${{ inputs.date }}
+          IN_SINCE: ${{ inputs.since }}
+          IN_TOP: ${{ inputs.top }}
+          IN_AUDIENCE: ${{ inputs.audience }}
+          IN_TEST: ${{ inputs.test_email }}
+          IN_DRY: ${{ inputs.dry_run }}
+        run: |
+          set -euo pipefail
+          ARGS=(--audience "$IN_AUDIENCE" --top "$IN_TOP" --out "$RUNNER_TEMP/digest-preview.html")
+          [ -n "$IN_DATE" ]  && ARGS+=(--date  "$IN_DATE")
+          [ -n "$IN_SINCE" ] && ARGS+=(--since "$IN_SINCE")
+          [ -n "$IN_TEST" ]  && ARGS+=(--test  "$IN_TEST")
+          if [ "$IN_DRY" = "false" ]; then
+            echo "::warning::Live send requested (dry_run=false)."
+            ARGS+=(--send)
+          else
+            echo "Dry run — nothing will be sent."
+          fi
+          python3 scripts/send.py "${ARGS[@]}"
+
+      - name: Upload email preview
+        if: always()
+        uses: actions/upload-artifact@v4
+        with:
+          name: digest-preview
+          path: ${{ runner.temp }}/digest-preview.html
+          if-no-files-found: warn
