@@ -32,7 +32,11 @@ Secrets:
 - `RESEND_API_KEY` — used only on a real send.
 
 Variables:
-- `MAIL_FROM` — e.g. `AI Business Research <digest@jedsonpinto.com>` (must be on the verified domain).
+- `MAIL_FROM` — must be on a Resend-verified domain. Currently
+  `AI Business Research <digest@myresolve.ai>` (the workflow's default):
+  myresolve.ai is the account's one verified domain, and the free plan allows
+  exactly one, so `digest@jedsonpinto.com` waits on a plan upgrade, a domain
+  swap, or a second account.
 - `MAIL_REPLY_TO` — optional, defaults to `jedson.pinto@utdallas.edu`.
 - `SUPABASE_URL` — optional; a default is baked into the workflow.
 
@@ -61,6 +65,36 @@ python3 scripts/send.py --date 2026-07-29 --send
 `send.py --help` lists every flag. Key ones: `--audience {confirmed,all}`,
 `--top N`, `--since DATE`, `--limit N`, `--sample` (ignore the date window),
 `--out FILE` (write the preview).
+
+## Sending through the database (no GitHub secrets needed)
+
+The 2026-07-29 test edition went out this way, and it remains a first-class
+path. The Resend key lives in Supabase **Vault** (secret name
+`digest_resend_api_key`, project `rumo`), and a SQL function wraps the whole
+send — same pattern the site's `notify_feedback_email` / `notify_subscribe_email`
+triggers already use with the older `resend_api_key` secret:
+
+```sql
+select * from public.send_digest(
+  'AI Business Research — weekly digest, <DATE>',
+  $html$ ...rendered email with @@UNSUB_URL@@ in the footer... $html$
+);
+```
+
+`send_digest(subject, html_template)` reads the key from Vault, loops over
+active (non-unsubscribed) subscribers, swaps `@@UNSUB_URL@@` for each
+recipient's tokenized unsubscribe link, and POSTs to Resend via `pg_net` with
+the RFC 8058 headers. It returns one row per recipient with the async
+`request_id`; check delivery with
+`select status_code, content from net._http_response where id = <request_id>`.
+
+Render the template with `newsletter.py` (use `--unsub '@@UNSUB_URL@@'`).
+Execute rights are revoked from `public` / `anon` / `authenticated`, so the
+public API keys can never trigger a send — only privileged access (SQL editor,
+MCP, service role) can. Source: `supabase/migrations/20260730000000_create_send_digest_function.sql`.
+
+This is why sending works from environments that cannot reach api.resend.com
+directly: the database makes the outbound call.
 
 ## Unsubscribe
 

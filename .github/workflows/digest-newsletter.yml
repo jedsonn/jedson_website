@@ -59,7 +59,7 @@ jobs:
       SUPABASE_URL: ${{ vars.SUPABASE_URL || 'https://nmkbznbjgfuqopezfncs.supabase.co' }}
       SUPABASE_SERVICE_ROLE_KEY: ${{ secrets.SUPABASE_SERVICE_ROLE_KEY }}
       RESEND_API_KEY: ${{ secrets.RESEND_API_KEY }}
-      MAIL_FROM: ${{ vars.MAIL_FROM }}
+      MAIL_FROM: ${{ vars.MAIL_FROM || 'AI Business Research <digest@myresolve.ai>' }}
       MAIL_REPLY_TO: ${{ vars.MAIL_REPLY_TO }}
     steps:
       - uses: actions/checkout@v4
