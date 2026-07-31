@@ -130,6 +130,10 @@ def validate(ans, uid_set):
     problems = []
     if ans.get("uid") not in uid_set:
         problems.append("unknown uid %s" % ans.get("uid"))
+    if ans.get("drop"):
+        # The rubric promises a dropped record needs only uid and drop, so
+        # field/role/bullet checks must not apply to it.
+        return problems
     if ans.get("field") not in FIELDS:
         problems.append("bad field %s" % ans.get("field"))
     if ans.get("role") not in ROLES:
@@ -178,6 +182,10 @@ def apply_(args):
             bad.append("%s: %s" % (ans.get("uid", "?"), "; ".join(problems)))
             continue
         rec = by_uid[ans["uid"]]
+        if ans.get("drop"):
+            rec["flags"] = sorted(set(rec.get("flags", []) + ["dropped_by_classifier"]))
+            applied += 1
+            continue
         rec["field"] = ans["field"]
         rec["role"] = ans["role"]
         rec["bullets"] = ans.get("bullets") or []
