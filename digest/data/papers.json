@@ -1,8 +1,146 @@
 {
-  "generated": "2026-07-31",
-  "edition": 8,
-  "count": 1329,
+  "generated": "2026-08-03",
+  "edition": 9,
+  "count": 1344,
   "papers": [
+    {
+      "uid": "doi:10.2139/ssrn.7127259",
+      "doi": "10.2139/ssrn.7127259",
+      "title": "Beyond the Binary: Gender Bias in LLM-evaluated Insurance Claims",
+      "authors": [
+        "Fei Huang",
+        "Md Mushahidul Islam Shamim",
+        "Warut Khern-Am-Nuai",
+        "Maxime C. Cohen"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7127259",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Audit of AI-assisted insurance claim processing using 1,388 vehicle claims, crossing four gender conditions with name and narrative presence in a factorial design that yields 133,248 model evaluations.",
+        "Six models, including GPT-5, GPT-4o, Gemini 2.5 Pro, and Claude 4 and 4.5 Sonnet, set claim amounts, eligibility, and damage severity for counterfactual claimant profiles; outputs are compared across gender conditions rather than against ground truth.",
+        "None of the six models shows a male versus female disparity in the standard full information audit, yet GPT-4o favors claimants of unspecified gender by 128 to 288 dollars when a name is present, and bias concentrates outside the binary."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 62,
+      "edition": 9,
+      "validated": null,
+      "n": 1330
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7212841",
+      "doi": "10.2139/ssrn.7212841",
+      "title": "Resource-Aware Prompting: Teaching Accounting Students When and How to Use Generative AI",
+      "authors": [
+        "Kimberly Fatten"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7212841",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Two undergraduate auditing sections; four classroom tools including a search versus prompt decision framework, scenario exercises, a six block prompt formula, and a Socratic study partner technique.",
+        "No specific model is named; generative AI use is framed as a resource allocation decision, with each tool tied to AICPA foundational competencies and professional skepticism.",
+        "A panel of six faculty rated the tools against their stated learning objectives, with 30 of 36 ratings at the scale maximum; no student outcome data is reported."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 32,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1334
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7202605",
+      "doi": "10.2139/ssrn.7202605",
+      "title": "The MIRROR Model: Multi-Model Iterative Reflection, Review, Oversight, and Reconciliation A Human-Supervised Protocol for Transparent, Evidence-Grounded Knowledge Work",
+      "authors": [
+        "Hamed Yazdanshenas"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7202605",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "Foundational methods paper with no empirical data; proposes an eight stage human supervised workflow in which multiple language models generate, critique, verify, and reconcile answers for knowledge work.",
+        "No specific models are named; the protocol integrates iterative refinement, multi agent debate, role prompting, and verification, with a prespecified evaluation program that has not yet been run.",
+        "Contribution is the ordering and documentation of existing components; the authors state blinded, replicated studies are required before claiming superiority over single model workflows."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 24,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1335
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7131060",
+      "doi": "10.2139/ssrn.7131060",
+      "title": "LLM-Assisted Scheduling Policy Design and Refinement: Evidence Across Queueing Networks, Job-Shop Scheduling, and Ride-Hailing Dispatch",
+      "authors": [
+        "Youhua Li",
+        "Sibo Xu",
+        "Yiqi Sun",
+        "Pengfei Guo",
+        "Zuo-Jun Max Shen",
+        "Houmin Yan"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7131060",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Three simulated operations settings, queueing network control, job shop scheduling, and ride hailing dispatch, with candidate policies evaluated on out of sample instances.",
+        "An unnamed LLM generates compact scoring policy templates and then tunes their parameters from simulation feedback; templates are filtered for feasibility and executability, and the final policy runs without the LLM.",
+        "The two stage framework beats direct LLM prompting and rivals learning based methods, though classical heuristics still win in settings with explicit mathematical structure."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 55,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1336
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7203058",
+      "doi": "10.2139/ssrn.7203058",
+      "title": "Model Risk Implications of Agentic AI Systems in Enterprise Software: A Validation Framework",
+      "authors": [
+        "Shoaib Arshad"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7203058",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Thematic analysis of 52 peer reviewed papers plus illustrative case studies from three financial services enterprise deployments of agentic AI.",
+        "No model is run; the paper argues SR 11-7 and Basel model risk standards miss risks of multi agent LLM systems such as emergent inter agent behavior and hallucination propagation.",
+        "Proposes a four layer validation framework and claims it mitigates 89 percent of identified risk vectors in the case studies, a figure whose derivation the abstract does not explain."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 30,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1337
+    },
     {
       "uid": "doi:10.2139/ssrn.7208252",
       "doi": "10.2139/ssrn.7208252",
@@ -31,6 +169,68 @@
       "salience": 45,
       "edition": 8,
       "n": 1323
+    },
+    {
+      "uid": "arxiv:2607.28889v1",
+      "arxiv_id": "2607.28889v1",
+      "title": "Human-LLM Collaborative Inductive Coding for Conceptualizing K-12 Educator AI Use",
+      "authors": [
+        "Alex Liu",
+        "Min Sun",
+        "Lief Esbenshade",
+        "Michael Xiao",
+        "Victor Tian",
+        "Zachary Zhang",
+        "Kevin He"
+      ],
+      "posted": "2026-07-30",
+      "added": "2026-08-03",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2607.28889v1",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "45,000 messages exchanged between K-12 educators and a generative AI platform, with an independent sample of 2,560 messages coded by three trained human coders.",
+        "Unnamed LLMs generated candidate labels and annotations across open, axial, and selective coding phases; the abstract reports no agreement statistic between model labels and human coding.",
+        "The final codebook holds 72 items in 19 categories and six domains, and human coders added five codes the LLM assisted phases had not surfaced."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 44,
+      "edition": 9,
+      "models": [],
+      "n": 1331
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7124660",
+      "doi": "10.2139/ssrn.7124660",
+      "title": "Humans as the Loop: Tethering Trust in AI, via Fiduciary Governance of Personal Augmentation Agents",
+      "authors": [
+        "Richard S. Whitt",
+        "Nell Clasby"
+      ],
+      "posted": "2026-07-30",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7124660",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Conceptual law and policy article on semi autonomous personal AI agents that hold access to users' data, messaging, and financial accounts without any enforceable duty to serve the user.",
+        "No model is run; ChatGPT, Claude, and Gemini are discussed as vendor locked agents, and the article proposes fiduciary personal augmentation agents bound through an institutional trust tether.",
+        "Argues fiduciary duties should sit with the certifying institution rather than the AI component, and proposes five individual rights plus a two tier regulatory structure with a mandatory duty of care floor."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 30,
+      "edition": 9,
+      "validated": null,
+      "n": 1333
     },
     {
       "uid": "doi:10.2139/ssrn.7122299",
@@ -93,6 +293,136 @@
       "edition": 8,
       "validated": null,
       "n": 1322
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6913179",
+      "doi": "10.2139/ssrn.6913179",
+      "title": "LLM Agent Development Lifecycle (LADL): A Structured Engineering Framework for Probabilistic Autonomous Systems Beyond Agile Methodologies",
+      "authors": [
+        "Arzoo Taj"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6913179",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Conceptual design science paper proposing a nine phase development lifecycle for LLM agent systems in place of Agile, Scrum, and DevOps, illustrated with a healthcare triage agent.",
+        "No specific language model is named or run; the framework covers prompt architecture, probabilistic testing, human in the loop validation, drift monitoring, and a cryptographic prompt hashing tool for audit trails.",
+        "Identifies six gaps in current literature the lifecycle claims to fill; evaluation is a design science self assessment of utility and consistency rather than an empirical test."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 22,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1332
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6459740",
+      "doi": "10.2139/ssrn.6459740",
+      "title": "Generative Agent-Based Modeling for Social Simulations: A Systematic Mapping Study",
+      "authors": [
+        "Gian Marco Orlando",
+        "Valerio La Gatta",
+        "Vincenzo Moscato"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6459740",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "Systematic mapping of 53 studies on generative agent-based modeling, gathered by keyword search plus forward and backward snowballing, spanning social dynamics, social media, economics, recommender systems, and healthcare.",
+        "No single model is evaluated; the review classifies how LLM driven agents are built across profile, memory, and action modules, and finds validation practices uneven across studies.",
+        "Most simulations are small, with 66 percent using 100 agents or fewer; the authors list ten open challenges for making social simulation with generative agents scientifically grounded."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 48,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1341
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6476020",
+      "doi": "10.2139/ssrn.6476020",
+      "title": "Compliance by Design in Cross-Border Financial AI: Architecting for the EU AI Act, SOC 2, and Insurability",
+      "authors": [
+        "Sung Woo Shon"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6476020",
+      "field": "finance",
+      "role": "object",
+      "bullets": [
+        "Conceptual analysis of cross border financial AI systems, covering credit decisioning, underwriting, fraud detection, and LLM based client advisory, under the EU AI Act, SOC 2, GDPR, and insurer scrutiny.",
+        "No model is used or named; LLMs appear only as components of the financial systems whose governance the paper discusses, so validation does not apply.",
+        "Proposes a vendor agnostic compliance by design cloud architecture with tamper evident audit trails and fallback mechanisms, arguing that retrofitted compliance and automated audit dashboards leave socio technical risks hidden."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 34,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1342
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6839039",
+      "doi": "10.2139/ssrn.6839039",
+      "title": "Connecting Classroom Econometrics and Excel Training with Large Language Models",
+      "authors": [
+        "Joy Buchanan"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6839039",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "Undergraduate economics instruction; a teaching note describing three classroom exercises that combine ordinary least squares regression, Excel spreadsheet training, and large language models.",
+        "No specific model is named; students use LLMs alongside regression and spreadsheet tasks, and the note reports no evaluation of model output or learning outcomes.",
+        "Argues that student curiosity about AI can motivate classic statistical reasoning and practical spreadsheet skills; evidence on effectiveness is not stated."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 28,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1343
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7074959",
+      "doi": "10.2139/ssrn.7074959",
+      "title": "Against Mandatory Prompt Disclosure in AI-Assisted Scholarship",
+      "authors": [
+        "Brian Earp",
+        "Udo Schuklenk",
+        "Julian Savulescu",
+        "Sebastian Porsdam Mann"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7074959",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "Position paper on journal policy for AI assisted scholarly writing; no dataset, the argument targets proposals that authors must submit their prompts and generated outputs as supplemental material.",
+        "No model is used or named; LLM writing assistance is the practice under debate, so no validation applies.",
+        "Rejects mandatory full inclusion of prompts as unenforceable, easy to evade, and burdensome, proposing instead targeted disclosure where reproducibility or validity is at stake plus voluntary documentation and authorship attestation."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 42,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1344
     },
     {
       "uid": "doi:10.2139/ssrn.6777418",
@@ -2512,6 +2842,38 @@
       "affiliations": [
         "University of Chieti-Pescara"
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7096518",
+      "doi": "10.2139/ssrn.7096518",
+      "title": "Predicting the Court: Evaluating Large Language Models as Forecasters of Supreme Court Decisions",
+      "authors": [
+        "Hayley Stillwell",
+        "Sean Harrington"
+      ],
+      "posted": "2026-07-28",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7096518",
+      "field": "other",
+      "role": "agent",
+      "bullets": [
+        "Every argued merits case from the United States Supreme Court's October Term 2025, with predictions evaluated at both the case and the individual justice level.",
+        "GPT-5, Gemini 2.5 Pro, Claude Sonnet 4.5, and Grok 4 forecast outcomes; predictions are scored against the actual decisions, though the abstract reports no overall accuracy figure.",
+        "Justice level accuracy mostly reflects the Court's ordinary ideological alignment, and the models overpredict divided rulings in politically salient cases the Court resolved on narrow technical grounds."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "predictions compared with actual October Term 2025 decisions",
+      "salience": 55,
+      "edition": 9,
+      "n": 1340
     },
     {
       "uid": "doi:10.2139/ssrn.7096659",
@@ -49634,6 +49996,34 @@
       ]
     },
     {
+      "uid": "doi:10.2139/ssrn.6248999",
+      "doi": "10.2139/ssrn.6248999",
+      "title": "Obedient, Biased, and Persuasive: Reframing LLM Safety as a Social Science Problem",
+      "authors": [
+        "Vasco Gerardo Hinostroza Fuentes",
+        "Hezerul Abdul Karim",
+        "Nouar Aldahoul",
+        "Myles Joshua Tan"
+      ],
+      "posted": "2026-03-19",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6248999",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Position paper with no new data, drawing on prior studies of persuasion, overreliance, and preference shifts among users of frontier language models in deployed products.",
+        "No model is run and none is named; the argument treats an LLM embedded in a product as an institution in miniature that exercises authority without institutional safeguards.",
+        "Concludes many risks arise from deployment context rather than model failures, and calls for design and governance requirements beyond the model layer; no framework is tested."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 27,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1339
+    },
+    {
       "uid": "doi:10.2139/ssrn.6357778",
       "doi": "10.2139/ssrn.6357778",
       "title": "Collusive Content in Corporate Communications",
@@ -51172,6 +51562,34 @@
       ],
       "prestige": true,
       "us_top": true
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6085086",
+      "doi": "10.2139/ssrn.6085086",
+      "title": "LIBRA: Language Model Informed Bandit Recourse Algorithm for Personalized Treatment Planning",
+      "authors": [
+        "Junyu Cao",
+        "Ruijiang Gao",
+        "Esmaeil Keyvanshokooh",
+        "Jianhao Ma"
+      ],
+      "posted": "2026-01-22",
+      "added": "2026-08-03",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6085086",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Sequential treatment decisions in personalized medicine; experiments use synthetic environments and a real hypertension management case study.",
+        "An unnamed LLM supplies domain knowledge to warm start a contextual bandit that selects treatments and feasible changes to mutable patient features, with theory bounding LLM consultations at order log squared T.",
+        "The combined algorithm improves regret, treatment quality, and sample efficiency over standard contextual bandits and LLM only baselines, and provably never does worse than a pure bandit when the LLM is unreliable."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 48,
+      "edition": 9,
+      "models": [],
+      "validated": null,
+      "n": 1338
     },
     {
       "uid": "doi:10.2139/ssrn.5985277",
