@@ -34,7 +34,33 @@
       "salience": 62,
       "edition": 9,
       "validated": null,
-      "n": 1330
+      "n": 1330,
+      "authors_detailed": [
+        {
+          "name": "Fei Huang",
+          "url": "https://openalex.org/A5013292507",
+          "inst": "UNSW Sydney"
+        },
+        {
+          "name": "M. Shamim",
+          "url": "https://openalex.org/A5019312890",
+          "inst": "UNSW Sydney"
+        },
+        {
+          "name": "Warut Khern-am-nuai",
+          "url": "https://openalex.org/A5023532960",
+          "inst": "McGill University"
+        },
+        {
+          "name": "Maxime C. Cohen",
+          "url": "https://openalex.org/A5015555156",
+          "inst": "McGill University"
+        }
+      ],
+      "affiliations": [
+        "UNSW Sydney",
+        "McGill University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7212841",
@@ -59,7 +85,14 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1334
+      "n": 1334,
+      "authors_detailed": [
+        {
+          "name": "Kimberly Fatten",
+          "url": "https://openalex.org/A5144178857",
+          "inst": ""
+        }
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7202605",
@@ -84,7 +117,19 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1335
+      "n": 1335,
+      "authors_detailed": [
+        {
+          "name": "Hamed Yazdanshenas",
+          "url": "https://openalex.org/A5068132392",
+          "inst": "University of California, Los Angeles"
+        }
+      ],
+      "affiliations": [
+        "University of California, Los Angeles"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.7131060",
@@ -114,7 +159,43 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1336
+      "n": 1336,
+      "authors_detailed": [
+        {
+          "name": "Youhua Li",
+          "url": "https://openalex.org/A5143810706",
+          "inst": ""
+        },
+        {
+          "name": "Sibo Xu",
+          "url": "https://openalex.org/A5143852611",
+          "inst": ""
+        },
+        {
+          "name": "Yiqi Sun",
+          "url": "https://openalex.org/A5063877759",
+          "inst": "Financial Research (Hungary)"
+        },
+        {
+          "name": "Pengfei Guo",
+          "url": "https://openalex.org/A5144140604",
+          "inst": ""
+        },
+        {
+          "name": "Zuo-Jun Max Shen",
+          "url": "https://openalex.org/A5144092783",
+          "inst": ""
+        },
+        {
+          "name": "Houmin Yan",
+          "url": "https://openalex.org/A5101054146",
+          "inst": "Beijing Foreign Studies University"
+        }
+      ],
+      "affiliations": [
+        "Financial Research (Hungary)",
+        "Beijing Foreign Studies University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7203058",
@@ -139,7 +220,17 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1337
+      "n": 1337,
+      "authors_detailed": [
+        {
+          "name": "Shoaib Arshad",
+          "url": "https://openalex.org/A5112945861",
+          "inst": "Islamia University of Bahawalpur"
+        }
+      ],
+      "affiliations": [
+        "Islamia University of Bahawalpur"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7208252",
@@ -168,7 +259,14 @@
       "validation_note": "in-house 8-gate, 107-scenario deployment evaluation suite",
       "salience": 45,
       "edition": 8,
-      "n": 1323
+      "n": 1323,
+      "authors_detailed": [
+        {
+          "name": "Pedro Paulo",
+          "url": "https://openalex.org/A5099336969",
+          "inst": ""
+        }
+      ]
     },
     {
       "uid": "arxiv:2607.28889v1",
@@ -230,7 +328,22 @@
       "salience": 30,
       "edition": 9,
       "validated": null,
-      "n": 1333
+      "n": 1333,
+      "authors_detailed": [
+        {
+          "name": "Richard S. Whitt",
+          "url": "https://openalex.org/A5012375430",
+          "inst": "Ford Foundation"
+        },
+        {
+          "name": "Nell Clasby",
+          "url": "https://openalex.org/A5144011906",
+          "inst": ""
+        }
+      ],
+      "affiliations": [
+        "Ford Foundation"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7122299",
@@ -260,7 +373,17 @@
       "salience": 42,
       "edition": 8,
       "validated": null,
-      "n": 1298
+      "n": 1298,
+      "authors_detailed": [
+        {
+          "name": "Michael Conklin",
+          "url": "https://openalex.org/A5140203598",
+          "inst": "Tarrant County College"
+        }
+      ],
+      "affiliations": [
+        "Tarrant County College"
+      ]
     },
     {
       "uid": "arxiv:2607.27553v1",
@@ -292,7 +415,41 @@
       "salience": 75,
       "edition": 8,
       "validated": null,
-      "n": 1322
+      "n": 1322,
+      "authors_detailed": [
+        {
+          "name": "Lennart Meincke",
+          "url": "https://openalex.org/A5003350421",
+          "inst": "University of Pennsylvania"
+        },
+        {
+          "name": "Karan Girotra",
+          "url": "https://openalex.org/A5085941726",
+          "inst": "INSEAD"
+        },
+        {
+          "name": "Gideon Nave",
+          "url": "https://openalex.org/A5144099123",
+          "inst": ""
+        },
+        {
+          "name": "Christian Terwiesch",
+          "url": "https://openalex.org/A5089214194",
+          "inst": "University of Pennsylvania"
+        },
+        {
+          "name": "Karl T. Ulrich",
+          "url": "https://openalex.org/A5040079549",
+          "inst": "William P. Wharton Trust"
+        }
+      ],
+      "affiliations": [
+        "University of Pennsylvania",
+        "William P. Wharton Trust",
+        "INSEAD"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6913179",
@@ -317,7 +474,14 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1332
+      "n": 1332,
+      "authors_detailed": [
+        {
+          "name": "Arzoo Taj",
+          "url": "https://openalex.org/A5143920623",
+          "inst": ""
+        }
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.6459740",
@@ -344,7 +508,29 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1341
+      "n": 1341,
+      "authors_detailed": [
+        {
+          "name": "Gian Marco Orlando",
+          "url": "https://openalex.org/A5046756099",
+          "inst": "Federico II University Hospital"
+        },
+        {
+          "name": "Valerio La Gatta",
+          "url": "https://openalex.org/A5038118094",
+          "inst": "Northwestern University"
+        },
+        {
+          "name": "Vincenzo Moscato",
+          "url": "https://openalex.org/A5081965427",
+          "inst": "Federico II University Hospital"
+        }
+      ],
+      "affiliations": [
+        "Northwestern University"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6476020",
@@ -369,7 +555,17 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1342
+      "n": 1342,
+      "authors_detailed": [
+        {
+          "name": "Sung Woo Shon",
+          "url": "https://openalex.org/A5023190869",
+          "inst": "United States Census Bureau"
+        }
+      ],
+      "affiliations": [
+        "United States Census Bureau"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.6839039",
@@ -394,7 +590,17 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1343
+      "n": 1343,
+      "authors_detailed": [
+        {
+          "name": "Joy Buchanan",
+          "url": "https://openalex.org/A5143982817",
+          "inst": "Samford University"
+        }
+      ],
+      "affiliations": [
+        "Samford University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7074959",
@@ -422,7 +628,36 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1344
+      "n": 1344,
+      "authors_detailed": [
+        {
+          "name": "Brian D. Earp",
+          "url": "https://openalex.org/A5058038900",
+          "inst": "University of Oxford"
+        },
+        {
+          "name": "Udo Schüklenk",
+          "url": "https://openalex.org/A5004210828",
+          "inst": "Queen's University"
+        },
+        {
+          "name": "Julian Savulescu",
+          "url": "https://openalex.org/A5018300444",
+          "inst": "Center for Practical Bioethics"
+        },
+        {
+          "name": "Sebastian Porsdam Mann",
+          "url": "https://openalex.org/A5061593640",
+          "inst": "University of Copenhagen"
+        }
+      ],
+      "affiliations": [
+        "University of Oxford",
+        "Queen's University",
+        "Center for Practical Bioethics",
+        "University of Copenhagen"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6777418",
@@ -1960,9 +2195,13 @@
         {
           "name": "Amirhossein Salehi Fashami",
           "url": "https://openalex.org/A5143929264",
-          "inst": ""
+          "inst": "University of Oxford"
         }
-      ]
+      ],
+      "affiliations": [
+        "University of Oxford"
+      ],
+      "prestige": true
     },
     {
       "uid": "doi:10.2139/ssrn.6768202",
@@ -2873,7 +3112,22 @@
       "validation_note": "predictions compared with actual October Term 2025 decisions",
       "salience": 55,
       "edition": 9,
-      "n": 1340
+      "n": 1340,
+      "authors_detailed": [
+        {
+          "name": "Hayley Stillwell",
+          "url": "https://openalex.org/A5003439611",
+          "inst": "University of Oklahoma"
+        },
+        {
+          "name": "Sean Harrington",
+          "url": "https://openalex.org/A5109701972",
+          "inst": "Brigham and Women's Hospital"
+        }
+      ],
+      "affiliations": [
+        "University of Oklahoma"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7096659",
@@ -3100,7 +3354,7 @@
         {
           "name": "Kai Tang",
           "url": "https://openalex.org/A5143930594",
-          "inst": ""
+          "inst": "Zhejiang Normal University"
         },
         {
           "name": "Chao Ye",
@@ -3129,6 +3383,7 @@
         }
       ],
       "affiliations": [
+        "Zhejiang Normal University",
         "Rensselaer Polytechnic Institute"
       ]
     },
@@ -3421,7 +3676,7 @@
         {
           "name": "Chenwei Lin",
           "url": "https://openalex.org/A5143841786",
-          "inst": ""
+          "inst": "Fudan University"
         },
         {
           "name": "Xian Xu",
@@ -3430,6 +3685,7 @@
         }
       ],
       "affiliations": [
+        "Fudan University",
         "Xinjiang Production and Construction Corps"
       ]
     },
@@ -3739,8 +3995,11 @@
         {
           "name": "Bernd Johannes Wuebben",
           "url": "https://openalex.org/A5134604989",
-          "inst": ""
+          "inst": "Rainforest Alliance"
         }
+      ],
+      "affiliations": [
+        "Rainforest Alliance"
       ]
     },
     {
@@ -9427,7 +9686,7 @@
         {
           "name": "John Wihbey",
           "url": "https://openalex.org/A5137744041",
-          "inst": ""
+          "inst": "Universidad del Noreste"
         }
       ],
       "affiliations": [
@@ -13887,23 +14146,26 @@
         {
           "name": "Joe Dursun",
           "url": "https://openalex.org/A5107619376",
-          "inst": ""
+          "inst": "Eterna Massive Open Laboratory"
         },
         {
           "name": "Jarrett Blankenship",
           "url": "https://openalex.org/A5107496252",
-          "inst": ""
+          "inst": "Eterna Massive Open Laboratory"
         },
         {
           "name": "Katie Adams",
           "url": "https://openalex.org/A5140430335",
-          "inst": ""
+          "inst": "Eterna Massive Open Laboratory"
         },
         {
           "name": "Quinton Pike",
           "url": "https://openalex.org/A5140421520",
-          "inst": ""
+          "inst": "Eterna Massive Open Laboratory"
         }
+      ],
+      "affiliations": [
+        "Eterna Massive Open Laboratory"
       ]
     },
     {
@@ -19379,7 +19641,7 @@
         {
           "name": "Jintao Xu",
           "url": "https://openalex.org/A5139656948",
-          "inst": ""
+          "inst": "Jingdong (China)"
         },
         {
           "name": "Yu‐Zhang Ma",
@@ -19389,7 +19651,7 @@
         {
           "name": "Jiong Dong",
           "url": "https://openalex.org/A5139650828",
-          "inst": ""
+          "inst": "Jingdong (China)"
         },
         {
           "name": "Yongzhi Qi",
@@ -21728,8 +21990,11 @@
         {
           "name": "Elizabeth Harrison",
           "url": "https://openalex.org/A5139228878",
-          "inst": ""
+          "inst": "City University of New York"
         }
+      ],
+      "affiliations": [
+        "City University of New York"
       ]
     },
     {
@@ -29053,7 +29318,7 @@
         {
           "name": "David Jaggi",
           "url": "https://openalex.org/A5133848527",
-          "inst": ""
+          "inst": "ZHAW Zurich University of Applied Sciences"
         },
         {
           "name": "Jan-Alexander Posth",
@@ -34583,8 +34848,11 @@
         {
           "name": "Varun Srivastava",
           "url": "https://openalex.org/A5136650455",
-          "inst": ""
+          "inst": "Singapore Institute of Technology"
         }
+      ],
+      "affiliations": [
+        "Singapore Institute of Technology"
       ]
     },
     {
@@ -44140,14 +44408,19 @@
         {
           "name": "Haochuan Wang",
           "url": "https://openalex.org/A5135021916",
-          "inst": ""
+          "inst": "Massachusetts Institute of Technology"
         },
         {
           "name": "Zechen Zhang",
           "url": "https://openalex.org/A5135019734",
           "inst": ""
         }
-      ]
+      ],
+      "affiliations": [
+        "Massachusetts Institute of Technology"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6531438",
@@ -44482,7 +44755,7 @@
         {
           "name": "Jason Potteiger",
           "url": "https://openalex.org/A5135174180",
-          "inst": ""
+          "inst": "Dimension Technologies (United States)"
         },
         {
           "name": "Andrew Hong",
@@ -45489,11 +45762,12 @@
         {
           "name": "Zhi Li",
           "url": "https://openalex.org/A5134674438",
-          "inst": ""
+          "inst": "Yangtze University"
         }
       ],
       "affiliations": [
-        "Albany State University"
+        "Albany State University",
+        "Yangtze University"
       ]
     },
     {
@@ -49690,11 +49964,12 @@
         {
           "name": "Daniel Mendez",
           "url": "https://openalex.org/A5130327537",
-          "inst": ""
+          "inst": "Universidad de la República de Uruguay"
         }
       ],
       "affiliations": [
-        "Izmir Institute of Technology"
+        "Izmir Institute of Technology",
+        "Universidad de la República de Uruguay"
       ]
     },
     {
@@ -50021,7 +50296,35 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1339
+      "n": 1339,
+      "authors_detailed": [
+        {
+          "name": "Vasco Gerardo Hinostroza Fuentes",
+          "url": "https://openalex.org/A5126365675",
+          "inst": "University of Florida"
+        },
+        {
+          "name": "Hezerul Abdul Karim",
+          "url": "https://openalex.org/A5027445807",
+          "inst": "New York University"
+        },
+        {
+          "name": "Nouar AlDahoul",
+          "url": "https://openalex.org/A5037300629",
+          "inst": "New York University"
+        },
+        {
+          "name": "Myles Joshua Tan",
+          "url": "https://openalex.org/A5130016438",
+          "inst": "University of Florida"
+        }
+      ],
+      "affiliations": [
+        "New York University",
+        "University of Florida"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6357778",
@@ -51589,7 +51892,37 @@
       "edition": 9,
       "models": [],
       "validated": null,
-      "n": 1338
+      "n": 1338,
+      "authors_detailed": [
+        {
+          "name": "Junyu Cao",
+          "url": "https://openalex.org/A5002422731",
+          "inst": "The University of Texas at Austin"
+        },
+        {
+          "name": "Ruijiang Gao",
+          "url": "https://openalex.org/A5102426480",
+          "inst": "University of Texas at Dallas"
+        },
+        {
+          "name": "Esmaeil Keyvanshokooh",
+          "url": "https://openalex.org/A5088382157",
+          "inst": "Texas A&M University"
+        },
+        {
+          "name": "Jianhao Ma",
+          "url": "https://openalex.org/A5123510677",
+          "inst": "University of Pennsylvania"
+        }
+      ],
+      "affiliations": [
+        "The University of Texas at Austin",
+        "University of Texas at Dallas",
+        "University of Pennsylvania",
+        "Texas A&M University"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5985277",
@@ -54331,7 +54664,7 @@
         {
           "name": "Verónica Bäcker-Peral",
           "url": "https://openalex.org/A5117667451",
-          "inst": ""
+          "inst": "Massachusetts Institute of Technology"
         },
         {
           "name": "Vitaly Meursault",
@@ -54345,8 +54678,11 @@
         }
       ],
       "affiliations": [
+        "Massachusetts Institute of Technology",
         "Federal Reserve Bank of Philadelphia"
-      ]
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.5258789",
