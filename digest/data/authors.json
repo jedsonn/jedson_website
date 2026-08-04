@@ -4414,7 +4414,7 @@
       {
         "name": "Ragul Shanmugam",
         "url": "https://openalex.org/A5136318602",
-        "inst": ""
+        "inst": "The University of Texas at Austin"
       },
       {
         "name": "Sean Kirk",
@@ -4422,7 +4422,9 @@
         "inst": ""
       }
     ],
-    "affiliations": []
+    "affiliations": [
+      "The University of Texas at Austin"
+    ]
   },
   "arxiv:2605.16699v1": {
     "authors": [
@@ -25501,7 +25503,7 @@
       {
         "name": "Gideon Nave",
         "url": "https://openalex.org/A5144099123",
-        "inst": ""
+        "inst": "Cornell University"
       },
       {
         "name": "Christian Terwiesch",
@@ -25517,6 +25519,7 @@
     "affiliations": [
       "University of Pennsylvania",
       "INSEAD",
+      "Cornell University",
       "William P. Wharton Trust"
     ],
     "top_author": true
@@ -25620,5 +25623,133 @@
       }
     ],
     "affiliations": []
+  },
+  "doi:10.3386/w33198": {
+    "authors": [
+      {
+        "name": "Anton Korinek",
+        "url": "https://openalex.org/A5009882421",
+        "inst": "National Bureau of Economic Research"
+      }
+    ],
+    "affiliations": [
+      "National Bureau of Economic Research"
+    ]
+  },
+  "arxiv:2607.27553v2": {
+    "authors": [
+      {
+        "name": "Lennart Meincke",
+        "url": "https://openalex.org/A5003350421",
+        "inst": "Cornell University"
+      },
+      {
+        "name": "Karan Girotra",
+        "url": "https://openalex.org/A5085941726",
+        "inst": "Cornell University"
+      },
+      {
+        "name": "Gideon Nave",
+        "url": "https://openalex.org/A5144099123",
+        "inst": "Cornell University"
+      },
+      {
+        "name": "Christian Terwiesch",
+        "url": "https://openalex.org/A5089214194",
+        "inst": "Cornell University"
+      },
+      {
+        "name": "Karl T. Ulrich",
+        "url": "https://openalex.org/A5040079549",
+        "inst": "Cornell University"
+      }
+    ],
+    "affiliations": [
+      "Cornell University"
+    ],
+    "top_author": true
+  },
+  "doi:10.2139/ssrn.7226274": {
+    "authors": [
+      {
+        "name": "Nour Khaled",
+        "url": "https://openalex.org/A5144284418",
+        "inst": ""
+      },
+      {
+        "name": "Ayman H. Nassar",
+        "url": "https://openalex.org/A5030365337",
+        "inst": "Cairo University"
+      }
+    ],
+    "affiliations": [
+      "Cairo University"
+    ]
+  },
+  "doi:10.2139/ssrn.7224810": {
+    "authors": [
+      {
+        "name": "Mathieu Bunel",
+        "url": "https://openalex.org/A5004067696",
+        "inst": "Université de Bourgogne"
+      },
+      {
+        "name": "Lefebvre Marie-Noëlle",
+        "url": "https://openalex.org/A5118397134",
+        "inst": ""
+      },
+      {
+        "name": "Élisabeth Tovar",
+        "url": "https://openalex.org/A5022856004",
+        "inst": "Université Paris Nanterre"
+      }
+    ],
+    "affiliations": [
+      "Université de Bourgogne",
+      "Université Paris Nanterre"
+    ]
+  },
+  "arxiv:2607.28889v1": {
+    "authors": [
+      {
+        "name": "Alex Liu",
+        "url": "https://openalex.org/A5006581750",
+        "inst": "University of Washington"
+      },
+      {
+        "name": "Min Sun",
+        "url": "https://openalex.org/A5144259365",
+        "inst": ""
+      },
+      {
+        "name": "Lief Esbenshade",
+        "url": "https://openalex.org/A5144283522",
+        "inst": ""
+      },
+      {
+        "name": "Michael Xiao",
+        "url": "https://openalex.org/A5144266861",
+        "inst": ""
+      },
+      {
+        "name": "Victor Tian",
+        "url": "https://openalex.org/A5055883953",
+        "inst": "University of Washington Applied Physics Laboratory"
+      },
+      {
+        "name": "Zachary Zhang",
+        "url": "https://openalex.org/A5134204044",
+        "inst": "University of Washington Applied Physics Laboratory"
+      },
+      {
+        "name": "Kevin He",
+        "url": "https://openalex.org/A5144290169",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "University of Washington",
+      "University of Washington Applied Physics Laboratory"
+    ]
   }
 }
