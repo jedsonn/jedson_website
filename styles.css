@@ -134,6 +134,7 @@
 .yrow:last-child{border-bottom:none;}
 .yrow .yr{font-family:var(--serif);font-weight:700;font-size:.92rem;color:var(--accent);}
 .yrow .items{font-size:.85rem;color:var(--text);line-height:1.6;}
+.yrow .items .future{color:var(--muted);}
 .tlist{list-style:none;display:flex;flex-direction:column;gap:.45rem;margin-top:.1rem;}
 .tlist li{font-size:.85rem;color:var(--text);line-height:1.5;padding-left:1.1rem;position:relative;}
 .tlist li::before{content:"";position:absolute;left:.2rem;top:.6em;width:4px;height:4px;border-radius:50%;background:var(--muted);}
