@@ -9157,10 +9157,12 @@
       {
         "name": "Luis Meloni",
         "url": "https://openalex.org/A5120600895",
-        "inst": ""
+        "inst": "Universidade de São Paulo"
       }
     ],
-    "affiliations": []
+    "affiliations": [
+      "Universidade de São Paulo"
+    ]
   },
   "doi:10.2139/ssrn.6904051": {
     "authors": [
@@ -16487,10 +16489,12 @@
       {
         "name": "Muhammad Omar Muftakhar",
         "url": "https://openalex.org/A5135950164",
-        "inst": ""
+        "inst": "Riyadh Elm University"
       }
     ],
-    "affiliations": []
+    "affiliations": [
+      "Riyadh Elm University"
+    ]
   },
   "doi:10.2139/ssrn.6792161": {
     "authors": [
@@ -25425,7 +25429,8 @@
     "affiliations": [
       "Federico II University Hospital",
       "Northwestern University"
-    ]
+    ],
+    "top_author": true
   },
   "doi:10.2139/ssrn.6839039": {
     "authors": [
@@ -25750,6 +25755,131 @@
     "affiliations": [
       "University of Washington",
       "University of Washington Applied Physics Laboratory"
+    ]
+  },
+  "doi:10.2139/ssrn.6940839": {
+    "authors": [
+      {
+        "name": "Steven Hinkley",
+        "url": "https://openalex.org/A5008810370",
+        "inst": "Edith Cowan University"
+      }
+    ],
+    "affiliations": [
+      "Edith Cowan University"
+    ]
+  },
+  "doi:10.2139/ssrn.6663398": {
+    "authors": [
+      {
+        "name": "Nina Lutz",
+        "url": "https://openalex.org/A5107619449",
+        "inst": "University of Washington"
+      },
+      {
+        "name": "E. Glen Weyl",
+        "url": "https://openalex.org/A5086938626",
+        "inst": "Research Network (United States)"
+      }
+    ],
+    "affiliations": [
+      "University of Washington",
+      "Research Network (United States)"
+    ]
+  },
+  "doi:10.2139/ssrn.7040861": {
+    "authors": [
+      {
+        "name": "Shahin Hossain",
+        "url": "https://openalex.org/A5102806028",
+        "inst": "University of Maryland, Baltimore County"
+      }
+    ],
+    "affiliations": [
+      "University of Maryland, Baltimore County"
+    ]
+  },
+  "doi:10.2139/ssrn.6641081": {
+    "authors": [
+      {
+        "name": "Mohd Firdauz Mohd Fathir",
+        "url": "https://openalex.org/A5079135644",
+        "inst": "Universiti Teknologi MARA System"
+      }
+    ],
+    "affiliations": [
+      "Universiti Teknologi MARA System"
+    ]
+  },
+  "doi:10.2139/ssrn.7126338": {
+    "authors": [
+      {
+        "name": "Priya Ranjan",
+        "url": "https://openalex.org/A5140710596",
+        "inst": "Mizoram University"
+      }
+    ],
+    "affiliations": [
+      "Mizoram University"
+    ]
+  },
+  "doi:10.2139/ssrn.7160759": {
+    "authors": [
+      {
+        "name": "Anuj Pal",
+        "url": "https://openalex.org/A5123893798",
+        "inst": "National Institute of Financial Management"
+      }
+    ],
+    "affiliations": [
+      "National Institute of Financial Management"
+    ]
+  },
+  "doi:10.2139/ssrn.7177498": {
+    "authors": [
+      {
+        "name": "Arslan Bisharat",
+        "url": "https://openalex.org/A5120686779",
+        "inst": "Loyola University Chicago"
+      },
+      {
+        "name": "Oudom Hean",
+        "url": "https://openalex.org/A5090726375",
+        "inst": "Dakota State University"
+      }
+    ],
+    "affiliations": [
+      "Loyola University Chicago",
+      "Dakota State University"
+    ]
+  },
+  "doi:10.2139/ssrn.7220762": {
+    "authors": [
+      {
+        "name": "Muhammad Salar Khan",
+        "url": "https://openalex.org/A5023522655",
+        "inst": "Rochester Institute of Technology - Dubai"
+      },
+      {
+        "name": "Hamza Umer",
+        "url": "https://openalex.org/A5048641217",
+        "inst": "Hitotsubashi University"
+      },
+      {
+        "name": "Hasan Mahmud",
+        "url": "https://openalex.org/A5101476383",
+        "inst": "Rochester Institute of Technology"
+      },
+      {
+        "name": "Sandra Rothenberg",
+        "url": "https://openalex.org/A5144341684",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "Rochester Institute of Technology - Dubai",
+      "Hitotsubashi University",
+      "Rochester Institute of Technology"
     ]
   }
 }

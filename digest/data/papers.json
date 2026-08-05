@@ -91,7 +91,34 @@
       "salience": 55,
       "edition": 11,
       "validated": null,
-      "n": 1349
+      "n": 1349,
+      "authors_detailed": [
+        {
+          "name": "Muhammad Salar Khan",
+          "url": "https://openalex.org/A5023522655",
+          "inst": "Rochester Institute of Technology - Dubai"
+        },
+        {
+          "name": "Hamza Umer",
+          "url": "https://openalex.org/A5048641217",
+          "inst": "Hitotsubashi University"
+        },
+        {
+          "name": "Hasan Mahmud",
+          "url": "https://openalex.org/A5101476383",
+          "inst": "Rochester Institute of Technology"
+        },
+        {
+          "name": "Sandra Rothenberg",
+          "url": "https://openalex.org/A5144341684",
+          "inst": ""
+        }
+      ],
+      "affiliations": [
+        "Rochester Institute of Technology - Dubai",
+        "Hitotsubashi University",
+        "Rochester Institute of Technology"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7177498",
@@ -119,7 +146,23 @@
       "salience": 62,
       "edition": 11,
       "models": [],
-      "n": 1354
+      "n": 1354,
+      "authors_detailed": [
+        {
+          "name": "Arslan Bisharat",
+          "url": "https://openalex.org/A5120686779",
+          "inst": "Loyola University Chicago"
+        },
+        {
+          "name": "Oudom Hean",
+          "url": "https://openalex.org/A5090726375",
+          "inst": "Dakota State University"
+        }
+      ],
+      "affiliations": [
+        "Loyola University Chicago",
+        "Dakota State University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7160759",
@@ -148,7 +191,17 @@
       "validation_note": "expert coding of 35 disclosures; agreement described, no formal statistic",
       "salience": 42,
       "edition": 11,
-      "n": 1355
+      "n": 1355,
+      "authors_detailed": [
+        {
+          "name": "Anuj Pal",
+          "url": "https://openalex.org/A5123893798",
+          "inst": "National Institute of Financial Management"
+        }
+      ],
+      "affiliations": [
+        "National Institute of Financial Management"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7226274",
@@ -266,7 +319,17 @@
       "edition": 11,
       "models": [],
       "validated": null,
-      "n": 1353
+      "n": 1353,
+      "authors_detailed": [
+        {
+          "name": "Priya Ranjan",
+          "url": "https://openalex.org/A5140710596",
+          "inst": "Mizoram University"
+        }
+      ],
+      "affiliations": [
+        "Mizoram University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7127259",
@@ -849,7 +912,17 @@
       "salience": 30,
       "edition": 11,
       "validated": null,
-      "n": 1350
+      "n": 1350,
+      "authors_detailed": [
+        {
+          "name": "Mohd Firdauz Mohd Fathir",
+          "url": "https://openalex.org/A5079135644",
+          "inst": "Universiti Teknologi MARA System"
+        }
+      ],
+      "affiliations": [
+        "Universiti Teknologi MARA System"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.6940839",
@@ -878,7 +951,17 @@
       "salience": 35,
       "edition": 11,
       "validated": null,
-      "n": 1351
+      "n": 1351,
+      "authors_detailed": [
+        {
+          "name": "Steven Hinkley",
+          "url": "https://openalex.org/A5008810370",
+          "inst": "Edith Cowan University"
+        }
+      ],
+      "affiliations": [
+        "Edith Cowan University"
+      ]
     },
     {
       "uid": "doi:10.2139/ssrn.7040861",
@@ -903,7 +986,19 @@
       "edition": 11,
       "models": [],
       "validated": null,
-      "n": 1352
+      "n": 1352,
+      "authors_detailed": [
+        {
+          "name": "Shahin Hossain",
+          "url": "https://openalex.org/A5102806028",
+          "inst": "University of Maryland, Baltimore County"
+        }
+      ],
+      "affiliations": [
+        "University of Maryland, Baltimore County"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6663398",
@@ -932,7 +1027,25 @@
       "salience": 41,
       "edition": 11,
       "validated": null,
-      "n": 1358
+      "n": 1358,
+      "authors_detailed": [
+        {
+          "name": "Nina Lutz",
+          "url": "https://openalex.org/A5107619449",
+          "inst": "University of Washington"
+        },
+        {
+          "name": "E. Glen Weyl",
+          "url": "https://openalex.org/A5086938626",
+          "inst": "Research Network (United States)"
+        }
+      ],
+      "affiliations": [
+        "University of Washington",
+        "Research Network (United States)"
+      ],
+      "prestige": true,
+      "us_top": true
     },
     {
       "uid": "doi:10.2139/ssrn.6913179",
@@ -27996,8 +28109,11 @@
         {
           "name": "Luis Meloni",
           "url": "https://openalex.org/A5120600895",
-          "inst": ""
+          "inst": "Universidade de São Paulo"
         }
+      ],
+      "affiliations": [
+        "Universidade de São Paulo"
       ]
     },
     {
@@ -32072,8 +32188,11 @@
         {
           "name": "Muhammad Omar Muftakhar",
           "url": "https://openalex.org/A5135950164",
-          "inst": ""
+          "inst": "Riyadh Elm University"
         }
+      ],
+      "affiliations": [
+        "Riyadh Elm University"
       ]
     },
     {
