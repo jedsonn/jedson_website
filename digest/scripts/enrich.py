@@ -97,6 +97,8 @@ def from_s2(doi):
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--edition", type=int, required=True)
+    ap.add_argument("--cap", type=int, default=None,
+                    help="override run.max_papers_per_edition; 0 means no cap")
     args = ap.parse_args()
 
     run_dir = os.path.join(ROOT, "data", "runs", "edition-%03d" % args.edition)
@@ -136,8 +138,8 @@ def main():
 
     kept = [r for r in recs if r["relevance"] >= CFG["run"]["min_relevance"]]
     kept.sort(key=lambda r: (-r["relevance"], r.get("posted", "")))
-    cap = CFG["run"]["max_papers_per_edition"]
-    if len(kept) > cap:
+    cap = args.cap if args.cap is not None else CFG["run"]["max_papers_per_edition"]
+    if cap and len(kept) > cap:
         log("Capping %d records to %d by relevance." % (len(kept), cap))
         kept = kept[:cap]
 

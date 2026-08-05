@@ -114,11 +114,19 @@ def harvest_crossref(src, start, end):
     return rows
 
 
+ARXIV_CAP = 600
+
+
 def harvest_arxiv(src, start, end):
+    # Constrain the window server-side. Without this, historical windows are
+    # unreachable: results come newest-first, so paging from today toward a
+    # past window would exhaust the fetch cap on out-of-window records.
+    q = "(%s) AND submittedDate:[%s0000 TO %s2359]" % (
+        src["query"], start.replace("-", ""), end.replace("-", ""))
     rows, offset = [], 0
-    while offset < 600:
+    while offset < ARXIV_CAP:
         params = {
-            "search_query": src["query"],
+            "search_query": q,
             "start": offset,
             "max_results": 200,
             "sortBy": "submittedDate",
@@ -228,10 +236,26 @@ def main():
     ap.add_argument("--edition", type=int, required=True)
     ap.add_argument("--date", required=True)
     ap.add_argument("--days", type=int, default=None)
+    ap.add_argument("--from", dest="win_from", default=None,
+                    help="explicit window start YYYY-MM-DD (with --until, overrides --days)")
+    ap.add_argument("--until", dest="win_until", default=None,
+                    help="explicit window end YYYY-MM-DD")
+    ap.add_argument("--posted-from", default=None,
+                    help="after the relevance gate, keep only records posted on/after this date")
+    ap.add_argument("--posted-until", default=None,
+                    help="after the relevance gate, keep only records posted on/before this date")
+    ap.add_argument("--arxiv-cap", type=int, default=600,
+                    help="max records fetched per arXiv query (default 600)")
     ap.add_argument("--limit", type=int, default=0, help="cap sources, for smoke tests")
     args = ap.parse_args()
 
-    start, end = window(args.days)
+    global ARXIV_CAP
+    ARXIV_CAP = args.arxiv_cap
+
+    if args.win_from and args.win_until:
+        start, end = args.win_from, args.win_until
+    else:
+        start, end = window(args.days)
     log("Harvest window %s to %s" % (start, end))
 
     enabled = [s for s in CFG["sources"] if s.get("enabled")]
@@ -256,6 +280,13 @@ def main():
         rec["matched_terms"] = hits
         if score >= CFG["run"]["min_relevance"]:
             kept.append(rec)
+
+    if args.posted_from or args.posted_until:
+        lo = args.posted_from or "0000-01-01"
+        hi = args.posted_until or "9999-12-31"
+        before_posted = len(kept)
+        kept = [r for r in kept if r.get("posted") and lo <= r["posted"] <= hi]
+        log("Posted-date filter %s..%s: %d -> %d" % (lo, hi, before_posted, len(kept)))
 
     by_uid = {}
     for rec in kept:

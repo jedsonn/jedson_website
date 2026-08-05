@@ -16,6 +16,28 @@ name: Digest harvest (artifact + transit)
 
 on:
   workflow_dispatch:
+    inputs:
+      edition:
+        description: "Explicit edition number (default: last-run + 1)"
+        required: false
+      window_from:
+        description: "Index/created window start YYYY-MM-DD (backfill; pair with window_until)"
+        required: false
+      window_until:
+        description: "Index/created window end YYYY-MM-DD"
+        required: false
+      posted_from:
+        description: "Keep only records posted on/after YYYY-MM-DD"
+        required: false
+      posted_until:
+        description: "Keep only records posted on/before YYYY-MM-DD"
+        required: false
+      cap:
+        description: "Max records to carry into classification (0 = uncapped; default config 220)"
+        required: false
+      arxiv_cap:
+        description: "Max records per arXiv query (default 600)"
+        required: false
   schedule:
     - cron: "0 2 * * *"
 
@@ -45,18 +67,39 @@ jobs:
           set -euo pipefail
           cd digest
           RUN_DATE=$(date -u +%F)
-          EDITION=$(python3 -c "import json,os;print(json.load(open('data/last-run.json'))['edition']+1 if os.path.exists('data/last-run.json') else 1)")
+          if [ -n "${{ inputs.edition }}" ]; then
+            EDITION="${{ inputs.edition }}"
+          else
+            EDITION=$(python3 -c "import json,os;print(json.load(open('data/last-run.json'))['edition']+1 if os.path.exists('data/last-run.json') else 1)")
+          fi
           echo "edition=$EDITION" >> "$GITHUB_OUTPUT"
           echo "run_date=$RUN_DATE" >> "$GITHUB_OUTPUT"
           echo "Edition $EDITION on $RUN_DATE"
-          python3 scripts/harvest.py --edition "$EDITION" --date "$RUN_DATE"
+          EXTRA=""
+          if [ -n "${{ inputs.window_from }}" ] && [ -n "${{ inputs.window_until }}" ]; then
+            EXTRA="$EXTRA --from ${{ inputs.window_from }} --until ${{ inputs.window_until }}"
+          fi
+          if [ -n "${{ inputs.posted_from }}" ]; then
+            EXTRA="$EXTRA --posted-from ${{ inputs.posted_from }}"
+          fi
+          if [ -n "${{ inputs.posted_until }}" ]; then
+            EXTRA="$EXTRA --posted-until ${{ inputs.posted_until }}"
+          fi
+          if [ -n "${{ inputs.arxiv_cap }}" ]; then
+            EXTRA="$EXTRA --arxiv-cap ${{ inputs.arxiv_cap }}"
+          fi
+          python3 scripts/harvest.py --edition "$EDITION" --date "$RUN_DATE" $EXTRA
           RUN_DIR=$(printf "data/runs/edition-%03d" "$EDITION")
           KEPT=$(python3 -c "import json;print(len(json.load(open('$RUN_DIR/harvested.json'))))" 2>/dev/null || echo 0)
           echo "Harvested $KEPT raw records."
           if [ "$KEPT" = "0" ]; then
             echo "empty=1" >> "$GITHUB_OUTPUT"; exit 0
           fi
-          python3 scripts/enrich.py --edition "$EDITION"
+          ENR=""
+          if [ -n "${{ inputs.cap }}" ]; then
+            ENR="--cap ${{ inputs.cap }}"
+          fi
+          python3 scripts/enrich.py --edition "$EDITION" $ENR
           python3 scripts/classify.py prepare --edition "$EDITION" --batch-size 8
           NEW=$(python3 -c "import json;print(json.load(open('$RUN_DIR/batch-manifest.json')).get('to_classify',0))" 2>/dev/null || echo 0)
           echo "New papers to classify (not already in index): $NEW"
