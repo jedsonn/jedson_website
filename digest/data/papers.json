@@ -1,8 +1,155 @@
 {
-  "generated": "2026-08-04",
-  "edition": 10,
-  "count": 1348,
+  "generated": "2026-08-05",
+  "edition": 11,
+  "count": 1358,
   "papers": [
+    {
+      "uid": "doi:10.2139/ssrn.7200240",
+      "doi": "10.2139/ssrn.7200240",
+      "title": "Evaluating Multimodal AI Systems for Short-Term Stock Forecasting: A Comparative Study of Claude, ChatGPT, Gemini, and Meta AI Forecasting Accuracy and the Effect of News Update Frequency",
+      "authors": [
+        "Ridam Timilsina"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7200240",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "Ten stocks across five sectors over nine live weeks; four chatbots received identical charts, technical indicators, and earnings dates, yielding 360 scored weekly predictions.",
+        "Claude, ChatGPT, Gemini, and Meta AI (versions not stated) issued directional calls, price targets, and confidence; five stocks got daily news headlines, five only weekly.",
+        "Directional accuracy ran from 44.4 percent (ChatGPT) to 50.0 percent (Claude), none beating chance; daily news raised accuracy to 58.9 versus 35.6 percent (p < 0.001)."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "gpt",
+        "llama"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "360 predictions scored against realized price direction",
+      "salience": 46,
+      "edition": 11,
+      "n": 1356
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7199998",
+      "doi": "10.2139/ssrn.7199998",
+      "title": "A Domain-Specific Causal Chain RAG System for Semiconductor Equity Analysis",
+      "authors": [
+        "Raj Tejpal Khatik"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7199998",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "48 semiconductor tickers scored on an 18-factor causal chain; backtests combine 140 development-period predictions and 426 observations at 10 historical dates with 20-day forward returns.",
+        "An agentic RAG pipeline (LangGraph orchestration, FAISS retrieval, MCP data feeds) issues directional calls with per-factor attribution; the underlying LLM is not named in the abstract.",
+        "Overall directional accuracy of 61.3 percent rises monotonically with market cap, from 41.7 percent for mid-caps to 84.0 percent above one trillion dollars."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "backtested against realized 20-day forward returns, 426 observations",
+      "salience": 38,
+      "edition": 11,
+      "models": [],
+      "n": 1357
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7220762",
+      "doi": "10.2139/ssrn.7220762",
+      "title": "When Personalization Becomes Bias: Structural and Discursive Religious Framing in AI-Generated Financial Advice",
+      "authors": [
+        "Muhammad Salar Khan",
+        "Hamza Umer",
+        "Hasan Mahmud",
+        "Sandra Rothenberg"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7220762",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Audit of 432 simulated advisor-client exchanges spanning 16 religious identity pairings among Christian, Muslim, Hindu, and non-religious profiles, over three household decisions: stock investment, house purchase, and life insurance.",
+        "ChatGPT, Gemini, and Grok are the advisors under study; their advice is coded with regression and reflexive thematic analysis. Model versions are not stated and no ground truth check is reported.",
+        "Only 12 to 18 percent of responses were free of religious bias; Gemini framed advice religiously most often, and matched advisor-client religions almost always triggered explicit religious appeals."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gemini",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 55,
+      "edition": 11,
+      "validated": null,
+      "n": 1349
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7177498",
+      "doi": "10.2139/ssrn.7177498",
+      "title": "Evaluating Financial Sentiment in the Age of AI",
+      "authors": [
+        "Arslan Bisharat",
+        "Oudom Hean"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7177498",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Twelve sentiment measures spanning dictionaries, finance-tuned transformers, and open-source LLMs, evaluated on earnings announcement text; corpus size and period are not stated in the abstract.",
+        "Each measure is scored on linguistic validity, classification against labelled sentiment, and economic validity, association with earnings surprises and returns; specific LLMs are not named in the abstract.",
+        "General-purpose LLMs match finance-specific transformers without fine-tuning, yet no measure predicts next-day returns; sentiment tracks earnings surprises and works best for large beats or misses."
+      ],
+      "bullet_provenance": "ai",
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "classification benchmarked against labelled sentiment; figures not in abstract",
+      "salience": 62,
+      "edition": 11,
+      "models": [],
+      "n": 1354
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7160759",
+      "doi": "10.2139/ssrn.7160759",
+      "title": "Artificial Intelligence and ESG Disclosure: Evaluating Large Language Models for Identifying Symbolic and Substantive Sustainability Communication",
+      "authors": [
+        "Anuj Pal"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7160759",
+      "field": "accounting",
+      "role": "method",
+      "bullets": [
+        "35 ESG disclosures from five multinational companies, coded as symbolic, mixed, or substantive sustainability communication in a researcher-in-the-loop content analysis.",
+        "GPT-5.5 coded each disclosure with researcher review; agreement with expert judgement is described, but the abstract reports no formal accuracy or kappa statistic.",
+        "Clearly symbolic and clearly substantive disclosures were never confused; disagreements clustered on mixed cases, motivating the three-way OEDCF coding framework."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "expert coding of 35 disclosures; agreement described, no formal statistic",
+      "salience": 42,
+      "edition": 11,
+      "n": 1355
+    },
     {
       "uid": "doi:10.2139/ssrn.7226274",
       "doi": "10.2139/ssrn.7226274",
@@ -95,6 +242,31 @@
         "Université de Bourgogne",
         "Université Paris Nanterre"
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7126338",
+      "doi": "10.2139/ssrn.7126338",
+      "title": "Engineering Decision Intelligence Framework for Autonomous Shutdown Planning in Integrated Steel Plants: Integrating Industrial Knowledge Graphs, Digital Twins, and Generative AI Author",
+      "authors": [
+        "Priya Ranjan"
+      ],
+      "posted": "2026-07-31",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7126338",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Planned maintenance shutdowns in integrated steel plants, coordinated across operations, contractors, and engineering teams; a conceptual framework paper with no empirical dataset.",
+        "No specific model is named; generative AI and LLMs are proposed as components alongside knowledge graphs, digital twins, and multi-agent intelligence, with no validation reported.",
+        "Proposes the EDIF architecture and Engineering Intelligence Indices to score shutdown readiness and decision quality; no empirical performance results are given."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 20,
+      "edition": 11,
+      "models": [],
+      "validated": null,
+      "n": 1353
     },
     {
       "uid": "doi:10.2139/ssrn.7127259",
@@ -649,6 +821,118 @@
       ],
       "prestige": true,
       "us_top": true
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6641081",
+      "doi": "10.2139/ssrn.6641081",
+      "title": "Mapping the Rise of AI in Qualitative Research: A Bibliometric Analysis (2019-2025)",
+      "authors": [
+        "Mohd Firdauz Mohd Fathir"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6641081",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Bibliometric mapping of 707 Scopus-indexed journal articles and conference papers on AI in qualitative research published between 2019 and 2025.",
+        "No language model performs the analysis; VOSViewer builds keyword co-occurrence, citation, and country collaboration maps, with ChatGPT figuring as the subject driving the post-2023 publication surge.",
+        "Themes cluster around higher education, ethics, qualitative coding, and NLP, led by the US and China, with a gap identified in frameworks for AI in interview piloting and protocol design."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 30,
+      "edition": 11,
+      "validated": null,
+      "n": 1350
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6940839",
+      "doi": "10.2139/ssrn.6940839",
+      "title": "Courts, Regulators, and the Hallucination Problem: How Canadian Law Is Responding to Large Language Models in Legal Submissions",
+      "authors": [
+        "Steven Hinkley"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6940839",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Canadian judicial notices, law society guidance, and reported decisions in the three years after ChatGPT's release, including Zhang v. Chen, Reddy v. Saroya, and Ko v. Li.",
+        "No model is applied by the author; LLMs figure as the source of fabricated case citations that courts and regulators, from the Federal Court's disclosure regime to provincial law societies, are responding to.",
+        "Enforcement has hardened from early leniency toward personal cost awards and contempt proceedings, anchored in a non-delegable duty of human verification, with unresolved strain on self-represented litigants held to the same standard."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "legacy"
+      ],
+      "open_weights": true,
+      "salience": 35,
+      "edition": 11,
+      "validated": null,
+      "n": 1351
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7040861",
+      "doi": "10.2139/ssrn.7040861",
+      "title": "Four Types of LLM Reliance and Their Predictors Among Undergraduate Writers: A Mixed-Methods Study at a Minority-Serving R1 University",
+      "authors": [
+        "Shahin Hossain"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7040861",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Survey of 382 undergraduates at a public minority-serving R1 university, combined with 14 interviews and 396 open-ended responses on academic writing with generative AI.",
+        "No model is run and none is named; student reliance on LLMs is measured with a new survey typology rather than by frequency of use, which the author argues rewards dependence.",
+        "Four reliance types emerge, strategic at 34.3 percent and dependent at 4.5 percent; value and cost beliefs predict intensity of reliance while AI literacy predicts its type, and roughly 13 percent abstain on ethical grounds."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 38,
+      "edition": 11,
+      "models": [],
+      "validated": null,
+      "n": 1352
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6663398",
+      "doi": "10.2139/ssrn.6663398",
+      "title": "Red Teaming with Faith Leaders: Expanding Digital Safety and Accountability to Frontiers of Care",
+      "authors": [
+        "Nina Lutz",
+        "Eric Glen Weyl"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-05",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6663398",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Workshop with 11 faith leaders from Christian, Jewish, and Islamic traditions, paired with a computational audit, testing how a consumer chatbot handles spiritual guidance and crisis situations.",
+        "ChatGPT-5 is the system under test; the leaders act as red teamers probing for harms rather than the authors using a model for measurement.",
+        "Faith leaders surface vulnerabilities at the community level rather than the individual level, and the paper closes with guidance for bringing community leaders into red teaming work."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 41,
+      "edition": 11,
+      "validated": null,
+      "n": 1358
     },
     {
       "uid": "doi:10.2139/ssrn.6913179",
