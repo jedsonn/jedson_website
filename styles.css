@@ -141,6 +141,10 @@
 .tlist .meta{color:var(--secondary);}
 .tlist .title{color:var(--text);font-weight:500;}
 .tlist .yr{color:var(--accent);font-weight:600;}
+ol.tnum{list-style:decimal;padding-left:1.8rem;}
+ol.tnum li{padding-left:.4rem;}
+ol.tnum li::before{content:none;}
+ol.tnum li::marker{color:var(--accent);font-weight:600;font-size:.78rem;}
 .note{margin:.4rem 0 .2rem 1.1rem;font-size:.8rem;color:var(--text);background:#f6f9fc;border-left:2.5px solid #b5d4f4;padding:.4rem .65rem;border-radius:4px;}
 .note a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
 @media(max-width:640px){.yrow{grid-template-columns:46px 1fr;gap:.6rem;}}
