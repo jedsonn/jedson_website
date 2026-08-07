@@ -1,0 +1,35 @@
+name: Venue probe (recon; transient branch only)
+
+# One-off recon for a prospective project: counts education-venue metadata
+# yields via Crossref/OpenAlex. Lives on a side branch, dispatched manually,
+# results ride an orphan output branch. No article content fetched or stored.
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  probe:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+
+      - name: Run probe
+        run: python3 scripts_probe/probe_venues.py
+
+      - name: Push results to probe-out (orphan)
+        run: |
+          set -euo pipefail
+          git config user.name "probe-bot"
+          git config user.email "noreply@anthropic.com"
+          git checkout --orphan probe-out
+          git reset -q
+          git add -f probe-results.json
+          git commit -q -m "Venue probe results"
+          git push -f origin probe-out
