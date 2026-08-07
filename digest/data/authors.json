@@ -10593,7 +10593,7 @@
       {
         "name": "Burak Ozturan",
         "url": "https://openalex.org/A5139947781",
-        "inst": ""
+        "inst": "Universidad del Noreste"
       },
       {
         "name": "Christo Wilson",
@@ -10622,8 +10622,8 @@
       }
     ],
     "affiliations": [
-      "Northeastern University",
-      "Universidad del Noreste"
+      "Universidad del Noreste",
+      "Northeastern University"
     ]
   },
   "arxiv:2607.15134v1": {
@@ -17010,7 +17010,7 @@
       {
         "name": "Mahdi Sharaf Tadavani",
         "url": "https://openalex.org/A5138340171",
-        "inst": ""
+        "inst": "Islamic Azad University, Tehran"
       },
       {
         "name": "Ali Pirzad",
@@ -17019,6 +17019,7 @@
       }
     ],
     "affiliations": [
+      "Islamic Azad University, Tehran",
       "Islamic Azad University Yasuj"
     ]
   },
@@ -25729,12 +25730,12 @@
       {
         "name": "Lief Esbenshade",
         "url": "https://openalex.org/A5144283522",
-        "inst": ""
+        "inst": "University of Washington"
       },
       {
         "name": "Michael Xiao",
         "url": "https://openalex.org/A5144266861",
-        "inst": ""
+        "inst": "University of Washington"
       },
       {
         "name": "Victor Tian",
@@ -25749,7 +25750,7 @@
       {
         "name": "Kevin He",
         "url": "https://openalex.org/A5144290169",
-        "inst": ""
+        "inst": "University of Washington"
       }
     ],
     "affiliations": [
@@ -47063,10 +47064,12 @@
       {
         "name": "Tat-Seng Chua",
         "url": "https://openalex.org/A5144336514",
-        "inst": ""
+        "inst": "National University of Singapore"
       }
     ],
-    "affiliations": []
+    "affiliations": [
+      "National University of Singapore"
+    ]
   },
   "arxiv:2608.01193v1": {
     "authors": [
@@ -47158,6 +47161,197 @@
     "affiliations": [
       "Toshiba (Japan)",
       "Queen's University Belfast"
+    ]
+  },
+  "doi:10.2139/ssrn.7200240": {
+    "authors": [
+      {
+        "name": "Ridam Timilsina",
+        "url": "https://openalex.org/A5144423825",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "doi:10.2139/ssrn.7199998": {
+    "authors": [
+      {
+        "name": "RAJ TEJPAL KHATIK",
+        "url": "https://openalex.org/A5144041672",
+        "inst": "University of Warwick"
+      }
+    ],
+    "affiliations": [
+      "University of Warwick"
+    ]
+  },
+  "doi:10.2139/ssrn.7210620": {
+    "authors": [
+      {
+        "name": "Jian Sun",
+        "url": "https://openalex.org/A5144157114",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "doi:10.2139/ssrn.7155378": {
+    "authors": [
+      {
+        "name": "Alexander Mark",
+        "url": "https://openalex.org/A5123864737",
+        "inst": ""
+      },
+      {
+        "name": "Kathrin Gardhouse",
+        "url": "https://openalex.org/A5124001587",
+        "inst": "World Future Society"
+      }
+    ],
+    "affiliations": [
+      "World Future Society"
+    ]
+  },
+  "doi:10.2139/ssrn.7240158": {
+    "authors": [
+      {
+        "name": "Miguel Caro Alvárez",
+        "url": "https://openalex.org/A5144237308",
+        "inst": "Corporación Universitaria Rafael Nuñez"
+      },
+      {
+        "name": "Keiner Zuñiga Romero",
+        "url": "https://openalex.org/A5140348704",
+        "inst": "Corporación Universitaria Rafael Nuñez"
+      },
+      {
+        "name": "Jorge Orozco Heredia",
+        "url": "https://openalex.org/A5144455669",
+        "inst": ""
+      },
+      {
+        "name": "Salomon Garcia",
+        "url": "https://openalex.org/A5144460784",
+        "inst": ""
+      },
+      {
+        "name": "Andrés Ramírez Mackenzie",
+        "url": "https://openalex.org/A5144426492",
+        "inst": ""
+      },
+      {
+        "name": "Udualdo Herrera-García",
+        "url": "https://openalex.org/A5051190985",
+        "inst": "University of Cartagena"
+      }
+    ],
+    "affiliations": [
+      "Corporación Universitaria Rafael Nuñez",
+      "University of Cartagena"
+    ]
+  },
+  "doi:10.2139/ssrn.7237665": {
+    "authors": [
+      {
+        "name": "Sungsoo Kim",
+        "url": "https://openalex.org/A5135740864",
+        "inst": ""
+      },
+      {
+        "name": "Sangwu Park",
+        "url": "https://openalex.org/A5022605108",
+        "inst": ""
+      },
+      {
+        "name": "Taeseong Bang",
+        "url": "https://openalex.org/A5144451313",
+        "inst": ""
+      },
+      {
+        "name": "Ha Young Kim",
+        "url": "https://openalex.org/A5100635330",
+        "inst": "Yonsei University"
+      }
+    ],
+    "affiliations": [
+      "Yonsei University"
+    ]
+  },
+  "arxiv:2608.03413v1": {
+    "authors": [
+      {
+        "name": "Zuojun Max Shen",
+        "url": "https://openalex.org/A5121642362",
+        "inst": ""
+      },
+      {
+        "name": "Yuan Qu",
+        "url": "https://openalex.org/A5144455597",
+        "inst": ""
+      },
+      {
+        "name": "Pujun Zhang",
+        "url": "https://openalex.org/A5010515648",
+        "inst": "Education University of Hong Kong"
+      },
+      {
+        "name": "Anbang Liu",
+        "url": "https://openalex.org/A5079665471",
+        "inst": "Chinese University of Hong Kong"
+      },
+      {
+        "name": "Yunhao Liang",
+        "url": "https://openalex.org/A5144372026",
+        "inst": "Education University of Hong Kong"
+      }
+    ],
+    "affiliations": [
+      "Education University of Hong Kong",
+      "Chinese University of Hong Kong"
+    ]
+  },
+  "doi:10.2139/ssrn.7239480": {
+    "authors": [
+      {
+        "name": "Ying Liu",
+        "url": "https://openalex.org/A5144437607",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "arxiv:2608.02909v1": {
+    "authors": [
+      {
+        "name": "Nathan Canen",
+        "url": "https://openalex.org/A5144458032",
+        "inst": ""
+      },
+      {
+        "name": "Ted Enamorado",
+        "url": "https://openalex.org/A5083198627",
+        "inst": "University of North Carolina at Chapel Hill"
+      }
+    ],
+    "affiliations": [
+      "University of North Carolina at Chapel Hill"
+    ]
+  },
+  "doi:10.2139/ssrn.7172778": {
+    "authors": [
+      {
+        "name": "Sudheer Vankayala",
+        "url": "https://openalex.org/A5138582905",
+        "inst": "Asia Pacific University of Technology & Innovation"
+      },
+      {
+        "name": "Preethi Subramanian",
+        "url": "https://openalex.org/A5084666059",
+        "inst": "Asia Pacific University of Technology & Innovation"
+      }
+    ],
+    "affiliations": [
+      "Asia Pacific University of Technology & Innovation"
     ]
   }
 }
