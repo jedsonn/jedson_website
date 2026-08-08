@@ -1,0 +1,49 @@
+{
+  "edition": 17,
+  "date": "2026-08-08",
+  "window": [
+    "2026-08-01",
+    "2026-08-08"
+  ],
+  "sources": [
+    {
+      "id": "crossref_ssrn",
+      "name": "SSRN",
+      "status": "ok",
+      "raw": 12008
+    },
+    {
+      "id": "crossref_nber",
+      "name": "NBER",
+      "status": "ok",
+      "raw": 1338
+    },
+    {
+      "id": "arxiv_qfin",
+      "name": "arXiv q-fin",
+      "status": "ok",
+      "raw": 35
+    },
+    {
+      "id": "arxiv_econ",
+      "name": "arXiv econ",
+      "status": "ok",
+      "raw": 87
+    },
+    {
+      "id": "arxiv_cs_finance",
+      "name": "arXiv cs, finance filtered",
+      "status": "ok",
+      "raw": 180
+    },
+    {
+      "id": "openalex_recent",
+      "name": "OpenAlex sweep",
+      "status": "failed",
+      "raw": 0,
+      "error": "GET failed after 2 attempts: https://api.openalex.org/works (None)"
+    }
+  ],
+  "raw": 13648,
+  "kept": 633
+}
