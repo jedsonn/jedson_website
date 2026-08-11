@@ -1,8 +1,650 @@
 {
-  "generated": "2026-08-07",
-  "edition": 16,
-  "count": 2116,
+  "generated": "2026-08-11",
+  "edition": 17,
+  "count": 2162,
   "papers": [
+    {
+      "uid": "doi:10.2139/ssrn.7227319",
+      "doi": "10.2139/ssrn.7227319",
+      "title": "AI Agents and Prompt Engineering in Econometric Coding",
+      "authors": [
+        "Sebastian Galiani",
+        "Raul A. Sosa",
+        "Federico Lopez"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7227319",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "A benchmark of applied econometric and statistical coding tasks, each attempted in Stata, R and Python; the number of tasks is not stated.",
+        "Claude Sonnet 4.6 and GPT-5.4 through Codex wrote the code as a plain chatbot and as a constrained agent that runs and revises its own scripts, under zero shot and few shot prompts, scored by task success.",
+        "Success climbed from 74 to 96 percent when the chatbot gave way to the constrained agent, at roughly eight cents more per run; few shot prompting helped only the chatbot, and the gap between statistical packages closed under the agent."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "benchmark of applied econometric tasks, task success rate reported",
+      "salience": 78,
+      "edition": 17,
+      "n": 2123
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7220618",
+      "doi": "10.2139/ssrn.7220618",
+      "title": "AI-Powered Financial Translation Layer A Framework for Translating Financial Data into Role-Specific Business Insights for SMEs",
+      "authors": [
+        "Maria Habib"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7220618",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Small and medium sized firms whose managers read financial statements without a finance business partner; the paper designs a survey of such managers but gathers nothing from real respondents.",
+        "A proposed software layer sits between the accounting system and the user and rewrites structured statements as commentary pitched at a named role. No model is named, run, or checked.",
+        "The reported correlations, regressions, t tests, and analysis of variance are illustrative constructions rather than findings, and the paper sets out the collection that would test the three hypotheses."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 21,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2128
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7229001",
+      "doi": "10.2139/ssrn.7229001",
+      "title": "Bridging Industrial Engineering and Agentic AI: Integrating Operations Research Methods for Uncertainty-aware and Verifiable Spatial Decision Support",
+      "authors": [
+        "Haowen Xu",
+        "Qinghua Lu",
+        "Xueping Li",
+        "Ziwei Liu",
+        "Xiao-Ying Yu",
+        "Liming Zhu"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7229001",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Book chapter on geospatial decision support for urban and environmental management, working from existing agentic prototypes with no experiment, sample, or evaluation.",
+        "No model is run or named. Language model agents are given problem formulation and scenario generation, while linear, mixed integer, stochastic, and robust solvers compute and verify the decision.",
+        "Argues these systems return plausible but generic advice because variables, objectives, and constraints stay latent, and that an explicit optimisation layer is what restores feasibility, optimality, and reproducibility guarantees."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 27,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2129
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7240520",
+      "doi": "10.2139/ssrn.7240520",
+      "title": "The FICO Blind Spot: Why LLMs Hallucinate When Credit Gets Real",
+      "authors": [
+        "Athresh Guruprakash"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7240520",
+      "field": "finance",
+      "role": "object",
+      "bullets": [
+        "Consumer credit assessment in the United States, where 32 million adults hold no scoreable file and about 3 billion do worldwide; the evidence base is vendor products and published benchmarks, not new data.",
+        "No model is run or named here. Failure rates of 15 to 52 percent on structured financial analysis are carried over from existing benchmarks, in which four of six leading models invented figures from incomplete documents.",
+        "Maps six alternative data types to specific compliance failure modes, pairs each with a control already sold by a named provider, and proposes a seven layer architecture with deterministic preprocessing and ECOA proxy filters."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 36,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2130
+    },
+    {
+      "uid": "arxiv:2608.09925v1",
+      "arxiv_id": "2608.09925v1",
+      "title": "From Values to Benchmarks: Evaluating Large Language Models for Governmental Use in Dutch",
+      "authors": [
+        "Laurens Samson",
+        "Iva Gornishka",
+        "Gossa Lô",
+        "Yuki M. Asano",
+        "Sennay Ghebreab"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09925v1",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Six evaluation dimensions were fixed with a large Dutch municipal organisation through an advisory board, user research and a survey of civil servants using its chatbot.",
+        "More than 30 multilingual and Dutch models were scored on factuality, honesty, social bias, energy use, cost and training data transparency; no individual model is named in the abstract.",
+        "No model led on every dimension. Higher answer quality came with higher energy use and cost, bias moved independently of both, and factuality did not predict honesty."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "benchmark suite scoring factuality and honesty against reference answers, no figures in abstract",
+      "salience": 46,
+      "edition": 17,
+      "models": [],
+      "n": 2137
+    },
+    {
+      "uid": "arxiv:2608.09790v1",
+      "arxiv_id": "2608.09790v1",
+      "title": "CARD: Controlled Agentic Reddit Discussions for Credit Card Simulation",
+      "authors": [
+        "Yaoning Yu",
+        "Kai-Min Chang",
+        "Ye Yu",
+        "Yi-Chia Wang",
+        "Haojing Luo",
+        "Haohan Wang"
+      ],
+      "posted": "2026-08-10",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.09790v1",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Real Reddit threads about credit cards, each paired with the post that started it, serve as the target that generated discussion threads must reproduce.",
+        "A planner fixes reply structure, comment function, stance and tone, a writer produces the thread, and a calibration loop adjusts comment populations; the paper says only that several language models were tried.",
+        "Generated threads sit closer to the real ones than simulation baselines on lexical, semantic, behavioural and structural metrics, with smaller effect sizes and distribution distances; no absolute figures are given."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "generated threads compared with matched real Reddit threads on lexical, semantic, behavioural and structural metrics",
+      "salience": 48,
+      "edition": 17,
+      "models": [],
+      "n": 2140
+    },
+    {
+      "uid": "arxiv:2608.08634v1",
+      "arxiv_id": "2608.08634v1",
+      "title": "Can Open-Weight Models Compete on Financial Text Comprehension?",
+      "authors": [
+        "Jan Spörer"
+      ],
+      "posted": "2026-08-09",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08634v1",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "The Financial Touchstone benchmark, updated to 2,967 question, context and answer triplets taken from 495 annual reports of companies across several countries.",
+        "Twenty models from ten providers answered each item, among them GLM 5, Kimi K2.6, DeepSeek V3.2, Qwen3 Max, Claude Opus 4.6 and Gemini 2.5 Pro, scored for accuracy and hallucination against the labelled answers.",
+        "Claude Opus 4.6 led accuracy at 88.4 percent and Gemini 2.5 Pro hallucinated least at 0.08 percent, with open weight Kimi K2.6 third; retrieval failures caused 48.9 percent of errors."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gemini",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "Financial Touchstone labelled triplets, accuracy and hallucination rate",
+      "salience": 72,
+      "edition": 17,
+      "n": 2121
+    },
+    {
+      "uid": "arxiv:2608.08601v1",
+      "arxiv_id": "2608.08601v1",
+      "title": "Unaccountable Delegation, Fading Skills: Mapping the Risks of Workplace AI Agents",
+      "authors": [
+        "Gabriele La Malfa",
+        "Lakmal Meegahapola",
+        "Edyta Bogucka",
+        "Jie M. Zhang",
+        "Michael Luck",
+        "Elizabeth Black",
+        "Daniele Quercia"
+      ],
+      "posted": "2026-08-09",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.08601v1",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Descriptions of 2,078 job tasks from the O*NET database, expanded into 8,356 risk scenarios labelled by severity and by whether the agent automates or augments the task.",
+        "A structured prompt encoding an agent, goal and environment framework generated the scenarios, then 45 workers across 10 roles and a separate model judge reviewed them; no model is named.",
+        "Erroneous agent actions form the largest and most severe risk group, automation maps mainly to organisational risk while augmentation maps to worker risk such as skill erosion, and workers preferred the new taxonomy in 64 percent of non-tied comparisons."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "validation_note": "45 workers and a model judge reviewed the generated scenarios, no agreement statistic reported",
+      "salience": 56,
+      "edition": 17,
+      "models": [],
+      "n": 2139
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7214201",
+      "doi": "10.2139/ssrn.7214201",
+      "title": "Harnessing the Wisdom of LLM Crowds Through Complementarity-Driven Iterative Collaboration",
+      "authors": [
+        "Yanbin Fang",
+        "Xuan Wei",
+        "Wei Chen"
+      ],
+      "posted": "2026-08-08",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7214201",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Four public benchmarks stand in for enterprise problem solving; no firm data, deployment, or sample period is described.",
+        "Heterogeneous models refine a single answer in relay, with one gate choosing the next model against the bottleneck in the current output and a second gate discarding transitions that fail to improve it. GPT-5.2 is the named comparison.",
+        "The relay matches GPT-5.2 average benchmark performance at roughly one seventh the estimated cost per query, and beats self refinement, ensembles, and query routing; no accuracy figures appear in the abstract."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "four labelled public benchmarks against single model, ensemble, and routing baselines, figures not given",
+      "salience": 50,
+      "edition": 17,
+      "n": 2127
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7200918",
+      "doi": "10.2139/ssrn.7200918",
+      "title": "Systematic Execution Failures of LLM Delegates in RFQ Markets",
+      "authors": [
+        "Anqi Peter Li",
+        "Ethan Yip",
+        "Kundana Kommini",
+        "Li Yu Chen"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7200918",
+      "field": "finance",
+      "role": "agent",
+      "bullets": [
+        "Simulated multi dealer request for quote auctions on a price ladder, with fourteen instruction tuned model caches, nine of them open weight from 3.8B to 72B parameters, choosing quotes for a principal.",
+        "Each delegate picked from an adversarially ordered menu; choices were scored against the least cost action, against a calibrated rational reference, and by a calibration free price ranking statistic.",
+        "Delegates surrendered 3.8 to 9.4 basis points of expected execution cost, of which 0.6 to 6.5 exceeds the calibration artifact; one instruction sentence cut Qwen 2.5 32B harm from 5.83 to 4.96 bps."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "least-cost action and calibrated rational reference, gaps in basis points",
+      "salience": 76,
+      "edition": 17,
+      "n": 2117
+    },
+    {
+      "uid": "arxiv:2608.07446v1",
+      "arxiv_id": "2608.07446v1",
+      "title": "Taxonomy-Driven Analysis of Open-Source AI Risk Mitigation Tools",
+      "authors": [
+        "Afreen Alam",
+        "Evgenija Popchanovska",
+        "Ana Gjorgjevikj",
+        "Maryan Rizinski",
+        "Lubomir T. Chitkushev",
+        "Irena Vodenska",
+        "Dimitar Trajanov"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07446v1",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "Twenty one open source tools for model evaluation, adversarial testing, guardrails and observability, set against the 32 subcategories of the extended MIT AI risk mitigation and response taxonomy.",
+        "A retrieval augmented pipeline, model family not stated, read each tool's source code and documentation and extracted capabilities per category; three independent reviewers checked the labels at Fleiss kappa 0.509.",
+        "Tool coverage clusters on technical and operational controls, leaving governance, legal, regulatory and financial controls largely unaddressed; the mapping protocol reached F1 of 75.5 percent after majority voting."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "three human reviewers, Fleiss kappa 0.509, mapping F1 75.5 percent",
+      "salience": 52,
+      "edition": 17,
+      "models": [],
+      "n": 2119
+    },
+    {
+      "uid": "arxiv:2608.06955v1",
+      "arxiv_id": "2608.06955v1",
+      "title": "Critical Acclaim Orientation in Large Language Models: Evidence from Film Preference Elicitation",
+      "authors": [
+        "Jonghyun Jee",
+        "Aaron Shaw"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06955v1",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Two hundred films sorted into critically acclaimed, commercially successful, and both at once, put to eight models drawn from the Anthropic, OpenAI, Alibaba and Mistral families.",
+        "Each model made 20,000 forced choices between film pairs, scaled with Bradley Terry estimation, then nested OLS separated evaluative orientation, public visibility and popular reception.",
+        "All eight preferred acclaimed but obscure titles over popular but unrecognized ones, more strongly at larger scale; controlling for visibility reverses the edge of dual legitimacy films, and recommendation framing reorders the rankings."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt",
+        "open_other"
+      ],
+      "open_weights": true,
+      "salience": 48,
+      "edition": 17,
+      "validated": null,
+      "n": 2120
+    },
+    {
+      "uid": "arxiv:2608.07208v1",
+      "arxiv_id": "2608.07208v1",
+      "title": "Measuring Concept Content in Text from LLM Activations: ESG Evidence from Concept Vectors and Linear Probes",
+      "authors": [
+        "Luc Hazenoot",
+        "Zhaochun Ren",
+        "Amirhossein Zohrehvand"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.07208v1",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Financial text carrying human annotations for environmental, social and governance content serves as the test bed for measuring how much a document is about a given concept.",
+        "Activations of frozen models, family not stated, were read with linear probes and with recursive feature machine concept vectors, then compared against embeddings, surface measures, a fine tuned classifier, and the model's own stated answer.",
+        "The best probe came within 0.6 percentage points of the fine tuned classifier with no task specific training and beat the model's own answer in eleven of twelve comparisons; probes also beat the concept vectors."
+      ],
+      "bullet_provenance": "ai",
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "human-annotated ESG labels and a fine-tuned domain classifier, accuracy compared",
+      "salience": 66,
+      "edition": 17,
+      "models": [],
+      "n": 2122
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7203138",
+      "doi": "10.2139/ssrn.7203138",
+      "title": "Green AI Beyond Operational Energy GAILA: A Lifecycle-Oriented Environmental Reporting and Decision-Support Framework for Large Language Models Conceptual Article / Working Paper",
+      "authors": [
+        "Alyaa Sabri Awadh"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7203138",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Conceptual working paper with no dataset and no empirical test; the unit of analysis is a deployed language model system across its supply chain and service life.",
+        "No model is run or named. The framework sorts environmental evidence into six lifecycle stages, from chip fabrication to hardware disposal, and demands a stated boundary, functional unit, and evidence provenance.",
+        "Rejects a single sustainability score in favour of a multidimensional profile that names hotspots, excluded stages, and uncertainty alongside accuracy, throughput, latency, and memory."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 31,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2124
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7201826",
+      "doi": "10.2139/ssrn.7201826",
+      "title": "\"Numbers Don't Speak for Themselves\": Words, Narrative, and Storytelling in Financial Decision-making",
+      "authors": [
+        "Mark Rzepczynski"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7201826",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Conceptual essay on investment decision making with no sample, period, or estimation; it works from the positive and normative finance literatures on narrative and sentiment.",
+        "No model is run and none is named. Language models enter only as the current tooling for turning text into sentiment signals that researchers link to asset returns.",
+        "Argues the channel running from words to investor behaviour stays unexamined, so measured textual signals now outrun any account of why narrative moves risk and return expectations."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 29,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2125
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7241998",
+      "doi": "10.2139/ssrn.7241998",
+      "title": "Simulating Firm Decision Making with LLMs: A Scalable Experimental Framework for Strategy Research",
+      "authors": [
+        "Han Jiang",
+        "Xiaoran Ma",
+        "Jing Wu"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7241998",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Two simulated strategy experiments, one on research and development spending and one on facility allocation, with each agent carrying a firm specific context profile; sample size not stated.",
+        "Language model agents stand in for corporate executives and choose under both a baseline and a shock condition; the model family is never named, and face validity rests on asserted convergence with actual firm choices rather than a reported statistic.",
+        "Within agent differences reproduce the treatment effects that difference in differences estimates recover from real data, in both settings."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "convergence with actual firm decisions and real world difference in differences estimates, no agreement statistic given",
+      "salience": 66,
+      "edition": 17,
+      "models": [],
+      "n": 2126
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7201722",
+      "doi": "10.2139/ssrn.7201722",
+      "title": "Generative AI and Risk Perception: Evidence from Risk-Factor Disclosures",
+      "authors": [
+        "Giulia Redigolo",
+        "Niccolo' Marcarini"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7201722",
+      "field": "accounting",
+      "role": "object",
+      "bullets": [
+        "Item 1A risk factor sections of US 10-K filings from 2019 to 2024, with the November 2022 release of ChatGPT used as the shock that shifts how much of the text machines write.",
+        "A sentence level AI detector, unnamed and with no reported accuracy check, scores each section for machine written text. Which model filers themselves used is not observed.",
+        "Sections with more detected AI text draw weaker filing date responses, with smaller absolute abnormal returns, lower volume, and lower post filing volatility, and the text is shorter, more standardised, and less tied to firm specific shocks."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": false,
+      "salience": 72,
+      "edition": 17,
+      "n": 2135
+    },
+    {
+      "uid": "arxiv:2608.06949v1",
+      "arxiv_id": "2608.06949v1",
+      "title": "Does Splitting a Triage Decision Across Agents Hide Bias or Help Catch It? A Multi-Agent Simulation Study of LLM-Based Resource Allocation Under Audit Capacity Constraints",
+      "authors": [
+        "Paul-Peter Arslan"
+      ],
+      "posted": "2026-08-07",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.06949v1",
+      "field": "management",
+      "role": "agent",
+      "bullets": [
+        "Synthetic disaster triage simulator with case pairs identical except for one demographic attribute, 192 episodes and 2,304 resolved pairs, pitting a single decision maker against a nine agent assessment, allocation, and audit pipeline.",
+        "GPT-4o-mini fills every role in both conditions. Bias is read off outcome differences within clinically identical pairs, and no comparison against human triage decisions is reported.",
+        "Splitting the decision changes little, 6.9 against 6.1 percent biased outcomes. Audit capacity drives detection: 30 percent of biased cases go uncaught, 43.8 percent under auditor overload, and risk ordered queues lift coverage from 65.6 to 91.7 percent."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 48,
+      "edition": 17,
+      "validated": null,
+      "n": 2136
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7180420",
+      "doi": "10.2139/ssrn.7180420",
+      "title": "An Empirical Evaluation of LLM-Augmented SAST for False Positive Mitigation in Financial Core-Banking Systems",
+      "authors": [
+        "Martin Gunner",
+        "Mckenzie Curtis"
+      ],
+      "posted": "2026-08-06",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7180420",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Static analysis security alerts from public benchmark suites and live core banking codebases, triaged in experiments run through 2024 inside regulated financial institutions.",
+        "GPT-4o, GPT-3.5 Turbo and Llama 3.1 70B sat as a post processing triage layer over each alert, scored by F1 against labelled true and false positives.",
+        "Hybrid pipelines reached F1 of 0.91 to 0.95 against 0.10 to 0.55 for the scanner alone; GPT-4o cleared 80 of 128 false positives while keeping every true positive, and weakened when code context was partial."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt",
+        "llama"
+      ],
+      "open_weights": false,
+      "validated": true,
+      "validation_note": "labelled benchmark and banking findings, F1 0.91 to 0.95",
+      "salience": 44,
+      "edition": 17,
+      "n": 2118
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7235878",
+      "doi": "10.2139/ssrn.7235878",
+      "title": "LLM Agents in Transportation-enabled Service Platforms: From Behavioral Simulation to Platform Decision Support",
+      "authors": [
+        "Te Xu",
+        "Linxuan Shi",
+        "Haoting Zhang",
+        "Yunduan Lin",
+        "Hansheng Jiang",
+        "Donglin Zhan",
+        "Xiangyu Li",
+        "Zhaomiao Guo",
+        "Qixiu Cheng",
+        "Zuo-Jun Max Shen"
+      ],
+      "posted": "2026-08-06",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7235878",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Survey of transportation enabled service platforms, ride hailing, food and grocery delivery and crowdsourced logistics, reading classical operations research baselines alongside industrial systems at Meituan, DiDi, Instacart, Uber Freight and DoorDash.",
+        "No model is run or named. The review separates behavioural agents that simulate customer, driver and merchant responses from operational agents that turn documents, complaints and regulations into structured inputs.",
+        "Production evidence sits in semantic workflow layers such as customer service, catalogue and query understanding and internal analytics, while public evidence of deployment on real-time dispatch or pricing stays limited."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 45,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2160
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7194958",
+      "doi": "10.2139/ssrn.7194958",
+      "title": "Toward a Cognitive Enterprise",
+      "authors": [
+        "Mark Moran"
+      ],
+      "posted": "2026-08-06",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7194958",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Conceptual paper on the firm as a system that converts environmental signal into stakeholder value, extending transaction cost and knowledge based theory. No sample and no empirical test.",
+        "No model is run or named. Language models appear as one of the forces driving the cost of explicit, context free cognitive work toward zero.",
+        "Proposes a five layer cognitive stack split by a context frontier, and argues firm boundaries now rest on governing tacit knowledge and wisdom that cannot be exported rather than on transactional friction."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 30,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2161
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7192658",
+      "doi": "10.2139/ssrn.7192658",
+      "title": "Rank Order is Mostly Noise Confidence Intervals for Brand Visibility in AI Answer Engines, and a Failure of The Citation-Extraction Layer",
+      "authors": [
+        "Logan Adams"
+      ],
+      "posted": "2026-08-06",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7192658",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "4,497 answers covering 9 B2B software categories and 90 products, collected from 5 AI answer engines using 10 pre-registered buyer prompts, each run 10 times per engine.",
+        "The five engines are not named. Answers are parsed for which brands they recommend, every share estimate carries a 95 percent confidence interval, and the citation extraction layer is audited rather than assumed.",
+        "In 6 of 9 categories the top product is not separable from the second, leaders cluster between 16.4 and 25.0 percent share, and 39 percent of extracted citations resolved to redirect wrappers."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 60,
+      "edition": 17,
+      "models": [],
+      "n": 2162
+    },
     {
       "uid": "doi:10.2139/ssrn.7236301",
       "doi": "10.2139/ssrn.7236301",
@@ -241,6 +883,336 @@
         "Corporación Universitaria Rafael Nuñez",
         "University of Cartagena"
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7159639",
+      "doi": "10.2139/ssrn.7159639",
+      "title": "Liar, Liar, LLM on Fire? Honesty Under Asymmetric Information in Large Language Models",
+      "authors": [
+        "Julia Schwarz",
+        "Florian Gärtner"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7159639",
+      "field": "economics",
+      "role": "agent",
+      "bullets": [
+        "Seven frontier models play a die roll reporting game adapted from Fischbacher and Follmi-Heusi, 259,000 pre-registered trials across three paradigms that vary whether the roll is imaginary, tool drawn, or code drawn.",
+        "The paper does not name the seven models. Each reports a die outcome that sets its own payoff, while honesty instructions, personas, stakes and the instruction hierarchy are varied.",
+        "In the verbal setting 55 percent of control reports name the payoff maximising value against a 16.7 percent benchmark; a genuine draw nearly ends misreporting, and stakes from 5 to 3,000,000 euros change little."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 78,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2148
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7166138",
+      "doi": "10.2139/ssrn.7166138",
+      "title": "What Do Firm-Level AI Measures Measure? Disclosure, Selection, and the Employment Effects of Generative AI",
+      "authors": [
+        "Trung Nguyen",
+        "Bao Doan"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7166138",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "Panel of large US public firms at Russell 3000 scale, fiscal 2018 to 2025, with a generative AI disclosure measure built from 10-K text and occupation level exposure to the November 2022 ChatGPT shock.",
+        "An unnamed language model re-reads the filings to audit the keyword based measure. No comparison against hand coding and no agreement statistic is reported.",
+        "A quarter of flagged firm-years mention generative AI only as a risk, and the negative adoption-employment correlation disappears under a predetermined exposure design, leaving no net displacement through fiscal 2025."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "validated": false,
+      "salience": 68,
+      "edition": 17,
+      "n": 2149
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7222978",
+      "doi": "10.2139/ssrn.7222978",
+      "title": "AI Honesty: A Theoretical Framework for Conceptualizing, Operationalizing, and Measuring the Relationship of Large Language Models with Truth",
+      "authors": [
+        "Majid Tavakolian"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7222978",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Conceptual analysis and a structured review of the AI ethics literature, covering hallucination, fabricated sources, false confidence, sycophancy and failure to correct. No sample and no empirical test.",
+        "The authors run no model. They recast these failures as one construct with five components: epistemic honesty, truth representation, uncertainty disclosure, resistance to sycophancy, and correctability.",
+        "Proposes an AI Honesty Index as a composite measure for evaluating models and grounding standards and regulation. No scores or benchmark results are reported."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 26,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2150
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7199920",
+      "doi": "10.2139/ssrn.7199920",
+      "title": "Ten Rules for Deploying Large Language Models in Official Statistics",
+      "authors": [
+        "Ahmed Tarek Hammad",
+        "Giulio  Valentino Dalla Riva"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7199920",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "Guidance for national statistical offices, framed against the Fundamental Principles of Official Statistics and the European Statistics Code of Practice. No sample and no empirical test.",
+        "No model is named or run. The rules confine the model to a monitoring role that observes, corrects bounded deviations, flags and reports, while humans keep method choice and interpretation.",
+        "Sets out ten rules and an adoption frontier that weighs the cost of a model error against the cost of not adopting, mapped onto the Generic Statistical Business Process Model."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 45,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2151
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7172078",
+      "doi": "10.2139/ssrn.7172078",
+      "title": "The Uncanny Valley of AI Phishing: Over-Precision as a Forensic Detection Paradigm in the LLM Era",
+      "authors": [
+        "Praveen Singh"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7172078",
+      "field": "other",
+      "role": "object",
+      "bullets": [
+        "Annotated corpus of 380 Indian financial phishing and control texts: 186 human fraud messages, 86 authentic institutional messages, and 108 generated across nine language model platforms.",
+        "The nine platforms are not named. They produced the synthetic phishing texts, while detection rests on lexical variety statistics rather than a model, with corpus labels as ground truth.",
+        "Machine texts show a mean type-token ratio of 0.978 against 0.927 for authentic messages, and a 0.94 threshold flags 33 of 36 machine texts, 91.7 percent."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 32,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2152
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7187298",
+      "doi": "10.2139/ssrn.7187298",
+      "title": "Data Governance as a Decision Variable: A Model-Driven Decision Support System for Budget Allocation in Generative AI Adoption",
+      "authors": [
+        "Almudena Recio Román",
+        "Manuel Recio Menéndez",
+        "María Victoria Román-González"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7187298",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Analytical optimisation model evaluated by simulation over two calibrated organisational profiles. No firm sample; the unit is a hypothetical firm splitting budget between information quality and intensity of use.",
+        "No language model is run or named. Generative AI enters as a decision variable whose value and cost both move with data quality, with human oversight priced through a convexity term.",
+        "For the fragmented data profile the conventional static formulation over-uses the technology by 27.8 percent and turns an expected profit of 32.0 units into a loss of 36.7, against 8.4 under the proposed rules."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 35,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2153
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7232619",
+      "doi": "10.2139/ssrn.7232619",
+      "title": "LLM-Computed Contextual Surprisal in Financial News: Associations with Market Repricing",
+      "authors": [
+        "Geon Kim"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7232619",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "4.48 million deduplicated English news headlines from the public FNSPID dataset, 2014 to 2023, aggregated to daily scores, with 2014 to 2020 for development and 2021 to 2023 held out.",
+        "Qwen 3.5-9B scores how far each headline departs from the recent news environment, paired headline by headline with FinBERT sentiment. Gemma and Llama reproduce the scores, but no human benchmark is used.",
+        "Days carrying more unexpectedly negative wording come with a larger VIX increase, lower SPY returns and higher abnormal SPY dollar volume, same day and surviving false discovery rate adjustment in both samples."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "legacy",
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "salience": 62,
+      "edition": 17,
+      "n": 2154
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7162638",
+      "doi": "10.2139/ssrn.7162638",
+      "title": "Moving Targets: Promissory Instability in the Pricing and Access Terms of Generative AI Subscription Services (2024-2026)",
+      "authors": [
+        "Jose David Gonzalez"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7162638",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Seventeen documented episodes of post-purchase changes to price, usage limits and access terms at four providers, Anthropic, OpenAI, Microsoft and Moonshot AI, between October 2024 and July 2026.",
+        "No model is run. Named subscription products such as Claude Max and Copilot are the object, and the evidence is dated public announcements, press coverage, community bug trackers and two legal actions.",
+        "Changing terms after purchase runs across the industry in both directions, and formal complaints cluster where the change is commercially driven and communicated in unmanaged or shifting terms."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "claude",
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 40,
+      "edition": 17,
+      "validated": null,
+      "n": 2155
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7147359",
+      "doi": "10.2139/ssrn.7147359",
+      "title": "Consumer AI and Exploitation of Information-processing Frictions",
+      "authors": [
+        "Menglong Guan"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7147359",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "Theory model of a market where firms exploit consumers' information processing frictions and consumers can adopt language model tools. No data and no empirical sample.",
+        "No model is run or named. Language models enter as a capability that raises the share of expert consumers, which firms can degrade through adversarial investment.",
+        "Exploitation relocates rather than disappearing. Firms exploit maximally until expert consumers tip them into competing on product value, then an arms race arises, peaks and fades as tools improve, and can cancel consumer gains when adversarial investment is cheap."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 48,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2156
+    },
+    {
+      "uid": "arxiv:2608.05224v2",
+      "arxiv_id": "2608.05224v2",
+      "title": "Small Foundation Models of Human Cognition and Behaviour",
+      "authors": [
+        "Nick Oh",
+        "Fernand Gobet"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.05224v2",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "Psych-101, a set of 10.7 million trial-level human choices from 160 experiments, used to fine-tune fourteen models from 135M to 14B parameters across four architecture families that the paper does not name.",
+        "The fine-tuned models predict the choices of held-out participants. Diagnostics strip instructions, stimuli, feedback and choice history across 27 experiments and permute trial order to show what the models use.",
+        "In distribution, 0.6B to 1B parameters already match a 70B baseline, while out of distribution larger models generalise better; masking stimuli and feedback removes 75.7 percent of learned information and drops models below chance."
+      ],
+      "bullet_provenance": "ai",
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "held-out human participants in Psych-101",
+      "salience": 52,
+      "edition": 17,
+      "models": [],
+      "n": 2157
+    },
+    {
+      "uid": "arxiv:2608.04570v1",
+      "arxiv_id": "2608.04570v1",
+      "title": "The Personalization Mirage: How LLMs Fabricate User Profiles, and Why Self-Monitoring Misleads",
+      "authors": [
+        "Yushi Sun",
+        "Yanjie Zhang",
+        "Rui Sheng"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04570v1",
+      "field": "other",
+      "role": "method",
+      "bullets": [
+        "MirageBench pairs 150 synthetic personas, balanced across stereotypical, counter-stereotypical and neutral profiles, with six personalization tasks, yielding 143,616 judged claims from 12 models in seven families.",
+        "An independent judge sorts each claim into a four-way faithfulness taxonomy, checked against a blind human annotator on 400 claims at Cohen's kappa 0.863. The 12 models are not named.",
+        "Every model invents user attributes on 35 to 49 percent of its claims, and self-assessed rates rank negatively against judged rates, rho -0.60, so self-report misleads when comparing models."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "blind human annotator on 400 claims, Cohen's kappa 0.863",
+      "salience": 47,
+      "edition": 17,
+      "models": [],
+      "n": 2158
+    },
+    {
+      "uid": "arxiv:2608.04374v1",
+      "arxiv_id": "2608.04374v1",
+      "title": "FinReportBench: Measuring and Improving Institution-Grade Financial Report Generation",
+      "authors": [
+        "Yinghao Tang",
+        "Tan Zhenwei",
+        "Yiyao Wang",
+        "Wanli Gu",
+        "Xiaolu Zhang",
+        "Jun Zhou",
+        "Wei Chen"
+      ],
+      "posted": "2026-08-05",
+      "added": "2026-08-11",
+      "source_label": "arXiv",
+      "url": "https://arxiv.org/abs/2608.04374v1",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "244 bilingual Chinese and English report writing tasks drawn from 10,000 balanced financial research source records, each separating the public query, a reconstructed research trajectory and a hidden source packet.",
+        "Nine unnamed model families write the reports and three judge families score them against a 35-item rubric built from expert partial orders; the judges reproduce the expert ordering at near-ceiling rates, figures not stated.",
+        "Basic deliverability is close to saturated while report identity and institutional completeness lag; distilling recurrent failures into reusable constraints lifts mean G1 by 33.85 points and mean G2 by 13.83."
+      ],
+      "bullet_provenance": "ai",
+      "validated": true,
+      "validation_note": "expert partial orders reproduced by three judge families, rate not stated",
+      "salience": 55,
+      "edition": 17,
+      "models": [],
+      "n": 2159
     },
     {
       "uid": "arxiv:2608.05367v1",
@@ -564,6 +1536,173 @@
       "affiliations": [
         "University of Warwick"
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7159578",
+      "doi": "10.2139/ssrn.7159578",
+      "title": "A Conceptual Reference Architecture for Closed-Loop Intelligent Data Quality Governance",
+      "authors": [
+        "Hadi Fadlallah"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7159578",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "Conceptual paper with no data and no evaluation, proposing a reference architecture for data quality governance across sensing, planning, validation, verification, execution, explanation, and feedback stages.",
+        "No model is run and no family is named. Language models, retrieval augmented generation, and agentic components sit inside the design as the probabilistic reasoning layer of the pipeline.",
+        "The central claim is that probabilistic reasoning must stay separate from deterministic executable validation to keep results auditable, with policy aware orchestration and reusable organisational memory as further requirements."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 25,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2134
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7230435",
+      "doi": "10.2139/ssrn.7230435",
+      "title": "Structural Supply and User Perceptions Shape EV Charging Satisfaction",
+      "authors": [
+        "Hongli Zhang",
+        "Yi Ke",
+        "Xingju Zhong"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7230435",
+      "field": "management",
+      "role": "instrument",
+      "bullets": [
+        "391 charging service complaint texts from four Chinese cities, joined with accessibility measures built from points of interest and road network data.",
+        "Unnamed large language models scored sentiment and assigned topics to each complaint, and those variables entered a structural equation model; no check against human coding is reported.",
+        "Denser charging supply goes with lower satisfaction, safety perceptions weigh heaviest among the perception channels, and supply and perceptions act through parallel rather than sequential paths."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 38,
+      "edition": 17,
+      "models": [],
+      "n": 2143
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7216863",
+      "doi": "10.2139/ssrn.7216863",
+      "title": "An LLM-Based Multi-Agent Framework for Autonomous Business Lead Intelligence Using Public Web Data",
+      "authors": [
+        "Nikunj Patel"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7216863",
+      "field": "management",
+      "role": "method",
+      "bullets": [
+        "No data. The paper specifies a business lead intelligence pipeline over public web sources and leaves datasets, baselines and ablations to a pre-registered evaluation protocol for later work.",
+        "Thirteen components, among them a task planner, a browser navigation agent, extraction, classification and scoring agents, share a blackboard state with typed messages; no model is named.",
+        "No results. Every performance claim is posed as a hypothesis, and the analysis covers expected failures such as cascading hallucination, prompt injection through scraped pages and entity conflation."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "validation_note": "design paper, no empirical evaluation reported",
+      "salience": 26,
+      "edition": 17,
+      "models": [],
+      "n": 2144
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7159918",
+      "doi": "10.2139/ssrn.7159918",
+      "title": "FinRL-DeepSeek Revisited: A Reproduction and Multi-Seed Robustness Analysis of LLM-Infused Risk-Sensitive Trading Agents",
+      "authors": [
+        "Arnold Leumale"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7159918",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "Nasdaq-100 stocks, using the agent-ready datasets released by the original authors for 2013 to 2023, backtested from 2019 to 2023 against an equal weight buy and hold benchmark.",
+        "Signals extracted by DeepSeek from financial news feed four reinforcement learning agents, PPO and CVaR constrained PPO with and without the signals, reimplemented from scratch; no check of the signals against labelled news is reported.",
+        "A single seed reproduces the reported gain in return and Sharpe ratio from adding the language model, but across two seeds the ranking of PPO-DeepSeek against plain PPO reverses, while CPPO-DeepSeek varies least in total return."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": false,
+      "salience": 62,
+      "edition": 17,
+      "n": 2145
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7157498",
+      "doi": "10.2139/ssrn.7157498",
+      "title": "Do Time Series Foundation Models Know Their Tails? A Mechanism-Oriented, Contamination-Aware Audit of Zero-Shot Value-at-Risk and Expected Shortfall",
+      "authors": [
+        "Jianxiu Hou"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7157498",
+      "field": "finance",
+      "role": "method",
+      "bullets": [
+        "32 daily series, audited under a pre-specified and contamination aware protocol that varies extraction rules, market regimes and training free repairs.",
+        "Five deployed forecast heads from Chronos, Moirai and Lag-Llama produced zero shot Value at Risk and Expected Shortfall, set against each other within families and against classical GARCH-EVT.",
+        "Deep tails come out unusable or extraction dependent, a token sampling head collapses in scale by an order of magnitude, and only a hybrid taking model location with GARCH scale matches, never beats, GARCH-EVT."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "llama",
+        "open_other"
+      ],
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "pre-specified tail-risk backtest on 32 daily series, benchmarked against GARCH-EVT",
+      "salience": 66,
+      "edition": 17,
+      "n": 2146
+    },
+    {
+      "uid": "doi:10.2139/ssrn.7223266",
+      "doi": "10.2139/ssrn.7223266",
+      "title": "Time Travel on Professional Profiles",
+      "authors": [
+        "Nicholas Bloom",
+        "Gideon Moore",
+        "Lisa Simon",
+        "Caelan Wilkie-Rogers"
+      ],
+      "posted": "2026-08-04",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.7223266",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "Monthly vintages of Revelio Labs profile data from 2020 to 2026, tracking established United States LinkedIn users and the past jobs they go back and rewrite.",
+        "No model does the measuring. The study counts writing markers associated with language models in revised text and dates them against the release of ChatGPT; the marker set is not described.",
+        "19.7 percent of users retroactively rewrite a past job title or description, mostly around employer changes, and model style markers jump after ChatGPT, most among less educated users and MBAs from lower ranked programmes."
+      ],
+      "bullet_provenance": "ai",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 78,
+      "edition": 17,
+      "validated": null,
+      "n": 2147
     },
     {
       "uid": "doi:10.2139/ssrn.7161699",
@@ -3374,6 +4513,31 @@
       ],
       "prestige": true,
       "us_top": true
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6740060",
+      "doi": "10.2139/ssrn.6740060",
+      "title": "Prompt Injection and Jailbreak Attacks in Large Language Model-Based Agents",
+      "authors": [
+        "Rizwan Tanveer"
+      ],
+      "posted": "2026-07-29",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6740060",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Narrative review of the prompt injection and jailbreak literature from 2023 to 2026, drawing on OWASP top ten lists, foundational attack papers, and documented deployment incidents.",
+        "No model is run and no family is named. The review sorts direct and indirect injection, retrieval poisoning, and Model Context Protocol weaknesses, then maps attack classes to controls.",
+        "Argues injection is structural because instructions and data travel one channel, so training cannot remove it, and defence needs channel separation, output validation, and policy mediation before tool execution."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 30,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2133
     },
     {
       "uid": "doi:10.2139/ssrn.6993719",
@@ -42405,6 +43569,33 @@
       "us_top": true
     },
     {
+      "uid": "doi:10.2139/ssrn.6686418",
+      "doi": "10.2139/ssrn.6686418",
+      "title": "Behavioral Digital Twins: Causally Constrained Synthetic Populations for Public Health Policy Simulation",
+      "authors": [
+        "Yichao Jin"
+      ],
+      "posted": "2026-05-10",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6686418",
+      "field": "economics",
+      "role": "method",
+      "bullets": [
+        "A vaccination timing discrete choice experiment answered by 1,027 adults in Wuhan supplies the empirical target; the pilot run uses a 10 percent subsample of those responses.",
+        "A 1.5 billion parameter model, family not named, runs on local consumer hardware and generates respondents whose choices are held to utility constraints read off a causal graph fitted to the human data, with no retraining.",
+        "Constrained agents violate logical monotonicity in 22.2 percent of cases against 50.0 percent unconstrained, and sit up to 34 percent closer to the empirical choice frontier, with the gain concentrated in long wait scenarios."
+      ],
+      "bullet_provenance": "ai",
+      "open_weights": true,
+      "validated": true,
+      "validation_note": "1,027 respondent discrete choice experiment as ground truth, frontier deviation and violation rates reported",
+      "salience": 55,
+      "edition": 17,
+      "models": [],
+      "n": 2131
+    },
+    {
       "uid": "doi:10.2139/ssrn.6742119",
       "doi": "10.2139/ssrn.6742119",
       "title": "The Finance Value Pyramid : A Conceptual Framework for Repositioning Value Creation in the Finance Function in the Era of Generative Artificial Intelligence",
@@ -43864,6 +45055,31 @@
           "inst": ""
         }
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6638918",
+      "doi": "10.2139/ssrn.6638918",
+      "title": "The Mirror Problem: Ai Bias As Reflected Cognition",
+      "authors": [
+        "Daniel Ziekenoppasser-Powell"
+      ],
+      "posted": "2026-05-06",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6638918",
+      "field": "management",
+      "role": "object",
+      "bullets": [
+        "Conceptual governance paper with no empirical sample, built on cognitive science accounts of human bias and on published descriptions of reinforcement learning from human feedback.",
+        "No model is run and none is named. The argument maps catalogued human cognitive biases onto model behaviour and treats alignment training as shallow next to pretraining distributions.",
+        "Splits bias into externalised forms carried in text, which should transfer, and embodied forms requiring lived experience, which should not, and asks for continuous post-deployment monitoring rather than certification."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 30,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2132
     },
     {
       "uid": "doi:10.2139/ssrn.6637298",
@@ -52246,6 +53462,34 @@
       ]
     },
     {
+      "uid": "doi:10.2139/ssrn.6461607",
+      "doi": "10.2139/ssrn.6461607",
+      "title": "Designing Agentic AI-Based Screening for Portfolio Investment",
+      "authors": [
+        "Mehmet Caner",
+        "Agostino Capponi",
+        "Nathan Sun",
+        "Jonathan Tan"
+      ],
+      "posted": "2026-04-14",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6461607",
+      "field": "finance",
+      "role": "instrument",
+      "bullets": [
+        "S&P 500 stocks from 2020 to 2024, with the number of assets held treated as a random outcome of screening rather than fixed in advance.",
+        "Two language model agents, one reading firm fundamentals and one reading news sentiment, deliberate to settle buy and sell signals; the paper does not say which model.",
+        "Screened portfolios reach higher Sharpe ratios than an unscreened baseline and than conventional screens, and the squared Sharpe ratio stays consistent under mild screening error."
+      ],
+      "bullet_provenance": "ai",
+      "validated": false,
+      "salience": 61,
+      "edition": 17,
+      "models": [],
+      "n": 2138
+    },
+    {
       "uid": "doi:10.2139/ssrn.6274418",
       "doi": "10.2139/ssrn.6274418",
       "title": "The Value Gap in Educational Technology: Perceived Learning, Experienced Capability, and the Political Economy of AI-Driven Education",
@@ -54816,6 +56060,31 @@
       "affiliations": [
         "Nankai University"
       ]
+    },
+    {
+      "uid": "doi:10.2139/ssrn.6103266",
+      "doi": "10.2139/ssrn.6103266",
+      "title": "Artificial Code",
+      "authors": [
+        "Clark D. Asay"
+      ],
+      "posted": "2026-02-03",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.6103266",
+      "field": "economics",
+      "role": "object",
+      "bullets": [
+        "United States copyright doctrine and the free and open source software ecosystem, treated as legal analysis with no sample, period or unit of observation.",
+        "No language model is run or named here. Code produced by generative tools is the subject, and the argument turns on authorship doctrine rather than on any measurement.",
+        "Machine written code lacks a human author and so falls into the public domain, which undercuts open source licensing, pushes firms toward trade secrecy and patents, and shrinks the human code supply that future models need."
+      ],
+      "bullet_provenance": "ai",
+      "salience": 54,
+      "edition": 17,
+      "models": [],
+      "validated": null,
+      "n": 2142
     },
     {
       "uid": "doi:10.2139/ssrn.6136529",
@@ -87680,6 +88949,34 @@
       ],
       "prestige": true,
       "us_top": true
+    },
+    {
+      "uid": "doi:10.2139/ssrn.4797024",
+      "doi": "10.2139/ssrn.4797024",
+      "title": "A Critical Assessment of Large Language Models for Systematic Reviews: Utilizing ChatGPT for Complex Data Extraction",
+      "authors": [
+        "Hesam Mahmoudi",
+        "Doris Chang",
+        "Hannah Lee",
+        "Navid Ghaffarzadegan",
+        "Mohammad  S. Jalali"
+      ],
+      "posted": "2024-04-19",
+      "added": "2026-08-11",
+      "source_label": "SSRN",
+      "url": "https://doi.org/10.2139/ssrn.4797024",
+      "field": "other",
+      "role": "method",
+      "bullet_provenance": "none",
+      "models": [
+        "gpt"
+      ],
+      "open_weights": false,
+      "salience": 40,
+      "edition": 17,
+      "bullets": [],
+      "validated": null,
+      "n": 2141
     },
     {
       "uid": "doi:10.2139/ssrn.4799209",
