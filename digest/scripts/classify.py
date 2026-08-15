@@ -208,6 +208,24 @@ def apply_(args):
     for b in bad[:25]:
         log("  REJECTED %s" % b)
 
+    # Field mix, and a loud flag when `other` runs hot. In edition 18 the
+    # classifiers filed 13 out-of-scope papers under `other` instead of
+    # dropping them; the share hit 19% against a ~2% baseline. The share is
+    # the cheapest signal that Step 1 was skipped, so print it every run.
+    if classified:
+        counts = {}
+        for r in classified:
+            counts[r["field"]] = counts.get(r["field"], 0) + 1
+        log("Field mix: %s" % dict(sorted(counts.items(), key=lambda kv: -kv[1])))
+        share = 100.0 * counts.get("other", 0) / len(classified)
+        if share > 8:
+            log("WARNING: field 'other' is %.0f%% of this edition (baseline ~2%%)." % share)
+            log("         Review every 'other' record before building. Rubric Step 1:")
+            log("         out-of-scope papers are dropped, never filed under 'other'.")
+            for r in classified:
+                if r["field"] == "other":
+                    log("           %s" % r["title"][:100])
+
     unclassified = [r["uid"] for r in recs if not r.get("field")
                     and "dropped_by_classifier" not in r.get("flags", [])]
     if unclassified:

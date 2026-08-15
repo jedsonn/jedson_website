@@ -63,6 +63,16 @@ fields beyond `uid` and `drop`.
 When in doubt, keep it. A borderline paper the reader skips costs less than a
 relevant paper they never saw.
 
+**`other` is not an escape hatch from dropping.** "When in doubt, keep it"
+applies to papers that ARE in scope and hard to place, not to papers that fail
+the scope test above. If the subject sits outside accounting, finance,
+economics, and management, drop it — do not file it under field `other`.
+Edition 18 shipped 13 such records to review: LLM benchmark governance,
+clinical safety, criminal analysis, pedestrian-crash prediction, narrative
+annotation. Every one was a drop the classifier declined to make. Ask "would a
+finance or accounting professor read this?" — if the honest answer is no, the
+answer is `drop`, not `other`.
+
 ## Step 2. Field
 
 One of `accounting`, `finance`, `economics`, `management`, `other`.
