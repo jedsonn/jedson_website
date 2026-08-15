@@ -106,6 +106,37 @@ def main():
     if not recs:
         raise SystemExit("No harvested.json for edition %d" % args.edition)
 
+    # Select BEFORE fetching abstracts, and let papers posted inside the harvest
+    # window win the cap.
+    #
+    # Crossref filters on INDEX date, not posted date, so a mass re-index of a
+    # publisher prefix dumps thousands of old papers into one run. Edition 19
+    # gated 2,815 records of which only 346 were from the window; ranking by
+    # relevance alone let just 22 of those 346 through a 220 cap. The week's own
+    # research lost to re-indexed backfill, silently.
+    #
+    # Fetching abstracts first also wasted a network round trip on every record
+    # the cap was about to discard.
+    cov = read_json(os.path.join(run_dir, "coverage.json"), {}) or {}
+    win = cov.get("window") or []
+    win_lo, win_hi = (win + ["", ""])[:2]
+
+    def in_window(rec):
+        p = rec.get("posted") or ""
+        return bool(win_lo and win_lo <= p <= win_hi)
+
+    cap = args.cap if args.cap is not None else CFG["run"]["max_papers_per_edition"]
+    recs.sort(key=lambda r: (not in_window(r), -r.get("relevance", 0)))
+    if cap and len(recs) > cap:
+        n_win = sum(1 for r in recs if in_window(r))
+        log("Cap %d applied to %d gated records. In window: %d, of which %d kept."
+            % (cap, len(recs), n_win, min(cap, n_win)))
+        if n_win > cap:
+            log("WARNING: %d in-window papers exceed the cap. %d of this week's "
+                "papers are being dropped. Raise --cap to take them all."
+                % (n_win, n_win - cap))
+        recs = recs[:cap]
+
     filled, already, missing = 0, 0, 0
     for rec in recs:
         if rec.get("abstract"):
@@ -136,12 +167,10 @@ def main():
         if fams:
             rec["open_weights"] = bool(fams & set(CFG.get("open_weight_families", [])))
 
+    # Re-score after abstract fill, then order the run: window first, then
+    # relevance. The cap was already applied above.
     kept = [r for r in recs if r["relevance"] >= CFG["run"]["min_relevance"]]
-    kept.sort(key=lambda r: (-r["relevance"], r.get("posted", "")))
-    cap = args.cap if args.cap is not None else CFG["run"]["max_papers_per_edition"]
-    if cap and len(kept) > cap:
-        log("Capping %d records to %d by relevance." % (len(kept), cap))
-        kept = kept[:cap]
+    kept.sort(key=lambda r: (not in_window(r), -r["relevance"], r.get("posted", "")))
 
     # Citation counts are OPT-IN. Keyless OpenAlex rate-limits rapid per-paper
     # calls, and the retry backoff can stall a large edition for over an hour.
