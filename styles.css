@@ -179,8 +179,23 @@ ol.tnum li::marker{color:var(--accent);font-weight:600;font-size:.78rem;}
 
 /* impact page + homepage public-impact section */
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0;}
-.ilist{list-style:none;display:flex;flex-direction:column;gap:1.05rem;margin-top:.2rem;}
-.ilist li{padding-left:.9rem;border-left:2px solid var(--border);}
+/* Sections collapse with native <details>, so they work with JavaScript off
+   and stay keyboard-accessible for free. */
+.isec{padding:1.5rem 0 .3rem;}
+.isec>summary{font-family:var(--serif);font-size:1.05rem;font-weight:700;color:var(--text);margin-bottom:.7rem;padding-bottom:.3rem;border-bottom:1.5px solid var(--border);display:flex;align-items:center;gap:.45rem;cursor:pointer;list-style:none;}
+.isec>summary::-webkit-details-marker{display:none;}
+.isec>summary:hover{color:var(--accent);}
+.isec>summary .dot{font-size:.6rem;opacity:.55;}
+.i-count{margin-left:auto;font-family:var(--sans);font-size:.7rem;font-weight:600;color:var(--chip-text);background:var(--chip-bg);border:1px solid var(--border);border-radius:20px;padding:.05rem .5rem;}
+.i-chev{font-size:.6rem;color:var(--muted);transition:transform .15s ease;}
+.isec[open]>summary .i-chev{transform:rotate(90deg);}
+.i-lead{font-size:.82rem;color:var(--secondary);line-height:1.55;margin-bottom:.9rem;max-width:70ch;}
+.ilist{list-style:decimal;padding-left:2rem;margin:.2rem 0 .3rem;}
+.ilist li{padding-left:.7rem;border-left:2px solid var(--border);margin-bottom:1.05rem;}
+.ilist li:last-child{margin-bottom:.2rem;}
+.ilist li::marker{color:var(--accent);font-weight:600;font-size:.78rem;}
+.i-caveat{font-size:.76rem;color:var(--muted);line-height:1.5;margin-bottom:.25rem;}
+.i-link+.i-link{display:block;margin-top:.2rem;}
 .i-top{display:flex;flex-wrap:wrap;align-items:baseline;gap:.3rem .55rem;margin-bottom:.15rem;}
 .i-outlet{font-size:.83rem;font-weight:600;color:var(--text);}
 .i-year{font-size:.75rem;color:var(--muted);font-variant-numeric:tabular-nums;}
@@ -193,4 +208,4 @@ ol.tnum li::marker{color:var(--accent);font-weight:600;font-size:.78rem;}
 .i-scope a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);font-weight:600;}
 .i-filemeta{color:var(--muted);font-size:.76rem;}
 .impact-cta{display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:600;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
-@media(max-width:640px){.ilist{gap:.95rem;}.ilist li{padding-left:.7rem;}}
+@media(max-width:640px){.ilist{padding-left:1.5rem;}.ilist li{padding-left:.55rem;margin-bottom:.95rem;}}
