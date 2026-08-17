@@ -121,6 +121,10 @@
       .hero-grid{grid-template-columns:1fr;justify-items:center;}
       .bio{margin-top:.2rem;}
       .hero-top h1{font-size:1.85rem;}
+      /* Six nav items need the room. At the old 1.3rem gap the sixth wrapped
+         to a third line and stranded "Links" alone on it. */
+      .nav-links{gap:.9rem;}
+      .nav-inner{padding-left:1.1rem;padding-right:1.1rem;}
     }
 
 /* ---------- Talks & Service page ---------- */
