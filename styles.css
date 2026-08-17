@@ -204,8 +204,5 @@ ol.tnum li::marker{color:var(--accent);font-weight:600;font-size:.78rem;}
 .i-note{font-size:.83rem;color:var(--text);line-height:1.55;margin-bottom:.25rem;}
 .i-link{font-size:.8rem;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
 .i-ext{font-size:.7em;margin-left:.2em;}
-.i-scope{font-size:.83rem;color:var(--secondary);line-height:1.6;margin-bottom:.6rem;max-width:70ch;}
-.i-scope a{color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);font-weight:600;}
-.i-filemeta{color:var(--muted);font-size:.76rem;}
 .impact-cta{display:inline-block;margin-top:.7rem;font-size:.8rem;font-weight:600;color:var(--accent);text-decoration:none;border-bottom:1px dotted var(--accent);}
 @media(max-width:640px){.ilist{padding-left:1.5rem;}.ilist li{padding-left:.55rem;margin-bottom:.95rem;}}
