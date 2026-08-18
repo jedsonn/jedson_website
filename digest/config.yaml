@@ -13,8 +13,8 @@ run:
   user_agent: "LLMResearchDigest/1.0 (https://www.jedsonpinto.com/digest; mailto:jedson.pinto@utdallas.edu)"
   max_papers_per_edition: 220
   min_relevance: 2
-  request_timeout: 20
-  retries: 2
+  request_timeout: 30
+  retries: 5
   backoff_seconds: 2
 
 # HARD BLOCK. The pipeline must never issue a request to these hosts.

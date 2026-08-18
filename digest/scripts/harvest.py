@@ -186,14 +186,18 @@ def openalex_abstract(inv):
 def harvest_openalex(src, start, end):
     rows, cursor = [], "*"
     terms = "large language model|LLM|ChatGPT|generative AI|foundation model"
+    api_key = os.environ.get("OPENALEX_API_KEY", "")
     while True:
         params = {
             "filter": "from_created_date:%s,to_created_date:%s,title_and_abstract.search:%s" % (start, end, terms),
-            "per-page": 200,
+            "per_page": 200,
             "cursor": cursor,
             "mailto": CFG["run"]["polite_mailto"],
+            "select": "id,doi,title,authorships,publication_date,primary_location,abstract_inverted_index",
         }
-        resp = guarded_get(OPENALEX, params=params)
+        if api_key:
+            params["api_key"] = api_key
+        resp = guarded_get(OPENALEX, params=params, retries=5)
         body = resp.json()
         items = body.get("results", [])
         if not items:
