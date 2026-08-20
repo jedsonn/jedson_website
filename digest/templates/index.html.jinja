@@ -107,18 +107,15 @@ dd{margin:0;font-size:13.5px;line-height:1.55;text-align:justify;hyphens:auto;-w
 
 /* ---- vote buttons ---- */
 .vote-pill{display:flex;align-items:center;gap:2px;flex-shrink:0;margin-top:1px;font-family:var(--mono);font-size:11px}
-.vote-bar{display:flex;align-items:center;gap:14px;margin-top:10px;padding-top:9px;
-  border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px}
+.vote-pill .vp-sep{width:6px}
 .vote-btn{display:inline-flex;align-items:center;gap:4px;background:none;border:1px solid var(--rule2);
-  border-radius:6px;padding:4px 10px;cursor:pointer;font:inherit;font-size:11px;
+  border-radius:4px;padding:3px 6px;cursor:pointer;font:inherit;font-size:11px;
   color:var(--ink3);transition:all .15s;line-height:1}
-.vote-pill .vote-btn{padding:3px 6px;border-radius:4px}
 .vote-btn:hover{border-color:var(--ink3);color:var(--ink2)}
 .vote-btn.on-up{border-color:var(--ok);color:var(--ok);background:color-mix(in srgb, var(--ok) 8%, transparent)}
 .vote-btn.on-down{border-color:var(--warn);color:var(--warn);background:color-mix(in srgb, var(--warn) 8%, transparent)}
 .vote-btn.on-unrel{border-color:var(--ink3);color:var(--ink2);background:color-mix(in srgb, var(--ink3) 10%, transparent)}
-.vote-net{font-weight:600;color:var(--ink2);min-width:18px;text-align:center}
-.vote-pill .vote-net{font-size:11px;min-width:14px}
+.vote-net{font-weight:600;color:var(--ink2);font-size:11px;min-width:14px;text-align:center}
 
 .empty{border:1px dashed var(--rule2);border-radius:10px;padding:56px 24px;text-align:center;color:var(--ink2)}
 .empty p{margin:0 0 6px}
@@ -361,6 +358,9 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       +   '<div class="vote-pill">'
       +     '<button type="button" class="vote-btn v-up'+(myVote(p.uid)==="up"?" on-up":"")+'" data-uid="'+esc(p.uid)+'" data-v="up" title="Upvote">&#9650;</button>'
       +     '<span class="vote-net" data-uid-net="'+esc(p.uid)+'">'+(netVotes[p.uid]||0)+'</span>'
+      +     '<button type="button" class="vote-btn v-down'+(myVote(p.uid)==="down"?" on-down":"")+'" data-uid="'+esc(p.uid)+'" data-v="down" title="Downvote">&#9660;</button>'
+      +     '<span class="vp-sep"></span>'
+      +     '<button type="button" class="vote-btn v-unrel'+(myVote(p.uid)==="unrelated"?" on-unrel":"")+'" data-uid="'+esc(p.uid)+'" data-v="unrelated" title="Not relevant to business research">&#10005;</button>'
       +   '</div>'
       +   '<button class="chev" type="button" aria-label="Expand summary" data-toggle="'+i+'">'
       +     '<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><polyline points="9 6 15 12 9 18"></polyline></svg>'
@@ -369,10 +369,6 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       + '<div class="body">' + body
       +   '<div class="cfoot"><span>'+esc(p.source_label)+' · '+prov+val+'</span>'
       +     '<a href="'+esc(p.url)+'" rel="noopener" target="_blank">Open paper &#8599;</a></div>'
-      +   '<div class="vote-bar">'
-      +     '<button type="button" class="vote-btn v-down'+(myVote(p.uid)==="down"?" on-down":"")+'" data-uid="'+esc(p.uid)+'" data-v="down" title="Downvote">&#9660;</button>'
-      +     '<button type="button" class="vote-btn v-unrel'+(myVote(p.uid)==="unrelated"?" on-unrel":"")+'" data-uid="'+esc(p.uid)+'" data-v="unrelated" title="Not relevant to business research">&#10005; Not relevant</button>'
-      +   '</div>'
       + '</div>'
       + '</article>';
   }
@@ -416,7 +412,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     list.querySelectorAll("[data-toggle]").forEach(function(el){
       el.addEventListener("click", function(e){
         if (e.target.closest("a")) return; // let title/link clicks through
-        if (e.target.closest(".vote-bar") || e.target.closest(".vote-pill")) return; // let vote clicks through
+        if (e.target.closest(".vote-pill")) return; // let vote clicks through
         var art = el.closest("article");
         art.classList.toggle("open");
         var open = art.classList.contains("open");
