@@ -232,9 +232,16 @@ def main():
                 if a.get("affiliations"):
                     p["affiliations"] = clean_affiliations(a["affiliations"])
             affs_list = p.get("affiliations") or []
-            if affs_list and _aff_matches(affs_list, TOP_INSTITUTIONS):
+            at_top = affs_list and _aff_matches(affs_list, TOP_INSTITUTIONS)
+            at_us = affs_list and _aff_matches(affs_list, US_TOP)
+            if at_top:
                 p["prestige"] = True  # recognized institution
-            if affs_list and _aff_matches(affs_list, US_TOP):
+            # OpenAlex highly-cited authors get prestige ONLY if they are
+            # also at a recognized institution.  top_author alone is too
+            # noisy — it pulls in random schools.
+            if a and a.get("top_author") and at_top:
+                p["prestige"] = True
+            if at_us:
                 p["us_top"] = True  # US top university — sorts first
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
