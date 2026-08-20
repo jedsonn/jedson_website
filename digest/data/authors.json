@@ -51391,5 +51391,559 @@
     "affiliations": [
       "National University of Computer and Emerging Sciences"
     ]
+  },
+  "doi:10.2139/ssrn.7274878": {
+    "authors": [
+      {
+        "name": "Jiahui Sun",
+        "url": "https://openalex.org/A5147298002",
+        "inst": "Peking University"
+      }
+    ],
+    "affiliations": [
+      "Peking University"
+    ]
+  },
+  "doi:10.2139/ssrn.7289362": {
+    "authors": [
+      {
+        "name": "Zhiwei Liu",
+        "url": "https://openalex.org/A5053521378",
+        "inst": "University of Manchester"
+      },
+      {
+        "name": "Qiqi Qiang",
+        "url": "https://openalex.org/A5107136477",
+        "inst": "Fudan University"
+      },
+      {
+        "name": "Jie Gong",
+        "url": "https://openalex.org/A5103091593",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Runteng Guo",
+        "url": "https://openalex.org/A5122531121",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Haoyang Liu",
+        "url": "https://openalex.org/A5147298325",
+        "inst": "Nanjing University"
+      },
+      {
+        "name": "Ziyan Kuang",
+        "url": "https://openalex.org/A5110247102",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Sichen Hui",
+        "url": "https://openalex.org/A5147302107",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Jingchi Yang",
+        "url": "https://openalex.org/A5147296310",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Wanying He",
+        "url": "https://openalex.org/A5147281565",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Maowei Jiang",
+        "url": "https://openalex.org/A5147284861",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Zhuohan Xie",
+        "url": "https://openalex.org/A5147274141",
+        "inst": "Mohamed bin Zayed University of Artificial Intelligence"
+      },
+      {
+        "name": "Yankai Chen",
+        "url": "https://openalex.org/A5147278024",
+        "inst": "McGill University"
+      },
+      {
+        "name": "Xue Liu",
+        "url": "https://openalex.org/A5147290004",
+        "inst": "Mohamed bin Zayed University of Artificial Intelligence"
+      },
+      {
+        "name": "Min Peng",
+        "url": "https://openalex.org/A5147262292",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Qianqian Xie",
+        "url": "https://openalex.org/A5147276855",
+        "inst": "Wuhan University"
+      },
+      {
+        "name": "Sophia Ananiadou",
+        "url": "https://openalex.org/A5077976343",
+        "inst": "University of Manchester"
+      }
+    ],
+    "affiliations": [
+      "University of Manchester",
+      "Fudan University",
+      "Wuhan University",
+      "Nanjing University",
+      "Mohamed bin Zayed University of Artificial Intelligence",
+      "McGill University"
+    ],
+    "top_author": true
+  },
+  "doi:10.2139/ssrn.7268078": {
+    "authors": [
+      {
+        "name": "Ho Kim",
+        "url": "https://openalex.org/A5051834608",
+        "inst": "University of Missouri–St. Louis"
+      }
+    ],
+    "affiliations": [
+      "University of Missouri–St. Louis"
+    ]
+  },
+  "doi:10.2139/ssrn.7268202": {
+    "authors": [
+      {
+        "name": "Avik Bal",
+        "url": "https://openalex.org/A5140496727",
+        "inst": "Independent Researcher, Bengaluru, India"
+      }
+    ],
+    "affiliations": [
+      "Independent Researcher, Bengaluru, India"
+    ]
+  },
+  "doi:10.2139/ssrn.7294158": {
+    "authors": [
+      {
+        "name": "Dong Zhankui",
+        "url": "https://openalex.org/A5102384457",
+        "inst": "Henan University"
+      },
+      {
+        "name": "Siyi Li",
+        "url": "https://openalex.org/A5147293240",
+        "inst": "Henan University"
+      },
+      {
+        "name": "Xiaoyong Fan",
+        "url": "https://openalex.org/A5146979934",
+        "inst": "Henan University"
+      }
+    ],
+    "affiliations": [
+      "Henan University"
+    ]
+  },
+  "doi:10.2139/ssrn.7273418": {
+    "authors": [
+      {
+        "name": "Jonathan Vidal",
+        "url": "https://openalex.org/A5147297154",
+        "inst": "Independent"
+      }
+    ],
+    "affiliations": [
+      "Independent"
+    ]
+  },
+  "doi:10.2139/ssrn.7302427": {
+    "authors": [
+      {
+        "name": "Ying Lu",
+        "url": "https://openalex.org/A5079065563",
+        "inst": "Wuhan University of Technology"
+      },
+      {
+        "name": "Weijie Zhou",
+        "url": "https://openalex.org/A5059744695",
+        "inst": "Shandong University of Finance and Economics"
+      },
+      {
+        "name": "Xichun Bian",
+        "url": "https://openalex.org/A5147372017",
+        "inst": "Shandong University of Science and Technology"
+      },
+      {
+        "name": "Aiwen Xie",
+        "url": "https://openalex.org/A5025366293",
+        "inst": "East China Normal University"
+      },
+      {
+        "name": "Ruchang Miao",
+        "url": "https://openalex.org/A5121566207",
+        "inst": "Shandong University of Science and Technology"
+      }
+    ],
+    "affiliations": [
+      "Wuhan University of Technology",
+      "Shandong University of Finance and Economics",
+      "Shandong University of Science and Technology",
+      "East China Normal University"
+    ]
+  },
+  "doi:10.2139/ssrn.7278459": {
+    "authors": [
+      {
+        "name": "Dr Wahid Salih",
+        "url": "https://openalex.org/A5144233685",
+        "inst": "Département de la Santé et de l'Action Sociale"
+      }
+    ],
+    "affiliations": [
+      "Département de la Santé et de l'Action Sociale"
+    ]
+  },
+  "doi:10.2139/ssrn.7279418": {
+    "authors": [
+      {
+        "name": "Xiaoning Wang",
+        "url": "https://openalex.org/A5009262396",
+        "inst": "Purdue University West Lafayette"
+      },
+      {
+        "name": "Srinaath Anbu Durai",
+        "url": "https://openalex.org/A5147340212",
+        "inst": "HEC Paris"
+      },
+      {
+        "name": "Oliver Sun",
+        "url": "https://openalex.org/A5137672092",
+        "inst": "University of Pennsylvania"
+      },
+      {
+        "name": "Xitong Li",
+        "url": "https://openalex.org/A5082600899",
+        "inst": "HEC Paris"
+      },
+      {
+        "name": "Lynn Wu",
+        "url": "https://openalex.org/A5030027972",
+        "inst": "California University of Pennsylvania"
+      }
+    ],
+    "affiliations": [
+      "Purdue University West Lafayette",
+      "HEC Paris",
+      "University of Pennsylvania",
+      "California University of Pennsylvania"
+    ]
+  },
+  "doi:10.2139/ssrn.7294279": {
+    "authors": [
+      {
+        "name": "Sumit Agarwal",
+        "url": "https://openalex.org/A5076309222",
+        "inst": "National University of Singapore"
+      },
+      {
+        "name": "Yue Zhang",
+        "url": "https://openalex.org/A5147337043",
+        "inst": "Sun Yat-sen University"
+      }
+    ],
+    "affiliations": [
+      "National University of Singapore",
+      "Sun Yat-sen University"
+    ],
+    "top_author": true
+  },
+  "arxiv:2608.14198v1": {
+    "authors": [
+      {
+        "name": "Parameswaran Kamalaruban",
+        "url": "https://openalex.org/A5090876613",
+        "inst": "University of Warwick"
+      },
+      {
+        "name": "Viktor Drobnyi",
+        "url": "https://openalex.org/A5147342129",
+        "inst": ""
+      },
+      {
+        "name": "Maeve Madigan",
+        "url": "https://openalex.org/A5047161303",
+        "inst": "Institute for Security Studies"
+      },
+      {
+        "name": "Julia Rozanova",
+        "url": "https://openalex.org/A5033486362",
+        "inst": "Yale University"
+      },
+      {
+        "name": "David Sutton",
+        "url": "https://openalex.org/A5147323272",
+        "inst": ""
+      },
+      {
+        "name": "Stuart Burrell",
+        "url": "https://openalex.org/A5125889107",
+        "inst": "Institute for Security Studies"
+      }
+    ],
+    "affiliations": [
+      "University of Warwick",
+      "Institute for Security Studies",
+      "Yale University"
+    ]
+  },
+  "arxiv:2608.14399v1": {
+    "authors": [
+      {
+        "name": "Syeda Anshrah Gillani",
+        "url": "https://openalex.org/A5147318283",
+        "inst": ""
+      },
+      {
+        "name": "Mirza Samad Ahmed Baig",
+        "url": "https://openalex.org/A5147360305",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "doi:10.2139/ssrn.7303271": {
+    "authors": [
+      {
+        "name": "anon anon",
+        "url": "https://openalex.org/A5147319593",
+        "inst": ""
+      },
+      {
+        "name": "anon anon",
+        "url": "https://openalex.org/A5147319593",
+        "inst": ""
+      },
+      {
+        "name": "Bo Yang",
+        "url": "https://openalex.org/A5147364988",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "doi:10.2139/ssrn.7286578": {
+    "authors": [
+      {
+        "name": "An Nguyen Hoang Phuong",
+        "url": "https://openalex.org/A5147413845",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "arxiv:2608.16386v1": {
+    "authors": [
+      {
+        "name": "Agent Team",
+        "url": "https://openalex.org/A5147415493",
+        "inst": ""
+      },
+      {
+        "name": "B. X. Zhang",
+        "url": "https://openalex.org/A5147442764",
+        "inst": ""
+      },
+      {
+        "name": "Yaze Geng",
+        "url": "https://openalex.org/A5147408787",
+        "inst": ""
+      },
+      {
+        "name": "Lei Tang",
+        "url": "https://openalex.org/A5147438571",
+        "inst": ""
+      },
+      {
+        "name": "Yaoyang Yi",
+        "url": "https://openalex.org/A5147388544",
+        "inst": ""
+      },
+      {
+        "name": "Zonghan Wu",
+        "url": "https://openalex.org/A5083854216",
+        "inst": "East China Normal University"
+      },
+      {
+        "name": "Yifan Hu",
+        "url": "https://openalex.org/A5147379849",
+        "inst": ""
+      },
+      {
+        "name": "Kun Wang",
+        "url": "https://openalex.org/A5147408398",
+        "inst": ""
+      },
+      {
+        "name": "Qingsong Wen",
+        "url": "https://openalex.org/A5147437248",
+        "inst": ""
+      },
+      {
+        "name": "Yilei Shao",
+        "url": "https://openalex.org/A5147390714",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "East China Normal University"
+    ]
+  },
+  "doi:10.2139/ssrn.7291518": {
+    "authors": [
+      {
+        "name": "Hunter Hughes",
+        "url": "https://openalex.org/A5147067082",
+        "inst": "Sunset Laboratory (United States)"
+      }
+    ],
+    "affiliations": [
+      "Sunset Laboratory (United States)"
+    ]
+  },
+  "doi:10.2139/ssrn.7259758": {
+    "authors": [
+      {
+        "name": "Elijah Adeyeye",
+        "url": "https://openalex.org/A5120560317",
+        "inst": "University of Ibadan"
+      }
+    ],
+    "affiliations": [
+      "University of Ibadan"
+    ]
+  },
+  "doi:10.2139/ssrn.7284980": {
+    "authors": [
+      {
+        "name": "Lewis Lewin",
+        "url": "https://openalex.org/A5137288524",
+        "inst": ""
+      }
+    ],
+    "affiliations": []
+  },
+  "doi:10.2139/ssrn.7307251": {
+    "authors": [
+      {
+        "name": "Jifan Wang",
+        "url": "https://openalex.org/A5044360994",
+        "inst": "Jiangnan University"
+      }
+    ],
+    "affiliations": [
+      "Jiangnan University"
+    ]
+  },
+  "doi:10.2139/ssrn.7282719": {
+    "authors": [
+      {
+        "name": "Christian‐Oliver Ewald",
+        "url": "https://openalex.org/A5041238635",
+        "inst": "Statistics Sweden"
+      },
+      {
+        "name": "Chuyao Huang",
+        "url": "https://openalex.org/A5104335997",
+        "inst": "Adam Smith Institute"
+      },
+      {
+        "name": "Yuyu Ren",
+        "url": "https://openalex.org/A5147398222",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "Statistics Sweden",
+      "Adam Smith Institute"
+    ]
+  },
+  "doi:10.2139/ssrn.7289498": {
+    "authors": [
+      {
+        "name": "Nigel Finch",
+        "url": "https://openalex.org/A5088150822",
+        "inst": "The University of Sydney"
+      },
+      {
+        "name": "Tyrone M. Carlin",
+        "url": "https://openalex.org/A5058904110",
+        "inst": "The University of Sydney"
+      }
+    ],
+    "affiliations": [
+      "The University of Sydney"
+    ]
+  },
+  "doi:10.2139/ssrn.7306325": {
+    "authors": [
+      {
+        "name": "Bogdan Ileanu",
+        "url": "https://openalex.org/A5147382945",
+        "inst": ""
+      },
+      {
+        "name": "Claudiu Herţeliu",
+        "url": "https://openalex.org/A5033210788",
+        "inst": "Bucharest University of Economic Studies"
+      },
+      {
+        "name": "Tudorel Andrei",
+        "url": "https://openalex.org/A5016293332",
+        "inst": "Bucharest University of Economic Studies"
+      },
+      {
+        "name": "Adrian Pană",
+        "url": "https://openalex.org/A5034254757",
+        "inst": "University of Bucharest"
+      }
+    ],
+    "affiliations": [
+      "Bucharest University of Economic Studies",
+      "University of Bucharest"
+    ],
+    "top_author": true
+  },
+  "doi:10.2139/ssrn.7283098": {
+    "authors": [
+      {
+        "name": "Ziyu Wang",
+        "url": "https://openalex.org/A5147390519",
+        "inst": ""
+      },
+      {
+        "name": "Zhuolin Wang",
+        "url": "https://openalex.org/A5101433265",
+        "inst": "Hong Kong University of Science and Technology"
+      },
+      {
+        "name": "Yi Chen",
+        "url": "https://openalex.org/A5147386523",
+        "inst": ""
+      },
+      {
+        "name": "Zhi Chen",
+        "url": "https://openalex.org/A5050187781",
+        "inst": "Chinese University of Hong Kong"
+      },
+      {
+        "name": "Guodong Lyu",
+        "url": "https://openalex.org/A5033543714",
+        "inst": "National University of Singapore"
+      }
+    ],
+    "affiliations": [
+      "Hong Kong University of Science and Technology",
+      "Chinese University of Hong Kong",
+      "National University of Singapore"
+    ]
   }
 }
