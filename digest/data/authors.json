@@ -51945,5 +51945,30 @@
       "Chinese University of Hong Kong",
       "National University of Singapore"
     ]
+  },
+  "doi:10.2139/ssrn.7138640": {
+    "authors": [
+      {
+        "name": "Jedson Pinto",
+        "url": "https://openalex.org/A5066040956",
+        "inst": "The University of Texas at Dallas"
+      },
+      {
+        "name": "Mark H. Lang",
+        "url": "https://openalex.org/A5016588287",
+        "inst": "University of North Carolina at Chapel Hill"
+      },
+      {
+        "name": "John Christensen",
+        "url": "https://openalex.org/A5108384743",
+        "inst": "Ministry of Justice"
+      }
+    ],
+    "affiliations": [
+      "The University of Texas at Dallas",
+      "University of North Carolina at Chapel Hill",
+      "Ministry of Justice"
+    ],
+    "top_author": true
   }
 }
