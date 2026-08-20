@@ -104,6 +104,19 @@ dd{margin:0;font-size:13.5px;line-height:1.55;text-align:justify;hyphens:auto;-w
   margin-top:14px;font-family:var(--mono);font-size:10.5px;color:var(--ink3)}
 .cfoot a{color:var(--accent);text-decoration:none;font-weight:500}
 .cfoot a:hover{text-decoration:underline}
+
+/* ---- vote buttons ---- */
+.vote-bar{display:flex;align-items:center;gap:14px;margin-top:10px;padding-top:9px;
+  border-top:1px solid var(--rule);font-family:var(--mono);font-size:11px}
+.vote-btn{display:inline-flex;align-items:center;gap:4px;background:none;border:1px solid var(--rule2);
+  border-radius:6px;padding:4px 10px;cursor:pointer;font:inherit;font-size:11px;
+  color:var(--ink3);transition:all .15s;line-height:1}
+.vote-btn:hover{border-color:var(--ink3);color:var(--ink2)}
+.vote-btn.on-up{border-color:var(--ok);color:var(--ok);background:color-mix(in srgb, var(--ok) 8%, transparent)}
+.vote-btn.on-down{border-color:var(--warn);color:var(--warn);background:color-mix(in srgb, var(--warn) 8%, transparent)}
+.vote-btn.on-unrel{border-color:var(--ink3);color:var(--ink2);background:color-mix(in srgb, var(--ink3) 10%, transparent)}
+.vote-net{font-weight:600;color:var(--ink2);min-width:18px;text-align:center}
+
 .empty{border:1px dashed var(--rule2);border-radius:10px;padding:56px 24px;text-align:center;color:var(--ink2)}
 .empty p{margin:0 0 6px}
 
@@ -199,6 +212,13 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       </div>
     </div>
     <div class="fgroup">
+      <span class="flabel">Sort</span>
+      <div class="chips" id="sort-chips">
+        <button class="chip" type="button" data-sort="recent" aria-pressed="true">Recent</button>
+        <button class="chip" type="button" data-sort="popular" aria-pressed="false">Popular</button>
+      </div>
+    </div>
+    <div class="fgroup">
       <span class="flabel">Scope</span>
       <div class="chips">
         <button class="chip" type="button" id="featured-toggle" aria-pressed="false" title="Papers from widely-cited researchers and leading departments">Featured <span id="feat-count" style="opacity:.6"></span></button>
@@ -229,7 +249,7 @@ footer.site .links{font-family:var(--mono);font-size:12px}
 (function(){
   var D = JSON.parse(document.getElementById("data").textContent);
   var papers = D.papers;
-  var st = {field:"all", when:"all", tech:false, featured:false};
+  var st = {field:"all", when:"all", tech:false, featured:false, sort:"recent"};
 
   // running archive record: total papers classified to date
   (function(){
@@ -292,6 +312,19 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     return esc((p.authors||[]).join(", "));
   }
 
+  // ----- voting state -----
+  var netVotes = {};   // uid -> net score (up - down)
+  var voteCounts = {}; // uid -> {up:N, down:N, unrelated:N}
+  var myVotes = {};    // uid -> "up"|"down"|"unrelated" (from localStorage)
+  try {
+    var stored = localStorage.getItem("digest-votes");
+    if (stored) myVotes = JSON.parse(stored);
+  } catch(e){}
+  function myVote(uid){ return myVotes[uid] || ""; }
+  function saveMyVotes(){ try{ localStorage.setItem("digest-votes", JSON.stringify(myVotes)); }catch(e){} }
+  var clientId; try{ clientId = localStorage.getItem("web_cid"); }catch(e){}
+  if (!clientId){ clientId = "c_" + Math.random().toString(36).slice(2) + Date.now().toString(36); try{ localStorage.setItem("web_cid", clientId); }catch(e){} }
+
   var SLOTS = ["Setting","What the model did","Result"];
   var PROV = {author:"Summary by the authors", editor:"Summary by the curator",
               ai:"Summary generated, checked", none:"Metadata only"};
@@ -329,28 +362,42 @@ footer.site .links{font-family:var(--mono);font-size:12px}
       + '<div class="body">' + body
       +   '<div class="cfoot"><span>'+esc(p.source_label)+' · '+prov+val+'</span>'
       +     '<a href="'+esc(p.url)+'" rel="noopener" target="_blank">Open paper &#8599;</a></div>'
+      +   '<div class="vote-bar">'
+      +     '<button type="button" class="vote-btn v-up'+(myVote(p.uid)==="up"?" on-up":"")+'" data-uid="'+esc(p.uid)+'" data-v="up" title="Upvote">&#9650;</button>'
+      +     '<span class="vote-net" data-uid-net="'+esc(p.uid)+'">'+(netVotes[p.uid]||0)+'</span>'
+      +     '<button type="button" class="vote-btn v-down'+(myVote(p.uid)==="down"?" on-down":"")+'" data-uid="'+esc(p.uid)+'" data-v="down" title="Downvote">&#9660;</button>'
+      +     '<button type="button" class="vote-btn v-unrel'+(myVote(p.uid)==="unrelated"?" on-unrel":"")+'" data-uid="'+esc(p.uid)+'" data-v="unrelated" title="Not relevant to business research">&#10005; Not relevant</button>'
+      +   '</div>'
       + '</div>'
       + '</article>';
   }
 
   function render(){
     var rows = papers.filter(match);
-    // Default order: most recently posted first. Within a day: US top
-    // universities, then other featured work (international schools, highly-cited
-    // authors), then papers with a known institution, then everything else. So a
-    // paper whose authors have no institution yet sinks to the end of its day.
-    rows.sort(function(a,b){
-      var pd = String(b.posted||"").localeCompare(String(a.posted||""));
-      if (pd !== 0) return pd;
-      var ua = a.us_top?1:0, ub = b.us_top?1:0;
-      if (ub !== ua) return ub - ua;
-      var pa = a.prestige?1:0, pb = b.prestige?1:0;
-      if (pb !== pa) return pb - pa;
-      var ha = (a.affiliations&&a.affiliations.length)?1:0, hb = (b.affiliations&&b.affiliations.length)?1:0;
-      if (hb !== ha) return hb - ha;
-      if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
-      return (b.n||0)-(a.n||0);
-    });
+    if (st.sort === "popular") {
+      // Sort by net votes (up - down) descending, then by recency.
+      rows.sort(function(a,b){
+        var va = netVotes[a.uid]||0, vb = netVotes[b.uid]||0;
+        if (vb !== va) return vb - va;
+        return String(b.posted||"").localeCompare(String(a.posted||""));
+      });
+    } else {
+      // Default order: most recently posted first. Within a day: US top
+      // universities, then other featured work (international schools, highly-cited
+      // authors), then papers with a known institution, then everything else.
+      rows.sort(function(a,b){
+        var pd = String(b.posted||"").localeCompare(String(a.posted||""));
+        if (pd !== 0) return pd;
+        var ua = a.us_top?1:0, ub = b.us_top?1:0;
+        if (ub !== ua) return ub - ua;
+        var pa = a.prestige?1:0, pb = b.prestige?1:0;
+        if (pb !== pa) return pb - pa;
+        var ha = (a.affiliations&&a.affiliations.length)?1:0, hb = (b.affiliations&&b.affiliations.length)?1:0;
+        if (hb !== ha) return hb - ha;
+        if ((b.salience||0)!==(a.salience||0)) return (b.salience||0)-(a.salience||0);
+        return (b.n||0)-(a.n||0);
+      });
+    }
     // The left-hand number counts the CURRENT view: the newest paper on top
     // is numbered with the visible total and it counts down to 1.
     rows.forEach(function(p, i){ p._num = rows.length - i; });
@@ -364,10 +411,34 @@ footer.site .links{font-family:var(--mono);font-size:12px}
     list.querySelectorAll("[data-toggle]").forEach(function(el){
       el.addEventListener("click", function(e){
         if (e.target.closest("a")) return; // let title/link clicks through
+        if (e.target.closest(".vote-bar")) return; // let vote clicks through
         var art = el.closest("article");
         art.classList.toggle("open");
         var open = art.classList.contains("open");
         art.querySelector(".chev").setAttribute("aria-label", open ? "Collapse summary" : "Expand summary");
+      });
+    });
+    // vote click delegation
+    list.querySelectorAll(".vote-btn").forEach(function(btn){
+      btn.addEventListener("click", function(e){
+        e.stopPropagation();
+        var uid = btn.dataset.uid, v = btn.dataset.v;
+        var prev = myVote(uid);
+        if (prev === v) return; // already voted this way
+        // update local counts
+        if (prev) { voteCounts[uid] = voteCounts[uid] || {up:0,down:0,unrelated:0}; voteCounts[uid][prev] = Math.max(0, (voteCounts[uid][prev]||0) - 1); }
+        voteCounts[uid] = voteCounts[uid] || {up:0,down:0,unrelated:0}; voteCounts[uid][v] = (voteCounts[uid][v]||0) + 1;
+        netVotes[uid] = (voteCounts[uid].up||0) - (voteCounts[uid].down||0);
+        myVotes[uid] = v; saveMyVotes();
+        // update DOM in place (no full re-render)
+        var art = btn.closest("article");
+        art.querySelectorAll(".vote-btn").forEach(function(b){ b.className = "vote-btn v-"+b.dataset.v + (myVote(uid)===b.dataset.v ? " on-"+b.dataset.v.replace("unrelated","unrel") : ""); });
+        var netEl = art.querySelector("[data-uid-net]");
+        if (netEl) netEl.textContent = netVotes[uid]||0;
+        // persist to Supabase
+        if (typeof sbDigest !== "undefined" && sbDigest) {
+          sbDigest.from("digest_votes").upsert({paper_uid:uid, vote:v, client_id:clientId}, {onConflict:"paper_uid,client_id"}).then(function(){});
+        }
       });
     });
   }
@@ -387,6 +458,12 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   document.getElementById("date-chips").addEventListener("click", function(e){
     var b = e.target.closest(".chip"); if (!b) return;
     st.when = b.dataset.when;
+    this.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b); });
+    render();
+  });
+  document.getElementById("sort-chips").addEventListener("click", function(e){
+    var b = e.target.closest(".chip"); if (!b) return;
+    st.sort = b.dataset.sort;
     this.querySelectorAll(".chip").forEach(function(c){ c.setAttribute("aria-pressed", c===b); });
     render();
   });
@@ -410,6 +487,10 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   });
 
   render();
+
+  // Expose for Supabase vote loading (CDN loads below).
+  window._digestRender = render;
+  window._digestVotes = {netVotes:netVotes, voteCounts:voteCounts, myVotes:myVotes};
 })();
 </script>
 
@@ -458,6 +539,27 @@ footer.site .links{font-family:var(--mono);font-size:12px}
   var EMAIL=/^[^@\s]+@[^@\s]+\.[^@\s]+$/;
   var sb=null;
   if(window.supabase&&window.supabase.createClient){ try{ sb=window.supabase.createClient(SB_URL,SB_KEY); }catch(e){} }
+  window.sbDigest = sb; // expose for vote buttons in the main script
+
+  // ----- load vote counts from Supabase -----
+  if (sb && window._digestVotes) {
+    sb.from("digest_votes").select("paper_uid,vote").then(function(r){
+      if (r.error || !r.data) return;
+      var dv = window._digestVotes;
+      r.data.forEach(function(row){
+        dv.voteCounts[row.paper_uid] = dv.voteCounts[row.paper_uid] || {up:0,down:0,unrelated:0};
+        dv.voteCounts[row.paper_uid][row.vote] = (dv.voteCounts[row.paper_uid][row.vote]||0) + 1;
+      });
+      for (var uid in dv.voteCounts) {
+        dv.netVotes[uid] = (dv.voteCounts[uid].up||0) - (dv.voteCounts[uid].down||0);
+      }
+      // update displayed net counts
+      document.querySelectorAll("[data-uid-net]").forEach(function(el){
+        el.textContent = dv.netVotes[el.getAttribute("data-uid-net")]||0;
+      });
+    });
+  }
+
   function say(el,text,err){ if(!el)return; el.textContent=text||""; el.classList.toggle("err",!!err); }
 
   var panels={sug:document.getElementById("panel-sug"), sub:document.getElementById("panel-sub")};
