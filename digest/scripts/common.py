@@ -37,7 +37,7 @@ class BlockedHostError(RuntimeError):
 
 
 def guarded_get(url, params=None, headers=None, timeout=None, retries=None):
-    """HTTP GET that refuses blocked hosts and retries with backoff."""
+    """HTTP GET that refuses blocked hosts and retries with exponential backoff."""
     host = (urlparse(url).hostname or "").lower()
     if host in BLOCKED or any(host.endswith("." + b) for b in BLOCKED):
         raise BlockedHostError(
@@ -47,6 +47,7 @@ def guarded_get(url, params=None, headers=None, timeout=None, retries=None):
     run = CFG["run"]
     timeout = timeout or run["request_timeout"]
     retries = retries or run["retries"]
+    base_backoff = run["backoff_seconds"]
     hdrs = {"User-Agent": run["user_agent"], "Accept": "application/json"}
     if headers:
         hdrs.update(headers)
@@ -55,13 +56,16 @@ def guarded_get(url, params=None, headers=None, timeout=None, retries=None):
         try:
             resp = requests.get(url, params=params, headers=hdrs, timeout=timeout)
             if resp.status_code == 429:
-                time.sleep(run["backoff_seconds"] * (attempt + 2))
+                retry_after = int(resp.headers.get("Retry-After", 0))
+                wait = max(retry_after, base_backoff * 2 ** attempt)
+                last = RuntimeError("HTTP 429 (attempt %d)" % (attempt + 1))
+                time.sleep(wait)
                 continue
             resp.raise_for_status()
             return resp
         except Exception as exc:  # noqa: BLE001
             last = exc
-            time.sleep(run["backoff_seconds"] * (attempt + 1))
+            time.sleep(base_backoff * 2 ** attempt)
     raise RuntimeError("GET failed after %d attempts: %s (%s)" % (retries, url, last))
 
 
