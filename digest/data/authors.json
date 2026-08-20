@@ -87894,5 +87894,28 @@
     "affiliations": [
       "Harvard University Press"
     ]
+  },
+  "arxiv:2608.06305v2": {
+    "authors": [
+      {
+        "name": "Sagar Tamang",
+        "url": "https://openalex.org/A5113429311",
+        "inst": "Indian Institute of Technology Patna"
+      },
+      {
+        "name": "Ayush Vyas",
+        "url": "https://openalex.org/A5006844661",
+        "inst": "Chungwoon University"
+      },
+      {
+        "name": "Tabarakul Hazarika",
+        "url": "https://openalex.org/A5146034501",
+        "inst": ""
+      }
+    ],
+    "affiliations": [
+      "Indian Institute of Technology Patna",
+      "Chungwoon University"
+    ]
   }
 }
