@@ -126,16 +126,20 @@ def main():
         return bool(win_lo and win_lo <= p <= win_hi)
 
     cap = args.cap if args.cap is not None else CFG["run"]["max_papers_per_edition"]
-    recs.sort(key=lambda r: (not in_window(r), -r.get("relevance", 0)))
-    if cap and len(recs) > cap:
-        n_win = sum(1 for r in recs if in_window(r))
-        log("Cap %d applied to %d gated records. In window: %d, of which %d kept."
-            % (cap, len(recs), n_win, min(cap, n_win)))
-        if n_win > cap:
-            log("WARNING: %d in-window papers exceed the cap. %d of this week's "
-                "papers are being dropped. Raise --cap to take them all."
-                % (n_win, n_win - cap))
-        recs = recs[:cap]
+    win_recs = [r for r in recs if in_window(r)]
+    out_recs = [r for r in recs if not in_window(r)]
+    win_recs.sort(key=lambda r: -r.get("relevance", 0))
+    out_recs.sort(key=lambda r: -r.get("relevance", 0))
+    # In-window papers are never capped — every paper posted this week
+    # deserves a shot at classification. The cap limits only out-of-window
+    # backfill (old papers re-indexed by Crossref).
+    if cap and len(out_recs) > cap:
+        log("Cap %d applied to %d out-of-window records (keeping all %d in-window)."
+            % (cap, len(out_recs), len(win_recs)))
+        out_recs = out_recs[:cap]
+    recs = win_recs + out_recs
+    log("Enriching %d papers: %d in-window + %d out-of-window."
+        % (len(recs), len(win_recs), len(out_recs)))
 
     filled, already, missing = 0, 0, 0
     for rec in recs:
