@@ -23,42 +23,97 @@ from jinja2 import Environment, FileSystemLoader, select_autoescape
 
 from common import CFG, ROOT, log, read_jsonl, write_json
 
-# Top research institutions (accounting/finance/economics). A paper affiliated
-# with any of these is never hidden by the technical filter. Lowercase
-# substrings matched against OpenAlex institution display names.
-TOP_INSTITUTIONS = [
-    "harvard", "stanford", "massachusetts institute of technology", "mit sloan",
-    "university of chicago", "university of pennsylvania", "wharton", "columbia",
-    "new york university", "berkeley", "northwestern", "yale", "duke university",
-    "university of michigan", "los angeles", "cornell", "carnegie mellon",
-    "university of texas at dallas", "university of texas at austin", "ohio state",
-    "indiana university", "university of washington", "university of southern california",
-    "dartmouth", "university of north carolina", "emory", "georgetown",
-    "university of rochester", "washington university in st", "university of illinois",
-    "boston college", "university of minnesota", "michigan state", "arizona state",
-    "university of iowa", "university of wisconsin", "national university of singapore",
-    "hong kong university of science", "university of hong kong", "nanyang technological",
-    "tsinghua", "peking university", "university of toronto", "princeton",
-    "california institute of technology", "university of maryland", "london business school",
-    "insead", "university of oxford", "university of cambridge",
-    "london school of economics", "bocconi", "university of mannheim",
+# Top US research universities (accounting/finance/economics/management).
+# A paper affiliated with any of these is never hidden by the technical
+# filter, and it appears in the "Featured" view.  The list is deliberately
+# US-centric: the digest serves US scholars and the featured toggle is an
+# information-overload filter, not a quality ranking.
+#
+# Each entry is a lowercase substring matched against OpenAlex display names.
+# Be specific enough to avoid false positives: "northwestern university"
+# (not "northwestern" alone, which matches Northwestern Polytechnical U.).
+US_TOP = [
+    "harvard university", "harvard business school",
+    "stanford university", "stanford graduate school",
+    "massachusetts institute of technology", "mit sloan",
+    "university of chicago", "booth school",
+    "university of pennsylvania", "wharton",
+    "columbia university", "columbia business school",
+    "new york university", "nyu stern",
+    "university of california, berkeley", "haas school",
+    "northwestern university", "kellogg school",
+    "yale university",
+    "duke university", "fuqua school",
+    "university of michigan, ann arbor", "ross school",
+    "university of california, los angeles",
+    "cornell university", "johnson school",
+    "carnegie mellon university", "tepper school",
+    "university of texas at dallas", "the university of texas at dallas", "naveen jindal school",
+    "university of texas at austin", "the university of texas at austin", "mccombs school",
+    "ohio state university",
+    "indiana university bloomington", "kelley school",
+    "university of washington, seattle",
+    "university of southern california", "marshall school",
+    "dartmouth college", "tuck school",
+    "university of north carolina at chapel hill", "kenan-flagler",
+    "emory university", "goizueta",
+    "georgetown university",
+    "university of rochester", "simon school",
+    "washington university in st. louis", "olin school",
+    "university of illinois urbana", "gies college",
+    "boston college", "carroll school",
+    "university of minnesota", "carlson school",
+    "michigan state university", "broad college",
+    "arizona state university", "carey school",
+    "university of iowa", "tippie college",
+    "university of wisconsin-madison",
+    "princeton university",
+    "california institute of technology",
+    "university of maryland, college park", "smith school",
+    "johns hopkins university",
+    "rutgers university", "rutgers business school",
+    "university of virginia", "darden school",
+    "boston university", "questrom school",
+    "georgia institute of technology",
+    "rice university", "jones school",
+    "vanderbilt university", "owen school",
+    "university of notre dame", "mendoza college",
+    "university of florida", "warrington college",
 ]
 
-# US subset of the above. A featured paper from one of these sorts ABOVE other
-# featured papers (international schools, highly-cited authors) within a date.
-US_TOP = [
-    "harvard", "stanford", "massachusetts institute of technology", "mit sloan",
-    "university of chicago", "university of pennsylvania", "wharton", "columbia",
-    "new york university", "berkeley", "northwestern", "yale", "duke university",
-    "university of michigan", "los angeles", "cornell", "carnegie mellon",
-    "university of texas at dallas", "university of texas at austin", "ohio state",
-    "indiana university", "university of washington", "university of southern california",
-    "dartmouth", "university of north carolina", "emory", "georgetown",
-    "university of rochester", "washington university in st", "university of illinois",
-    "boston college", "university of minnesota", "michigan state", "arizona state",
-    "university of iowa", "university of wisconsin", "princeton",
-    "california institute of technology", "university of maryland",
+# Elite non-US schools that also qualify for featured. Keep this short:
+# the best European business schools plus the University of Toronto.
+INTL_TOP = [
+    "london business school",
+    "london school of economics",
+    "university of oxford", "said business school",
+    "university of cambridge", "judge business school",
+    "insead",
+    "bocconi", "sda bocconi",
+    "university of mannheim",
+    "university of toronto", "rotman school",
 ]
+
+# The union is checked for the prestige flag; US_TOP also gets the us_top
+# sort bonus.
+TOP_INSTITUTIONS = US_TOP + INTL_TOP
+
+
+def _aff_matches(affs_list, patterns):
+    """True if at least one affiliation matches a pattern.
+
+    Each affiliation is checked individually (not joined) and the pattern
+    must appear at the START of the lowercased name.  This prevents false
+    positives like "California University of Pennsylvania" matching the
+    "university of pennsylvania" pattern.
+    """
+    for a in affs_list:
+        al = a.lower()
+        for t in patterns:
+            if al.startswith(t):
+                return True
+    return False
+
 
 # OpenAlex attaches noisy affiliations to authors — hospitals/clinics from
 # name collisions, and publisher imprints ("Harvard University Press") standing
@@ -86,10 +141,9 @@ def clean_affiliations(affs):
     kept = kept or normed  # never blank the list entirely
 
     def prio(a):
-        al = a.lower()
-        if any(t in al for t in US_TOP):
+        if _aff_matches([a], US_TOP):
             return 0
-        if any(t in al for t in TOP_INSTITUTIONS):
+        if _aff_matches([a], TOP_INSTITUTIONS):
             return 1
         return 2
 
@@ -177,13 +231,11 @@ def main():
                 p["authors_detailed"] = a["authors"]
                 if a.get("affiliations"):
                     p["affiliations"] = clean_affiliations(a["affiliations"])
-                if a.get("top_author"):
-                    p["prestige"] = True  # a highly-cited author
-            affs = " ; ".join(p.get("affiliations") or []).lower()
-            if affs and any(t in affs for t in TOP_INSTITUTIONS):
-                p["prestige"] = True  # a top-50 institution
-            if affs and any(t in affs for t in US_TOP):
-                p["us_top"] = True  # a US top university — sorts to the very top
+            affs_list = p.get("affiliations") or []
+            if affs_list and _aff_matches(affs_list, TOP_INSTITUTIONS):
+                p["prestige"] = True  # recognized institution
+            if affs_list and _aff_matches(affs_list, US_TOP):
+                p["us_top"] = True  # US top university — sorts first
     papers.sort(key=lambda p: (p.get("posted") or "", p.get("edition") or 0), reverse=True)
 
     this_edition = sum(1 for r in index if r.get("edition") == args.edition)
